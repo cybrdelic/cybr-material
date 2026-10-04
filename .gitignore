@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.blend1
+*.log
+draft_materials/
+previews/*draft*
+build/
+path_traced/drafts/
+path_traced/draft_manifest.json
+path_traced/metadata/

@@ -1,0 +1,60 @@
+name: Build and publish the material suite
+on:
+  push:
+    branches: [master]
+    paths: ['source/**', '.github/workflows/build-suite.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: cybr-suite-master
+  cancel-in-progress: true
+jobs:
+  suite:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install map-generation dependencies
+        run: python -m pip install -r source/requirements.txt
+      - name: Install Blender 4.3.2
+        working-directory: ${{ runner.temp }}
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-dejavu-core libxi6 libxrender1 libxfixes3 libxkbcommon0
+          curl -fL --retry 3 https://download.blender.org/release/Blender4.3/blender-4.3.2-linux-x64.tar.xz -o blender-4.3.2-linux-x64.tar.xz
+          curl -fL --retry 3 https://download.blender.org/release/Blender4.3/blender-4.3.2.sha256 -o blender-4.3.2.sha256
+          rg 'blender-4.3.2-linux-x64.tar.xz' blender-4.3.2.sha256 | sha256sum -c -
+          tar -xf blender-4.3.2-linux-x64.tar.xz
+          echo "$RUNNER_TEMP/blender-4.3.2-linux-x64" >> "$GITHUB_PATH"
+      - name: Generate, path trace, verify and package
+        run: python source/build_suite.py
+      - name: Commit the complete generated assets
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add materials exports blender path_traced docs OPEN_ME.html README.txt SHA256SUMS.txt
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish validated V3 maps, Cycles renders, scenes and galleries'
+            git push origin HEAD:master
+          fi
+      - name: Publish the downloadable suite
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cat > "$RUNNER_TEMP/release-notes.md" <<'NOTES'
+          Complete CYBR Material V3 suite: ten custom materials, all maps, Unity exports, editable Blender scenes, genuine Cycles renders, offline galleries, before/after images, source and checksums.
+
+          All ten materials use native 4K procedural maps. Wood is sampled from a radial growth volume with physically sized vessels and rays. No source images or image-generated material inputs are used. The wood maps are finite board cuts; the suite is not scanned material data.
+
+          The critical review documents specific weaknesses, the rejected first wood rewrite, the final changes and remaining limitations. Scene previews are native 16-bit PNGs rendered by Cycles without denoising or added grain.
+          NOTES
+          if gh release view v3.0.0 >/dev/null 2>&1; then
+            gh release edit v3.0.0 --notes-file "$RUNNER_TEMP/release-notes.md"
+          else
+            gh release create v3.0.0 --target master --title 'CYBR Material V3 — natural detail and wear' --notes-file "$RUNNER_TEMP/release-notes.md"
+          fi
+          gh release upload v3.0.0 build/CYBR_Material_V3.zip build/CYBR_Material_V3.zip.sha256 build/release.json --clobber
