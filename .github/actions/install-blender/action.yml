@@ -1,0 +1,24 @@
+name: Install verified Blender 4.3.2
+description: Install the official Linux build with its published checksum
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        sudo apt-get update -qq
+        sudo apt-get install -y ripgrep fonts-dejavu-core libxi6 libxrender1 libxfixes3 libxkbcommon0
+    - uses: actions/cache@v4
+      id: blender-cache
+      with:
+        path: ${{ runner.temp }}/blender-4.3.2-linux-x64
+        key: blender-4.3.2-linux-x64-verified
+    - if: steps.blender-cache.outputs.cache-hit != 'true'
+      shell: bash
+      working-directory: ${{ runner.temp }}
+      run: |
+        curl -fL --retry 3 https://download.blender.org/release/Blender4.3/blender-4.3.2-linux-x64.tar.xz -o blender-4.3.2-linux-x64.tar.xz
+        curl -fL --retry 3 https://download.blender.org/release/Blender4.3/blender-4.3.2.sha256 -o blender-4.3.2.sha256
+        rg 'blender-4.3.2-linux-x64.tar.xz' blender-4.3.2.sha256 | sha256sum -c -
+        tar -xf blender-4.3.2-linux-x64.tar.xz
+    - shell: bash
+      run: echo "$RUNNER_TEMP/blender-4.3.2-linux-x64" >> "$GITHUB_PATH"

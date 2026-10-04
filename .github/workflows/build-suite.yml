@@ -2,36 +2,112 @@ name: Build and publish the material suite
 on:
   push:
     branches: [master]
-    paths: ['source/**', '.github/workflows/build-suite.yml']
+    paths: ['source/**', '.github/**']
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
+  actions: read
 concurrency:
   group: cybr-suite-master
   cancel-in-progress: true
 jobs:
-  suite:
+  maps:
     runs-on: ubuntu-24.04
-    timeout-minutes: 350
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install map-generation dependencies
-        run: python -m pip install -r source/requirements.txt
-      - name: Install Blender 4.3.2
-        working-directory: ${{ runner.temp }}
+      - run: python -m pip install -r source/requirements.txt
+      - name: Generate and verify one shared native map set
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y ripgrep fonts-dejavu-core libxi6 libxrender1 libxfixes3 libxkbcommon0
-          curl -fL --retry 3 https://download.blender.org/release/Blender4.3/blender-4.3.2-linux-x64.tar.xz -o blender-4.3.2-linux-x64.tar.xz
-          curl -fL --retry 3 https://download.blender.org/release/Blender4.3/blender-4.3.2.sha256 -o blender-4.3.2.sha256
-          rg 'blender-4.3.2-linux-x64.tar.xz' blender-4.3.2.sha256 | sha256sum -c -
-          tar -xf blender-4.3.2-linux-x64.tar.xz
-          echo "$RUNNER_TEMP/blender-4.3.2-linux-x64" >> "$GITHUB_PATH"
-      - name: Generate, path trace, verify and package
-        run: python source/build_suite.py
+          python source/generate_materials.py --resolution 4096
+          python source/pack_unity.py --pipeline hdrp
+          python source/pack_unity.py --pipeline urp
+          python source/verify_maps.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: procedural-map-build
+          compression-level: 0
+          retention-days: 1
+          if-no-files-found: error
+          path: |
+            materials/
+            exports/
+            docs/map_checks.json
+  render:
+    needs: maps
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {key: 01_calacatta_oro_detail, material: 01_calacatta_oro, kind: macros, size: 1024, threshold: .005}
+          - {key: 02_roman_travertine_detail, material: 02_roman_travertine, kind: macros, size: 1024, threshold: .005}
+          - {key: 03_american_walnut_detail, material: 03_american_walnut, kind: macros, size: 1024, threshold: .005}
+          - {key: 04_fumed_oak_detail, material: 04_fumed_oak, kind: macros, size: 1024, threshold: .005}
+          - {key: 05_champagne_brass_detail, material: 05_champagne_brass, kind: macros, size: 1024, threshold: .005}
+          - {key: 06_blackened_steel_detail, material: 06_blackened_steel, kind: macros, size: 1024, threshold: .005}
+          - {key: 07_bone_porcelain_detail, material: 07_bone_porcelain, kind: macros, size: 1024, threshold: .005}
+          - {key: 08_saddle_leather_detail, material: 08_saddle_leather, kind: macros, size: 1024, threshold: .005}
+          - {key: 09_lime_plaster_detail, material: 09_lime_plaster, kind: macros, size: 1024, threshold: .005}
+          - {key: 10_natural_linen_detail, material: 10_natural_linen, kind: macros, size: 1024, threshold: .005}
+          - {key: 11_stone_and_timber, material: 11_stone_and_timber, kind: scenes, size: 1280, threshold: .008}
+          - {key: 12_leather_and_linen, material: 12_leather_and_linen, kind: scenes, size: 1280, threshold: .008}
+          - {key: 13_metal_and_ceramic, material: 13_metal_and_ceramic, kind: scenes, size: 1280, threshold: .008}
+    name: Cycles / ${{ matrix.key }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: procedural-map-build
+          path: .
+      - uses: ./.github/actions/install-blender
+      - name: Path trace the native scene
+        run: |
+          mkdir -p blender
+          blender -b --python source/render_path_traced.py -- --kind '${{ matrix.kind }}' --only '${{ matrix.material }}' --size '${{ matrix.size }}' --samples 768 --min-samples 128 --threshold '${{ matrix.threshold }}'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cycles-${{ matrix.key }}
+          compression-level: 0
+          retention-days: 1
+          if-no-files-found: error
+          path: |
+            path_traced/renders/${{ matrix.key }}.png
+            path_traced/metadata/${{ matrix.key }}.json
+  publish:
+    needs: [maps, render]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r source/requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: procedural-map-build
+          path: .
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: cycles-*
+          merge-multiple: true
+          path: path_traced
+      - uses: ./.github/actions/install-blender
+      - name: Assemble portable scenes, inspect outputs and package
+        run: |
+          mkdir -p blender
+          blender -b --python source/render_path_traced.py -- --kind macros --build-only --size 1024 --samples 768 --min-samples 128 --threshold .005
+          blender -b --python source/render_path_traced.py -- --kind scenes --build-only --size 1280 --samples 768 --min-samples 128 --threshold .008
+          python -c 'from pathlib import Path; Path("path_traced/render_manifest.json").write_text("{}\n")'
+          python source/build_suite.py --skip-maps --skip-renders
       - name: Commit the complete generated assets
         run: |
           git config user.name 'github-actions[bot]'
@@ -39,6 +115,7 @@ jobs:
           git add materials exports blender path_traced docs OPEN_ME.html README.txt SHA256SUMS.txt
           if ! git diff --cached --quiet; then
             git commit -m 'Publish validated V3 maps, Cycles renders, scenes and galleries'
+            git pull --rebase origin master
             git push origin HEAD:master
           fi
       - name: Publish the downloadable suite
@@ -50,7 +127,7 @@ jobs:
 
           All ten materials use native 4K procedural maps. Wood is sampled from a radial growth volume with physically sized vessels and rays. No source images or image-generated material inputs are used. The wood maps are finite board cuts; the suite is not scanned material data.
 
-          The critical review documents specific weaknesses, the rejected first wood rewrite, the final changes and remaining limitations. Scene previews are native 16-bit PNGs rendered by Cycles without denoising or added grain.
+          The critical review documents specific weaknesses, rejected wood approaches, final changes and remaining limitations. Scene previews are native 16-bit PNGs rendered by Cycles without denoising or added grain.
           NOTES
           if gh release view v3.0.0 >/dev/null 2>&1; then
             gh release edit v3.0.0 --notes-file "$RUNNER_TEMP/release-notes.md"

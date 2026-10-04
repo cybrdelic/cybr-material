@@ -159,8 +159,9 @@ blender -b --python source/render_path_traced.py -- \
 ```
 
 The [build workflow](.github/workflows/build-suite.yml) generates and validates
-the complete suite, commits the generated assets, and publishes a versioned ZIP
-release. Checks cover map dimensions and bit depth, exact packed channels,
+one shared map set, distributes the thirteen Cycles frames across CPU jobs,
+assembles portable scenes, commits the generated assets, and publishes a
+versioned ZIP release. Checks cover map dimensions and bit depth, exact packed channels,
 normal conventions, woven opacity, relative texture paths and actual Cycles
 settings. Visual realism still requires judgment; these checks cannot certify it.
 
