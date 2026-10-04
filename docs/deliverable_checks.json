@@ -1,0 +1,11 @@
+{
+  "materials": 10,
+  "maps": 120,
+  "unity_exports": 30,
+  "renders": 13,
+  "native_4k_materials": 10,
+  "source_image_inputs": 0,
+  "packed_channels_exact": true,
+  "all_documentation_links_resolve": true,
+  "passed": true
+}

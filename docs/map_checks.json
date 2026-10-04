@@ -1,0 +1,112 @@
+[
+  {
+    "material": "01_calacatta_oro",
+    "map_count": 12,
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "height_16bit": true,
+    "normal_unit_length_mean": 1.0000184774398804,
+    "dx_flip_verified": true
+  },
+  {
+    "material": "02_roman_travertine",
+    "map_count": 12,
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "height_16bit": true,
+    "normal_unit_length_mean": 1.0002398490905762,
+    "dx_flip_verified": true
+  },
+  {
+    "material": "03_american_walnut",
+    "map_count": 12,
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "height_16bit": true,
+    "normal_unit_length_mean": 1.0000834465026855,
+    "dx_flip_verified": true
+  },
+  {
+    "material": "04_fumed_oak",
+    "map_count": 12,
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "height_16bit": true,
+    "normal_unit_length_mean": 1.0000895261764526,
+    "dx_flip_verified": true
+  },
+  {
+    "material": "05_champagne_brass",
+    "map_count": 12,
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "height_16bit": true,
+    "normal_unit_length_mean": 1.0000618696212769,
+    "dx_flip_verified": true
+  },
+  {
+    "material": "06_blackened_steel",
+    "map_count": 12,
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "height_16bit": true,
+    "normal_unit_length_mean": 1.0001407861709595,
+    "dx_flip_verified": true
+  },
+  {
+    "material": "07_bone_porcelain",
+    "map_count": 12,
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "height_16bit": true,
+    "normal_unit_length_mean": 1.0000698566436768,
+    "dx_flip_verified": true
+  },
+  {
+    "material": "08_saddle_leather",
+    "map_count": 12,
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "height_16bit": true,
+    "normal_unit_length_mean": 1.000378966331482,
+    "dx_flip_verified": true
+  },
+  {
+    "material": "09_lime_plaster",
+    "map_count": 12,
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "height_16bit": true,
+    "normal_unit_length_mean": 1.0003345012664795,
+    "dx_flip_verified": true
+  },
+  {
+    "material": "10_natural_linen",
+    "map_count": 12,
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "height_16bit": true,
+    "normal_unit_length_mean": 1.0000334978103638,
+    "dx_flip_verified": true
+  }
+]

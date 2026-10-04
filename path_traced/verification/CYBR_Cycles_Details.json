@@ -1,0 +1,10 @@
+{
+  "file": "CYBR_Cycles_Details.blend",
+  "scenes": 10,
+  "materials": 10,
+  "displaced_objects": 10,
+  "engine": "CYCLES",
+  "portable_texture_links": true,
+  "denoising": false,
+  "passed": true
+}

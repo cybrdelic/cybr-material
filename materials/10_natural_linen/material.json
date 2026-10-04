@@ -1,0 +1,29 @@
+{
+  "id": "10_natural_linen",
+  "name": "Natural Linen / Frayed",
+  "family": "Textile",
+  "tile_m": 0.085,
+  "height_scale_m": 0.00065,
+  "roughness": 0.8,
+  "ior": 1.46,
+  "metallic": 0,
+  "sheen": 0.32,
+  "sheen_roughness": 0.66,
+  "preview_diameter_m": 0.028,
+  "description": "Fine plain flax weave with 120 variable yarns per tile, continuous over-under bending, fibrils, attached slubs and real transparent inter-yarn openings.",
+  "resolution": 4096,
+  "maps": {
+    "BaseColor.png": "sRGB RGB8; intrinsic color, no lighting",
+    "Normal_OpenGL.png": "Non-Color tangent +Y RGB8",
+    "Normal_DirectX.png": "Non-Color tangent -Y RGB8",
+    "Normal_Micro_OpenGL.png": "Non-Color +Y RGB8; residual height only, paired with Height_Macro",
+    "Height.png": "Non-Color linear grayscale16; displacement = (height - .5) * height_scale_m",
+    "Height_Macro.png": "Non-Color linear grayscale16; band-limited geometry, same physical scale",
+    "Roughness.png": "Non-Color linear grayscale8",
+    "Metallic.png": "Non-Color grayscale8; exposed metal versus dielectric oxides",
+    "AO.png": "Non-Color grayscale8; local cavity approximation, do not bake into color",
+    "WearMask.png": "Non-Color grayscale8; material-specific abrasion or weathering",
+    "ORM.png": "Non-Color RGB8; AO / roughness / metallic",
+    "Opacity.png": "Non-Color grayscale8; woven openings for linen, opaque for other materials"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "06_blackened_steel",
+  "name": "Blackened Steel / Worn",
+  "family": "Metal",
+  "tile_m": 0.25,
+  "height_scale_m": 0.00055,
+  "roughness": 0.49,
+  "ior": 1.5,
+  "metallic": 0,
+  "anisotropy": 0.14,
+  "preview_diameter_m": 0.12,
+  "description": "Black oxide steel with directionally rubbed exposure, terraced rust crusts, corrosion pits and short abrasive score groups.",
+  "resolution": 4096,
+  "maps": {
+    "BaseColor.png": "sRGB RGB8; intrinsic color, no lighting",
+    "Normal_OpenGL.png": "Non-Color tangent +Y RGB8",
+    "Normal_DirectX.png": "Non-Color tangent -Y RGB8",
+    "Normal_Micro_OpenGL.png": "Non-Color +Y RGB8; residual height only, paired with Height_Macro",
+    "Height.png": "Non-Color linear grayscale16; displacement = (height - .5) * height_scale_m",
+    "Height_Macro.png": "Non-Color linear grayscale16; band-limited geometry, same physical scale",
+    "Roughness.png": "Non-Color linear grayscale8",
+    "Metallic.png": "Non-Color grayscale8; exposed metal versus dielectric oxides",
+    "AO.png": "Non-Color grayscale8; local cavity approximation, do not bake into color",
+    "WearMask.png": "Non-Color grayscale8; material-specific abrasion or weathering",
+    "ORM.png": "Non-Color RGB8; AO / roughness / metallic",
+    "Opacity.png": "Non-Color grayscale8; woven openings for linen, opaque for other materials"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "08_saddle_leather",
+  "name": "Saddle Leather / Used",
+  "family": "Leather",
+  "tile_m": 0.18,
+  "height_scale_m": 0.00075,
+  "roughness": 0.5,
+  "ior": 1.48,
+  "metallic": 0,
+  "coat": 0.015,
+  "coat_roughness": 0.48,
+  "preview_diameter_m": 0.065,
+  "description": "Cognac hide with soft stretched skin creases, fine follicles, compressed folds, burnished areas and grouped finish scuffs.",
+  "resolution": 4096,
+  "maps": {
+    "BaseColor.png": "sRGB RGB8; intrinsic color, no lighting",
+    "Normal_OpenGL.png": "Non-Color tangent +Y RGB8",
+    "Normal_DirectX.png": "Non-Color tangent -Y RGB8",
+    "Normal_Micro_OpenGL.png": "Non-Color +Y RGB8; residual height only, paired with Height_Macro",
+    "Height.png": "Non-Color linear grayscale16; displacement = (height - .5) * height_scale_m",
+    "Height_Macro.png": "Non-Color linear grayscale16; band-limited geometry, same physical scale",
+    "Roughness.png": "Non-Color linear grayscale8",
+    "Metallic.png": "Non-Color grayscale8; exposed metal versus dielectric oxides",
+    "AO.png": "Non-Color grayscale8; local cavity approximation, do not bake into color",
+    "WearMask.png": "Non-Color grayscale8; material-specific abrasion or weathering",
+    "ORM.png": "Non-Color RGB8; AO / roughness / metallic",
+    "Opacity.png": "Non-Color grayscale8; woven openings for linen, opaque for other materials"
+  }
+}

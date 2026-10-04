@@ -1,0 +1,9 @@
+# CYBR / Material Atelier asset catalogs
+VERSION 1
+a234b4ac-b20e-5aba-86be-a9361dc54d6b:CYBR/Ceramic:Ceramic
+3669a994-26a9-5301-9353-1933bdc3ecf3:CYBR/Leather:Leather
+4c979cbd-41a6-5c84-936b-8e3d911bda9a:CYBR/Metal:Metal
+714bf0eb-b79f-52be-9a71-13033b02d293:CYBR/Plaster:Plaster
+31c3b60a-c2ae-5cec-bde1-8c550636e532:CYBR/Stone:Stone
+80fc3075-dd09-57d2-baf7-b4ba984549d9:CYBR/Textile:Textile
+901f8714-0746-59f3-861e-e0f8ae5ff8f2:CYBR/Wood:Wood
