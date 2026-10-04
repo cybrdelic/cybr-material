@@ -94,10 +94,17 @@ class Interior:
             for y in (-.31,.31):self.box('Sofa / steel leg',(x,y,.1125),(.055,.055,.225),'06_blackened_steel',.01)
         self.furniture_group(start,pos,angle)
 
-    def room(self,width,depth,height=3.1,window_side='left'):
+    def room(self,width,depth,height=3.1,window_side='left',back_opening=None):
         self.width=width;self.depth=depth;self.height=height
         ps='09_lime_plaster'
-        self.box('Architecture / back plaster wall',(0,depth/2+.10,height/2),(width,.20,height),ps,.006)
+        if back_opening:
+            bx,bw,bottom,top=back_opening
+            for lo,hi in ((-width/2,bx-bw/2),(bx+bw/2,width/2)):
+                self.box('Architecture / fireplace side wall',((lo+hi)/2,depth/2+.10,height/2),(hi-lo,.20,height),ps,.006)
+            for lo,hi in ((0,bottom),(top,height)):
+                self.box('Architecture / fireplace head or sill',(bx,depth/2+.10,(lo+hi)/2),(bw,.20,hi-lo),ps,.006)
+        else:
+            self.box('Architecture / back plaster wall',(0,depth/2+.10,height/2),(width,.20,height),ps,.006)
         self.box('Architecture / ceiling',(0,0,height+.07),(width,.0+depth,.14),ps,.006)
         # Front opening places the camera inside an actual doorway.
         self.box('Architecture / front left',( -width*.17,-depth/2-.10,height/2),(width*.66,.20,height),ps,.006)
@@ -225,16 +232,18 @@ class Interior:
 
 def salon(api):
     r=Interior(api,'14_walnut_salon','Walnut Parquet Salon',(2.95,-2.55,1.62),(-.6,.70,1.02),28)
-    r.room(7,6,3.1);r.parquet('03_american_walnut')
+    fx=1.85
+    r.room(7,6,3.1,back_opening=(fx,.96,.08,1.52));r.parquet('03_american_walnut')
     r.sofa((-.75,1.35,.02));r.chair((1.18,.45,.02),-.32)
     r.box('Calacatta / low coffee table',(-.52,.0,.46),(1.25,.72,.045),'01_calacatta_oro',.020)
     for x in (-.95,-.12):r.box('Travertine / table pier',(x,0,.23),(.22,.49,.43),'02_roman_travertine',.012)
-    for x in (-2.30,-1.20):r.box('Travertine / fireplace jamb',(x,2.79,.82),(.18,.30,1.44),'02_roman_travertine',.018)
-    r.box('Travertine / fireplace lintel',(-1.75,2.79,1.58),(1.28,.30,.18),'02_roman_travertine',.016)
-    r.box('Steel / recessed firebox back',(-1.75,2.91,.68),(.90,.025,1.02),'06_blackened_steel',.003)
-    for x in (-2.20,-1.30):r.box('Steel / recessed firebox lining',(x,2.79,.68),(.018,.23,1.02),'06_blackened_steel',.002)
-    r.box('Travertine / hearth',(-1.75,2.55,.12),(1.52,.84,.19),'02_roman_travertine',.015)
-    r.box('Brass / firebox trim',(-1.75,2.655,1.09),(.96,.025,.035),'05_champagne_brass',.003)
+    for x in (fx-.55,fx+.55):r.box('Travertine / fireplace jamb',(x,2.79,.82),(.18,.30,1.44),'02_roman_travertine',.018)
+    r.box('Travertine / fireplace lintel',(fx,2.79,1.58),(1.28,.30,.18),'02_roman_travertine',.016)
+    r.box('Steel / recessed firebox back',(fx,3.06,.81),(.96,.025,1.38),'06_blackened_steel',.003)
+    for x in (fx-.47,fx+.47):r.box('Steel / recessed firebox lining',(x,2.83,.81),(.018,.47,1.38),'06_blackened_steel',.002)
+    r.box('Steel / recessed firebox ceiling',(fx,2.83,1.50),(.96,.47,.018),'06_blackened_steel',.002)
+    r.box('Travertine / hearth',(fx,2.55,.12),(1.52,.84,.19),'02_roman_travertine',.015)
+    r.box('Brass / firebox trim',(fx,2.655,1.49),(.96,.025,.035),'05_champagne_brass',.003)
     r.vase('Porcelain / table vessel',(-.72,.10,.483),'07_bone_porcelain',.23,.08)
     r.plant((-2.78,1.10,.02))
     r.box('Steel / sculptural wall panel',(.50,2.865,1.89),(1.05,.04,.90),'06_blackened_steel',.009)

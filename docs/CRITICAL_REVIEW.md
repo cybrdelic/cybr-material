@@ -83,7 +83,9 @@ supports stopped short of their seats, and the initial lighting flattened
 the wood beside a blank window.
 
 The basket centers are corrected, furniture contacts now meet, and daylight
-opens onto a modeled courtyard. Floor coverage is checked against the actual
+opens onto a modeled courtyard. The initial fireplace surround concealed a
+solid wall; the final salon has an actual wall aperture and a steel-lined
+firebox, placed outside the sofa's silhouette. Floor coverage is checked against the actual
 mesh geometry, independently of the layout recipe. Individual boards preserve
 stock dimensions and have modeled joints and bevels; wood is not stretched
 across long architectural components. Linen cushions now have opaque filling
