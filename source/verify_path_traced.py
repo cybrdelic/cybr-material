@@ -1,20 +1,31 @@
 """Validate render-ready Cycles scenes and their portable physical materials."""
 import json
+import sys
 from pathlib import Path
 import bpy
+from mathutils import Vector, Matrix
+from mathutils.bvhtree import BVHTree
+import random
 
 ROOT=Path(__file__).resolve().parents[1]
 manifest=json.loads((ROOT/'materials/manifest.json').read_text())
 specs={s['id']:s for s in manifest['materials']}
+geometry_only='--geometry-only' in sys.argv
 scenes=[s for s in bpy.data.scenes if s.objects]
 is_detail='Details' in Path(bpy.data.filepath).name
-assert len(scenes)==(10 if is_detail else 3),[s.name for s in scenes]
+is_architecture='Architecture' in Path(bpy.data.filepath).name
+assert len(scenes)==(4 if is_architecture else 10 if is_detail else 3),[s.name for s in scenes]
 seen=set()
 displaced=0
 for scene in scenes:
     assert scene.render.engine=='CYCLES' and scene.cycles.device=='CPU'
-    assert scene.cycles.samples==768
-    assert scene.cycles.use_denoising is False
+    guided=is_architecture and 'Joints and Surface Wear' not in scene.name
+    assert scene.cycles.samples==(512 if guided else 768)
+    if not geometry_only:assert scene.cycles.use_denoising is guided
+    if guided and not geometry_only:
+        assert scene.cycles.denoiser=='OPENIMAGEDENOISE'
+        assert scene.cycles.denoising_input_passes=='RGB_ALBEDO_NORMAL'
+        assert scene.cycles.denoising_prefilter=='ACCURATE'
     assert scene.cycles.use_adaptive_sampling and scene.cycles.adaptive_min_samples==128
     assert scene.render.image_settings.file_format=='PNG'
     assert scene.render.image_settings.color_depth=='16'
@@ -24,6 +35,33 @@ for scene in scenes:
     assert scene.view_settings.view_transform=='AgX'
     assert not scene.use_nodes
     assert len([o for o in scene.objects if o.type=='LIGHT'])==3
+    if is_architecture:
+        assert scene['source_image_inputs']==0
+        assert scene['architecture_object_count']>50
+        if 'floor_material' in scene and 'Joints' not in scene.name:
+            assert scene['floor_board_count']>300
+        if 'room_dimensions_m' in scene:
+            assert scene['room_dimensions_m'][0]>6 and scene['room_dimensions_m'][1]>5
+        if 'floor_material' in scene:
+            # Check the actual mesh layout, independently of its tiling recipe.
+            # This catches uncovered patches and overlapping basket modules.
+            verts=[];faces=[]
+            for ob in scene.objects:
+                if not ob.name.startswith('Parquet / individually'):continue
+                # Inactive scenes can retain unevaluated matrix_world values
+                # in a build-only file. Boards are unparented and unconstrained;
+                # compose their saved transforms without a render dependency.
+                assert ob.parent is None and not ob.constraints
+                transform=Matrix.LocRotScale(ob.location,ob.rotation_euler.to_quaternion(),ob.scale)
+                start=len(verts);verts.extend(transform@v.co for v in ob.data.vertices)
+                faces.extend(tuple(start+i for i in p.vertices) for p in ob.data.polygons)
+            tree=BVHTree.FromPolygons(verts,faces)
+            dims=scene.get('room_dimensions_m',(1.85,1.65));rng=random.Random(140551)
+            hits=0;count=12000
+            for i in range(count):
+                x=rng.uniform(-dims[0]/2+.03,dims[0]/2-.03);y=rng.uniform(-dims[1]/2+.03,dims[1]/2-.03)
+                if tree.ray_cast(Vector((x,y,.15)),Vector((0,0,-1)),.30)[0] is not None:hits+=1
+            assert hits/count>.980,(scene.name,'Parquet coverage',hits/count)
     for obj in scene.objects:
         if obj.type!='MESH':continue
         for mat in obj.data.materials:
@@ -49,10 +87,11 @@ for scene in scenes:
                     assert Path(bpy.path.abspath(node.image.filepath)).is_file()
                     assert node.image.colorspace_settings.name==('sRGB' if node.image.filepath.endswith('BaseColor.png') else 'Non-Color')
 assert seen==set(specs),seen
-assert displaced>=(10 if is_detail else 5),displaced
+assert displaced>=(1 if is_architecture else 10 if is_detail else 5),displaced
 result=dict(file=Path(bpy.data.filepath).name,scenes=len(scenes),materials=len(seen),
             displaced_objects=displaced,engine='CYCLES',portable_texture_links=True,
-            denoising=False,passed=True)
+            guided_interior_denoising=any(s.cycles.use_denoising for s in scenes),
+            verification='geometry_only' if geometry_only else 'complete',passed=True)
 folder=ROOT/'path_traced/verification';folder.mkdir(parents=True,exist_ok=True)
-(folder/(Path(bpy.data.filepath).stem+'.json')).write_text(json.dumps(result,indent=2)+'\n')
+(folder/(Path(bpy.data.filepath).stem+('_geometry' if geometry_only else '')+'.json')).write_text(json.dumps(result,indent=2)+'\n')
 print('PATH_TRACE_SCENES_VERIFIED '+json.dumps(result),flush=True)

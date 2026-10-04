@@ -101,6 +101,29 @@ remaining fine relief. Combining geometry displacement with the full normal
 would double-count relief. For finite wood cuts, the Blender shader derives
 the selected height band's slope for the actual UV mapping.
 
+## Architectural scenes and physical stock
+
+`source/architectural_scenes.py` builds three meter-scale interiors and a floor
+detail from actual meshes. The walnut herringbone and oak basket floors use
+individual clipped boards with 0.8 mm joints, 0.45 mm edge bevels and 16 mm
+thickness. Cut lengths fit the finite wood atlas rather than stretching a
+550 mm cut across a long plank. Small cabinet fields and armrests use the
+same rule. Long window frames use steel.
+
+Eighteen deterministic finish variants adjust tint and roughness. The polish
+band is evaluated from world position, so a circulation strip crosses boards
+independently of their UV cuts. This is an authored contact model, not simulated
+foot traffic. Cushion foam sits beneath the actual linen opacity openings.
+Windows open onto a modeled courtyard lit by a procedural sky; no source
+pictures enter the scene or lighting pipeline.
+
+The three 2048 × 1536 interiors use 512 maximum / 128 minimum samples and
+Cycles' OpenImageDenoise with albedo and normal guides. The floor detail, ten
+material close-ups and three still lifes use raw 768 / 128 samples. Keep the
+raw studies available when judging fine anatomy: denoising can suppress
+small structures. The official Blender 4.3.2 build is required for the guided
+interior pass.
+
 ## Run and verify
 
 ```bash
@@ -126,6 +149,12 @@ validation checks dimensions, normal convention, packed channels and opacity;
 scene validation checks renderer settings, displacement pairing and portable
 texture paths. The complete archive receives SHA-256 checksums and a ZIP CRC
 check.
+
+The parquet validator casts 12,000 deterministic rays at the actual floor
+meshes and requires at least 98% coverage, allowing the designed joints. It
+does not reuse the tiling recipe. Final render checks require native 2048 ×
+1536 RGB16 output for all four architectural views and verify the recorded
+raw versus guided render settings.
 
 Pinned dependency versions and stored seeds make map generation reproducible.
 Render timing and metadata can vary across machines. Automated checks establish

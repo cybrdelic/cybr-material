@@ -3,9 +3,17 @@
 ## Blender
 
 Open `blender/CYBR_Cycles_Details.blend` for ten displaced close-ups, or
-`blender/CYBR_Cycles_Still_Lifes.blend` for the three scenes. Select the desired
+`blender/CYBR_Cycles_Still_Lifes.blend` for the three studio scenes. Open
+`blender/CYBR_Cycles_Architecture.blend` for the walnut salon, oak library,
+stone kitchen and raw parquet detail. Select the desired
 scene and press F12. The materials and texture files are editable; keep the
 `materials/` directory beside `blender/` so the relative references resolve.
+
+Use the official Blender 4.3.2 build for the three guided interior renders.
+Their Cycles settings use OpenImageDenoise with albedo and normal passes;
+the other fourteen views retain raw sampling. All saved scenes use metric
+units. Individual parquet boards preserve the finite wood cut's physical
+scale and should not be stretched into longer stock.
 
 For reusable material assets, add the `blender/` directory in Preferences →
 File Paths → Asset Libraries, then use `CYBR_Material_Atelier.blend` in the Asset

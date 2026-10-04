@@ -2,7 +2,8 @@
 
 A reproducible procedural PBR pipeline for dense natural surfaces and worn
 finishes: ten materials, native 4K maps, editable Blender scenes and genuine
-Cycles renders. Every material is generated from parameters and physical
+Cycles renders, including three full architectural interiors with hardwood
+flooring and stone joinery. Every material is generated from parameters and physical
 structure models. No source images or image-generated textures are inputs.
 
 **The old materials needed a structural rebuild.** V3 replaces obvious cell
@@ -10,7 +11,7 @@ patterns, repeated crater shapes, painted corrosion and exaggerated wood relief.
 The [critical review](docs/CRITICAL_REVIEW.md) explains the failures, the changes
 and the remaining limitations without calling procedural textures scans.
 
-![CYBR material collection](docs/images/after/collection.jpg)
+![Walnut herringbone salon](docs/images/after/walnut-salon.jpg)
 
 ## Get the complete suite
 
@@ -24,7 +25,29 @@ Open `OPEN_ME.html` after extracting the archive. Open
 Keep the `materials/` and `blender/` folders beside one another: texture paths
 in the Blender files are relative.
 
-## Path-traced scenes
+## Architectural interiors and hardwood flooring
+
+![Oak basket-parquet reading room](docs/images/after/oak-library.jpg)
+![Stone kitchen atelier](docs/images/after/stone-kitchen.jpg)
+![Parquet joints and surface wear](docs/images/after/parquet-detail.jpg)
+
+V3.1 adds a **7 × 6 m walnut salon**, **6.4 × 5.5 m oak reading room**,
+**6.8 × 5.8 m stone kitchen**, and a dedicated floor detail. All four are
+rendered at a native **2048 × 1536**. Furniture, windows, courtyard, flooring,
+books and joinery are actual editable meshes; there are no picture backdrops.
+
+The hardwood floors contain individually clipped, 16 mm thick boards, 0.8 mm
+joints and 0.45 mm eased edges. Walnut uses approximately 542 × 108 mm
+herringbone cuts; oak uses 443 × 89 mm basket cuts. Their UVs preserve the
+finite wood atlas' physical scale. Board finish varies deterministically;
+circulation zones change roughness through world-position contact polish.
+
+The three rooms use **512 maximum / 128 minimum Cycles samples** and
+OpenImageDenoise with albedo and normal guides. The floor detail uses **768 / 128
+samples without denoising**, so its fine surface structure can be inspected
+directly. Render settings and timings are recorded per frame.
+
+## Material studies
 
 ![Stone and timber](docs/images/after/stone-and-timber.jpg)
 ![Leather and linen](docs/images/after/leather-and-linen.jpg)
@@ -32,8 +55,9 @@ in the Blender files are relative.
 
 These are renders of real 3D meshes and material nodes in **Blender Cycles**.
 The saved scenes include lights, cameras and physical displacement. Native
-renders are 16-bit RGB PNGs; the README uses JPEG display copies. No denoising,
-image blur, sharpening, artificial grain or image upscaling is applied.
+renders are 16-bit RGB PNGs; the README uses JPEG display copies. The original
+ten close-ups and three still lifes remain raw at 768 / 128 samples. There is
+no sharpening, artificial grain or image upscaling in any final render.
 
 ## Materials and physical scale
 
@@ -105,7 +129,7 @@ are retained in `docs/images/` and shown in the offline gallery.
 materials/                  120 maps at native resolution and physical metadata
 exports/                    Unity HDRP and URP channel packing
 blender/                    Material assets and editable Cycles scenes
-path_traced/renders/         10 close-ups and 3 still-life PNGs
+path_traced/renders/         10 close-ups, 3 still lifes, 3 interiors, 1 floor detail
 path_traced/                 Offline render gallery, metadata and verification
 docs/                       Import guide, critical review and comparison images
 source/                     Deterministic generators, scenes and validators
@@ -135,13 +159,16 @@ Wood profiles in [`source/wood_profiles.json`](source/wood_profiles.json) contro
 cut depth, pith offset, annual ring widths, vessel radius and length, ray sizes,
 finish, color and seeds. Changing them regenerates the maps together. The
 [pipeline guide](docs/PIPELINE.md) explains the structure models and their limits.
+[`source/architectural_scenes.py`](source/architectural_scenes.py) constructs
+the rooms, parquet layouts, fitted cuts, furniture and daylight openings.
 
 ## Rebuild
 
-Use Python 3.12 and Blender 4.3.2. Map generation needs NumPy, SciPy and Pillow;
+Use Python 3.12 and the **official Blender 4.3.2 build** with OpenImageDenoise.
+Some distribution builds omit that denoiser. Map generation needs NumPy, SciPy and Pillow;
 the Blender scene scripts use Blender's own Python. CPU rendering can take
-several hours. The build uses 768 maximum samples, 128 minimum samples, adaptive
-sampling and no denoising. Actual render settings and timings are recorded in
+several hours. Adaptive sampling uses a minimum of 128 samples, with 768 maximum
+for the raw studies and 512 for the guided interiors. Actual settings and timings are recorded in
 `path_traced/render_manifest.json`.
 
 ```bash
@@ -156,14 +183,18 @@ python source/generate_materials.py --resolution 4096
 blender -b --python source/render_path_traced.py -- \
   --kind macros --only 08_saddle_leather --size 1024 \
   --samples 768 --min-samples 128 --threshold .005
+blender -b --python source/render_path_traced.py -- \
+  --kind architecture --only 14_walnut_salon --size 2048 \
+  --samples 512 --min-samples 128 --threshold .01 --denoise
 ```
 
 The [build workflow](.github/workflows/build-suite.yml) generates and validates
-one shared map set, distributes the thirteen Cycles frames across CPU jobs,
+one shared map set, distributes the seventeen Cycles frames across CPU jobs,
 assembles portable scenes, commits the generated assets, and publishes a
 versioned ZIP release. Checks cover map dimensions and bit depth, exact packed channels,
 normal conventions, woven opacity, relative texture paths and actual Cycles
-settings. Visual realism still requires judgment; these checks cannot certify it.
+settings, physical parquet coverage and native render dimensions. Visual realism
+still requires judgment; these checks cannot certify it.
 
 ## Provenance and limits
 

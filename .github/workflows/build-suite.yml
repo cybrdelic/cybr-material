@@ -16,6 +16,12 @@ jobs:
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            source
+            .github
+            docs
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -39,7 +45,7 @@ jobs:
   render:
     needs: maps
     runs-on: ubuntu-24.04
-    timeout-minutes: 120
+    timeout-minutes: 180
     strategy:
       fail-fast: false
       matrix:
@@ -57,9 +63,18 @@ jobs:
           - {key: 11_stone_and_timber, material: 11_stone_and_timber, kind: scenes, size: 1280, threshold: .008}
           - {key: 12_leather_and_linen, material: 12_leather_and_linen, kind: scenes, size: 1280, threshold: .008}
           - {key: 13_metal_and_ceramic, material: 13_metal_and_ceramic, kind: scenes, size: 1280, threshold: .008}
+          - {key: 14_walnut_salon, material: 14_walnut_salon, kind: architecture, size: 2048, threshold: .01, samples: 512, denoise: true}
+          - {key: 15_oak_library, material: 15_oak_library, kind: architecture, size: 2048, threshold: .01, samples: 512, denoise: true}
+          - {key: 16_stone_kitchen, material: 16_stone_kitchen, kind: architecture, size: 2048, threshold: .01, samples: 512, denoise: true}
+          - {key: 17_parquet_detail, material: 17_parquet_detail, kind: architecture, size: 2048, threshold: .005, samples: 768, denoise: false}
     name: Cycles / ${{ matrix.key }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            source
+            .github
       - uses: actions/download-artifact@v4
         with:
           name: procedural-map-build
@@ -68,7 +83,7 @@ jobs:
       - name: Path trace the native scene
         run: |
           mkdir -p blender
-          blender -b --python source/render_path_traced.py -- --kind '${{ matrix.kind }}' --only '${{ matrix.material }}' --size '${{ matrix.size }}' --samples 768 --min-samples 128 --threshold '${{ matrix.threshold }}'
+          blender -b --python source/render_path_traced.py -- --kind '${{ matrix.kind }}' --only '${{ matrix.material }}' --size '${{ matrix.size }}' --samples '${{ matrix.samples || 768 }}' --min-samples 128 --threshold '${{ matrix.threshold }}' ${{ matrix.denoise && '--denoise' || '' }}
       - uses: actions/upload-artifact@v4
         with:
           name: cycles-${{ matrix.key }}
@@ -106,6 +121,7 @@ jobs:
           mkdir -p blender
           blender -b --python source/render_path_traced.py -- --kind macros --build-only --size 1024 --samples 768 --min-samples 128 --threshold .005
           blender -b --python source/render_path_traced.py -- --kind scenes --build-only --size 1280 --samples 768 --min-samples 128 --threshold .008
+          blender -b --python source/render_path_traced.py -- --kind architecture --build-only --size 2048 --samples 512 --min-samples 128 --threshold .01 --denoise
           python -c 'from pathlib import Path; Path("path_traced/render_manifest.json").write_text("{}\n")'
           python source/build_suite.py --skip-maps --skip-renders
       - name: Commit the complete generated assets
@@ -114,7 +130,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add materials exports blender path_traced docs OPEN_ME.html README.txt SHA256SUMS.txt
           if ! git diff --cached --quiet; then
-            git commit -m 'Publish validated V3 maps, Cycles renders, scenes and galleries'
+            git commit -m 'Publish V3.1 architectural interiors, hardwood floors and complete suite'
             git pull --rebase origin master
             git push origin HEAD:master
           fi
@@ -123,15 +139,17 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           cat > "$RUNNER_TEMP/release-notes.md" <<'NOTES'
-          Complete CYBR Material V3 suite: ten custom materials, all maps, Unity exports, editable Blender scenes, genuine Cycles renders, offline galleries, before/after images, source and checksums.
+          Complete CYBR Material V3.1 suite: ten custom materials, 120 native 4K maps, Unity exports, four editable Blender files, seventeen genuine Cycles renders, offline galleries, before/after images, source and checksums.
 
           All ten materials use native 4K procedural maps. Wood is sampled from a radial growth volume with physically sized vessels and rays. No source images or image-generated material inputs are used. The wood maps are finite board cuts; the suite is not scanned material data.
 
-          The critical review documents specific weaknesses, rejected wood approaches, final changes and remaining limitations. Scene previews are native 16-bit PNGs rendered by Cycles without denoising or added grain.
+          New 2048 × 1536 scenes: a seven-meter walnut herringbone salon, an oak basket-parquet reading room, a stone kitchen atelier, and a raw parquet detail. Floors contain individually cut boards with physical stock dimensions, joints and eased edges. No scene images or backdrops are generated from pictures.
+
+          The three full interiors use Cycles' OpenImageDenoise with albedo and normal guides at 512 maximum / 128 minimum samples. The ten material close-ups, three studio studies and new floor detail remain raw at 768 / 128 samples. Every native render is RGB16 PNG; no sharpening, artificial grain or image upscaling is applied. The critical review documents corrected floor gaps, furniture contacts and remaining material limits.
           NOTES
-          if gh release view v3.0.0 >/dev/null 2>&1; then
-            gh release edit v3.0.0 --notes-file "$RUNNER_TEMP/release-notes.md"
+          if gh release view v3.1.0 >/dev/null 2>&1; then
+            gh release edit v3.1.0 --notes-file "$RUNNER_TEMP/release-notes.md"
           else
-            gh release create v3.0.0 --target master --title 'CYBR Material V3 — natural detail and wear' --notes-file "$RUNNER_TEMP/release-notes.md"
+            gh release create v3.1.0 --target master --title 'CYBR Material V3.1 — architectural interiors and hardwood floors' --notes-file "$RUNNER_TEMP/release-notes.md"
           fi
-          gh release upload v3.0.0 build/CYBR_Material_V3.zip build/CYBR_Material_V3.zip.sha256 build/release.json --clobber
+          gh release upload v3.1.0 build/CYBR_Material_V3.zip build/CYBR_Material_V3.zip.sha256 build/release.json --clobber

@@ -1,7 +1,8 @@
 """Render the authored 4K surfaces with Blender Cycles CPU path tracing.
 
 Example: blender -b --python source/render_path_traced.py -- --kind macros
-No denoising, image blur, sharpening, artificial grain, or image upscaling.
+Raw surface studies; optional guided Cycles OIDN for architectural interiors.
+No image upscaling, sharpening or artificial grain.
 """
 import argparse
 import importlib.util
@@ -18,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'path_traced'
 argv = sys.argv[sys.argv.index('--') + 1:] if '--' in sys.argv else []
 parser = argparse.ArgumentParser()
-parser.add_argument('--kind', choices=('macros', 'scenes', 'all'), default='all')
+parser.add_argument('--kind', choices=('macros', 'scenes', 'architecture', 'all'), default='all')
 parser.add_argument('--only', nargs='*', default=[])
 parser.add_argument('--size', type=int, default=1280)
 parser.add_argument('--samples', type=int, default=1024)
@@ -27,6 +28,7 @@ parser.add_argument('--min-samples', type=int, default=128)
 parser.add_argument('--draft', action='store_true')
 parser.add_argument('--use-final-maps', action='store_true', help='Draft output with native material maps')
 parser.add_argument('--build-only', action='store_true')
+parser.add_argument('--denoise', action='store_true', help='Cycles OpenImageDenoise with albedo and normal guides; requires the official Blender build')
 args = parser.parse_args(argv)
 sys.argv = ['blender', '--'] + (['--draft'] if args.draft and not args.use_final_maps else [])
 module = importlib.util.spec_from_file_location('macro_setup', ROOT / 'source/render_macros.py')
@@ -43,7 +45,12 @@ def configure(scene, name):
     scene.render.engine = 'CYCLES'
     scene.cycles.device = 'CPU'
     scene.cycles.samples = args.samples
-    scene.cycles.use_denoising = False
+    scene.cycles.use_denoising = args.denoise
+    if args.denoise:
+        try:scene.cycles.denoiser='OPENIMAGEDENOISE'
+        except TypeError as error:raise RuntimeError('Use the official Blender 4.3.2 build for guided interior denoising') from error
+        scene.cycles.denoising_prefilter='ACCURATE'
+        scene.cycles.denoising_input_passes='RGB_ALBEDO_NORMAL'
     scene.cycles.use_adaptive_sampling = True
     scene.cycles.adaptive_threshold = args.threshold
     scene.cycles.adaptive_min_samples = min(args.min_samples, args.samples)
@@ -67,7 +74,7 @@ def configure(scene, name):
     scene.render.film_transparent = False
     scene.use_nodes = False
     scene['renderer'] = 'Blender Cycles / CPU / path tracing'
-    scene['postprocessing'] = 'AgX display transform only; no denoising or image filtering'
+    scene['postprocessing'] = 'Cycles guided OpenImageDenoise and AgX; no added grain or image sharpening' if args.denoise else 'AgX display transform only; no denoising or image filtering'
     return scene
 
 
@@ -373,9 +380,11 @@ def render(scene, key, spec=None):
             scene=scene.name, file=str(dest.relative_to(OUT)),
             engine=scene.render.engine, blender=bpy.app.version_string,
             device='CPU', resolution=[scene.render.resolution_x, scene.render.resolution_y],
-            maximum_samples=args.samples, minimum_samples=min(args.min_samples, args.samples),
-            adaptive_threshold=args.threshold, denoising=False,
-            postprocessing='Native AgX color transform only',
+            maximum_samples=scene.cycles.samples, minimum_samples=scene.cycles.adaptive_min_samples,
+            adaptive_threshold=scene.cycles.adaptive_threshold, denoising=scene.cycles.use_denoising,
+            denoiser=scene.cycles.denoiser if scene.cycles.use_denoising else None,
+            denoising_guides='RGB_ALBEDO_NORMAL' if scene.cycles.use_denoising else None,
+            postprocessing=scene.get('postprocessing','Native AgX color transform only'),
             color_depth='16-bit RGB PNG',
             view_transform=scene.view_settings.view_transform,
             look=scene.view_settings.look, exposure=scene.view_settings.exposure,
@@ -386,6 +395,11 @@ def render(scene, key, spec=None):
         if spec:
             data[key].update(material_id=spec['id'], inspection_width_m=spec['preview_diameter_m'],
                              geometry_height='Height_Macro.png', residual_normal='Normal_Micro_OpenGL.png')
+        for prop in ('room_dimensions_m','floor_material','floor_pattern','floor_board_length_m',
+                     'floor_board_width_m','floor_board_count','architecture_object_count','source_image_inputs'):
+            if prop in scene:
+                value=scene[prop]
+                data[key][prop]=list(value) if hasattr(value,'to_list') else value
         meta = OUT / 'metadata'
         meta.mkdir(exist_ok=True)
         stage = '_draft' if args.draft else ''
@@ -422,7 +436,7 @@ def save_scenes(scenes, filename):
                 'Ten native 4K procedural surfaces; dimensions in meters; no source image inputs.\n'
                 'Displaced objects pair Height_Macro geometry with the residual micro normal.\n'
                 'Other objects use the full OpenGL normal.\n'
-                'Rendering uses adaptive sampling without denoising or image smoothing.\n'
+                'Rendering uses adaptive sampling. Architecture uses guided Cycles OIDN; inspect each scene for its recorded settings.\n'
                 'Texture paths are relative to the supplied suite materials directory.\n')
     bpy.ops.wm.save_as_mainfile(filepath=str(ROOT / 'blender' / filename), compress=True)
 
@@ -451,6 +465,19 @@ def main():
             render(scene,key)
         if not args.draft:
             save_scenes(scenes,'CYBR_Cycles_Still_Lifes.blend')
+    if args.kind in ('architecture','all'):
+        from types import SimpleNamespace
+        architecture_spec=importlib.util.spec_from_file_location('architecture',ROOT/'source/architectural_scenes.py')
+        architecture=importlib.util.module_from_spec(architecture_spec);architecture_spec.loader.exec_module(architecture)
+        api=SimpleNamespace(args=args,studio=studio,surface=surface,atelier=atelier,
+                            curve_line=curve_line,lathe=lathe,assign_mesh=assign_mesh,
+                            patch=patch,relief=relief)
+        scenes=[]
+        for key,title in architecture.ARCHITECTURES:
+            if args.only and key not in args.only:continue
+            scene,key=architecture.build(api,key)
+            scenes.append(scene);render(scene,key)
+        if not args.draft:save_scenes(scenes,'CYBR_Cycles_Architecture.blend')
     print('PATH_TRACING_COMPLETE', flush=True)
 
 

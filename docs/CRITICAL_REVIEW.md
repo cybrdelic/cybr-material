@@ -73,6 +73,30 @@ widening every crack.
 - **False fabric solidity:** an opaque weave cannot look right against a bright
   background. The new `Opacity.png` follows the actual yarn coverage.
 
+## The architectural extension exposed more failures
+
+Small studio arrangements were insufficient to judge floors and large assets.
+V3.1 therefore adds three furnished rooms plus a raw floor detail at native
+2048 × 1536. This exposed problems that a swatch could hide: the first oak
+basket layout had missing patches and overlapping modules, some furniture
+supports stopped short of their seats, and the initial lighting flattened
+the wood beside a blank window.
+
+The basket centers are corrected, furniture contacts now meet, and daylight
+opens onto a modeled courtyard. Floor coverage is checked against the actual
+mesh geometry, independently of the layout recipe. Individual boards preserve
+stock dimensions and have modeled joints and bevels; wood is not stretched
+across long architectural components. Linen cushions now have opaque filling
+beneath the woven openings. Books have separate cover, spine and page geometry.
+
+The three interiors use guided Cycles denoising to reduce integration noise at
+room scale. The new floor detail and original studies remain raw so surface
+detail can be judged without that filter. Denoising is not a material fix and
+can lose fine structures. The room models remain deliberately authored:
+plants and upholstery are simplified, marble still repeats a finite mineral
+field, and the floor polish band approximates contact rather than simulating
+years of use. A larger scene does not make those limitations disappear.
+
 ## How to judge the revision
 
 The before images come from the actual V2 Cycles close-ups. The V3 close-ups use

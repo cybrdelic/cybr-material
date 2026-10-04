@@ -15,6 +15,8 @@ SPECS = json.loads((ROOT / 'materials/manifest.json').read_text())['materials']
 STUDIES = [('11_stone_and_timber', 'Stone and Timber'),
            ('12_leather_and_linen', 'Leather and Linen'),
            ('13_metal_and_ceramic', 'Metal and Ceramic')]
+ROOMS=[('14_walnut_salon','Walnut Parquet Salon'),('15_oak_library','Oak Reading Room'),
+       ('16_stone_kitchen','Stone Kitchen Atelier'),('17_parquet_detail','Parquet / Joints and Surface Wear')]
 
 
 def inspect():
@@ -22,14 +24,14 @@ def inspect():
     for file in (OUT / 'metadata').glob('*.json'):
         if '_draft' not in file.name:
             manifest[file.stem] = json.loads(file.read_text())
-    expected = [s['id'] + '_detail' for s in SPECS] + [key for key, _ in STUDIES]
+    expected = [s['id'] + '_detail' for s in SPECS] + [key for key, _ in STUDIES+ROOMS]
     for key in expected:
         record = manifest[key]
         file = OUT / record['file']
         assert file.parent.name == 'renders', key
         assert file.name == key + '.png', key
         assert record['engine'] == 'CYCLES', key
-        assert record['denoising'] is False, key
+        assert record['denoising'] is (key[:2] in ('14','15','16')), key
         with file.open('rb') as stream:
             header = stream.read(26)
         assert header[:8] == b'\x89PNG\r\n\x1a\n', key
@@ -77,12 +79,14 @@ def gallery():
                          s['id'][:2] + ' / ' + s['family'] + ' / ' + str(round(s['preview_diameter_m'] * 1000)) + ' mm view') for s in SPECS)
     content = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>CYBR / Cycles Studies</title><style>{STYLE}</style></head><body>
 <header><a class="logo" href="OPEN_RENDERS.html">CYBR</a><a href="README.txt">Render notes ↗</a></header><main>
-<div class="intro"><div><span class="meta">Cycles / Path-traced studies</span><h1>Natural detail &amp; wear.</h1></div><p>Ten surfaces in close-up and three still-life scenes. Open any render to inspect it at its native resolution or save the 16-bit PNG.</p></div>
-<button class="picture" data-image="renders/11_stone_and_timber.png" data-name="Stone and Timber"><img class="hero" src="renders/11_stone_and_timber.png" alt="Path-traced travertine sculpture, marble tray, oak cup, walnut boards and plaster" fetchpriority="high"></button>
-<div class="caption"><span>01 / Stone and Timber</span><span>Calacatta · Travertine · Walnut · Fumed oak · Lime plaster</span></div>
-<div class="studies">{card('12_leather_and_linen','Leather and Linen','02 / Stitched hide, woven flax and aged brass')}{card('13_metal_and_ceramic','Metal and Ceramic','03 / Crazed glaze, brushed brass and worn oxide')}</div>
+<div class="intro"><div><span class="meta">Cycles / Architecture and surface studies</span><h1>Materials in real rooms.</h1></div><p>Three full interiors, hardwood floor inspection, ten surface close-ups and three still-life studies. Open any render at its native resolution or save the 16-bit PNG.</p></div>
+<button class="picture" data-image="renders/14_walnut_salon.png" data-name="Walnut Parquet Salon"><img class="hero" src="renders/14_walnut_salon.png" alt="Walnut herringbone flooring in a furnished salon with linen, leather, stone and afternoon daylight" fetchpriority="high"></button>
+<div class="caption"><span>01 / Walnut Parquet Salon</span><span>7 × 6 m room · Individually cut parquet · 2048 × 1536 native render</span></div>
+<div class="studies">{card('15_oak_library','Oak Reading Room','02 / Fumed oak basket parquet, leather and cloth-bound books')}{card('16_stone_kitchen','Stone Kitchen Atelier','03 / Travertine floor, marble counters and timber joinery')}</div>
+<div class="section"><h2>Joints, grain &amp; finish</h2><span class="meta">Raw floor detail and material studies</span></div>
+<div class="studies">{card('17_parquet_detail','Parquet / Joints and Surface Wear','04 / Raw path-traced floor detail · 2048 × 1536')}{card('11_stone_and_timber','Stone and Timber','05 / Carved stone and finite timber cuts')}{card('12_leather_and_linen','Leather and Linen','06 / Stitched hide, woven flax and aged brass')}{card('13_metal_and_ceramic','Metal and Ceramic','07 / Crazed glaze, brushed brass and worn oxide')}</div>
 <div class="section"><h2>Surface studies</h2><span class="meta">10 close-ups / physical displacement</span></div><div class="grid">{cards}</div>
-</main><footer><span>Original procedural PBR surfaces · Blender Cycles · AgX color</span><span>Native renders · No denoising, blur, or added grain · <a href="render_manifest.json">Render settings</a></span></footer>
+</main><footer><span>Original procedural PBR surfaces · Blender Cycles · AgX color</span><span>Raw surface studies · Guided interior denoising · <a href="render_manifest.json">Render settings</a></span></footer>
 <dialog id="viewer"><div class="dialog-head"><span id="title"></span><div class="actions"><button id="zoom" aria-pressed="false">View 100%</button><a id="save" download>Save PNG ↓</a><button class="close" id="close" aria-label="Close render">×</button></div></div><div class="image-frame" id="frame"><img id="image" alt=""></div></dialog>
 <script>
 const dialog=document.getElementById('viewer'),frame=document.getElementById('frame'),img=document.getElementById('image'),zoom=document.getElementById('zoom');
@@ -125,16 +129,19 @@ def archive(manifest):
     readme='''CYBR MATERIAL 3 / Cycles Path-Traced Renders
 
 Open path_traced/OPEN_RENDERS.html in a browser.
-The renders folder contains 10 close-ups (1024 x 1024) and 3 still lifes
-(1280 x 960), all native 16-bit RGB PNGs rendered by Blender Cycles.
-AgX Medium High Contrast color; no denoising, image blur, sharpening,
-added film grain, or image upscaling. Contact sheets are display derivatives.
+The renders folder contains 10 close-ups (1024 x 1024), 3 still lifes
+(1280 x 960), 3 interiors and 1 floor detail (2048 x 1536).
+All are native 16-bit RGB PNGs rendered by Blender Cycles.
+Interiors use guided Cycles OpenImageDenoise. Surface studies and the floor
+detail are raw. No sharpening, added grain or image upscaling.
+Contact sheets are display derivatives.
 Actual settings and checksums are in render_manifest.json.
 
 The Blender scenes are an add-on to CYBR MATERIAL 3. Put the blender and
 path_traced directories beside the existing materials directory in the
 extracted CYBR MATERIAL 3 suite. The scenes use relative 4K texture paths.
 Open blender/CYBR_Cycles_Details.blend or CYBR_Cycles_Still_Lifes.blend.
+Open blender/CYBR_Cycles_Architecture.blend for the full interiors and floor.
 Select a scene from Blender's scene selector and press F12 to render.
 
 The complete suite archive includes these scenes, renders, and all textures.
@@ -143,7 +150,7 @@ Materials are original procedural surfaces, not scans.
     (OUT/'README.txt').write_text(readme)
     files=[p for p in OUT.rglob('*') if p.is_file() and 'drafts' not in p.parts
            and 'metadata' not in p.parts and p.name!='SHA256SUMS.txt']
-    files += [ROOT/'blender/CYBR_Cycles_Details.blend', ROOT/'blender/CYBR_Cycles_Still_Lifes.blend']
+    files += [ROOT/'blender/CYBR_Cycles_Details.blend', ROOT/'blender/CYBR_Cycles_Still_Lifes.blend',ROOT/'blender/CYBR_Cycles_Architecture.blend']
     files += [ROOT/'source/render_path_traced.py',ROOT/'source/verify_path_traced.py',ROOT/'source/package_path_traced.py']
     checksum=OUT/'SHA256SUMS.txt'
     checksum.write_text('\n'.join(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+p.relative_to(ROOT).as_posix() for p in sorted(files))+'\n')

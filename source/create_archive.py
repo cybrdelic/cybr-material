@@ -12,7 +12,7 @@ for file in sorted(ROOT.rglob('*')):
     if file.suffix in ('.log','.blend1','.pyc') or 'draft' in file.name.lower():continue
     if file.name=='SHA256SUMS.txt':continue
     files.append(file)
-for name in ['README.md','OPEN_ME.html','docs/IMPORT_GUIDE.md','docs/CRITICAL_REVIEW.md','blender/CYBR_Material_Atelier.blend','blender/CYBR_Cycles_Details.blend','blender/CYBR_Cycles_Still_Lifes.blend']:assert (ROOT/name).is_file(),name
+for name in ['README.md','OPEN_ME.html','docs/IMPORT_GUIDE.md','docs/CRITICAL_REVIEW.md','blender/CYBR_Material_Atelier.blend','blender/CYBR_Cycles_Details.blend','blender/CYBR_Cycles_Still_Lifes.blend','blender/CYBR_Cycles_Architecture.blend']:assert (ROOT/name).is_file(),name
 def sha(file):
     result=hashlib.sha256()
     with file.open('rb') as stream:
