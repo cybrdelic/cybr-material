@@ -5,6 +5,7 @@
   "displaced_objects": 7,
   "engine": "CYCLES",
   "portable_texture_links": true,
-  "denoising": false,
+  "guided_interior_denoising": false,
+  "verification": "complete",
   "passed": true
 }
