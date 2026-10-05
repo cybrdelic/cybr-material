@@ -90,6 +90,14 @@ mesh geometry, independently of the layout recipe. Individual boards preserve
 stock dimensions and have modeled joints and bevels; wood is not stretched
 across long architectural components. Linen cushions now have opaque filling
 beneath the woven openings. Books have separate cover, spine and page geometry.
+A later contact review caught a 17.5 mm gap beneath the book covers. Their
+bases now meet the actual shelf tops; the saved-mesh validator checks all
+240 bound spines against the steel shelf surfaces.
+The first full-size room render also exposed flat-shaded bevel strips on the
+cushions. The architectural builder now uses smooth surface normals, hardened
+planar normals and twelve segments on large upholstery curves. Parquet edges
+receive smooth eased-edge normals too. These are mesh corrections, not image
+blur or denoiser changes.
 
 The three interiors use guided Cycles denoising to reduce integration noise at
 room scale. The new floor detail and original studies remain raw so surface

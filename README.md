@@ -196,6 +196,14 @@ normal conventions, woven opacity, relative texture paths and actual Cycles
 settings, physical parquet coverage and native render dimensions. Visual realism
 still requires judgment; these checks cannot certify it.
 
+For a geometry-only correction after a complete build, the
+[architectural repair workflow](.github/workflows/render-scene.yml) renders selected
+architectural view, rebuilds the portable scene file, validates all seventeen
+outputs and packages the complete suite. Its manual input selects the view;
+a source commit marked `[scene repair]` selects all four architectural views and
+skips the full render matrix. Use this only when material maps and the other
+views are unchanged. Saved-mesh checks also verify book-to-shelf contacts.
+
 ## Provenance and limits
 
 All ten materials are original deterministic procedural work. No source

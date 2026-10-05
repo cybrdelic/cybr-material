@@ -33,6 +33,9 @@ class Interior:
     def box(self,name,pos,size,id,bevel=.006,angle=0,uv_offset=(0,0)):
         mat,spec=self.mat(id)
         ob=self.a.atelier.bevel_cube(name,pos,size,mat,min(bevel,min(size)*.40))
+        for face in ob.data.polygons:face.use_smooth=True
+        edge=next(m for m in ob.modifiers if m.type=='BEVEL')
+        edge.harden_normals=True;edge.segments=12 if bevel>=.025 else 5
         self.a.atelier.cube_uv_meters(ob,spec['tile_m'],spec.get('tile_y_m'))
         for loop in ob.data.uv_layers.active.data:loop.uv+=Vector(uv_offset)
         ob.rotation_euler.z=angle
@@ -40,7 +43,11 @@ class Interior:
 
     def solid(self,name,pos,size,color,rough=.65,bevel=.005,metal=0):
         mat=self.a.atelier.plain(name+' / finish',color,rough,metal)
-        return self.a.atelier.bevel_cube(name,pos,size,mat,min(bevel,min(size)*.4))
+        ob=self.a.atelier.bevel_cube(name,pos,size,mat,min(bevel,min(size)*.4))
+        for face in ob.data.polygons:face.use_smooth=True
+        edge=next(m for m in ob.modifiers if m.type=='BEVEL')
+        edge.harden_normals=True;edge.segments=12 if bevel>=.025 else 5
+        return ob
 
     def tube(self,name,points,id,radius):
         return self.a.curve_line(name,points,self.mat(id)[0],radius)
@@ -184,9 +191,9 @@ class Interior:
             center=self.rng.uniform(.12,.88);flip=-1 if self.rng.random()<.5 else 1
             ob=self.a.assign_mesh('Parquet / individually cut board',verts,faces,self.rng.choice(variants),
                  lambda k,p,l:(center+verts[k][0]/spec['tile_m'],.5+flip*verts[k][1]/spec.get('tile_y_m',spec['tile_m'])))
-            for f in ob.data.polygons:f.use_smooth=False
+            for f in ob.data.polygons:f.use_smooth=True
             ob.location=(cx,cy,.004);ob.rotation_euler.z=angle
-            mod=ob.modifiers.new('Parquet / eased edge, 0.45 mm','BEVEL');mod.width=.00045;mod.segments=2
+            mod=ob.modifiers.new('Parquet / eased edge, 0.45 mm','BEVEL');mod.width=.00045;mod.segments=3;mod.harden_normals=True
             ob.modifiers.new('Parquet / weighted normals','WEIGHTED_NORMAL')
             ob['physical_cut_m']=[width,length];ob['joint_gap_m']=gap;ob['material_id']=id
         if pattern=='herringbone':
@@ -260,7 +267,8 @@ def library(api):
     r.chair((-.80,.50,.02),.12);r.chair((1.18,.80,.02),-.52)
     for x in (-2.65,-1.32,0,1.32,2.65):r.box('Library / steel upright',(x,2.51,1.46),(.035,.34,2.73),'06_blackened_steel',.004)
     for z in (.36,.88,1.40,1.92,2.44):r.box('Library / steel shelf',(0,2.51,z),(5.38,.35,.035),'06_blackened_steel',.003)
-    for z in (.395,.915,1.435,1.955):
+    # Shelf plates are 35 mm thick. Covers sit 0.3 mm above their actual tops.
+    for z in (.3778,.8978,1.4178,1.9378):
         for section in range(4):
             x=-2.49+section*1.32
             for j in range(15):

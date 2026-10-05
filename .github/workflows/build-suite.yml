@@ -9,9 +9,10 @@ permissions:
   actions: read
 concurrency:
   group: cybr-suite-master
-  cancel-in-progress: true
+  cancel-in-progress: ${{ !contains(github.event.head_commit.message, '[scene repair]') }}
 jobs:
   maps:
+    if: ${{ !contains(github.event.head_commit.message, '[scene repair]') }}
     runs-on: ubuntu-24.04
     timeout-minutes: 45
     steps:
@@ -147,9 +148,9 @@ jobs:
 
           The three full interiors use Cycles' OpenImageDenoise with albedo and normal guides at 512 maximum / 128 minimum samples. The ten material close-ups, three studio studies and new floor detail remain raw at 768 / 128 samples. Every native render is RGB16 PNG; no sharpening, artificial grain or image upscaling is applied. The critical review documents corrected floor gaps, furniture contacts and remaining material limits.
           NOTES
-          if gh release view v3.1.0 >/dev/null 2>&1; then
-            gh release edit v3.1.0 --notes-file "$RUNNER_TEMP/release-notes.md"
+          if gh release view v3.1.1 >/dev/null 2>&1; then
+            gh release edit v3.1.1 --notes-file "$RUNNER_TEMP/release-notes.md"
           else
-            gh release create v3.1.0 --target master --title 'CYBR Material V3.1 — architectural interiors and hardwood floors' --notes-file "$RUNNER_TEMP/release-notes.md"
+            gh release create v3.1.1 --target master --title 'CYBR Material V3.1.1 — architectural interiors and hardwood floors' --notes-file "$RUNNER_TEMP/release-notes.md"
           fi
-          gh release upload v3.1.0 build/CYBR_Material_V3.zip build/CYBR_Material_V3.zip.sha256 build/release.json --clobber
+          gh release upload v3.1.1 build/CYBR_Material_V3.zip build/CYBR_Material_V3.zip.sha256 build/release.json --clobber

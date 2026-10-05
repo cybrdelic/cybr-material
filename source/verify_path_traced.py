@@ -42,6 +42,18 @@ for scene in scenes:
             assert scene['floor_board_count']>300
         if 'room_dimensions_m' in scene:
             assert scene['room_dimensions_m'][0]>6 and scene['room_dimensions_m'][1]>5
+        if 'Oak Reading Room' in scene.name:
+            def z_bounds(ob):
+                transform=Matrix.LocRotScale(ob.location,ob.rotation_euler.to_quaternion(),ob.scale)
+                values=[(transform@v.co).z for v in ob.data.vertices]
+                return min(values),max(values)
+            shelf_tops=[z_bounds(ob)[1] for ob in scene.objects if ob.name.startswith('Library / steel shelf')]
+            spines=[ob for ob in scene.objects if ob.name.startswith('Library / bound spine')]
+            assert len(spines)==240 and len(shelf_tops)==5
+            for ob in spines:
+                bottom=z_bounds(ob)[0]
+                gap=min((bottom-top for top in shelf_tops if top<=bottom+.0001),default=1)
+                assert -.0001<=gap<=.001,(ob.name,'Book/shelf contact gap',gap)
         if 'floor_material' in scene:
             # Check the actual mesh layout, independently of its tiling recipe.
             # This catches uncovered patches and overlapping basket modules.
