@@ -412,7 +412,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.44999998807907104,
     "material_ids": "01_calacatta_oro,02_roman_travertine,03_american_walnut,04_fumed_oak,05_champagne_brass,06_blackened_steel,07_bone_porcelain,08_saddle_leather,09_lime_plaster,10_natural_linen",
-    "elapsed_seconds": 3463.09,
+    "elapsed_seconds": 5172.11,
     "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
     "room_dimensions_m": [
       7.0,
@@ -426,8 +426,8 @@
     "floor_board_count": 776,
     "architecture_object_count": 1169,
     "source_image_inputs": 0,
-    "sha256": "ae5cff6530da6b7c3e2a4c7af91a42dad4589eeb4a68b6767041a996e461c914",
-    "bytes": 14321446
+    "sha256": "3b96e926329ded779660fa5ad84cc5a2270eb89cf7dee78f7bdf6b7d806871c5",
+    "bytes": 14318653
   },
   "15_oak_library": {
     "scene": "CYCLES / Architecture / Oak Reading Room",
@@ -451,7 +451,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.44999998807907104,
     "material_ids": "01_calacatta_oro,02_roman_travertine,04_fumed_oak,05_champagne_brass,06_blackened_steel,07_bone_porcelain,08_saddle_leather,09_lime_plaster,10_natural_linen",
-    "elapsed_seconds": 4516.61,
+    "elapsed_seconds": 3718.15,
     "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
     "room_dimensions_m": [
       6.4,
@@ -465,8 +465,8 @@
     "floor_board_count": 1028,
     "architecture_object_count": 2371,
     "source_image_inputs": 0,
-    "sha256": "c40f015565adab5e341dfaaca6cbf057e93efa36c576d7c9aa4a4a691156065c",
-    "bytes": 14678885
+    "sha256": "f5f016ddf853fe68903a44ab1730c21d3b2672d63c298673c6c1d56b331fd76e",
+    "bytes": 14674775
   },
   "16_stone_kitchen": {
     "scene": "CYCLES / Architecture / Stone Kitchen Atelier",
@@ -490,7 +490,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.44999998807907104,
     "material_ids": "01_calacatta_oro,02_roman_travertine,03_american_walnut,04_fumed_oak,05_champagne_brass,06_blackened_steel,07_bone_porcelain,08_saddle_leather,09_lime_plaster,10_natural_linen",
-    "elapsed_seconds": 2962.97,
+    "elapsed_seconds": 3889.5,
     "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
     "room_dimensions_m": [
       6.8,
@@ -500,8 +500,8 @@
     "floor_board_count": 0,
     "architecture_object_count": 542,
     "source_image_inputs": 0,
-    "sha256": "4f02b449bf568a120a7d4c594e6bb273ea4dc5a3bcc49b3281fd21a8ee3abeec",
-    "bytes": 14428140
+    "sha256": "efe7a748859e8a13e16f7f93dd51b530946a56678d14253c0e22d9b3ee840a2c",
+    "bytes": 14426923
   },
   "17_parquet_detail": {
     "scene": "CYCLES / Architecture / Parquet / Joints and Surface Wear",
@@ -525,7 +525,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.44999998807907104,
     "material_ids": "03_american_walnut,04_fumed_oak,05_champagne_brass,09_lime_plaster",
-    "elapsed_seconds": 4492.56,
+    "elapsed_seconds": 4583.17,
     "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
     "floor_material": "03_american_walnut",
     "floor_pattern": "herringbone",
@@ -534,7 +534,7 @@
     "floor_board_count": 84,
     "architecture_object_count": 92,
     "source_image_inputs": 0,
-    "sha256": "fe62a48094d88208fdeab8db6423e2ba2d5823e7a0b3c4490b4371ae5f40cd13",
-    "bytes": 15215669
+    "sha256": "566d66f47153801b45432e7c652ca312f586575dda6eb1a4af3344c9c0ac8c66",
+    "bytes": 15213779
   }
 }
