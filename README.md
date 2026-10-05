@@ -1,5 +1,12 @@
 # CYBR MATERIAL
 
+**Unreleased fabrication and study repair:** all seventeen outputs have been
+rebuilt for review. The ten material views now show shaped physical specimens;
+matched original surface cameras are retained separately. See the
+[repair review and remaining limits](docs/STUDY_REPAIR_REVIEW.md) and
+[all before/after comparisons](docs/images/comparisons/). Originals from
+v3.1.1 remain as native PNG evidence. This branch does not publish a release.
+
 A reproducible procedural PBR pipeline for dense natural surfaces and worn
 finishes: ten materials, native 4K maps, editable Blender scenes and genuine
 Cycles renders, including three full architectural interiors with hardwood
@@ -63,15 +70,15 @@ no sharpening, artificial grain or image upscaling in any final render.
 
 | Material | Tile width | Main surface structures |
 |---|---:|---|
-| Calacatta Oro | 800 mm | Fractured mineral seams, ochre fronts, intergrowth and abrasion |
+| Calacatta Oro | 2800 mm | Narrow primary seams, branching mineral fractures and restrained ochre intergrowth |
 | Roman Travertine | 650 mm | Porous sediment beds, torn cavities and mineral laminae |
 | American Walnut | 550 mm | Radial growth volume, diffuse lumen windows, fine rays and worn finish |
 | Fumed Oak | 450 mm | Radial growth volume, earlywood vessels, medullary plates and worn finish |
-| Champagne Brass | 200 mm | Tooling, grouped scores, tarnish fronts and verdigris |
-| Blackened Steel | 250 mm | Rubbed exposure, granular rust crusts and corrosion pits |
-| Bone Porcelain | 240 mm | Arrested craze cracks, glaze ripples, pinholes and chips |
-| Saddle Leather | 180 mm | Stretched creases, follicles, compression and burnished finish |
-| Lime Plaster | 650 mm | Overlapping trowel applications, aggregate and delamination |
+| Champagne Brass | 200 mm | Intact satin brushing and restrained fine tooling |
+| Blackened Steel | 250 mm | Intact satin oxide; fabricated specimens have exposed sheared edges |
+| Bone Porcelain | 240 mm | Clear glaze, firing flow, shaped walls and unglazed foot ring |
+| Saddle Leather | 180 mm | Fine irregular grain, follicles and restrained dye variation |
+| Lime Plaster | 650 mm | Broad overlapping trowel passes and polished leading lips |
 | Natural Linen | 85 mm | Fine flax weave, fibrils, slubs and transparent yarn openings |
 
 One UV tile must cover the listed distance. Arbitrary UV scale changes both
@@ -165,6 +172,9 @@ the rooms, parquet layouts, fitted cuts, furniture and daylight openings.
 ## Rebuild
 
 Use Python 3.12 and the **official Blender 4.3.2 build** with OpenImageDenoise.
+The repair was rendered locally with official Blender **4.5.3 LTS** and Cycles
+OptiX. Add `--device OPTIX` to a rendering command for a compatible NVIDIA GPU;
+the default remains CPU. Actual devices are recorded in the render manifest.
 Some distribution builds omit that denoiser. Map generation needs NumPy, SciPy and Pillow;
 the Blender scene scripts use Blender's own Python. CPU rendering can take
 several hours. Adaptive sampling uses a minimum of 128 samples, with 768 maximum

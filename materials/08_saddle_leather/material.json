@@ -1,6 +1,6 @@
 {
   "id": "08_saddle_leather",
-  "name": "Saddle Leather / Used",
+  "name": "Saddle Leather / Full Grain",
   "family": "Leather",
   "tile_m": 0.18,
   "height_scale_m": 0.00075,
@@ -10,7 +10,7 @@
   "coat": 0.015,
   "coat_roughness": 0.48,
   "preview_diameter_m": 0.065,
-  "description": "Cognac hide with soft stretched skin creases, fine follicles, compressed folds, burnished areas and grouped finish scuffs.",
+  "description": "Fine irregular submillimeter hide grain and follicles; restrained dye variation. Mesh seams and bends describe construction.",
   "resolution": 4096,
   "maps": {
     "BaseColor.png": "sRGB RGB8; intrinsic color, no lighting",

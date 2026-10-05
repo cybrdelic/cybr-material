@@ -6,6 +6,7 @@ scene, backdrop, floor, furniture asset or lighting input.
 import math,random
 import bpy
 from mathutils import Vector
+from fabrication import cushion,rug,slab_uv
 
 ARCHITECTURES=[('14_walnut_salon','Walnut Parquet Salon'),
                ('15_oak_library','Oak Reading Room'),
@@ -39,6 +40,11 @@ class Interior:
         self.a.atelier.cube_uv_meters(ob,spec['tile_m'],spec.get('tile_y_m'))
         for loop in ob.data.uv_layers.active.data:loop.uv+=Vector(uv_offset)
         ob.rotation_euler.z=angle
+        if spec['family']=='Wood' and any(word in name.lower() for word in ('front','face','panel','door','drawer')):
+            ob.data.materials[0]=mat.copy()
+            group=next(n for n in ob.data.materials[0].node_tree.nodes if n.type=='GROUP')
+            group.inputs['Timber Axis Rotation'].default_value=(math.pi/2,0,0)
+            ob['grain_axis']='Local Z / vertically fabricated panel'
         return ob
 
     def solid(self,name,pos,size,color,rough=.65,bevel=.005,metal=0):
@@ -70,27 +76,32 @@ class Interior:
 
     def chair(self,pos,angle=0):
         start=set(self.scene.objects)
-        self.box('Leather lounge / seat',(0,0,.43),(.75,.75,.20),'08_saddle_leather',.085)
-        back=self.box('Leather lounge / tilted back',(0,.29,.80),(.76,.20,.66),'08_saddle_leather',.08)
-        back.rotation_euler.x=math.radians(-12)
+        self.box('Leather lounge / steel seat cradle',(0,0,.335),(.70,.65,.032),'06_blackened_steel',.005)
+        cushion(self,'Leather lounge / seat',(0,-.025,.425),(.72,.69,.15),'08_saddle_leather',.055,.014)
+        cushion(self,'Leather lounge / padded back',(0,.29,.78),(.72,.16,.60),'08_saddle_leather',.048,.009)
+        for x in (-.28,.28):
+            self.tube('Leather lounge / back support',[(x,.26,.32),(x,.37,1.01)],'06_blackened_steel',.013)
         for x in (-.43,.43):
             self.box('Oak arm / finite cut',(x,.0,.66),(.085,.42,.07),'04_fumed_oak',.02,uv_offset=(x*.27,0))
-            self.tube('Brass chair / bent rail',[(x,-.30,.11),(x,-.29,.66),(x,.34,.66),(x,.34,.10)],'05_champagne_brass',.015)
-        for x in (-.29,.29):
-            for y in (-.27,.27):self.box('Steel chair / foot',(x,y,.1653),(.038,.038,.330),'06_blackened_steel',.008)
-        for y in (-.29,.34):self.tube('Brass chair / under-seat tie',[(-.43,y,.37),(.43,y,.37)],'05_champagne_brass',.012)
+            self.tube('Brass chair / structural bent side frame',[(x,-.30,.020),(x,-.29,.66),(x,.34,.66),(x,.34,.020)],'05_champagne_brass',.015)
+        from interior_finishes import finish,cylinder
+        pad=finish('Hardware / black elastomer pads',(.016,.018,.017),.83)
+        for x in (-.43,.43):
+            for y in (-.30,.34):cylinder(self,'Leather lounge / frame floor pad',(x,y,0),.018,.026,pad)
+        for y in (-.29,.34):self.tube('Brass chair / structural under-seat tie',[(-.43,y,.335),(.43,y,.335)],'05_champagne_brass',.012)
+        nickel=finish('Fittings / satin nickel',(.48,.49,.475),.24,1,True)
+        for x in (-.43,.43):
+            for y in (-.13,.13):cylinder(self,'Leather lounge / arm fixing screw',(x,y,.696),.004,.0015,nickel)
         self.furniture_group(start,pos,angle)
 
     def sofa(self,pos,angle=0):
         start=set(self.scene.objects)
         self.box('Linen sofa / upholstered base',(0,0,.36),(2.35,.94,.27),'10_natural_linen',.095)
         for x in (-.73,0,.73):
-            self.box('Linen sofa / seat cushion',(x,-.07,.56),(.70,.80,.19),'10_natural_linen',.078)
+            cushion(self,'Linen sofa / seat cushion',(x,-.07,.56),(.70,.80,.19),'10_natural_linen',.066,.008)
             self.solid('Seat cushion / foam beneath woven holes',(x,-.07,.56),(.694,.794,.184),(.60,.59,.55),.9,.075)
-            back=self.box('Linen sofa / back cushion',(x,.30,.89),(.70,.24,.61),'10_natural_linen',.09)
-            back.rotation_euler.x=math.radians(-9)
+            back=cushion(self,'Linen sofa / back cushion',(x,.30,.89),(.70,.24,.61),'10_natural_linen',.066,.003)
             core=self.solid('Back cushion / foam beneath woven holes',(x,.30,.89),(.694,.234,.604),(.60,.59,.55),.9,.087)
-            core.rotation_euler.x=math.radians(-9)
             # Actual welt cord follows the cushion edge rather than being painted.
             pts=[(x-.28,-.40,.625),(x+.28,-.40,.625),(x+.32,-.35,.625),
                  (x+.32,.20,.625),(x+.27,.25,.625),(x-.27,.25,.625),
@@ -136,9 +147,17 @@ class Interior:
         data=bpy.data.lights.new('Sun / late afternoon','SUN');data.energy=1.20;data.angle=.035;data.color=(1,.93,.82)
         ob=bpy.data.objects.new(data.name,data);self.scene.collection.objects.link(ob)
         ob.location=(side*10,-4,7);a.look_at(ob,(0,.2,0))
-        self.box('Courtyard / lime boundary',(side*(width/2+3.6),.8,1.45),(.20,8.4,2.9),ps,.008)
+        self.box('Courtyard / garden retaining wall',(side*(width/2+5.8),.8,.48),(.20,10,.96),ps,.008)
         self.box('Courtyard / stone paving',(side*(width/2+1.9),.6,-.02),(3.6,8.0,.04),'02_roman_travertine',.005)
-        self.plant((side*(width/2+1.45),win_y+.45,.0))
+        self.solid('Courtyard / continuous garden ground',(side*(width/2+12),0,-.065),(24,30,.08),(.20,.22,.14),.95,.002)
+        self.plant((side*(width/2+1.45),win_y+.45,.0),ground=True)
+        for y in (-1.5,2.4,4.0):self.plant((side*(width/2+4.6),y,0),ground=True)
+        for y in (-1.65,2.65):
+            self.box('Courtyard / pergola post',(side*(width/2+3.15),y,1.45),(.085,.085,2.9),'06_blackened_steel',.002)
+        self.box('Courtyard / pergola header',(side*(width/2+3.15),.50,2.85),(.095,4.5,.16),'04_fumed_oak',.003)
+        for j in range(9):self.box('Courtyard / open pergola rafter',(side*(width/2+1.65),-1.55+j*.51,2.96),(3.15,.07,.14),'04_fumed_oak',.003)
+        for j in range(12):
+            self.box('Courtyard / recessed paving joint',(side*(width/2+1.9),-3+j*.65,.002),(3.6,.003,.003),'06_blackened_steel',.0002)
         self.scene['room_dimensions_m']=[width,depth,height]
 
     def clip(self,poly):
@@ -214,12 +233,12 @@ class Interior:
         self.scene['floor_material']=id;self.scene['floor_pattern']=pattern
         self.scene['floor_board_length_m']=length;self.scene['floor_board_width_m']=width
 
-    def plant(self,pos):
-        self.vase('Porcelain / olive planter',pos,'07_bone_porcelain',.37,.21)
+    def plant(self,pos,ground=False):
+        if not ground:self.vase('Porcelain / olive planter',pos,'07_bone_porcelain',.37,.21)
         bark=self.a.atelier.plain('Olive / bark',(.18,.13,.085),.86)
         leaf=self.a.atelier.plain('Olive / leaf',(.105,.16,.072),.72)
-        self.a.curve_line('Olive / trunk',[(pos[0],pos[1],pos[2]+.3),(pos[0]+.025,pos[1],pos[2]+.8),(pos[0]-.04,pos[1]+.02,pos[2]+1.65)],bark,.019)
-        for i in range(26):
+        self.a.curve_line('Olive / trunk',[(pos[0],pos[1],pos[2]+(0 if ground else .3)),(pos[0]+.025,pos[1],pos[2]+.8),(pos[0]-.04,pos[1]+.02,pos[2]+1.65)],bark,.019)
+        for i in range(160 if ground else 26):
             a=self.rng.uniform(0,math.tau);z=pos[2]+self.rng.uniform(.85,1.75);r=self.rng.uniform(.16,.46)
             end=(pos[0]+math.cos(a)*r,pos[1]+math.sin(a)*r,z)
             self.a.curve_line('Olive / twig',[(pos[0],pos[1],z-.12),end],bark,.0025)
@@ -242,7 +261,8 @@ def salon(api):
     fx=1.85
     r.room(7,6,3.1,back_opening=(fx,.96,.08,1.52));r.parquet('03_american_walnut')
     r.sofa((-.75,1.35,.02));r.chair((1.18,.45,.02),-.32)
-    r.box('Calacatta / low coffee table',(-.52,.0,.46),(1.25,.72,.045),'01_calacatta_oro',.020)
+    table=r.box('Calacatta / low coffee table',(-.52,.0,.46),(1.25,.72,.045),'01_calacatta_oro',.002)
+    slab_uv(table,2.8)
     for x in (-.95,-.12):r.box('Travertine / table pier',(x,0,.23),(.22,.49,.43),'02_roman_travertine',.012)
     for x in (fx-.55,fx+.55):r.box('Travertine / fireplace jamb',(x,2.79,.82),(.18,.30,1.44),'02_roman_travertine',.018)
     r.box('Travertine / fireplace lintel',(fx,2.79,1.58),(1.28,.30,.18),'02_roman_travertine',.016)
@@ -255,9 +275,9 @@ def salon(api):
     r.plant((-2.78,1.10,.02))
     r.box('Steel / sculptural wall panel',(.50,2.865,1.89),(1.05,.04,.90),'06_blackened_steel',.009)
     # A woven rug leaves most of the parquet exposed; holes are real opacity.
-    mat,spec=r.mat('10_natural_linen');rug=api.patch('Linen / low woven rug',mat,spec,(2.35,1.55),(-.72,-.40,.024),True,n=129)
-    # This room-scale sheet uses full normal; remove the inspection displacement.
-    for mod in list(rug.modifiers):rug.modifiers.remove(mod)
+    rug(r)
+    from complete_rooms import apply
+    apply(r,'14_walnut_salon')
     return r.finish('14_walnut_salon')
 
 
@@ -265,7 +285,9 @@ def library(api):
     r=Interior(api,'15_oak_library','Oak Reading Room',(2.55,-2.33,1.52),(-.60,.95,.91),29)
     r.room(6.4,5.5,3.0,'left');r.parquet('04_fumed_oak','basket')
     r.chair((-.80,.50,.02),.12);r.chair((1.18,.80,.02),-.52)
-    for x in (-2.65,-1.32,0,1.32,2.65):r.box('Library / steel upright',(x,2.51,1.46),(.035,.34,2.73),'06_blackened_steel',.004)
+    for x in (-2.65,-1.32,0,1.32,2.65):r.box('Library / steel upright',(x,2.58,1.40),(.035,.045,2.115),'06_blackened_steel',.004)
+    for x in (-2.65,2.65):
+        for z in (.36,1.40,2.44):r.box('Library / recessed wall bracket',(x,2.69,z),(.03,.25,.03),'06_blackened_steel',.003)
     for z in (.36,.88,1.40,1.92,2.44):r.box('Library / steel shelf',(0,2.51,z),(5.38,.35,.035),'06_blackened_steel',.003)
     # Shelf plates are 35 mm thick. Covers sit 0.3 mm above their actual tops.
     for z in (.3778,.8978,1.4178,1.9378):
@@ -275,15 +297,29 @@ def library(api):
                 w=r.rng.uniform(.022,.055);h=r.rng.uniform(.19,.36)
                 id='08_saddle_leather' if j%4==0 else '10_natural_linen'
                 r.solid('Library / paper fore-edge',(x+w/2,2.48,z+h/2),(w-.005,.234,h-.009),(.61,.57,.48),.90,.001)
-                tint=.36+r.rng.random()*.77
+                tint=.22+r.rng.random()*.68
+                palette=[(.42,.48,.32),(.28,.36,.49),(.58,.24,.20),(.59,.45,.27),(.83,.75,.59),(.32,.26,.20)]
+                binding_tint=tuple(c*(.72+tint*.45) for c in palette[r.rng.randrange(len(palette))])+(1,)
                 for xx in (x+.0015,x+w-.0015):
                     ob=r.box('Library / cloth book cover',(xx,2.48,z+h/2),(.003,.247,h),id,.001)
                     ob.data.materials[0]=ob.data.materials[0].copy();g=next(n for n in ob.data.materials[0].node_tree.nodes if n.type=='GROUP')
-                    g.inputs['Tint'].default_value=(tint,tint*.88,tint*.75,1)
+                    g.inputs['Tint'].default_value=binding_tint
                 ob=r.box('Library / bound spine',(x+w/2,2.352,z+h/2),(w,.014,h),id,.005)
                 ob.data.materials[0]=ob.data.materials[0].copy();g=next(n for n in ob.data.materials[0].node_tree.nodes if n.type=='GROUP')
-                g.inputs['Tint'].default_value=(tint,tint*.88,tint*.75,1)
+                g.inputs['Tint'].default_value=binding_tint
+                # Raised spine bands and a small stamped title label give
+                # bindings thickness, scale and varied plausible identities.
+                for dz in (.07,h-.055):
+                    r.box('Library / raised binding band',(x+w/2,2.341,z+dz),(w*.94,.004,.003),id,.0005)
+                label_colors=[(.25,.12,.045),(.11,.15,.13),(.27,.20,.12),(.38,.30,.18)]
+                r.solid('Library / foil spine title',(x+w/2,2.342,z+h*.67),(w*.65,.0015,.019),label_colors[j%4],.5,.0003)
+                for line in range(3):r.solid('Library / title rule',(x+w/2,2.3405,z+h*.67+.005-line*.005),(w*.46,.0005,.0007),(.57,.45,.22),.48,.0001)
                 x+=w+.008
+            # A horizontal stack occupies the breathing space after the run.
+            for stack in range(2):
+                bx=x+.14;bottom=z+stack*.030
+                r.solid('Library / horizontal page block',(bx,2.47,bottom+.014),(.20,.22,.025),(.64,.60,.51),.88,.001)
+                for zz in (bottom+.001,bottom+.028):r.box('Library / horizontal cloth cover',(bx,2.47,zz),(.208,.232,.003),'10_natural_linen',.001)
     r.box('Steel / low cabinet carcass',(-2.42,1.72,.35),(.42,.43,.65),'06_blackened_steel',.014)
     for z in (.20,.51):r.box('Oak / finite cabinet face',(-2.42,1.495,z),(.39,.02,.285),'04_fumed_oak',.004)
     for z in (.20,.51):r.box('Brass / cabinet pull',(-2.42,1.485,z),(.12,.017,.017),'05_champagne_brass',.004)
@@ -291,49 +327,14 @@ def library(api):
     r.box('Travertine / table support',(.15,-.16,.28),(.20,.27,.53),'02_roman_travertine',.012)
     r.vase('Porcelain / reading cup',(.18,-.13,.568),'07_bone_porcelain',.105,.045)
     r.plant((-2.42,.18,.02))
+    from complete_rooms import apply
+    apply(r,'15_oak_library')
     return r.finish('15_oak_library')
 
 
 def kitchen(api):
-    r=Interior(api,'16_stone_kitchen','Stone Kitchen Atelier',(2.78,-2.45,1.59),(-.46,.77,1.00),28)
-    r.room(6.8,5.8,3.1,'left')
-    tile=.60
-    for i in range(-6,6):
-        for j in range(-5,5):
-            x=(i+.5)*tile;y=(j+.5)*tile
-            if abs(x)<3.4 and abs(y)<2.9:r.box('Travertine / floor tile',(x,y,.01),(tile-.002,tile-.002,.022),'02_roman_travertine',.0012,uv_offset=(i*.31,j*.19))
-    r.solid('Stone floor / joint bed',(0,0,-.01),(6.8,5.8,.03),(.29,.25,.20),.90)
-    for x in (-2.4,-1.6,-.8,0,.8,1.6,2.4):
-        r.box('Steel kitchen / cabinet carcass',(x,2.51,.46),(.78,.62,.88),'06_blackened_steel',.009)
-        for dx in (-.196,.196):
-            for z in (.27,.67):r.box('Oak kitchen / finite door field',(x+dx,2.185,z),(.37,.02,.38),'04_fumed_oak',.004,uv_offset=(r.rng.uniform(-.045,.045),0))
-        r.box('Brass kitchen / pull',(x,2.161,.73),(.18,.018,.018),'05_champagne_brass',.003)
-    r.box('Calacatta / rear counter',(0,2.45,.936),(5.70,.80,.055),'01_calacatta_oro',.012)
-    for i in range(8):
-        panel=r.box('Calacatta / bookmatched backsplash panel',((i-3.5)*.72,2.865,1.36),(.718,.025,.72),'01_calacatta_oro',.0015)
-        for loop in panel.data.uv_layers.active.data:
-            if i%2:loop.uv.x=1-loop.uv.x
-            loop.uv+=Vector(((i//2)*.137,(i//2)*.193))
-    r.box('Steel kitchen / range hood',(-1.48,2.54,2.28),(1.12,.68,.62),'06_blackened_steel',.016)
-    r.box('Steel kitchen / cooktop',(-1.48,2.37,.972),(1.06,.52,.022),'06_blackened_steel',.010)
-    for x in (-1.73,-1.23):
-        for y in (2.23,2.53):r.tube('Cooktop / actual burner ring',[(x+.10*math.cos(k*math.tau/48),y+.10*math.sin(k*math.tau/48),.999) for k in range(49)],'06_blackened_steel',.006)
-    # Island is assembled from stone panels with real reveals and a waterfall edge.
-    r.box('Calacatta / island top',(.20,.28,.97),(2.55,1.10,.065),'01_calacatta_oro',.018)
-    for x in (-1.07,1.47):r.box('Calacatta / waterfall panel',(x,.28,.48),(.045,1.10,.95),'01_calacatta_oro',.006)
-    r.box('Steel / island recessed plinth',(.20,.28,.36),(2.30,.91,.64),'06_blackened_steel',.010)
-    for x in (-.63,.23,1.09):
-        r.box('Walnut / island door',(x,-.282,.53),(.51,.028,.52),'03_american_walnut',.005,uv_offset=(r.rng.uniform(-.015,.015),0))
-        r.box('Brass / island handle',(x,-.310,.67),(.16,.017,.017),'05_champagne_brass',.004)
-    for x in (-.35,.74):
-        r.box('Leather / counter stool',(x,-1.05,.70),(.44,.42,.09),'08_saddle_leather',.04)
-        for dx in (-.16,.16):
-            for dy in (-.14,.14):r.box('Steel / stool leg',(x+dx,-1.05+dy,.35),(.023,.023,.69),'06_blackened_steel',.004)
-        r.tube('Brass / stool footrest',[(x-.16,-1.19,.25),(x+.16,-1.19,.25)],'05_champagne_brass',.009)
-    r.vase('Porcelain / kitchen vessel',(.67,.34,1.003),'07_bone_porcelain',.29,.105)
-    r.box('Linen / folded tea cloth',(-.31,.38,1.007),(.38,.44,.009),'10_natural_linen',.003,angle=.10)
-    r.plant((-2.89,1.20,.03))
-    return r.finish('16_stone_kitchen')
+    from kitchen_fabrication import build as fabricated_kitchen
+    return fabricated_kitchen(api,Interior)
 
 
 def floor_detail(api):
@@ -342,13 +343,20 @@ def floor_detail(api):
     if not api.args.draft:
         r.scene.cycles.samples=768;r.scene.cycles.adaptive_min_samples=128;r.scene.cycles.adaptive_threshold=.005
     r.scene['postprocessing']='AgX display transform only; raw path-traced floor detail'
-    r.width=1.85;r.depth=1.65;r.parquet('03_american_walnut')
+    r.width=3.7;r.depth=3.3;r.parquet('03_american_walnut')
     # One real-height inspection board among the floor cuts exposes fine relief.
-    mat,spec=r.mat('04_fumed_oak');displaced,_=api.surface('04_fumed_oak',True)
-    board=api.patch('Oak / displaced finish comparison',displaced,spec,(.09,.44),(.53,.12,.0355),n=385)
-    body=board.modifiers.new('Oak / actual solid batten thickness','SOLIDIFY');body.thickness=.0155;body.offset=-1
-    r.box('Brass / threshold strip',(-.59,.0,.025),(.018,1.6,.018),'05_champagne_brass',.0015)
-    r.box('Lime plaster / skirting',(0,.69,.10),(1.85,.045,.20),'09_lime_plaster',.004)
+    # Routed 18 mm recess through the flooring, top flush at 20 mm.
+    for ob in list(r.scene.objects):
+        if not ob.name.startswith('Parquet / individually'):continue
+        # A real boolean kerf leaves no overlapping wood beneath the inlay.
+        cutter=r.solid('Temporary inlay router',(-.59,0,.020),(.018,4,.050),(.1,.1,.1),.8,0)
+        mod=ob.modifiers.new('Parquet / routed brass recess','BOOLEAN');mod.operation='DIFFERENCE';mod.object=cutter
+        bpy.context.view_layer.objects.active=ob
+        bpy.ops.object.modifier_apply(modifier=mod.name)
+        bpy.data.objects.remove(cutter,do_unlink=True)
+    r.box('Brass / flush recessed threshold',(-.59,.0,.0185),(.0175,3.3,.003),'05_champagne_brass',.00035)
+    r.box('Lime plaster / skirting',(0,.69,.10),(20,.045,.20),'09_lime_plaster',.004)
+    r.solid('Floor detail / continuous neutral surround',(0,0,-.041),(200,200,.02),(.16,.15,.13),.9,.001)
     a=api.atelier
     a.area(r.scene,'Grazing window / board grain',(-1.1,-.45,.33),(0,0,.025),65,.90,1.20,color=(1,.955,.89))
     a.area(r.scene,'Soft sky / grain fill',(.60,.30,1.3),(0,0,.025),28,1.1,color=(.85,.92,1))

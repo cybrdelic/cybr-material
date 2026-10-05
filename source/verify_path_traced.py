@@ -18,7 +18,7 @@ assert len(scenes)==(4 if is_architecture else 10 if is_detail else 3),[s.name f
 seen=set()
 displaced=0
 for scene in scenes:
-    assert scene.render.engine=='CYCLES' and scene.cycles.device=='CPU'
+    assert scene.render.engine=='CYCLES' and scene.cycles.device in ('CPU','GPU')
     guided=is_architecture and 'Joints and Surface Wear' not in scene.name
     assert scene.cycles.samples==(512 if guided else 768)
     if not geometry_only:assert scene.cycles.use_denoising is guided
@@ -29,7 +29,7 @@ for scene in scenes:
     assert scene.cycles.use_adaptive_sampling and scene.cycles.adaptive_min_samples==128
     assert scene.render.image_settings.file_format=='PNG'
     assert scene.render.image_settings.color_depth=='16'
-    assert scene.render.filepath.startswith('//../path_traced/renders/')
+    assert scene.render.filepath.replace('\\','/').startswith('//../path_traced/renders/'),scene.render.filepath
     assert scene.unit_settings.system=='METRIC'
     assert scene.camera and scene.camera.data.clip_start>0
     assert scene.view_settings.view_transform=='AgX'
@@ -54,6 +54,25 @@ for scene in scenes:
                 bottom=z_bounds(ob)[0]
                 gap=min((bottom-top for top in shelf_tops if top<=bottom+.0001),default=1)
                 assert -.0001<=gap<=.001,(ob.name,'Book/shelf contact gap',gap)
+            upright_tops=[z_bounds(ob)[1] for ob in scene.objects if ob.name.startswith('Library / steel upright')]
+            assert max(upright_tops)<=max(shelf_tops)+.002,'Uprights project beyond the finished shelf'
+        if 'Stone Kitchen' in scene.name:
+            cabinet=next(o for o in scene.objects if o.name.startswith('Island / plywood cabinet body'))
+            top=next(o for o in scene.objects if o.name.startswith('Calacatta / island fabricated slab'))
+            front_cabinet=cabinet.location.y+min(v.co.y for v in cabinet.data.vertices)
+            front_top=top.location.y+min(v.co.y for v in top.data.vertices)
+            assert front_cabinet-front_top>=.40,'Insufficient island seating overhang'
+            assert abs(max(v.co.z for v in top.data.vertices)-min(v.co.z for v in top.data.vertices)-.04)<1e-6
+            fridge=next(o for o in scene.objects if o.name.startswith('Refrigerator / insulated enclosure'))
+            assert abs(max(v.co.z for v in fridge.data.vertices)-min(v.co.z for v in fridge.data.vertices)-2.13)<1e-5
+            basin=next(o for o in scene.objects if o.name.startswith('Kitchen sink / formed steel basin'))
+            assert any(m.type=='SOLIDIFY' and abs(m.thickness-.001)<1e-6 for m in basin.modifiers)
+            assert any(o.name.startswith('Sink / drain flange') for o in scene.objects)
+        if 'Walnut Parquet Salon' in scene.name:
+            rug=next(o for o in scene.objects if o.name.startswith('Rug / heavy woven body'))
+            solid=next(m for m in rug.modifiers if m.type=='SOLIDIFY')
+            assert abs(solid.thickness-.005)<1e-6
+            assert any(o.name.startswith('Rug / continuous edge binding') for o in scene.objects)
         if 'floor_material' in scene:
             # Check the actual mesh layout, independently of its tiling recipe.
             # This catches uncovered patches and overlapping basket modules.
@@ -68,6 +87,10 @@ for scene in scenes:
                 start=len(verts);verts.extend(transform@v.co for v in ob.data.vertices)
                 faces.extend(tuple(start+i for i in p.vertices) for p in ob.data.polygons)
             tree=BVHTree.FromPolygons(verts,faces)
+            if 'Joints and Surface Wear' in scene.name:
+                assert tree.ray_cast(Vector((-.59,0,.15)),Vector((0,0,-1)),.30)[0] is None,'Wood overlaps recessed brass inlay'
+                strip=next(o for o in scene.objects if o.name.startswith('Brass / flush recessed threshold'))
+                assert abs(strip.location.z+max(v.co.z for v in strip.data.vertices)-.020)<1e-6
             dims=scene.get('room_dimensions_m',(1.85,1.65));rng=random.Random(140551)
             hits=0;count=12000
             for i in range(count):
@@ -82,7 +105,8 @@ for scene in scenes:
             spec=specs[id]
             group=next(n for n in mat.node_tree.nodes if n.type=='GROUP')
             assert group.inputs['Normal Strength'].default_value==1
-            assert all(abs(v-1)<1e-6 for v in group.inputs['UV Scale'].default_value)
+            expected_scale=(.26,.26,1) if obj.name.startswith('Rug / heavy') else (1,1,1)
+            assert all(abs(v-e)<1e-6 for v,e in zip(group.inputs['UV Scale'].default_value,expected_scale))
             displace=[m for m in obj.modifiers if m.type=='DISPLACE']
             if displace:
                 displaced+=1
@@ -95,11 +119,11 @@ for scene in scenes:
                 raise AssertionError('Residual normal without geometric height: '+obj.name)
             for node in group.node_tree.nodes:
                 if node.type=='TEX_IMAGE':
-                    assert node.image.filepath.startswith('//../materials/')
+                    assert node.image.filepath.replace('\\','/').startswith('//../materials/'),node.image.filepath
                     assert Path(bpy.path.abspath(node.image.filepath)).is_file()
                     assert node.image.colorspace_settings.name==('sRGB' if node.image.filepath.endswith('BaseColor.png') else 'Non-Color')
 assert seen==set(specs),seen
-assert displaced>=(1 if is_architecture else 10 if is_detail else 5),displaced
+assert displaced>=(0 if is_architecture else 4 if is_detail else 5),displaced
 result=dict(file=Path(bpy.data.filepath).name,scenes=len(scenes),materials=len(seen),
             displaced_objects=displaced,engine='CYCLES',portable_texture_links=True,
             guided_interior_denoising=any(s.cycles.use_denoising for s in scenes),

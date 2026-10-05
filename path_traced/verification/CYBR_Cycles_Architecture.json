@@ -2,7 +2,7 @@
   "file": "CYBR_Cycles_Architecture.blend",
   "scenes": 4,
   "materials": 10,
-  "displaced_objects": 1,
+  "displaced_objects": 0,
   "engine": "CYCLES",
   "portable_texture_links": true,
   "guided_interior_denoising": true,

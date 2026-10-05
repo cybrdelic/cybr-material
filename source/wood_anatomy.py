@@ -149,11 +149,11 @@ def wood(x,y,n,oak=False):
     scuff=paths(n,seed+17,380,width=(.00009,.00025),length=(.003,.025),angle=.9,jitter=.14,bend=.004)*contact
     checks=paths(n,seed+18,45,width=(.00016,.00044),length=(.004,.032),angle=math.pi/2,jitter=.025,bend=.006)*(.22+.78*early)
     rgb=color(tuple(p['base_srgb']),.033*annual+.021*bundles+.016*fibers+.006*cellular)
-    late_tone=clamp(density*(.63 if oak else .69)*(.80+.20*bundles))
+    late_tone=clamp(density*(.25 if oak else .22)*smooth(bundles+.5*fibers,-.7,.7))
     rgb=blend(rgb,tuple(p['late_srgb']),late_tone)
-    rgb=blend(rgb,tuple(p['pore_srgb']),pore*(.30 if oak else .25)+checks*.26)
+    rgb=blend(rgb,tuple(p['pore_srgb']),pore*(.48 if oak else .24)+checks*.08)
     rgb=blend(rgb,tuple(p['ray_srgb']),ray*(.24 if oak else .07))
-    rgb=blend(rgb,tuple(p['abraded_srgb']),scuff*.20+contact*.045)
+    rgb=blend(rgb,tuple(p['abraded_srgb']),scuff*.04)
     # Relief is independently authored in meters from lumen and finish models.
     # Broad pigment bands do not become carved trenches.
     meters=2e-6*fibers+1e-6*cellular+3e-6*density+3e-6*ray

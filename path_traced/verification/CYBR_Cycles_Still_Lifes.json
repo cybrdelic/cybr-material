@@ -2,7 +2,7 @@
   "file": "CYBR_Cycles_Still_Lifes.blend",
   "scenes": 3,
   "materials": 10,
-  "displaced_objects": 7,
+  "displaced_objects": 6,
   "engine": "CYCLES",
   "portable_texture_links": true,
   "guided_interior_denoising": false,

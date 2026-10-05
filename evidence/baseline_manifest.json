@@ -1,0 +1,175 @@
+{
+  "commit": "d8b35a52c80667f88c336c9150f64f82cefcf54f",
+  "renders": {
+    "01_calacatta_oro_detail": {
+      "file": "evidence/01_calacatta_oro_detail.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bits": 16,
+      "sha256": "f131f23b4594962e52d3af520add6b605b5f79812f55aa93e597487bcdd2b8d7",
+      "bytes": 4291995
+    },
+    "02_roman_travertine_detail": {
+      "file": "evidence/02_roman_travertine_detail.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bits": 16,
+      "sha256": "c3fe2001632aeec455608330bbd5d9a1f0698d8e20136bcf958dadc5066687a4",
+      "bytes": 4606347
+    },
+    "03_american_walnut_detail": {
+      "file": "evidence/03_american_walnut_detail.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bits": 16,
+      "sha256": "75ed54a0675d19cc48c4f4a0b5a00cfc109280480442e3fea1167ae5540f66ee",
+      "bytes": 4783431
+    },
+    "04_fumed_oak_detail": {
+      "file": "evidence/04_fumed_oak_detail.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bits": 16,
+      "sha256": "a6976fd0ff93d626697591d4697d4f0030bd0184f767d7673e9729da2740e107",
+      "bytes": 4755982
+    },
+    "05_champagne_brass_detail": {
+      "file": "evidence/05_champagne_brass_detail.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bits": 16,
+      "sha256": "6b6ea0c8d46d0897556e8a34691cc1586b10af37cd4ccfb0d1f329494200df1e",
+      "bytes": 5048041
+    },
+    "06_blackened_steel_detail": {
+      "file": "evidence/06_blackened_steel_detail.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bits": 16,
+      "sha256": "a3e1e6cae52af3db6f6d51771329ce0df9377e670cc70368e6d2ca9d5e1ddf64",
+      "bytes": 4675071
+    },
+    "07_bone_porcelain_detail": {
+      "file": "evidence/07_bone_porcelain_detail.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bits": 16,
+      "sha256": "dd9b8e0958ff351a3d025cc9e89341a6b1f6c7a8e8f1f35a6bfd7d37e9a34dab",
+      "bytes": 4476883
+    },
+    "08_saddle_leather_detail": {
+      "file": "evidence/08_saddle_leather_detail.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bits": 16,
+      "sha256": "43a4e3ac8c568059e9881ba4e6ac4f0c74bbd869b7fe3f038dcfee4580bee7a3",
+      "bytes": 5254020
+    },
+    "09_lime_plaster_detail": {
+      "file": "evidence/09_lime_plaster_detail.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bits": 16,
+      "sha256": "ee082433412b389b9d102710a334b95870a1404b5709b7681715c2b4dff66c81",
+      "bytes": 4835936
+    },
+    "10_natural_linen_detail": {
+      "file": "evidence/10_natural_linen_detail.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "bits": 16,
+      "sha256": "49b0aec3368011625bf9a62e2d159e5f3ddf3d06eb5038b28868999ff272f0e9",
+      "bytes": 5159933
+    },
+    "11_stone_and_timber": {
+      "file": "evidence/11_stone_and_timber.png",
+      "resolution": [
+        1280,
+        960
+      ],
+      "bits": 16,
+      "sha256": "368e7ea12412bc6f8029cbdc56f6e89523ab945b3df703c11d475ed2f0b69ed6",
+      "bytes": 5939389
+    },
+    "12_leather_and_linen": {
+      "file": "evidence/12_leather_and_linen.png",
+      "resolution": [
+        1280,
+        960
+      ],
+      "bits": 16,
+      "sha256": "46f66df9393d7208d9e37217180f7bad0fb8f9c9466282b8c7794b160a2c3480",
+      "bytes": 6254987
+    },
+    "13_metal_and_ceramic": {
+      "file": "evidence/13_metal_and_ceramic.png",
+      "resolution": [
+        1280,
+        960
+      ],
+      "bits": 16,
+      "sha256": "09ff54c879cd145feab6e1423fc670d07f585bb5a0392b2627c47c19de7021f5",
+      "bytes": 5700671
+    },
+    "14_walnut_salon": {
+      "file": "evidence/14_walnut_salon.png",
+      "resolution": [
+        2048,
+        1536
+      ],
+      "bits": 16,
+      "sha256": "3b96e926329ded779660fa5ad84cc5a2270eb89cf7dee78f7bdf6b7d806871c5",
+      "bytes": 14318653
+    },
+    "15_oak_library": {
+      "file": "evidence/15_oak_library.png",
+      "resolution": [
+        2048,
+        1536
+      ],
+      "bits": 16,
+      "sha256": "f5f016ddf853fe68903a44ab1730c21d3b2672d63c298673c6c1d56b331fd76e",
+      "bytes": 14674775
+    },
+    "16_stone_kitchen": {
+      "file": "evidence/16_stone_kitchen.png",
+      "resolution": [
+        2048,
+        1536
+      ],
+      "bits": 16,
+      "sha256": "efe7a748859e8a13e16f7f93dd51b530946a56678d14253c0e22d9b3ee840a2c",
+      "bytes": 14426923
+    },
+    "17_parquet_detail": {
+      "file": "evidence/17_parquet_detail.png",
+      "resolution": [
+        2048,
+        1536
+      ],
+      "bits": 16,
+      "sha256": "566d66f47153801b45432e7c652ca312f586575dda6eb1a4af3344c9c0ac8c66",
+      "bytes": 15213779
+    }
+  }
+}

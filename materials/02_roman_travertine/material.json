@@ -1,14 +1,14 @@
 {
   "id": "02_roman_travertine",
-  "name": "Roman Travertine / Open Pore",
+  "name": "Roman Travertine / Honed Vein Cut",
   "family": "Stone",
   "tile_m": 0.65,
-  "height_scale_m": 0.006,
+  "height_scale_m": 0.0032,
   "roughness": 0.62,
   "ior": 1.5,
   "metallic": 0,
   "preview_diameter_m": 0.24,
-  "description": "Vein-cut travertine with bed-clustered torn cavities, varied cavity floors, mineral laminae and fine calcite pores.",
+  "description": "Fine bed-correlated irregular open pores without painted cavity outlines; shallow honed sedimentary surface.",
   "resolution": 4096,
   "maps": {
     "BaseColor.png": "sRGB RGB8; intrinsic color, no lighting",

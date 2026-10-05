@@ -194,11 +194,11 @@ def plaster(x,y,n):
 
 def linen(x,y,n):
     threads=120;rng=np.random.default_rng(801)
-    gx=x*threads+.071*np.sin(TAU*y*5)+.035*field(n,(12,20),802)
-    gy=y*threads+.065*np.sin(TAU*x*7)+.033*field(n,(20,12),803)
+    gx=x*threads+.16*np.sin(TAU*y*5)+.12*field(n,(12,70),802)
+    gy=y*threads+.13*np.sin(TAU*x*7)+.11*field(n,(70,12),803)
     ix=np.floor(gx).astype(int)%threads;iy=np.floor(gy).astype(int)%threads
     ux=gx%1-.5;uy=gy%1-.5
-    widths=rng.uniform(.405,.475,(2,threads)).astype(np.float32)
+    widths=rng.uniform(.36,.49,(2,threads)).astype(np.float32)
     tones=rng.uniform(-.029,.029,(2,threads)).astype(np.float32)
     tx=TAU*(y*91+ix*.174);ty=TAU*(x*96+iy*.192)
     bx=clamp(1-(ux/(widths[0,ix]*(1+.035*np.sin(tx))))**2)**.72
@@ -227,6 +227,14 @@ def linen(x,y,n):
     return rgb,h,rough,ao,np.zeros((n,n),np.float32),clamp(worn*.55+fibers*.3),opacity
 
 
+from finish_structures import marble,travertine,metal,porcelain,leather,plaster
+SPECS[0].update(tile_m=2.8,height_scale_m=.00012,name='Calacatta Oro / Honed Quarry Slab',roughness=.255,description='One procedural 2.8 m slab with narrow shear seams, branching fractures and mineral intergrowth; honed intact finish.')
+SPECS[1].update(height_scale_m=.0032,name='Roman Travertine / Honed Vein Cut',description='Fine bed-correlated irregular open pores without painted cavity outlines; shallow honed sedimentary surface.')
+SPECS[4].update(name='Champagne Brass / Satin Brushed',description='Intact satin-brushed brass; fine directional tooling and restrained isolated scores.',anisotropy=.35)
+SPECS[5].update(name='Blackened Steel / Satin Oxide',description='Intact black oxide on satin machined steel; exposed edges are assigned on fabricated meshes.')
+SPECS[6].update(name='Bone Porcelain / Clear Glaze',coat=.32,coat_roughness=.12,description='Clear glaze over warm ivory ceramic; fine firing flow and shallow glaze peel, without random chips.')
+SPECS[7].update(name='Saddle Leather / Full Grain',description='Fine irregular submillimeter hide grain and follicles; restrained dye variation. Mesh seams and bends describe construction.')
+SPECS[8].update(name='Lime Plaster / Troweled Skim',height_scale_m=.002,description='Overlapping broad trowel passes and polished leading lips with restrained fine aggregate.')
 GENERATORS=[marble,travertine,lambda x,y,n:wood(x,y,n),lambda x,y,n:wood(x,y,n,True),metal,lambda x,y,n:metal(x,y,n,True),porcelain,leather,plaster,linen]
 
 def save_rgb(path,a):Image.fromarray(np.rint(clamp(a)*255).astype(np.uint8)).save(path,compress_level=6)
@@ -253,7 +261,7 @@ def main():
     requested_resolution=args.resolution
     folder=ROOT/('draft_materials' if args.draft else 'materials');folder.mkdir(exist_ok=True)
     checks=json.loads((folder/'validation.json').read_text()) if args.only and (folder/'validation.json').exists() else {}
-    manifest=dict(name='CYBR MATERIAL / Natural Detail and Wear',version='3.0',resolution=requested_resolution,workflow='metallic-roughness',normal='OpenGL +Y and DirectX -Y',base_color_space='sRGB',data_color_space='linear / Non-Color',height_bit_depth=16,height_midlevel=.5,units='meters',provenance='Ten original deterministic procedural materials. No source images, image generation, white-noise bump or upscaling. Not scans.',materials=SPECS)
+    manifest=dict(name='CYBR MATERIAL / Fabrication and Physical Studies',version='3.2-study',resolution=requested_resolution,workflow='metallic-roughness',normal='OpenGL +Y and DirectX -Y',base_color_space='sRGB',data_color_space='linear / Non-Color',height_bit_depth=16,height_midlevel=.5,units='meters',provenance='Ten original deterministic procedural materials. No source images, image generation, white-noise bump or upscaling. Not scans.',materials=SPECS)
     map_types={'BaseColor.png':'sRGB RGB8; intrinsic color, no lighting','Normal_OpenGL.png':'Non-Color tangent +Y RGB8','Normal_DirectX.png':'Non-Color tangent -Y RGB8','Normal_Micro_OpenGL.png':'Non-Color +Y RGB8; residual height only, paired with Height_Macro','Height.png':'Non-Color linear grayscale16; displacement = (height - .5) * height_scale_m','Height_Macro.png':'Non-Color linear grayscale16; band-limited geometry, same physical scale','Roughness.png':'Non-Color linear grayscale8','Metallic.png':'Non-Color grayscale8; exposed metal versus dielectric oxides','AO.png':'Non-Color grayscale8; local cavity approximation, do not bake into color','WearMask.png':'Non-Color grayscale8; material-specific abrasion or weathering','ORM.png':'Non-Color RGB8; AO / roughness / metallic','Opacity.png':'Non-Color grayscale8; woven openings for linen, opaque for other materials'}
     for s,gen in zip(SPECS,GENERATORS):
         if args.only and s['id'] not in args.only:continue
