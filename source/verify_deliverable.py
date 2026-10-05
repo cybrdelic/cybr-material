@@ -29,7 +29,7 @@ for key,r in renders.items():
     if key[:2] in ('14','15','16','17'):assert [width,height]==[2048,1536]
 missing=[]
 for file in [ROOT/'OPEN_ME.html',ROOT/'path_traced/OPEN_RENDERS.html',ROOT/'README.md',ROOT/'docs/CRITICAL_REVIEW.md',ROOT/'docs/IMPORT_GUIDE.md']:
-    content=file.read_text()
+    content=file.read_text(encoding='utf-8')
     links=re.findall(r'(?:src|href|data-image)="([^"]+)"',content) if file.suffix=='.html' else re.findall(r'\]\(([^)]+)\)',content)
     for link in links:
         if link.startswith(('https:','http:','#')):continue
