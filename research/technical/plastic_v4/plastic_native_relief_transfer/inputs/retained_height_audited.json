@@ -1,0 +1,31 @@
+{
+  "image": "/workspace/shared/material-native4k/causal-plastic/maps_audited/production_retained_height_native4096.png",
+  "sha256": "78ad8b37255340889593dcf47180913d611ce0124e756f3dcbaac187d9eb2aee",
+  "bytes": 26560734,
+  "native_resolution": [
+    4096,
+    4096
+  ],
+  "channel_bit_depth": 16,
+  "color_space": "Non-Color",
+  "metric_formula": "(Height -0.5)*0.00008 metres",
+  "height_scale_m": 8e-05,
+  "height_midlevel": 0.5,
+  "world_chart": "X/.08+.5,Y/.08+.5; PNG rows flipped from native y-up source",
+  "physical_extent_m": [
+    0.08,
+    0.08
+  ],
+  "state_sha256": "7d19cae4ad8a93512c31bec64894a8d55defcef7746406949ec83eb467b6d15c",
+  "input_tool_sha256": "ebe558dc96ccb14ad5203e8b49b1a3dac83f3dfcb6c42d4b1ad8b7e89b3b6acc",
+  "same_physical_state_and_parameters": true,
+  "height_range_m": [
+    -1.0687836038414389e-05,
+    2.7518923161551356e-05
+  ],
+  "height_mean_m": 4.4390999123095076e-13,
+  "maximum_encoding_error_m": 6.103608471438415e-10,
+  "peak_rss_kib": 163572,
+  "purpose": "True-displacement export-control dependency; selected production scene unchanged.",
+  "channels": "grayscale"
+}

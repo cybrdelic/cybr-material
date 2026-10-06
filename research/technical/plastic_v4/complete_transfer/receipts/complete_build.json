@@ -1,0 +1,1105 @@
+{
+  "reconstruction": true,
+  "historical_binary_identity_claim": false,
+  "files": [
+    {
+      "case": "full",
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/scenes/plastic_complete_full.blend",
+      "sha256": "8e45cc56927ca910d2cb2aeb7d23b35e20a3a24beea500b22df446778711e4a5",
+      "bytes": 32430611,
+      "camera": "Slab / shared camera"
+    },
+    {
+      "case": "macro",
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/scenes/plastic_complete_macro.blend",
+      "sha256": "cc90665eb508286c7ca9830b480085d60af6435c0e542fffc66826d8e8d371e9",
+      "bytes": 32430615,
+      "camera": "Plastic / authored molding detail camera"
+    },
+    {
+      "case": "second_light",
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/scenes/plastic_complete_second_light.blend",
+      "sha256": "630973d97682fe04b7ba219a96e32b9730fcc8f4958d1c97819ff3b0af2aee69",
+      "bytes": 32430618,
+      "camera": "Slab / shared camera",
+      "rig": {
+        "objects": {
+          "Slab / shared camera": {
+            "type": "CAMERA",
+            "matrix": [
+              0.8017458915710449,
+              -0.3565812408924103,
+              0.4796387553215027,
+              0.06560000032186508,
+              0.5976650714874268,
+              0.478340744972229,
+              -0.6434178948402405,
+              -0.08799999952316284,
+              2.7379325473475546e-09,
+              0.8025209903717041,
+              0.5966238975524902,
+              0.08559999614953995,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data": {
+              "type": "ORTHO",
+              "ortho_scale": 0.12960000336170197,
+              "lens": 50.0
+            }
+          },
+          "Slab / neutral floor": {
+            "type": "MESH",
+            "matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              -9.999999974752427e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data": {}
+          },
+          "Slab / key": {
+            "type": "LIGHT",
+            "matrix": [
+              0.7592567801475525,
+              -0.5308455228805542,
+              0.37647339701652527,
+              0.047999996691942215,
+              0.6507911682128906,
+              0.6193200945854187,
+              -0.4392191171646118,
+              -0.0560000017285347,
+              -3.834724537910006e-08,
+              0.5784856677055359,
+              0.8156925439834595,
+              0.10799999535083771,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data": {
+              "energy": 0.17919999361038208,
+              "size": 0.07599999755620956,
+              "color": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "shape": "DISK"
+            }
+          },
+          "Slab / rim": {
+            "type": "LIGHT",
+            "matrix": [
+              -0.8804709315299988,
+              0.348418265581131,
+              -0.32152077555656433,
+              -0.0279999952763319,
+              -0.47410011291503906,
+              -0.647061824798584,
+              0.5971097350120544,
+              0.052000001072883606,
+              1.2869477927779371e-07,
+              0.6781708598136902,
+              0.7349041700363159,
+              0.06800000369548798,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data": {
+              "energy": 0.08959999680519104,
+              "size": 0.05199999734759331,
+              "color": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "shape": "DISK"
+            }
+          },
+          "Slab / fill": {
+            "type": "LIGHT",
+            "matrix": [
+              -0.6782800555229187,
+              -0.36157310009002686,
+              0.63968825340271,
+              0.052000001072883606,
+              0.7348034977912903,
+              -0.33375975489616394,
+              0.5904814004898071,
+              0.047999996691942215,
+              1.710324148973541e-08,
+              0.8705568909645081,
+              0.49206775426864624,
+              0.04399999976158142,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data": {
+              "energy": 0.03199999779462814,
+              "size": 0.09600000083446503,
+              "color": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "shape": "DISK"
+            }
+          },
+          "Plastic / authored molding detail camera": {
+            "type": "CAMERA",
+            "matrix": [
+              0.7418737411499023,
+              -0.3208793103694916,
+              0.5887782573699951,
+              0.07000000029802322,
+              0.6705396175384521,
+              0.35501548647880554,
+              -0.6514143347740173,
+              -0.08500000089406967,
+              -1.9055775624110538e-08,
+              0.8780663013458252,
+              0.47853896021842957,
+              0.0430000014603138,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data": {
+              "type": "ORTHO",
+              "ortho_scale": 0.024000000208616257,
+              "lens": 50.0
+            }
+          }
+        },
+        "world": [
+          [
+            0.18000000715255737,
+            0.18000000715255737,
+            0.18000000715255737,
+            1.0
+          ],
+          0.2199999988079071
+        ],
+        "view": {
+          "transform": "AgX",
+          "look": "AgX - Medium High Contrast",
+          "exposure": 0.0,
+          "gamma": 1.0
+        },
+        "active_camera": "Slab / shared camera"
+      }
+    }
+  ],
+  "source_material_scene": "/workspace/scratch/b4387906eb93/technical-recovery-20261006/restored/CYBR_technical_cloud_review/scenes/21_plastic_texture_r5_hero.blend",
+  "source_material_scene_sha256": "bd913bbe8cb15e54580e453827c5799c4b985cebee05a3b258cfb947f980fb6f",
+  "source_material_defaults": {
+    "Base Color": [
+      0.10999999940395355,
+      0.14000000059604645,
+      0.1599999964237213,
+      1.0
+    ],
+    "Metallic": 0.0,
+    "Roughness": 0.49000000953674316,
+    "IOR": 1.5,
+    "Alpha": 1.0,
+    "Normal": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Weight": 0.0,
+    "Diffuse Roughness": 0.0,
+    "Subsurface Weight": 0.0,
+    "Subsurface Radius": [
+      1.0,
+      0.20000000298023224,
+      0.10000000149011612
+    ],
+    "Subsurface Scale": 0.05000000074505806,
+    "Subsurface IOR": 1.399999976158142,
+    "Subsurface Anisotropy": 0.0,
+    "Specular IOR Level": 0.5,
+    "Specular Tint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "Anisotropic": 0.0,
+    "Anisotropic Rotation": 0.0,
+    "Tangent": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.07000000029802322,
+    "Coat Roughness": 0.029999999329447746,
+    "Coat IOR": 1.5,
+    "Coat Tint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "Coat Normal": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Sheen Weight": 0.0,
+    "Sheen Roughness": 0.5,
+    "Sheen Tint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "Emission Color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "Emission Strength": 0.0,
+    "Thin Film Thickness": 0.0,
+    "Thin Film IOR": 1.3300000429153442
+  },
+  "intrinsic_roughness": 0.475,
+  "legacy_variance_broadening_removed": true,
+  "retained_shutoff_material": {
+    "roughness": 0.44,
+    "original_r2_qz_band_m": [
+      -6.999999999999975e-05,
+      6.999999999999975e-05
+    ],
+    "source_contract": {
+      "source_builder": "material-publication/audit/checkpoints/2026-10-05/sources/material-native4k/plastic-detail/source/build_molded_panels_r2.py",
+      "source_builder_sha256": "1431ef5657feb8c6186c9f93b7bfa8ae772e9d283e6c84c74c7927c85cad6764",
+      "original_rows": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "original_global_z_intervals_m": [
+        [
+          0.00393,
+          0.003965
+        ],
+        [
+          0.003965,
+          0.004
+        ],
+        [
+          0.004,
+          0.004035
+        ],
+        [
+          0.004035,
+          0.00407
+        ]
+      ],
+      "original_merged_global_z_bounds_m": [
+        0.00393,
+        0.00407
+      ],
+      "retained_qz_bounds_m": [
+        -6.999999999999975e-05,
+        6.999999999999975e-05
+      ],
+      "original_assignment": "abs((zs[k]+zs[k+1])*0.5-0.004)<0.000065",
+      "new_assignment": "Preserve the extracted original physical band boundaries; do not reevaluate the old midpoint rule on new rows.",
+      "candidate_triangles_crossing_boundary": 0,
+      "candidate_q_boundary_distance_m": [
+        2.574980159653073e-19,
+        2.439454888092385e-19
+      ],
+      "candidate_boundary_is_identical_in_float32": true,
+      "band_triangles": 33768,
+      "roughness": 0.44,
+      "original_r5_normal_graph_preserved": true,
+      "actual_connection_inspection": "Pending admitted source build"
+    },
+    "triangles": 150812,
+    "source_normal_links": [
+      {
+        "from_node": "Bump",
+        "from_socket": "Normal",
+        "to_socket": "Normal"
+      }
+    ],
+    "source_graph_preserved_except_original_r2_roughness_override": true
+  },
+  "native_height_sha256": "78ad8b37255340889593dcf47180913d611ce0124e756f3dcbaac187d9eb2aee",
+  "native_roughness_archived_sha256": "884d84ade722870067fa15158a1ce37fa43198233227c33a55eb20e74f8ed1de",
+  "physical_state_sha256": "7d19cae4ad8a93512c31bec64894a8d55defcef7746406949ec83eb467b6d15c",
+  "process_parameters": {
+    "density_kg_m3": 1050.0,
+    "heat_capacity_J_kgK": 1800.0,
+    "conductivity_W_mK": 0.2,
+    "air_conductivity_W_mK": 0.03,
+    "contact_h_W_m2K": 6000.0,
+    "maxwell_modulus_Pa": 300000000.0,
+    "viscosity_reference_Pas": 300000.0,
+    "viscosity_reference_K": 503.15,
+    "activation_energy_J_mol": 160000.0,
+    "gas_constant_J_molK": 8.314462618,
+    "max_viscosity_Pas": 1e+20,
+    "deformation_layer_m": 0.00018,
+    "thermal_depth_m": 0.004,
+    "melt_temperature_K": 503.15,
+    "mold_temperature_K": 333.15,
+    "skin_diagnostic_temperature_K": 383.15,
+    "pressure_hold_s": 0.5,
+    "end_time_s": 0.5,
+    "dt_s": 6.25e-05,
+    "depth_cells": 96,
+    "mesh_stretch": 7.0,
+    "include_dissipation": true
+  },
+  "pressure_Pa": 20000000.0,
+  "exact_rig_signature_match": true,
+  "source_rig_signature_sha256": "316ed8cdf0adaa8a74180004e9bbb2ca7010c6510ee1bef3f23b34dc26bb03fc",
+  "analytic_normal_lobe_sockets": [
+    "Normal",
+    "Coat Normal when present"
+  ],
+  "shader_group_nodes": 897,
+  "shader_source_sha256": "d9359823b7906841f2446b789b0013da249eca103cfbd8a4e3c65ef5251a79b5",
+  "arrays_sha256": "229f66840fc3be6d562314f68a14979ac937bf42b1939f86faa1f744725804a3",
+  "vertices": 571660,
+  "triangles": 1143316,
+  "geometry_lod": {
+    "lattice_history": [
+      {
+        "iteration": 0,
+        "vertices": 418123,
+        "triangles": 836242,
+        "max_conservative_pixels": 0.2755783504050198,
+        "rows": [
+          {
+            "chart": 0,
+            "lattice_samples": 16777216,
+            "all_samples_max_absolute_m": 3.0275265452338056e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 3.0275265452338056e-05,
+                "max_projected_pixels": 0.179974027965305,
+                "samples": 16777216
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 6.889458820011042e-06,
+                "max_projected_pixels": 0.24196178557130193,
+                "samples": 1962191
+              }
+            }
+          },
+          {
+            "chart": 1,
+            "lattice_samples": 1050625,
+            "all_samples_max_absolute_m": 1.8879709375832316e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 1.8879709375832316e-05,
+                "max_projected_pixels": 0.13960554457790636,
+                "samples": 1050625
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 3.415369714431709e-06,
+                "max_projected_pixels": 0.12533841256399772,
+                "samples": 184369
+              }
+            }
+          },
+          {
+            "chart": 2,
+            "lattice_samples": 1378304,
+            "all_samples_max_absolute_m": 1.6478857046863045e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 1.6478857046863045e-05,
+                "max_projected_pixels": 0.1220248294429345,
+                "samples": 1378304
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 3.4348510903414324e-06,
+                "max_projected_pixels": 0.1091377059868418,
+                "samples": 128104
+              }
+            }
+          },
+          {
+            "chart": 3,
+            "lattice_samples": 1378304,
+            "all_samples_max_absolute_m": 1.6478857046858447e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 1.6478857046858447e-05,
+                "max_projected_pixels": 0.1220247739921458,
+                "samples": 1378304
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 0.0,
+                "max_projected_pixels": 0.0,
+                "samples": 0
+              }
+            }
+          },
+          {
+            "chart": 4,
+            "lattice_samples": 1378304,
+            "all_samples_max_absolute_m": 1.6478850885848997e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 1.6478850885848997e-05,
+                "max_projected_pixels": 0.12168033897417617,
+                "samples": 1378304
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 3.549004161755459e-06,
+                "max_projected_pixels": 0.10453762119350388,
+                "samples": 483294
+              }
+            }
+          },
+          {
+            "chart": 5,
+            "lattice_samples": 1378304,
+            "all_samples_max_absolute_m": 1.6478857046858447e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 1.6478857046858447e-05,
+                "max_projected_pixels": 0.1216803102804742,
+                "samples": 1378304
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 0.0,
+                "max_projected_pixels": 0.0,
+                "samples": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "iteration": 1,
+        "vertices": 424687,
+        "triangles": 849370,
+        "max_conservative_pixels": 0.25163409277052734,
+        "rows": [
+          {
+            "chart": 0,
+            "lattice_samples": 16777216,
+            "all_samples_max_absolute_m": 3.397060340518663e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 3.397060340518663e-05,
+                "max_projected_pixels": 0.20194317637105366,
+                "samples": 16777216
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 5.023851224653204e-06,
+                "max_projected_pixels": 0.17645538922665077,
+                "samples": 1962191
+              }
+            }
+          },
+          {
+            "chart": 1,
+            "lattice_samples": 1050625,
+            "all_samples_max_absolute_m": 1.8879709375832316e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 1.8879709375832316e-05,
+                "max_projected_pixels": 0.13960554457790636,
+                "samples": 1050625
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 3.415369714431709e-06,
+                "max_projected_pixels": 0.12533841256399772,
+                "samples": 184369
+              }
+            }
+          },
+          {
+            "chart": 2,
+            "lattice_samples": 1378304,
+            "all_samples_max_absolute_m": 1.6478857046863045e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 1.6478857046863045e-05,
+                "max_projected_pixels": 0.1220248294429345,
+                "samples": 1378304
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 3.4348510903414324e-06,
+                "max_projected_pixels": 0.1091377059868418,
+                "samples": 128104
+              }
+            }
+          },
+          {
+            "chart": 3,
+            "lattice_samples": 1378304,
+            "all_samples_max_absolute_m": 1.6478857046858447e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 1.6478857046858447e-05,
+                "max_projected_pixels": 0.1220247739921458,
+                "samples": 1378304
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 0.0,
+                "max_projected_pixels": 0.0,
+                "samples": 0
+              }
+            }
+          },
+          {
+            "chart": 4,
+            "lattice_samples": 1378304,
+            "all_samples_max_absolute_m": 1.6478850885848997e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 1.6478850885848997e-05,
+                "max_projected_pixels": 0.12168033897417617,
+                "samples": 1378304
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 3.452747668462582e-06,
+                "max_projected_pixels": 0.10453762119350388,
+                "samples": 483294
+              }
+            }
+          },
+          {
+            "chart": 5,
+            "lattice_samples": 1378304,
+            "all_samples_max_absolute_m": 1.6478857046858447e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 1.6478857046858447e-05,
+                "max_projected_pixels": 0.1216803102804742,
+                "samples": 1378304
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 0.0,
+                "max_projected_pixels": 0.0,
+                "samples": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "iteration": 2,
+        "vertices": 427369,
+        "triangles": 854734,
+        "max_conservative_pixels": 0.19942895540737599,
+        "rows": [
+          {
+            "chart": 0,
+            "lattice_samples": 16777216,
+            "all_samples_max_absolute_m": 2.6922909678350663e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 2.6922909678350663e-05,
+                "max_projected_pixels": 0.1600452121578084,
+                "samples": 16777216
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 3.4996241675084875e-06,
+                "max_projected_pixels": 0.13215623862514808,
+                "samples": 1962191
+              }
+            }
+          },
+          {
+            "chart": 1,
+            "lattice_samples": 1050625,
+            "all_samples_max_absolute_m": 1.8879709375832316e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 1.8879709375832316e-05,
+                "max_projected_pixels": 0.13960554457790636,
+                "samples": 1050625
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 3.415369714431709e-06,
+                "max_projected_pixels": 0.12533841256399772,
+                "samples": 184369
+              }
+            }
+          },
+          {
+            "chart": 2,
+            "lattice_samples": 1378304,
+            "all_samples_max_absolute_m": 1.6478857046863045e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 1.6478857046863045e-05,
+                "max_projected_pixels": 0.1220248294429345,
+                "samples": 1378304
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 3.4348510903414324e-06,
+                "max_projected_pixels": 0.1091377059868418,
+                "samples": 128104
+              }
+            }
+          },
+          {
+            "chart": 3,
+            "lattice_samples": 1378304,
+            "all_samples_max_absolute_m": 1.6478857046858447e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 1.6478857046858447e-05,
+                "max_projected_pixels": 0.1220247739921458,
+                "samples": 1378304
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 0.0,
+                "max_projected_pixels": 0.0,
+                "samples": 0
+              }
+            }
+          },
+          {
+            "chart": 4,
+            "lattice_samples": 1378304,
+            "all_samples_max_absolute_m": 1.6478850885848997e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 1.6478850885848997e-05,
+                "max_projected_pixels": 0.12168033897417617,
+                "samples": 1378304
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 3.452747668462582e-06,
+                "max_projected_pixels": 0.10453762119350388,
+                "samples": 483294
+              }
+            }
+          },
+          {
+            "chart": 5,
+            "lattice_samples": 1378304,
+            "all_samples_max_absolute_m": 1.6478857046858447e-05,
+            "cameras": {
+              "Slab / shared camera": {
+                "max_absolute_m": 1.6478857046858447e-05,
+                "max_projected_pixels": 0.1216803102804742,
+                "samples": 1378304
+              },
+              "Plastic / authored molding detail camera": {
+                "max_absolute_m": 0.0,
+                "max_projected_pixels": 0.0,
+                "samples": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "final_dense": {
+      "cameras": {
+        "Slab / shared camera": {
+          "max_absolute_m": 2.7176407073630174e-05,
+          "max_projected_pixels": 0.16155466985505984,
+          "samples": 34189360
+        },
+        "Plastic / authored molding detail camera": {
+          "max_absolute_m": 3.49998986098827e-06,
+          "max_projected_pixels": 0.1325986045478822,
+          "samples": 17637686
+        }
+      },
+      "all_chart_sampled_max_absolute_m": 2.7176407073630174e-05,
+      "max_camera_conservative_pixels": 0.2013067138422206,
+      "samples_per_triangle": 40,
+      "passes_sampled_camera_budget": true
+    },
+    "topology": {
+      "closed_two_incident_edges": true,
+      "opposite_oriented_incidence": true,
+      "euler_characteristic": 2,
+      "minimum_double_triangle_area_m2": 7.702014188273694e-11,
+      "positive_volume_m3": 4.9868554179242e-05,
+      "bounds_m": [
+        [
+          -0.040022,
+          -0.040022,
+          1.5429998783711343e-27
+        ],
+        [
+          0.040022,
+          0.040022,
+          0.00802734414774833
+        ]
+      ],
+      "floor_z_m": -1e-06,
+      "minimum_floor_clearance_m": 1e-06
+    },
+    "passes_numerical_lod": true,
+    "vertices": 571660,
+    "triangles": 1143316,
+    "source_sha256": "2edd2d72579307dbf8fe15332e3a98fd84aa658d4a3395c96b4af44b51413fde",
+    "adaptive_source_sha256": "06e0543201280af02388c2aeea67ce82a6a00c45b927c660dac5961505525aa1",
+    "surface_contract_sha256": "f80d51f162e6e0ac3c79e7a7a1917f747fd0a0bc7825489182dbb82f7d057228",
+    "peak_RSS_MiB": 2278.76953125,
+    "seconds": 155.7712316440011,
+    "not_global20nm_qualification": true,
+    "not_supremum_proof": true,
+    "arrays_path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/camera_lod_mesh_detail_preserved.npz",
+    "arrays_sha256": "229f66840fc3be6d562314f68a14979ac937bf42b1939f86faa1f744725804a3",
+    "arrays_bytes": 8750966,
+    "original_lod_arrays_sha256": "a7bec17caab77fa2f03d6f66fd2b04d9011bfa65abb4204cb86a2a1b62f52847",
+    "detail_preservation": {
+      "history": [
+        {
+          "iteration": 0,
+          "triangles": 854734,
+          "rows": [
+            {
+              "feature": "ejector_-0.023_-0.023",
+              "samples": 50176,
+              "max_error_m": 6.287990412399807e-06,
+              "rms_error_m": 2.0248227197157966e-06
+            },
+            {
+              "feature": "ejector_-0.023_0.023",
+              "samples": 50176,
+              "max_error_m": 6.181291159984563e-06,
+              "rms_error_m": 2.029316272543989e-06
+            },
+            {
+              "feature": "ejector_0.023_-0.023",
+              "samples": 50176,
+              "max_error_m": 3.399874210340113e-06,
+              "rms_error_m": 1.062912662206655e-06
+            },
+            {
+              "feature": "ejector_0.023_0.023",
+              "samples": 50176,
+              "max_error_m": 6.287990412399797e-06,
+              "rms_error_m": 2.024822719715797e-06
+            },
+            {
+              "feature": "parting_right",
+              "samples": 68961,
+              "max_error_m": 1.6159577589887494e-05,
+              "rms_error_m": 4.260237930186279e-06
+            },
+            {
+              "feature": "parting_left",
+              "samples": 68961,
+              "max_error_m": 1.6159577589877686e-05,
+              "rms_error_m": 5.892577451830139e-06
+            },
+            {
+              "feature": "parting_front",
+              "samples": 68961,
+              "max_error_m": 1.6159577589704935e-05,
+              "rms_error_m": 4.181475628414455e-06
+            },
+            {
+              "feature": "parting_back",
+              "samples": 68961,
+              "max_error_m": 1.6159577589877686e-05,
+              "rms_error_m": 5.892577451830139e-06
+            }
+          ]
+        },
+        {
+          "iteration": 1,
+          "triangles": 900340,
+          "rows": [
+            {
+              "feature": "ejector_-0.023_-0.023",
+              "samples": 50176,
+              "max_error_m": 5.3902793227116365e-06,
+              "rms_error_m": 1.2222941254322205e-06
+            },
+            {
+              "feature": "ejector_-0.023_0.023",
+              "samples": 50176,
+              "max_error_m": 5.330715371801971e-06,
+              "rms_error_m": 1.2456181674462364e-06
+            },
+            {
+              "feature": "ejector_0.023_-0.023",
+              "samples": 50176,
+              "max_error_m": 3.1693117802187596e-06,
+              "rms_error_m": 5.494710543813687e-07
+            },
+            {
+              "feature": "ejector_0.023_0.023",
+              "samples": 50176,
+              "max_error_m": 5.3902793227116365e-06,
+              "rms_error_m": 1.2222941254322186e-06
+            },
+            {
+              "feature": "parting_right",
+              "samples": 68961,
+              "max_error_m": 4.090591844033778e-06,
+              "rms_error_m": 1.006153309233242e-06
+            },
+            {
+              "feature": "parting_left",
+              "samples": 68961,
+              "max_error_m": 4.090591844033778e-06,
+              "rms_error_m": 1.3992493670990488e-06
+            },
+            {
+              "feature": "parting_front",
+              "samples": 68961,
+              "max_error_m": 4.090591843700443e-06,
+              "rms_error_m": 1.0017229488119936e-06
+            },
+            {
+              "feature": "parting_back",
+              "samples": 68961,
+              "max_error_m": 4.090591844033778e-06,
+              "rms_error_m": 1.3992493670990488e-06
+            }
+          ]
+        },
+        {
+          "iteration": 2,
+          "triangles": 983966,
+          "rows": [
+            {
+              "feature": "ejector_-0.023_-0.023",
+              "samples": 50176,
+              "max_error_m": 2.9312438211552637e-06,
+              "rms_error_m": 4.849544472059666e-07
+            },
+            {
+              "feature": "ejector_-0.023_0.023",
+              "samples": 50176,
+              "max_error_m": 2.6232825347268943e-06,
+              "rms_error_m": 4.841165516088839e-07
+            },
+            {
+              "feature": "ejector_0.023_-0.023",
+              "samples": 50176,
+              "max_error_m": 2.500088939756209e-06,
+              "rms_error_m": 1.9746247179326304e-07
+            },
+            {
+              "feature": "ejector_0.023_0.023",
+              "samples": 50176,
+              "max_error_m": 2.9312438211552552e-06,
+              "rms_error_m": 4.84954447205967e-07
+            },
+            {
+              "feature": "parting_right",
+              "samples": 68961,
+              "max_error_m": 1.0124913807735513e-06,
+              "rms_error_m": 2.5711723967550285e-07
+            },
+            {
+              "feature": "parting_left",
+              "samples": 68961,
+              "max_error_m": 1.0124913898691787e-06,
+              "rms_error_m": 3.5099831083698006e-07
+            },
+            {
+              "feature": "parting_front",
+              "samples": 68961,
+              "max_error_m": 1.0124913898640867e-06,
+              "rms_error_m": 2.549406454426562e-07
+            },
+            {
+              "feature": "parting_back",
+              "samples": 68961,
+              "max_error_m": 1.0124913898691787e-06,
+              "rms_error_m": 3.5099831083698006e-07
+            }
+          ]
+        },
+        {
+          "iteration": 3,
+          "triangles": 1138144,
+          "rows": [
+            {
+              "feature": "ejector_-0.023_-0.023",
+              "samples": 50176,
+              "max_error_m": 8.850796467685534e-07,
+              "rms_error_m": 1.4435565489937669e-07
+            },
+            {
+              "feature": "ejector_-0.023_0.023",
+              "samples": 50176,
+              "max_error_m": 8.807705917606973e-07,
+              "rms_error_m": 1.4399030508947694e-07
+            },
+            {
+              "feature": "ejector_0.023_-0.023",
+              "samples": 50176,
+              "max_error_m": 8.42915471528915e-07,
+              "rms_error_m": 1.0656882336666068e-07
+            },
+            {
+              "feature": "ejector_0.023_0.023",
+              "samples": 50176,
+              "max_error_m": 8.85079646768554e-07,
+              "rms_error_m": 1.4435565489937785e-07
+            },
+            {
+              "feature": "parting_right",
+              "samples": 68961,
+              "max_error_m": 2.473078621792122e-07,
+              "rms_error_m": 8.890670077690943e-08
+            },
+            {
+              "feature": "parting_left",
+              "samples": 68961,
+              "max_error_m": 2.473078621792122e-07,
+              "rms_error_m": 8.89078663571715e-08
+            },
+            {
+              "feature": "parting_front",
+              "samples": 68961,
+              "max_error_m": 2.473078621792122e-07,
+              "rms_error_m": 8.890670076869889e-08
+            },
+            {
+              "feature": "parting_back",
+              "samples": 68961,
+              "max_error_m": 2.473078621792122e-07,
+              "rms_error_m": 8.890786635791488e-08
+            }
+          ]
+        },
+        {
+          "iteration": 4,
+          "triangles": 1143316,
+          "rows": [
+            {
+              "feature": "ejector_-0.023_-0.023",
+              "samples": 50176,
+              "max_error_m": 3.488603209984055e-07,
+              "rms_error_m": 9.863754115371592e-08
+            },
+            {
+              "feature": "ejector_-0.023_0.023",
+              "samples": 50176,
+              "max_error_m": 3.469246787125817e-07,
+              "rms_error_m": 9.887112655685144e-08
+            },
+            {
+              "feature": "ejector_0.023_-0.023",
+              "samples": 50176,
+              "max_error_m": 3.492478118763228e-07,
+              "rms_error_m": 1.0060122481991504e-07
+            },
+            {
+              "feature": "ejector_0.023_0.023",
+              "samples": 50176,
+              "max_error_m": 3.488603209984546e-07,
+              "rms_error_m": 9.864039638983043e-08
+            },
+            {
+              "feature": "parting_right",
+              "samples": 68961,
+              "max_error_m": 2.473078621792122e-07,
+              "rms_error_m": 8.890670077690943e-08
+            },
+            {
+              "feature": "parting_left",
+              "samples": 68961,
+              "max_error_m": 2.473078621792122e-07,
+              "rms_error_m": 8.89078663571715e-08
+            },
+            {
+              "feature": "parting_front",
+              "samples": 68961,
+              "max_error_m": 2.473078621792122e-07,
+              "rms_error_m": 8.890670076869889e-08
+            },
+            {
+              "feature": "parting_back",
+              "samples": 68961,
+              "max_error_m": 2.473078621792122e-07,
+              "rms_error_m": 8.890786635791488e-08
+            }
+          ]
+        }
+      ],
+      "detail_budget_m": 5e-07,
+      "passes_sampled_details": true,
+      "triangles": 1143316,
+      "vertices": 571660,
+      "topology": {
+        "closed_two_incident_edges": true,
+        "opposite_oriented_incidence": true,
+        "euler_characteristic": 2,
+        "minimum_double_triangle_area_m2": 1.6782345725427635e-11,
+        "positive_volume_m3": 4.986860599180633e-05,
+        "bounds_m": [
+          [
+            -0.040022,
+            -0.040022,
+            1.5429998783711343e-27
+          ],
+          [
+            0.040022,
+            0.040022,
+            0.00802734414774833
+          ]
+        ],
+        "floor_z_m": -1e-06,
+        "minimum_floor_clearance_m": 1e-06
+      },
+      "source_sha256": "f2feb95f08da29a863876a01561d14ff690023ea97fd94bd95abc581c2a6d738",
+      "peak_RSS_MiB": 561.14453125,
+      "seconds": 37.455692465999164,
+      "sampled_not_supremum": true,
+      "no_parameter_change": true,
+      "arrays_path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/camera_lod_mesh_detail_preserved.npz",
+      "arrays_sha256": "229f66840fc3be6d562314f68a14979ac937bf42b1939f86faa1f744725804a3",
+      "arrays_bytes": 11648948
+    }
+  },
+  "second_light_contract": "All area light object transforms rotated+90deg around world Z about(0,0,.004)m. Energy,size,shape,color,world,geometry and material stay identical.",
+  "calibration_limits": [
+    "Assumed generic material constants, not measured, calibrated, or experimentally validated for a polymer.",
+    "Local independent columns: no lateral momentum, incompressible volume conservation, gas compression/venting, injection filling, or full 3D contact elasticity.",
+    "The Maxwell modulus and dashpot describe an effective surface layer; no molecular microstructure or physical phase transition is solved.",
+    "Cooling is solved through a 4mm half-thickness with an adiabatic back; skin_fraction is only a diagnostic of temperature below an assumed threshold.",
+    "Final retained displacement is the idealized unloaded dashpot state after a 0.5s surface imprint window; this is not a whole-part ejection or mold-cycle prediction.",
+    "Mold is an infinite isothermal thermal reservoir.",
+    "No thermal contraction, crystallization, shrinkage, residual stress field, macroscopic seams, ejector marks or draft is generated by this core.",
+    "Response-table interpolation maps already-solved independent local columns to the native tool; no spatial noise and no fixed replication factor.",
+    "Intrinsic roughness0.475 and source dielectric defaults are retained assumptions, not calibrated polymer optics.",
+    "Finite-precision native knot ownership has explicit conditioning uncertainty; see knot_conditioning.json.",
+    "Shared full-part mesh is a sampled camera LOD, not the20nm bounded seam representation."
+  ],
+  "appearance_qualified": false,
+  "selected": false
+}

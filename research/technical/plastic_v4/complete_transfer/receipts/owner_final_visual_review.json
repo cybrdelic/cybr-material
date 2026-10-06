@@ -1,0 +1,97 @@
+{
+  "reviewed_utc": "2026-10-06T15:52:08.693050+00:00",
+  "owner": "/root/improve_cloud_technical_materials",
+  "operator": "/root/finish_clean_material_panels",
+  "native_pixels_reviewed": true,
+  "complete_view_compared": true,
+  "matched_macro_and_second_light": {
+    "macro": {
+      "equality_checks": {
+        "camera": true,
+        "lights": true,
+        "world": true,
+        "cycles": true,
+        "display_device": true,
+        "film_transparent": true,
+        "pixel_aspect": true,
+        "png_color_depth": true,
+        "dither_intensity": true,
+        "display_settings": true
+      },
+      "control_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/plastic_control_macro_capture_20261006_1545/CLEAN_OIDN_PANEL.png.json",
+      "control_receipt_sha256": "b045469bdc3e4a4b7dc90db3b61c99219fa4038254f9795bd083a48df2f20803",
+      "candidate_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/plastic_complete_macro_r3_capture_20261006_1521/CLEAN_OIDN_PANEL.png.json",
+      "candidate_receipt_sha256": "bf6ca77e83a44bdd4dbb2b3690acc8307d492a6ca79f4af95958f4fd647aa9c8"
+    },
+    "second_light": {
+      "equality_checks": {
+        "camera": true,
+        "lights": true,
+        "world": true,
+        "cycles": true,
+        "display_device": true,
+        "film_transparent": true,
+        "pixel_aspect": true,
+        "png_color_depth": true,
+        "dither_intensity": true,
+        "display_settings": true
+      },
+      "control_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/plastic_control_second_capture_20261006_1547/CLEAN_OIDN_PANEL.png.json",
+      "control_receipt_sha256": "76ac13a0e49838dc2612406c0deb44c0147362b8e258325097aeeb626c394dfb",
+      "candidate_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/plastic_complete_second_r3_capture_20261006_1526/CLEAN_OIDN_PANEL.png.json",
+      "candidate_receipt_sha256": "e5559be45b37f8703a58035dcdef733e6f8586184ba73eb59796cb1673d3c77d"
+    }
+  },
+  "images": {
+    "macro_control": {
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/plastic_control_macro_capture_20261006_1545/CLEAN_OIDN_PANEL.png",
+      "sha256": "ea1d6ca69f824ae20e42421b0b7357f7bf4d22bf7445f047dfecc6672e92e90e"
+    },
+    "macro_candidate": {
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/plastic_complete_macro_r3_capture_20261006_1521/CLEAN_OIDN_PANEL.png",
+      "sha256": "116ac37b979c8bba9df7573f279ddba29b8625ed494fc82ce2112fccd7b84b37"
+    },
+    "second_light_control": {
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/plastic_control_second_capture_20261006_1547/CLEAN_OIDN_PANEL.png",
+      "sha256": "891380f1bdadcbe12da1605cf58e7c45015d5cadb191eec58de4c3067c6c0757"
+    },
+    "second_light_candidate": {
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/plastic_complete_second_r3_capture_20261006_1526/CLEAN_OIDN_PANEL.png",
+      "sha256": "74b9a6236555e2e3a7207b27a048f1f8afca24fc9a364ae094dfcb8a85bb5e23"
+    },
+    "candidate_complete": {
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/plastic_complete_full_r3_capture_20261006_1518/CLEAN_OIDN_PANEL.png",
+      "sha256": "262604c94de4501d4a4d5ea1f463bb3c42f4db49edaba6ea66f9f3050a65ac00"
+    },
+    "protected_complete": {
+      "path": "/workspace/scratch/b4387906eb93/labeled-material-panels/21_molded_stipple_plastic_labeled.png",
+      "sha256": "cfcbbd5737631ada156f3927836db6a846df46616d1a07334d98e308c984a21d",
+      "library_file_id": "libfile_ea9e705b38608191ace56d62e2cf6020"
+    }
+  },
+  "result": "clear_visual_improvement",
+  "degree": "Visible surface-detail improvement, strongest at24mm macro; complete-panel change is modest in magnitude but the grain is more resolved.",
+  "native_review": {
+    "complete": "Protected original outline, palette, rounded edge and narrow shutoff band preserved. Candidate has clearer fine stipple on the full face and curved rim. The corrected studio profile has no foreground cutoff.",
+    "macro": "New fine grain is continuous across the face and fillet. Prior r2 control has softer face texture and visibly coarse/blotchy bright modulation. Candidate seam remains continuous without a visible chart line, facet step or unsupported edge.",
+    "second_light": "The improvement persists under the exact matched rotated-light rig: finer continuous stipple in the broad reflection instead of coarse uneven patches. Outline/band and small near-corner reflection are stable.",
+    "noise": "No conspicuous grain in the native clean images. Both owner and operator inspected actual pixels; raw/clean detail review is recorded by operator.",
+    "geometry_strengths_preserved": true
+  },
+  "source_gate_summary": {
+    "native_4096_height_preserved": true,
+    "local_data_tests_passed": "Zero position max11.12nm; native seam max8.03nm; actual analytic shader all5050observed native cells match float32 oracle. These are local fixtures, not a full-part20nm mesh claim.",
+    "complete_representation": "Camera-specific sampled geometric LOD with analytically evaluated original b(q),d(q),native bilinear height derivatives. Sampled full/macro projection below0.25px; original narrow molding details checked separately.",
+    "geometry_closed_and_grounded": true,
+    "old_recipe_reconstruction": "Archived map bytes/topology hashes and all stored positions,face tags and shader defaults passed fresh reopen. Historical binary/pixel identity is not claimed."
+  },
+  "attribution_limits": [
+    "Candidate uses current solved independent-column retained height and intrinsic roughness; prior r2 uses the frozen empirical90%-tool state and prior roughness. The comparison is between complete recipes, not a one-variable intervention.",
+    "Assumed polymer/thermal/optical constants are not calibrated. No injection-flow, lateral volume conservation, shrinkage, molecular structure or full manufacturing-history qualification.",
+    "Main and coat normals now use the shared surface derivative. Complete geometry is an LOD approximation while the shader samples native height; local exact gates must not be presented as whole-part exactness."
+  ],
+  "presentation_recommendation": "Save and offer the three candidate views; preserve the protected previous complete image in preference history. Numeric validity alone is not the reason for this recommendation.",
+  "physical_qualification": false,
+  "registry_changed_by_review": false,
+  "user_delivery_confirmed": false
+}

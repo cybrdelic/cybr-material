@@ -1,0 +1,40 @@
+{
+  "ready_for_operator_postprocess": true,
+  "render_required": false,
+  "script": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/clear_petg_capture_recovery/source/refilter_transmission_probe_r2.py",
+  "script_sha256": "3d474673b4bfecec3c8fb8342984ef5d290c8a8476a9f34bd6052df8a9fc5c82",
+  "core": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/clear_petg_capture_recovery/source/two_component_math.py",
+  "core_sha256": "16981dffc9d6f4a23f056560e50773fcf73fc1ea541794788ce992ed1eff48e6",
+  "input_run": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/clear_petg_probe_capture_20261006_1203",
+  "output_directory": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/clear_petg_two_component_filter_probe_r2_20261006_1220",
+  "prepare_args": [
+    "prepare",
+    "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/clear_petg_probe_capture_20261006_1203",
+    "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/clear_petg_two_component_filter_probe_r2_20261006_1220"
+  ],
+  "operator_filter": null,
+  "import_args": [
+    "import",
+    "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/clear_petg_probe_capture_20261006_1203",
+    "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/clear_petg_two_component_filter_probe_r2_20261006_1220"
+  ],
+  "filter_scope": "Both physical components are independently filtered. Reuse prior filtered remainder; new filter only on nonnegative transmission. Untouched float64 accounting residual.",
+  "no_material_or_runtime_edits": true,
+  "unit_tests_passed": [
+    "exact_float32_identity",
+    "component_exchange_symmetry",
+    "reject_negative_filter",
+    "reject_nonfinite_filter",
+    "reject_negative_output"
+  ],
+  "required_review": [
+    "Native transmission noise after filtering",
+    "Reflected layer harmonic retained in final",
+    "No false retained-transmission claim"
+  ],
+  "user_delivery": false,
+  "shared_bridge_sha256": "540b9b39df71576661a58bbba81ed3818fe1317f4224ed570ef03241b1cd6b5b",
+  "oidn_call_required": false,
+  "correction": "Both filtered components are read from existing hash-verified PFMs. The defective saved EXR is never reused. New shared save/read roundtrip is verified.",
+  "retained_failed_attempt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/clear_petg_two_component_filter_probe_20261006_1213"
+}

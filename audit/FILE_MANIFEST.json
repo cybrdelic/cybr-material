@@ -1,0 +1,1456 @@
+{
+  "schema": 2,
+  "base_commit": "de4146ac759164e29323b152d37f64417c00c3fb",
+  "source_checkpoint_sha256": "390671b443a686813d30f53cf701393558797a6f4fc9d6cc0e28c1ea24c6ca74",
+  "managed_roots": [
+    "audit",
+    "material-workspace",
+    "research"
+  ],
+  "additional_files": [
+    "README.md",
+    ".github/workflows/validate-material-audit.yml"
+  ],
+  "files": [
+    {
+      "path": ".github/workflows/validate-material-audit.yml",
+      "bytes": 1002,
+      "sha256": "d0fa0eb8f5f536116b8d6eb42f0a5f553cf2b0b4e079220fff73ac19739bcf8e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12279,
+      "sha256": "097243b22b107d99563ea94d5c304ac6a139846c21f4bf32144f12a08894e601"
+    },
+    {
+      "path": "audit/ARTIFACTS.json",
+      "bytes": 4936,
+      "sha256": "03db6c83638bb29c1183cec740b6e2e2f430ff98191239ebfb3df9696721b531"
+    },
+    {
+      "path": "audit/PRINCIPAL_ENGINEER_PLAN.md",
+      "bytes": 5906,
+      "sha256": "380f0591ccd843ec76e6580458bf79be7d9e5c395c3ccfa49d72f5bdae198c87"
+    },
+    {
+      "path": "audit/README.md",
+      "bytes": 3097,
+      "sha256": "fe09fc412708653d3e6ff50fbe5e6641ecf24e508fcd488edf032928a8bb236e"
+    },
+    {
+      "path": "audit/STATUS.md",
+      "bytes": 3107,
+      "sha256": "539455ab52a193e58b21f95bba917f3b71b1178732ea71185e5e939de123f608"
+    },
+    {
+      "path": "audit/porcelain-selection/FINAL_OPERATOR_REVIEW.json",
+      "bytes": 1588,
+      "sha256": "a461cb1681e576d71ea30d54bfc66a7e04da4891a51fc1a9c942f33cda4276a3"
+    },
+    {
+      "path": "audit/porcelain-selection/operator_applied_review.json",
+      "bytes": 299,
+      "sha256": "0e219c6718c12272b2597ecc414737654247fe8478af9779568275a32199b0b3"
+    },
+    {
+      "path": "audit/porcelain-selection/update_receipt.json",
+      "bytes": 918,
+      "sha256": "d012dc834fabbe45d943cbbbce6521dc63bcf0f66fa491d48d6699c245f687ae"
+    },
+    {
+      "path": "audit/previews/21_molded_stipple_plastic_full.png",
+      "bytes": 3281749,
+      "sha256": "ec921941239f9954e6440cac0d7f48a5d305e1446f63ec054e131978ab32ab27"
+    },
+    {
+      "path": "audit/run_portable_tests.py",
+      "bytes": 1809,
+      "sha256": "1c31b753fd56e11ced42867f6fa09dec95902261fe31d4cafe85f32f8fc66362"
+    },
+    {
+      "path": "audit/verify_checkpoint.py",
+      "bytes": 2109,
+      "sha256": "997dc5eaf45cd15b9c4f562fe9365cfd4cdeded164aa025e1f20bb78dbadcba2"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/audit-20261006/cache_guard/test_cache_validation.py",
+      "bytes": 8044,
+      "sha256": "b6d1eeffe2c2d2ecee92ee5a7a2b1e2df69b881398f764bbc052009f63966d5c"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/audit-20261006/cache_guard/test_queue_paths.py",
+      "bytes": 1750,
+      "sha256": "67e014bce20430bed8f61cab9460ebb5ee6ed73c8dec9ba04c6d33f66ad01d3d"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/audit-20261006/resource_peak/test_resource_contract.py",
+      "bytes": 1266,
+      "sha256": "9547fb2e22493ef73399a58b23b6282e1b1a77379a1eb3cd6218acba34302ccd"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/bounded_clean_run.py",
+      "bytes": 2439,
+      "sha256": "4946bea06422b9a77aa9d9a6e25be989630026ff9821809dddd752088ffe74de"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/cache_validation.py",
+      "bytes": 9812,
+      "sha256": "1d476f28c104c90f3cb0774e75756d1b2f1d8fcfa8fa0a62e7ab56018b8721d4"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/capture_modes.py",
+      "bytes": 1527,
+      "sha256": "c3d1ff01c580a8f63f1fe3658697ec711525f2e8032a82e2fb008c8f8339bbf8"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/clean_receipt.py",
+      "bytes": 1791,
+      "sha256": "0746b04f053fdc7a9b0df1805961e5ae6ee5051d992784ed715e361d0d80d8de"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/clean_render.sh",
+      "bytes": 4312,
+      "sha256": "ce41f0f576457889632a70b679485393f29c49820a9d93cdf1cda46fce792cee"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/component_image_bridge.py",
+      "bytes": 9087,
+      "sha256": "74dca31a6739ef5b666ec4437d77297f138dc5bd8f63280c9d2cea8acfe74047"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/component_receipt.py",
+      "bytes": 2884,
+      "sha256": "5327a00bc7d9c2bc414fb6529ed7c4ccadd539ad96f69858c10f3bfd44796c35"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/oidn_contract.py",
+      "bytes": 1186,
+      "sha256": "c50d803b0d500905b03d8ccc24512e769d100b434dad96891d657986f8be5094"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/oidn_image_bridge.py",
+      "bytes": 4434,
+      "sha256": "7d88792da6c53a47e3aacafa2b7a222f844ce458afa7b535f081faf9c5732bf6"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/png_precision_check.py",
+      "bytes": 986,
+      "sha256": "fec3e732a7185e2ef5485af2f6db3963a151d6867e48c59c036509bfdad77f20"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/queue_paths.py",
+      "bytes": 596,
+      "sha256": "d15bde4bbc62b004491ee5186bfd07e2fcadd5545ea6cea7e2c27929830c4aa9"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/raw_receipt.py",
+      "bytes": 2388,
+      "sha256": "af411eed5c7eb1855e6abc81838bab0a1ed1defeb2446094bb837017c266ec5d"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/render.py",
+      "bytes": 20969,
+      "sha256": "92aa1336ee8093998c3df59c100c5c46eea72288ab8384506149cefa962e2c84"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/render.sh",
+      "bytes": 307,
+      "sha256": "04e9132f5e47db72e647c1c6ae4076e8ab71da974192ae4b27fd9a3ac6c409b5"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/resource_contract.py",
+      "bytes": 688,
+      "sha256": "a5d0a12482fcc48e06fa2680a879e0646e30fa580fe1abbdbff730f484324d8c"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/run_panel_queue.py",
+      "bytes": 2660,
+      "sha256": "0813eda63c3d604a3453741772db29849976568bf71b3ed99541c2f36861d0d4"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/test_component_exr_roundtrip.py",
+      "bytes": 1888,
+      "sha256": "2bfafee42548d5dbd2520ec7290fc70f12ed779248874742024c3dc0e04ad55a"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/transport_components.py",
+      "bytes": 4070,
+      "sha256": "9232c7679b68c763273ebc51aa78296ae67a0a6891b71ef713f461e9d86816d4"
+    },
+    {
+      "path": "material-workspace/shared/cloud-eevee/verify_pipeline_snapshot.py",
+      "bytes": 1192,
+      "sha256": "6ffcdffc991dc7b9cb345645bb919d82da6f221c1f0138e485b886f7099b9d1b"
+    },
+    {
+      "path": "material-workspace/shared/material-production/CAPTURE_MODES.md",
+      "bytes": 5011,
+      "sha256": "f6c30b5e536e7cd5a4431ce5316c585887f8df4f2f7f1d99f224a108b9d914b0"
+    },
+    {
+      "path": "material-workspace/shared/material-production/README.md",
+      "bytes": 3066,
+      "sha256": "99dae44c14b9b156b5de02643144364907ec01410c895d97464cdc97410f5c7f"
+    },
+    {
+      "path": "material-workspace/shared/material-production/experiments/carpet_r5_control_macro_r3/experiment.json",
+      "bytes": 1980,
+      "sha256": "6339495108bf74c7a6a1e4c854cf61e656d9d188a7995362a0d54014a3c06a9a"
+    },
+    {
+      "path": "material-workspace/shared/material-production/experiments/clear_petg_preferred_full_panel/experiment.json",
+      "bytes": 3814,
+      "sha256": "c62620b5f719d1c50c3e8eafb583a46c275695cbc39b399e0c2ae112c16e5873"
+    },
+    {
+      "path": "material-workspace/shared/material-production/experiments/porcelain_reference_intrinsic_full/experiment.json",
+      "bytes": 2092,
+      "sha256": "90a9cf860506fa65403b4fa9e2bf7fb1ae6cf431fc3131865930e9b88e1119ee"
+    },
+    {
+      "path": "material-workspace/shared/material-production/experiments/porcelain_reference_intrinsic_macro/experiment.json",
+      "bytes": 2080,
+      "sha256": "ae95e4a5e390f59b016983e661ebd1fcd034c8f90e1760cca5b50c35fd1002d9"
+    },
+    {
+      "path": "material-workspace/shared/material-production/experiments/porcelain_reference_intrinsic_second_light/experiment.json",
+      "bytes": 2023,
+      "sha256": "554e468a682a20d6b035619546830b13562fdd3dd0480c460c4e9029500a0d0a"
+    },
+    {
+      "path": "material-workspace/shared/material-production/experiments/recovery_carpet_r5_internal_smoke/experiment.json",
+      "bytes": 1164,
+      "sha256": "ff5f20d214a891fdcfde1cedd15b3852826d98da2aa94e1c08ae192a12635a29"
+    },
+    {
+      "path": "material-workspace/shared/material-production/materials/__init__.py",
+      "bytes": 77,
+      "sha256": "ce9303bce58baf2ec724ae15029a2bb3983ccad7f8dd79a585571456b1acfecf"
+    },
+    {
+      "path": "material-workspace/shared/material-production/materials/__main__.py",
+      "bytes": 12408,
+      "sha256": "7e1e05f548fc2e2a434528e22cd4682fc3c6efd8f2cd6c429fe6e8d91c36ae2f"
+    },
+    {
+      "path": "material-workspace/shared/material-production/materials/aggregate_rebuild_stage.py",
+      "bytes": 6789,
+      "sha256": "c969544b1adfd3653b49afef04fbb232247eec8364a16535b9f83750d148fbc3"
+    },
+    {
+      "path": "material-workspace/shared/material-production/materials/brass_rebuild_stage.py",
+      "bytes": 4916,
+      "sha256": "2f70bec08d870f927a4176f96e23935a687d3c6526827c77931d51e553e09987"
+    },
+    {
+      "path": "material-workspace/shared/material-production/materials/core.py",
+      "bytes": 5173,
+      "sha256": "0e45e11011ec39f5c5177d27dc99f17b7b1857bc503724ef2cc5f95eaa0e515d"
+    },
+    {
+      "path": "material-workspace/shared/material-production/materials/experiments.py",
+      "bytes": 1570,
+      "sha256": "35ea5b70d9ca631f7902a6bf956303168c0cffc623c09341364ae34a127895eb"
+    },
+    {
+      "path": "material-workspace/shared/material-production/materials/generation.py",
+      "bytes": 3867,
+      "sha256": "df640f200eb48525e69bd52db0aa9fff31450ce52a136520336756c79a0b1990"
+    },
+    {
+      "path": "material-workspace/shared/material-production/materials/inspect_scene.py",
+      "bytes": 3523,
+      "sha256": "28d8044283c258b483712a9202c38531f766f7bd62628b0fbdac7b3823d56831"
+    },
+    {
+      "path": "material-workspace/shared/material-production/materials/native_parity.py",
+      "bytes": 10827,
+      "sha256": "90a6f99ecaf4f59275851ea97255b6e767540ec84d4ff38556c34a31f613c5c8"
+    },
+    {
+      "path": "material-workspace/shared/material-production/materials/path_config.py",
+      "bytes": 2197,
+      "sha256": "03a723e6349a98e34ac451167dcd5608c2d66257a93875a425cff628c5275655"
+    },
+    {
+      "path": "material-workspace/shared/material-production/materials/png_fingerprint.py",
+      "bytes": 2416,
+      "sha256": "986dca15d4e4821d55c15cd441650b41fb5cf75b6ab8dbef6f50f9c73520cbd7"
+    },
+    {
+      "path": "material-workspace/shared/material-production/materials/rebuild_brass.py",
+      "bytes": 3899,
+      "sha256": "ee79104f5141d4f947ac4f6427bf2d1834ae3eb7e7223c10ea74bc7eab059470"
+    },
+    {
+      "path": "material-workspace/shared/material-production/materials/recover_aggregate.py",
+      "bytes": 6032,
+      "sha256": "5a1cf7aba9ac7876b9d7da98651d61054d575f93b4ccbf37809e2df74e022cb7"
+    },
+    {
+      "path": "material-workspace/shared/material-production/materials/recover_native.py",
+      "bytes": 2407,
+      "sha256": "dac242ea2ad796f6d233daa9fd3175a6e7a91a4b37ae949a36cbc1911ca986b7"
+    },
+    {
+      "path": "material-workspace/shared/material-production/materials/showcase.py",
+      "bytes": 2206,
+      "sha256": "ebced57394af7eb3fd55b10bb90bca8793599c619d5532c3e413bc5de20e4de7"
+    },
+    {
+      "path": "material-workspace/shared/material-production/registry.json",
+      "bytes": 140035,
+      "sha256": "2edde7d241dfada9c2cd0dbca0efc75a7173a1ee954cdc05e4d4d5ce9c6b89d0"
+    },
+    {
+      "path": "material-workspace/shared/material-production/requirements.txt",
+      "bytes": 111,
+      "sha256": "71012d155f53bb1528ab900d92439180731708ea1a3a85f7382ca9e963ecdb98"
+    },
+    {
+      "path": "material-workspace/shared/material-production/runs/native_brass_codec_verified_20261006_0230/parity.json",
+      "bytes": 53429,
+      "sha256": "11d6672baf54c08272b8a047e05d3988886496b9f115a08005f197a84d4ac32f"
+    },
+    {
+      "path": "material-workspace/shared/material-production/runs/native_concrete_final_20261006_0233/parity.json",
+      "bytes": 168009,
+      "sha256": "6cf96ac40de21a4dcf99001be10256647550249e3ada2eb6ffb9cef5040c3695"
+    },
+    {
+      "path": "material-workspace/shared/material-production/tests/fixtures/brass_inspection.json",
+      "bytes": 6541,
+      "sha256": "4def654af6985bcb127c850f2a3bd583b5c3b00f6878fec5197b2c31c3e813a1"
+    },
+    {
+      "path": "material-workspace/shared/material-production/tests/fixtures/concrete_inspection.json",
+      "bytes": 4005,
+      "sha256": "bcfbac81b41f1cefcc343ea7487ca4024731f7fe8197bd1fa3ad4d9c384dbfd7"
+    },
+    {
+      "path": "material-workspace/shared/material-production/tests/test_integration_contracts.py",
+      "bytes": 4908,
+      "sha256": "e0a2374bf43e6e3a4750e1c53b8dbd1d5863616b2fd651b16ae4a9189fe5b67b"
+    },
+    {
+      "path": "material-workspace/shared/material-production/tests/test_native_png_and_experiments.py",
+      "bytes": 3232,
+      "sha256": "630b0e2669cc04c71332c2ed951af59107dfef9c485c676161635e1795d7c779"
+    },
+    {
+      "path": "material-workspace/shared/material-production/tests/test_path_config.py",
+      "bytes": 1388,
+      "sha256": "4967ecdd74a1735eb7ce52069d6517fa2c9758c6f496c8bf726e4c2756893102"
+    },
+    {
+      "path": "material-workspace/shared/material-production/tests/test_showcase_guard.py",
+      "bytes": 1770,
+      "sha256": "e09f4c5dd16a1804b6b4361ec8ec96f9cfc110421e8f2a287dac0a881f637a4d"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate/SOURCE_LOCK.json",
+      "bytes": 1175,
+      "sha256": "814b8b1147e8fe4ae943920d24eaf361d093b3c4ad922104dbbe88c239c929d8"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate/recipe.json",
+      "bytes": 4970,
+      "sha256": "6c7e32a95089222e154149ceabdc89318937954830bf835c4b824afb938d3201"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate/source/generate_native.py",
+      "bytes": 8098,
+      "sha256": "ab52d28b31b7a6aaae7106f681d008e64e2e927115515ea9cf0accd2a47fddbd"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate/source/grain_model.py",
+      "bytes": 1586,
+      "sha256": "fb096a0e6996eec7a41765a9c88292850d7da338e971b2f1b2c6cda89138d931"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate/source/maps.py",
+      "bytes": 13663,
+      "sha256": "c328e418082868be8549fda2af57d87431345d7f0983d6dca6928c08d779aabb"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate/source/mineral_construction.py",
+      "bytes": 13827,
+      "sha256": "a4f54474756e43f3c2a737d57fefe6ef2a7e7aa791f74784755ad56506bfbe28"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate/source/mineral_construction_bounded.py",
+      "bytes": 14071,
+      "sha256": "c73f2fbd1ef87ddea44f4a590068d57c6fa0a99b1eaedb4a57422424ed35c072"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate/source/surface_math.py",
+      "bytes": 3949,
+      "sha256": "3c09a5ebc9b860abb9783045bed7674e3917087b0c0d21376fbfd8cda12cafc0"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate-reconstruction/SOURCE_PROVENANCE.json",
+      "bytes": 1010,
+      "sha256": "770b3865a77f066d0c327fbf65467976d0cd8a3f30787784c7786d24ad13f736"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate-reconstruction/fix_specimen_edges.py",
+      "bytes": 2821,
+      "sha256": "057ba30116150cd291016bd57151d2624da7e118432261f3178305a4d04eb189"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate-reconstruction/geometry.py",
+      "bytes": 29357,
+      "sha256": "9a04a435dab8f8b1a2f0820445b9e2a4afeba257ed4c56e0d0f25522744f987c"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate-reconstruction/rebind_slab.py",
+      "bytes": 3576,
+      "sha256": "3214bcbd3db5a16d37498dcfec317838851c911086b0139a652d7baae1bcafc4"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate-reconstruction/selected_recipe_1536.json",
+      "bytes": 4970,
+      "sha256": "6c7e32a95089222e154149ceabdc89318937954830bf835c4b824afb938d3201"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/original/SOURCE_LOCK.json",
+      "bytes": 2058,
+      "sha256": "31ab475e937004395ca696142be6fd9306d1fe635f93e425d2c72133f6c003e0"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/original/source/finish_structures.py",
+      "bytes": 4574,
+      "sha256": "3b613dabf120f936e01ab8d2c25658241b37c16a064d176a84077f80190455df"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/original/source/generate_materials.py",
+      "bytes": 23467,
+      "sha256": "85986fdde6a92c8026dd1e556d7a4a877a74fbff0be87782b5e2e4a12210cfa3"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/original/source/physical_features.py",
+      "bytes": 5736,
+      "sha256": "36cde6435a8e42e329b8e93438a4c4cdabe66382345b7a6a6e886541f25c9a23"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/original/source/requirements.txt",
+      "bytes": 42,
+      "sha256": "f793676a40e71a12c2d9066d4f2e342bf5d920a971a725519c00ed500c4231ed"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/original/source/surface_math.py",
+      "bytes": 3877,
+      "sha256": "831000ff69ffe6c32681859500750f7204cafab424ba4c6beada1ddb17a9492c"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/original/source/timber_volume_shader.py",
+      "bytes": 5795,
+      "sha256": "758ec657c0329f3d21b420a49be0346f845742d7fcbceebcd34d1b8545b6678e"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/original/source/wood_anatomy.py",
+      "bytes": 9117,
+      "sha256": "30c69e999b2cbf8e11ce1bcdbf0e6efbb17443e710062ecaccacc2626e15a961"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/original/source/wood_profiles.json",
+      "bytes": 1677,
+      "sha256": "e3d3c941fdfdad0e5a30322fe38d6de3e245c8b3b1eb7630b2a2ad815faa95bd"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/reconstruction-source/SOURCE_LOCK.json",
+      "bytes": 829,
+      "sha256": "d32ed484762bfd8c94a6ce924767896851b31d2ea5d1f1141b66c22cdb9aca1c"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/reconstruction-source/build_original_native4k_panels.py",
+      "bytes": 11192,
+      "sha256": "403e42b213c6a24040609fa8afe1f0acd67bb0417e47eb703fdcd36992c3c62a"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/reconstruction-source/candidate_receipt.json",
+      "bytes": 2730,
+      "sha256": "b5f53c626638b52e32cca7e3dcc7cad8abd8787c35e61aa00613db86eb390d79"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/reconstruction-source/guarded_top_only_patch.py",
+      "bytes": 17281,
+      "sha256": "0070fcdc9ee7abe555395325b96da2e3170c2f6d6b24d0a6c63781c08fa7e8f2"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/reconstruction-source/original_brass_builder_receipt.json",
+      "bytes": 9372,
+      "sha256": "4b3d4e90574393f5610575db5050d63f128ee73eb29a1d28915863aac60c01a3"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/reconstruction-source/persist_brass_uv_tangent.py",
+      "bytes": 1499,
+      "sha256": "26d15f3e144c7840990276af52b2a26fc0527e0cad71e324e72fb5c290fe79bc"
+    },
+    {
+      "path": "material-workspace/shared/material-slabs/source/studio.py",
+      "bytes": 3355,
+      "sha256": "31d56e0261c52ae8de15639e8e25e450933cab138211e5125ad35154707349da"
+    },
+    {
+      "path": "research/organic/selected-baseline-source/bark_field.py",
+      "bytes": 3027,
+      "sha256": "104009133bb15a786548ce2be5a245e5f2cfda01dd4a986e6ab550dae20d93d9"
+    },
+    {
+      "path": "research/organic/selected-baseline-source/bark_field_r5.py",
+      "bytes": 3177,
+      "sha256": "ea9407acec44224bb597cc8811ca7af1dbe83d6283cb74aa60aa899e4cb15bc1"
+    },
+    {
+      "path": "research/organic/selected-baseline-source/build_organic.py",
+      "bytes": 13624,
+      "sha256": "1b86e7d8d05f827c244abb003999dbb39db500cf818469decf5baab1e303473d"
+    },
+    {
+      "path": "research/organic/selected-baseline-source/check_scenes.py",
+      "bytes": 1510,
+      "sha256": "70327875025d2a24f2bf006e4bcfaaf1dfbf94ea91f12f3603d9c9e5dceef849"
+    },
+    {
+      "path": "research/organic/selected-baseline-source/collect_render_receipts.py",
+      "bytes": 1363,
+      "sha256": "343641a22f29c9e5935d4ff25d5ffa4860c1feb8c1f4833ac02dd89771127093"
+    },
+    {
+      "path": "research/organic/selected-baseline-source/organic_shapes.py",
+      "bytes": 13745,
+      "sha256": "7829669238ac7e14f5ff2e176f966536d1f0cafa71b2f643b8928050d9e50eb7"
+    },
+    {
+      "path": "research/organic/selected-baseline-source/package_review.py",
+      "bytes": 2087,
+      "sha256": "3776476a486a7ffe9ec924e696f982b0d87d30683f346ddc1aa472700f458c1d"
+    },
+    {
+      "path": "research/organic/selected-baseline-source/test_fields.py",
+      "bytes": 1997,
+      "sha256": "724c51e35a3242b301780443d3678a21c11f4c13a327f36bc8a416282734cf9b"
+    },
+    {
+      "path": "research/organic/selected-baseline-source/test_transport.py",
+      "bytes": 1508,
+      "sha256": "df2627502685aca948e7b461a49b65abaa672b2b33ad8bcd4a5fd6f5b7844e08"
+    },
+    {
+      "path": "research/organic/selected-baseline-source/transport_tubes.py",
+      "bytes": 1540,
+      "sha256": "33e7ecbb137bf7ae00bad77e4d4ba175be42ba0439ae77d51d7025cb01eb6333"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/archived_inputs/material-native4k/sets/23_petg_transparent/material.json",
+      "bytes": 6608,
+      "sha256": "19be6b287155481dee0919dd9b482bdef51e29fab47c671129282b84b91caeb4"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/archived_inputs/material-native4k/source/generate_petg_bounded.py",
+      "bytes": 5017,
+      "sha256": "70c9ff8c72e2fb78d703dce99d2354f1dde8976d7e40438537f6d4010e354bf1"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/archived_inputs/material-slabs/receipts/23_petg_transparent_native4k_slab.json",
+      "bytes": 1493,
+      "sha256": "89cee273f51c119c4ec34a17a1c9d242ee917c43bd1354755b92f955283f03c2"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/capture_runtime_frozen/component_image_bridge.py",
+      "bytes": 7078,
+      "sha256": "540b9b39df71576661a58bbba81ed3818fe1317f4224ed570ef03241b1cd6b5b"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/capture_runtime_frozen/oidn_contract.py",
+      "bytes": 1186,
+      "sha256": "c50d803b0d500905b03d8ccc24512e769d100b434dad96891d657986f8be5094"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/capture_runtime_frozen/png_precision_check.py",
+      "bytes": 986,
+      "sha256": "fec3e732a7185e2ef5485af2f6db3963a151d6867e48c59c036509bfdad77f20"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/capture_runtime_frozen/transport_components.py",
+      "bytes": 2598,
+      "sha256": "047b5fd0c8027c245c03c1a275e342baf7da852f2b8bbdc4ad46a51990f42d7d"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/full_frame_handoff.json",
+      "bytes": 2371,
+      "sha256": "95e0791d4ac62f6df6fb756a875c5bed128e2b36804e221de038cbc839d4f424"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/receipts/23_petg_transparent_native4k_slab.json",
+      "bytes": 1716,
+      "sha256": "da98eca2977a7e55a556d8cb151a0c8cb1355f7aec3749d3b0c742d6f57e4d9b"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/receipts/full_frame_native_review.json",
+      "bytes": 3180,
+      "sha256": "74d777127583485893aa0c48afb2448290456fbbc688a0130f75d3943195b6f8"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/receipts/full_signed_accounting_r5.json",
+      "bytes": 790,
+      "sha256": "a1f13b87c3237d8accf032aefa955a7583e67ea9fdf29a92b28977aeb45f109a"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/receipts/layer_retention.json",
+      "bytes": 1792,
+      "sha256": "47b5e1bc044f69679e420a037010c98b694f19c814b0ec0ed83e6309640e2e82"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/receipts/native_maps.json",
+      "bytes": 2478,
+      "sha256": "a1aa6c1d76b2e5aedef015f4ae7329e2cdf9d43cba0a054551bea70ae10f41fc"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/receipts/reconstruction.json",
+      "bytes": 2106,
+      "sha256": "55cb284b55a57c9f2214b78adf957889ac5932691cb853fd094887db045f6745"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/receipts/source_inspection.json",
+      "bytes": 1692,
+      "sha256": "2fb77f033d47cdd199e08435eb46d957870e280ae1e86415f7f000e87be85096"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/receipts/tangent_repair.json",
+      "bytes": 1125,
+      "sha256": "12db6f8443a81f916e8b152938e25bd79b0cdb4cc6dc3af91ebc7beaa43f55f0"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/source/inspect_and_add_guides.py",
+      "bytes": 4666,
+      "sha256": "17f1892bd4fb475583c5a6c88cf6d13357d15223928fb88cff0625e4d3f46e29"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/source/measure_layer_retention.py",
+      "bytes": 2592,
+      "sha256": "6903d476fc72f361214dc8630e16e15f803a4694f1bbbe4e124185b956d6b300"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/source/original_build_petg_native4k.py",
+      "bytes": 3610,
+      "sha256": "90c986377aa107b13f87ae8aba81a41b675268df2e30bdfb0f1ea6b74b05c814"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/source/rebuild_selected_panel.py",
+      "bytes": 1800,
+      "sha256": "e46b50878ccf33ac1c5e7571a3d33dd511119aa22aa06ed78c76cee4934559e2"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/source/recover_bound_maps.py",
+      "bytes": 2533,
+      "sha256": "104e077e4c74b11bd4105b23debb1f52fe98fcdab50ecb20193e02e85a81852d"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/source/refilter_components_full_r5.py",
+      "bytes": 8328,
+      "sha256": "cb10494af801a8bbebdd8e8ceccab8f1f451bfd7e7ff5b47a9baade1d189783b"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/source/repair_tangent_chart.py",
+      "bytes": 4278,
+      "sha256": "9a331b9efd166ebf4473847f3a0eb8f31f7d6a184f98372df7fce7ae26ce618e"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/source/two_component_math.py",
+      "bytes": 1648,
+      "sha256": "16981dffc9d6f4a23f056560e50773fcf73fc1ea541794788ce992ed1eff48e6"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/source/two_component_signed_math_r2.py",
+      "bytes": 2162,
+      "sha256": "4904b5a1941c16881d1894e34dc3d5bc8d467ba855d97d3a767ebf97e81ab9f0"
+    },
+    {
+      "path": "research/technical/clear_petg_v1/clear_petg_capture_recovery/two_component_filter_handoff_r2.json",
+      "bytes": 2716,
+      "sha256": "39b0ffaaae47d450755837e97f9cc7f73f5eece178ecef48233c3a1c90e59b7a"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/add_physical_supports.py",
+      "bytes": 2096,
+      "sha256": "cb31181e105a10f7e06137bdeb9dc96f621be1da8a816a96d9bba295a639e886"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/ceramic_glaze_proof.py",
+      "bytes": 1382,
+      "sha256": "208a608ffdd084a2646eadaa6b7e42a62f17246472f1bdb17b4fb943ec63d484"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/check_control_consistency.py",
+      "bytes": 2049,
+      "sha256": "232e0adf641e032001ee667e3d6a59740d0386e76b1e6ebf283d649f2d0cec2d"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/check_petg_optics.py",
+      "bytes": 1770,
+      "sha256": "abb0024ad874c5c87e424f683a2f74736ae6b343a0a1c288b005e25710bde1b6"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/check_rebuild_repeatability.py",
+      "bytes": 1482,
+      "sha256": "46360f7e27fd2f4c5552c0fe38a4b81d8f2b94cc69c89a20ad05fb68520fa5d0"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/check_revision5.py",
+      "bytes": 2892,
+      "sha256": "8e457f1f962e1aab161a54fd8eef538fc9a4697e87f7348dfc25210fa10aae38"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/check_technical.py",
+      "bytes": 4471,
+      "sha256": "0bc07dd94b4722ff013bf5675588eac4c8baef8d1d7207ac45fe39747742606d"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/clear_petg_backlit_control.py",
+      "bytes": 2434,
+      "sha256": "1370a8ef489022b83393adfbef1ba4c758226ced921629ca37c27bbf02aef577"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/clear_petg_transmission_proof.py",
+      "bytes": 2171,
+      "sha256": "4b9dad9635237a7debb96986c659b52701146c406fe644f2bdc3a1d3a0b2368a"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/collect_review_evidence.py",
+      "bytes": 1231,
+      "sha256": "a9cd72721dedb9fd865f06fa809bbafe08e384a2c607c66020ef06efaf6a4520"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/expansion/__init__.py",
+      "bytes": 85,
+      "sha256": "a1c0f694b498a62911434fb48ee4b16647fea6042229d7ad029e76c1de63aa00"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/expansion/catalog.py",
+      "bytes": 4700,
+      "sha256": "fa40356eec2007701c2ffbeaee27f16ee7b1294a0d2c5e4baefa699d8befce9c"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/expansion/check_geometry.py",
+      "bytes": 3806,
+      "sha256": "ee3c0e570c21b844d52489dd3d186dc11cb9097203c175efbd06353ce12eed5f"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/expansion/check_optics.py",
+      "bytes": 1625,
+      "sha256": "03f37468a8893937d0f0861b0418ef21c4d43d5f632dadff6bf6725553ec4384"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/expansion/geometry.py",
+      "bytes": 17368,
+      "sha256": "aafc89a1064b1bd8ed0deb39f1cfb021eebd0eb39c922218eb4384f4ca156500"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/expansion/maps.py",
+      "bytes": 8962,
+      "sha256": "44d15a52e871088ea894f939c08e0bbe15b1d93a74fec19b5d11181b77270f2e"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/expansion/package_review.py",
+      "bytes": 2228,
+      "sha256": "a1bc73216314f17c36054d1e62797eed39ab3680637b27faa2e04d4cb829388c"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/expansion/studies.py",
+      "bytes": 7420,
+      "sha256": "ad4df5177f4ef872601def48fc1b6ec8fd57c51e6dd1b293c6af37acd9f73801"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/expansion/test_maps.py",
+      "bytes": 3334,
+      "sha256": "b591f88ea6d8d5fdb5cf14f5aec6e04663727c5622c202ca5b1393700e99ced8"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/fix_chain_tube_frames.py",
+      "bytes": 3421,
+      "sha256": "11c7ab44ea378d5a6acb5bd7be7e821e2be24799315f4035b970cfb845d66de2"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/fix_hex_layout.py",
+      "bytes": 2633,
+      "sha256": "a51ea0a4e672db361d3a54b91c7bf66661e409df8c17c3cad9d980ef449a19de"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/make_support_details.py",
+      "bytes": 646,
+      "sha256": "ec8d0ed1378806bdf23561de69dcd01bf960f3a84702acdb2fea97da97203fdb"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/pack_technical.py",
+      "bytes": 410,
+      "sha256": "ed51abe5e488b038cb1f2eaa0f0023e9098216c961e873b2dce9ac15e5b57de3"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/package_review_bundle.py",
+      "bytes": 1430,
+      "sha256": "76c471617388268d833607a3323c645338904346b0f81f73bf6ac7f800b6e9d3"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/petg_seam_proof.py",
+      "bytes": 1100,
+      "sha256": "2264c3adbca91c886804686455ef0138701d218e77cf1023f22645d030311f63"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/rebuild_latest.py",
+      "bytes": 3327,
+      "sha256": "e189cfe1dbe517225fb8819200274c11d9adebfd0bcb5b021d61ecbf704f9ff3"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/refine_display_lighting.py",
+      "bytes": 1438,
+      "sha256": "f3d1e771488351664ebd6552140b21e499550e91156d987b5e955d0dbb2ad1ea"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/refine_plastic_joint.py",
+      "bytes": 2839,
+      "sha256": "bae53aed8c58489ad359a7c9d75194c3fb7ee0108538349ebc8a82bb430f8256"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/render_frozen_review.py",
+      "bytes": 4133,
+      "sha256": "f2ff339ea363a162d023e97857897560fc59f497391ba5377055d6cbbf3cf0b5"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/surface_math.py",
+      "bytes": 3949,
+      "sha256": "3c09a5ebc9b860abb9783045bed7674e3917087b0c0d21376fbfd8cda12cafc0"
+    },
+    {
+      "path": "research/technical/original_technical_v1/CYBR_technical_cloud_review/source/technical_studies.py",
+      "bytes": 16939,
+      "sha256": "9c02207f7103aaff751c2bd84c0f389d3af42640c950f4f75e125aa9994a66d0"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/complete_capture_handoff.json",
+      "bytes": 16526,
+      "sha256": "ff2db003e14ff384ca5444da241e9c0bb08f22a614a858b16de2ee0f0aa27151"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/actual_analytic_shader.json",
+      "bytes": 3850,
+      "sha256": "d1ad1fa2ded92924fd68344eb6592087de9d45e8ade6ebf23155d58239d9c2a8"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/adaptive_plan.json",
+      "bytes": 8598,
+      "sha256": "5e3291584423d1536a3c517fa54acd76c96d0cdfa9efd26f5d01b9634d052c91"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/complete_build.json",
+      "bytes": 37201,
+      "sha256": "b38686354ad62ffd82670ecf271c48a5fd309c337eed3f89ec62d2f8ef9440d0"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/construction_plan.json",
+      "bytes": 12632,
+      "sha256": "98696f4024adcaaf1f51ca6d97e3b31e4309016466922e993f60393e0b1c6887"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/detail_lod_verification.json",
+      "bytes": 1150,
+      "sha256": "68ddf4c8c72d000f52445f9e3cb5bdacc861182122cdbe9e34013357749f22e7"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/full_build_admission.json",
+      "bytes": 432,
+      "sha256": "6febf97b116d8f01b83dd795d9cd762db6f60b9c53bb18ea7273f690afd9d5ce"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/knot_conditioning.json",
+      "bytes": 16624,
+      "sha256": "92c5632aed72143e6d7d95a576cc3d8773dcc0eeff05a887238968db599a4c2a"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/molding_details.json",
+      "bytes": 9015,
+      "sha256": "660eedb074ad1a41125f0fab4369056bfda4ba5aeae04b8d28096cf52a9245ad"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/native_coverage.json",
+      "bytes": 12956,
+      "sha256": "20646f2529f074c9500c22507db4d30b4aab55086374b5aa098dfbfa7170b3d4"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/operator_matched_visual_review.json",
+      "bytes": 2235,
+      "sha256": "02e6a2fc8230ebbb9e86f093faff4ec2440b7f7882b12768932bc8f31c691414"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/owner_final_visual_review.json",
+      "bytes": 6887,
+      "sha256": "4e58558bd77230eaa0030e28ce8871c1e27d8d535b9ab861a81ab3d3f6216d4a"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/route_audit.json",
+      "bytes": 3729,
+      "sha256": "cc7d179091b930d8edd9516e86969f8e18a0e0884ae5ba62c0fc75ccee869ff3"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/shader_fixture_build.json",
+      "bytes": 3162,
+      "sha256": "7b0c34742c215a078f9364e23326ef7de50a4f83d1528e018dc3ac928ad74a23"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/shader_gate_acceptance.json",
+      "bytes": 4749,
+      "sha256": "ee4717d3fea299d9c10e39decfed6de835b4764d1e2e411535c3385083204449"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/shader_math.json",
+      "bytes": 4685,
+      "sha256": "84e63da6a8f0a364b529d6f935c395228c249839c5425a67515fa9c765012953"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/receipts/shutoff_contract.json",
+      "bytes": 1229,
+      "sha256": "d9068bbf1df6c3019cf897be61a6e95b9eacae5f409fec0243cd845a6449b739"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/source/adaptive_mesh.py",
+      "bytes": 8474,
+      "sha256": "06e0543201280af02388c2aeea67ce82a6a00c45b927c660dac5961505525aa1"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/source/analytic_shader.py",
+      "bytes": 8318,
+      "sha256": "d9359823b7906841f2446b789b0013da249eca103cfbd8a4e3c65ef5251a79b5"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/source/audit_knot_conditioning.py",
+      "bytes": 3451,
+      "sha256": "da1f44a70a1da17e36f7e82d7007945c611ffb6f285baf004c7a0c32fb34c561"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/source/audit_molding_details.py",
+      "bytes": 4150,
+      "sha256": "f2feb95f08da29a863876a01561d14ff690023ea97fd94bd95abc581c2a6d738"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/source/audit_native_coverage.py",
+      "bytes": 4463,
+      "sha256": "2edd2d72579307dbf8fe15332e3a98fd84aa658d4a3395c96b4af44b51413fde"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/source/audit_route.py",
+      "bytes": 5176,
+      "sha256": "6c942c8c3702f34c4ae6ff96923561dc0b9e03762cfabe1f819c1fa4d0839bcf"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/source/audit_shader_math.py",
+      "bytes": 1752,
+      "sha256": "331f7102352ae7a7c57c9dd3086a5167a39b19fd2631aeb28660bfd9c9b10b7a"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/source/bounded_blender_build.py",
+      "bytes": 1704,
+      "sha256": "cf5adcea6c71b7aaa810089718e2f4689ea78bd84aa531712794afe4059b2edd"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/source/bounded_python_audit.py",
+      "bytes": 1642,
+      "sha256": "9598147052f4e0996dd9af93eee89fd9fe7966c63f74c3618bbc1ac97df519d7"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/source/build_complete_candidate.py",
+      "bytes": 13091,
+      "sha256": "9e36de3ee4e6f404629215df648528a3c51c8fc441458951648f63ba84e0ef80"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/source/build_shader_fixture.py",
+      "bytes": 5233,
+      "sha256": "34a4e67dd5109c3cb639be61ad6e328c5a232e1f30f40a2ffe7ea24ab7ad7cb3"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/source/extract_shader_data.py",
+      "bytes": 752,
+      "sha256": "b9d6fe3d203b7bf98fafd29ab590746c7576b929befc2cced7049b2763494aaa"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/source/surface_contract.py",
+      "bytes": 3728,
+      "sha256": "f80d51f162e6e0ac3c79e7a7a1917f747fd0a0bc7825489182dbb82f7d057228"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/source/verify_detail_lod.py",
+      "bytes": 1969,
+      "sha256": "bb3ef9ad391f126e9219f320adbb375f6ffbfc895cea21adfbc786c36e8b8b6d"
+    },
+    {
+      "path": "research/technical/plastic_v4/complete_transfer/source/verify_shader_data.py",
+      "bytes": 5654,
+      "sha256": "50f65ab63c23b2d34a1763357a972cf5adc3f4f5a3b0388bddef65ba3aed0266"
+    },
+    {
+      "path": "research/technical/plastic_v4/native_seam/plastic_native_seam_transfer/source/bounded_build.py",
+      "bytes": 1305,
+      "sha256": "980b54db33ae2d992cb1716bd332138e3bf1a0771404822ab0e4740903b090db"
+    },
+    {
+      "path": "research/technical/plastic_v4/native_seam/plastic_native_seam_transfer/source/bounded_build_r2.py",
+      "bytes": 1314,
+      "sha256": "2fb4be4dcc7e79672d82f4c899690c2790fa0a1a8070a6dd49c5d752f03d814c"
+    },
+    {
+      "path": "research/technical/plastic_v4/native_seam/plastic_native_seam_transfer/source/bounded_build_r3.py",
+      "bytes": 1314,
+      "sha256": "d2094c9bf48729ec2fcccf3be8d5599f169abb8969bf18efa5a64fd98af5be74"
+    },
+    {
+      "path": "research/technical/plastic_v4/native_seam/plastic_native_seam_transfer/source/build_fixture.py",
+      "bytes": 4920,
+      "sha256": "0b1957097f054dbb8261c02544f54c05e285788df7900126fa5dd92d0b889ccc"
+    },
+    {
+      "path": "research/technical/plastic_v4/native_seam/plastic_native_seam_transfer/source/build_fixture_r2.py",
+      "bytes": 5334,
+      "sha256": "3180227914b95b64671b4fd100d082fd97616b6f1b5f0b70161df07a6d467cea"
+    },
+    {
+      "path": "research/technical/plastic_v4/native_seam/plastic_native_seam_transfer/source/build_fixture_r3.py",
+      "bytes": 6314,
+      "sha256": "f4ab99d592f73c728215366faf4997f060221c1b058174f8111d40134cfab557"
+    },
+    {
+      "path": "research/technical/plastic_v4/native_seam/plastic_native_seam_transfer/source/extract_actual_data.py",
+      "bytes": 742,
+      "sha256": "d66c03678f7166990d06ab2a98f1970fb270c2e4722e5622177efda719dd2250"
+    },
+    {
+      "path": "research/technical/plastic_v4/native_seam/plastic_native_seam_transfer/source/preflight_r3.py",
+      "bytes": 1819,
+      "sha256": "3cc1adb605b81d5dbee7d2564f45051d03f4e3d7f888d0f0f4eeaf06da176fe8"
+    },
+    {
+      "path": "research/technical/plastic_v4/native_seam/plastic_native_seam_transfer/source/verify_native_data.py",
+      "bytes": 4096,
+      "sha256": "e429035ea01c93886037ae5e944e8120d18c6620103c4bd819f1e7d43bf8fb85"
+    },
+    {
+      "path": "research/technical/plastic_v4/pinned_prior_recipe/build_molded_panels_r2.py",
+      "bytes": 10695,
+      "sha256": "1431ef5657feb8c6186c9f93b7bfa8ae772e9d283e6c84c74c7927c85cad6764"
+    },
+    {
+      "path": "research/technical/plastic_v4/pinned_prior_recipe/generate_tool_state_r2.py",
+      "bytes": 2849,
+      "sha256": "a354db0d8e1bd7ae5c69008021ac94cb76073607256dd717c366a0ce0fb9b1e7"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_curved_transfer/source/analytic_surface.py",
+      "bytes": 4140,
+      "sha256": "31280c3ec450d251fa5da8a77f4bf4485fdccfbe0fe805571f8052e67e29698f"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/inputs/mechanism_gates.json",
+      "bytes": 12872,
+      "sha256": "b32fb2c56d5dc603b35748e4efbb81aa807fdcaeb17334d2441de3d41f3f6fb3"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/inputs/plastic_production_ledger.json",
+      "bytes": 1413,
+      "sha256": "df31bc90a712a47415681abcc311054797cf520305c40799e788f5bb1a83ab91"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/inputs/production_native_bake.json",
+      "bytes": 1863,
+      "sha256": "9f8985fb102de71300c1b75c7f23c0bfd9805c556ab01372c85d067a0063e0ef"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/inputs/production_scene.json",
+      "bytes": 6697,
+      "sha256": "e6cfc85e8f0ef818a0fe091095bd878da32db47dd003fccd4126c22d5fba267c"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/inputs/retained_height_audited.json",
+      "bytes": 1116,
+      "sha256": "8f1017c473b15ca49cfb68d4a38cea11dcfade41e16deaca5c6f1012b893ff7a"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/inputs/thermovisco_contact_audited_original.py",
+      "bytes": 10521,
+      "sha256": "06208ea00f407471c2663f6d0f07941bc2790c1c2eaa76221c886b67f124e504"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/receipts/native_recovery.json",
+      "bytes": 3128,
+      "sha256": "68876e8075c0aa0ac411f7a829feb1c39c29ca0d8c15cc0b77707c38a4ace165"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/receipts/scene_native.json",
+      "bytes": 6112,
+      "sha256": "521d2b60ddaee49efbb4b94e29da95436d0ca38dfa0a20f90a6cb78f5e24fe5c"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/source/audit_intrinsic_control.py",
+      "bytes": 3905,
+      "sha256": "8334e02293f38647bbc1f2b19d506a712a4b747e5cdb3e9ec677c7c7e0369b72"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/source/audit_pair.py",
+      "bytes": 6039,
+      "sha256": "440a87dab636f88a091a8c1711f9855fd64d09dc0007147d78801bd2624a0838"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/source/audit_roughness_overlap.py",
+      "bytes": 3696,
+      "sha256": "43bb996184c3e81428ce412173e7efee89b98fded87b02f861b23dc5f96359f5"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/source/build_intrinsic_control.py",
+      "bytes": 2235,
+      "sha256": "e1d7467326daf208f4544e1e32ef40d6bc200e22c3237e3eb4f38654febf88ef"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/source/build_pair.py",
+      "bytes": 7987,
+      "sha256": "9fb14da137a060bd4d59daaacb7497de566d6e620b59e2d748146bc89dc09f4d"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/source/build_pair_portable.py",
+      "bytes": 7868,
+      "sha256": "e3245cb06cebb9005144e7188c01d35e8e3eddf005d4532e2aa627e5065ab154"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/source/fixed_process_math.py",
+      "bytes": 3357,
+      "sha256": "6aa675917e09e67adecef24df73040b424203378fef8008993399318ce6ded04"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/source/measure_sampling_error.py",
+      "bytes": 1810,
+      "sha256": "07aec0e5068ea246980977f1cd2ad43da0c739e895d2864892cbff7d0a615f88"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/source/recover_native_state.py",
+      "bytes": 5895,
+      "sha256": "27a550fa9ab87b841f81e8f1deb306b8f84c289f1bf6beaa21085ae9776f1a75"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/source/replica_geometry.py",
+      "bytes": 2073,
+      "sha256": "150778f52b4059b9da98a3bee7de9a5b37ff122fb076c6e0c7ea52a56722d868"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/source/studio.py",
+      "bytes": 3355,
+      "sha256": "31d56e0261c52ae8de15639e8e25e450933cab138211e5125ad35154707349da"
+    },
+    {
+      "path": "research/technical/plastic_v4/plastic_native_relief_transfer/source/thermovisco_contact_audited.py",
+      "bytes": 10533,
+      "sha256": "d5ed6cf6b506c0c747c5d5ca707b6093f74e3666f69281f01ca02cf255fc1815"
+    },
+    {
+      "path": "research/technical/porcelain_v2/reference_history/receipts/generation.json",
+      "bytes": 18516,
+      "sha256": "5ac04e0cd476835dfa7f59d352b325831c58074570914dcabd9e4742e81d818f"
+    },
+    {
+      "path": "research/technical/porcelain_v2/reference_history/receipts/owner_final_visual_review.json",
+      "bytes": 6142,
+      "sha256": "658bfd4f7038f5e99ed483a91d10415896dcdaf215d69e546a90b2fe71d16f3d"
+    },
+    {
+      "path": "research/technical/porcelain_v2/reference_history/receipts/setup.json",
+      "bytes": 9080,
+      "sha256": "1cec017cc0556a02e45d3eef541d5dac51321a6196da277e94dcca64a997a69a"
+    },
+    {
+      "path": "research/technical/porcelain_v2/reference_history/source/bind_sources.py",
+      "bytes": 8724,
+      "sha256": "5f7e1a917ef19f9a8cf4ad7c5858a0b7c7d91d9a6bb75e9b85d7d8be95318e68"
+    },
+    {
+      "path": "research/technical/porcelain_v2/reference_history/source/build_second_lights.py",
+      "bytes": 6678,
+      "sha256": "97549162b93b66c04ad78b718dbb1634b930420d620714efcfdeb67432060d6c"
+    },
+    {
+      "path": "research/technical/porcelain_v2/reference_history/source/generate.py",
+      "bytes": 13875,
+      "sha256": "aea2f8ae986b93271995f8d4914c758a0f744f9fb34bb893c1fa2924eccf5a35"
+    },
+    {
+      "path": "research/technical/porcelain_v2/reference_history/source/model.py",
+      "bytes": 8055,
+      "sha256": "d94003dfcda6b4d7ff2cb6b13b5518deb385b18f94ec4a79f72e99fd74b23b8c"
+    },
+    {
+      "path": "research/technical/porcelain_v2/reference_history/source/prepare_handoff.py",
+      "bytes": 4603,
+      "sha256": "19cb8f5ee7e0d701114221db26b5f593768373bfe61b703baa97b89a0b99e8a5"
+    },
+    {
+      "path": "research/technical/porcelain_v2/reference_history/source/prepare_second_light_handoff.py",
+      "bytes": 3434,
+      "sha256": "39efa2195ff19fe78145cc2aa0294e6ae75ad833987ea328e0abe26e1657400c"
+    },
+    {
+      "path": "research/technical/porcelain_v2/reference_history/source/run_binding_guarded.py",
+      "bytes": 1902,
+      "sha256": "e90b560221d5b199b91bf6809b786b6b912084a4f0348d5cf2a5104c61a8f8b3"
+    },
+    {
+      "path": "research/technical/porcelain_v2/reference_history/source/run_generation_guarded.py",
+      "bytes": 1867,
+      "sha256": "280fb4a824379a4ee5fda4b772cba0f3a841d106dccfd7593c609d3c9db3a7d5"
+    },
+    {
+      "path": "research/technical/porcelain_v2/reference_history/source/run_second_lights_guarded.py",
+      "bytes": 1680,
+      "sha256": "d68e37842c0112da67fa7bacc9bcc0d10839b70a20d31a4103ab9363cd85abc1"
+    },
+    {
+      "path": "research/technical/porcelain_v2/repairs/porcelain_glaze_layer_assignment/source/build_layer_candidate.py",
+      "bytes": 17083,
+      "sha256": "f8e23a805f36454f4638f580cbfec50599dc1d2fb83273b1e4976ff1340c0695"
+    },
+    {
+      "path": "research/technical/porcelain_v2/repairs/porcelain_glaze_layer_assignment/source/prepare_handoff.py",
+      "bytes": 5139,
+      "sha256": "3e05e711e6eded357a10223c45e589d75aa3dbb55e6bde4902896fa640941363"
+    },
+    {
+      "path": "research/technical/porcelain_v2/repairs/porcelain_glaze_layer_assignment/source/run_guarded.py",
+      "bytes": 1811,
+      "sha256": "0b9ca102b7f6f292535ab22a53862e1deee5d5821346e29cbf9ae1e5b372393d"
+    },
+    {
+      "path": "research/technical/porcelain_v2/repairs/porcelain_glaze_transfer_audit/analyze.py",
+      "bytes": 8364,
+      "sha256": "4667682796901695b21c3a3c703d32c7a5d40d31ca4acfcb019791bc0fc30911"
+    },
+    {
+      "path": "research/technical/porcelain_v2/repairs/porcelain_glaze_transfer_audit/build_control_pair.py",
+      "bytes": 13618,
+      "sha256": "0ea5f1500b25e28ab7c5b3b3c505054711273f4c4df40ce822e709a68fd44087"
+    },
+    {
+      "path": "research/technical/porcelain_v2/repairs/porcelain_glaze_transfer_audit/inspect_scene.py",
+      "bytes": 2645,
+      "sha256": "abc78a507a1773ab8f3a5720beabc1dcfff4b91c179a47447cd8d7849d8b66d7"
+    },
+    {
+      "path": "research/technical/porcelain_v2/repairs/porcelain_glaze_transfer_audit/run_build_guarded.py",
+      "bytes": 1654,
+      "sha256": "9abee118149cdaf01201483c9e3735d83c77401af4c3ace2ed916172382baa7c"
+    },
+    {
+      "path": "research/technical/porcelain_v2/repairs/porcelain_glaze_transfer_audit/run_guarded.py",
+      "bytes": 1555,
+      "sha256": "9e912f608bc946cb0d199c3a17ae0b11eb55e1ad5030df14a6757a0d9510e952"
+    },
+    {
+      "path": "research/technical/porcelain_v2/repairs/porcelain_glaze_transfer_audit/verify_saved_normal_precision.py",
+      "bytes": 2061,
+      "sha256": "0e1c81aa5bbcb912409656cc2e02420d41cdd9be02f42a599a77fc16bc56987e"
+    },
+    {
+      "path": "research/technical/porcelain_v2/workspace/shared/material-production/experiments/porcelain_continuous_atlas/source/audit_and_build.py",
+      "bytes": 5677,
+      "sha256": "8aca06599ffd54521d4cf1f69004d81abf6707812fab0473b3a9e22276b525d2"
+    },
+    {
+      "path": "research/technical/porcelain_v2/workspace/shared/material-production/experiments/porcelain_continuous_atlas/source/verify_fresh.py",
+      "bytes": 2547,
+      "sha256": "e22330c01452f44c8b400fa0f8d9847da40f0703e2382847bea955fa1f41ff18"
+    },
+    {
+      "path": "research/technical/porcelain_v2/workspace/shared/material-production/experiments/porcelain_deposition_arrivals/inputs/material-slabs/source/studio.py",
+      "bytes": 3355,
+      "sha256": "31d56e0261c52ae8de15639e8e25e450933cab138211e5125ad35154707349da"
+    },
+    {
+      "path": "research/technical/porcelain_v2/workspace/shared/material-production/experiments/porcelain_deposition_arrivals/inputs/original_porcelain/source/coating_state.py",
+      "bytes": 4670,
+      "sha256": "b33441a7656e0f38fc627df177f9daf8ecd07e56c23bdb323b247ee1a1a531a9"
+    },
+    {
+      "path": "research/technical/porcelain_v2/workspace/shared/material-production/experiments/porcelain_deposition_arrivals/source/audit_pair.py",
+      "bytes": 4310,
+      "sha256": "a5227038d91de003a926817e1fda19d16359eb169290e3a9fafa5d480ecde731"
+    },
+    {
+      "path": "research/technical/porcelain_v2/workspace/shared/material-production/experiments/porcelain_deposition_arrivals/source/build_pair_scene.py",
+      "bytes": 7115,
+      "sha256": "d4fe6dc5d9aad728bf60241931e0c534b2608b51eece5a35339135eeaf1a3a7b"
+    },
+    {
+      "path": "research/technical/porcelain_v2/workspace/shared/material-production/experiments/porcelain_deposition_arrivals/source/generate_control.py",
+      "bytes": 9368,
+      "sha256": "9e644024ac5641c8d3c2a69d5cefe8bb2cb891d56eb449448e3163efa804c019"
+    },
+    {
+      "path": "research/technical/porcelain_v2/workspace/shared/material-production/experiments/porcelain_deposition_arrivals/source/portable_build_pair_scene.py",
+      "bytes": 7048,
+      "sha256": "686089960c6eeb4b0a9827a5b494c591138af66cdc47f46f95902dbdcebdf540"
+    },
+    {
+      "path": "research/technical/porcelain_v2/workspace/shared/material-production/experiments/porcelain_deposition_arrivals/source/portable_generate_control.py",
+      "bytes": 9265,
+      "sha256": "0d88b269f7e54c723cc45aebc55fcde713c99bbeb4f950882ee210f0ddf654ea"
+    },
+    {
+      "path": "research/technical/technical_v3/additions/experiments/wire_circle_resolution/source/check_contact.py",
+      "bytes": 2022,
+      "sha256": "775d81140d36b650488e8cbd8b33156ceb02734e424f6715b610285a1faeda9b"
+    },
+    {
+      "path": "research/technical/technical_v3/additions/experiments/wire_circle_resolution/source/refine_circular_sections.py",
+      "bytes": 5359,
+      "sha256": "6b1f745db6a08a36d51cd8e7ca08d506abed39be5b24fa8694cecd508944321a"
+    },
+    {
+      "path": "research/technical/technical_v3/additions_v3/experiments/crt_transport_split/source/build_guides.py",
+      "bytes": 6029,
+      "sha256": "7feb2ff2f9b92616a7d68ea9cd66cae850dcfbc002e04bce54a644fc73c25c16"
+    },
+    {
+      "path": "research/technical/technical_v3/additions_v3/experiments/crt_transport_split/source/capture_native_transport.py",
+      "bytes": 5790,
+      "sha256": "4c4e3512cd3e9b0eab93bc08eec8cd5ada623c8efd6f45814d6172258f199082"
+    },
+    {
+      "path": "research/technical/technical_v3/additions_v3/experiments/crt_transport_split/source/component_postprocess.py",
+      "bytes": 6993,
+      "sha256": "bc5514ae0ae33a683556746b6a6977b6f82def201b1e37d97d99f7d000d53b13"
+    },
+    {
+      "path": "research/technical/technical_v3/additions_v3/experiments/crt_transport_split/source/verify_reconstruction.py",
+      "bytes": 3347,
+      "sha256": "3e54761057e1ab91ed55bb0fc796ea4243e49e0174e51efd05a28d679e314f33"
+    },
+    {
+      "path": "research/technical/technical_v3/additions_v3/experiments/lcd_transport_split/source/capture_native_transport.py",
+      "bytes": 5813,
+      "sha256": "1fe97e92db7cabfef968d244e96b0daeb156e23c1775a928532c7c62cbb023c3"
+    },
+    {
+      "path": "research/technical/technical_v3/additions_v3/experiments/lcd_transport_split/source/component_postprocess.py",
+      "bytes": 6563,
+      "sha256": "295de296ee331d42a375e433868bab1585ad56f5704e6df0e77a09bfb05971bb"
+    },
+    {
+      "path": "research/technical/technical_v3/additions_v3/experiments/lcd_transport_split/source/probe_transport_passes.py",
+      "bytes": 5834,
+      "sha256": "d8f572c41a1e6ac97f3feb50d668089ec8cdb487b7d436e17fe9e726a5712efd"
+    },
+    {
+      "path": "research/technical/technical_v3/additions_v3/experiments/lcd_transport_split/source/verify_reconstruction.py",
+      "bytes": 3354,
+      "sha256": "8dafafd501eb28d93d8346ee430648d4e6e231c4d6b080e92ced33629f4c48f7"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/chainmail_loop_uv_fix/source/bounded_surface_features.py",
+      "bytes": 3070,
+      "sha256": "162090d9e4fb763483c37aa40b5dbd5e3cbbb21a90b3509b7ee2c34cd9a33ea5"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/chainmail_loop_uv_fix/source/build_panels.py",
+      "bytes": 6261,
+      "sha256": "ab0d3e596088ec91b395147920c699191def2a3321b81aa8249182831f07f654"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/chainmail_loop_uv_fix/source/generate_native_finish.py",
+      "bytes": 2354,
+      "sha256": "e3c475a67ffea62e2633d0b39c88df92481c498967a2746b6511df62a043b230"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/chainmail_loop_uv_fix/source/loop_chart.py",
+      "bytes": 623,
+      "sha256": "953fee6ef1e81f666b0c575b2c0111a62e645346fa927f53992e61fe13b6bebb"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/chainmail_loop_uv_fix/source/run_bounded.py",
+      "bytes": 953,
+      "sha256": "b49dd3800f42cbd345c9d14a7fd0a4f83555cb2ae1cfacee40dbbf713533054e"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/chainmail_loop_uv_fix/tests/test_loop_chart.py",
+      "bytes": 1580,
+      "sha256": "5181648697c7c42c13d64a616946e4d3dcbc7f2687abea8497fb580fc6afaae5"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/chainmail_surface_guides/source/build_guides.py",
+      "bytes": 4174,
+      "sha256": "7531278a3b36a0f53c231cb69dd6ba8c3e1ed0a3d7643f4bb5f7b81fdeb4c232"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/chainmail_surface_guides/source/check_opaque_contract.py",
+      "bytes": 1328,
+      "sha256": "cd4844532e4e4bb0ecab09dd0f169996f06e7da4ca35f0418e5e7e6558bda294"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/display_sampling_recovery/source/build_display_panels.py",
+      "bytes": 3086,
+      "sha256": "0ef09a6266387927ed86c18caefb30afded1784cfecae933ef1bb74c99f697c8"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/opaque_surface_guide_contract/source/fix_saved_aov_names.py",
+      "bytes": 4147,
+      "sha256": "8f061555e546e76f3b36c6a1d4935f9f533b5f88fc3ac314858979f7fe9fb3c3"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/opaque_surface_guide_contract/source/surface_guides.py",
+      "bytes": 3495,
+      "sha256": "a0fb81a25d87853d4b5a2e06fe9774a9a319497e04691396189cc380bb1a81fb"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/opaque_surface_guide_contract/source/surface_guides_v2.py",
+      "bytes": 3538,
+      "sha256": "6988820a25c4ffbaf9974cbe8d378b8179125fc3e41d9ed96167222cd8d48ed0"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/petg_metric_uv_seam/source/patch_walls.py",
+      "bytes": 3392,
+      "sha256": "267f56db5219af43187d0d2c680c21a97ea04ac86051338c8195b433d66dc2e4"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/tube_normal_precision/source/bind_native16.py",
+      "bytes": 4597,
+      "sha256": "6ac685747b9696b5b52fc5f6d0b290d3d608769ae52d5b7a4e6335cfaf099103"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/tube_normal_precision/source/export_native16.py",
+      "bytes": 3286,
+      "sha256": "fdb21ee65e058cbf07d192a2a171124cb01be823772f830c0e7746e0b2af4eff"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/tube_normal_precision/source/verify_saved_candidates.py",
+      "bytes": 3042,
+      "sha256": "88fe2f9b6af9a5a8fb291739d7944c7493fd0403a25cf40d6cccb2da09720e6c"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/wire_loop_uv_fix/source/build_panels.py",
+      "bytes": 6407,
+      "sha256": "758310f085ffa9b8e251b232a6303c2773f7ee79212f66b1d693c461b3308c41"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/wire_loop_uv_fix/source/generate_native_finish.py",
+      "bytes": 2360,
+      "sha256": "9c1f2dd0ee6a168582fb11552c0ef25550bcb54510e61cbf9d115cbc90068d08"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/wire_loop_uv_fix/source/loop_chart.py",
+      "bytes": 823,
+      "sha256": "d700df488539f9395ea00ec23dc861f32c42b641be18cf961acf791036965995"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/wire_loop_uv_fix/source/run_bounded.py",
+      "bytes": 953,
+      "sha256": "b49dd3800f42cbd345c9d14a7fd0a4f83555cb2ae1cfacee40dbbf713533054e"
+    },
+    {
+      "path": "research/technical/technical_v3/experiments/wire_loop_uv_fix/tests/test_loop_chart.py",
+      "bytes": 1249,
+      "sha256": "193ab5d87c531dc48674ca0bf23fadf0640443876658845a37f7932e81eedd70"
+    }
+  ]
+}

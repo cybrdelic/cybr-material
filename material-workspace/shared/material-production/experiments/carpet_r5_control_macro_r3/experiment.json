@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "experiment_id": "carpet_r5_control_macro_r3",
+  "material_id": "24_carpet",
+  "selected": false,
+  "quality_acceptance": false,
+  "source_scene": "shared/material-production/experiments/carpet_r5_comparison/scenes/24_carpet_r5_control_frozen_rig.blend",
+  "source_sha256": "5020109f627a6679f1da17bce49c7b0e2ecad59f88ab3aa7452cad8a7ac816c9",
+  "dependencies": [],
+  "contract": {
+    "map_resolution": [
+      4096,
+      4096
+    ]
+  },
+  "capture": {
+    "camera": "Slab / shared camera",
+    "engine": "CYCLES",
+    "width": 960,
+    "height": 960,
+    "samples": 128,
+    "capture_mode": "guided",
+    "save_guides": true,
+    "light_tree": false,
+    "color_depth": 16,
+    "dither_intensity": 0,
+    "rss_cap_mib": 3072,
+    "time_limit_seconds": 600,
+    "sync_limit_seconds": 240,
+    "camera_matrix_world": [
+      [
+        0.8017458915710449,
+        -0.3565812110900879,
+        0.4796387851238251,
+        0.05029445327818394
+      ],
+      [
+        0.5976650714874268,
+        0.4783407151699066,
+        -0.6434179544448853,
+        -0.0674681756645441
+      ],
+      [
+        -2.2535731503126044e-08,
+        0.8025210499763489,
+        0.5966238379478455,
+        0.06406139324977994
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "camera_ortho_scale": 0.008,
+    "studio_lights_downward": true
+  },
+  "purpose": "Matched retained r5 control for constructed fibre-core comparison; internal until paired visual review; explicit archived studio_r3 downward-emitter presentation",
+  "pass_gates": {
+    "exact_retained_mesh_uv_material_signatures": true,
+    "absolute_frozen_rig_sha256": "b8afacac3814045f28b1ed835b2222bdfb50658aaceb1b4e53748310771ceccc",
+    "no_candidate_bound_fitting": true,
+    "historical_downward_light_correction": true
+  },
+  "physical_camera_field_m": 0.008,
+  "user_delivery": false,
+  "geometry_scope": "Analytic and mesh source; no image-texture resolution claim"
+}

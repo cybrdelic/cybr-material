@@ -1,0 +1,27 @@
+[
+  {
+    "role": "builder",
+    "file": "build_original_native4k_panels.py",
+    "sha256": "403e42b213c6a24040609fa8afe1f0acd67bb0417e47eb703fdcd36992c3c62a"
+  },
+  {
+    "role": "tangent",
+    "file": "persist_brass_uv_tangent.py",
+    "sha256": "26d15f3e144c7840990276af52b2a26fc0527e0cad71e324e72fb5c290fe79bc"
+  },
+  {
+    "role": "normal_patch",
+    "file": "guarded_top_only_patch.py",
+    "sha256": "0070fcdc9ee7abe555395325b96da2e3170c2f6d6b24d0a6c63781c08fa7e8f2"
+  },
+  {
+    "role": "golden_candidate_receipt",
+    "file": "candidate_receipt.json",
+    "sha256": "b5f53c626638b52e32cca7e3dcc7cad8abd8787c35e61aa00613db86eb390d79"
+  },
+  {
+    "role": "original_builder_receipt",
+    "file": "original_brass_builder_receipt.json",
+    "sha256": "4b3d4e90574393f5610575db5050d63f128ee73eb29a1d28915863aac60c01a3"
+  }
+]

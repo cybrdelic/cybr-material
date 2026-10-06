@@ -1,3 +1,5 @@
+> **2026-10-06 engineering checkpoint:** The current 35-material registry, unified source/capture pipeline, process studies, tests and exact recovery manifests are in [audit/README.md](audit/README.md). This remains a draft audit with explicit failed/held experiments; the original suite below is preserved.
+
 # CYBR MATERIAL
 
 **Unreleased fabrication and study repair:** all seventeen outputs have been
@@ -227,3 +229,4 @@ undercut porosity, measured reflectance and mesh-specific wear need further
 work for demanding close-ups.
 
 No redistribution license has been selected for this repository.
+

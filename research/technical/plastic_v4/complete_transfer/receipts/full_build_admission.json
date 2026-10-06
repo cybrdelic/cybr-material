@@ -1,0 +1,12 @@
+{
+  "admitted": true,
+  "scope": "One sequential source-only complete candidate build, three camera/light variants; no capture or visual promotion",
+  "resource_limits": {
+    "rss_MiB": 1536,
+    "seconds": 300,
+    "total_output_MiB": 120,
+    "external_native_maps": true
+  },
+  "parent_confirmation_time_utc": "2026-10-06T15:06:54Z",
+  "build_source_sha256": "4b052cb91d9c7c1e7dd4685e259d48e6042dec336062d8907541231ac0628487"
+}

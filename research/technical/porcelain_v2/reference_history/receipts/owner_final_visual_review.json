@@ -1,0 +1,108 @@
+{
+  "reviewed_utc": "2026-10-06T19:37:23.388311+00:00",
+  "material_id": "07_bone_porcelain",
+  "reviewer": "technical source owner; independent from renderer/operator",
+  "result": "narrow_visible_improvement",
+  "native_full_macro_and_second_lighting_reviewed": true,
+  "noise_gate": true,
+  "macro": "Previous dotted/sparkly lip becomes a continuous glazed highlight. This was visible in raw output before OIDN; the effect is not denoising alone.",
+  "full": "The complete 96 mm tile preserves the protected silhouette, body edge, restrained bone tone and broad reflection. Full-view change is small and no visible regression was found.",
+  "second_light": "Matched second lighting preserves outline, body/glaze separation and the broad reflection without a new bright lattice or speckled edge.",
+  "intrinsic_roughness": "Removing the slope-derived coat roughness term preserves the continuous lip; the reflection change is subtle. Retained intrinsic R0 is 0.17984575, not an appearance-fitted value.",
+  "comparison_scope": "Normal/atlas/layer controls were held when they failed visible improvement. The final history model is a new assumed process version; its optics differ from the historic original panel. Matched stage controls establish the narrow final changes.",
+  "model_limits": [
+    "Reference viscosity is a commercial transparent glaze proxy, not measured for the depicted porcelain.",
+    "Surface tension 0.3 N/m is an explicit borrowed glass proxy with half/double sensitivity, not a calibrated confidence interval.",
+    "Only the reference 1020\u20131040 C segment of the published 5 C/min ramp is integrated.",
+    "Finite-depth linear no-slip leveling preserves mean film; nonlinear flow, wetting and coupled firing shrinkage are not modeled.",
+    "The glaze/body optical layering is an effective opaque closure, not explicit finite-volume scattering/refraction."
+  ],
+  "physical_model_qualified": false,
+  "prediction_calibrated": false,
+  "preferred_presentation_recommended": true,
+  "protected_historical_library_file_id": "libfile_edc83cc981548191906982cc4fa7763b",
+  "operator_review": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/porcelain_reference_history/FINAL_OPERATOR_REVIEW.json",
+  "operator_review_sha256": "a461cb1681e576d71ea30d54bfc66a7e04da4891a51fc1a9c942f33cda4276a3",
+  "images": [
+    {
+      "id": 7,
+      "name": "BONE PORCELAIN",
+      "description": "96 mm tile \u00b7 complete view",
+      "status": "ASSUMED FIRING HISTORY \u00b7 UNCALIBRATED",
+      "source": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/porcelain_reference_intrinsic_full_capture_20261006_1929/CLEAN_OIDN_PANEL.png",
+      "source_sha256": "766a5c26cf21c2e5889b4dd40f0dba8059a2bc0196b4af84f358e3104dec3db8",
+      "output": "/workspace/scratch/b4387906eb93/labeled-material-panels/porcelain_reference_firing/full/07_bone_porcelain_reference_full.png",
+      "sha256": "464938b50aae1a1f712506f937337284c04085c10991d87e66ba380dc9a0d3aa",
+      "original_size": [
+        960,
+        960
+      ],
+      "output_size": [
+        960,
+        1104
+      ],
+      "bit_depth": 16,
+      "color_type": 2,
+      "original_filtered_rows_sha256": "9b8b38e8f9a0905576e553b2ba85007ba8f44b34a3f62c8487f2edea14e6c397",
+      "original_native_rows_preserved": true,
+      "view": "full",
+      "library_file_id": "libfile_4a7329d006b08191ad4ef94822eb2141",
+      "library_version": 0,
+      "local_metadata_applied": true
+    },
+    {
+      "id": 7,
+      "name": "BONE PORCELAIN",
+      "description": "28 mm field \u00b7 continuous glaze highlight",
+      "status": "ASSUMED FIRING HISTORY \u00b7 UNCALIBRATED",
+      "source": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/porcelain_intrinsic_macro_capture_20261006_1922/CLEAN_OIDN_PANEL.png",
+      "source_sha256": "67c140afa0c83dda5ebe42a9a26176ed1c5920f4a0a4cd05bb2490c368dd0437",
+      "output": "/workspace/scratch/b4387906eb93/labeled-material-panels/porcelain_reference_firing/macro/07_bone_porcelain_reference_macro.png",
+      "sha256": "f20576e4683b047b7c20073818fb026ee9ee9f67a349652121e4908608db2f5b",
+      "original_size": [
+        960,
+        960
+      ],
+      "output_size": [
+        960,
+        1104
+      ],
+      "bit_depth": 16,
+      "color_type": 2,
+      "original_filtered_rows_sha256": "44d22bb17e6ad3211d50455d37b7e136fc0f348b2bda57b1c340aea9dece8c2a",
+      "original_native_rows_preserved": true,
+      "view": "macro",
+      "library_file_id": "libfile_bd3d81c371d481919c4629d2f6bb9f68",
+      "library_version": 0,
+      "local_metadata_applied": true
+    },
+    {
+      "id": 7,
+      "name": "BONE PORCELAIN",
+      "description": "96 mm tile \u00b7 second lighting",
+      "status": "ASSUMED FIRING HISTORY \u00b7 UNCALIBRATED",
+      "source": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/porcelain_reference_intrinsic_second_capture_20261006_1927/CLEAN_OIDN_PANEL.png",
+      "source_sha256": "0f9ecf642503d61096baa8b36e7f935d65fe6f63fdb6292946d0560182836936",
+      "output": "/workspace/scratch/b4387906eb93/labeled-material-panels/porcelain_reference_firing/second_light/07_bone_porcelain_reference_second_light.png",
+      "sha256": "8092c904a103bd9be0c0ff5aa6e8a0a9bd47d6cd2447afc7728ec5c864993fc9",
+      "original_size": [
+        960,
+        960
+      ],
+      "output_size": [
+        960,
+        1104
+      ],
+      "bit_depth": 16,
+      "color_type": 2,
+      "original_filtered_rows_sha256": "ff2f6c9ce992937630fec3afcac6f99f1b9f799203d923a19f1b58e7d7f64f8d",
+      "original_native_rows_preserved": true,
+      "view": "second_light",
+      "library_file_id": "libfile_28e4ec8074908191b2d7b9b0c19471be",
+      "library_version": 0,
+      "local_metadata_applied": true
+    }
+  ],
+  "delivery_confirmed": false,
+  "status_note": "Machine capture_result files retain their initial pending quality flags; this explicit post-capture native review supplies visual/noise acceptance, not physical qualification."
+}

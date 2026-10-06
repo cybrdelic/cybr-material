@@ -1,0 +1,30 @@
+{
+  "top_triangles_and_old_q_bitwise_unchanged": true,
+  "changed_native_height_inactive": true,
+  "changed_triangles": 305990,
+  "changed_dense_camera_audit": {
+    "cameras": {
+      "Slab / shared camera": {
+        "max_absolute_m": 1.5959915478186965e-05,
+        "max_projected_pixels": 0.11769686792344075,
+        "samples": 12239600
+      },
+      "Plastic / authored molding detail camera": {
+        "max_absolute_m": 3.3366039779531334e-06,
+        "max_projected_pixels": 0.10119462026818175,
+        "samples": 3233560
+      }
+    },
+    "all_chart_sampled_max_absolute_m": 1.5959915478186965e-05,
+    "max_camera_conservative_pixels": 0.13346415795800898,
+    "samples_per_triangle": 40,
+    "passes_sampled_camera_budget": true
+  },
+  "all_other_faces_inherit_prior_lod_audit": true,
+  "shutoff_boundary_crossings": 0,
+  "new_mesh_sha256": "229f66840fc3be6d562314f68a14979ac937bf42b1939f86faa1f744725804a3",
+  "old_mesh_sha256": "a7bec17caab77fa2f03d6f66fd2b04d9011bfa65abb4204cb86a2a1b62f52847",
+  "passes": true,
+  "peak_RSS_MiB": 312.5859375,
+  "source_sha256": "bb3ef9ad391f126e9219f320adbb375f6ffbfc895cea21adfbc786c36e8b8b6d"
+}

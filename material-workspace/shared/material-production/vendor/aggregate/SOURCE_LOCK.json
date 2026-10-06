@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "path": "vendor/aggregate/source/mineral_construction_bounded.py",
+      "sha256": "c73f2fbd1ef87ddea44f4a590068d57c6fa0a99b1eaedb4a57422424ed35c072"
+    },
+    {
+      "path": "vendor/aggregate/source/surface_math.py",
+      "sha256": "3c09a5ebc9b860abb9783045bed7674e3917087b0c0d21376fbfd8cda12cafc0"
+    },
+    {
+      "path": "vendor/aggregate/source/mineral_construction.py",
+      "sha256": "a4f54474756e43f3c2a737d57fefe6ef2a7e7aa791f74784755ad56506bfbe28"
+    },
+    {
+      "path": "vendor/aggregate/source/grain_model.py",
+      "sha256": "fb096a0e6996eec7a41765a9c88292850d7da338e971b2f1b2c6cda89138d931"
+    },
+    {
+      "path": "vendor/aggregate/recipe.json",
+      "sha256": "6c7e32a95089222e154149ceabdc89318937954830bf835c4b824afb938d3201"
+    },
+    {
+      "path": "vendor/aggregate/source/maps.py",
+      "sha256": "c328e418082868be8549fda2af57d87431345d7f0983d6dca6928c08d779aabb"
+    },
+    {
+      "path": "vendor/aggregate/source/generate_native.py",
+      "sha256": "ab52d28b31b7a6aaae7106f681d008e64e2e927115515ea9cf0accd2a47fddbd"
+    }
+  ],
+  "provenance": "Exact selected native4096 source receipt generator_hashes"
+}

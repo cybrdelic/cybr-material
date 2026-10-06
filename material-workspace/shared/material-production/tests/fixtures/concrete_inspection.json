@@ -1,0 +1,175 @@
+{
+  "blender_version": "4.3.2",
+  "unit_scale": 1.0,
+  "images": [
+    {
+      "name": "BaseColor.png.001",
+      "path": "/workspace/shared/material-aggregate-rebuild/native4k/maps/32_concrete_polished/BaseColor.png",
+      "packed": false,
+      "sha256": "dc1ac72c16afe2ab16e27e128c576acac1de5f59c714a9ec611869b3fdcc90f6",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "Metallic.png.001",
+      "path": "/workspace/shared/material-aggregate-rebuild/native4k/maps/32_concrete_polished/Metallic.png",
+      "packed": false,
+      "sha256": "98a02e037b6c601567212b2c1c2c8d50008f2c30446897060b4ad4704fb0e8cc",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "Normal_Micro_OpenGL.png.001",
+      "path": "/workspace/shared/material-aggregate-rebuild/native4k/maps/32_concrete_polished/Normal_Micro_OpenGL.png",
+      "packed": false,
+      "sha256": "654aa7eb02da57ec62b0e25ffe35cfef0d5c69c28787f29a62c56b96f7ef15ef",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "Roughness.png.001",
+      "path": "/workspace/shared/material-aggregate-rebuild/native4k/maps/32_concrete_polished/Roughness.png",
+      "packed": false,
+      "sha256": "79527d72d457ce14b1fa7e6d31c2ea750ee178d0584c8a04ca30ff658d4fa9b8",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "colorspace": "Non-Color"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Concrete / Polished",
+      "bindings": [
+        {
+          "image": "BaseColor.png.001",
+          "outputs": [
+            {
+              "node": "Principled BSDF",
+              "socket": "Base Color"
+            }
+          ]
+        },
+        {
+          "image": "Roughness.png.001",
+          "outputs": [
+            {
+              "node": "Principled BSDF",
+              "socket": "Roughness"
+            }
+          ]
+        },
+        {
+          "image": "Metallic.png.001",
+          "outputs": [
+            {
+              "node": "Principled BSDF",
+              "socket": "Metallic"
+            }
+          ]
+        },
+        {
+          "image": "Normal_Micro_OpenGL.png.001",
+          "outputs": [
+            {
+              "node": "Normal Map",
+              "socket": "Color"
+            }
+          ]
+        }
+      ],
+      "normal_nodes": [
+        {
+          "name": "Normal Map",
+          "space": "TANGENT",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Slab / neutral floor",
+      "bindings": [],
+      "normal_nodes": []
+    },
+    {
+      "name": "Specimen / clean cut core",
+      "bindings": [],
+      "normal_nodes": []
+    },
+    {
+      "name": "Studio / warm neutral",
+      "bindings": [],
+      "normal_nodes": []
+    }
+  ],
+  "objects": [
+    {
+      "name": "Concrete / real displaced face",
+      "type": "MESH",
+      "dimensions_m": [
+        0.3199999928474426,
+        0.3199999928474426,
+        0.008953914046287537
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "vertices": 265217,
+      "polygons": 264193,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "materials": [
+        "Concrete / Polished",
+        "Specimen / clean cut core"
+      ],
+      "material_face_counts": {
+        "0": 262144,
+        "1": 2049
+      },
+      "modifiers": []
+    },
+    {
+      "name": "Slab / neutral floor",
+      "type": "MESH",
+      "dimensions_m": [
+        64.0,
+        64.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "vertices": 4,
+      "polygons": 1,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "materials": [
+        "Slab / neutral floor"
+      ],
+      "material_face_counts": {
+        "0": 1
+      },
+      "modifiers": []
+    }
+  ],
+  "camera": "Slab / shared camera",
+  "source_unchanged": true,
+  "geometry_and_shader_bindings_inspected": true,
+  "rendered": false
+}

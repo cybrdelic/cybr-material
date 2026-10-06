@@ -1,0 +1,705 @@
+{
+  "rows": [
+    {
+      "chart": 0,
+      "samples": 30000,
+      "normal_max_deg": 2.4406941040302432,
+      "normal_rms_deg": 0.02006830898707507,
+      "same_cell_normal_max_deg": 0.0017864226071994333,
+      "same_cell_normal_rms_deg": 0.00014044744330569665,
+      "native_cell_mismatch_count": 4,
+      "mismatch_knot_distance_max_m": 2.9294131476120812e-09,
+      "sampled_base_xy_float32_max_m": 5.509724350372114e-09,
+      "operation_derived_index_roundoff_bound_max_m": 3.792964377570003e-08,
+      "conditioning_strip_half_width_max_m": 4.297486177653552e-08,
+      "conditioning_strip_sample_count": 213,
+      "all_observed_mismatches_in_strip": true,
+      "outside_strip_normal_max_deg": 0.0017864226071994333
+    },
+    {
+      "chart": 1,
+      "samples": 30000,
+      "normal_max_deg": 5.743817269697238e-05,
+      "normal_rms_deg": 7.184571597306109e-06,
+      "same_cell_normal_max_deg": 5.743817269697238e-05,
+      "same_cell_normal_rms_deg": 7.185926758397803e-06,
+      "native_cell_mismatch_count": 14,
+      "mismatch_knot_distance_max_m": 5.420125184230074e-09,
+      "sampled_base_xy_float32_max_m": 5.374989966999699e-09,
+      "operation_derived_index_roundoff_bound_max_m": 3.792954220430804e-08,
+      "conditioning_strip_half_width_max_m": 4.3059957027614246e-08,
+      "conditioning_strip_sample_count": 209,
+      "all_observed_mismatches_in_strip": true,
+      "outside_strip_normal_max_deg": 5.743817269697238e-05
+    },
+    {
+      "chart": 2,
+      "samples": 30000,
+      "normal_max_deg": 0.13907327930238464,
+      "normal_rms_deg": 0.0008446939533431101,
+      "same_cell_normal_max_deg": 0.0003504707193696667,
+      "same_cell_normal_rms_deg": 1.7818031556421516e-05,
+      "native_cell_mismatch_count": 16,
+      "mismatch_knot_distance_max_m": 5.108820158028493e-09,
+      "sampled_base_xy_float32_max_m": 6.432567208058959e-09,
+      "operation_derived_index_roundoff_bound_max_m": 3.8154550891500955e-08,
+      "conditioning_strip_half_width_max_m": 4.42856004442735e-08,
+      "conditioning_strip_sample_count": 268,
+      "all_observed_mismatches_in_strip": true,
+      "outside_strip_normal_max_deg": 0.0003504707193696667
+    },
+    {
+      "chart": 3,
+      "samples": 30000,
+      "normal_max_deg": 0.0044956273403280725,
+      "normal_rms_deg": 3.156311826926068e-05,
+      "same_cell_normal_max_deg": 0.0003899791657031268,
+      "same_cell_normal_rms_deg": 1.7960816869275527e-05,
+      "native_cell_mismatch_count": 5,
+      "mismatch_knot_distance_max_m": 2.3705425711284535e-09,
+      "sampled_base_xy_float32_max_m": 5.455541858545576e-09,
+      "operation_derived_index_roundoff_bound_max_m": 3.815455518451278e-08,
+      "conditioning_strip_half_width_max_m": 4.3416301839942074e-08,
+      "conditioning_strip_sample_count": 244,
+      "all_observed_mismatches_in_strip": true,
+      "outside_strip_normal_max_deg": 0.0003899791657031268
+    },
+    {
+      "chart": 4,
+      "samples": 30000,
+      "normal_max_deg": 0.08421637447006668,
+      "normal_rms_deg": 0.00048656020945938314,
+      "same_cell_normal_max_deg": 0.00036479672803263745,
+      "same_cell_normal_rms_deg": 1.6889057631725683e-05,
+      "native_cell_mismatch_count": 8,
+      "mismatch_knot_distance_max_m": 4.465782303952892e-09,
+      "sampled_base_xy_float32_max_m": 6.312428045551766e-09,
+      "operation_derived_index_roundoff_bound_max_m": 3.8154553959398094e-08,
+      "conditioning_strip_half_width_max_m": 4.3812346355543555e-08,
+      "conditioning_strip_sample_count": 258,
+      "all_observed_mismatches_in_strip": true,
+      "outside_strip_normal_max_deg": 0.00036479672803263745
+    },
+    {
+      "chart": 5,
+      "samples": 30000,
+      "normal_max_deg": 0.061842363583784664,
+      "normal_rms_deg": 0.0003590941499709623,
+      "same_cell_normal_max_deg": 0.0003873867853179784,
+      "same_cell_normal_rms_deg": 1.7715128239901773e-05,
+      "native_cell_mismatch_count": 9,
+      "mismatch_knot_distance_max_m": 6.28135900626603e-09,
+      "sampled_base_xy_float32_max_m": 5.742930582475214e-09,
+      "operation_derived_index_roundoff_bound_max_m": 3.8154555079869324e-08,
+      "conditioning_strip_half_width_max_m": 4.361910547735463e-08,
+      "conditioning_strip_sample_count": 256,
+      "all_observed_mismatches_in_strip": true,
+      "outside_strip_normal_max_deg": 0.0003873867853179784
+    }
+  ],
+  "examples": [
+    {
+      "chart": 0,
+      "q_m": [
+        -0.029166790976537335,
+        0.01669322960145852,
+        0.004
+      ],
+      "exact_cell": [
+        556.0,
+        2900.0
+      ],
+      "float32_cell": [
+        556.0,
+        2901.0
+      ],
+      "knot_distance_m": 1.9338875478780438e-09,
+      "normal_angle_deg": 2.1347180525878366
+    },
+    {
+      "chart": 0,
+      "q_m": [
+        0.00990640876768313,
+        -0.012032062190551213,
+        0.004
+      ],
+      "exact_cell": [
+        2553.0,
+        1432.0
+      ],
+      "float32_cell": [
+        2554.0,
+        1432.0
+      ],
+      "knot_distance_m": 2.212260881151451e-09,
+      "normal_angle_deg": 1.2519528483552411
+    },
+    {
+      "chart": 0,
+      "q_m": [
+        -0.0032376788152569946,
+        0.03005172563513312,
+        0.004
+      ],
+      "exact_cell": [
+        1881.0,
+        3583.0
+      ],
+      "float32_cell": [
+        1881.0,
+        3584.0
+      ],
+      "knot_distance_m": 2.8415194464059823e-09,
+      "normal_angle_deg": 0.011147842676864177
+    },
+    {
+      "chart": 0,
+      "q_m": [
+        0.02784160819058496,
+        -0.015363809811960508,
+        0.004
+      ],
+      "exact_cell": [
+        3470.0,
+        1261.0
+      ],
+      "float32_cell": [
+        3471.0,
+        1261.0
+      ],
+      "knot_distance_m": 2.9294131476120812e-09,
+      "normal_angle_deg": 2.4406941040302432
+    },
+    {
+      "chart": 1,
+      "q_m": [
+        -0.023470889025778225,
+        0.02774381717257949,
+        -0.004
+      ],
+      "exact_cell": [
+        847.0,
+        3465.0
+      ],
+      "float32_cell": [
+        847.0,
+        3466.0
+      ],
+      "knot_distance_m": 1.1465252924836022e-09,
+      "normal_angle_deg": 2.5517731544631156e-23
+    },
+    {
+      "chart": 1,
+      "q_m": [
+        0.001496228217064778,
+        0.014219162363705004,
+        -0.004
+      ],
+      "exact_cell": [
+        2123.0,
+        2774.0
+      ],
+      "float32_cell": [
+        2124.0,
+        2774.0
+      ],
+      "knot_distance_m": 1.672407865527248e-09,
+      "normal_angle_deg": 0.0
+    },
+    {
+      "chart": 1,
+      "q_m": [
+        -0.03893425597419015,
+        0.006717240869648124,
+        -0.004
+      ],
+      "exact_cell": [
+        72.0,
+        2390.0
+      ],
+      "float32_cell": [
+        72.0,
+        2391.0
+      ],
+      "knot_distance_m": 7.838123927683683e-10,
+      "normal_angle_deg": 1.177690112388601e-05
+    },
+    {
+      "chart": 1,
+      "q_m": [
+        -0.02868262942442132,
+        0.03177267435640369,
+        -0.004
+      ],
+      "exact_cell": [
+        580.0,
+        3671.0
+      ],
+      "float32_cell": [
+        581.0,
+        3671.0
+      ],
+      "knot_distance_m": 1.909373770203615e-10,
+      "normal_angle_deg": 0.0
+    },
+    {
+      "chart": 1,
+      "q_m": [
+        0.0017468114703308169,
+        0.012683724626336358,
+        -0.004
+      ],
+      "exact_cell": [
+        2136.0,
+        2695.0
+      ],
+      "float32_cell": [
+        2136.0,
+        2696.0
+      ],
+      "knot_distance_m": 1.9701186282361504e-09,
+      "normal_angle_deg": 0.0
+    },
+    {
+      "chart": 1,
+      "q_m": [
+        -0.030462458808117543,
+        0.0060513704552727365,
+        -0.004
+      ],
+      "exact_cell": [
+        489.0,
+        2356.0
+      ],
+      "float32_cell": [
+        490.0,
+        2356.0
+      ],
+      "knot_distance_m": 5.524964263869947e-10,
+      "normal_angle_deg": 0.0
+    },
+    {
+      "chart": 2,
+      "q_m": [
+        0.04,
+        0.03939412634767598,
+        -0.0030230272592226453
+      ],
+      "exact_cell": [
+        4046.0,
+        4024.0
+      ],
+      "float32_cell": [
+        4046.0,
+        4025.0
+      ],
+      "knot_distance_m": 2.1639788183591693e-09,
+      "normal_angle_deg": 1.5211270983163797e-05
+    },
+    {
+      "chart": 2,
+      "q_m": [
+        0.04,
+        -0.03272577513972129,
+        0.0012652124123688413
+      ],
+      "exact_cell": [
+        4093.0,
+        372.0
+      ],
+      "float32_cell": [
+        4094.0,
+        372.0
+      ],
+      "knot_distance_m": 5.108820158028493e-09,
+      "normal_angle_deg": 9.266764357126852e-07
+    },
+    {
+      "chart": 2,
+      "q_m": [
+        0.04,
+        -0.009555989493686152,
+        0.0034922267381592093
+      ],
+      "exact_cell": [
+        4057.0,
+        1558.0
+      ],
+      "float32_cell": [
+        4058.0,
+        1558.0
+      ],
+      "knot_distance_m": 3.291198460431133e-09,
+      "normal_angle_deg": 0.0020363944638310846
+    },
+    {
+      "chart": 2,
+      "q_m": [
+        0.04,
+        0.005121111705057038,
+        -0.0038029419591704586
+      ],
+      "exact_cell": [
+        4051.0,
+        2309.0
+      ],
+      "float32_cell": [
+        4052.0,
+        2309.0
+      ],
+      "knot_distance_m": 6.742970626305578e-11,
+      "normal_angle_deg": 8.929998546046363e-06
+    },
+    {
+      "chart": 2,
+      "q_m": [
+        0.04,
+        -0.018964469603962825,
+        0.0019483507404764507
+      ],
+      "exact_cell": [
+        4086.0,
+        1077.0
+      ],
+      "float32_cell": [
+        4087.0,
+        1077.0
+      ],
+      "knot_distance_m": 2.7324106355308685e-09,
+      "normal_angle_deg": 0.00019305466841045577
+    },
+    {
+      "chart": 2,
+      "q_m": [
+        0.04,
+        -0.03589613540633797,
+        0.0037502856447081453
+      ],
+      "exact_cell": [
+        4052.0,
+        211.0
+      ],
+      "float32_cell": [
+        4053.0,
+        211.0
+      ],
+      "knot_distance_m": 2.5720370189219468e-09,
+      "normal_angle_deg": 0.13907327930238464
+    },
+    {
+      "chart": 3,
+      "q_m": [
+        -0.04,
+        0.009355429753037034,
+        -0.0012651572296078122
+      ],
+      "exact_cell": [
+        0.0,
+        2526.0
+      ],
+      "float32_cell": [
+        1.0,
+        2526.0
+      ],
+      "knot_distance_m": 4.716924184577919e-10,
+      "normal_angle_deg": 1.4007202653612713e-06
+    },
+    {
+      "chart": 3,
+      "q_m": [
+        -0.04,
+        -0.01684417408723669,
+        -0.002079070687355325
+      ],
+      "exact_cell": [
+        9.0,
+        1185.0
+      ],
+      "float32_cell": [
+        10.0,
+        1185.0
+      ],
+      "knot_distance_m": 1.6119976997686081e-09,
+      "normal_angle_deg": 1.0514649724088234e-05
+    },
+    {
+      "chart": 3,
+      "q_m": [
+        -0.04,
+        -0.03435873224353003,
+        -0.0010863416177255302
+      ],
+      "exact_cell": [
+        0.0,
+        289.0
+      ],
+      "float32_cell": [
+        0.0,
+        288.0
+      ],
+      "knot_distance_m": 2.944229349211014e-10,
+      "normal_angle_deg": 8.080656102646377e-07
+    },
+    {
+      "chart": 3,
+      "q_m": [
+        -0.04,
+        0.027139995570014,
+        0.002311219265276926
+      ],
+      "exact_cell": [
+        13.0,
+        3435.0
+      ],
+      "float32_cell": [
+        13.0,
+        3436.0
+      ],
+      "knot_distance_m": 2.3705425711284535e-09,
+      "normal_angle_deg": 0.0044956273403280725
+    },
+    {
+      "chart": 3,
+      "q_m": [
+        -0.04,
+        0.010394231418981575,
+        -0.003140630998162715
+      ],
+      "exact_cell": [
+        30.0,
+        2579.0
+      ],
+      "float32_cell": [
+        29.0,
+        2579.0
+      ],
+      "knot_distance_m": 7.21224782118668e-10,
+      "normal_angle_deg": 4.4007717783549654e-06
+    },
+    {
+      "chart": 4,
+      "q_m": [
+        -0.03952539297551353,
+        -0.04,
+        -0.002601039522851786
+      ],
+      "exact_cell": [
+        63.0,
+        45.0
+      ],
+      "float32_cell": [
+        62.0,
+        45.0
+      ],
+      "knot_distance_m": 1.5511440443205516e-09,
+      "normal_angle_deg": 1.8656364654535557e-05
+    },
+    {
+      "chart": 4,
+      "q_m": [
+        0.03423422322315144,
+        -0.04,
+        -0.0020150884605485073
+      ],
+      "exact_cell": [
+        3799.0,
+        9.0
+      ],
+      "float32_cell": [
+        3799.0,
+        8.0
+      ],
+      "knot_distance_m": 1.6649527756484872e-09,
+      "normal_angle_deg": 5.28621066443198e-06
+    },
+    {
+      "chart": 4,
+      "q_m": [
+        0.017696575271865703,
+        -0.04,
+        0.0018138870588370387
+      ],
+      "exact_cell": [
+        2952.0,
+        6.0
+      ],
+      "float32_cell": [
+        2953.0,
+        6.0
+      ],
+      "knot_distance_m": 1.7958046605315304e-09,
+      "normal_angle_deg": 0.0004288284322362007
+    },
+    {
+      "chart": 4,
+      "q_m": [
+        0.003683990170924002,
+        -0.04,
+        0.00186195152922771
+      ],
+      "exact_cell": [
+        2235.0,
+        6.0
+      ],
+      "float32_cell": [
+        2236.0,
+        6.0
+      ],
+      "knot_distance_m": 1.8927808831392666e-09,
+      "normal_angle_deg": 0.00104301500111079
+    },
+    {
+      "chart": 4,
+      "q_m": [
+        0.025103791703032875,
+        -0.04,
+        -0.0018468346457032386
+      ],
+      "exact_cell": [
+        3331.0,
+        6.0
+      ],
+      "float32_cell": [
+        3332.0,
+        6.0
+      ],
+      "knot_distance_m": 4.465782303952892e-09,
+      "normal_angle_deg": 4.3167949410865745e-06
+    },
+    {
+      "chart": 4,
+      "q_m": [
+        0.03627861737129332,
+        -0.04,
+        0.0037590540025402496
+      ],
+      "exact_cell": [
+        3902.0,
+        42.0
+      ],
+      "float32_cell": [
+        3903.0,
+        42.0
+      ],
+      "knot_distance_m": 3.2145611505995933e-10,
+      "normal_angle_deg": 0.08421637447006668
+    },
+    {
+      "chart": 5,
+      "q_m": [
+        -0.023610259324267916,
+        0.04,
+        -0.0008180289279022058
+      ],
+      "exact_cell": [
+        838.0,
+        4094.0
+      ],
+      "float32_cell": [
+        839.0,
+        4094.0
+      ],
+      "knot_distance_m": 1.4468724751637296e-09,
+      "normal_angle_deg": 1.7082700751448275e-08
+    },
+    {
+      "chart": 5,
+      "q_m": [
+        0.022470603995875915,
+        0.04,
+        0.002015092211879156
+      ],
+      "exact_cell": [
+        3197.0,
+        4085.0
+      ],
+      "float32_cell": [
+        3197.0,
+        4086.0
+      ],
+      "knot_distance_m": 2.787393089676016e-09,
+      "normal_angle_deg": 0.0005508632993024623
+    },
+    {
+      "chart": 5,
+      "q_m": [
+        0.004297908760678544,
+        0.04,
+        -0.0012651854369276566
+      ],
+      "exact_cell": [
+        2267.0,
+        4093.0
+      ],
+      "float32_cell": [
+        2267.0,
+        4094.0
+      ],
+      "knot_distance_m": 2.380730572681955e-09,
+      "normal_angle_deg": 8.233316795622144e-07
+    },
+    {
+      "chart": 5,
+      "q_m": [
+        -0.002064562658376262,
+        0.04,
+        0.0012651989465770896
+      ],
+      "exact_cell": [
+        1941.0,
+        4093.0
+      ],
+      "float32_cell": [
+        1941.0,
+        4094.0
+      ],
+      "knot_distance_m": 3.746963930240099e-09,
+      "normal_angle_deg": 1.0313528124063868e-06
+    },
+    {
+      "chart": 5,
+      "q_m": [
+        0.004542100775707512,
+        0.04,
+        0.0006852759929120312
+      ],
+      "exact_cell": [
+        2279.0,
+        4095.0
+      ],
+      "float32_cell": [
+        2280.0,
+        4095.0
+      ],
+      "knot_distance_m": 1.4196937225818829e-09,
+      "normal_angle_deg": 3.627294954695614e-08
+    },
+    {
+      "chart": 5,
+      "q_m": [
+        -0.002302837210362056,
+        0.04,
+        -0.001265224005764119
+      ],
+      "exact_cell": [
+        1929.0,
+        4093.0
+      ],
+      "float32_cell": [
+        1929.0,
+        4094.0
+      ],
+      "knot_distance_m": 6.28135900626603e-09,
+      "normal_angle_deg": 6.120637904604586e-07
+    }
+  ],
+  "full_worst_normal_deg": 2.4406941040302432,
+  "shader_source_sha256": "51b005a68334f462f349c0fc91bc6d2f096daa49519fa47c33deac4802c8e8a8",
+  "cpu_reference_sha256": "f80d51f162e6e0ac3c79e7a7a1917f747fd0a0bc7825489182dbb82f7d057228",
+  "notes": [
+    "The numerical strip bound combines measured base-coordinate roundoff with a gamma4 arithmetic bound for texture-index conversion. It is not a global macro-expression roundoff proof.",
+    "No slope smoothing, cell bias, or changed height sample is introduced.",
+    "An actual renderer check must compare its operations to the same float32 oracle, then separately show exact-coordinate conditioning. A tiny global angle bound is mathematically impossible at native derivative jumps."
+  ],
+  "peak_RSS_MiB": 184.15234375
+}

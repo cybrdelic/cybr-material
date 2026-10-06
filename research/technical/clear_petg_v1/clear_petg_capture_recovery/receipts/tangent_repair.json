@@ -1,0 +1,15 @@
+{
+  "source": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/clear_petg_capture_recovery/scenes/23_petg_reconstructed_first_hit_guides.blend",
+  "source_sha256": "bb4204e0016dd852e6b7ad209ff99133152f167e41ffaad2d4b83b64573d06cb",
+  "scene": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/clear_petg_capture_recovery/scenes/23_petg_native4k_valid_tangent_guides_r2.blend",
+  "scene_sha256": "2ed67cf095563169ba75bbffcf28a26ab6d13ffeb28072614d84822af9bac912",
+  "geometry_exact": true,
+  "original_color_and_roughness_UVs_bit_exact": true,
+  "printed_face_tangents_max_component_error": 1.1920928955078125e-07,
+  "repaired_cut_faces": 2336,
+  "minimum_cut_chart_area": 7.499454841131126e-05,
+  "all_tangent_lengths_minimum": 0.9999998807907104,
+  "only_shader_binding_change": "Existing Tangent node reads PhysicalAnisotropyFrame; BaseColor/Roughness/Metallic retain the original active-render UVMap",
+  "all_optical_coefficients_and_volume_absorption_preserved": true,
+  "physical_material_qualification": false
+}

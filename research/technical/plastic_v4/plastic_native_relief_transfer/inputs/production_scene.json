@@ -1,0 +1,243 @@
+{
+  "case": "production",
+  "scene": "/workspace/shared/material-native4k/causal-plastic/scenes/21_plastic_texture_causal_production_panel.blend",
+  "scene_sha256": "34f895e1dc3130d491d6ed779e10a56a1a99b1a0ac67383b4bdb6794afe46cb9",
+  "source_scene": "/workspace/shared/material-slabs/scenes/21_plastic_texture_molding_detail_r2_panel.blend",
+  "source_scene_sha256": "29c5b004447ef32d312f8a4b902f167a1d0759227d0874755cb446df3e0daa96",
+  "input_tool_sha256": "ebe558dc96ccb14ad5203e8b49b1a3dac83f3dfcb6c42d4b1ad8b7e89b3b6acc",
+  "state_sha256": "7d19cae4ad8a93512c31bec64894a8d55defcef7746406949ec83eb467b6d15c",
+  "history_sha256": "744adf39f061a2088f9742b4c5246670b8a4cdc807fe0db5d469718ab1439681",
+  "roughness_sha256": "884d84ade722870067fa15158a1ce37fa43198233227c33a55eb20e74f8ed1de",
+  "studio_signature_sha256": "316ed8cdf0adaa8a74180004e9bbb2ca7010c6510ee1bef3f23b34dc26bb03fc",
+  "studio_signature": {
+    "objects": {
+      "Slab / shared camera": {
+        "type": "CAMERA",
+        "matrix": [
+          0.8017458915710449,
+          -0.3565812408924103,
+          0.4796387553215027,
+          0.06560000032186508,
+          0.5976650714874268,
+          0.478340744972229,
+          -0.6434178948402405,
+          -0.08799999952316284,
+          2.7379325473475546e-09,
+          0.8025209903717041,
+          0.5966238975524902,
+          0.08559999614953995,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "data": {
+          "type": "ORTHO",
+          "ortho_scale": 0.12960000336170197,
+          "lens": 50.0
+        }
+      },
+      "Slab / neutral floor": {
+        "type": "MESH",
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          -9.999999974752427e-07,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "data": {}
+      },
+      "Slab / key": {
+        "type": "LIGHT",
+        "matrix": [
+          0.650791347026825,
+          0.6193199753761292,
+          -0.43921908736228943,
+          -0.0559999980032444,
+          -0.7592566609382629,
+          0.5308456420898438,
+          -0.37647348642349243,
+          -0.04800000041723251,
+          -4.677300324829048e-09,
+          0.5784856677055359,
+          0.8156925439834595,
+          0.10799999535083771,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "data": {
+          "energy": 0.17919999361038208,
+          "size": 0.07599999755620956,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "shape": "DISK"
+        }
+      },
+      "Slab / rim": {
+        "type": "LIGHT",
+        "matrix": [
+          -0.47410011291503906,
+          -0.647061824798584,
+          0.5971097350120544,
+          0.05199999734759331,
+          0.8804709315299988,
+          -0.34841829538345337,
+          0.3215208053588867,
+          0.0279999990016222,
+          1.320182576591833e-07,
+          0.6781708598136902,
+          0.7349042892456055,
+          0.06800000369548798,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "data": {
+          "energy": 0.08959999680519104,
+          "size": 0.05199999734759331,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "shape": "DISK"
+        }
+      },
+      "Slab / fill": {
+        "type": "LIGHT",
+        "matrix": [
+          0.7348033785820007,
+          -0.33375972509384155,
+          0.5904815196990967,
+          0.04800000041723251,
+          0.6782801747322083,
+          0.3615729808807373,
+          -0.6396881937980652,
+          -0.05199999734759331,
+          -2.317319136579954e-08,
+          0.8705569505691528,
+          0.4920676648616791,
+          0.04399999976158142,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "data": {
+          "energy": 0.03199999779462814,
+          "size": 0.09600000083446503,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "shape": "DISK"
+        }
+      },
+      "Plastic / authored molding detail camera": {
+        "type": "CAMERA",
+        "matrix": [
+          0.7418737411499023,
+          -0.3208793103694916,
+          0.5887782573699951,
+          0.07000000029802322,
+          0.6705396175384521,
+          0.35501548647880554,
+          -0.6514143347740173,
+          -0.08500000089406967,
+          -1.9055775624110538e-08,
+          0.8780663013458252,
+          0.47853896021842957,
+          0.0430000014603138,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "data": {
+          "type": "ORTHO",
+          "ortho_scale": 0.024000000208616257,
+          "lens": 50.0
+        }
+      }
+    },
+    "world": [
+      [
+        0.18000000715255737,
+        0.18000000715255737,
+        0.18000000715255737,
+        1.0
+      ],
+      0.2199999988079071
+    ],
+    "view": {
+      "transform": "AgX",
+      "look": "AgX - Medium High Contrast",
+      "exposure": 0.0,
+      "gamma": 1.0
+    },
+    "active_camera": "Slab / shared camera"
+  },
+  "base_color_linear_rgba": [
+    0.10999999940395355,
+    0.14000000059604645,
+    0.1599999964237213,
+    1.0
+  ],
+  "topology_sha256": "293f115802235dced9364a104fe1dc282b83bf0b1593b04529d034a43d2b83a5",
+  "vertex_count": 614402,
+  "face_count": 614400,
+  "max_r2_relief_inverse_residual_m": 1.0447982581917367e-14,
+  "max_geometry_displacement_m": 9.057603165291833e-07,
+  "relief_peak_to_valley_m": 3.8206759199965745e-05,
+  "pressure_Pa": 20000000.0,
+  "same_other_process_parameters": {
+    "density_kg_m3": 1050.0,
+    "heat_capacity_J_kgK": 1800.0,
+    "conductivity_W_mK": 0.2,
+    "air_conductivity_W_mK": 0.03,
+    "contact_h_W_m2K": 6000.0,
+    "maxwell_modulus_Pa": 300000000.0,
+    "viscosity_reference_Pas": 300000.0,
+    "viscosity_reference_K": 503.15,
+    "activation_energy_J_mol": 160000.0,
+    "gas_constant_J_molK": 8.314462618,
+    "max_viscosity_Pas": 1e+20,
+    "deformation_layer_m": 0.00018,
+    "thermal_depth_m": 0.004,
+    "melt_temperature_K": 503.15,
+    "mold_temperature_K": 333.15,
+    "skin_diagnostic_temperature_K": 383.15,
+    "pressure_hold_s": 0.5,
+    "end_time_s": 0.5,
+    "dt_s": 6.25e-05,
+    "depth_cells": 96,
+    "mesh_stretch": 7.0,
+    "include_dissipation": true
+  },
+  "capture": {
+    "file_format": "PNG",
+    "color_depth": "16",
+    "dither_intensity": 0
+  },
+  "pixel_review": "Pending render owner",
+  "scope": "Bounded solved surface material-response model; not full injection-flow validation. Existing macro molding details remain empirical geometry."
+}

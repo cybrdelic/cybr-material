@@ -1,0 +1,49 @@
+{
+  "physical_layer_pitch_m": 0.0002,
+  "world_y_interval_m": [
+    -0.01,
+    0.01
+  ],
+  "sample_count_per_line": 4096,
+  "lines": [
+    {
+      "x_m": -0.01,
+      "raw_linear_layer_harmonic": 0.06017531814521123,
+      "clean_linear_layer_harmonic": 0.00016736414197283093,
+      "amplitude_retention": 0.0027812755649909236,
+      "raw_mean": 0.2597632409683562,
+      "clean_mean": 0.25254832111370384
+    },
+    {
+      "x_m": -0.003,
+      "raw_linear_layer_harmonic": 0.10536838083958758,
+      "clean_linear_layer_harmonic": 0.01352557524179203,
+      "amplitude_retention": 0.1283646491862043,
+      "raw_mean": 0.3430767172774304,
+      "clean_mean": 0.33648147479267776
+    },
+    {
+      "x_m": 0.004,
+      "raw_linear_layer_harmonic": 0.09957954800270787,
+      "clean_linear_layer_harmonic": 0.005741935760950916,
+      "amplitude_retention": 0.05766179778999173,
+      "raw_mean": 0.37778193335511434,
+      "clean_mean": 0.3713129053183342
+    },
+    {
+      "x_m": 0.01,
+      "raw_linear_layer_harmonic": 0.08421697133570183,
+      "clean_linear_layer_harmonic": 0.0007033881873491799,
+      "amplitude_retention": 0.008352095500387518,
+      "raw_mean": 0.3777331084984039,
+      "clean_mean": 0.3680560839997764
+    }
+  ],
+  "image_size": [
+    960,
+    960
+  ],
+  "method": "Linear-light luminance demodulated at the known5,000cycles/m layer frequency along projected nominal front-plane lines. Constant/linear illumination trends are fitted jointly.",
+  "limitations": "Finite projection of curved bead fronts, multiple light paths and image sampling can shift phase and harmonic energy. Report is a supporting diagnostic; raw native visual review remains necessary. It cannot establish optical clarity or a calibrated PETG model.",
+  "automatic_acceptance": false
+}

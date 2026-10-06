@@ -1,0 +1,62 @@
+{
+  "source": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/scenes/plastic_analytic_shader_seam_data.blend",
+  "source_sha256": "b385ec1c1917f0fec01643acaeeec858b64e9419d3d04faef7bc60ef2f66a10b",
+  "bytes": 396576,
+  "array_path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_explicit_curve/height_sampling_audit/seam_revision/receipts/shared_top_right_numeric_patch.npz",
+  "array_sha256": "e5ff4992fd50c0832969d93b59cf11f23fabf503e471e250532417bd7aa7f9dc",
+  "position_encoding_origin_m": [
+    0.03901337459683418,
+    -0.03766584023833275,
+    0.007063744124025106
+  ],
+  "position_encoding_scale": 1000.0,
+  "q_encoding_origin_m": [
+    0.039913879730461725,
+    -0.03800174364288559,
+    0.00392564699973384
+  ],
+  "q_encoding_scale": 1000.0,
+  "object_origin_m": [
+    0.03700000047683716,
+    -0.03700000047683716,
+    0.004000000189989805
+  ],
+  "vertices": 2498,
+  "triangles": 4800,
+  "native_cell_boundary_sharp_edges": 1069,
+  "normal_capture_semantics": "Actual analytically evaluated retained native field normal after Object-to-World NORMAL transform; socket also feeds declared Principled Normal, unused for data emission.",
+  "corner_normal_attribute_bit_exact": true,
+  "stored_custom_normal_degrees_diagnostic_only": {
+    "max": 0.0346567934752134,
+    "rms": 0.004720598031084516
+  },
+  "camera": "Plastic / native seam data camera",
+  "field_m": 0.00048,
+  "native_patch_xy_m": 0.000234375,
+  "position_gate_m": 2e-08,
+  "no_new_normal_acceptance_gate": true,
+  "no_physical_parameters_changed": true,
+  "source_bytes": 396576,
+  "original_fixture": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_native_seam_transfer/scenes/plastic_native_shared_seam_field_r3.blend",
+  "original_fixture_sha256": "95ac20c966abe47ec2187fa0b411cdd3d7c9735d1148349d353b13763efbe3da",
+  "shader_source_sha256": "d9359823b7906841f2446b789b0013da249eca103cfbd8a4e3c65ef5251a79b5",
+  "shader_group_nodes": 897,
+  "height_dependency": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_native_relief_transfer/maps/production_retained_height_native4096.png",
+  "height_sha256": "78ad8b37255340889593dcf47180913d611ce0124e756f3dcbaac187d9eb2aee",
+  "q_shader_origin_actual_f32": [
+    0.039913881570100784,
+    -0.03800174221396446,
+    0.003925647120922804
+  ],
+  "beauty_encoding": "RGB=(actual_native_cell_x/4096,actual_native_cell_y/4096,actual_H/80e-6+0.5)",
+  "inherited_position_qualification": {
+    "receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_native_seam_transfer/receipts/actual_native_seam.json",
+    "sha256": "2f1680070cc9d339f79ec67315db80a4b6deffcfe063800ba2218adae0730c68",
+    "position_pass": true,
+    "position_max_m": 8.032752492422733e-09,
+    "mesh_transform_q_attribute_bitwise_equal": true
+  },
+  "capture_only": true,
+  "pixel_review": false,
+  "not_full_material_qualification": true
+}

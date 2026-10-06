@@ -1,0 +1,17 @@
+"""Separate float32 operation-sequence error from discontinuous knot conditioning."""
+from surface_contract import *
+from analytic_shader import NumericOps,field_expressions
+import json,resource
+rng=np.random.default_rng(19117);rows=[];examples=[]
+for chart in range(6):
+    q=rng.uniform([-.04,-.04,-.004],[.04,.04,.004],(30000,3));axis,value={0:(2,.004),1:(2,-.004),2:(0,.04),3:(0,-.04),4:(1,-.04),5:(1,.04)}[chart];q[:,axis]=value
+    b=base_and_direction(q)[0];raw=(b[:,:2]/.08+.5)*4096-.5;cell=np.floor(np.clip(raw,0,4095));exact=normal(q,chart);r=field_expressions(NumericOps(HEIGHT,'f4'),list(q.T),TANGENTS[chart,0],TANGENTS[chart,1]);bf=np.stack(r['base'],-1).astype('f8');nf=np.stack(r['normal'],-1).astype('f8');nf/=np.linalg.norm(nf,axis=-1,keepdims=True);cf=np.stack(r['cell'],-1);mismatch=np.any(cf!=cell,axis=-1);angle=np.degrees(np.arctan2(np.linalg.norm(np.cross(nf,exact),axis=-1),np.sum(nf*exact,axis=-1)));distance=np.min(np.abs(raw-np.rint(raw)),axis=-1)*PITCH
+    # Roundoff terms for normalized texture index arithmetic after computed bx:
+    # division by0.08, addition0.5, multiplication4096, subtraction0.5.
+    # Four operations use gamma4; magnitude sum bounds cancellation conservatively.
+    eps=np.finfo(np.float32).eps/2;gamma4=4*eps/(1-4*eps);index_bound=gamma4*(np.abs(b[:,:2]/.08)*4096+2048+4096+.5);coordinate_bound=np.max(np.abs(bf[:,:2]-b[:,:2])+index_bound*PITCH,axis=-1)
+    strip=distance<=coordinate_bound
+    row={'chart':chart,'samples':len(q),'normal_max_deg':float(angle.max()),'normal_rms_deg':float(np.sqrt(np.mean(angle**2))),'same_cell_normal_max_deg':float(angle[~mismatch].max()),'same_cell_normal_rms_deg':float(np.sqrt(np.mean(angle[~mismatch]**2))),'native_cell_mismatch_count':int(mismatch.sum()),'mismatch_knot_distance_max_m':float(distance[mismatch].max()) if mismatch.any() else 0.,'sampled_base_xy_float32_max_m':float(np.max(np.abs(bf[:,:2]-b[:,:2]))),'operation_derived_index_roundoff_bound_max_m':float(np.max(index_bound*PITCH)),'conditioning_strip_half_width_max_m':float(coordinate_bound.max()),'conditioning_strip_sample_count':int(strip.sum()),'all_observed_mismatches_in_strip':bool(np.all(strip[mismatch])),'outside_strip_normal_max_deg':float(angle[~strip].max())};rows.append(row)
+    for k in np.flatnonzero(mismatch)[:6]:examples.append({'chart':chart,'q_m':q[k].tolist(),'exact_cell':cell[k].tolist(),'float32_cell':cf[k].tolist(),'knot_distance_m':float(distance[k]),'normal_angle_deg':float(angle[k])})
+result={'rows':rows,'examples':examples,'full_worst_normal_deg':max(r['normal_max_deg'] for r in rows),'shader_source_sha256':hashlib.sha256((ROOT/'source/analytic_shader.py').read_bytes()).hexdigest(),'cpu_reference_sha256':hashlib.sha256((ROOT/'source/surface_contract.py').read_bytes()).hexdigest(),'notes':['The numerical strip bound combines measured base-coordinate roundoff with a gamma4 arithmetic bound for texture-index conversion. It is not a global macro-expression roundoff proof.','No slope smoothing, cell bias, or changed height sample is introduced.','An actual renderer check must compare its operations to the same float32 oracle, then separately show exact-coordinate conditioning. A tiny global angle bound is mathematically impossible at native derivative jumps.'],'peak_RSS_MiB':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024}
+(ROOT/'receipts/knot_conditioning.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result))

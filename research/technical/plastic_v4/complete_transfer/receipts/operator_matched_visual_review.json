@@ -1,0 +1,54 @@
+{
+  "utc": "2026-10-06T15:50:00Z",
+  "actual_capture_contracts": {
+    "macro": {
+      "camera": true,
+      "lights": true,
+      "world": true,
+      "cycles": true,
+      "display_device": true,
+      "film_transparent": true,
+      "pixel_aspect": true,
+      "png_color_depth": true,
+      "png_color_mode": true,
+      "dither_intensity": true,
+      "display_settings": true,
+      "candidate_run": "plastic_complete_macro_r3_capture_20261006_1521",
+      "control_run": "plastic_control_macro_capture_20261006_1545"
+    },
+    "second_light": {
+      "camera": true,
+      "lights": true,
+      "world": true,
+      "cycles": true,
+      "display_device": true,
+      "film_transparent": true,
+      "pixel_aspect": true,
+      "png_color_depth": true,
+      "png_color_mode": true,
+      "dither_intensity": true,
+      "display_settings": true,
+      "candidate_run": "plastic_complete_second_r3_capture_20261006_1526",
+      "control_run": "plastic_control_second_capture_20261006_1547"
+    }
+  },
+  "native_visual_review": {
+    "full": "Same protected silhouette/band; fine stipple visibly clearer; no noisy or degraded presentation.",
+    "macro": "Candidate has continuous fine grain over the rounded edge; prior-recipe control has coarser, blotchy highlight. Both clean.",
+    "second_light": "Candidate retains finer resolved stipple and outline/band under rotated illumination; prior-recipe texture is visibly softer/coarser. Both clean."
+  },
+  "operator_visual_improvement": true,
+  "independent_owner_review": "PASS, owner_final_visual_review.json",
+  "full_reference": "libfile_ea9e705b38608191ace56d62e2cf6020",
+  "limits": [
+    "Prior-recipe reconstruction is not historical binary/pixel identity or same-current-state A/B.",
+    "This is a visual surface-transfer improvement; generic process and optical constants remain uncalibrated."
+  ],
+  "promotion": "Preferred presentation update delegated to source owner; selected physical source remains unchanged",
+  "approved_for_three_labeled_views": true,
+  "library_images": {
+    "full": "libfile_0599c63eda388191b4ded4aa084cb34b",
+    "macro": "libfile_2df65e65114881918c7c3016ce93dd2e",
+    "second_light": "libfile_43e7f8ab52a48191a95cc90e7039d0da"
+  }
+}

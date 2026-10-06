@@ -1,0 +1,58 @@
+{
+  "ready_for_capture": true,
+  "capture_released": true,
+  "resource_admission_pending": false,
+  "capture_limit": 1,
+  "experiment_id": "clear_petg_full_corrected_capture",
+  "experiment_manifest": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/clear_petg_full_corrected_capture/experiment.json",
+  "source_scene": "shared/material-production/experiments/clear_petg_capture_recovery/scenes/23_petg_native4k_valid_tangent_guides_r2.blend",
+  "source_sha256": "2ed67cf095563169ba75bbffcf28a26ab6d13ffeb28072614d84822af9bac912",
+  "required_cli_flags": [
+    "--mode",
+    "component-recombined",
+    "--samples",
+    "256",
+    "--fixed-samples"
+  ],
+  "resolution": [
+    1920,
+    1920
+  ],
+  "physical_field_m": 0.04536000266671181,
+  "physical_pixel_pitch_m": 2.36250013889124e-05,
+  "prior_qualified_probe": "clear_petg_480_two_component_20261006_1229",
+  "prior_layer_amplitude_retention": 0.9732013376823678,
+  "proposed_budget": {
+    "rss_mib": 4096,
+    "new_output_mib": 1536,
+    "total_seconds": 1800,
+    "observed_estimate_seconds": 960
+  },
+  "postprocessor": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/clear_petg_capture_recovery/source/refilter_components_full_r4.py",
+  "postprocessor_sha256": "f43591c62e419ed208731d0a4c5da988a50dd67b28d3e15bb0913fa1ce29d429",
+  "core_sha256": "16981dffc9d6f4a23f056560e50773fcf73fc1ea541794788ce992ed1eff48e6",
+  "shared_bridge_sha256": "540b9b39df71576661a58bbba81ed3818fe1317f4224ed570ef03241b1cd6b5b",
+  "postprocess_steps": [
+    "Prepare on complete component capture in a fresh directory",
+    "Operator filters only positive transmission once with declared guides",
+    "Import reuses verified filteredR PFM and combines both filtered components plus untoucheddelta64"
+  ],
+  "detail_gate": {
+    "minimum_fundamental_retention": 0.9,
+    "each_strip_center_x_m": [
+      -0.01,
+      -0.003,
+      0.004,
+      0.01
+    ],
+    "strip_width_m": 0.001,
+    "strip_y_interval_m": [
+      -0.01,
+      0.01
+    ],
+    "native_visual": "No conspicuous grain; full sheet outline, layer ridges, start-stop seam and cut edges preserved"
+  },
+  "material_calibration_or_transparency_promotion": false,
+  "priority": "After ready asphalt output, as operator resources permit",
+  "render_threads": 4
+}

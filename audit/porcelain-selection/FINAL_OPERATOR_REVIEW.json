@@ -1,0 +1,27 @@
+{
+  "reviewed_utc": "2026-10-06T19:31:59.670050+00:00",
+  "reviewer": "renderer owner",
+  "accepted_scope": "Narrow visible glaze-lip improvement with complete material context preserved",
+  "all_native_noise_gates_pass": true,
+  "main_full_context_pass": true,
+  "macro_continuous_glaze_highlight_pass": true,
+  "second_light_no_regression_pass": true,
+  "matched_camera_light_world_sampling_display_checks_pass": true,
+  "reference_history_change_isolated_with_roughness_held": true,
+  "intrinsic_roughness_accounting_change_tested_separately": true,
+  "source_main_sha256": "6385b8dcc70876cab8b4030fbc16d89d769df47e0b6aaec9778f409f437011a3",
+  "source_second_sha256": "027873508da459093fd7775f92152cabecdddf856b2299cbcb3f669bc777dcd3",
+  "assumptions": [
+    "Representative Q92 commercial-glaze heating window, not calibrated porcelain chemistry",
+    "Surface tension proxy 0.3 N/m with half/double sensitivity",
+    "Flat finite-depth linear Stokes leveling over a corrugated substrate",
+    "Effective opaque substrate and coat closure; no finite-volume refraction/scattering",
+    "Intrinsic coat roughness remains inherited and uncalibrated"
+  ],
+  "strong_original_reference_retained": "libfile_edc83cc981548191906982cc4fa7763b v1",
+  "public_delivery_confirmed": false,
+  "independent_final_review": "Passed: full, macro and second light; owner confirmed 2026-10-06T19:33:41Z",
+  "label_manifest": "/workspace/scratch/b4387906eb93/labeled-material-panels/porcelain_reference_firing/manifest.json",
+  "ready_for_parent_delivery": true,
+  "source_or_process_calibrated": false
+}

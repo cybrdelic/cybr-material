@@ -1,0 +1,48 @@
+{
+  "source_builder": "material-publication/audit/checkpoints/2026-10-05/sources/material-native4k/plastic-detail/source/build_molded_panels_r2.py",
+  "source_builder_sha256": "1431ef5657feb8c6186c9f93b7bfa8ae772e9d283e6c84c74c7927c85cad6764",
+  "original_rows": [
+    20,
+    21,
+    22,
+    23
+  ],
+  "original_global_z_intervals_m": [
+    [
+      0.00393,
+      0.003965
+    ],
+    [
+      0.003965,
+      0.004
+    ],
+    [
+      0.004,
+      0.004035
+    ],
+    [
+      0.004035,
+      0.00407
+    ]
+  ],
+  "original_merged_global_z_bounds_m": [
+    0.00393,
+    0.00407
+  ],
+  "retained_qz_bounds_m": [
+    -6.999999999999975e-05,
+    6.999999999999975e-05
+  ],
+  "original_assignment": "abs((zs[k]+zs[k+1])*0.5-0.004)<0.000065",
+  "new_assignment": "Preserve the extracted original physical band boundaries; do not reevaluate the old midpoint rule on new rows.",
+  "candidate_triangles_crossing_boundary": 0,
+  "candidate_q_boundary_distance_m": [
+    2.574980159653073e-19,
+    2.439454888092385e-19
+  ],
+  "candidate_boundary_is_identical_in_float32": true,
+  "band_triangles": 33768,
+  "roughness": 0.44,
+  "original_r5_normal_graph_preserved": true,
+  "actual_connection_inspection": "Pending admitted source build"
+}

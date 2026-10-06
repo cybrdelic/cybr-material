@@ -1,0 +1,39 @@
+{
+  "saved_state_sha256": "7d19cae4ad8a93512c31bec64894a8d55defcef7746406949ec83eb467b6d15c",
+  "unchanged_saved_arrays_bit_exact": {
+    "tool_depth_m": true,
+    "retained_displacement_m": true,
+    "loaded_displacement_m": true,
+    "unloaded_gap_m": true,
+    "retained_fraction": true,
+    "temperature_K": true,
+    "surface_temperature_K": true,
+    "skin_fraction": true,
+    "depth_edges_m": true,
+    "extracted_heat_J_m2": true,
+    "dissipated_heat_J_m2": true
+  },
+  "diagnostics": {
+    "max_full_cycle_mechanical_residual_J_m2": 8.640199666842818e-12,
+    "max_full_cycle_combined_residual_J_m2": 2.5147164706140757e-07,
+    "steps": 8000,
+    "max_step_thermal_residual_J_m2": 3.0515254543336405e-10,
+    "max_step_mechanical_residual_J_m2": 7.105427357601002e-14,
+    "max_global_thermal_residual_J_m2": 2.514737502679054e-07,
+    "min_retained_fraction": 0.7887524632270615,
+    "max_retained_fraction": 1.0,
+    "min_temperature_K": 346.96052836599114,
+    "max_temperature_K": 503.1500000000316,
+    "global_thermal_relative_residual": 3.402758230365502e-12
+  },
+  "startup_work_range_J_m2": [
+    0.0,
+    120.0
+  ],
+  "release_work_range_J_m2": [
+    -18.218510273860854,
+    0.0
+  ],
+  "elapsed_s": 8.592437982559204,
+  "scope": "Full original production duration/grid/input257 columns, original physical coefficients. Only missing quasistatic pressure-transition work bookkeeping added."
+}

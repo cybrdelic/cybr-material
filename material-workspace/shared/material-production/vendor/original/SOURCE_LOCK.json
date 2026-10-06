@@ -1,0 +1,54 @@
+{
+  "commit": "de4146ac759164e29323b152d37f64417c00c3fb",
+  "repository": "cybrdelic/cybr-material",
+  "files": [
+    {
+      "path": "vendor/original/source/wood_profiles.json",
+      "git_blob_sha": "8362cb5fc3f00b3d3e2f7d0a4c96c69f45c44746",
+      "sha256": "e3d3c941fdfdad0e5a30322fe38d6de3e245c8b3b1eb7630b2a2ad815faa95bd",
+      "bytes": 1677
+    },
+    {
+      "path": "vendor/original/source/surface_math.py",
+      "git_blob_sha": "ca14c92740b95d1ea33d1b6da4dd4d07a37ce75e",
+      "sha256": "831000ff69ffe6c32681859500750f7204cafab424ba4c6beada1ddb17a9492c",
+      "bytes": 3877
+    },
+    {
+      "path": "vendor/original/source/finish_structures.py",
+      "git_blob_sha": "370153bb1c72b4f929cacb986ab720665e495adb",
+      "sha256": "3b613dabf120f936e01ab8d2c25658241b37c16a064d176a84077f80190455df",
+      "bytes": 4574
+    },
+    {
+      "path": "vendor/original/source/wood_anatomy.py",
+      "git_blob_sha": "533f60f216759a80e462b61886239946e05fdfd3",
+      "sha256": "30c69e999b2cbf8e11ce1bcdbf0e6efbb17443e710062ecaccacc2626e15a961",
+      "bytes": 9117
+    },
+    {
+      "path": "vendor/original/source/generate_materials.py",
+      "git_blob_sha": "12406a4d2359b826c3ee3fcf412caabb0441e489",
+      "sha256": "85986fdde6a92c8026dd1e556d7a4a877a74fbff0be87782b5e2e4a12210cfa3",
+      "bytes": 23467
+    },
+    {
+      "path": "vendor/original/source/physical_features.py",
+      "git_blob_sha": "f7a7220836f95077b8502d070a17a789061bd46c",
+      "sha256": "36cde6435a8e42e329b8e93438a4c4cdabe66382345b7a6a6e886541f25c9a23",
+      "bytes": 5736
+    },
+    {
+      "path": "vendor/original/source/timber_volume_shader.py",
+      "git_blob_sha": "d42ff8784d9151b89009c5a460df493f2b5ffb60",
+      "sha256": "758ec657c0329f3d21b420a49be0346f845742d7fcbceebcd34d1b8545b6678e",
+      "bytes": 5795
+    },
+    {
+      "path": "vendor/original/source/requirements.txt",
+      "git_blob_sha": "55fdab080467cce80bff7dbef6ef27cfe741a507",
+      "sha256": "f793676a40e71a12c2d9066d4f2e342bf5d920a971a725519c00ed500c4231ed",
+      "bytes": 42
+    }
+  ]
+}

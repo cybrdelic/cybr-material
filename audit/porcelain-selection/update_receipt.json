@@ -1,0 +1,23 @@
+{
+  "material_id": "07_bone_porcelain",
+  "before_sha256": "b11019d434407c31a882cf7f234a3dbd23799d07e8db5fdaa2a6ece03262869f",
+  "after_sha256": "2edde7d241dfada9c2cd0dbca0efc75a7173a1ee954cdc05e4d4d5ce9c6b89d0",
+  "all_35_selected_source_capture_entries_unchanged": true,
+  "other_34_material_entries_unchanged": true,
+  "all_nonpresentation_fields_unchanged": true,
+  "all_three_local_image_and_source_hashes_verified": true,
+  "physical_model_qualification_unchanged": true,
+  "historical_complete_reference_retained": true,
+  "publication_snapshot_mutated": false,
+  "user_delivery_claim": false,
+  "tests": [
+    "concurrent registry hash guard",
+    "exact target-entry guard",
+    "all source/image/review hashes",
+    "35 immutable selected entries",
+    "34 other entries unchanged",
+    "nonpresentation target fields unchanged",
+    "nonmaterial root fields unchanged",
+    "atomic byte verification"
+  ]
+}

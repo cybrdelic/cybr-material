@@ -1,0 +1,241 @@
+{
+  "id": "23_petg_transparent",
+  "name": "PETG / Clear printed wall",
+  "family": "PETG",
+  "variant": "Clear printed wall",
+  "tile_m": 0.02,
+  "height_scale_m": 0.00016,
+  "roughness": 0.17,
+  "color": [
+    0.91,
+    0.97,
+    0.98
+  ],
+  "seed": 1453,
+  "ior": 1.57,
+  "metallic": 0,
+  "representation": "explicit procedural geometry plus surface maps",
+  "layer_height_m": 0.0002,
+  "bead_width_m": 0.00045,
+  "wall_thickness_m": 0.0012,
+  "transmission": 0.96,
+  "anisotropy": 0.38,
+  "physical_values": "authored approximations, not measured material data",
+  "tiling": "finite specimen",
+  "resolution": [
+    4096,
+    4096
+  ],
+  "provenance": "Native procedural re-evaluation of the selected legacy PETG generator; no image input and no upsampling",
+  "formation_claim": "Analytic fused-bead surface approximation with seeded finite-scale color/roughness variation; no thermal or extrusion solver in this production branch",
+  "source_generator": "/workspace/shared/material-technical-rebuild/source/expansion/maps.py",
+  "source_generator_sha256": "44d15a52e871088ea894f939c08e0bbe15b1d93a74fec19b5d11181b77270f2e",
+  "export_generator_sha256": "70c9ff8c72e2fb78d703dce99d2354f1dde8976d7e40438537f6d4010e354bf1",
+  "maps": {
+    "BaseColor": {
+      "file": "BaseColor.png",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bit_depth": 8,
+      "color_space": "sRGB",
+      "range": [
+        0.9051121473312378,
+        0.9855347275733948
+      ],
+      "sha256": "d84213f357c7a5ff25930f8114dc2411fc7b054cdb67f532a55ba862944f5492"
+    },
+    "PrintBoundary": {
+      "file": "PrintBoundary.png",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bit_depth": 8,
+      "color_space": "Non-Color",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "sha256": "3b37db2f25a2ad0484efcec4d34f12001a14bb98f2bab181f2f261417b8e3612"
+    },
+    "Roughness": {
+      "file": "Roughness.png",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bit_depth": 8,
+      "color_space": "Non-Color",
+      "range": [
+        0.1617678999900818,
+        0.318386048078537
+      ],
+      "sha256": "c2e662a20596d98dd98e6b893c8aa5f6cea5569ffec81a5990a57f318f20e7c7"
+    },
+    "ORM": {
+      "file": "ORM.png",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bit_depth": 8,
+      "color_space": "Non-Color",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "sha256": "4fdc93d30be41f027f407317cc82512a6a96fb1ced276e6d833930027cb603c4"
+    },
+    "Height": {
+      "file": "Height.png",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bit_depth": 16,
+      "color_space": "Non-Color",
+      "range": [
+        0.362829327583313,
+        0.781666100025177
+      ],
+      "sha256": "9f38f8eeeb1592c8d8972f8c1fd704072c04bac31e4b887b7f8183ae08d8f799"
+    },
+    "Height_Macro": {
+      "file": "Height_Macro.png",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bit_depth": 16,
+      "color_space": "Non-Color",
+      "range": [
+        0.5878304243087769,
+        0.7385260462760925
+      ],
+      "sha256": "369dc4edbb1f606498fb45e632b734b25dc532d1f18aef7ba1063c7ab004fc37"
+    },
+    "Normal_OpenGL": {
+      "file": "Normal_OpenGL.png",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bit_depth": 8,
+      "color_space": "Non-Color",
+      "range": [
+        0.050980392156862744,
+        1.0
+      ],
+      "sha256": "1618bd1449506493e82d46484d6e35f8070b3b216341958ce92c1c934ad0b155"
+    },
+    "Normal_DirectX": {
+      "file": "Normal_DirectX.png",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bit_depth": 8,
+      "color_space": "Non-Color",
+      "range": [
+        0.050980392156862744,
+        1.0
+      ],
+      "sha256": "8ccf237735953d7d6df8781860682cbd4c089094d0edc804aea1f58359bde94a"
+    },
+    "Normal_Micro_OpenGL": {
+      "file": "Normal_Micro_OpenGL.png",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bit_depth": 8,
+      "color_space": "Non-Color",
+      "range": [
+        0.054901960784313725,
+        1.0
+      ],
+      "sha256": "3522701c7119cd855797fa04e63a4ff714213465ae66dd631cd00479363b067f"
+    },
+    "Metallic": {
+      "file": "Metallic.png",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bit_depth": 8,
+      "color_space": "Non-Color",
+      "range": [
+        0.0,
+        0.0
+      ],
+      "sha256": "98a02e037b6c601567212b2c1c2c8d50008f2c30446897060b4ad4704fb0e8cc"
+    },
+    "AO": {
+      "file": "AO.png",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bit_depth": 8,
+      "color_space": "Non-Color",
+      "range": [
+        1.0,
+        1.0
+      ],
+      "sha256": "71451bcadaad9626a04abedc640c723ab014964ba937ff9f85b0eb026283952c"
+    },
+    "Opacity": {
+      "file": "Opacity.png",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bit_depth": 8,
+      "color_space": "Non-Color",
+      "range": [
+        1.0,
+        1.0
+      ],
+      "sha256": "71451bcadaad9626a04abedc640c723ab014964ba937ff9f85b0eb026283952c"
+    },
+    "Transmission": {
+      "file": "Transmission.png",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bit_depth": 8,
+      "color_space": "Non-Color",
+      "range": [
+        0.9599999785423279,
+        0.9599999785423279
+      ],
+      "sha256": "8fd3f92169e48504ae16983e4785805e9944c6224f5d435ae61e567de5a34c63"
+    },
+    "Thickness": {
+      "file": "Thickness.png",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bit_depth": 16,
+      "color_space": "Non-Color",
+      "range": [
+        1.0,
+        1.0
+      ],
+      "sha256": "fc79718877fb057571e824370cf765c985347125babe2e5f177a30b0605ce0e8"
+    }
+  },
+  "height_midlevel": 0.5,
+  "height_formula_m": "(Height - 0.5) * 0.00016",
+  "thickness_formula_m": "Thickness * 0.0012",
+  "normal_convention": "OpenGL +Y tangent normal; DirectX green-inverted alternative",
+  "basecolor_encoding": "sRGB bytes from original display-space authored palette; no baked lighting",
+  "packing": "ORM = AO,Roughness,Metallic",
+  "geometry_dependency": "Real wall/rim/seam thickness and bead profile remain in supplied geometry. Do not connect Height/Normal to existing resolved bead geometry; those channels are alternative flat-surface approximations. Constant AO is neutral, not a geometry-occlusion bake. Clear PETG requires true thickness, IOR1.57 and transmission.",
+  "usage": "Either use real bead geometry with BaseColor/Roughness/Metallic, or a flat-surface normal approximation. Do not double-count bead relief.",
+  "peak_rss_kib": 654124
+}
