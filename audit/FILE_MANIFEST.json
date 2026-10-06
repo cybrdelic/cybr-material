@@ -14,8 +14,8 @@
   "files": [
     {
       "path": ".github/workflows/validate-material-audit.yml",
-      "bytes": 1002,
-      "sha256": "d0fa0eb8f5f536116b8d6eb42f0a5f553cf2b0b4e079220fff73ac19739bcf8e"
+      "bytes": 1022,
+      "sha256": "b7c19e657d816b6001526804ebe7e85345edbaf4719370c7e4aed6fbb66fe44e"
     },
     {
       "path": "README.md",
