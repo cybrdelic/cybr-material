@@ -7,7 +7,7 @@
       4096
     ],
     "height_16bit": true,
-    "normal_unit_length_mean": 1.0000057220458984,
+    "normal_unit_length_mean": 1.000015377998352,
     "dx_flip_verified": true
   },
   {
@@ -18,7 +18,7 @@
       4096
     ],
     "height_16bit": true,
-    "normal_unit_length_mean": 1.0000098943710327,
+    "normal_unit_length_mean": 1.0000255107879639,
     "dx_flip_verified": true
   },
   {
@@ -29,7 +29,7 @@
       4096
     ],
     "height_16bit": true,
-    "normal_unit_length_mean": 1.000101923942566,
+    "normal_unit_length_mean": 1.000085711479187,
     "dx_flip_verified": true
   },
   {
@@ -40,7 +40,7 @@
       4096
     ],
     "height_16bit": true,
-    "normal_unit_length_mean": 1.000098466873169,
+    "normal_unit_length_mean": 1.000084638595581,
     "dx_flip_verified": true
   },
   {
@@ -51,7 +51,7 @@
       4096
     ],
     "height_16bit": true,
-    "normal_unit_length_mean": 1.0000232458114624,
+    "normal_unit_length_mean": 1.0000355243682861,
     "dx_flip_verified": true
   },
   {
@@ -62,7 +62,7 @@
       4096
     ],
     "height_16bit": true,
-    "normal_unit_length_mean": 1.0001239776611328,
+    "normal_unit_length_mean": 1.0001327991485596,
     "dx_flip_verified": true
   },
   {
@@ -73,7 +73,7 @@
       4096
     ],
     "height_16bit": true,
-    "normal_unit_length_mean": 1.0000057220458984,
+    "normal_unit_length_mean": 1.000015377998352,
     "dx_flip_verified": true
   },
   {
@@ -84,7 +84,7 @@
       4096
     ],
     "height_16bit": true,
-    "normal_unit_length_mean": 1.0001710653305054,
+    "normal_unit_length_mean": 1.000175952911377,
     "dx_flip_verified": true
   },
   {
@@ -95,7 +95,7 @@
       4096
     ],
     "height_16bit": true,
-    "normal_unit_length_mean": 1.000083327293396,
+    "normal_unit_length_mean": 1.0000770092010498,
     "dx_flip_verified": true
   },
   {
@@ -106,7 +106,7 @@
       4096
     ],
     "height_16bit": true,
-    "normal_unit_length_mean": 1.0000234842300415,
+    "normal_unit_length_mean": 1.0000296831130981,
     "dx_flip_verified": true
   }
 ]

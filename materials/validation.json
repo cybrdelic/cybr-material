@@ -8,7 +8,7 @@
     "metallic_min": 0.0,
     "metallic_max": 0.0,
     "base_color_seam": {
-      "wrap_mean": 0.004797602538019419,
+      "wrap_mean": 0.004797602072358131,
       "neighbor_mean": 0.00030493640224449337,
       "wrap_max": 0.3019607663154602,
       "neighbor_max": 0.10196077823638916
@@ -31,7 +31,7 @@
     "metallic_min": 0.0,
     "metallic_max": 0.0,
     "base_color_seam": {
-      "wrap_mean": 0.0001680261775618419,
+      "wrap_mean": 0.00016802619211375713,
       "neighbor_mean": 0.0001592498883837834,
       "wrap_max": 0.003921568393707275,
       "neighbor_max": 0.003921568393707275
@@ -61,7 +61,7 @@
     },
     "height_seam": {
       "wrap_mean": 0.006165950559079647,
-      "neighbor_mean": 0.0011383532546460629,
+      "neighbor_mean": 0.001138355117291212,
       "wrap_max": 0.09980925917625427,
       "neighbor_max": 0.05830472707748413
     },
@@ -84,7 +84,7 @@
     },
     "height_seam": {
       "wrap_mean": 0.012358476407825947,
-      "neighbor_mean": 0.0021778747905045748,
+      "neighbor_mean": 0.0021778729278594255,
       "wrap_max": 0.12246888875961304,
       "neighbor_max": 0.08976882696151733
     },
