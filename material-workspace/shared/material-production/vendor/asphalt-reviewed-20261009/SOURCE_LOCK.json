@@ -1,0 +1,25 @@
+{
+  "selection": "reviewed_fractured_grain_20261009",
+  "files": [
+    {
+      "path": "source/fractured_construction.py",
+      "sha256": "460dd86c57fe22d629ceb5b27212e034f4f510dcfacccfdfa078506b774a8664"
+    },
+    {
+      "path": "source/fracture_field.py",
+      "sha256": "9bcc74646320f9dd6d4ad0717e20a1860729b0519c880ff5cf2627824fb3d033"
+    },
+    {
+      "path": "base_recipe/material.json",
+      "sha256": "37b4a534574df6c77749ea1adcb113bf16d8b1897db0bf77f495ccadd4ffb31e"
+    },
+    {
+      "path": "base_recipe/source/height_normals.py",
+      "sha256": "e50b1707ed664eb4342dad3eaeff4de965537ee833a14919a264b97f4cbe58ba"
+    },
+    {
+      "path": "base_recipe/vendor/surface_math.py",
+      "sha256": "3c09a5ebc9b860abb9783045bed7674e3917087b0c0d21376fbfd8cda12cafc0"
+    }
+  ]
+}

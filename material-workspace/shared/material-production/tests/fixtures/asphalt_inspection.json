@@ -1,0 +1,172 @@
+{
+  "blender_version": "4.3.2",
+  "unit_scale": 1.0,
+  "images": [
+    {
+      "name": "BaseColor.png",
+      "path": "packed://BaseColor.png",
+      "packed": true,
+      "sha256": "ec2ee1cd8991ee87e89e69cd3ac4406b03ad8e4a0e7b7c3f7319b1aa9f8a7a23",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "Metallic.png",
+      "path": "packed://Metallic.png",
+      "packed": true,
+      "sha256": "98a02e037b6c601567212b2c1c2c8d50008f2c30446897060b4ad4704fb0e8cc",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "Normal_Object_RGB16.png.001",
+      "path": "packed://Normal_Object_RGB16.png.001",
+      "packed": true,
+      "sha256": "ad71c5fc7a812106da0ca500629b23b32ed91eaf6617667186d65770a44b4189",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "Roughness.png",
+      "path": "packed://Roughness.png",
+      "packed": true,
+      "sha256": "3d621c23d83ab864f5f71e20f4f4945413185d1dac9d61b54b89de46a11d0e17",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "colorspace": "Non-Color"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Asphalt / Rolled mineral aggregate",
+      "bindings": [
+        {
+          "image": "BaseColor.png",
+          "outputs": [
+            {
+              "node": "Principled BSDF",
+              "socket": "Base Color"
+            }
+          ]
+        },
+        {
+          "image": "Roughness.png",
+          "outputs": [
+            {
+              "node": "Principled BSDF",
+              "socket": "Roughness"
+            }
+          ]
+        },
+        {
+          "image": "Metallic.png",
+          "outputs": [
+            {
+              "node": "Principled BSDF",
+              "socket": "Metallic"
+            }
+          ]
+        },
+        {
+          "image": "Normal_Object_RGB16.png.001",
+          "outputs": [
+            {
+              "node": "Normal Map",
+              "socket": "Color"
+            }
+          ]
+        }
+      ],
+      "normal_nodes": [
+        {
+          "name": "Normal Map",
+          "space": "OBJECT",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Specimen / clean cut core",
+      "bindings": [],
+      "normal_nodes": []
+    },
+    {
+      "name": "Studio / warm neutral",
+      "bindings": [],
+      "normal_nodes": []
+    }
+  ],
+  "objects": [
+    {
+      "name": "Asphalt / real displaced face",
+      "type": "MESH",
+      "dimensions_m": [
+        0.25,
+        0.25,
+        0.009891354478895664
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "vertices": 265217,
+      "polygons": 264193,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "materials": [
+        "Asphalt / Rolled mineral aggregate",
+        "Specimen / clean cut core"
+      ],
+      "material_face_counts": {
+        "0": 262144,
+        "1": 2049
+      },
+      "modifiers": []
+    },
+    {
+      "name": "Study / seamless ground / expansion",
+      "type": "MESH",
+      "dimensions_m": [
+        9.0,
+        9.0,
+        0.004000000189989805
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "vertices": 8,
+      "polygons": 6,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "materials": [
+        "Studio / warm neutral"
+      ],
+      "material_face_counts": {
+        "0": 6
+      },
+      "modifiers": []
+    }
+  ],
+  "camera": "Capture / detail",
+  "source_unchanged": true,
+  "geometry_and_shader_bindings_inspected": true,
+  "resource_relocations": [],
+  "rendered": false,
+  "render_contract_sha256": "5a8bff2ba51bbb6a3af3d4a2d49b04a33eeb0dc31a62f43df1d58dbde1aeba2d"
+}

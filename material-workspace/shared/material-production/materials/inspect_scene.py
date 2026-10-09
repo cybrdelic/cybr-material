@@ -39,5 +39,11 @@ for o in s.objects:
  objects.append({'name':o.name,'type':o.type,'dimensions_m':list(o.dimensions),'scale':list(o.scale),'vertices':len(o.data.vertices) if o.type=='MESH' else None,'polygons':len(o.data.polygons) if o.type=='MESH' else None,'uv_layers':[u.name for u in o.data.uv_layers] if o.type=='MESH' else [],'materials':[m.name if m else None for m in o.data.materials], 'material_face_counts':mesh_face_counts[o.data.as_pointer()] if o.type=='MESH' else {}, 'modifiers':[{'type':v.type,**({'material':v.material} if v.type=='BEVEL' else {})} for v in o.modifiers]})
 if sha(source)!=expected:raise RuntimeError('Source mutated during inspection')
 if configuration_state()!=relocation_state:raise RuntimeError('Resource relocation configuration/helper changed during inspection')
-write_new(dest,{'blender_version':bpy.app.version_string,'unit_scale':s.unit_settings.scale_length,'images':images,'materials':materials,'objects':objects,'camera':s.camera.name if s.camera else None,'source_unchanged':True,'geometry_and_shader_bindings_inspected':True,'resource_relocations':relocations,'path_configuration':relocation_state,'rendered':False})
+extra={}
+if 'Asphalt / Rolled mineral aggregate' in bpy.data.materials:
+ from materials.core import ROOT
+ from materials.generation import load
+ helper=ROOT/'vendor/asphalt-reviewed-20261009/source/scene_contract.py'
+ extra['render_contract_sha256']=load(helper,'asphalt_scene_contract').scene_signature()['sha256']
+write_new(dest,{**extra,'blender_version':bpy.app.version_string,'unit_scale':s.unit_settings.scale_length,'images':images,'materials':materials,'objects':objects,'camera':s.camera.name if s.camera else None,'source_unchanged':True,'geometry_and_shader_bindings_inspected':True,'resource_relocations':relocations,'path_configuration':relocation_state,'rendered':False})
 print('SCENE_INSPECTED',dest)

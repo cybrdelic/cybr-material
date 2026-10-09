@@ -17,7 +17,8 @@ suite = unittest.TestSuite([Contracts(n) for n in names])
 suite.addTests(unittest.defaultTestLoader.loadTestsFromTestCase(Paths))
 from test_native_png_and_experiments import PNGContracts, ExperimentContracts
 from test_showcase_guard import ShowcaseGuard
-for case in (PNGContracts, ExperimentContracts, ShowcaseGuard):
+from test_asphalt_selection import AsphaltSelection
+for case in (PNGContracts, ExperimentContracts, ShowcaseGuard, AsphaltSelection):
     suite.addTests(unittest.defaultTestLoader.loadTestsFromTestCase(case))
 from materials.core import registry
 assert len(registry()['materials']) == 35
@@ -32,3 +33,6 @@ for relative in ('audit-20261006/cache_guard/test_cache_validation.py',
                  'audit-20261006/resource_peak/test_resource_contract.py'):
     subprocess.run([sys.executable, str(C / relative)], check=True)
 print('All portable source and renderer contracts passed.')
+
+
+subprocess.run([sys.executable, str(P / "vendor/asphalt-reviewed-20261009/source/test_height_normals.py")], check=True)

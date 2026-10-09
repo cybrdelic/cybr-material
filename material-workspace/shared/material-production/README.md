@@ -57,3 +57,8 @@ overwrite a selected scene or promote a candidate. See [capture modes](CAPTURE_M
   studies do not replace a stronger reviewed complete panel.
 - Full formation physics, measured calibration and clean-clone reconstruction of
   all 35 materials remain incomplete. Historical iterations are preserved separately.
+
+
+## Selected asphalt update · 2026-10-09
+
+Material28 now selects the explicitly reviewed fracture candidate. [Exact source, native generation and restoration](vendor/asphalt-reviewed-20261009/README.md) retain the previous selection separately. This asphalt-only update does not select the subsequent binder refinement or change other material identities.
