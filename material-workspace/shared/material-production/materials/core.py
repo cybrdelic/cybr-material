@@ -52,8 +52,14 @@ def png_header(path):
 def validate_selection(m,deep=True):
  s=m.get('selected')
  if not s:raise ContractError(m['id']+': no selected panel; requires qualification')
- scene=resolve(s['scene']);check_hash(scene,s['scene_sha256'])
- result={'id':m['id'],'scene':str(scene),'scene_sha256':s['scene_sha256'],'map_dependencies':[],'quality':m['quality']}
+ scene=resolve(s['scene'])
+ if m['id']=='28_asphalt' and s.get('scene_is_generated'):
+  if not scene.is_file():raise ContractError('Generate reviewed asphalt scene first: '+str(scene))
+  proof=read(scene.parent/'scene_contract_receipt.json')
+  if proof.get('render_contract_sha256')!=s.get('scene_contract_sha256'):raise ContractError('Generate reviewed asphalt with the current source contract')
+  scene_hash=check_hash(scene,proof['scene_sha256'])
+ else:scene_hash=check_hash(scene,s['scene_sha256'])
+ result={'id':m['id'],'scene':str(scene),'scene_sha256':scene_hash,'map_dependencies':[],'quality':m['quality']}
  c=m.get('map_contract')
  if c:
   meta_path=resolve(c['source']);check_hash(meta_path,c['source_sha256']);meta=read(meta_path)
@@ -71,6 +77,18 @@ def validate_selection(m,deep=True):
 
 def validate_inspection(m, inspection):
  if inspection['unit_scale'] != 1:raise ContractError('Non-SI scene units')
+ if m['id']=='28_asphalt':
+  if inspection.get('render_contract_sha256')!=m['selected'].get('scene_contract_sha256'):raise ContractError('Generated asphalt differs from reviewed render contract')
+  images=inspection['images']
+  if len(images)!=4 or any(x['resolution']!=[4096,4096] or not x['packed'] for x in images):raise ContractError('Reviewed asphalt requires four packed native4096 images')
+  specimen=[o for o in inspection['objects'] if o['name']=='Asphalt / real displaced face']
+  if len(specimen)!=1:raise ContractError('Reviewed asphalt specimen missing')
+  ob=specimen[0]
+  if any(abs(v-.25)>1e-6 for v in ob['dimensions_m'][:2]) or ob['scale']!=[1.,1.,1.] or 'UVMap' not in ob['uv_layers']:raise ContractError('Reviewed asphalt scale or chart changed')
+  mats=[x for x in inspection['materials'] if x['name']=='Asphalt / Rolled mineral aggregate']
+  normals=[n for mat in mats for n in mat['normal_nodes']]
+  if len(normals)!=1 or normals[0]['space']!='OBJECT' or normals[0]['strength']!=1:raise ContractError('Reviewed asphalt requires full object normal')
+  return
  if m['id'] not in ['05_champagne_brass','32_concrete_polished']:return
  images=inspection['images']
  if not images or any(x['resolution']!=[4096,4096] for x in images):raise ContractError('Vertical slice requires native4096 textures')
@@ -90,8 +108,13 @@ def validate_inspection(m, inspection):
 
 def verify_build(build):
  m=material(build['id']);s=m.get('selected')
- if not s or build['source']['scene_sha256']!=s['scene_sha256']:raise ContractError('Build is no longer selected')
- check_hash(resolve(s['scene']),s['scene_sha256'])
+ if not s:raise ContractError('Build is no longer selected')
+ if m['id']=='28_asphalt' and s.get('scene_is_generated'):
+  if build['inspection'].get('render_contract_sha256')!=s.get('scene_contract_sha256'):raise ContractError('Reviewed asphalt contract changed')
+  check_hash(resolve(s['scene']),build['source']['scene_sha256'])
+ else:
+  if build['source']['scene_sha256']!=s['scene_sha256']:raise ContractError('Build is no longer selected')
+  check_hash(resolve(s['scene']),s['scene_sha256'])
  for dep in build['inspection']['images']:
   if not dep['packed']:check_hash(dep['path'],dep['sha256'])
  return m

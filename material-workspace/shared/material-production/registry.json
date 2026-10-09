@@ -2016,43 +2016,82 @@
       "name": "Asphalt / Rolled mineral aggregate",
       "owner": "aggregate",
       "units": "meters",
-      "quality": "retained appearance; not physically qualified",
+      "quality": "User-selected reviewed fracture appearance; bright beadlike fines and polygonal plates remain; not physically calibrated",
       "protected_appearance": false,
-      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
-      "procedural_rebuild": "not qualified",
-      "dependencies_status": "Actual selected scene inspection required; older native map set is not assumed to be the active binding.",
+      "geometry_contract": "Selected .25m static displaced slab, retained UV/topology, 512-cell macro geometry and full metric OBJECT normal; rotations, nonuniform scales and linked instances verified; deformation requires regeneration",
+      "procedural_rebuild": "Native4096 maps and geometry regenerate byte-exactly from the pinned source; exact reviewed packed scene retained separately",
+      "dependencies_status": "Generate native maps and scene from the pinned public source; full render-relevant contract checked independently of blend-file bytes",
       "selected": {
-        "scene": "shared/material-aggregate-rebuild/math-audit/scenes/asphalt_v2_normal_math_fixed.blend",
-        "scene_sha256": "5ea7091804d7b5e9acf71b7367580237cb0560a3d51e79598f7aa01ad48a0d0d",
-        "version": "asphalt_v2_normal_math_fixed",
+        "scene": "shared/material-production/vendor/asphalt-reviewed-20261009/CYBR_Asphalt_Fracture_Native4096_Candidate.blend",
+        "scene_sha256": "2396d4c9cb4291548106b04891d2c8a9b6f5379128a57e3654ed36e79ed8984e",
+        "version": "reviewed_fractured_grain_20261009",
+        "scene_contract_sha256": "5a8bff2ba51bbb6a3af3d4a2d49b04a33eeb0dc31a62f43df1d58dbde1aeba2d",
+        "scene_is_generated": true,
         "capture": {
-          "camera": "Slab / shared camera",
           "engine": "CYCLES",
           "width": 960,
           "height": 960,
           "samples": 128,
-          "color_depth": 16,
-          "dither_intensity": 0,
+          "capture_mode": "guided",
           "save_guides": true,
           "light_tree": false,
-          "studio_lights_downward": true,
-          "rss_cap_mib": 2560
+          "color_depth": 16,
+          "dither_intensity": 0,
+          "use_adaptive_sampling": false,
+          "rss_cap_mib": 3072,
+          "time_limit_seconds": 600,
+          "sync_limit_seconds": 90,
+          "camera": "Capture / detail"
         },
         "appearance_anchor": {
-          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_28_asphalt_normal_math_fixed_panel.png",
-          "sha256": "3ed887d972945e73cd37683119704b6a6e5447f5056bdc9c86f4d6d87a45ed6a",
-          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_28_asphalt_normal_math_fixed_panel.png.json"
+          "image": "shared/material-production/vendor/asphalt-reviewed-20261009/review/CLEAN_OIDN_PANEL.png",
+          "sha256": "83c39811f95e66adc989b4baf1f5a105873164977a4499935c842c9d905d90bd",
+          "scope": "Reviewed native detail view; not a new complete-panel comparison"
         },
-        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+        "source_selection": "Explicit user instruction to merge reviewed asphalt on 2026-10-09; no full realism or measured-material claim"
       },
       "pbr_contract": {
         "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
         "units": "meters",
         "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
-        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "required_geometry": "Selected .25m static displaced slab, retained UV/topology, 512-cell macro geometry and full metric OBJECT normal; rotations, nonuniform scales and linked instances verified; deformation requires regeneration",
         "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
         "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
-        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+        "qualification": "Asphalt exact native4096 reproduction and direct shader normal AOV tested; no measured BRDF or full formation qualification",
+        "normal_convention": "Full metric object-space normal, Non-Color RGB16, Strength1; not a tangent residual"
+      },
+      "prior_selections": [
+        {
+          "scene": "shared/material-aggregate-rebuild/math-audit/scenes/asphalt_v2_normal_math_fixed.blend",
+          "scene_sha256": "5ea7091804d7b5e9acf71b7367580237cb0560a3d51e79598f7aa01ad48a0d0d",
+          "version": "asphalt_v2_normal_math_fixed",
+          "capture": {
+            "camera": "Slab / shared camera",
+            "engine": "CYCLES",
+            "width": 960,
+            "height": 960,
+            "samples": 128,
+            "color_depth": 16,
+            "dither_intensity": 0,
+            "save_guides": true,
+            "light_tree": false,
+            "studio_lights_downward": true,
+            "rss_cap_mib": 2560
+          },
+          "appearance_anchor": {
+            "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_28_asphalt_normal_math_fixed_panel.png",
+            "sha256": "3ed887d972945e73cd37683119704b6a6e5447f5056bdc9c86f4d6d87a45ed6a",
+            "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_28_asphalt_normal_math_fixed_panel.png.json"
+          },
+          "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+        }
+      ],
+      "reviewed_correction": {
+        "reviewed_on": "2026-10-09",
+        "scope": "Reviewed fracture source and matching appearance selected by explicit merge instruction",
+        "formation_simulation_qualified": false,
+        "full_material_realism_accepted": false,
+        "subsequent_binder_refinement_selected": false
       }
     },
     {

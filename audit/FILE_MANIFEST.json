@@ -64,8 +64,8 @@
     },
     {
       "path": "audit/run_portable_tests.py",
-      "bytes": 1809,
-      "sha256": "1c31b753fd56e11ced42867f6fa09dec95902261fe31d4cafe85f32f8fc66362"
+      "bytes": 2001,
+      "sha256": "ff34033eda683e556341caa9a81b6d03f7499e7e61b3f7411edbafadb56fd45f"
     },
     {
       "path": "audit/verify_checkpoint.py",
@@ -189,8 +189,8 @@
     },
     {
       "path": "material-workspace/shared/material-production/README.md",
-      "bytes": 3066,
-      "sha256": "99dae44c14b9b156b5de02643144364907ec01410c895d97464cdc97410f5c7f"
+      "bytes": 3424,
+      "sha256": "f94f09da21fbcfcf0df0e7f57a171d98d206ca01948311f1ba1bb55453030e6f"
     },
     {
       "path": "material-workspace/shared/material-production/experiments/carpet_r5_control_macro_r3/experiment.json",
@@ -244,8 +244,8 @@
     },
     {
       "path": "material-workspace/shared/material-production/materials/core.py",
-      "bytes": 5173,
-      "sha256": "0e45e11011ec39f5c5177d27dc99f17b7b1857bc503724ef2cc5f95eaa0e515d"
+      "bytes": 7017,
+      "sha256": "3e43e70850a652cbd262376e120c4523868e74631e26f39b60ea0f3df7aa1ff4"
     },
     {
       "path": "material-workspace/shared/material-production/materials/experiments.py",
@@ -254,13 +254,13 @@
     },
     {
       "path": "material-workspace/shared/material-production/materials/generation.py",
-      "bytes": 3867,
-      "sha256": "df640f200eb48525e69bd52db0aa9fff31450ce52a136520336756c79a0b1990"
+      "bytes": 4953,
+      "sha256": "02037c07e1dba8a3a9ff1f4b684e7041b3c0bc8496cff815fd8d8bcc5d6630f9"
     },
     {
       "path": "material-workspace/shared/material-production/materials/inspect_scene.py",
-      "bytes": 3523,
-      "sha256": "28d8044283c258b483712a9202c38531f766f7bd62628b0fbdac7b3823d56831"
+      "bytes": 3847,
+      "sha256": "24bec4bfe5a00981a48a9ee670045230d3234c3a7bccbcf9900339364411676c"
     },
     {
       "path": "material-workspace/shared/material-production/materials/native_parity.py",
@@ -299,8 +299,8 @@
     },
     {
       "path": "material-workspace/shared/material-production/registry.json",
-      "bytes": 140035,
-      "sha256": "2edde7d241dfada9c2cd0dbca0efc75a7173a1ee954cdc05e4d4d5ce9c6b89d0"
+      "bytes": 142413,
+      "sha256": "7b76829d9c6ce3b011262cfed52f4a71caa7080e6963dc8adda0b555f2661443"
     },
     {
       "path": "material-workspace/shared/material-production/requirements.txt",
@@ -1451,6 +1451,101 @@
       "path": "research/technical/technical_v3/experiments/wire_loop_uv_fix/tests/test_loop_chart.py",
       "bytes": 1249,
       "sha256": "193ab5d87c531dc48674ca0bf23fadf0640443876658845a37f7932e81eedd70"
+    },
+    {
+      "path": "material-workspace/shared/material-production/tests/test_asphalt_selection.py",
+      "bytes": 2431,
+      "sha256": "a26ec7e27eb50cefcf1a138b276159019ff9fb9d2e01119c9a9a76d0fc3359be"
+    },
+    {
+      "path": "material-workspace/shared/material-production/tests/fixtures/asphalt_inspection.json",
+      "bytes": 3752,
+      "sha256": "35c1a0d96946cd6ca26b2efba8dc6bacfd39d1b9dd5bc00eeae2410325c7e134"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/fractured_construction.py",
+      "bytes": 11096,
+      "sha256": "460dd86c57fe22d629ceb5b27212e034f4f510dcfacccfdfa078506b774a8664"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/fracture_field.py",
+      "bytes": 2847,
+      "sha256": "9bcc74646320f9dd6d4ad0717e20a1860729b0519c880ff5cf2627824fb3d033"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/reference_construction.py",
+      "bytes": 9949,
+      "sha256": "c4de92f64814189f5b2617ca0220cdf631f16b09a8cbdaab411c14b8d43badcb"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/generate_candidate.py",
+      "bytes": 2117,
+      "sha256": "44006683d998ed42ea3d93105cb81932bf93b73f398e24f1c93042deb685b206"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/verify_preservation.py",
+      "bytes": 1247,
+      "sha256": "ea1b0807da24207927899138512726d52af399b71e36bf488b8021692a438151"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/test_height_normals.py",
+      "bytes": 1619,
+      "sha256": "b854e451816c5895b87ca8f485f42d76887b05aa133600ce29938179ec373c61"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/base_recipe/source/height_normals.py",
+      "bytes": 1434,
+      "sha256": "e50b1707ed664eb4342dad3eaeff4de965537ee833a14919a264b97f4cbe58ba"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/base_recipe/vendor/surface_math.py",
+      "bytes": 3949,
+      "sha256": "3c09a5ebc9b860abb9783045bed7674e3917087b0c0d21376fbfd8cda12cafc0"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/base_recipe/material.json",
+      "bytes": 157,
+      "sha256": "37b4a534574df6c77749ea1adcb113bf16d8b1897db0bf77f495ccadd4ffb31e"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/expected_native.json",
+      "bytes": 615,
+      "sha256": "6dd080927838be4489d6500b146e1156156c47e3a86c9ea5cf16876d1f13f900"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/verify_native.py",
+      "bytes": 542,
+      "sha256": "7229b6bbe5b94bcd6442d779a5ec4ca14b3557a3809fcb7fa9146ada1b8ef305"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/README.md",
+      "bytes": 2970,
+      "sha256": "90657781ed079d790902886ea4c8ea07047938f2d7d4b69acaba5583f41525b0"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/SOURCE_LOCK.json",
+      "bytes": 793,
+      "sha256": "ceb715aaede24e51cc8eb4f38942f7e255b735660f3a41e5434729e01a808532"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/build_scene.py",
+      "bytes": 4553,
+      "sha256": "cef71c3f8a024a8c2bc0b7172e575b244e9bc3c013b159d709eba7bbd3f74080"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/scene_contract.py",
+      "bytes": 2703,
+      "sha256": "3d1e6f60a76fded30c1e3ac14ef264a1e72622a4b9da550946098be800faa632"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/scene_recipe.json",
+      "bytes": 15644,
+      "sha256": "9d9322a4f5f28720fcd97beb075ab75f09c9a08fc41edcca37fd700ffaf78a25"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/expected_scene.json",
+      "bytes": 514,
+      "sha256": "5d728293ab613ba05f501608f7f0a44e3994b4db652d221187e6287977e09678"
     }
   ]
 }
