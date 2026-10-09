@@ -1,0 +1,231 @@
+{
+  "experiment": "porcelain_reference_history",
+  "native_resolution": 4096,
+  "classification": "Representative imposed commercial-glaze process; not calibrated porcelain chemistry or firing",
+  "rheology": {
+    "material": "Q92 commercial alkaline glaze, CRECER POLES S.A.",
+    "source": "https://doi.org/10.1016/j.mspro.2015.05.031",
+    "source_type": "HSM/VFT fit, not independent rheometry",
+    "equation_SI": "eta_Pa_s=10**(-1.299+2512/(T_C+273.15-789.2))",
+    "A_in_Poise": -0.299,
+    "B_K": 2512.0,
+    "T0_K": 789.2,
+    "temperature_C": [
+      1020.0,
+      1040.0
+    ],
+    "eta_range_Pa_s": [
+      3128.6040702343666,
+      4848.657307630369
+    ]
+  },
+  "history": {
+    "start_C": 1020.0,
+    "end_C": 1040.0,
+    "ramp_K_per_s": 0.08333333333333333,
+    "duration_s": 240.0,
+    "isothermal_dwell_s": 0,
+    "scope": "Only the documented 5 C/min ramp through the manufacturer-stated 1020-1040 C window; earlier heating and cooling excluded",
+    "J_per_Pa": 0.0622906010078276,
+    "adaptive_absolute_error_estimate_per_Pa": 6.915645945662919e-16,
+    "time_quadrature_refinement": [
+      {
+        "time_intervals": 16,
+        "J_per_Pa": 0.0622906010465949,
+        "relative_error_vs_adaptive": 6.223619397616176e-10
+      },
+      {
+        "time_intervals": 32,
+        "J_per_Pa": 0.06229060101025074,
+        "relative_error_vs_adaptive": 3.8900438426026085e-11
+      },
+      {
+        "time_intervals": 64,
+        "J_per_Pa": 0.06229060100797925,
+        "relative_error_vs_adaptive": 2.4344970483980433e-12
+      },
+      {
+        "time_intervals": 128,
+        "J_per_Pa": 0.062290601007837273,
+        "relative_error_vs_adaptive": 1.5520917884259688e-13
+      },
+      {
+        "time_intervals": 256,
+        "J_per_Pa": 0.062290601007828406,
+        "relative_error_vs_adaptive": 1.2878587085651816e-14
+      }
+    ]
+  },
+  "surface_tension": {
+    "central_N_per_m": 0.3,
+    "sensitivity_N_per_m": [
+      0.15,
+      0.3,
+      0.6
+    ],
+    "status": "Glass-literature PROXY, not measured Q92",
+    "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4373153/",
+    "envelope_status": "Declared half/double parameter sensitivity, not calibrated uncertainty interval"
+  },
+  "exposure_m": {
+    "0.15": 0.00934359015117414,
+    "0.3": 0.01868718030234828,
+    "0.6": 0.03737436060469656
+  },
+  "retained_mean_film_m": 6.362943104938368e-05,
+  "scalar_survival": [
+    {
+      "wavelength_m": 0.0192,
+      "gamma_N_per_m": 0.15,
+      "kh": 0.020822682618421053,
+      "decay_exponent": 9.194802265716264e-06,
+      "amplitude_survival": 0.9999908052400064
+    },
+    {
+      "wavelength_m": 0.0192,
+      "gamma_N_per_m": 0.3,
+      "kh": 0.020822682618421053,
+      "decay_exponent": 1.838960453143253e-05,
+      "amplitude_survival": 0.9999816105645563
+    },
+    {
+      "wavelength_m": 0.0192,
+      "gamma_N_per_m": 0.6,
+      "kh": 0.020822682618421053,
+      "decay_exponent": 3.677920906286506e-05,
+      "amplitude_survival": 0.999963221467284
+    },
+    {
+      "wavelength_m": 0.00023999999999999998,
+      "gamma_N_per_m": 0.15,
+      "kh": 1.6658146094736839,
+      "decay_exponent": 63.310753841870145,
+      "amplitude_survival": 3.1951331516314367e-28
+    },
+    {
+      "wavelength_m": 0.00023999999999999998,
+      "gamma_N_per_m": 0.3,
+      "kh": 1.6658146094736839,
+      "decay_exponent": 126.62150768374029,
+      "amplitude_survival": 1.0208875856654236e-55
+    },
+    {
+      "wavelength_m": 0.00023999999999999998,
+      "gamma_N_per_m": 0.6,
+      "kh": 1.6658146094736839,
+      "decay_exponent": 253.24301536748058,
+      "amplitude_survival": 1.0422114625657778e-110
+    },
+    {
+      "wavelength_m": 0.00011999999999999999,
+      "gamma_N_per_m": 0.15,
+      "kh": 3.3316292189473677,
+      "decay_exponent": 227.0011348370765,
+      "amplitude_survival": 2.598123280845293e-99
+    },
+    {
+      "wavelength_m": 0.00011999999999999999,
+      "gamma_N_per_m": 0.3,
+      "kh": 3.3316292189473677,
+      "decay_exponent": 454.002269674153,
+      "amplitude_survival": 6.75024458247031e-198
+    },
+    {
+      "wavelength_m": 0.00011999999999999999,
+      "gamma_N_per_m": 0.6,
+      "kh": 3.3316292189473677,
+      "decay_exponent": 908.004539348306,
+      "amplitude_survival": 0.0
+    }
+  ],
+  "checks": {
+    "independent_BVP_max_relative_error": 2.3869795029440866e-14,
+    "small_kh_limit_relative_error": 1.7999999935014444e-08,
+    "large_kh_limit": true,
+    "zero_mode_transfer_exactly_one": true,
+    "time_quadrature_refinement_pass": true
+  },
+  "optical_accounting_change": {
+    "status": "HELD separate variant; first history binding retains exact old roughness image",
+    "intrinsic_source_roughness": 0.17984575,
+    "new_formula": "roughness=source_roughness, with no extra resolved-slope variance",
+    "old_formula": "clip(R0+.008*(slope/(mean(slope)+1e-12)-1), R0-.008, R0+.016)",
+    "practical_defect": "Normalized-slope contrast is amplitude-invariant while mean(slope)>>1e-12; decreasing resolved height does not suppress it in that regime.",
+    "strict_limit": "Because of +1e-12, variation tends to zero as amplitude tends exactly to zero, but at R0-.008 rather than R0.",
+    "audit": [
+      {
+        "height_amplitude_multiplier": 1.0,
+        "roughness_min": 0.17184575,
+        "roughness_max": 0.193663931818162,
+        "roughness_std": 0.007855443270790272,
+        "roughness_mean": 0.17984574999999273
+      },
+      {
+        "height_amplitude_multiplier": 0.001,
+        "roughness_min": 0.17184575,
+        "roughness_max": 0.1936639317983471,
+        "roughness_std": 0.007855443263656092,
+        "roughness_mean": 0.1798457499927273
+      },
+      {
+        "height_amplitude_multiplier": 1e-06,
+        "roughness_min": 0.17184575,
+        "roughness_max": 0.19366391198348912,
+        "roughness_std": 0.00785543612949184,
+        "roughness_mean": 0.17984574272727935
+      },
+      {
+        "height_amplitude_multiplier": 1e-09,
+        "roughness_min": 0.17184575,
+        "roughness_max": 0.1936441151226158,
+        "roughness_std": 0.007848308444938374,
+        "roughness_mean": 0.1798384838782925
+      },
+      {
+        "height_amplitude_multiplier": 1e-12,
+        "roughness_min": 0.17184575,
+        "roughness_max": 0.18327432142857142,
+        "roughness_std": 0.004114755998989117,
+        "roughness_mean": 0.1760362261904762
+      },
+      {
+        "height_amplitude_multiplier": 1e-15,
+        "roughness_min": 0.17184575,
+        "roughness_max": 0.1718697236290081,
+        "roughness_std": 8.63149295562678e-06,
+        "roughness_mean": 0.1718545403306363
+      },
+      {
+        "height_amplitude_multiplier": 0.0,
+        "roughness_min": 0.17184575,
+        "roughness_max": 0.17184575,
+        "roughness_std": 0.0,
+        "roughness_mean": 0.17184575
+      }
+    ],
+    "separate_from_process_change": true,
+    "interpretation": "R0 retained as unresolved intrinsic finish; resolved normal variance is represented once by the native normal field. No estimated subpixel variance is added."
+  },
+  "assumptions": [
+    "Constant mean film depth and volume; no evaporation, reaction, density or thickness change.",
+    "Homogeneous Newtonian connected liquid throughout this imposed interval; the paper does not establish this in the retained porcelain.",
+    "Linear small-slope finite-depth Stokes mobility for a flat no-slip support, applied to the retained topography over a corrugated substrate.",
+    "Negligible inertia, gravity and viscoelasticity; constant proxy gamma.",
+    "No curved-film edge flow, glaze-body chemistry, calibrated spectral optics, or inference that Q92 is a porcelain glaze.",
+    "Template geometry and retained optical constants are inherited approximations.",
+    "No look-selected coefficients or thermal hold; sensitivity outcomes never select the central gamma."
+  ],
+  "input_sha256": {
+    "experiments/porcelain_deposition_arrivals/source/generate_control.py": "9e644024ac5641c8d3c2a69d5cefe8bb2cb891d56eb449448e3163efa804c019",
+    "experiments/porcelain_deposition_arrivals/state/arrival_packets.npz": "90f356bf18b0d8edc26a2ba8204f7b0eeaba49c7bdc7b71ddbfc61e4dc02f2b8",
+    "experiments/porcelain_deposition_arrivals/receipts/generation.json": "e3836a103965acc1f3c0fed98c829f3ce973252ac2d5dab80d23ab80820436fe",
+    "experiments/porcelain_deposition_arrivals/maps/Substrate_Height.png": "532793fef563434be173e3b39994e4829f93df7c0ca5d2b5dac1de96e2ab52c3",
+    "experiments/porcelain_finite_depth_audit/audit.py": "c56ea35483793dbdde265b1f230b2a8057158e3ec72f2fa11a5d233b8727a0e4",
+    "experiments/porcelain_finite_depth_audit/results.json": "876254ecbe26aedc2cd9fc05e53f481ab85fcb6c1aa103029315b427944ebf06",
+    "experiments/porcelain_finite_depth_audit/commercial_glaze_2015_addendum.md": "9f9961c077e0ff3bde86229a3af31816d7f6868995754eb8a6fc784cdaf02a6a",
+    "experiments/porcelain_glaze_layer_assignment/frozen_handoff.json": "a772653b0449098f79bef2898382fe3db8d32bcb067f48361a271498b25f1fed"
+  },
+  "selected": false,
+  "visual_acceptance": false,
+  "rendered": false
+}

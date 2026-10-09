@@ -1,0 +1,152 @@
+{
+  "graph": "Same retained symbolic expression builder for CPU and Blender nodes",
+  "rows": [
+    {
+      "chart": 0,
+      "samples": 4000,
+      "rows": [
+        {
+          "dtype": "f8",
+          "finite": true,
+          "position_max_m": 7.359808400080195e-18,
+          "normal_max_deg": 1.3979259017456435e-13,
+          "normal_rms_deg": 3.625241271453226e-15,
+          "normal_max_same_native_cell_deg": 1.3979259017456435e-13,
+          "native_cell_mismatch": 0
+        },
+        {
+          "dtype": "f4",
+          "finite": true,
+          "position_max_m": 6.857001424153256e-09,
+          "normal_max_deg": 2.888894760790658,
+          "normal_rms_deg": 0.0456776608613032,
+          "normal_max_same_native_cell_deg": 0.0021268287541434078,
+          "native_cell_mismatch": 1
+        }
+      ]
+    },
+    {
+      "chart": 1,
+      "samples": 4000,
+      "rows": [
+        {
+          "dtype": "f8",
+          "finite": true,
+          "position_max_m": 6.938893903907228e-18,
+          "normal_max_deg": 2.545317160698581e-14,
+          "normal_rms_deg": 2.3326662078750264e-15,
+          "normal_max_same_native_cell_deg": 2.545317160698581e-14,
+          "native_cell_mismatch": 0
+        },
+        {
+          "dtype": "f4",
+          "finite": true,
+          "position_max_m": 5.531297941351123e-09,
+          "normal_max_deg": 5.0016317379718234e-05,
+          "normal_rms_deg": 6.739244730510202e-06,
+          "normal_max_same_native_cell_deg": 5.0016317379718234e-05,
+          "native_cell_mismatch": 1
+        }
+      ]
+    },
+    {
+      "chart": 2,
+      "samples": 4000,
+      "rows": [
+        {
+          "dtype": "f8",
+          "finite": true,
+          "position_max_m": 6.992893892674703e-18,
+          "normal_max_deg": 2.7360165899564323e-14,
+          "normal_rms_deg": 5.4407617818436785e-15,
+          "normal_max_same_native_cell_deg": 2.7360165899564323e-14,
+          "native_cell_mismatch": 0
+        },
+        {
+          "dtype": "f4",
+          "finite": true,
+          "position_max_m": 6.237716555558629e-09,
+          "normal_max_deg": 0.042373048989093845,
+          "normal_rms_deg": 0.0006702433737192327,
+          "normal_max_same_native_cell_deg": 0.00038707766183141036,
+          "native_cell_mismatch": 3
+        }
+      ]
+    },
+    {
+      "chart": 3,
+      "samples": 4000,
+      "rows": [
+        {
+          "dtype": "f8",
+          "finite": true,
+          "position_max_m": 7.770031522344854e-18,
+          "normal_max_deg": 5.530261263068255e-14,
+          "normal_rms_deg": 5.693443145478043e-15,
+          "normal_max_same_native_cell_deg": 5.530261263068255e-14,
+          "native_cell_mismatch": 0
+        },
+        {
+          "dtype": "f4",
+          "finite": true,
+          "position_max_m": 6.119769850699937e-09,
+          "normal_max_deg": 0.00035884066330312236,
+          "normal_rms_deg": 2.03337718033589e-05,
+          "normal_max_same_native_cell_deg": 0.00035884066330312236,
+          "native_cell_mismatch": 2
+        }
+      ]
+    },
+    {
+      "chart": 4,
+      "samples": 4000,
+      "rows": [
+        {
+          "dtype": "f8",
+          "finite": true,
+          "position_max_m": 7.757919228897728e-18,
+          "normal_max_deg": 3.7083065289818404e-14,
+          "normal_rms_deg": 5.575195379428358e-15,
+          "normal_max_same_native_cell_deg": 3.7083065289818404e-14,
+          "native_cell_mismatch": 0
+        },
+        {
+          "dtype": "f4",
+          "finite": true,
+          "position_max_m": 6.2619050581278995e-09,
+          "normal_max_deg": 0.00040031672112320695,
+          "normal_rms_deg": 2.0874667579016478e-05,
+          "normal_max_same_native_cell_deg": 0.00040031672112320695,
+          "native_cell_mismatch": 2
+        }
+      ]
+    },
+    {
+      "chart": 5,
+      "samples": 4000,
+      "rows": [
+        {
+          "dtype": "f8",
+          "finite": true,
+          "position_max_m": 9.813077866773595e-18,
+          "normal_max_deg": 3.456257652472973e-14,
+          "normal_rms_deg": 5.415672914319653e-15,
+          "normal_max_same_native_cell_deg": 3.456257652472973e-14,
+          "native_cell_mismatch": 0
+        },
+        {
+          "dtype": "f4",
+          "finite": true,
+          "position_max_m": 5.981746682398912e-09,
+          "normal_max_deg": 0.00024454251871703703,
+          "normal_rms_deg": 1.5329188441642284e-05,
+          "normal_max_same_native_cell_deg": 0.00024454251871703703,
+          "native_cell_mismatch": 0
+        }
+      ]
+    }
+  ],
+  "source_sha256": "51b005a68334f462f349c0fc91bc6d2f096daa49519fa47c33deac4802c8e8a8",
+  "peak_RSS_MiB": 184.06640625,
+  "not_actual_renderer_verification": true
+}

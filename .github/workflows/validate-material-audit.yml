@@ -1,0 +1,31 @@
+name: Validate material source contracts
+on:
+  pull_request:
+    paths: ['material-workspace/**', 'research/**', 'audit/**', '.github/workflows/validate-material-audit.yml']
+  push:
+    branches: [fix/material-anatomy-and-construction]
+    paths: ['material-workspace/**', 'research/**', 'audit/**', '.github/workflows/validate-material-audit.yml']
+permissions:
+  contents: read
+jobs:
+  source-contracts:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            material-workspace
+            research
+            audit
+            .github
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r material-workspace/shared/material-production/requirements.txt
+      - run: python audit/verify_checkpoint.py
+      - run: python audit/run_portable_tests.py
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+          OMP_NUM_THREADS: '1'

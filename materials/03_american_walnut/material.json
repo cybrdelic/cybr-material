@@ -5,7 +5,7 @@
   "tile_m": 0.55,
   "tile_y_m": 0.55,
   "height_scale_m": 0.00042,
-  "roughness": 0.47,
+  "roughness": 0.4,
   "ior": 1.5,
   "metallic": 0,
   "coat": 0.025,

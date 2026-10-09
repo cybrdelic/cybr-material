@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "experiment_id": "recovery_carpet_r5_internal_smoke",
+  "material_id": "24_carpet",
+  "selected": false,
+  "quality_acceptance": false,
+  "source_scene": "shared/material-production/experiments/recovery_carpet_r5_internal_smoke/scenes/baseline.blend",
+  "source_sha256": "55df658fd44a0fb17bab14b46692c1c252b2d2658a967910e8c281f82e743879",
+  "dependencies": [],
+  "contract": {
+    "map_resolution": [
+      4096,
+      4096
+    ]
+  },
+  "capture": {
+    "engine": "CYCLES",
+    "width": 32,
+    "height": 32,
+    "samples": 1,
+    "capture_mode": "guided",
+    "save_guides": true,
+    "light_tree": false,
+    "color_depth": 16,
+    "dither_intensity": 0,
+    "use_adaptive_sampling": false,
+    "rss_cap_mib": 3072,
+    "time_limit_seconds": 120,
+    "sync_limit_seconds": 90
+  },
+  "purpose": "Internal end-to-end recovery check using exact retained r5 source; no user upload or material qualification",
+  "pass_gates": {
+    "restored_scene_sha_exact": true,
+    "runtime_v7_sha_verified": true,
+    "official_oidn_archive_sha_verified": true,
+    "explicit_file_alias_avoids_cross_device_copy": true
+  },
+  "user_delivery": false
+}

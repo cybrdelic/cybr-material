@@ -1,0 +1,37 @@
+{
+  "model_revision": "causal-plastic-v1",
+  "case": "production",
+  "native_size": [
+    4096,
+    4096
+  ],
+  "extent_m": [
+    0.08,
+    0.08
+  ],
+  "height_storage": "Reconstruct from input native tool + saved solved column state; no duplicated height file.",
+  "roughness_path": "/workspace/shared/material-native4k/causal-plastic/maps/production_state_roughness_native4096.png",
+  "input_tool_sha256": "ebe558dc96ccb14ad5203e8b49b1a3dac83f3dfcb6c42d4b1ad8b7e89b3b6acc",
+  "column_state_path": "/workspace/shared/material-native4k/causal-plastic/state/production_column_state.npz",
+  "column_state_sha256": "7d19cae4ad8a93512c31bec64894a8d55defcef7746406949ec83eb467b6d15c",
+  "replicated_relief_peak_to_valley_m": 3.8206759199965745e-05,
+  "mean_removed_retained_displacement_m": 1.0687836482720261e-05,
+  "height_range_m": [
+    -1.0687836482720261e-05,
+    2.7518922717245482e-05
+  ],
+  "roughness_range": [
+    0.4750000536441803,
+    0.5283099412918091
+  ],
+  "roughness_mean": 0.48545646512849316,
+  "roughness_closure": "Assumed effective microfacet closure: fourth root of baseline_roughness^4 plus isotropic unresolved retained-height slope variance. Gaussian spectral separation sigma=4 native texels (~78um), local variance sigma=4. No random fields. Not an optical prediction.",
+  "baseline_optical_roughness": 0.475,
+  "temperature_skin_role": "Depth-resolved temperature sets Arrhenius dashpot viscosity; contact sets heat transfer, which changes retained displacement. That final displacement drives both geometry and roughness. skin_fraction is diagnostic only.",
+  "preserved": "Source r1/r2 geometry/maps/scenes, palette, studio, cameras",
+  "elapsed_s": 7.063142538070679,
+  "max_rss_MiB": 183.70703125,
+  "sha256": {
+    "production_state_roughness_native4096.png": "884d84ade722870067fa15158a1ce37fa43198233227c33a55eb20e74f8ed1de"
+  }
+}

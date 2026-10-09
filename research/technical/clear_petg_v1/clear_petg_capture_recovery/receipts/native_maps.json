@@ -1,0 +1,71 @@
+{
+  "source_generator": "/workspace/scratch/b4387906eb93/material-publication/audit/checkpoints/2026-10-05/sources/material-native4k/source/generate_petg_bounded.py",
+  "source_generator_sha256": "70c9ff8c72e2fb78d703dce99d2354f1dde8976d7e40438537f6d4010e354bf1",
+  "source_state": {
+    "id": "23_petg_transparent",
+    "name": "PETG / Clear printed wall",
+    "family": "PETG",
+    "variant": "Clear printed wall",
+    "tile_m": 0.02,
+    "height_scale_m": 0.00016,
+    "roughness": 0.17,
+    "color": [
+      0.91,
+      0.97,
+      0.98
+    ],
+    "seed": 1453,
+    "ior": 1.57,
+    "metallic": 0,
+    "representation": "explicit procedural geometry plus surface maps",
+    "layer_height_m": 0.0002,
+    "bead_width_m": 0.00045,
+    "wall_thickness_m": 0.0012,
+    "transmission": 0.96,
+    "anisotropy": 0.38,
+    "physical_values": "authored approximations, not measured material data",
+    "tiling": "finite specimen"
+  },
+  "native_resolution": [
+    4096,
+    4096
+  ],
+  "maps": [
+    {
+      "name": "BaseColor",
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/clear_petg_capture_recovery/maps/BaseColor.png",
+      "sha256": "d84213f357c7a5ff25930f8114dc2411fc7b054cdb67f532a55ba862944f5492",
+      "native_dimensions": [
+        4096,
+        4096
+      ],
+      "byte_exact_archived": true,
+      "color_space": "sRGB"
+    },
+    {
+      "name": "Roughness",
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/clear_petg_capture_recovery/maps/Roughness.png",
+      "sha256": "c2e662a20596d98dd98e6b893c8aa5f6cea5569ffec81a5990a57f318f20e7c7",
+      "native_dimensions": [
+        4096,
+        4096
+      ],
+      "byte_exact_archived": true,
+      "color_space": "Non-Color"
+    },
+    {
+      "name": "Metallic",
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/clear_petg_capture_recovery/maps/Metallic.png",
+      "sha256": "98a02e037b6c601567212b2c1c2c8d50008f2c30446897060b4ad4704fb0e8cc",
+      "native_dimensions": [
+        4096,
+        4096
+      ],
+      "byte_exact_archived": true,
+      "color_space": "Non-Color"
+    }
+  ],
+  "scope": "Only existing shader-bound color, roughness and zero metallic; bead geometry remains explicit. No new height, bump or material coefficients.",
+  "wall_seconds": 4.976690226001665,
+  "peak_rss_mib": 638.8125
+}

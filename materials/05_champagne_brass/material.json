@@ -1,15 +1,15 @@
 {
   "id": "05_champagne_brass",
-  "name": "Champagne Brass / Aged",
+  "name": "Champagne Brass / Satin Brushed",
   "family": "Metal",
   "tile_m": 0.2,
   "height_scale_m": 0.0002,
   "roughness": 0.37,
   "ior": 1.5,
   "metallic": 1,
-  "anisotropy": 0.19,
+  "anisotropy": 0.35,
   "preview_diameter_m": 0.1,
-  "description": "Aged brass with subdued tooling, localized abrasion bundles, granular tarnish fronts and small dielectric verdigris deposits.",
+  "description": "Intact satin-brushed brass; fine directional tooling and restrained isolated scores.",
   "resolution": 4096,
   "maps": {
     "BaseColor.png": "sRGB RGB8; intrinsic color, no lighting",

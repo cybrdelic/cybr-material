@@ -13,6 +13,7 @@ import bpy
 from mathutils import Vector
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'source'))
 argv = sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else []
 parser = argparse.ArgumentParser()
 parser.add_argument('--draft',action='store_true')
@@ -71,6 +72,7 @@ def material(spec):
     socket(group,'UV Scale','NodeSocketVector',default=(1,1,1),lo=.001,hi=1000)
     socket(group,'Displacement Mode','NodeSocketBool',default=False)
     socket(group,'Wear Tint','NodeSocketColor',default=(1,1,1,1))
+    if spec['family']=='Wood':socket(group,'Timber Axis Rotation','NodeSocketVector',default=(0,0,0))
     nodes=group.nodes; links=group.links
     gi=nodes.new('NodeGroupInput');gi.location=(-1100,550)
     go=nodes.new('NodeGroupOutput');go.location=(720,300)
@@ -145,6 +147,9 @@ def material(spec):
         links.new(remainder.outputs[0],bump.inputs['Height'])
         links.new(bump.outputs['Normal'],principled.inputs['Normal'])
         links.new(bump.outputs['Normal'],principled.inputs['Coat Normal'])
+    if spec['family']=='Wood':
+        from timber_volume_shader import install
+        install(group,spec)
     links.new(principled.outputs[0],go.inputs['Surface'])
     links.new(worn_color.outputs[0],go.inputs['Base Color'])
     links.new(tex['Height.png'].outputs['Color'],go.inputs['Height'])
@@ -240,9 +245,14 @@ def plane(name,location,size,mat):
 
 
 def bevel_cube(name,location,dimensions,mat,bevel=.012):
-    bpy.ops.mesh.primitive_cube_add(size=1,location=location)
-    ob=bpy.context.object;ob.name=name;ob.dimensions=dimensions
-    bpy.ops.object.transform_apply(location=False,rotation=False,scale=True)
+    # Direct mesh construction avoids repeatedly evaluating every existing
+    # object through transform_apply while assembling thousands of books.
+    x,y,z=[v*.5 for v in dimensions]
+    verts=[(-x,-y,-z),(x,-y,-z),(x,y,-z),(-x,y,-z),(-x,-y,z),(x,-y,z),(x,y,z),(-x,y,z)]
+    faces=[(3,2,1,0),(4,5,6,7),(0,1,5,4),(1,2,6,5),(2,3,7,6),(3,0,4,7)]
+    mesh=bpy.data.meshes.new(name);mesh.from_pydata(verts,[],faces);mesh.update()
+    ob=bpy.data.objects.new(name,mesh);bpy.context.scene.collection.objects.link(ob);ob.location=location
+    mesh.uv_layers.new(name='UVMap')
     ob.data.materials.append(mat)
     modifier=ob.modifiers.new('Soft machined edges','BEVEL');modifier.width=bevel;modifier.segments=5
     normal=ob.modifiers.new('Weighted face normals','WEIGHTED_NORMAL');normal.keep_sharp=True

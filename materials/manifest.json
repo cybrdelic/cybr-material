@@ -1,6 +1,6 @@
 {
-  "name": "CYBR MATERIAL / Natural Detail and Wear",
-  "version": "3.0",
+  "name": "CYBR MATERIAL / Fabrication and Physical Studies",
+  "version": "3.2-study",
   "resolution": 4096,
   "workflow": "metallic-roughness",
   "normal": "OpenGL +Y and DirectX -Y",
@@ -13,29 +13,29 @@
   "materials": [
     {
       "id": "01_calacatta_oro",
-      "name": "Calacatta Oro / Weathered",
+      "name": "Calacatta Oro / Honed Quarry Slab",
       "family": "Stone",
-      "tile_m": 0.8,
-      "height_scale_m": 0.00055,
-      "roughness": 0.34,
+      "tile_m": 2.8,
+      "height_scale_m": 0.00012,
+      "roughness": 0.255,
       "ior": 1.52,
       "metallic": 0,
       "coat": 0.015,
       "coat_roughness": 0.38,
       "preview_diameter_m": 0.24,
-      "description": "Ivory marble with a hierarchy of ragged mineral seams, fractured inclusions, crystalline intergrowth and shallow abrasion."
+      "description": "One procedural 2.8 m slab with narrow shear seams, branching fractures and mineral intergrowth; honed intact finish."
     },
     {
       "id": "02_roman_travertine",
-      "name": "Roman Travertine / Open Pore",
+      "name": "Roman Travertine / Honed Vein Cut",
       "family": "Stone",
       "tile_m": 0.65,
-      "height_scale_m": 0.006,
+      "height_scale_m": 0.0032,
       "roughness": 0.62,
       "ior": 1.5,
       "metallic": 0,
       "preview_diameter_m": 0.24,
-      "description": "Vein-cut travertine with bed-clustered torn cavities, varied cavity floors, mineral laminae and fine calcite pores."
+      "description": "Fine bed-correlated irregular open pores without painted cavity outlines; shallow honed sedimentary surface."
     },
     {
       "id": "03_american_walnut",
@@ -44,7 +44,7 @@
       "tile_m": 0.55,
       "tile_y_m": 0.55,
       "height_scale_m": 0.00042,
-      "roughness": 0.47,
+      "roughness": 0.4,
       "ior": 1.5,
       "metallic": 0,
       "coat": 0.025,
@@ -61,7 +61,7 @@
       "tile_m": 0.45,
       "tile_y_m": 0.45,
       "height_scale_m": 0.00045,
-      "roughness": 0.54,
+      "roughness": 0.46,
       "ior": 1.5,
       "metallic": 0,
       "coat": 0.015,
@@ -73,20 +73,20 @@
     },
     {
       "id": "05_champagne_brass",
-      "name": "Champagne Brass / Aged",
+      "name": "Champagne Brass / Satin Brushed",
       "family": "Metal",
       "tile_m": 0.2,
       "height_scale_m": 0.0002,
       "roughness": 0.37,
       "ior": 1.5,
       "metallic": 1,
-      "anisotropy": 0.19,
+      "anisotropy": 0.35,
       "preview_diameter_m": 0.1,
-      "description": "Aged brass with subdued tooling, localized abrasion bundles, granular tarnish fronts and small dielectric verdigris deposits."
+      "description": "Intact satin-brushed brass; fine directional tooling and restrained isolated scores."
     },
     {
       "id": "06_blackened_steel",
-      "name": "Blackened Steel / Worn",
+      "name": "Blackened Steel / Satin Oxide",
       "family": "Metal",
       "tile_m": 0.25,
       "height_scale_m": 0.00055,
@@ -95,25 +95,25 @@
       "metallic": 0,
       "anisotropy": 0.14,
       "preview_diameter_m": 0.12,
-      "description": "Black oxide steel with directionally rubbed exposure, terraced rust crusts, corrosion pits and short abrasive score groups."
+      "description": "Intact black oxide on satin machined steel; exposed edges are assigned on fabricated meshes."
     },
     {
       "id": "07_bone_porcelain",
-      "name": "Bone Porcelain / Crazed",
+      "name": "Bone Porcelain / Clear Glaze",
       "family": "Ceramic",
       "tile_m": 0.24,
       "height_scale_m": 0.00045,
       "roughness": 0.24,
       "ior": 1.49,
       "metallic": 0,
-      "coat": 0.12,
-      "coat_roughness": 0.24,
+      "coat": 0.32,
+      "coat_roughness": 0.12,
       "preview_diameter_m": 0.1,
-      "description": "Ivory porcelain with a growing arrested crack network, subdued glaze ripples, pinholes and torn chips exposing the ceramic body."
+      "description": "Clear glaze over warm ivory ceramic; fine firing flow and shallow glaze peel, without random chips."
     },
     {
       "id": "08_saddle_leather",
-      "name": "Saddle Leather / Used",
+      "name": "Saddle Leather / Full Grain",
       "family": "Leather",
       "tile_m": 0.18,
       "height_scale_m": 0.00075,
@@ -123,19 +123,19 @@
       "coat": 0.015,
       "coat_roughness": 0.48,
       "preview_diameter_m": 0.065,
-      "description": "Cognac hide with soft stretched skin creases, fine follicles, compressed folds, burnished areas and grouped finish scuffs."
+      "description": "Fine irregular submillimeter hide grain and follicles; restrained dye variation. Mesh seams and bends describe construction."
     },
     {
       "id": "09_lime_plaster",
-      "name": "Lime Plaster / Weathered",
+      "name": "Lime Plaster / Troweled Skim",
       "family": "Plaster",
       "tile_m": 0.65,
-      "height_scale_m": 0.004,
+      "height_scale_m": 0.002,
       "roughness": 0.76,
       "ior": 1.48,
       "metallic": 0,
       "preview_diameter_m": 0.22,
-      "description": "Layered lime with overlapping trowel passes, directional leading lips, exposed angular aggregate, delamination and fine pinholes."
+      "description": "Overlapping broad trowel passes and polished leading lips with restrained fine aggregate."
     },
     {
       "id": "10_natural_linen",

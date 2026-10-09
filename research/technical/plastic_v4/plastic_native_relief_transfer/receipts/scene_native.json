@@ -1,0 +1,265 @@
+{
+  "studio_script_sha256": "31d56e0261c52ae8de15639e8e25e450933cab138211e5125ad35154707349da",
+  "ground_clearance_m": 1e-06,
+  "id": "21_plastic_texture",
+  "bounds_min_m": [
+    -0.009986036457121372,
+    -0.009986036457121372,
+    0.004999999888241291
+  ],
+  "bounds_max_m": [
+    0.009986036457121372,
+    0.009986036457121372,
+    0.008027242496609688
+  ],
+  "dimensions_m": [
+    0.019972072914242744,
+    0.019972072914242744,
+    0.0030272426083683968
+  ],
+  "frame_width_m": 0.03235475718975067,
+  "specimen_objects": [
+    "Temporary fixed state bounds"
+  ],
+  "case": "native",
+  "source_material_scene": "/workspace/scratch/b4387906eb93/technical-recovery-20261006/restored/CYBR_technical_cloud_review/scenes/21_plastic_texture_r5_hero.blend",
+  "source_material_scene_sha256": "bd913bbe8cb15e54580e453827c5799c4b985cebee05a3b258cfb947f980fb6f",
+  "source_material_principled_defaults": {
+    "Base Color": [
+      0.10999999940395355,
+      0.14000000059604645,
+      0.1599999964237213,
+      1.0
+    ],
+    "Metallic": 0.0,
+    "Roughness": 0.49000000953674316,
+    "IOR": 1.5,
+    "Alpha": 1.0,
+    "Normal": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Weight": 0.0,
+    "Diffuse Roughness": 0.0,
+    "Subsurface Weight": 0.0,
+    "Subsurface Radius": [
+      1.0,
+      0.20000000298023224,
+      0.10000000149011612
+    ],
+    "Subsurface Scale": 0.05000000074505806,
+    "Subsurface IOR": 1.399999976158142,
+    "Subsurface Anisotropy": 0.0,
+    "Specular IOR Level": 0.5,
+    "Specular Tint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "Anisotropic": 0.0,
+    "Anisotropic Rotation": 0.0,
+    "Tangent": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.07000000029802322,
+    "Coat Roughness": 0.029999999329447746,
+    "Coat IOR": 1.5,
+    "Coat Tint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "Coat Normal": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Sheen Weight": 0.0,
+    "Sheen Roughness": 0.5,
+    "Sheen Tint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "Emission Color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "Emission Strength": 0.0,
+    "Thin Film Thickness": 0.0,
+    "Thin Film IOR": 1.3300000429153442
+  },
+  "roughness_path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_native_relief_transfer/maps/production_state_roughness_native4096.png",
+  "roughness_sha256": "884d84ade722870067fa15158a1ce37fa43198233227c33a55eb20e74f8ed1de",
+  "roughness_limitation": "Original Gaussian high-pass closure intentionally held for isolated geometry comparison; it is not yet the residual of the actual rendered basis. No full geometry/BRDF partition qualification.",
+  "geometry_grid": [
+    1025,
+    1025
+  ],
+  "geometry_pitch_m": 1.950397745810635e-05,
+  "coupon_xy_extent_m": 0.01997207291710164,
+  "nominal_cut_thickness_m": 0.003,
+  "top_height_origin_m": 0.008,
+  "vertex_count": 1054722,
+  "face_count": 1056768,
+  "closed_oriented_manifold": true,
+  "height_float32_max_error_m": 4.656612248576941e-10,
+  "physical_state_sha256": "7d19cae4ad8a93512c31bec64894a8d55defcef7746406949ec83eb467b6d15c",
+  "rig_signature": {
+    "Plastic / matched physical interior": {
+      "type": "CAMERA",
+      "matrix": [
+        0.8017459511756897,
+        -0.3565812110900879,
+        0.4796386957168579,
+        0.016377098858356476,
+        0.597665011882782,
+        0.4783407747745514,
+        -0.6434179544448853,
+        -0.021969281136989594,
+        2.604679139039945e-09,
+        0.8025209903717041,
+        0.5966238975524902,
+        0.0268851350992918,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "data": {
+        "ortho_scale": 0.02800000086426735,
+        "lens": 50.0
+      }
+    },
+    "Slab / neutral floor": {
+      "type": "MESH",
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.004999000113457441,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "data": {}
+    },
+    "Slab / key": {
+      "type": "LIGHT",
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "data": {
+        "energy": 0.01116874348372221,
+        "size": 0.018973469734191895,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shape": "DISK"
+      }
+    },
+    "Slab / rim": {
+      "type": "LIGHT",
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "data": {
+        "energy": 0.005584371741861105,
+        "size": 0.012981846928596497,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shape": "DISK"
+      }
+    },
+    "Slab / fill": {
+      "type": "LIGHT",
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "data": {
+        "energy": 0.0019944184459745884,
+        "size": 0.023966487497091293,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shape": "DISK"
+      }
+    }
+  },
+  "source_recovery": "New reconstructed flat-interior study from byte-exact recovered original native state; not historical blend recovery",
+  "quality_acceptance": false,
+  "scene": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_native_relief_transfer/scenes/21_plastic_fixed_state_native.blend",
+  "scene_sha256": "1c6d588798f6c8315fb38da21ee5fcc97910805fd9cc56ed40522a231ddb202b",
+  "wall_seconds": 3.53748889300914,
+  "peak_rss_mib": 808.1875
+}

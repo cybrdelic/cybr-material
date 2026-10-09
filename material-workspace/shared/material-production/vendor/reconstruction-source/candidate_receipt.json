@@ -1,0 +1,40 @@
+{
+  "status": "candidate_built_not_render_verified",
+  "scope": "source top only; bevel/side/bottom excluded unchanged control",
+  "material_id": "05_champagne_brass",
+  "source_scene": "/workspace/shared/material-slabs/scenes/05_champagne_brass_original_native4k_slab_r2_uv_tangent.blend",
+  "source_sha256": "008c3dd49555ef915b4b0134008445f40946ac9b1e8f830593ae25d9405b57f5",
+  "candidate": "/workspace/shared/material-causal-rebuild/curved-normal-transfer/candidates/05_champagne_brass/05_champagne_brass_top_only_normal_candidate.blend",
+  "candidate_sha256": "4907f4900fbc659294c78befaa729946919d439400e9b09d4fc0d24a656920f4",
+  "map_sha256": {
+    "ORM.png": "9fbeef7f3cc5001b83f3a0fe7ad4028f8a596f8d689e381ad6443674ea93f7e8",
+    "Normal_DirectX.png": "9ebf293058a8591acf358955512b59dcfdd166775289ec26e2f6c6c407930dd1",
+    "Metallic.png": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+    "Opacity.png": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+    "WearMask.png": "26f63a22fe786a0466623f3c3710cb1784dba98e535bc18fb93e8cae9c17d221",
+    "Height_Macro.png": "edd2b60be06c758b0a3f242480c9df7b5f492b9d1bd65b3cf91446320dbc6f05",
+    "Height.png": "8261cdaedfda99e751ea08bc0e115769483e1a79ef8ffb1d92348c470d8937d1",
+    "BaseColor.png": "2859e59886d034b9f3cd59f2a6ea12387e82ba75a02a3a3b2e9c6b7f6b2bba4c",
+    "Normal_OpenGL.png": "23f1356276a8e7929bf6f2e714245383131d1e346efd483cac515290a4c3886e",
+    "Normal_Micro_OpenGL.png": "595e45885cf3c2de0bfee207ccc07bda5b5faca9b3af217aaee55275790c1706",
+    "Roughness.png": "fd3f199fc71d54a141fac36c18caead364e604b01906654b81950da69b09bcb4",
+    "AO.png": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63"
+  },
+  "base_geometry_uv_normal_sha256": "472dd0190026dd1c472088ced9247fcea7190687ca208c4203f75f755c3ee5bb",
+  "evaluated_geometry_uv_normal_sha256": "f83c4c65db5d4c28fc7cb76f0143e529583a63ccb31f734ef93d7ba5136bcfc2",
+  "corrected_evaluated_faces": 65536,
+  "unchanged_control_evaluated_faces": 7237,
+  "target_contract": "OBJECT Normal Map of original linear full-normal RGB; strength 1; original texture filtering",
+  "frame_provenance": "no tangent frame used by top-only route; exported normals diagnostic only",
+  "physical_shader_coefficients_changed": false,
+  "source_pixel_maps_changed": false,
+  "camera_light_world_geometry_changed": false,
+  "render_run": false,
+  "limitations": [
+    "Not a whole-slab correction",
+    "Shading normal target does not restore unresolved geometry/occlusion",
+    "Renderer closure restrictions remain; raw normal shader equality needs an admitted renderer fixture",
+    "Original RGB8 normal quantization remains",
+    "No optical/formation-model validation"
+  ]
+}

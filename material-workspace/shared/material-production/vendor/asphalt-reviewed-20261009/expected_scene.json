@@ -1,0 +1,10 @@
+{
+  "sha256": "5a8bff2ba51bbb6a3af3d4a2d49b04a33eeb0dc31a62f43df1d58dbde1aeba2d",
+  "sections": {
+    "objects": "57dd0774a2fcca7ed4e48a3628fe03799e1d3b93645c9c9595cbdd36cf377d9b",
+    "materials": "c8e11c4b99965c6c648471c2f8bc016437c83993c69c7a97ce4f49cad9ca0a18",
+    "world": "3f4942763f24b2b6edad5bf13efb01afea6d8b6e0318994e30f60849b42dbef5",
+    "camera": "0b11c67ad3e6c7281ce1bc90275cebb5759caef07fb9217fe1b43f9485e6434a",
+    "view": "2e66e5bbd63d64c41954e72ba142dbb687e47540d438e7487382a0bae5539ee6"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "experiment_id": "porcelain_reference_intrinsic_second_light",
+  "material_id": "07_bone_porcelain",
+  "selected": false,
+  "quality_acceptance": false,
+  "source_scene": "shared/material-production/experiments/porcelain_reference_history/second_light_sources/07_porcelain_reference_intrinsic_second_light.blend",
+  "source_sha256": "027873508da459093fd7775f92152cabecdddf856b2299cbcb3f669bc777dcd3",
+  "dependencies": [
+    {
+      "path": "shared/material-production/experiments/porcelain_reference_history/maps/Glaze_Normal_OpenGL_RGB16.png",
+      "sha256": "2cf053dab2a34ea25b20434ed681d6d61087cc8a4e8f7e8f2ae10227e912a0c4"
+    },
+    {
+      "path": "shared/material-production/experiments/porcelain_deposition_arrivals/maps/control/Glaze_Roughness.png",
+      "sha256": "67f6167b883662b0fe1d63115a3afbab1ea1bda48da90ac6ac9cd4715ec7dad2"
+    },
+    {
+      "path": "shared/material-production/experiments/porcelain_deposition_arrivals/maps/Substrate_Height.png",
+      "sha256": "532793fef563434be173e3b39994e4829f93df7c0ca5d2b5dac1de96e2ab52c3"
+    }
+  ],
+  "contract": {
+    "map_resolution": [
+      4096,
+      4096
+    ]
+  },
+  "capture": {
+    "camera": "Slab / shared camera",
+    "engine": "CYCLES",
+    "width": 960,
+    "height": 960,
+    "samples": 128,
+    "save_guides": true,
+    "light_tree": false,
+    "color_depth": 16,
+    "dither_intensity": 0,
+    "rss_cap_mib": 3072,
+    "time_limit_seconds": 600,
+    "capture_mode": "guided",
+    "studio_lights_downward": true,
+    "use_adaptive_sampling": false,
+    "threads": 4
+  },
+  "purpose": "Matched +90 degree saved light rig; intrinsic comparison; unselected",
+  "pass_gates": {
+    "saved_control_light_transforms_exact": true,
+    "fresh_reopen_equal": true,
+    "frozen_main_material_retained": true,
+    "visual_acceptance": false
+  },
+  "physical_dimensions_m": [
+    0.09612661600112915,
+    0.09612661600112915,
+    0.0036636297591030598
+  ],
+  "print_on_image": "Porcelain \u00b7 intrinsic \u00b7 second light"
+}

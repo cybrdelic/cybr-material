@@ -1,0 +1,252 @@
+{
+  "reconstruction": true,
+  "representation": "Camera-dependent explicit retained surface approximation; exact analytic native field planned for shading",
+  "not_global20nm_qualification": true,
+  "position_budget_pixels": 0.25,
+  "refine_target_pixels": 0.14,
+  "resolution": 960,
+  "absolute_camera_budgets_m": {
+    "Slab / shared camera": 3.375000087544322e-05,
+    "Plastic / authored molding detail camera": 6.25000005432715e-06
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "vertices": 96202,
+      "triangles": 192400,
+      "cameras": {
+        "Slab / shared camera": {
+          "max_absolute_m": 4.819131416208951e-05,
+          "max_projected_pixels": 0.3075800726488997,
+          "samples": 1346800
+        },
+        "Plastic / authored molding detail camera": {
+          "max_absolute_m": 4.2025140258640665e-05,
+          "max_projected_pixels": 1.4010176429575798,
+          "samples": 167573
+        }
+      },
+      "all_chart_sampled_max_absolute_m": 4.819131416208951e-05,
+      "max_camera_conservative_pixels": 1.6810055957337475,
+      "samples_per_triangle": 7,
+      "passes_sampled_camera_budget": false
+    },
+    {
+      "iteration": 1,
+      "vertices": 133605,
+      "triangles": 267206,
+      "cameras": {
+        "Slab / shared camera": {
+          "max_absolute_m": 3.6569355538195274e-05,
+          "max_projected_pixels": 0.24047840194831988,
+          "samples": 1870442
+        },
+        "Plastic / authored molding detail camera": {
+          "max_absolute_m": 3.440770829031367e-05,
+          "max_projected_pixels": 1.2084901145211508,
+          "samples": 317590
+        }
+      },
+      "all_chart_sampled_max_absolute_m": 3.6569355538195274e-05,
+      "max_camera_conservative_pixels": 1.3763083196492016,
+      "samples_per_triangle": 7,
+      "passes_sampled_camera_budget": false
+    },
+    {
+      "iteration": 2,
+      "vertices": 200627,
+      "triangles": 401250,
+      "cameras": {
+        "Slab / shared camera": {
+          "max_absolute_m": 3.4714000490214965e-05,
+          "max_projected_pixels": 0.20636012662976327,
+          "samples": 2808750
+        },
+        "Plastic / authored molding detail camera": {
+          "max_absolute_m": 2.7981879738550564e-05,
+          "max_projected_pixels": 0.9827970788396563,
+          "samples": 731441
+        }
+      },
+      "all_chart_sampled_max_absolute_m": 3.4714000490214965e-05,
+      "max_camera_conservative_pixels": 1.1192751798128977,
+      "samples_per_triangle": 7,
+      "passes_sampled_camera_budget": false
+    },
+    {
+      "iteration": 3,
+      "vertices": 292273,
+      "triangles": 584542,
+      "cameras": {
+        "Slab / shared camera": {
+          "max_absolute_m": 3.4465553662035526e-05,
+          "max_projected_pixels": 0.20488339877201475,
+          "samples": 4091794
+        },
+        "Plastic / authored molding detail camera": {
+          "max_absolute_m": 1.221005009000667e-05,
+          "max_projected_pixels": 0.42883981139510235,
+          "samples": 1810311
+        }
+      },
+      "all_chart_sampled_max_absolute_m": 3.4465553662035526e-05,
+      "max_camera_conservative_pixels": 0.4884019993549086,
+      "samples_per_triangle": 7,
+      "passes_sampled_camera_budget": false
+    },
+    {
+      "iteration": 4,
+      "vertices": 380143,
+      "triangles": 760282,
+      "cameras": {
+        "Slab / shared camera": {
+          "max_absolute_m": 3.3051567219961206e-05,
+          "max_projected_pixels": 0.19647628443721601,
+          "samples": 5321974
+        },
+        "Plastic / authored molding detail camera": {
+          "max_absolute_m": 1.059007124530856e-05,
+          "max_projected_pixels": 0.37194531401126435,
+          "samples": 2981208
+        }
+      },
+      "all_chart_sampled_max_absolute_m": 3.3051567219961206e-05,
+      "max_camera_conservative_pixels": 0.4236028461302408,
+      "samples_per_triangle": 7,
+      "passes_sampled_camera_budget": false
+    },
+    {
+      "iteration": 5,
+      "vertices": 383654,
+      "triangles": 767304,
+      "cameras": {
+        "Slab / shared camera": {
+          "max_absolute_m": 3.14445187828132e-05,
+          "max_projected_pixels": 0.18692451469232266,
+          "samples": 5371128
+        },
+        "Plastic / authored molding detail camera": {
+          "max_absolute_m": 6.6962192895227315e-06,
+          "max_projected_pixels": 0.23519193927718707,
+          "samples": 3014394
+        }
+      },
+      "all_chart_sampled_max_absolute_m": 3.14445187828132e-05,
+      "max_camera_conservative_pixels": 0.26784876925267564,
+      "samples_per_triangle": 7,
+      "passes_sampled_camera_budget": false
+    },
+    {
+      "iteration": 6,
+      "vertices": 384089,
+      "triangles": 768174,
+      "cameras": {
+        "Slab / shared camera": {
+          "max_absolute_m": 2.697025435250775e-05,
+          "max_projected_pixels": 0.16032580230045101,
+          "samples": 5377218
+        },
+        "Plastic / authored molding detail camera": {
+          "max_absolute_m": 3.4999554247436187e-06,
+          "max_projected_pixels": 0.1325986045478822,
+          "samples": 3015105
+        }
+      },
+      "all_chart_sampled_max_absolute_m": 2.697025435250775e-05,
+      "max_camera_conservative_pixels": 0.1997796566883316,
+      "samples_per_triangle": 7,
+      "passes_sampled_camera_budget": true
+    },
+    {
+      "iteration": 7,
+      "vertices": 384183,
+      "triangles": 768362,
+      "cameras": {
+        "Slab / shared camera": {
+          "max_absolute_m": 3.04964030700808e-05,
+          "max_projected_pixels": 0.1812873015646851,
+          "samples": 5378534
+        },
+        "Plastic / authored molding detail camera": {
+          "max_absolute_m": 3.4999554247436187e-06,
+          "max_projected_pixels": 0.1325986045478822,
+          "samples": 3015105
+        }
+      },
+      "all_chart_sampled_max_absolute_m": 3.04964030700808e-05,
+      "max_camera_conservative_pixels": 0.22589927614098398,
+      "samples_per_triangle": 7,
+      "passes_sampled_camera_budget": true
+    },
+    {
+      "iteration": 8,
+      "vertices": 384206,
+      "triangles": 768408,
+      "cameras": {
+        "Slab / shared camera": {
+          "max_absolute_m": 1.8899722373774675e-05,
+          "max_projected_pixels": 0.13991214423172307,
+          "samples": 5378856
+        },
+        "Plastic / authored molding detail camera": {
+          "max_absolute_m": 3.4999554247436187e-06,
+          "max_projected_pixels": 0.1325986045478822,
+          "samples": 3015105
+        }
+      },
+      "all_chart_sampled_max_absolute_m": 1.8899722373774675e-05,
+      "max_camera_conservative_pixels": 0.1399982157728321,
+      "samples_per_triangle": 7,
+      "passes_sampled_camera_budget": true
+    }
+  ],
+  "final_dense": {
+    "cameras": {
+      "Slab / shared camera": {
+        "max_absolute_m": 2.7338994848345795e-05,
+        "max_projected_pixels": 0.16251512956164849,
+        "samples": 33449680
+      },
+      "Plastic / authored molding detail camera": {
+        "max_absolute_m": 3.49998986098827e-06,
+        "max_projected_pixels": 0.1325986045478822,
+        "samples": 17574770
+      }
+    },
+    "all_chart_sampled_max_absolute_m": 2.7338994848345795e-05,
+    "max_camera_conservative_pixels": 0.2025110676977632,
+    "samples_per_triangle": 40,
+    "passes_sampled_camera_budget": true
+  },
+  "topology": {
+    "closed_two_incident_edges": true,
+    "opposite_oriented_incidence": true,
+    "euler_characteristic": 2,
+    "minimum_double_triangle_area_m2": 7.702014188273694e-11,
+    "positive_volume_m3": 4.9868429013089604e-05,
+    "bounds_m": [
+      [
+        -0.040022,
+        -0.040022,
+        1.5429998783711343e-27
+      ],
+      [
+        0.040022,
+        0.040022,
+        0.00802734414774833
+      ]
+    ],
+    "floor_z_m": -1e-06,
+    "minimum_floor_clearance_m": 1e-06
+  },
+  "vertices": 418123,
+  "triangles": 836242,
+  "source_sha256": "83f78d29708c32e79f7a7ac8eb8ee9ecccea15247ac8fdabbbd0fbb1fc33cfc4",
+  "surface_contract_sha256": "f80d51f162e6e0ac3c79e7a7a1917f747fd0a0bc7825489182dbb82f7d057228",
+  "peak_RSS_MiB": 413.671875,
+  "seconds": 122.47133590000158,
+  "audit_limit": "Deterministic barycentric numerical sampling, not a supremum bound. Native map extrema between probes remain an explicit risk until further texel-based audit.",
+  "arrays_path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/camera_lod_mesh.npz",
+  "arrays_sha256": "e24784d0d9c829fd0ce0f469bd176bcaca1512094d3df57df2d8e249c9d927c8",
+  "arrays_bytes": 6249499
+}

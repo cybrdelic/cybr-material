@@ -1,14 +1,14 @@
 {
   "id": "09_lime_plaster",
-  "name": "Lime Plaster / Weathered",
+  "name": "Lime Plaster / Troweled Skim",
   "family": "Plaster",
   "tile_m": 0.65,
-  "height_scale_m": 0.004,
+  "height_scale_m": 0.002,
   "roughness": 0.76,
   "ior": 1.48,
   "metallic": 0,
   "preview_diameter_m": 0.22,
-  "description": "Layered lime with overlapping trowel passes, directional leading lips, exposed angular aggregate, delamination and fine pinholes.",
+  "description": "Overlapping broad trowel passes and polished leading lips with restrained fine aggregate.",
   "resolution": 4096,
   "maps": {
     "BaseColor.png": "sRGB RGB8; intrinsic color, no lighting",

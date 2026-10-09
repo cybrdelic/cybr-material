@@ -1,230 +1,230 @@
 {
   "01_calacatta_oro": {
-    "height_min": 0.3813076913356781,
-    "height_max": 0.5668116211891174,
-    "relief_range_m": 0.00010202715930063277,
-    "roughness_min": 0.2980392277240753,
-    "roughness_max": 0.572549045085907,
+    "height_min": 0.48664072155952454,
+    "height_max": 0.503761351108551,
+    "relief_range_m": 2.0544755443552276e-06,
+    "roughness_min": 0.24313725531101227,
+    "roughness_max": 0.2980392277240753,
     "metallic_min": 0.0,
     "metallic_max": 0.0,
     "base_color_seam": {
-      "wrap_mean": 0.0007491766009479761,
-      "neighbor_mean": 0.0009057137067429721,
-      "wrap_max": 0.13333332538604736,
-      "neighbor_max": 0.1450980305671692
+      "wrap_mean": 0.004797602538019419,
+      "neighbor_mean": 0.00030493640224449337,
+      "wrap_max": 0.3019607663154602,
+      "neighbor_max": 0.10196077823638916
     },
     "height_seam": {
-      "wrap_mean": 0.00027697760378941894,
-      "neighbor_mean": 0.0002844939299393445,
-      "wrap_max": 0.06712442636489868,
-      "neighbor_max": 0.03591972589492798
+      "wrap_mean": 0.00019397641881369054,
+      "neighbor_mean": 0.00010462229693075642,
+      "wrap_max": 0.009842097759246826,
+      "neighbor_max": 0.004135191440582275
     },
     "finite": true,
     "measurement_source": "Final encoded PNG maps"
   },
   "02_roman_travertine": {
-    "height_min": 0.045258257538080215,
-    "height_max": 0.6999465823173523,
-    "relief_range_m": 0.003928130026906729,
-    "roughness_min": 0.5607843399047852,
-    "roughness_max": 0.8666666746139526,
+    "height_min": 0.1427481472492218,
+    "height_max": 0.6096436977386475,
+    "relief_range_m": 0.001494065742008388,
+    "roughness_min": 0.5176470875740051,
+    "roughness_max": 0.7058823704719543,
     "metallic_min": 0.0,
     "metallic_max": 0.0,
     "base_color_seam": {
-      "wrap_mean": 0.00043498518061824143,
-      "neighbor_mean": 0.0005110996426083148,
-      "wrap_max": 0.019607841968536377,
-      "neighbor_max": 0.11764708161354065
+      "wrap_mean": 0.0001680261775618419,
+      "neighbor_mean": 0.0001592498883837834,
+      "wrap_max": 0.003921568393707275,
+      "neighbor_max": 0.003921568393707275
     },
     "height_seam": {
-      "wrap_mean": 0.0007850334513932467,
-      "neighbor_mean": 0.001205794746056199,
-      "wrap_max": 0.21052870154380798,
-      "neighbor_max": 0.38828104734420776
+      "wrap_mean": 0.0008247563382610679,
+      "neighbor_mean": 0.0007693064981140196,
+      "wrap_max": 0.2548714280128479,
+      "neighbor_max": 0.23395130038261414
     },
     "finite": true,
     "measurement_source": "Final encoded PNG maps"
   },
   "03_american_walnut": {
-    "height_min": 0.40189212560653687,
-    "height_max": 0.5768673419952393,
-    "relief_range_m": 7.348958752118051e-05,
-    "roughness_min": 0.3803921639919281,
-    "roughness_max": 0.615686297416687,
+    "height_min": 0.40473029017448425,
+    "height_max": 0.5764248371124268,
+    "relief_range_m": 7.211171032395214e-05,
+    "roughness_min": 0.30588236451148987,
+    "roughness_max": 0.5411764979362488,
     "metallic_min": 0.0,
     "metallic_max": 0.0,
     "base_color_seam": {
-      "wrap_mean": 0.0337999127805233,
-      "neighbor_mean": 0.004784836899489164,
-      "wrap_max": 0.15686273574829102,
-      "neighbor_max": 0.15294116735458374
+      "wrap_mean": 0.018182411789894104,
+      "neighbor_mean": 0.0023336971644312143,
+      "wrap_max": 0.09019607305526733,
+      "neighbor_max": 0.0627450942993164
     },
     "height_seam": {
-      "wrap_mean": 0.00625229487195611,
-      "neighbor_mean": 0.001968990545719862,
-      "wrap_max": 0.08731216192245483,
-      "neighbor_max": 0.06152433156967163
+      "wrap_mean": 0.006165950559079647,
+      "neighbor_mean": 0.0011383532546460629,
+      "wrap_max": 0.09980925917625427,
+      "neighbor_max": 0.05830472707748413
     },
     "finite": true,
     "measurement_source": "Final encoded PNG maps"
   },
   "04_fumed_oak": {
-    "height_min": 0.34471654891967773,
-    "height_max": 0.5794918537139893,
-    "relief_range_m": 0.0001056488836184144,
-    "roughness_min": 0.4470588266849518,
-    "roughness_max": 0.686274528503418,
+    "height_min": 0.3612573444843292,
+    "height_max": 0.5796291828155518,
+    "relief_range_m": 9.826732275541872e-05,
+    "roughness_min": 0.3686274588108063,
+    "roughness_max": 0.6117647290229797,
     "metallic_min": 0.0,
     "metallic_max": 0.0,
     "base_color_seam": {
-      "wrap_mean": 0.01854303665459156,
-      "neighbor_mean": 0.0032611123751848936,
-      "wrap_max": 0.12156862020492554,
-      "neighbor_max": 0.06666666269302368
+      "wrap_mean": 0.03606100752949715,
+      "neighbor_mean": 0.005350668448954821,
+      "wrap_max": 0.14901961386203766,
+      "neighbor_max": 0.11372549831867218
     },
     "height_seam": {
-      "wrap_mean": 0.006946806330233812,
-      "neighbor_mean": 0.0014814423630014062,
-      "wrap_max": 0.11869990825653076,
-      "neighbor_max": 0.08616772294044495
+      "wrap_mean": 0.012358476407825947,
+      "neighbor_mean": 0.0021778747905045748,
+      "wrap_max": 0.12246888875961304,
+      "neighbor_max": 0.08976882696151733
     },
     "finite": true,
     "measurement_source": "Final encoded PNG maps"
   },
   "05_champagne_brass": {
-    "height_min": 0.2215457409620285,
-    "height_max": 0.7699244618415833,
-    "relief_range_m": 0.00010967574053211138,
-    "roughness_min": 0.26274511218070984,
-    "roughness_max": 0.7686274647712708,
-    "metallic_min": 0.0,
+    "height_min": 0.48154422640800476,
+    "height_max": 0.5106889605522156,
+    "relief_range_m": 5.828946541441837e-06,
+    "roughness_min": 0.27843138575553894,
+    "roughness_max": 0.3333333432674408,
+    "metallic_min": 1.0,
     "metallic_max": 1.0,
     "base_color_seam": {
-      "wrap_mean": 0.0009615630260668695,
-      "neighbor_mean": 0.0009448083001188934,
-      "wrap_max": 0.19215688109397888,
-      "neighbor_max": 0.21568629145622253
+      "wrap_mean": 0.0005508323083631694,
+      "neighbor_mean": 0.00039206110523082316,
+      "wrap_max": 0.003921568393707275,
+      "neighbor_max": 0.003921568393707275
     },
     "height_seam": {
-      "wrap_mean": 0.0013594785705208778,
-      "neighbor_mean": 0.001985986717045307,
-      "wrap_max": 0.10191500186920166,
-      "neighbor_max": 0.12002748250961304
+      "wrap_mean": 0.0011097517563030124,
+      "neighbor_mean": 0.0007807274232618511,
+      "wrap_max": 0.006500333547592163,
+      "neighbor_max": 0.004257261753082275
     },
     "finite": true,
     "measurement_source": "Final encoded PNG maps"
   },
   "06_blackened_steel": {
-    "height_min": 0.3163195252418518,
-    "height_max": 0.7799801826477051,
-    "relief_range_m": 0.0002550133503973484,
-    "roughness_min": 0.2705882489681244,
-    "roughness_max": 0.7568627595901489,
-    "metallic_min": 0.0,
-    "metallic_max": 1.0,
+    "height_min": 0.4807659983634949,
+    "height_max": 0.5115434527397156,
+    "relief_range_m": 1.6927599062910303e-05,
+    "roughness_min": 0.3607843220233917,
+    "roughness_max": 0.40784314274787903,
+    "metallic_min": 0.6784313917160034,
+    "metallic_max": 0.6784313917160034,
     "base_color_seam": {
-      "wrap_mean": 0.0015267565613612533,
-      "neighbor_mean": 0.0017830245196819305,
-      "wrap_max": 0.12941177189350128,
-      "neighbor_max": 0.12156862020492554
+      "wrap_mean": 0.0005125357420183718,
+      "neighbor_mean": 0.0002569061180111021,
+      "wrap_max": 0.003921568393707275,
+      "neighbor_max": 0.003921568393707275
     },
     "height_seam": {
-      "wrap_mean": 0.0014319465262815356,
-      "neighbor_mean": 0.001416150014847517,
-      "wrap_max": 0.14142060279846191,
-      "neighbor_max": 0.11885249614715576
+      "wrap_mean": 0.0010706688044592738,
+      "neighbor_mean": 0.0006509224185720086,
+      "wrap_max": 0.005081236362457275,
+      "neighbor_max": 0.0035248398780822754
     },
     "finite": true,
     "measurement_source": "Final encoded PNG maps"
   },
   "07_bone_porcelain": {
-    "height_min": 0.0,
-    "height_max": 0.5596551299095154,
-    "relief_range_m": 0.0002518448163755238,
-    "roughness_min": 0.13725490868091583,
-    "roughness_max": 0.5372549295425415,
+    "height_min": 0.4927443265914917,
+    "height_max": 0.5071641206741333,
+    "relief_range_m": 6.488907274615485e-06,
+    "roughness_min": 0.16078431904315948,
+    "roughness_max": 0.20000000298023224,
     "metallic_min": 0.0,
     "metallic_max": 0.0,
     "base_color_seam": {
-      "wrap_mean": 0.0012934665428474545,
-      "neighbor_mean": 0.0025055529549717903,
-      "wrap_max": 0.08235293626785278,
-      "neighbor_max": 0.09019607305526733
+      "wrap_mean": 3.829656634479761e-06,
+      "neighbor_mean": 4.467932740226388e-06,
+      "wrap_max": 0.003921568393707275,
+      "neighbor_max": 0.003921568393707275
     },
     "height_seam": {
-      "wrap_mean": 0.0005001392564736307,
-      "neighbor_mean": 0.0007498456980101764,
-      "wrap_max": 0.08715954422950745,
-      "neighbor_max": 0.08421453833580017
+      "wrap_mean": 0.00016512016009073704,
+      "neighbor_mean": 0.00016302859876304865,
+      "wrap_max": 0.0006561279296875,
+      "neighbor_max": 0.0006561279296875
     },
     "finite": true,
     "measurement_source": "Final encoded PNG maps"
   },
   "08_saddle_leather": {
-    "height_min": 0.286594957113266,
-    "height_max": 0.6415503025054932,
-    "relief_range_m": 0.00026621652068570256,
-    "roughness_min": 0.38823530077934265,
-    "roughness_max": 0.7137255072593689,
+    "height_min": 0.46990159153938293,
+    "height_max": 0.5441824793815613,
+    "relief_range_m": 5.5710665037622675e-05,
+    "roughness_min": 0.4901960790157318,
+    "roughness_max": 0.5333333611488342,
     "metallic_min": 0.0,
     "metallic_max": 0.0,
     "base_color_seam": {
-      "wrap_mean": 0.0007099226932041347,
-      "neighbor_mean": 0.0006845512543804944,
-      "wrap_max": 0.015686288475990295,
-      "neighbor_max": 0.019607841968536377
+      "wrap_mean": 0.0002522786380723119,
+      "neighbor_mean": 0.0002299389598192647,
+      "wrap_max": 0.00784313678741455,
+      "neighbor_max": 0.00784313678741455
     },
     "height_seam": {
-      "wrap_mean": 0.0057829516008496284,
-      "neighbor_mean": 0.005636438727378845,
-      "wrap_max": 0.0646677017211914,
-      "neighbor_max": 0.07826352119445801
+      "wrap_mean": 0.00813721027225256,
+      "neighbor_mean": 0.007490847259759903,
+      "wrap_max": 0.04415962100028992,
+      "neighbor_max": 0.046494245529174805
     },
     "finite": true,
     "measurement_source": "Final encoded PNG maps"
   },
   "09_lime_plaster": {
-    "height_min": 0.11963073164224625,
-    "height_max": 0.7140917181968689,
-    "relief_range_m": 0.002377843949943781,
-    "roughness_min": 0.6941176652908325,
-    "roughness_max": 0.9019607901573181,
+    "height_min": 0.45293354988098145,
+    "height_max": 0.65365070104599,
+    "relief_range_m": 0.00040143431397154927,
+    "roughness_min": 0.6509804129600525,
+    "roughness_max": 0.7686274647712708,
     "metallic_min": 0.0,
     "metallic_max": 0.0,
     "base_color_seam": {
-      "wrap_mean": 0.001051081228069961,
-      "neighbor_mean": 0.001002253033220768,
-      "wrap_max": 0.07843136787414551,
-      "neighbor_max": 0.07843136787414551
+      "wrap_mean": 0.00012749565939884633,
+      "neighbor_mean": 0.00012669780699070543,
+      "wrap_max": 0.003921568393707275,
+      "neighbor_max": 0.003921568393707275
     },
     "height_seam": {
-      "wrap_mean": 0.0021150787360966206,
-      "neighbor_mean": 0.0018193626310676336,
-      "wrap_max": 0.11737239360809326,
-      "neighbor_max": 0.08804455399513245
+      "wrap_mean": 0.0005374315660446882,
+      "neighbor_mean": 0.0005164706381037831,
+      "wrap_max": 0.006118863821029663,
+      "neighbor_max": 0.006118863821029663
     },
     "finite": true,
     "measurement_source": "Final encoded PNG maps"
   },
   "10_natural_linen": {
     "height_min": 0.1600061058998108,
-    "height_max": 0.5924010276794434,
-    "relief_range_m": 0.00028105670935474336,
+    "height_max": 0.5818570256233215,
+    "relief_range_m": 0.00027420310652814806,
     "roughness_min": 0.7960784435272217,
     "roughness_max": 0.8627451062202454,
     "metallic_min": 0.0,
     "metallic_max": 0.0,
     "base_color_seam": {
-      "wrap_mean": 0.0004116881173104048,
-      "neighbor_mean": 0.0005704592331312597,
-      "wrap_max": 0.05882352590560913,
+      "wrap_mean": 0.0009314043563790619,
+      "neighbor_mean": 0.0010210821637883782,
+      "wrap_max": 0.054901957511901855,
       "neighbor_max": 0.054901957511901855
     },
     "height_seam": {
-      "wrap_mean": 0.002112938789650798,
-      "neighbor_mean": 0.003333090338855982,
-      "wrap_max": 0.07629510760307312,
-      "neighbor_max": 0.08732737600803375
+      "wrap_mean": 0.007385252974927425,
+      "neighbor_mean": 0.007897770032286644,
+      "wrap_max": 0.10514992475509644,
+      "neighbor_max": 0.10196077823638916
     },
     "finite": true,
     "measurement_source": "Final encoded PNG maps"

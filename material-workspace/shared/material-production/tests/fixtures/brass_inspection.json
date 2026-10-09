@@ -1,0 +1,258 @@
+{
+  "blender_version": "4.3.2",
+  "unit_scale": 1.0,
+  "images": [
+    {
+      "name": "BaseColor.png",
+      "path": "/workspace/shared/material-causal-rebuild/curved-normal-transfer/candidates/05_champagne_brass/../../../../material-native4k/original-verified/materials/05_champagne_brass/BaseColor.png",
+      "packed": false,
+      "sha256": "2859e59886d034b9f3cd59f2a6ea12387e82ba75a02a3a3b2e9c6b7f6b2bba4c",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "Metallic.png",
+      "path": "/workspace/shared/material-causal-rebuild/curved-normal-transfer/candidates/05_champagne_brass/../../../../material-native4k/original-verified/materials/05_champagne_brass/Metallic.png",
+      "packed": false,
+      "sha256": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "Normal_Micro_OpenGL.png",
+      "path": "/workspace/shared/material-causal-rebuild/curved-normal-transfer/candidates/05_champagne_brass/../../../../material-native4k/original-verified/materials/05_champagne_brass/Normal_Micro_OpenGL.png",
+      "packed": false,
+      "sha256": "595e45885cf3c2de0bfee207ccc07bda5b5faca9b3af217aaee55275790c1706",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "Normal_OpenGL.png",
+      "path": "/workspace/shared/material-native4k/original-verified/materials/05_champagne_brass/Normal_OpenGL.png",
+      "packed": false,
+      "sha256": "23f1356276a8e7929bf6f2e714245383131d1e346efd483cac515290a4c3886e",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "Opacity.png",
+      "path": "/workspace/shared/material-causal-rebuild/curved-normal-transfer/candidates/05_champagne_brass/../../../../material-native4k/original-verified/materials/05_champagne_brass/Opacity.png",
+      "packed": false,
+      "sha256": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "Roughness.png",
+      "path": "/workspace/shared/material-causal-rebuild/curved-normal-transfer/candidates/05_champagne_brass/../../../../material-native4k/original-verified/materials/05_champagne_brass/Roughness.png",
+      "packed": false,
+      "sha256": "fd3f199fc71d54a141fac36c18caead364e604b01906654b81950da69b09bcb4",
+      "resolution": [
+        4096,
+        4096
+      ],
+      "colorspace": "Non-Color"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Native4K / Champagne Brass / Satin Brushed",
+      "bindings": [
+        {
+          "image": "BaseColor.png",
+          "outputs": [
+            {
+              "node": "Principled BSDF",
+              "socket": "Base Color"
+            }
+          ]
+        },
+        {
+          "image": "Roughness.png",
+          "outputs": [
+            {
+              "node": "Principled BSDF",
+              "socket": "Roughness"
+            }
+          ]
+        },
+        {
+          "image": "Metallic.png",
+          "outputs": [
+            {
+              "node": "Principled BSDF",
+              "socket": "Metallic"
+            }
+          ]
+        },
+        {
+          "image": "Opacity.png",
+          "outputs": [
+            {
+              "node": "Principled BSDF",
+              "socket": "Alpha"
+            }
+          ]
+        },
+        {
+          "image": "Normal_Micro_OpenGL.png",
+          "outputs": [
+            {
+              "node": "Normal Map",
+              "socket": "Color"
+            }
+          ]
+        }
+      ],
+      "normal_nodes": [
+        {
+          "name": "Normal Map",
+          "space": "TANGENT",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Native4K / Champagne Brass / Satin Brushed / top-only exact ful",
+      "bindings": [
+        {
+          "image": "BaseColor.png",
+          "outputs": [
+            {
+              "node": "Principled BSDF",
+              "socket": "Base Color"
+            }
+          ]
+        },
+        {
+          "image": "Roughness.png",
+          "outputs": [
+            {
+              "node": "Principled BSDF",
+              "socket": "Roughness"
+            }
+          ]
+        },
+        {
+          "image": "Metallic.png",
+          "outputs": [
+            {
+              "node": "Principled BSDF",
+              "socket": "Metallic"
+            }
+          ]
+        },
+        {
+          "image": "Opacity.png",
+          "outputs": [
+            {
+              "node": "Principled BSDF",
+              "socket": "Alpha"
+            }
+          ]
+        },
+        {
+          "image": "Normal_OpenGL.png",
+          "outputs": [
+            {
+              "node": "Normal Map",
+              "socket": "Color"
+            }
+          ]
+        }
+      ],
+      "normal_nodes": [
+        {
+          "name": "Normal Map",
+          "space": "OBJECT",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Slab / neutral floor",
+      "bindings": [],
+      "normal_nodes": []
+    }
+  ],
+  "objects": [
+    {
+      "name": "05_champagne_brass / full native tile slab",
+      "type": "MESH",
+      "dimensions_m": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.0030011734925210476
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "vertices": 67073,
+      "polygons": 66561,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "materials": [
+        "Native4K / Champagne Brass / Satin Brushed",
+        "Native4K / Champagne Brass / Satin Brushed / top-only exact ful"
+      ],
+      "material_face_counts": {
+        "1": 65536,
+        "0": 1025
+      },
+      "modifiers": [
+        {
+          "type": "BEVEL",
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Slab / neutral floor",
+      "type": "MESH",
+      "dimensions_m": [
+        40.0,
+        40.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "vertices": 4,
+      "polygons": 1,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "materials": [
+        "Slab / neutral floor"
+      ],
+      "material_face_counts": {
+        "0": 1
+      },
+      "modifiers": []
+    }
+  ],
+  "camera": "Slab / shared camera",
+  "source_unchanged": true,
+  "geometry_and_shader_bindings_inspected": true,
+  "rendered": false
+}

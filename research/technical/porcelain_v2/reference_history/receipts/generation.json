@@ -1,0 +1,488 @@
+{
+  "experiment": "porcelain_reference_history",
+  "native_resolution": 4096,
+  "classification": "Representative imposed commercial-glaze process; not calibrated porcelain chemistry or firing",
+  "rheology": {
+    "material": "Q92 commercial alkaline glaze, CRECER POLES S.A.",
+    "source": "https://doi.org/10.1016/j.mspro.2015.05.031",
+    "source_type": "HSM/VFT fit, not independent rheometry",
+    "equation_SI": "eta_Pa_s=10**(-1.299+2512/(T_C+273.15-789.2))",
+    "A_in_Poise": -0.299,
+    "B_K": 2512.0,
+    "T0_K": 789.2,
+    "temperature_C": [
+      1020.0,
+      1040.0
+    ],
+    "eta_range_Pa_s": [
+      3128.6040702343666,
+      4848.657307630369
+    ]
+  },
+  "history": {
+    "start_C": 1020.0,
+    "end_C": 1040.0,
+    "ramp_K_per_s": 0.08333333333333333,
+    "duration_s": 240.0,
+    "isothermal_dwell_s": 0,
+    "scope": "Only the documented 5 C/min ramp through the manufacturer-stated 1020-1040 C window; earlier heating and cooling excluded",
+    "J_per_Pa": 0.0622906010078276,
+    "adaptive_absolute_error_estimate_per_Pa": 6.915645945662919e-16,
+    "time_quadrature_refinement": [
+      {
+        "time_intervals": 16,
+        "J_per_Pa": 0.0622906010465949,
+        "relative_error_vs_adaptive": 6.223619397616176e-10
+      },
+      {
+        "time_intervals": 32,
+        "J_per_Pa": 0.06229060101025074,
+        "relative_error_vs_adaptive": 3.8900438426026085e-11
+      },
+      {
+        "time_intervals": 64,
+        "J_per_Pa": 0.06229060100797925,
+        "relative_error_vs_adaptive": 2.4344970483980433e-12
+      },
+      {
+        "time_intervals": 128,
+        "J_per_Pa": 0.062290601007837273,
+        "relative_error_vs_adaptive": 1.5520917884259688e-13
+      },
+      {
+        "time_intervals": 256,
+        "J_per_Pa": 0.062290601007828406,
+        "relative_error_vs_adaptive": 1.2878587085651816e-14
+      }
+    ]
+  },
+  "surface_tension": {
+    "central_N_per_m": 0.3,
+    "sensitivity_N_per_m": [
+      0.15,
+      0.3,
+      0.6
+    ],
+    "status": "Glass-literature PROXY, not measured Q92",
+    "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4373153/",
+    "envelope_status": "Declared half/double parameter sensitivity, not calibrated uncertainty interval"
+  },
+  "exposure_m": {
+    "0.15": 0.00934359015117414,
+    "0.3": 0.01868718030234828,
+    "0.6": 0.03737436060469656
+  },
+  "retained_mean_film_m": 6.362943104938368e-05,
+  "scalar_survival": [
+    {
+      "wavelength_m": 0.0192,
+      "gamma_N_per_m": 0.15,
+      "kh": 0.020822682618421053,
+      "decay_exponent": 9.194802265716264e-06,
+      "amplitude_survival": 0.9999908052400064
+    },
+    {
+      "wavelength_m": 0.0192,
+      "gamma_N_per_m": 0.3,
+      "kh": 0.020822682618421053,
+      "decay_exponent": 1.838960453143253e-05,
+      "amplitude_survival": 0.9999816105645563
+    },
+    {
+      "wavelength_m": 0.0192,
+      "gamma_N_per_m": 0.6,
+      "kh": 0.020822682618421053,
+      "decay_exponent": 3.677920906286506e-05,
+      "amplitude_survival": 0.999963221467284
+    },
+    {
+      "wavelength_m": 0.00023999999999999998,
+      "gamma_N_per_m": 0.15,
+      "kh": 1.6658146094736839,
+      "decay_exponent": 63.310753841870145,
+      "amplitude_survival": 3.1951331516314367e-28
+    },
+    {
+      "wavelength_m": 0.00023999999999999998,
+      "gamma_N_per_m": 0.3,
+      "kh": 1.6658146094736839,
+      "decay_exponent": 126.62150768374029,
+      "amplitude_survival": 1.0208875856654236e-55
+    },
+    {
+      "wavelength_m": 0.00023999999999999998,
+      "gamma_N_per_m": 0.6,
+      "kh": 1.6658146094736839,
+      "decay_exponent": 253.24301536748058,
+      "amplitude_survival": 1.0422114625657778e-110
+    },
+    {
+      "wavelength_m": 0.00011999999999999999,
+      "gamma_N_per_m": 0.15,
+      "kh": 3.3316292189473677,
+      "decay_exponent": 227.0011348370765,
+      "amplitude_survival": 2.598123280845293e-99
+    },
+    {
+      "wavelength_m": 0.00011999999999999999,
+      "gamma_N_per_m": 0.3,
+      "kh": 3.3316292189473677,
+      "decay_exponent": 454.002269674153,
+      "amplitude_survival": 6.75024458247031e-198
+    },
+    {
+      "wavelength_m": 0.00011999999999999999,
+      "gamma_N_per_m": 0.6,
+      "kh": 3.3316292189473677,
+      "decay_exponent": 908.004539348306,
+      "amplitude_survival": 0.0
+    }
+  ],
+  "checks": {
+    "independent_BVP_max_relative_error": 2.3869795029440866e-14,
+    "small_kh_limit_relative_error": 1.7999999935014444e-08,
+    "large_kh_limit": true,
+    "zero_mode_transfer_exactly_one": true,
+    "time_quadrature_refinement_pass": true
+  },
+  "optical_accounting_change": {
+    "status": "HELD separate variant; first history binding retains exact old roughness image",
+    "intrinsic_source_roughness": 0.17984575,
+    "new_formula": "roughness=source_roughness, with no extra resolved-slope variance",
+    "old_formula": "clip(R0+.008*(slope/(mean(slope)+1e-12)-1), R0-.008, R0+.016)",
+    "practical_defect": "Normalized-slope contrast is amplitude-invariant while mean(slope)>>1e-12; decreasing resolved height does not suppress it in that regime.",
+    "strict_limit": "Because of +1e-12, variation tends to zero as amplitude tends exactly to zero, but at R0-.008 rather than R0.",
+    "audit": [
+      {
+        "height_amplitude_multiplier": 1.0,
+        "roughness_min": 0.17184575,
+        "roughness_max": 0.193663931818162,
+        "roughness_std": 0.007855443270790272,
+        "roughness_mean": 0.17984574999999273
+      },
+      {
+        "height_amplitude_multiplier": 0.001,
+        "roughness_min": 0.17184575,
+        "roughness_max": 0.1936639317983471,
+        "roughness_std": 0.007855443263656092,
+        "roughness_mean": 0.1798457499927273
+      },
+      {
+        "height_amplitude_multiplier": 1e-06,
+        "roughness_min": 0.17184575,
+        "roughness_max": 0.19366391198348912,
+        "roughness_std": 0.00785543612949184,
+        "roughness_mean": 0.17984574272727935
+      },
+      {
+        "height_amplitude_multiplier": 1e-09,
+        "roughness_min": 0.17184575,
+        "roughness_max": 0.1936441151226158,
+        "roughness_std": 0.007848308444938374,
+        "roughness_mean": 0.1798384838782925
+      },
+      {
+        "height_amplitude_multiplier": 1e-12,
+        "roughness_min": 0.17184575,
+        "roughness_max": 0.18327432142857142,
+        "roughness_std": 0.004114755998989117,
+        "roughness_mean": 0.1760362261904762
+      },
+      {
+        "height_amplitude_multiplier": 1e-15,
+        "roughness_min": 0.17184575,
+        "roughness_max": 0.1718697236290081,
+        "roughness_std": 8.63149295562678e-06,
+        "roughness_mean": 0.1718545403306363
+      },
+      {
+        "height_amplitude_multiplier": 0.0,
+        "roughness_min": 0.17184575,
+        "roughness_max": 0.17184575,
+        "roughness_std": 0.0,
+        "roughness_mean": 0.17184575
+      }
+    ],
+    "separate_from_process_change": true,
+    "interpretation": "R0 retained as unresolved intrinsic finish; resolved normal variance is represented once by the native normal field. No estimated subpixel variance is added."
+  },
+  "assumptions": [
+    "Constant mean film depth and volume; no evaporation, reaction, density or thickness change.",
+    "Homogeneous Newtonian connected liquid throughout this imposed interval; the paper does not establish this in the retained porcelain.",
+    "Linear small-slope finite-depth Stokes mobility for a flat no-slip support, applied to the retained topography over a corrugated substrate.",
+    "Negligible inertia, gravity and viscoelasticity; constant proxy gamma.",
+    "No curved-film edge flow, glaze-body chemistry, calibrated spectral optics, or inference that Q92 is a porcelain glaze.",
+    "Template geometry and retained optical constants are inherited approximations.",
+    "No look-selected coefficients or thermal hold; sensitivity outcomes never select the central gamma."
+  ],
+  "input_sha256": {
+    "experiments/porcelain_deposition_arrivals/source/generate_control.py": "9e644024ac5641c8d3c2a69d5cefe8bb2cb891d56eb449448e3163efa804c019",
+    "experiments/porcelain_deposition_arrivals/state/arrival_packets.npz": "90f356bf18b0d8edc26a2ba8204f7b0eeaba49c7bdc7b71ddbfc61e4dc02f2b8",
+    "experiments/porcelain_deposition_arrivals/receipts/generation.json": "e3836a103965acc1f3c0fed98c829f3ce973252ac2d5dab80d23ab80820436fe",
+    "experiments/porcelain_deposition_arrivals/maps/Substrate_Height.png": "532793fef563434be173e3b39994e4829f93df7c0ca5d2b5dac1de96e2ab52c3",
+    "experiments/porcelain_finite_depth_audit/audit.py": "c56ea35483793dbdde265b1f230b2a8057158e3ec72f2fa11a5d233b8727a0e4",
+    "experiments/porcelain_finite_depth_audit/results.json": "876254ecbe26aedc2cd9fc05e53f481ab85fcb6c1aa103029315b427944ebf06",
+    "experiments/porcelain_finite_depth_audit/commercial_glaze_2015_addendum.md": "9f9961c077e0ff3bde86229a3af31816d7f6868995754eb8a6fc784cdaf02a6a",
+    "experiments/porcelain_glaze_layer_assignment/frozen_handoff.json": "a772653b0449098f79bef2898382fe3db8d32bcb067f48361a271498b25f1fed"
+  },
+  "selected": false,
+  "visual_acceptance": false,
+  "rendered": false,
+  "initial_replay": {
+    "body": {
+      "count": 25600,
+      "saved_packet_array_exact": true,
+      "raw_packet_array_sha256": "22910ec9025307893c24874cc5fffac0a3bcae731c42a950738e3cb946ea4a42",
+      "field_sha256": "73247bfcc04c1fd6658bc46f74482704da7cd09f2bacf64c604d2fdc81323363",
+      "field_min_m": 1.112796041979891e-07,
+      "field_max_m": 5.975762178422883e-06,
+      "field_mean_m": 2.421646441295161e-06
+    },
+    "wet": {
+      "count": 6400,
+      "saved_packet_array_exact": true,
+      "raw_packet_array_sha256": "2e34b4762a4f5b80ce8d995592b5a5b459d2b98c1aa9c4e5f635c8569a420087",
+      "field_sha256": "320526fb3e3ac81770130ac6126954b11d24689caca68ede39c796c90690818c",
+      "field_min_m": 2.7347218178874755e-07,
+      "field_max_m": 8.965605047706049e-06,
+      "field_mean_m": 3.629431049383687e-06
+    },
+    "packet_marks_and_positions_exact": true,
+    "original_substrate_map_pixels_exact": true,
+    "wet_volume_m3": 1.3379534620448023e-09,
+    "initial_film": {
+      "min_m": 6.027347218178875e-05,
+      "max_m": 6.896560504770604e-05,
+      "mean_m": 6.362943104938368e-05,
+      "volume_m3": 2.3456353462044795e-08
+    },
+    "initial_top_surface": {
+      "min_m": 6.0723743056596506e-05,
+      "max_m": 7.297626204177504e-05,
+      "mean_m": 6.605107749067881e-05,
+      "rms_about_mean_m": 1.7583841749219023e-06,
+      "floating_residual_removed_m": 2.964615315390051e-21
+    },
+    "initial_slope": {
+      "min": 2.025029374142285e-05,
+      "max": 0.15887452331780424,
+      "mean": 0.045309289167941,
+      "rms": 0.05046517715749465
+    },
+    "construction": "Exact f4 sampled original-control body and wet fields, combined/evolved in f8; no old leveled map used as initial state"
+  },
+  "responses": [
+    {
+      "gamma_N_per_m": 0.15,
+      "exposure_m": 0.00934359015117414,
+      "top_surface_deviation": {
+        "min_m": -1.1204378115520835e-06,
+        "max_m": 1.2272540971206454e-06,
+        "mean_m": 0.0,
+        "rms_about_mean_m": 3.413086942578166e-07
+      },
+      "top_surface_absolute_range_m": [
+        6.493063967912676e-05,
+        6.727833158779948e-05
+      ],
+      "film_min_m": 5.97264763906832e-05,
+      "film_max_m": 6.658613437998315e-05,
+      "film_mean_m": 6.362943104938368e-05,
+      "film_volume_m3": 2.3456353462044795e-08,
+      "volume_relative_error": 0.0,
+      "slope": {
+        "min": 1.6124163741099972e-07,
+        "max": 0.0038650943930747823,
+        "mean": 0.0011932333102601643,
+        "rms": 0.001347412714002517
+      },
+      "rms_survival": 0.194103597567338,
+      "old_roughness_if_recomputed": {
+        "height_amplitude_multiplier": 1.0,
+        "minimum": 0.17184683104013448,
+        "maximum": 0.19584574999999999,
+        "mean": 0.17984542419709576,
+        "std": 0.004194853773220041
+      }
+    },
+    {
+      "gamma_N_per_m": 0.3,
+      "exposure_m": 0.01868718030234828,
+      "top_surface_deviation": {
+        "min_m": -1.0194631522701977e-06,
+        "max_m": 9.34567845831905e-07,
+        "mean_m": 0.0,
+        "rms_about_mean_m": 2.8494258135531825e-07
+      },
+      "top_surface_absolute_range_m": [
+        6.503161433840864e-05,
+        6.698564533651075e-05
+      ],
+      "film_min_m": 5.9777226143968305e-05,
+      "film_max_m": 6.651605345420422e-05,
+      "film_mean_m": 6.362943104938367e-05,
+      "film_volume_m3": 2.345635346204479e-08,
+      "volume_relative_error": 2.220446049250313e-16,
+      "slope": {
+        "min": 1.1312780180602476e-07,
+        "max": 0.0027568745461680694,
+        "mean": 0.0008120958686403634,
+        "rms": 0.0009181664220395947
+      },
+      "rms_survival": 0.16204796734364027,
+      "old_roughness_if_recomputed": {
+        "height_amplitude_multiplier": 1.0,
+        "minimum": 0.17184686442804759,
+        "maximum": 0.19584574999999999,
+        "mean": 0.17984500948397525,
+        "std": 0.004217259176227864
+      },
+      "old_normalized_slope_amplitude_audit": [
+        {
+          "height_amplitude_multiplier": 1.0,
+          "minimum": 0.17184686442804759,
+          "maximum": 0.19584574999999999,
+          "mean": 0.17984500948397525,
+          "std": 0.004217259176227864
+        },
+        {
+          "height_amplitude_multiplier": 0.001,
+          "minimum": 0.17184686442667665,
+          "maximum": 0.19584574999999999,
+          "mean": 0.1798449996623172,
+          "std": 0.004217254059027672
+        },
+        {
+          "height_amplitude_multiplier": 1e-06,
+          "minimum": 0.17184686305745037,
+          "maximum": 0.19584574999999999,
+          "mean": 0.17983518991632935,
+          "std": 0.004212142577392953
+        },
+        {
+          "height_amplitude_multiplier": 1e-09,
+          "minimum": 0.17184624943406976,
+          "maximum": 0.18401673761220214,
+          "mean": 0.17543097253792106,
+          "std": 0.0018913077647099159
+        },
+        {
+          "height_amplitude_multiplier": 0.0,
+          "minimum": 0.17184575,
+          "maximum": 0.17184575,
+          "mean": 0.17184574999999985,
+          "std": 8.736580162911545e-09
+        }
+      ]
+    },
+    {
+      "gamma_N_per_m": 0.6,
+      "exposure_m": 0.03737436060469656,
+      "top_surface_deviation": {
+        "min_m": -9.312456438747347e-07,
+        "max_m": 7.553295559168888e-07,
+        "mean_m": 0.0,
+        "rms_about_mean_m": 2.4053709202489546e-07
+      },
+      "top_surface_absolute_range_m": [
+        6.511983184680411e-05,
+        6.680640704659573e-05
+      ],
+      "film_min_m": 5.979880588495745e-05,
+      "film_max_m": 6.641397057955657e-05,
+      "film_mean_m": 6.362943104938367e-05,
+      "film_volume_m3": 2.345635346204479e-08,
+      "volume_relative_error": 2.220446049250313e-16,
+      "slope": {
+        "min": 7.113360342262944e-08,
+        "max": 0.001956033586619822,
+        "mean": 0.0005584593911799879,
+        "rms": 0.0006303331887433163
+      },
+      "rms_survival": 0.1367943908137019,
+      "old_roughness_if_recomputed": {
+        "height_amplitude_multiplier": 1.0,
+        "minimum": 0.17184676899768425,
+        "maximum": 0.19584574999999999,
+        "mean": 0.17984456858600553,
+        "std": 0.004182434787569864
+      }
+    }
+  ],
+  "central_state": {
+    "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/porcelain_reference_history/state/top_surface_deviation_m.npy",
+    "sha256": "c3b928f9d6be23b36871f91982f33b924a99d5f84bffdcfdf5ebcdc1622e2031",
+    "bytes": 67108992,
+    "dtype": "float32",
+    "resolution": [
+      4096,
+      4096
+    ],
+    "units": "m",
+    "top_surface_mean_m": 6.605107749067884e-05,
+    "max_float32_storage_error_m": 5.683313164566361e-14
+  },
+  "maps": {
+    "Height": {
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/porcelain_reference_history/maps/Glaze_Height.png",
+      "sha256": "af6f11b4df7de6b67a8862bf83dcc0625985b52c37f3c1b07054ee31945a4efc",
+      "bytes": 15866133,
+      "resolution": [
+        4096,
+        4096
+      ],
+      "channels": 1,
+      "bits": 16,
+      "colorspace": "Non-Color",
+      "CRC_and_integer_roundtrip_exact": true,
+      "scale_m": 4e-05,
+      "midlevel": 0.5,
+      "quantization_max_abs_error_m": 3.051804316749688e-10
+    },
+    "Normal": {
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/porcelain_reference_history/maps/Glaze_Normal_OpenGL_RGB16.png",
+      "sha256": "2cf053dab2a34ea25b20434ed681d6d61087cc8a4e8f7e8f2ae10227e912a0c4",
+      "bytes": 11639757,
+      "resolution": [
+        4096,
+        4096
+      ],
+      "channels": 3,
+      "bits": 16,
+      "colorspace": "Non-Color",
+      "CRC_and_integer_roundtrip_exact": true,
+      "convention": "OpenGL; (-dH/dx,+dH/dy,1), top-origin rows",
+      "slope_method": "Periodic centered native-grid derivative in SI",
+      "component_quantization_bound": 1.5259021896696422e-05
+    }
+  },
+  "physical_encoding": {
+    "height_scale_m": 4e-05,
+    "tile_m": 0.0192,
+    "mean_film_m": 6.362943104938368e-05,
+    "mean_top_m": 6.605107749067884e-05,
+    "substrate_mean_m": 2.421646441295161e-06
+  },
+  "first_binding_scope": {
+    "history_variant": "Evolved height and normal only",
+    "coat_roughness": "Exact existing control Glaze_Roughness image, retained for isolated attribution",
+    "roughness_source_path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/porcelain_deposition_arrivals/maps/control/Glaze_Roughness.png",
+    "roughness_source_sha256": "67f6167b883662b0fe1d63115a3afbab1ea1bda48da90ac6ac9cd4715ec7dad2",
+    "shared_state_PBR_qualification": false
+  },
+  "held_optical_variant": {
+    "status": "HELD; not bound or rendered",
+    "coat_roughness_scalar": 0.17984575,
+    "purpose": "Separate intrinsic-only roughness accounting, controlled against the new-history frame"
+  },
+  "all_physical_fields_finite": true,
+  "all_sensitivity_films_positive": true,
+  "mean_and_volume_conservation_pass": true,
+  "elapsed_seconds": 11.30768961800095,
+  "peak_rss_mib": 718.80859375,
+  "source_sha256": {
+    "model.py": "d94003dfcda6b4d7ff2cb6b13b5518deb385b18f94ec4a79f72e99fd74b23b8c",
+    "run_generation_guarded.py": "280fb4a824379a4ee5fda4b772cba0f3a841d106dccfd7593c609d3c9db3a7d5",
+    "generate.py": "aea2f8ae986b93271995f8d4914c758a0f744f9fb34bb893c1fa2924eccf5a35"
+  }
+}

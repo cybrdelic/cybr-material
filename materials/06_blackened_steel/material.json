@@ -1,6 +1,6 @@
 {
   "id": "06_blackened_steel",
-  "name": "Blackened Steel / Worn",
+  "name": "Blackened Steel / Satin Oxide",
   "family": "Metal",
   "tile_m": 0.25,
   "height_scale_m": 0.00055,
@@ -9,7 +9,7 @@
   "metallic": 0,
   "anisotropy": 0.14,
   "preview_diameter_m": 0.12,
-  "description": "Black oxide steel with directionally rubbed exposure, terraced rust crusts, corrosion pits and short abrasive score groups.",
+  "description": "Intact black oxide on satin machined steel; exposed edges are assigned on fabricated meshes.",
   "resolution": 4096,
   "maps": {
     "BaseColor.png": "sRGB RGB8; intrinsic color, no lighting",

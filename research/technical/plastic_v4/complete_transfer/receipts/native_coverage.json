@@ -1,0 +1,386 @@
+{
+  "lattice_history": [
+    {
+      "iteration": 0,
+      "vertices": 418123,
+      "triangles": 836242,
+      "max_conservative_pixels": 0.2755783504050198,
+      "rows": [
+        {
+          "chart": 0,
+          "lattice_samples": 16777216,
+          "all_samples_max_absolute_m": 3.0275265452338056e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 3.0275265452338056e-05,
+              "max_projected_pixels": 0.179974027965305,
+              "samples": 16777216
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 6.889458820011042e-06,
+              "max_projected_pixels": 0.24196178557130193,
+              "samples": 1962191
+            }
+          }
+        },
+        {
+          "chart": 1,
+          "lattice_samples": 1050625,
+          "all_samples_max_absolute_m": 1.8879709375832316e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 1.8879709375832316e-05,
+              "max_projected_pixels": 0.13960554457790636,
+              "samples": 1050625
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 3.415369714431709e-06,
+              "max_projected_pixels": 0.12533841256399772,
+              "samples": 184369
+            }
+          }
+        },
+        {
+          "chart": 2,
+          "lattice_samples": 1378304,
+          "all_samples_max_absolute_m": 1.6478857046863045e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 1.6478857046863045e-05,
+              "max_projected_pixels": 0.1220248294429345,
+              "samples": 1378304
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 3.4348510903414324e-06,
+              "max_projected_pixels": 0.1091377059868418,
+              "samples": 128104
+            }
+          }
+        },
+        {
+          "chart": 3,
+          "lattice_samples": 1378304,
+          "all_samples_max_absolute_m": 1.6478857046858447e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 1.6478857046858447e-05,
+              "max_projected_pixels": 0.1220247739921458,
+              "samples": 1378304
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 0.0,
+              "max_projected_pixels": 0.0,
+              "samples": 0
+            }
+          }
+        },
+        {
+          "chart": 4,
+          "lattice_samples": 1378304,
+          "all_samples_max_absolute_m": 1.6478850885848997e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 1.6478850885848997e-05,
+              "max_projected_pixels": 0.12168033897417617,
+              "samples": 1378304
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 3.549004161755459e-06,
+              "max_projected_pixels": 0.10453762119350388,
+              "samples": 483294
+            }
+          }
+        },
+        {
+          "chart": 5,
+          "lattice_samples": 1378304,
+          "all_samples_max_absolute_m": 1.6478857046858447e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 1.6478857046858447e-05,
+              "max_projected_pixels": 0.1216803102804742,
+              "samples": 1378304
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 0.0,
+              "max_projected_pixels": 0.0,
+              "samples": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "iteration": 1,
+      "vertices": 424687,
+      "triangles": 849370,
+      "max_conservative_pixels": 0.25163409277052734,
+      "rows": [
+        {
+          "chart": 0,
+          "lattice_samples": 16777216,
+          "all_samples_max_absolute_m": 3.397060340518663e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 3.397060340518663e-05,
+              "max_projected_pixels": 0.20194317637105366,
+              "samples": 16777216
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 5.023851224653204e-06,
+              "max_projected_pixels": 0.17645538922665077,
+              "samples": 1962191
+            }
+          }
+        },
+        {
+          "chart": 1,
+          "lattice_samples": 1050625,
+          "all_samples_max_absolute_m": 1.8879709375832316e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 1.8879709375832316e-05,
+              "max_projected_pixels": 0.13960554457790636,
+              "samples": 1050625
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 3.415369714431709e-06,
+              "max_projected_pixels": 0.12533841256399772,
+              "samples": 184369
+            }
+          }
+        },
+        {
+          "chart": 2,
+          "lattice_samples": 1378304,
+          "all_samples_max_absolute_m": 1.6478857046863045e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 1.6478857046863045e-05,
+              "max_projected_pixels": 0.1220248294429345,
+              "samples": 1378304
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 3.4348510903414324e-06,
+              "max_projected_pixels": 0.1091377059868418,
+              "samples": 128104
+            }
+          }
+        },
+        {
+          "chart": 3,
+          "lattice_samples": 1378304,
+          "all_samples_max_absolute_m": 1.6478857046858447e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 1.6478857046858447e-05,
+              "max_projected_pixels": 0.1220247739921458,
+              "samples": 1378304
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 0.0,
+              "max_projected_pixels": 0.0,
+              "samples": 0
+            }
+          }
+        },
+        {
+          "chart": 4,
+          "lattice_samples": 1378304,
+          "all_samples_max_absolute_m": 1.6478850885848997e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 1.6478850885848997e-05,
+              "max_projected_pixels": 0.12168033897417617,
+              "samples": 1378304
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 3.452747668462582e-06,
+              "max_projected_pixels": 0.10453762119350388,
+              "samples": 483294
+            }
+          }
+        },
+        {
+          "chart": 5,
+          "lattice_samples": 1378304,
+          "all_samples_max_absolute_m": 1.6478857046858447e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 1.6478857046858447e-05,
+              "max_projected_pixels": 0.1216803102804742,
+              "samples": 1378304
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 0.0,
+              "max_projected_pixels": 0.0,
+              "samples": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "vertices": 427369,
+      "triangles": 854734,
+      "max_conservative_pixels": 0.19942895540737599,
+      "rows": [
+        {
+          "chart": 0,
+          "lattice_samples": 16777216,
+          "all_samples_max_absolute_m": 2.6922909678350663e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 2.6922909678350663e-05,
+              "max_projected_pixels": 0.1600452121578084,
+              "samples": 16777216
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 3.4996241675084875e-06,
+              "max_projected_pixels": 0.13215623862514808,
+              "samples": 1962191
+            }
+          }
+        },
+        {
+          "chart": 1,
+          "lattice_samples": 1050625,
+          "all_samples_max_absolute_m": 1.8879709375832316e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 1.8879709375832316e-05,
+              "max_projected_pixels": 0.13960554457790636,
+              "samples": 1050625
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 3.415369714431709e-06,
+              "max_projected_pixels": 0.12533841256399772,
+              "samples": 184369
+            }
+          }
+        },
+        {
+          "chart": 2,
+          "lattice_samples": 1378304,
+          "all_samples_max_absolute_m": 1.6478857046863045e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 1.6478857046863045e-05,
+              "max_projected_pixels": 0.1220248294429345,
+              "samples": 1378304
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 3.4348510903414324e-06,
+              "max_projected_pixels": 0.1091377059868418,
+              "samples": 128104
+            }
+          }
+        },
+        {
+          "chart": 3,
+          "lattice_samples": 1378304,
+          "all_samples_max_absolute_m": 1.6478857046858447e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 1.6478857046858447e-05,
+              "max_projected_pixels": 0.1220247739921458,
+              "samples": 1378304
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 0.0,
+              "max_projected_pixels": 0.0,
+              "samples": 0
+            }
+          }
+        },
+        {
+          "chart": 4,
+          "lattice_samples": 1378304,
+          "all_samples_max_absolute_m": 1.6478850885848997e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 1.6478850885848997e-05,
+              "max_projected_pixels": 0.12168033897417617,
+              "samples": 1378304
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 3.452747668462582e-06,
+              "max_projected_pixels": 0.10453762119350388,
+              "samples": 483294
+            }
+          }
+        },
+        {
+          "chart": 5,
+          "lattice_samples": 1378304,
+          "all_samples_max_absolute_m": 1.6478857046858447e-05,
+          "cameras": {
+            "Slab / shared camera": {
+              "max_absolute_m": 1.6478857046858447e-05,
+              "max_projected_pixels": 0.1216803102804742,
+              "samples": 1378304
+            },
+            "Plastic / authored molding detail camera": {
+              "max_absolute_m": 0.0,
+              "max_projected_pixels": 0.0,
+              "samples": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "final_dense": {
+    "cameras": {
+      "Slab / shared camera": {
+        "max_absolute_m": 2.7176407073630174e-05,
+        "max_projected_pixels": 0.16155466985505984,
+        "samples": 34189360
+      },
+      "Plastic / authored molding detail camera": {
+        "max_absolute_m": 3.49998986098827e-06,
+        "max_projected_pixels": 0.1325986045478822,
+        "samples": 17637686
+      }
+    },
+    "all_chart_sampled_max_absolute_m": 2.7176407073630174e-05,
+    "max_camera_conservative_pixels": 0.2013067138422206,
+    "samples_per_triangle": 40,
+    "passes_sampled_camera_budget": true
+  },
+  "topology": {
+    "closed_two_incident_edges": true,
+    "opposite_oriented_incidence": true,
+    "euler_characteristic": 2,
+    "minimum_double_triangle_area_m2": 7.702014188273694e-11,
+    "positive_volume_m3": 4.9868554179242e-05,
+    "bounds_m": [
+      [
+        -0.040022,
+        -0.040022,
+        1.5429998783711343e-27
+      ],
+      [
+        0.040022,
+        0.040022,
+        0.00802734414774833
+      ]
+    ],
+    "floor_z_m": -1e-06,
+    "minimum_floor_clearance_m": 1e-06
+  },
+  "passes_numerical_lod": true,
+  "vertices": 427369,
+  "triangles": 854734,
+  "source_sha256": "2edd2d72579307dbf8fe15332e3a98fd84aa658d4a3395c96b4af44b51413fde",
+  "adaptive_source_sha256": "06e0543201280af02388c2aeea67ce82a6a00c45b927c660dac5961505525aa1",
+  "surface_contract_sha256": "f80d51f162e6e0ac3c79e7a7a1917f747fd0a0bc7825489182dbb82f7d057228",
+  "peak_RSS_MiB": 2278.76953125,
+  "seconds": 155.7712316440011,
+  "not_global20nm_qualification": true,
+  "not_supremum_proof": true,
+  "arrays_path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/camera_lod_mesh_final.npz",
+  "arrays_sha256": "a7bec17caab77fa2f03d6f66fd2b04d9011bfa65abb4204cb86a2a1b62f52847",
+  "arrays_bytes": 8750966
+}

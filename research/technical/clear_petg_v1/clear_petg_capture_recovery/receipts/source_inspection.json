@@ -1,0 +1,35 @@
+{
+  "source": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/clear_petg_capture_recovery/scenes/23_petg_transparent_native4k_slab.blend",
+  "source_sha256": "ed0faf92dbd856fc33bae6b495d907fc7293e67d60cabf5b4483e6778b6f9983",
+  "scene": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/clear_petg_capture_recovery/scenes/23_petg_reconstructed_first_hit_guides.blend",
+  "scene_sha256": "bb4204e0016dd852e6b7ad209ff99133152f167e41ffaad2d4b83b64573d06cb",
+  "dimensions_m": [
+    0.02800000086426735,
+    0.026000000536441803,
+    0.001304594217799604
+  ],
+  "vertices": 268578,
+  "faces": 268576,
+  "closed_manifold": true,
+  "positive_volume_m3": 8.752300656922877e-07,
+  "all_original_surface_and_volume_nodes_equal": true,
+  "guides": [
+    {
+      "material": "PETG / Clear printed wall",
+      "first_hit_feature": "unit dielectric feature",
+      "transmission": 0.9599999785423279,
+      "homogeneous_absorption_retained": true
+    },
+    {
+      "material": "Slab / neutral floor",
+      "first_hit_feature": "intrinsic matte color",
+      "transmission": 0.0,
+      "homogeneous_absorption_retained": false
+    }
+  ],
+  "existing_collapsed_cut_face_UVs": 2336,
+  "guide_reference": "https://www.openimagedenoise.org/documentation.html#albedos",
+  "guide_scope": "Documented first-hit unit feature for dielectric; actual shading normal. Homogeneous volume absorption is retained in beauty, not encoded as a view-dependent guide. Behind-surface detail is not protected by first-hit features.",
+  "physical_transparency_accepted": false,
+  "noise_or_detail_acceptance": false
+}

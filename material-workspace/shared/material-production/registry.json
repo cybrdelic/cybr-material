@@ -1,0 +1,2507 @@
+{
+  "schema_version": 1,
+  "selection_policy": "Explicit edits only. Revision numbers and modification times never promote experiments. Availability and quality are separate.",
+  "workspace_root_environment": "MATERIAL_WORKSPACE",
+  "units": "meters",
+  "renderer": "shared/cloud-eevee/run_panel_queue.py",
+  "materials": [
+    {
+      "id": "01_calacatta_oro",
+      "name": "Calacatta Oro / Honed Quarry Slab",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/01_calacatta_oro_original_native4k_slab_r2.blend",
+        "scene_sha256": "afa4df3329521615dd98b67ec23790def158aa29b01db7be51b8a3046d5f5162",
+        "version": "01_calacatta_oro_original_native4k_slab_r2",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_01_calacatta_oro_native4k.png",
+          "sha256": "d654107a1d9cd6f490d9a539348a0dd78532e935da81453c48278e6597658fc6",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_01_calacatta_oro_native4k.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "02_roman_travertine",
+      "name": "Roman Travertine / Honed Vein Cut",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/02_roman_travertine_original_native4k_slab.blend",
+        "scene_sha256": "284035eb7d5e51c3fd0fea2eca46fc989a57b60af33b53a42313c8d2020e4054",
+        "version": "02_roman_travertine_original_native4k_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_02_roman_travertine_native4k.png",
+          "sha256": "44e4285cf67dd04b7b6dfd2cc713f2a41c1a30eb658d6ec5661e14dce1c27567",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_02_roman_travertine_native4k.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "03_american_walnut",
+      "name": "American Walnut / Timeworn",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": true,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/03_american_walnut_original_native4k_slab.blend",
+        "scene_sha256": "5992c0f1097a0d0f8eeb3d4044d11ddaa597dfeaaee14e76068c61dc5aaa2972",
+        "version": "03_american_walnut_original_native4k_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_03_american_walnut_native4k.png",
+          "sha256": "a1ec9b53024cd781d39ef3c4bccb55e2e02e94ba53ff940463200d2af412cc87",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_03_american_walnut_native4k.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "04_fumed_oak",
+      "name": "Fumed Oak / Open Grain",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": true,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/04_fumed_oak_selected_native4k_slab.blend",
+        "scene_sha256": "c2adbdbcb7d3544f520294cfe5f7b0ae807256b429a7d759423e3e5c871d4ba6",
+        "version": "04_fumed_oak_selected_native4k_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_04_fumed_oak_native4k.png",
+          "sha256": "39b9c44e7baf76ff1d5e31a39032b22ee264745fe47e6ed996d52de2e57be00e",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_04_fumed_oak_native4k.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "05_champagne_brass",
+      "name": "Champagne Brass / Satin Brushed",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": true,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "Exact original commit source recovered and pinned; reduced native source generation tested; full4096 regenerated-byte qualification pending",
+      "dependencies_status": "native4096 verified original map set plus audited top-only normal transfer",
+      "selected": {
+        "scene": "shared/material-causal-rebuild/curved-normal-transfer/candidates/05_champagne_brass/05_champagne_brass_top_only_normal_candidate.blend",
+        "scene_sha256": "4907f4900fbc659294c78befaa729946919d439400e9b09d4fc0d24a656920f4",
+        "version": "05_champagne_brass_top_only_normal_candidate",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "studio_lights_downward": true,
+          "explicit_uv_tangent": true,
+          "metal_reflection_softbox": true,
+          "color_depth": 16,
+          "dither_intensity": 0,
+          "rss_cap_mib": 2048,
+          "metal_softbox_power": 12,
+          "metal_softbox_width": 0.35,
+          "metal_softbox_height": 1.6
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_05_brass_normal_fixed_panel.png",
+          "sha256": "b7edfb12e3f442461f2d7c5d7874d2f9941c1590d2f64c7fa28c8d478b3c41ef",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_05_brass_normal_fixed_panel.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "physical_extent_m": [
+        0.2,
+        0.2,
+        0.003
+      ],
+      "map_contract": {
+        "source": "shared/material-native4k/original-verified/materials/05_champagne_brass/material.json",
+        "source_sha256": "f3105ef3feb8df007177e3a861cdc8a8e5fd78ee88c5baa34f67893763ca8937",
+        "map_root": "shared/material-native4k/original-verified/materials/05_champagne_brass",
+        "normal": "Full +XYZ object-space normal on source top only; original tangent micro normal on sides/bevel",
+        "height": "(encoded-0.5)*0.0002 meters",
+        "color": "BaseColor sRGB; all data Non-Color",
+        "geometry": "256x256 top chart; source side and generated bevel retain original shader",
+        "map_hashes": {
+          "ORM.png": "9fbeef7f3cc5001b83f3a0fe7ad4028f8a596f8d689e381ad6443674ea93f7e8",
+          "Normal_DirectX.png": "9ebf293058a8591acf358955512b59dcfdd166775289ec26e2f6c6c407930dd1",
+          "Metallic.png": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+          "Opacity.png": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+          "WearMask.png": "26f63a22fe786a0466623f3c3710cb1784dba98e535bc18fb93e8cae9c17d221",
+          "Height_Macro.png": "edd2b60be06c758b0a3f242480c9df7b5f492b9d1bd65b3cf91446320dbc6f05",
+          "Height.png": "8261cdaedfda99e751ea08bc0e115769483e1a79ef8ffb1d92348c470d8937d1",
+          "BaseColor.png": "2859e59886d034b9f3cd59f2a6ea12387e82ba75a02a3a3b2e9c6b7f6b2bba4c",
+          "Normal_OpenGL.png": "23f1356276a8e7929bf6f2e714245383131d1e346efd483cac515290a4c3886e",
+          "Normal_Micro_OpenGL.png": "595e45885cf3c2de0bfee207ccc07bda5b5faca9b3af217aaee55275790c1706",
+          "Roughness.png": "fd3f199fc71d54a141fac36c18caead364e604b01906654b81950da69b09bcb4",
+          "AO.png": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63"
+        }
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      },
+      "preferred_visual_reference": {
+        "kind": "complete_panel",
+        "status": "restored_visual_baseline",
+        "library_file_id": "libfile_3aabaaef6b888191a211a505d71207ca",
+        "library_version": 0,
+        "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/brass_contact_study_r3/05_champagne_brass_labeled.png",
+        "labeled_image_sha256": "36ff2fccd8550b110ccdbedbfd9e4b36c9449f9cfe8873152fe2ce4ea070dcf0",
+        "canonical_render_sha256": "62cf17a9c2f9bdc85ee50ab68e7abff8c2e8aa2e49e5fcfc6b92487ae7051beb",
+        "view_scope": "Complete32.031mm contact-study coupon; preferred appearance reference, not calibrated wear",
+        "protected": true,
+        "reason": "Restore the stronger reviewed complete view after the user reported regressions; diagnostic controls cannot replace it",
+        "historical_source_sha256": "94a87b33f8f7618ab8fc7af5800be7221a5229276baaf7d90935fe81d9a23dab",
+        "source_binary_locally_available": true,
+        "rerender_profile_status": "Exact historical32mm binary and all bound native channels recovered. Original1280 capture job/softbox override receipt remains unavailable; do not substitute the different200mm integration profile.",
+        "historical_source_library_file_id": "libfile_a3380eb4145081919cf32cd47a945981",
+        "historical_source_path": "/workspace/scratch/b4387906eb93/brass-selected-recovery-20261006/05_brass_contact_32mm_conservative_study_r3.blend",
+        "portable_source": {
+          "path": "/workspace/scratch/b4387906eb93/brass-selected-recovery-20261006/05_brass_contact_r3_portable_paths.blend",
+          "sha256": "eeefcac8e0c475ec6419d391a0472a4f7006898248dd36a67602d2127b17fbb7",
+          "library_file_id": "libfile_1b8ba29e14448191a06c9132bd30c467",
+          "version": 0,
+          "only_paths_and_packing_changed": true,
+          "all_bound_maps_native4096": true,
+          "original_five_channels_integer_pixels_exact": true,
+          "contact_normal_exact_library_file_id": "libfile_1fbf6006853481918d5ab0d81f17b1c2",
+          "verification_receipt": "/workspace/scratch/b4387906eb93/brass-selected-recovery-20261006/receipts/portable_source.json",
+          "verification_receipt_sha256": "53cea6277721ce7313c5777b99b1d5290666dd03edb735f4d822b5152f2a1509"
+        }
+      }
+    },
+    {
+      "id": "06_blackened_steel",
+      "name": "Blackened Steel / Satin Oxide",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": true,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/06_blackened_steel_process_history_r1_panel.blend",
+        "scene_sha256": "a13a4b38424d229b9c3375388c7f1e374b647180c161d16cb20ac1f2b2e7f101",
+        "version": "06_blackened_steel_process_history_r1_panel",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "studio_lights_downward": true,
+          "metal_reflection_softbox": true,
+          "explicit_uv_tangent": true,
+          "metal_softbox_power": 32,
+          "metal_softbox_width": 1.1,
+          "metal_softbox_height": 0.75,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_06_blackened_steel_history_r1_panel.png",
+          "sha256": "66a83eca2a5b27657cfe6ef9707f0405821e233625cc5263882d347121b9c541",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_06_blackened_steel_history_r1_panel.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      },
+      "preferred_visual_reference": {
+        "kind": "complete_panel",
+        "status": "restored_visual_baseline",
+        "library_file_id": "libfile_255cf2d71ffc8191a01096030993bd04",
+        "library_version": 0,
+        "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/steel_native32mm_r1/06_blackened_steel_labeled.png",
+        "labeled_image_sha256": "03a0527c96b3a8efde6f0ed7100bf5461e6c1035d63d284308fe9c7e5420e8c1",
+        "canonical_render_sha256": "c31ada53601df8c26642ca9beef33487e22217e4d97bf1c41ee801764a73dff8",
+        "view_scope": "Complete32mm original-finish coupon",
+        "protected": true,
+        "reason": "Restore the stronger reviewed complete view after the user reported regressions; diagnostic controls cannot replace it",
+        "source_scene": "shared/material-native4k/steel-presentation/scenes/06_steel_native32mm_top_normal_r1.blend",
+        "source_scene_sha256": "e0256ee3c0f09b95093300d875d7131a50d186072aedd06ea37afd81f3e82725",
+        "source_library_file_id": "libfile_e0c8b149c59c8191a41da4acc3bdb583",
+        "source_binary_locally_available": true,
+        "rerender_profile_status": "Original1280 capture job unavailable. Historical owner handoff records1280/128 and softbox32/1.1/.75; recovery smoke profile is not an exact replacement."
+      }
+    },
+    {
+      "id": "07_bone_porcelain",
+      "name": "Bone Porcelain / Clear Glaze",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": true,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/07_bone_porcelain_new_causal_surface_r3_normal16_panel.blend",
+        "scene_sha256": "cfb224ee9ff71c1c544274ca9e5ca907af9686196ec195bb0c74aea2d57b9b19",
+        "version": "07_bone_porcelain_new_causal_surface_r3_normal16_panel",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "color_depth": 16,
+          "dither_intensity": 0,
+          "save_guides": true,
+          "light_tree": false,
+          "studio_lights_downward": true,
+          "rss_cap_mib": 2560
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_07_porcelain_audit_fixed_r3_panel.png",
+          "sha256": "92a00ad0f957b39133ee04068928095cafc843fe200070e73ce36e4174f22b11",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_07_porcelain_audit_fixed_r3_panel.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      },
+      "preferred_visual_reference": {
+        "kind": "complete_panel",
+        "status": "verified_narrow_visual_improvement",
+        "library_file_id": "libfile_4a7329d006b08191ad4ef94822eb2141",
+        "library_version": 0,
+        "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/porcelain_reference_firing/full/07_bone_porcelain_reference_full.png",
+        "labeled_image_sha256": "464938b50aae1a1f712506f937337284c04085c10991d87e66ba380dc9a0d3aa",
+        "canonical_render_sha256": "766a5c26cf21c2e5889b4dd40f0dba8059a2bc0196b4af84f358e3104dec3db8",
+        "source_scene": "shared/material-production/experiments/porcelain_reference_history/scenes/07_porcelain_reference_history_intrinsic_HELD.blend",
+        "source_scene_sha256": "6385b8dcc70876cab8b4030fbc16d89d769df47e0b6aaec9778f409f437011a3",
+        "capture_run": "shared/material-production/runs/porcelain_reference_intrinsic_full_capture_20261006_1929",
+        "view_scope": "96 mm tile \u00b7 complete view",
+        "scope": "Continuous glaze-lip improvement; assumed reference firing history and effective optics remain uncalibrated.",
+        "review_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/porcelain_reference_history/receipts/owner_final_visual_review.json",
+        "review_receipt_sha256": "658bfd4f7038f5e99ed483a91d10415896dcdaf215d69e546a90b2fe71d16f3d",
+        "physical_model_qualified": false,
+        "protected": true,
+        "capture_recipe": {
+          "experiment": "porcelain_reference_intrinsic_full",
+          "manifest": "shared/material-production/experiments/porcelain_reference_intrinsic_full/experiment.json",
+          "manifest_sha256": "90a9cf860506fa65403b4fa9e2bf7fb1ae6cf431fc3131865930e9b88e1119ee",
+          "build_argv": [
+            "python3",
+            "-m",
+            "materials",
+            "experiment",
+            "porcelain_reference_intrinsic_full",
+            "--out",
+            "<fresh-build-directory>"
+          ],
+          "capture_argv": [
+            "python3",
+            "-m",
+            "materials",
+            "capture",
+            "<fresh-build-directory>/build.json",
+            "--out",
+            "<fresh-capture-directory>",
+            "--mode",
+            "guided",
+            "--samples",
+            "128",
+            "--fixed-samples"
+          ],
+          "dimensions_px": [
+            960,
+            960
+          ],
+          "studio_lights_downward": true
+        }
+      },
+      "verified_detail_references": [
+        {
+          "kind": "detail_view",
+          "status": "verified_narrow_visual_improvement",
+          "library_file_id": "libfile_bd3d81c371d481919c4629d2f6bb9f68",
+          "library_version": 0,
+          "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/porcelain_reference_firing/macro/07_bone_porcelain_reference_macro.png",
+          "labeled_image_sha256": "f20576e4683b047b7c20073818fb026ee9ee9f67a349652121e4908608db2f5b",
+          "canonical_render_sha256": "67c140afa0c83dda5ebe42a9a26176ed1c5920f4a0a4cd05bb2490c368dd0437",
+          "source_scene": "shared/material-production/experiments/porcelain_reference_history/scenes/07_porcelain_reference_history_intrinsic_HELD.blend",
+          "source_scene_sha256": "6385b8dcc70876cab8b4030fbc16d89d769df47e0b6aaec9778f409f437011a3",
+          "capture_run": "shared/material-production/runs/porcelain_intrinsic_macro_capture_20261006_1922",
+          "view_scope": "28 mm field \u00b7 continuous glaze highlight",
+          "scope": "Continuous glaze-lip improvement; assumed reference firing history and effective optics remain uncalibrated.",
+          "review_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/porcelain_reference_history/receipts/owner_final_visual_review.json",
+          "review_receipt_sha256": "658bfd4f7038f5e99ed483a91d10415896dcdaf215d69e546a90b2fe71d16f3d",
+          "physical_model_qualified": false,
+          "protected": true,
+          "capture_recipe": {
+            "experiment": "porcelain_reference_intrinsic_macro",
+            "manifest": "shared/material-production/experiments/porcelain_reference_intrinsic_macro/experiment.json",
+            "manifest_sha256": "ae95e4a5e390f59b016983e661ebd1fcd034c8f90e1760cca5b50c35fd1002d9",
+            "build_argv": [
+              "python3",
+              "-m",
+              "materials",
+              "experiment",
+              "porcelain_reference_intrinsic_macro",
+              "--out",
+              "<fresh-build-directory>"
+            ],
+            "capture_argv": [
+              "python3",
+              "-m",
+              "materials",
+              "capture",
+              "<fresh-build-directory>/build.json",
+              "--out",
+              "<fresh-capture-directory>",
+              "--mode",
+              "guided",
+              "--samples",
+              "128",
+              "--fixed-samples"
+            ],
+            "dimensions_px": [
+              960,
+              960
+            ],
+            "studio_lights_downward": true
+          }
+        },
+        {
+          "kind": "alternate_lighting_view",
+          "status": "verified_narrow_visual_improvement",
+          "library_file_id": "libfile_28e4ec8074908191b2d7b9b0c19471be",
+          "library_version": 0,
+          "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/porcelain_reference_firing/second_light/07_bone_porcelain_reference_second_light.png",
+          "labeled_image_sha256": "8092c904a103bd9be0c0ff5aa6e8a0a9bd47d6cd2447afc7728ec5c864993fc9",
+          "canonical_render_sha256": "0f9ecf642503d61096baa8b36e7f935d65fe6f63fdb6292946d0560182836936",
+          "source_scene": "shared/material-production/experiments/porcelain_reference_history/second_light_sources/07_porcelain_reference_intrinsic_second_light.blend",
+          "source_scene_sha256": "027873508da459093fd7775f92152cabecdddf856b2299cbcb3f669bc777dcd3",
+          "capture_run": "shared/material-production/runs/porcelain_reference_intrinsic_second_capture_20261006_1927",
+          "view_scope": "96 mm tile \u00b7 second lighting",
+          "scope": "Continuous glaze-lip improvement; assumed reference firing history and effective optics remain uncalibrated.",
+          "review_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/porcelain_reference_history/receipts/owner_final_visual_review.json",
+          "review_receipt_sha256": "658bfd4f7038f5e99ed483a91d10415896dcdaf215d69e546a90b2fe71d16f3d",
+          "physical_model_qualified": false,
+          "protected": true,
+          "capture_recipe": {
+            "experiment": "porcelain_reference_intrinsic_second_light",
+            "manifest": "shared/material-production/experiments/porcelain_reference_intrinsic_second_light/experiment.json",
+            "manifest_sha256": "554e468a682a20d6b035619546830b13562fdd3dd0480c460c4e9029500a0d0a",
+            "build_argv": [
+              "python3",
+              "-m",
+              "materials",
+              "experiment",
+              "porcelain_reference_intrinsic_second_light",
+              "--out",
+              "<fresh-build-directory>"
+            ],
+            "capture_argv": [
+              "python3",
+              "-m",
+              "materials",
+              "capture",
+              "<fresh-build-directory>/build.json",
+              "--out",
+              "<fresh-capture-directory>",
+              "--mode",
+              "guided",
+              "--samples",
+              "128",
+              "--fixed-samples"
+            ],
+            "dimensions_px": [
+              960,
+              960
+            ],
+            "studio_lights_downward": true
+          }
+        }
+      ],
+      "preferred_visual_history": [
+        {
+          "kind": "complete_panel",
+          "status": "retained_visual_baseline",
+          "library_file_id": "libfile_edc83cc981548191906982cc4fa7763b",
+          "library_version": 1,
+          "labeled_image": "/workspace/scratch/b4387906eb93/porcelain-recovery-20261006-1758/references/07_bone_porcelain_labeled.png",
+          "labeled_image_sha256": "ca85e71f6a161fc8efb2b628ead91a8906829a93e2568a878df9c4725e0d2492",
+          "canonical_render_sha256": "92a00ad0f957b39133ee04068928095cafc843fe200070e73ce36e4174f22b11",
+          "actual_pixel_review": "Complete neutral bone-colored glazed coupon with preserved rounded silhouette, thin glaze rim and visible matte body. Broad face is clean but idealized; retain this complete reference while repairing the surface orientation."
+        }
+      ]
+    },
+    {
+      "id": "08_saddle_leather",
+      "name": "Saddle Leather / Full Grain",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "unqualified original procedural appearance reference; full180mm panel and reduced-model morphology failed",
+      "protected_appearance": true,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "Actual source, bound native4096 image hashes and completed capture references verified 2026-10-06T06:54:07.430049+00:00",
+      "selected": {
+        "scene": "shared/material-production/experiments/leather_coupon_transfer/scenes/08_leather_coupon_full_normal.blend",
+        "scene_sha256": "9fe6cd595d2b55d767dbefd9e8230c061ee2127ff91daaf6d9bc938dea6d9584",
+        "version": "leather_coupon_transfer",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "light_tree": false,
+          "save_guides": true,
+          "color_depth": 16,
+          "dither_intensity": 0,
+          "rss_cap_mib": 2048
+        },
+        "appearance_anchor": {
+          "image": "shared/material-production/runs/leather_coupon_capture_20261006_0535/CLEAN_OIDN_PANEL.png",
+          "sha256": "5db40c180e2343565f964a4a9ae245acab9cb046dee621b59087d922e84875b0",
+          "receipt": "shared/material-production/runs/leather_coupon_capture_20261006_0535/CLEAN_OIDN_PANEL.png.json",
+          "library_file_id": "libfile_67d0b07157a4819185082d78228f59a6",
+          "view_scope": "32.344mm whole coupon"
+        },
+        "source_selection": "unqualified original procedural appearance reference; full180mm panel and reduced-model morphology failed",
+        "dependencies": [
+          {
+            "path": "shared/material-production/runs/leather_original_baseline_20261006_0440/materials/08_saddle_leather/BaseColor.png",
+            "sha256": "690f01c36f19ec1e3269554fb655041cc25699f7c79f75e87e51ead83493cf8d"
+          },
+          {
+            "path": "shared/material-production/runs/leather_original_baseline_20261006_0440/materials/08_saddle_leather/Roughness.png",
+            "sha256": "88e02cfdb9c24ab7692286a88d337a64462e320749adf7af347dd31fb0885dcc"
+          },
+          {
+            "path": "shared/material-production/runs/leather_original_baseline_20261006_0440/materials/08_saddle_leather/Metallic.png",
+            "sha256": "334c4a79f661f8f9c215b7fd06284d5fb3fe7fd3822f10dc8842f85f664c9a7f"
+          },
+          {
+            "path": "shared/material-production/runs/leather_original_baseline_20261006_0440/materials/08_saddle_leather/Opacity.png",
+            "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e"
+          },
+          {
+            "path": "shared/material-production/runs/leather_original_baseline_20261006_0440/materials/08_saddle_leather/Normal_Micro_OpenGL.png",
+            "sha256": "d7161a2ed18597468ae6efa9367daa048f4dea94160640e82e2fc9fb3dcb43a2"
+          },
+          {
+            "path": "shared/material-production/runs/leather_original_baseline_20261006_0440/materials/08_saddle_leather/Normal_OpenGL.png",
+            "sha256": "73d16446904774eaae687d10a5d5004131e550546e36471267ca422d2c7112cf"
+          }
+        ]
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "Stronger original procedural appearance reference at32.344mm. Full180mm panel remains visually failed; corrected mechanical model and new morphology test are unselected."
+      },
+      "selection_history": [
+        {
+          "retired_utc": "2026-10-06T06:54:07.430049+00:00",
+          "selected": null,
+          "quality": "blocked: leather has no qualified selected panel",
+          "reason": "Replace stale pre-audit reference with independently inspected exact correction/reference; previous baseline retained"
+        }
+      ],
+      "reviewed_correction": {
+        "utc": "2026-10-06T06:54:07.430049+00:00",
+        "findings": "Stronger original procedural appearance reference at32.344mm. Full180mm panel remains visually failed; corrected mechanical model and new morphology test are unselected.",
+        "capture_verified": true,
+        "visually_reviewed": true,
+        "formation_simulation_qualified": false,
+        "full_material_realism_accepted": false
+      },
+      "preferred_visual_reference": {
+        "kind": "complete_panel",
+        "status": "restored_visual_baseline",
+        "library_file_id": "libfile_67d0b07157a4819185082d78228f59a6",
+        "canonical_render": "shared/material-production/runs/leather_coupon_capture_20261006_0535/CLEAN_OIDN_PANEL.png",
+        "canonical_render_sha256": "5db40c180e2343565f964a4a9ae245acab9cb046dee621b59087d922e84875b0",
+        "source_scene": "shared/material-production/experiments/leather_coupon_transfer/scenes/08_leather_coupon_full_normal.blend",
+        "source_scene_sha256": "9fe6cd595d2b55d767dbefd9e8230c061ee2127ff91daaf6d9bc938dea6d9584",
+        "view_scope": "32.344mm whole coupon",
+        "protected": true,
+        "reason": "Preserve the stronger original leather reference or verified display cleanup; later numerical experiments do not replace appearance"
+      }
+    },
+    {
+      "id": "09_lime_plaster",
+      "name": "Lime Plaster / Troweled Skim",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-aggregate-rebuild/detail-causal4k/lime-plaster/scenes/09_lime_process_v1_matched.blend",
+        "scene_sha256": "824b4e7c078d01824a104b0e6ba4177556521e192c4b022a0276f2357c5335ad",
+        "version": "09_lime_process_v1_matched",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "color_depth": 16,
+          "dither_intensity": 0,
+          "save_guides": true,
+          "light_tree": false,
+          "studio_lights_downward": true,
+          "rss_cap_mib": 2560
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_09_lime_plaster_new_model_r1_panel.png",
+          "sha256": "01fb0806ba96213ce3f944c9a4f8e9eb8ab83ad7b80a32479181df229e30bea0",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_09_lime_plaster_new_model_r1_panel.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "10_natural_linen",
+      "name": "Natural Linen / Frayed",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/10_natural_linen_selected_native4k_slab.blend",
+        "scene_sha256": "f0f48cae968ab27d13a632cca878126683b5ca9bf78ac3441be347b00fee7843",
+        "version": "10_natural_linen_selected_native4k_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_10_natural_linen_native4k.png",
+          "sha256": "6fc128c9592477b1ad618f6fecf14e62db0ed416d66972816df0815086d1958c",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_10_natural_linen_native4k.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "11_bark",
+      "name": "Bark / Longitudinal plates",
+      "owner": "organic",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": true,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/11_bark_analytic_slab.blend",
+        "scene_sha256": "2d574e7960cd9600f1172233be1633a06cd9f7b13e5508795062565775d71fc7",
+        "version": "11_bark_analytic_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_SLAB_11_bark_analytic.png",
+          "sha256": "a1154e74aeb2bd06f258166b2eb57b9c0c71b1cf9ebb730f68010ee4cf061fb8",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_SLAB_11_bark_analytic.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      },
+      "preferred_visual_reference": {
+        "kind": "complete_panel",
+        "status": "restored_visual_baseline",
+        "library_file_id": "libfile_2b931f9474c08191a084bef236bbd69f",
+        "version": 0,
+        "local_path": "/workspace/scratch/b4387906eb93/labeled-material-panels/11_bark_labeled.png",
+        "sha256": "44914bad6021cfa1ee05c1b2ae871d3bed431125470da6e314a41a4dee2c1e85",
+        "source_png_sha256": "a1154e74aeb2bd06f258166b2eb57b9c0c71b1cf9ebb730f68010ee4cf061fb8",
+        "scope": "Retained stronger visual anchor, not full physical-realism acceptance",
+        "provenance_manifest": "/workspace/scratch/b4387906eb93/recovered-production/reports/curated_restore_20261006_1243/seven_anchor_manifest.json",
+        "provenance_manifest_sha256": "1e5b53c3ed40a510f8290366583141cdc5f5f02a11ae0cacbdd8656edacb2f6c",
+        "exact_source_capture_attribution": "Existing selected source/capture fields retained separately; no new binary or job equivalence is asserted by this image restoration."
+      }
+    },
+    {
+      "id": "12_lattice_wire",
+      "name": "Lattice / Woven stainless wire",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "audited correction; full material-model qualification remains open",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "Actual source, bound native4096 image hashes and completed capture references verified 2026-10-06T06:54:07.430049+00:00",
+      "selected": {
+        "scene": "shared/material-production/experiments/wire_circle_resolution/scenes/wire_circle32_native16.blend",
+        "scene_sha256": "212354236c6dbf2aff5608921b79d41db363ec796729c1ab356f282c98d6b59a",
+        "version": "wire_circle_resolution",
+        "capture": {
+          "camera": "Lattice / seam inspection",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "light_tree": false,
+          "save_guides": true,
+          "color_depth": 16,
+          "dither_intensity": 0,
+          "rss_cap_mib": 2048,
+          "guide_albedo_pass": "OIDN_SurfaceReflectivity",
+          "guide_normal_pass": "OIDN_SurfaceNormal"
+        },
+        "appearance_anchor": {
+          "image": "shared/material-production/runs/wire_circle_resolution_capture_20261006_0550/CLEAN_OIDN_PANEL.png",
+          "sha256": "b999b44c49d045c636c06d1a572a932ee11af0b8569a8e881dde9ea4d4681899",
+          "receipt": "shared/material-production/runs/wire_circle_resolution_capture_20261006_0550/CLEAN_OIDN_PANEL.png.json",
+          "library_file_id": "libfile_bdb7329fcd008191b55b334c90248a7f",
+          "view_scope": "18mm detail"
+        },
+        "source_selection": "audited correction; full material-model qualification remains open",
+        "dependencies": [
+          {
+            "path": "shared/material-production/experiments/wire_loop_uv_fix/maps/BaseColor.png",
+            "sha256": "7abf0389add9305268be52e3ef6fe3ef6139fd538eb346fca68c912dc9225e71"
+          },
+          {
+            "path": "shared/material-production/experiments/wire_loop_uv_fix/maps/Roughness.png",
+            "sha256": "570f6ddf3bf8ab28b9a1c1d234cbdc3d5eb08653cb4b1dceac267ee753dc00b3"
+          },
+          {
+            "path": "shared/material-production/experiments/wire_loop_uv_fix/maps/Metallic.png",
+            "sha256": "71451bcadaad9626a04abedc640c723ab014964ba937ff9f85b0eb026283952c"
+          },
+          {
+            "path": "shared/material-production/experiments/tube_normal_precision/maps/12_lattice_wire_Normal_OpenGL16.png",
+            "sha256": "5293b077509475921fd42c8bac40015163d6844e3a7823609fae41e510043b56"
+          },
+          {
+            "path": "shared/material-production/experiments/opaque_surface_guide_contract/source/surface_guides_v2.py",
+            "sha256": "6988820a25c4ffbaf9974cbe8d378b8179125fc3e41d9ed96167222cd8d48ed0"
+          }
+        ]
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "Corrected circular geometry, seam/cap UVs and normal precision; underlying authored finish-scale model remains unqualified."
+      },
+      "selection_history": [
+        {
+          "retired_utc": "2026-10-06T06:54:07.430049+00:00",
+          "selected": {
+            "scene": "shared/material-slabs/scenes/12_lattice_wire_native4k_slab.blend",
+            "scene_sha256": "5976424b1426864c1bc05e2554db533337bfbbce3a888b847459fe543c093f00",
+            "version": "12_lattice_wire_native4k_slab",
+            "capture": {
+              "camera": "Slab / shared camera",
+              "engine": "CYCLES",
+              "width": 960,
+              "height": 960,
+              "samples": 128,
+              "save_guides": true,
+              "light_tree": false,
+              "studio_lights_downward": true,
+              "color_depth": 16,
+              "dither_intensity": 0
+            },
+            "appearance_anchor": {
+              "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_12_lattice_wire_native4k_studio_r3.png",
+              "sha256": "95ec765c1bf9662b88740504f21b3199aa94b3b46c60ce14b10d6cfc756b5145",
+              "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_12_lattice_wire_native4k_studio_r3.png.json"
+            },
+            "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+          },
+          "quality": "retained appearance; not physically qualified",
+          "reason": "Replace stale pre-audit reference with independently inspected exact correction/reference; previous baseline retained"
+        }
+      ],
+      "reviewed_correction": {
+        "utc": "2026-10-06T06:54:07.430049+00:00",
+        "findings": "Corrected circular geometry, seam/cap UVs and normal precision; underlying authored finish-scale model remains unqualified.",
+        "capture_verified": true,
+        "visually_reviewed": true,
+        "formation_simulation_qualified": false,
+        "full_material_realism_accepted": false,
+        "geometry_scope": "Original positions retained as a subset; added angular samples reduce polygon error from1.705 to0.108 native pixels. Mesh/topology are intentionally changed, not bit-exact whole meshes. Earlier inherited experiment flags claiming geometry_bit_exact/topology_bit_exact do not apply to this angular refinement."
+      }
+    },
+    {
+      "id": "13_lattice_expanded",
+      "name": "Lattice / Expanded diamond metal",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/13_lattice_expanded_native4k_slab.blend",
+        "scene_sha256": "54e03dd7d7d3b4fdbcf1847e1efeee2c021fc22bfc30b56a3d84e8eba52261bb",
+        "version": "13_lattice_expanded_native4k_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "studio_lights_downward": true,
+          "ortho_scale": 0.115,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_13_lattice_expanded_native4k_studio_r3.png",
+          "sha256": "749e8facfe2fb6be3d021fd8077da14172787a828c0e3ee352599ab0049320a8",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_13_lattice_expanded_native4k_studio_r3.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "14_chainmail",
+      "name": "Chainmail / Japanese four in one",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "audited correction; full material-model qualification remains open",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "Actual source, bound native4096 image hashes and completed capture references verified 2026-10-06T06:54:07.430049+00:00",
+      "selected": {
+        "scene": "shared/material-production/experiments/chainmail_normal16_guides_r2/scenes/chainmail_normal16_guides_r2.blend",
+        "scene_sha256": "cb7494557b324dcee7b5060f6a1923d4ccb59929cf5d0b84a9c52c6c9fb02c40",
+        "version": "chainmail_normal16_guides_r2",
+        "capture": {
+          "camera": "Chainmail / seam inspection",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "light_tree": false,
+          "save_guides": true,
+          "color_depth": 16,
+          "dither_intensity": 0,
+          "rss_cap_mib": 2048,
+          "guide_albedo_pass": "OIDN_SurfaceReflectivity",
+          "guide_normal_pass": "OIDN_SurfaceNormal"
+        },
+        "appearance_anchor": {
+          "image": "shared/material-production/runs/chainmail_normal16_capture_20261006_0529/CLEAN_OIDN_PANEL.png",
+          "sha256": "aef0ac888240b4ca226d7c980a201695e330990d32ccf35142a31d67ce502128",
+          "receipt": "shared/material-production/runs/chainmail_normal16_capture_20261006_0529/CLEAN_OIDN_PANEL.png.json",
+          "library_file_id": "libfile_93b36f1a78608191830d15d614480b2f",
+          "view_scope": "18mm detail"
+        },
+        "source_selection": "audited correction; full material-model qualification remains open",
+        "dependencies": [
+          {
+            "path": "shared/material-production/experiments/chainmail_loop_uv_fix/maps/BaseColor.png",
+            "sha256": "4cbdd089be0f1f1b14348c96fc3cb69eda681035a11763b20801755995e8940b"
+          },
+          {
+            "path": "shared/material-production/experiments/chainmail_loop_uv_fix/maps/Roughness.png",
+            "sha256": "e7aa7862256a91f4ba624a597991569f02e95200b878cb4fc2493859a6f7cb9a"
+          },
+          {
+            "path": "shared/material-production/experiments/chainmail_loop_uv_fix/maps/Metallic.png",
+            "sha256": "71451bcadaad9626a04abedc640c723ab014964ba937ff9f85b0eb026283952c"
+          },
+          {
+            "path": "shared/material-production/experiments/chainmail_loop_uv_fix/source/bounded_surface_features.py",
+            "sha256": "162090d9e4fb763483c37aa40b5dbd5e3cbbb21a90b3509b7ee2c34cd9a33ea5"
+          },
+          {
+            "path": "shared/material-production/experiments/tube_normal_precision/maps/14_chainmail_Normal_OpenGL16.png",
+            "sha256": "ce977a3ee4b61f8f67c3ccce1aa85ce548c3080194d7b3bf0f0d367b0641e64c"
+          },
+          {
+            "path": "shared/material-production/experiments/opaque_surface_guide_contract/source/surface_guides_v2.py",
+            "sha256": "6988820a25c4ffbaf9974cbe8d378b8179125fc3e41d9ed96167222cd8d48ed0"
+          }
+        ]
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "Original ring geometry retained; closed loop chart and native16 analytic-normal precision corrected. No new material formation claim."
+      },
+      "selection_history": [
+        {
+          "retired_utc": "2026-10-06T06:54:07.430049+00:00",
+          "selected": {
+            "scene": "shared/material-slabs/scenes/14_chainmail_native4k_slab.blend",
+            "scene_sha256": "f7618b2f1841d0bc66a78790e3752d7e9c3a372b043fad67581845142c373213",
+            "version": "14_chainmail_native4k_slab",
+            "capture": {
+              "camera": "Slab / shared camera",
+              "engine": "CYCLES",
+              "width": 960,
+              "height": 960,
+              "samples": 128,
+              "save_guides": true,
+              "light_tree": false,
+              "color_depth": 16,
+              "dither_intensity": 0
+            },
+            "appearance_anchor": {
+              "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_14_chainmail_native4k.png",
+              "sha256": "f68b5c893a07b7ec10b92e505a16ec53621d936ee91345c0f7c27f8959acf111",
+              "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_14_chainmail_native4k.png.json"
+            },
+            "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+          },
+          "quality": "retained appearance; not physically qualified",
+          "reason": "Replace stale pre-audit reference with independently inspected exact correction/reference; previous baseline retained"
+        }
+      ],
+      "reviewed_correction": {
+        "utc": "2026-10-06T06:54:07.430049+00:00",
+        "findings": "Original ring geometry retained; closed loop chart and native16 analytic-normal precision corrected. No new material formation claim.",
+        "capture_verified": true,
+        "visually_reviewed": true,
+        "formation_simulation_qualified": false,
+        "full_material_realism_accepted": false
+      }
+    },
+    {
+      "id": "15_future_ceramic",
+      "name": "Engineered / Ceramic hex armor",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "audited same-state normal precision correction; subtle reviewed detail change; material realism unqualified",
+      "protected_appearance": true,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "All bound native4096 inputs and source/frame hashes verified 2026-10-06T09:54:06.284556+00:00",
+      "selected": {
+        "scene": "shared/material-production/experiments/hex_normal_precision_recovery/scenes/15_future_ceramic_process_detail_r5_normal16_panel.blend",
+        "scene_sha256": "724e1c217039c06150af870a75cd4e125247ed29d9408c8852e550507e6f7fcb",
+        "version": "hex_recovered_same_state_RGB16_20261006",
+        "capture": {
+          "camera": "Slab / joint and mounting detail",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0,
+          "rss_cap_mib": 2560,
+          "time_limit_seconds": 600
+        },
+        "dependencies": [
+          {
+            "path": "shared/material-production/experiments/hex_normal_precision_recovery/maps_audited/Glaze_Normal_OpenGL_RGB16_complete.png",
+            "sha256": "8385cdbf30f0123db2a63a5be8338a13c71e79e3838776cfda73f5a439902754"
+          },
+          {
+            "path": "shared/material-production/experiments/hex_normal_precision_recovery/maps/Glaze_Roughness.png",
+            "sha256": "69e4890630e33998dff008739ade077a6dd785b297941ea29de4e195d412d629"
+          },
+          {
+            "path": "shared/material-production/experiments/hex_normal_precision_recovery/maps/Substrate_Height.png",
+            "sha256": "532793fef563434be173e3b39994e4829f93df7c0ca5d2b5dac1de96e2ab52c3"
+          }
+        ],
+        "appearance_anchor": {
+          "image": "shared/material-production/runs/hex_rgb16_capture_20261006_0946/CLEAN_OIDN_PANEL.png",
+          "sha256": "948c46dc4808f6ef30a191a46165883ea49204cff9ff324c20d654662be56b82",
+          "receipt": "shared/material-production/runs/hex_rgb16_capture_20261006_0946/capture_result.json",
+          "library_file_id": "libfile_653f1b3ab368819191aad4c093a5ff33",
+          "library_representation": "Labeled copy of reviewed native16 capture",
+          "view_scope": "Matched37mm joint/mounting detail; full panel is not newly reviewed"
+        },
+        "source_selection": "Verified native normal precision correction on reconstructed original assembly; native coating bytes exact; no new process or optics calibration"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "Normal precision and matched37mm detail correction only; no full manufacturing/material qualification"
+      },
+      "selection_history": [
+        {
+          "retired_utc": "2026-10-06T09:54:06.284556+00:00",
+          "selected": {
+            "scene": "shared/material-slabs/scenes/15_future_ceramic_process_detail_r4_panel.blend",
+            "scene_sha256": "b7ab723676882ad02887d251a326de860c4ae209298c2e83eb69954240a796ab",
+            "version": "15_future_ceramic_process_detail_r4_panel",
+            "capture": {
+              "camera": "Slab / shared camera",
+              "engine": "CYCLES",
+              "width": 960,
+              "height": 960,
+              "samples": 128,
+              "save_guides": true,
+              "light_tree": false,
+              "studio_lights_downward": true,
+              "color_depth": 16,
+              "dither_intensity": 0
+            },
+            "appearance_anchor": {
+              "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_15_future_ceramic_detail_r4_studio_r3.png",
+              "sha256": "a4cc2e1e9fb713f99c53ac64264f046c9bc9637d921112d945a6dd493ce9323c",
+              "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_15_future_ceramic_detail_r4_studio_r3.png.json"
+            },
+            "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+          },
+          "quality": "retained appearance; not physically qualified",
+          "reason": "Preserve original RGB8 mapping; select recovered same-state RGB16 normal correction after fresh geometry/optics equality and matched clean detail review"
+        }
+      ],
+      "reviewed_correction": {
+        "utc": "2026-10-06T09:54:06.284556+00:00",
+        "normal_precision_bits": 16,
+        "exact_original_normal_state": true,
+        "geometry_modifiers_uvs_shader_coefficients_and_rig_preserved": true,
+        "evaluated_glaze_chart_jump_count": 0,
+        "native_pixel_detail_reviewed": true,
+        "dramatic_visual_improvement_claimed": false,
+        "formation_simulation_qualified": false,
+        "full_material_realism_accepted": false,
+        "source_recovery": "Exact original map bytes; reconstructed panel blend from frozen r5 source and published builder"
+      },
+      "preferred_visual_reference": {
+        "kind": "complete_panel",
+        "status": "restored_visual_baseline",
+        "library_file_id": "libfile_9c6939455b888191a9a04c2f76e67c4e",
+        "library_version": 0,
+        "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/15_ceramic_hex_armor_labeled.png",
+        "labeled_image_sha256": "18bf7c1d77958f42c9e7316c35c6cc21c0ff7a7d04b626285b27aae6c81d2be2",
+        "canonical_render_sha256": "a4cc2e1e9fb713f99c53ac64264f046c9bc9637d921112d945a6dd493ce9323c",
+        "view_scope": "Complete45-tile mounted assembly;37mm audit detail is supplementary",
+        "protected": true,
+        "reason": "Restore the stronger reviewed complete view after the user reported regressions; diagnostic controls cannot replace it"
+      }
+    },
+    {
+      "id": "16_future_ribbed",
+      "name": "Engineered / Anodized cooling fins",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/16_future_ribbed_selected_analytic_panel.blend",
+        "scene_sha256": "08b0d20c8de35da784a55e1b96b3d47e096fd1e4d6126535d1128f57c089fa4a",
+        "version": "16_future_ribbed_selected_analytic_panel",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_16_future_ribbed_selected_analytic.png",
+          "sha256": "d1fd28da089ed5380e4914d0ea1306ddf8b7e985c49b0c7b797afb7ce5dd24b1",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_16_future_ribbed_selected_analytic.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "17_blanket",
+      "name": "Blanket / Soft brushed fleece",
+      "owner": "organic",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": true,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-organic-rebuild/scenes/17_blanket_r5_hero.blend",
+        "scene_sha256": "2fa0483cbeae1431b0dda1b4d207a61ea57c7b8281344af65daa7e8173bd0d91",
+        "version": "17_blanket_r5_hero",
+        "capture": {
+          "slab_studio": "17_blanket",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_SLAB_17_blanket_selected_r5_analytic.png",
+          "sha256": "05f508df3bf99cfe98766aaf35264e7c366f221ea886822aad90aa14c2a73b15",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_SLAB_17_blanket_selected_r5_analytic.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      },
+      "preferred_visual_reference": {
+        "kind": "complete_panel",
+        "status": "restored_visual_baseline",
+        "library_file_id": "libfile_db8531eaf7648191a8cef43599920e44",
+        "version": 0,
+        "local_path": "/workspace/scratch/b4387906eb93/labeled-material-panels/17_soft_brushed_fleece_labeled.png",
+        "sha256": "d59607238cef2807a0920c694b3077ce3df837c025894f3290ee1a3fe8852ce2",
+        "source_png_sha256": "05f508df3bf99cfe98766aaf35264e7c366f221ea886822aad90aa14c2a73b15",
+        "scope": "Retained stronger visual anchor, not full physical-realism acceptance",
+        "provenance_manifest": "/workspace/scratch/b4387906eb93/recovered-production/reports/curated_restore_20261006_1243/seven_anchor_manifest.json",
+        "provenance_manifest_sha256": "1e5b53c3ed40a510f8290366583141cdc5f5f02a11ae0cacbdd8656edacb2f6c",
+        "exact_source_capture_attribution": "Existing selected source/capture fields retained separately; no new binary or job equivalence is asserted by this image restoration."
+      }
+    },
+    {
+      "id": "18_lcd",
+      "name": "LCD / RGB stripe display study",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "clean panel and fine display structure reviewed; analytic optics retained; full manufacturing/material-model qualification remains open",
+      "protected_appearance": true,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "Exact analytic source has no external image dependencies; source/frame/component accounting verified 2026-10-06T07:47:12.338637+00:00",
+      "selected": {
+        "scene": "shared/material-production/experiments/lcd_first_hit_guides/scenes/lcd_first_hit_guide_candidate.blend",
+        "scene_sha256": "9f7ca603c55397c39e352a8aecb118817ad07584e962c1832e543229889b0b92",
+        "version": "lcd_first_hit_guides_component_capture_r1",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 512,
+          "use_adaptive_sampling": false,
+          "light_tree": false,
+          "save_guides": true,
+          "color_depth": 16,
+          "dither_intensity": 0,
+          "rss_cap_mib": 3072,
+          "time_limit_seconds": 900,
+          "guide_albedo_pass": "OIDN_SurfaceReflectivity",
+          "guide_normal_pass": "OIDN_SurfaceNormal",
+          "capture_mode": "component-recombined"
+        },
+        "appearance_anchor": {
+          "image": "shared/material-production/runs/lcd_transport_native_20261006_0651/COMPONENT_RECOMBINED_PANEL.png",
+          "sha256": "f01af7371f9cda5914fa63f2f1aae60762dbb55bbc72eb68793412c5e6cf388a",
+          "receipt": "shared/material-production/runs/lcd_transport_native_20261006_0651/component_recombined_receipt.json",
+          "library_file_id": "libfile_9456dab6a68c81918f12ba45a0be78c6",
+          "library_representation": "Labeled copy of the reviewed raw panel pixels",
+          "view_scope": "Analytic pixel/phosphor structure study; complete panel in current framing"
+        },
+        "source_selection": "Audited rendering-fidelity correction; original optical nodes, geometry and radiance preserved",
+        "dependencies": []
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "Rendering-fidelity correction only; transmitted structure never enters OIDN; visual acceptance applies to the current960px view"
+      },
+      "selection_history": [
+        {
+          "retired_utc": "2026-10-06T07:47:12.338637+00:00",
+          "selected": {
+            "scene": "shared/material-slabs/scenes/18_lcd_selected_analytic_panel.blend",
+            "scene_sha256": "48f6f7a64c3d78b328711f123cd19cdccc5844b9c9b188104a50cb5dfd8a7978",
+            "version": "18_lcd_selected_analytic_panel",
+            "capture": {
+              "camera": "Slab / shared camera",
+              "engine": "CYCLES",
+              "width": 960,
+              "height": 960,
+              "samples": 128,
+              "save_guides": true,
+              "light_tree": false,
+              "color_depth": 16,
+              "dither_intensity": 0
+            },
+            "appearance_anchor": {
+              "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_18_lcd_selected_analytic.png",
+              "sha256": "f5b632a44434b5395fd664813ef5df9aa14dc0a66395eba3775ff455be5c25e5",
+              "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_18_lcd_selected_analytic.png.json"
+            },
+            "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+          },
+          "quality": "retained appearance; not physically qualified",
+          "reason": "Retain old selection; replace failed whole-frame denoise route with reviewed component-recombined capture"
+        }
+      ],
+      "reviewed_correction": {
+        "utc": "2026-10-06T07:47:12.338637+00:00",
+        "capture_mode": "component-recombined",
+        "noise_and_detail_view_review_passed": true,
+        "source_optics_unchanged": true,
+        "transmission_emission_untouched": true,
+        "delta64_untouched": true,
+        "formation_simulation_qualified": false,
+        "full_material_realism_accepted": false,
+        "prior_512_beauty_equal": true,
+        "CRT_reference_limit": null
+      },
+      "preferred_visual_reference": {
+        "kind": "complete_panel",
+        "status": "verified_visible_improvement",
+        "library_file_id": "libfile_9456dab6a68c81918f12ba45a0be78c6",
+        "canonical_render": "shared/material-production/runs/lcd_transport_native_20261006_0651/COMPONENT_RECOMBINED_PANEL.png",
+        "canonical_render_sha256": "f01af7371f9cda5914fa63f2f1aae60762dbb55bbc72eb68793412c5e6cf388a",
+        "source_scene": "shared/material-production/experiments/lcd_first_hit_guides/scenes/lcd_first_hit_guide_candidate.blend",
+        "source_scene_sha256": "9f7ca603c55397c39e352a8aecb118817ad07584e962c1832e543229889b0b92",
+        "view_scope": "Analytic pixel/phosphor structure study; complete panel in current framing",
+        "protected": true,
+        "reason": "Preserve the stronger original leather reference or verified display cleanup; later numerical experiments do not replace appearance"
+      }
+    },
+    {
+      "id": "19_crt",
+      "name": "CRT / RGB phosphor grille study",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "clean panel and fine display structure reviewed; analytic optics retained; full manufacturing/material-model qualification remains open",
+      "protected_appearance": true,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "Exact analytic source has no external image dependencies; source/frame/component accounting verified 2026-10-06T07:47:12.338637+00:00",
+      "selected": {
+        "scene": "shared/material-production/experiments/crt_transport_split/scenes/crt_first_hit_guides_for_remainder.blend",
+        "scene_sha256": "5a1e87c2e35dd312ccda644b6eecbd30a39714c32c245e0d651974e22021f388",
+        "version": "crt_transport_split_component_capture_r1",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 512,
+          "use_adaptive_sampling": false,
+          "light_tree": false,
+          "save_guides": true,
+          "color_depth": 16,
+          "dither_intensity": 0,
+          "rss_cap_mib": 3072,
+          "time_limit_seconds": 900,
+          "guide_albedo_pass": "OIDN_SurfaceReflectivity",
+          "guide_normal_pass": "OIDN_SurfaceNormal",
+          "capture_mode": "component-recombined"
+        },
+        "appearance_anchor": {
+          "image": "shared/material-production/runs/crt_transport_native_20261006_0710/COMPONENT_RECOMBINED_PANEL.png",
+          "sha256": "5a15d1b91ddb1aa15c47a25e070e8031a7dcbe1af57b44e47b26d5cd3b76c4dc",
+          "receipt": "shared/material-production/runs/crt_transport_native_20261006_0710/component_recombined_receipt.json",
+          "library_file_id": "libfile_459090b7f3fc819180bdf0140da86134",
+          "library_representation": "Labeled copy of the reviewed raw panel pixels",
+          "view_scope": "Analytic pixel/phosphor structure study; complete panel in current framing"
+        },
+        "source_selection": "Audited rendering-fidelity correction; original optical nodes, geometry and radiance preserved",
+        "dependencies": []
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "Rendering-fidelity correction only; transmitted structure never enters OIDN; visual acceptance applies to the current960px view"
+      },
+      "selection_history": [
+        {
+          "retired_utc": "2026-10-06T07:47:12.338637+00:00",
+          "selected": {
+            "scene": "shared/material-slabs/scenes/19_crt_selected_analytic_panel.blend",
+            "scene_sha256": "1eb2c494efc89d03725441c6cf4371ffb8a37682e78484f2547b59944d11d60d",
+            "version": "19_crt_selected_analytic_panel",
+            "capture": {
+              "camera": "Slab / shared camera",
+              "engine": "CYCLES",
+              "width": 960,
+              "height": 960,
+              "samples": 128,
+              "save_guides": true,
+              "light_tree": false,
+              "color_depth": 16,
+              "dither_intensity": 0
+            },
+            "appearance_anchor": {
+              "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_19_crt_selected_analytic.png",
+              "sha256": "3d9b8cc7dffd3925654cf4946615c8b78479d1259a24ffb6d75ac2a8559d7f87",
+              "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_19_crt_selected_analytic.png.json"
+            },
+            "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+          },
+          "quality": "retained appearance; not physically qualified",
+          "reason": "Retain old selection; replace failed whole-frame denoise route with reviewed component-recombined capture"
+        }
+      ],
+      "reviewed_correction": {
+        "utc": "2026-10-06T07:47:12.338637+00:00",
+        "capture_mode": "component-recombined",
+        "noise_and_detail_view_review_passed": true,
+        "source_optics_unchanged": true,
+        "transmission_emission_untouched": true,
+        "delta64_untouched": true,
+        "formation_simulation_qualified": false,
+        "full_material_realism_accepted": false,
+        "prior_512_beauty_equal": null,
+        "CRT_reference_limit": "No independent prior512 CRT frame exists"
+      },
+      "preferred_visual_reference": {
+        "kind": "complete_panel",
+        "status": "verified_visible_improvement",
+        "library_file_id": "libfile_459090b7f3fc819180bdf0140da86134",
+        "canonical_render": "shared/material-production/runs/crt_transport_native_20261006_0710/COMPONENT_RECOMBINED_PANEL.png",
+        "canonical_render_sha256": "5a15d1b91ddb1aa15c47a25e070e8031a7dcbe1af57b44e47b26d5cd3b76c4dc",
+        "source_scene": "shared/material-production/experiments/crt_transport_split/scenes/crt_first_hit_guides_for_remainder.blend",
+        "source_scene_sha256": "5a1e87c2e35dd312ccda644b6eecbd30a39714c32c245e0d651974e22021f388",
+        "view_scope": "Analytic pixel/phosphor structure study; complete panel in current framing",
+        "protected": true,
+        "reason": "Preserve the stronger original leather reference or verified display cleanup; later numerical experiments do not replace appearance"
+      }
+    },
+    {
+      "id": "20_plastic_smooth",
+      "name": "Plastic / Molded satin",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/20_plastic_smooth_molding_detail_r1_panel.blend",
+        "scene_sha256": "28485f7277554830331d971b33f4cbbb96512c3b698f3b32ac9ff2dbc050b1ea",
+        "version": "20_plastic_smooth_molding_detail_r1_panel",
+        "capture": {
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "studio_lights_downward": true,
+          "camera": "Slab / shared camera",
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_20_plastic_smooth_detail_r1_studio_r3.png",
+          "sha256": "db6a84f3cca6f6a9c8ce625e875390a323c1b3c15d151e9c9010dd8bf337fa2e",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_20_plastic_smooth_detail_r1_studio_r3.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "21_plastic_texture",
+      "name": "Plastic / Molded stipple",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": true,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/21_plastic_texture_molding_detail_r2_panel.blend",
+        "scene_sha256": "29c5b004447ef32d312f8a4b902f167a1d0759227d0874755cb446df3e0daa96",
+        "version": "21_plastic_texture_molding_detail_r2_panel",
+        "capture": {
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "studio_lights_downward": true,
+          "camera": "Slab / shared camera",
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_21_plastic_texture_detail_r2_studio_r3.png",
+          "sha256": "8fa06b2d43f5d36e54f7c58a452d17256d86a33f9742b5b891a883d37141ab45",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_21_plastic_texture_detail_r2_studio_r3.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      },
+      "preferred_visual_reference": {
+        "kind": "complete_panel",
+        "status": "verified_visible_improvement",
+        "library_file_id": "libfile_0599c63eda388191b4ded4aa084cb34b",
+        "library_version": 0,
+        "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/plastic_complete_transfer/full/21_molded_stipple_plastic_full.png",
+        "labeled_image_sha256": "ec921941239f9954e6440cac0d7f48a5d305e1446f63ec054e131978ab32ab27",
+        "canonical_render_sha256": "262604c94de4501d4a4d5ea1f463bb3c42f4db49edaba6ea66f9f3050a65ac00",
+        "source_scene": "shared/material-production/experiments/plastic_complete_transfer/scenes/plastic_complete_full.blend",
+        "source_scene_sha256": "8e45cc56927ca910d2cb2aeb7d23b35e20a3a24beea500b22df446778711e4a5",
+        "capture_run": "shared/material-production/runs/plastic_complete_full_r3_capture_20261006_1518",
+        "view_scope": "Complete original80mm rounded form with native4096 retained relief and a camera-specific geometric LOD; improved curved grain and edge highlight.",
+        "scope": "Verified visible detail improvement after complete,macro and second-light comparisons. Current solved recipe differs from prior90%-replication recipe. Physical model calibration remains false.",
+        "protected": true,
+        "review_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/owner_final_visual_review.json",
+        "review_receipt_sha256": "4e58558bd77230eaa0030e28ce8871c1e27d8d535b9ab861a81ab3d3f6216d4a",
+        "capture_recipe": {
+          "experiment": "plastic_complete_candidate_full_r3",
+          "manifest": "shared/material-production/experiments/plastic_complete_candidate_full_r3/experiment.json",
+          "manifest_sha256": "0eb718dabd975df7f2abee9786d035b6c9b0a4b40b8a80be1b7016103dfcfc1a",
+          "build_argv": [
+            "python3",
+            "-m",
+            "materials",
+            "experiment",
+            "plastic_complete_candidate_full_r3",
+            "--out",
+            "<fresh-build-directory>"
+          ],
+          "capture_argv": [
+            "python3",
+            "-m",
+            "materials",
+            "capture",
+            "<fresh-build-directory>/build.json",
+            "--out",
+            "<fresh-capture-directory>",
+            "--mode",
+            "guided",
+            "--samples",
+            "128",
+            "--fixed-samples"
+          ],
+          "dimensions_px": [
+            960,
+            960
+          ],
+          "studio_lights_downward": true
+        }
+      },
+      "verified_detail_references": [
+        {
+          "kind": "detail_study",
+          "library_file_id": "libfile_ce86ce13279c8191b8015239b04caa8e",
+          "source_scene": "shared/material-production/experiments/plastic_native_relief_transfer/scenes/21_plastic_fixed_state_native.blend",
+          "source_scene_sha256": "1c6d588798f6c8315fb38da21ee5fcc97910805fd9cc56ed40522a231ddb202b",
+          "reason": "Visible restoration of native stipple; physical-state and sampling proof, not a complete curved-part replacement"
+        },
+        {
+          "kind": "detail_view",
+          "library_file_id": "libfile_2df65e65114881918c7c3016ce93dd2e",
+          "library_version": 0,
+          "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/plastic_complete_transfer/macro/21_molded_stipple_plastic_macro.png",
+          "labeled_image_sha256": "1696a4033b6917304cad37eb8fe0a4002f4298d8c0296940654d8742cbcc6c28",
+          "canonical_render_sha256": "116ac37b979c8bba9df7573f279ddba29b8625ed494fc82ce2112fccd7b84b37",
+          "view_scope": "24mm rounded edge and molding seam",
+          "review_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/owner_final_visual_review.json",
+          "review_receipt_sha256": "4e58558bd77230eaa0030e28ce8871c1e27d8d535b9ab861a81ab3d3f6216d4a",
+          "physical_model_qualified": false
+        },
+        {
+          "kind": "alternate_lighting_view",
+          "library_file_id": "libfile_43e7f8ab52a48191a95cc90e7039d0da",
+          "library_version": 0,
+          "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/plastic_complete_transfer/second_light/21_molded_stipple_plastic_second_light.png",
+          "labeled_image_sha256": "c422a4d595577d0df1be58e81f194bf0ea4d6a02e7868a140086b106c4965b17",
+          "canonical_render_sha256": "74b9a6236555e2e3a7207b27a048f1f8afca24fc9a364ae094dfcb8a85bb5e23",
+          "view_scope": "Complete80mm part under matched rotated lighting",
+          "review_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/owner_final_visual_review.json",
+          "review_receipt_sha256": "4e58558bd77230eaa0030e28ce8871c1e27d8d535b9ab861a81ab3d3f6216d4a",
+          "physical_model_qualified": false
+        }
+      ],
+      "preferred_visual_history": [
+        {
+          "kind": "complete_panel",
+          "status": "restored_visual_baseline",
+          "library_file_id": "libfile_ea9e705b38608191ace56d62e2cf6020",
+          "library_version": 0,
+          "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/21_molded_stipple_plastic_labeled.png",
+          "labeled_image_sha256": "cfcbbd5737631ada156f3927836db6a846df46616d1a07334d98e308c984a21d",
+          "canonical_render_sha256": "8fa06b2d43f5d36e54f7c58a452d17256d86a33f9742b5b891a883d37141ab45",
+          "view_scope": "Complete molded stipple panel; native flat-relief study remains a supplementary detail",
+          "protected": true,
+          "reason": "Restore the stronger reviewed complete view after the user reported regressions; diagnostic controls cannot replace it"
+        }
+      ]
+    },
+    {
+      "id": "22_petg",
+      "name": "PETG / Opaque printed wall",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/22_petg_native4k_slab.blend",
+        "scene_sha256": "a88aa0ff1835b9f89f282fb59cacd377a4a6e826ad3b9989128a22d3cffabf72",
+        "version": "22_petg_native4k_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_22_petg_native4k.png",
+          "sha256": "8e03a1e7281d9179f86e18765f890aced0e3edae2639cea23fd42c641ea98664",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_22_petg_native4k.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "23_petg_transparent",
+      "name": "PETG / Clear printed wall",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": true,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/23_petg_transparent_native4k_slab.blend",
+        "scene_sha256": "c0c7baf4d364d418191165dc5f520cccc41218c6736b1fad12bf3734fb62cac3",
+        "version": "23_petg_transparent_native4k_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 256,
+          "save_guides": true,
+          "light_tree": false,
+          "studio_lights_downward": true,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_23_petg_transparent_native4k_studio_r3.png",
+          "sha256": "28d7d8dabb795f5d04c2a92ca3a82651d5b10e37619e709af7fe594696a246b2",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_23_petg_transparent_native4k_studio_r3.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      },
+      "preferred_visual_reference": {
+        "kind": "complete_panel",
+        "status": "verified_visible_improvement",
+        "library_file_id": "libfile_e63422770c708191867e0e9be25113ff",
+        "version": 0,
+        "local_path": "/workspace/scratch/b4387906eb93/labeled-material-panels/clear_petg_fidelity_corrected/23_clear_printed_petg_labeled.png",
+        "sha256": "51acec9e44bc0b4e3e5f495bd54d2cdf16d13496327c229aa328565165a68f2d",
+        "source_png_sha256": "8e497850c65f5f1bbdd257885f6d41dd92cc6095752742c8bf91e414ba179d66",
+        "source_scene": "shared/material-production/experiments/clear_petg_capture_recovery/scenes/23_petg_native4k_valid_tangent_guides_r2.blend",
+        "source_scene_sha256": "2ed67cf095563169ba75bbffcf28a26ab6d13ffeb28072614d84822af9bac912",
+        "capture_run": "shared/material-production/runs/clear_petg_full_capture_20261006_1236",
+        "postprocess_run": "shared/material-production/runs/clear_petg_full_two_component_20261006_1302",
+        "scope": "Rendering-fidelity improvement over the retained complete panel; same reconstructed geometry/maps/optics, explicit independent T/R filtering and signed-pass arithmetic. Physical material qualification remains false.",
+        "review_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/clear_petg_capture_recovery/receipts/full_frame_native_review.json",
+        "review_receipt_sha256": "74d777127583485893aa0c48afb2448290456fbbc688a0130f75d3943195b6f8",
+        "capture_recipe": {
+          "experiment": "clear_petg_preferred_full_panel",
+          "manifest": "shared/material-production/experiments/clear_petg_preferred_full_panel/experiment.json",
+          "manifest_sha256": "c62620b5f719d1c50c3e8eafb583a46c275695cbc39b399e0c2ae112c16e5873",
+          "build_argv": [
+            "python3",
+            "-m",
+            "materials",
+            "experiment",
+            "clear_petg_preferred_full_panel",
+            "--out",
+            "<fresh-build-directory>"
+          ],
+          "capture_argv": [
+            "python3",
+            "-m",
+            "materials",
+            "capture",
+            "<fresh-build-directory>/build.json",
+            "--out",
+            "<fresh-capture-directory>",
+            "--mode",
+            "component-recombined",
+            "--component-filter",
+            "filter_both",
+            "--samples",
+            "256",
+            "--fixed-samples"
+          ],
+          "dimensions_px": [
+            1920,
+            1920
+          ],
+          "no_implicit_filter_fallback": true
+        }
+      },
+      "preferred_visual_history": [
+        {
+          "kind": "complete_panel",
+          "status": "restored_visual_baseline",
+          "library_file_id": "libfile_b3741ee3e1688191af4de2cc59b712f2",
+          "library_version": 0,
+          "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/23_clear_printed_petg_labeled.png",
+          "labeled_image_sha256": "04297c3d0b8fb1190830f0145f6915bc34d56794f0f6f7b8c29c7cd05c99ea96",
+          "canonical_render_sha256": "28d7d8dabb795f5d04c2a92ca3a82651d5b10e37619e709af7fe594696a246b2",
+          "view_scope": "Complete28\u00d726mm printed wall, frosted optical response; current new capture remains unselected",
+          "protected": true,
+          "reason": "Restore the stronger reviewed complete view after the user reported regressions; diagnostic controls cannot replace it"
+        }
+      ]
+    },
+    {
+      "id": "24_carpet",
+      "name": "Carpet / Loop wool pile",
+      "owner": "organic",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": true,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-organic-rebuild/scenes/24_carpet_r5_hero.blend",
+        "scene_sha256": "55df658fd44a0fb17bab14b46692c1c252b2d2658a967910e8c281f82e743879",
+        "version": "24_carpet_r5_hero",
+        "capture": {
+          "slab_studio": "24_carpet",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_SLAB_24_carpet_selected_r5_analytic.png",
+          "sha256": "164d60bae92bb19899a39094b310797e5f0f9d5916e0eb1ffe2eed0a7214e3b7",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_SLAB_24_carpet_selected_r5_analytic.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      },
+      "preferred_visual_reference": {
+        "kind": "complete_panel",
+        "status": "restored_visual_baseline",
+        "library_file_id": "libfile_c3f3b2e1eaac81919a6dab81d620304b",
+        "version": 0,
+        "local_path": "/workspace/scratch/b4387906eb93/labeled-material-panels/24_loop_wool_carpet_labeled.png",
+        "sha256": "02a1d963a955e70e4d55912c4e05c3f8c835990c418c88456b2f70576bb7681b",
+        "source_png_sha256": "164d60bae92bb19899a39094b310797e5f0f9d5916e0eb1ffe2eed0a7214e3b7",
+        "scope": "Retained stronger visual anchor, not full physical-realism acceptance",
+        "provenance_manifest": "/workspace/scratch/b4387906eb93/recovered-production/reports/curated_restore_20261006_1243/seven_anchor_manifest.json",
+        "provenance_manifest_sha256": "1e5b53c3ed40a510f8290366583141cdc5f5f02a11ae0cacbdd8656edacb2f6c",
+        "exact_source_capture_attribution": "Existing selected source/capture fields retained separately; no new binary or job equivalence is asserted by this image restoration."
+      }
+    },
+    {
+      "id": "25_tile_ceramic",
+      "name": "Tile / Glazed ceramic and grout",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/25_tile_ceramic_selected_analytic_panel.blend",
+        "scene_sha256": "cd81ca0cab9f52d4a17efe0945932f9f6f274acadffc3fc59a13c3e4c26389cc",
+        "version": "25_tile_ceramic_selected_analytic_panel",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_25_tile_ceramic_selected_analytic.png",
+          "sha256": "a26a1ddbe9f046a1ae9d93d1d6c179d2331099027da5b75abde0ecd9c3e44052",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_25_tile_ceramic_selected_analytic.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "26_tile_terrazzo",
+      "name": "Tile / Honed terrazzo and grout",
+      "owner": "aggregate",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-aggregate-rebuild/native4k/scenes/26_tile_terrazzo_native4k_slab.blend",
+        "scene_sha256": "65cf9d940a4ff828967df02d1428c081964d66d30fa088fd359499a453dfd132",
+        "version": "26_tile_terrazzo_native4k_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "studio_lights_downward": true,
+          "metal_reflection_softbox": true,
+          "metal_softbox_power": 12,
+          "metal_softbox_width": 0.35,
+          "metal_softbox_height": 1.6,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_26_tile_terrazzo_native4k_reflection_r4.png",
+          "sha256": "86b4dfdac3f4bb4c50c1772882e62337c31275c93d20bb0cf95063ace8756063",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_26_tile_terrazzo_native4k_reflection_r4.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "map_contract": {
+        "source": "shared/material-aggregate-rebuild/native4k/maps/26_tile_terrazzo/material_4k.json",
+        "source_sha256": "270a85449218a015e3a9e98f12b94d427689cc34c915f35ef8e909d253e699c0",
+        "map_root": "shared/material-aggregate-rebuild/native4k/maps/26_tile_terrazzo",
+        "normal": "OpenGL +Y residual Normal_Micro_OpenGL paired with retained GeometryHeight; full normal only without second full relief",
+        "height": "(encoded-0.5)*0.0004 meters",
+        "tile_m": 0.3,
+        "color": "BaseColor sRGB; all data Non-Color",
+        "source_resolution": [
+          4096,
+          4096
+        ]
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "27_grass",
+      "name": "Grass / Blade and thatch tuft",
+      "owner": "organic",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-slabs/scenes/27_grass_analytic_slab.blend",
+        "scene_sha256": "4ab77d9281ab4d88c364f44e0a6e900b848d25fb7c07f9902447aee672850477",
+        "version": "27_grass_analytic_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_SLAB_27_grass_analytic.png",
+          "sha256": "b769e13b5e517ebe0bd416a9d92670b662849556cc74b876dfa2e94fd41111f2",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_SLAB_27_grass_analytic.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "28_asphalt",
+      "name": "Asphalt / Rolled mineral aggregate",
+      "owner": "aggregate",
+      "units": "meters",
+      "quality": "User-selected reviewed fracture appearance; bright beadlike fines and polygonal plates remain; not physically calibrated",
+      "protected_appearance": false,
+      "geometry_contract": "Selected .25m static displaced slab, retained UV/topology, 512-cell macro geometry and full metric OBJECT normal; rotations, nonuniform scales and linked instances verified; deformation requires regeneration",
+      "procedural_rebuild": "Native4096 maps and geometry regenerate byte-exactly from the pinned source; exact reviewed packed scene retained separately",
+      "dependencies_status": "Generate native maps and scene from the pinned public source; full render-relevant contract checked independently of blend-file bytes",
+      "selected": {
+        "scene": "shared/material-production/vendor/asphalt-reviewed-20261009/CYBR_Asphalt_Fracture_Native4096_Candidate.blend",
+        "scene_sha256": "2396d4c9cb4291548106b04891d2c8a9b6f5379128a57e3654ed36e79ed8984e",
+        "version": "reviewed_fractured_grain_20261009",
+        "scene_contract_sha256": "5a8bff2ba51bbb6a3af3d4a2d49b04a33eeb0dc31a62f43df1d58dbde1aeba2d",
+        "scene_is_generated": true,
+        "capture": {
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "capture_mode": "guided",
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0,
+          "use_adaptive_sampling": false,
+          "rss_cap_mib": 3072,
+          "time_limit_seconds": 600,
+          "sync_limit_seconds": 90,
+          "camera": "Capture / detail"
+        },
+        "appearance_anchor": {
+          "image": "shared/material-production/vendor/asphalt-reviewed-20261009/review/CLEAN_OIDN_PANEL.png",
+          "sha256": "83c39811f95e66adc989b4baf1f5a105873164977a4499935c842c9d905d90bd",
+          "scope": "Reviewed native detail view; not a new complete-panel comparison"
+        },
+        "source_selection": "Explicit user instruction to merge reviewed asphalt on 2026-10-09; no full realism or measured-material claim"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Selected .25m static displaced slab, retained UV/topology, 512-cell macro geometry and full metric OBJECT normal; rotations, nonuniform scales and linked instances verified; deformation requires regeneration",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "Asphalt exact native4096 reproduction and direct shader normal AOV tested; no measured BRDF or full formation qualification",
+        "normal_convention": "Full metric object-space normal, Non-Color RGB16, Strength1; not a tangent residual"
+      },
+      "prior_selections": [
+        {
+          "scene": "shared/material-aggregate-rebuild/math-audit/scenes/asphalt_v2_normal_math_fixed.blend",
+          "scene_sha256": "5ea7091804d7b5e9acf71b7367580237cb0560a3d51e79598f7aa01ad48a0d0d",
+          "version": "asphalt_v2_normal_math_fixed",
+          "capture": {
+            "camera": "Slab / shared camera",
+            "engine": "CYCLES",
+            "width": 960,
+            "height": 960,
+            "samples": 128,
+            "color_depth": 16,
+            "dither_intensity": 0,
+            "save_guides": true,
+            "light_tree": false,
+            "studio_lights_downward": true,
+            "rss_cap_mib": 2560
+          },
+          "appearance_anchor": {
+            "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_28_asphalt_normal_math_fixed_panel.png",
+            "sha256": "3ed887d972945e73cd37683119704b6a6e5447f5056bdc9c86f4d6d87a45ed6a",
+            "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_28_asphalt_normal_math_fixed_panel.png.json"
+          },
+          "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+        }
+      ],
+      "reviewed_correction": {
+        "reviewed_on": "2026-10-09",
+        "scope": "Reviewed fracture source and matching appearance selected by explicit merge instruction",
+        "formation_simulation_qualified": false,
+        "full_material_realism_accepted": false,
+        "subsequent_binder_refinement_selected": false
+      }
+    },
+    {
+      "id": "29_concrete_cast",
+      "name": "Concrete / Cast",
+      "owner": "aggregate",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "Actual selected scene inspection required; older native map set is not assumed to be the active binding.",
+      "selected": {
+        "scene": "shared/material-aggregate-rebuild/detail-causal4k/concrete/scenes/29_cast_process_v1_matched.blend",
+        "scene_sha256": "cc840451d296372f1441309aa3322b51c392e7b050952b574f93229632213870",
+        "version": "29_cast_process_v1_matched",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "color_depth": 16,
+          "dither_intensity": 0,
+          "save_guides": true,
+          "light_tree": false,
+          "studio_lights_downward": true,
+          "rss_cap_mib": 2560
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_29_cast_process_v1_panel.png",
+          "sha256": "ab51b777b1201c9578958e2ca92e402d1cea1241a37b596eac2f43e8a80dc7d8",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_29_cast_process_v1_panel.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "30_concrete_board_formed",
+      "name": "Concrete / Board Formed",
+      "owner": "aggregate",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-aggregate-rebuild/native4k/scenes/30_concrete_board_formed_native4k_slab.blend",
+        "scene_sha256": "8a04ade93d1839f0e4126fb8ab4bf67b453b3e46b487441fab32efbdc54494f2",
+        "version": "30_concrete_board_formed_native4k_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "studio_lights_downward": true,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_30_concrete_board_formed_native4k_studio_r3.png",
+          "sha256": "681990bb6052ccbdec9dcf39bb1bfadcf545018bc25c1b4ecf257673550b01c8",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_30_concrete_board_formed_native4k_studio_r3.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "map_contract": {
+        "source": "shared/material-aggregate-rebuild/native4k/maps/30_concrete_board_formed/material_4k.json",
+        "source_sha256": "4341f03af526901868ddfa6116ddda5d841980a3effa1cf365fbcb335c12edba",
+        "map_root": "shared/material-aggregate-rebuild/native4k/maps/30_concrete_board_formed",
+        "normal": "OpenGL +Y residual Normal_Micro_OpenGL paired with retained GeometryHeight; full normal only without second full relief",
+        "height": "(encoded-0.5)*0.004 meters",
+        "tile_m": 0.32,
+        "color": "BaseColor sRGB; all data Non-Color",
+        "source_resolution": [
+          4096,
+          4096
+        ]
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "31_concrete_brushed",
+      "name": "Concrete / Brushed",
+      "owner": "aggregate",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-aggregate-rebuild/native4k/scenes/31_concrete_brushed_native4k_slab.blend",
+        "scene_sha256": "ee2c37aa0c98901b3aa7617e135dc30707b4dfb6b21994f385a899a784acc0e3",
+        "version": "31_concrete_brushed_native4k_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "studio_lights_downward": true,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_31_concrete_brushed_native4k_studio_r3.png",
+          "sha256": "f4b073b57c0f8686dc2491a20dc49a47f2a470354d1e8da5dd9fa5e094a75cfe",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_31_concrete_brushed_native4k_studio_r3.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "map_contract": {
+        "source": "shared/material-aggregate-rebuild/native4k/maps/31_concrete_brushed/material_4k.json",
+        "source_sha256": "a0e4a609668e05dc43b6747205335b557d4569f9b7d19226f092e920eedbb4fa",
+        "map_root": "shared/material-aggregate-rebuild/native4k/maps/31_concrete_brushed",
+        "normal": "OpenGL +Y residual Normal_Micro_OpenGL paired with retained GeometryHeight; full normal only without second full relief",
+        "height": "(encoded-0.5)*0.002 meters",
+        "tile_m": 0.32,
+        "color": "BaseColor sRGB; all data Non-Color",
+        "source_resolution": [
+          4096,
+          4096
+        ]
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "32_concrete_polished",
+      "name": "Concrete / Polished",
+      "owner": "aggregate",
+      "units": "meters",
+      "quality": "retained selected authored polished concrete; user realism gate remains failed",
+      "protected_appearance": true,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "adapter: selected authored construction recipe; reduced smoke resolution is never production",
+      "dependencies_status": "native4096 map manifest with hashes",
+      "selected": {
+        "scene": "shared/material-aggregate-rebuild/native4k/scenes/32_concrete_polished_native4k_slab.blend",
+        "scene_sha256": "71de708c99fa7679b41000637b73939fd4509011a6c8e506fb093c3c98d0a489",
+        "version": "32_concrete_polished_native4k_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "studio_lights_downward": true,
+          "metal_reflection_softbox": true,
+          "metal_softbox_power": 12,
+          "metal_softbox_width": 0.35,
+          "metal_softbox_height": 1.6,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_32_concrete_polished_native4k_reflection_r4.png",
+          "sha256": "9f59a8a5f5305ad86d09f14fb817742d70eecc7c390232ddb86e8fb2190127e5",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_32_concrete_polished_native4k_reflection_r4.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "map_contract": {
+        "source": "shared/material-aggregate-rebuild/native4k/maps/32_concrete_polished/material_4k.json",
+        "source_sha256": "a5434c53d27baac7506e4a1fac60fbf9b10f033afebb92150a9b5c68aa4132a3",
+        "map_root": "shared/material-aggregate-rebuild/native4k/maps/32_concrete_polished",
+        "normal": "OpenGL +Y residual Normal_Micro_OpenGL paired with retained GeometryHeight; full normal only without second full relief",
+        "height": "(encoded-0.5)*0.002 meters",
+        "tile_m": 0.32,
+        "color": "BaseColor sRGB; all data Non-Color",
+        "source_resolution": [
+          4096,
+          4096
+        ]
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      },
+      "preferred_visual_reference": {
+        "kind": "complete_panel",
+        "status": "restored_visual_baseline",
+        "library_file_id": "libfile_bc5db538c5a081918141b15468603c85",
+        "version": 0,
+        "local_path": "/workspace/scratch/b4387906eb93/labeled-material-panels/selected32_recovered/32_polished_concrete_labeled.png",
+        "sha256": "2a8c466929b602f27a2d011e0b14695bf8f7b537cceb82889b134be555815007",
+        "source_png_sha256": "7f461f140600fc45c8dee3b2b42fe74d2271910255007023032e4da7a8e0a140",
+        "scope": "Retained stronger visual anchor, not full physical-realism acceptance",
+        "provenance_manifest": "/workspace/scratch/b4387906eb93/recovered-production/reports/curated_restore_20261006_1243/seven_anchor_manifest.json",
+        "provenance_manifest_sha256": "1e5b53c3ed40a510f8290366583141cdc5f5f02a11ae0cacbdd8656edacb2f6c",
+        "exact_source_capture_attribution": "Existing selected source/capture fields retained separately; no new binary or job equivalence is asserted by this image restoration."
+      }
+    },
+    {
+      "id": "33_concrete_exposed_aggregate",
+      "name": "Concrete / Exposed Aggregate",
+      "owner": "aggregate",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-aggregate-rebuild/native4k/scenes/33_concrete_exposed_aggregate_native4k_slab.blend",
+        "scene_sha256": "469f144b3f9832ab23016f319bacb07c5b15b25f67c676c178a116239c931323",
+        "version": "33_concrete_exposed_aggregate_native4k_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_33_concrete_exposed_aggregate_native4k.png",
+          "sha256": "ca76fb4def8d5b8c5f0b7e6e7e6b2a58fb79d1fa4db63975cee5da3b8dd529ad",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_33_concrete_exposed_aggregate_native4k.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "map_contract": {
+        "source": "shared/material-aggregate-rebuild/native4k/maps/33_concrete_exposed_aggregate/material_4k.json",
+        "source_sha256": "5e9e075059c1ead5afcfbe27e27e29fef0e56eca015fdce9c3e06eacb747f281",
+        "map_root": "shared/material-aggregate-rebuild/native4k/maps/33_concrete_exposed_aggregate",
+        "normal": "OpenGL +Y residual Normal_Micro_OpenGL paired with retained GeometryHeight; full normal only without second full relief",
+        "height": "(encoded-0.5)*0.008 meters",
+        "tile_m": 0.32,
+        "color": "BaseColor sRGB; all data Non-Color",
+        "source_resolution": [
+          4096,
+          4096
+        ]
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "34_concrete_weathered",
+      "name": "Concrete / Weathered",
+      "owner": "aggregate",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-aggregate-rebuild/native4k/scenes/34_concrete_weathered_native4k_slab.blend",
+        "scene_sha256": "79b2493f07cff938f7d9d0961cc1c74391ba70a4981cf8d5dfbc5d6cfaff52e2",
+        "version": "34_concrete_weathered_native4k_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "studio_lights_downward": true,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_34_concrete_weathered_native4k_studio_r3.png",
+          "sha256": "b2d24e0df453d7c956ffaa4b9c879e32aedd6f825fc2a92776be78d302747b46",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_34_concrete_weathered_native4k_studio_r3.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "map_contract": {
+        "source": "shared/material-aggregate-rebuild/native4k/maps/34_concrete_weathered/material_4k.json",
+        "source_sha256": "10929f495f99b5678824afb131599c8e5ff367154a2d2ac07c47eee595156819",
+        "map_root": "shared/material-aggregate-rebuild/native4k/maps/34_concrete_weathered",
+        "normal": "OpenGL +Y residual Normal_Micro_OpenGL paired with retained GeometryHeight; full normal only without second full relief",
+        "height": "(encoded-0.5)*0.008 meters",
+        "tile_m": 0.32,
+        "color": "BaseColor sRGB; all data Non-Color",
+        "source_resolution": [
+          4096,
+          4096
+        ]
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    },
+    {
+      "id": "35_cement_paste",
+      "name": "Cement paste / Troweled neat binder",
+      "owner": "aggregate",
+      "units": "meters",
+      "quality": "retained appearance; not physically qualified",
+      "protected_appearance": false,
+      "geometry_contract": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+      "procedural_rebuild": "not qualified",
+      "dependencies_status": "scene inspection required",
+      "selected": {
+        "scene": "shared/material-aggregate-rebuild/native4k/scenes/35_cement_paste_native4k_slab.blend",
+        "scene_sha256": "1ef04d1558422646af176c18e8d4749a0089a39414080e800adbf848bf251255",
+        "version": "35_cement_paste_native4k_slab",
+        "capture": {
+          "camera": "Slab / shared camera",
+          "engine": "CYCLES",
+          "width": 960,
+          "height": 960,
+          "samples": 128,
+          "save_guides": true,
+          "light_tree": false,
+          "studio_lights_downward": true,
+          "color_depth": 16,
+          "dither_intensity": 0
+        },
+        "appearance_anchor": {
+          "image": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_35_cement_paste_native4k_studio_r3.png",
+          "sha256": "95b9ee038290895c2676e068eb5382d5137492e7ca9782b20ff2fa8ed60fdc8d",
+          "receipt": "shared/cloud-eevee/previews/CLEAN_OIDN_PANEL_35_cement_paste_native4k_studio_r3.png.json"
+        },
+        "source_selection": "Frozen delivered appearance; brass normal-transfer and porcelain audited fixes explicitly selected"
+      },
+      "map_contract": {
+        "source": "shared/material-aggregate-rebuild/native4k/maps/35_cement_paste/material_4k.json",
+        "source_sha256": "5aa1ec9b4152b7aeb9b59b1e61c9e1b653662c7ed098831bb83b9d08021b4f5e",
+        "map_root": "shared/material-aggregate-rebuild/native4k/maps/35_cement_paste",
+        "normal": "OpenGL +Y residual Normal_Micro_OpenGL paired with retained GeometryHeight; full normal only without second full relief",
+        "height": "(encoded-0.5)*0.0014 meters",
+        "tile_m": 0.32,
+        "color": "BaseColor sRGB; all data Non-Color",
+        "source_resolution": [
+          4096,
+          4096
+        ]
+      },
+      "pbr_contract": {
+        "workflow": "Preserve the selected Blender shader graph; no generic metallic-roughness replacement",
+        "units": "meters",
+        "color_data": "Color textures sRGB; normal/roughness/height/metallic/masks Non-Color",
+        "required_geometry": "Retain exact selected scene geometry, transforms, UVs and shader bindings; do not substitute a generic plane.",
+        "dependency_authority": "build.json inspection of the actual bound selected scene; missing dependency is a hard failure",
+        "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
+        "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
+      }
+    }
+  ],
+  "quarantined_research_roots": [
+    "shared/material-aggregate-rebuild/mineral-intergrowth",
+    "shared/material-native4k/metal-history",
+    "shared/material-causal-rebuild"
+  ],
+  "history_policy": "No historical files deleted or moved. Only this registry selects active input; explicitly hash-selected exceptions may live under research roots. Old catalogues never drive runtime discovery.",
+  "showcase_policy": {
+    "preferred_reference": "Use preferred_visual_reference when present; source-audit anchors remain evidence, not automatic presentation upgrades",
+    "promotion_gate": "Complete-panel native comparison against the pinned preferred reference must show clear visual improvement; numerical correctness alone is insufficient",
+    "validator": "materials.showcase.validate_visual_promotion",
+    "detail_policy": "Keep detail studies supplementary to complete panels",
+    "authority": "User regression feedback and parent restoration instruction2026-10-06T12:39Z"
+  }
+}

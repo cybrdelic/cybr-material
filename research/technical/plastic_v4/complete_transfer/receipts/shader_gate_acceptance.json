@@ -1,0 +1,85 @@
+{
+  "accepted_by_parent": true,
+  "acceptance_basis": "Parent explicitly confirmed actual shader implementation checks passed on2026-10-06; exact-coordinate native-knot conditioning remains documented, not excluded.",
+  "actual_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/actual_analytic_shader.json",
+  "actual_receipt_sha256": "d1ad1fa2ded92924fd68344eb6592087de9d45e8ade6ebf23155d58239d9c2a8",
+  "shader_source_sha256": "d9359823b7906841f2446b789b0013da249eca103cfbd8a4e3c65ef5251a79b5",
+  "source_scene_sha256": "b385ec1c1917f0fec01643acaeeec858b64e9419d3d04faef7bc60ef2f66a10b",
+  "whole_material_appearance_accepted": false,
+  "result": {
+    "data_origin": "actual_Cycles_EXRs",
+    "actual_input_hashes": {
+      "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/plastic_analytic_shader_capture_20261006_1457/INTERNAL_PANEL_guides/beauty_0001.exr": "c7ab130e6b00101d7ddb6d3da9658b70a62a1e5299b150fa6ee609c0fd0f59bb",
+      "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/plastic_analytic_shader_capture_20261006_1457/INTERNAL_PANEL_guides/albedo_0001.exr": "0c7e2ee5324f8c217d5bb3817dab1073f475e508a6d916730917d2a68b8af316",
+      "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/plastic_analytic_shader_capture_20261006_1457/INTERNAL_PANEL_guides/normal_0001.exr": "c50c2329cac38779a15425d1868e30f02be62995c799a72267e88f16dd3f6b1c"
+    },
+    "hit_pixels": 5050,
+    "inherited_geometry_qualification": {
+      "receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_native_seam_transfer/receipts/actual_native_seam.json",
+      "sha256": "2f1680070cc9d339f79ec67315db80a4b6deffcfe063800ba2218adae0730c68",
+      "position_pass": true,
+      "position_max_m": 8.032752492422733e-09,
+      "mesh_transform_q_attribute_bitwise_equal": true
+    },
+    "observed_native_cell_integer_readback_max_error": 0.0,
+    "actual_vs_exact_coordinate_cell_mismatch_count": 2,
+    "actual_vs_float32_oracle_cell_mismatch_count": 0,
+    "float32_oracle_vs_exact_cell_mismatch_count": 2,
+    "actual_cell_mismatch_knot_distance_max_m": 4.4835320345271155e-09,
+    "normal_implementation_vs_float32_oracle_degrees": {
+      "max": 5.560877675325861e-05,
+      "rms": 4.921884789744512e-06,
+      "p99": 1.4376302703921998e-05
+    },
+    "normal_conditioning_float32_vs_exact_degrees": {
+      "max": 0.025643978753736852,
+      "rms": 0.00036288712591622455,
+      "p99": 7.068420955443266e-05
+    },
+    "normal_actual_vs_exact_degrees": {
+      "max": 0.025641945050883234,
+      "rms": 0.0003628925721023559,
+      "p99": 7.050607880255233e-05
+    },
+    "normal_actual_same_cell_vs_exact_degrees": {
+      "max": 0.00010329870779749275,
+      "rms": 3.861408842664569e-05,
+      "p99": 7.040018856753248e-05
+    },
+    "normal_implementation_with_observed_cell_degrees": {
+      "max": 5.560877675325861e-05,
+      "rms": 4.921884789744512e-06,
+      "p99": 1.4376302703921998e-05
+    },
+    "height_actual_vs_float32_oracle_m": {
+      "max": 7.094880857038061e-10,
+      "rms": 1.727294105281354e-11,
+      "p99": 2.0603103627934968e-12
+    },
+    "height_actual_vs_observed_cell_oracle_m": {
+      "max": 7.094880857038061e-10,
+      "rms": 1.727294105281354e-11,
+      "p99": 2.0603103627934968e-12
+    },
+    "height_actual_vs_exact_coordinate_m": {
+      "max": 1.0668098762778856e-09,
+      "rms": 2.2061875668400184e-10,
+      "p99": 7.120801504788809e-10
+    },
+    "actual_normal_field_lengths": [
+      0.9999998827319934,
+      1.0000001569737498
+    ],
+    "normal_measurement_scope": "Actual analytically evaluated retained native field normal after Object-to-World NORMAL transform; socket also feeds declared Principled Normal, unused for data emission.",
+    "source_sha256": "b385ec1c1917f0fec01643acaeeec858b64e9419d3d04faef7bc60ef2f66a10b",
+    "shader_source_sha256": "d9359823b7906841f2446b789b0013da249eca103cfbd8a4e3c65ef5251a79b5",
+    "new_acceptance_gate_created": false,
+    "whole_part_or_appearance_qualified": false,
+    "no_automatic_promotion": true,
+    "oracle_limits": [
+      "Coordinate AOV decoding has finite precision; float32 oracle reproduces declared operation sequence, not undocumented compiler fusion.",
+      "Observed-cell oracle deliberately uses the renderer-reported neighboring cell at the reconstructed coordinate; any tiny extrapolation is diagnostic only and never changes the material.",
+      "All actual-versus-exact worst cases are reported, including derivative jumps."
+    ]
+  }
+}

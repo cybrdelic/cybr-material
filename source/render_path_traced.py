@@ -1,4 +1,4 @@
-"""Render the authored 4K surfaces with Blender Cycles CPU path tracing.
+"""Render the authored 4K surfaces with Blender Cycles path tracing.
 
 Example: blender -b --python source/render_path_traced.py -- --kind macros
 Raw surface studies; optional guided Cycles OIDN for architectural interiors.
@@ -16,6 +16,7 @@ import bpy
 from mathutils import Vector
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'source'))
 OUT = ROOT / 'path_traced'
 argv = sys.argv[sys.argv.index('--') + 1:] if '--' in sys.argv else []
 parser = argparse.ArgumentParser()
@@ -29,6 +30,8 @@ parser.add_argument('--draft', action='store_true')
 parser.add_argument('--use-final-maps', action='store_true', help='Draft output with native material maps')
 parser.add_argument('--build-only', action='store_true')
 parser.add_argument('--denoise', action='store_true', help='Cycles OpenImageDenoise with albedo and normal guides; requires the official Blender build')
+parser.add_argument('--device', choices=('CPU','OPTIX','CUDA'), default='CPU')
+parser.add_argument('--surface-proof',action='store_true',help='Matched original close-up camera and lighting for anatomy comparisons')
 args = parser.parse_args(argv)
 sys.argv = ['blender', '--'] + (['--draft'] if args.draft and not args.use_final_maps else [])
 module = importlib.util.spec_from_file_location('macro_setup', ROOT / 'source/render_macros.py')
@@ -44,6 +47,13 @@ def configure(scene, name):
     scene.name = name
     scene.render.engine = 'CYCLES'
     scene.cycles.device = 'CPU'
+    if args.device!='CPU':
+        prefs=bpy.context.preferences.addons['cycles'].preferences
+        prefs.compute_device_type=args.device;prefs.get_devices()
+        available=[d for d in prefs.devices if d.type==args.device]
+        if not available:raise RuntimeError('Requested Cycles device unavailable: '+args.device)
+        for d in prefs.devices:d.use=d in available
+        scene.cycles.device='GPU'
     scene.cycles.samples = args.samples
     scene.cycles.use_denoising = args.denoise
     if args.denoise:
@@ -73,14 +83,15 @@ def configure(scene, name):
     scene.render.image_settings.compression = 15
     scene.render.film_transparent = False
     scene.use_nodes = False
-    scene['renderer'] = 'Blender Cycles / CPU / path tracing'
+    scene['renderer'] = 'Blender Cycles / '+args.device+' / path tracing'
     scene['postprocessing'] = 'Cycles guided OpenImageDenoise and AgX; no added grain or image sharpening' if args.denoise else 'AgX display transform only; no denoising or image filtering'
     return scene
 
 
 def make_macro(spec):
-    scene = configure(macro_setup.macro(spec), 'CYCLES / Detail / ' + spec['name'])
-    return scene
+    if args.surface_proof:return configure(macro_setup.macro(spec),'CYCLES / Controlled Surface / '+spec['name'])
+    from specimen_studies import build
+    return build(sys.modules[__name__],spec)
 
 
 def surface(id, displaced=False):
@@ -134,10 +145,13 @@ def patch(name, mat, spec, size, location, folds=False, center=(.5, .5), n=241):
             if folds:
                 # Long soft folds and a raised turned-back corner; the texture
                 # supplies actual yarn relief at its unchanged physical scale.
-                z = .002 + .0045 * (1 + math.sin(2 * math.pi * (x / .067 + y / .24)))
-                z += .003 * math.cos(y / depth * math.pi) ** 2
-                z += .019 * math.exp(-((x - width * .40) / .031) ** 2) * ((y / depth + .5) ** 3)
-                z += .004 * math.sin(y / .032 + x / .15) * (abs(x) / (width / 2)) ** 3
+                # A resting cloth: localized compression beside a fold and a
+                # corner turned over its own weight. The middle lies flat.
+                corner=math.exp(-((x-width*.43)/(width*.14))**2-((y-depth*.39)/(depth*.21))**2)
+                ridge=math.exp(-((x+width*.20+y*.25)/(width*.11))**2)
+                z = .001+depth*.055*ridge*(.35+.65*(y/depth+.5))
+                z += depth*.075*corner
+                z += .0009*math.sin(y/.012+x/.019)*math.exp(-((x+width*.2)/(width*.09))**2)
             verts.append((x, y, z))
     faces = [(j*n+i, j*n+i+1, (j+1)*n+i+1, (j+1)*n+i)
              for j in range(n - 1) for i in range(n - 1)]
@@ -150,7 +164,8 @@ def patch(name, mat, spec, size, location, folds=False, center=(.5, .5), n=241):
 
 
 def lathe(name, profile, mat, spec, location, cylindrical=True, segments=256):
-    displaced = next(n for n in mat.node_tree.nodes if n.type == 'GROUP').inputs['Displacement Mode'].default_value
+    group=next((n for n in mat.node_tree.nodes if n.type=='GROUP'),None)
+    displaced=bool(group and group.inputs['Displacement Mode'].default_value)
     if displaced:
         dense = [profile[0]]
         for a, b in zip(profile, profile[1:]):
@@ -239,6 +254,7 @@ def scene_stone_timber():
     base = atelier.bevel_cube('Travertine / cut base', (.105,.115,.099), (.17,.12,.024), base_mat, .002)
     atelier.cube_uv_meters(base, ts['tile_m'])
     oak, os = surface('04_fumed_oak')
+    next(n for n in oak.node_tree.nodes if n.type=='GROUP').inputs['Timber Axis Rotation'].default_value=(math.pi/2,0,0)
     profile=[(.001,0),(.050,0),(.052,.003),(.052,.072),(.049,.076),
              (.043,.078),(.041,.075),(.041,.070),(.001,.070)]
     lathe('Fumed oak / hand turned cup', profile, oak, os, (.19,-.135,.09))
@@ -280,26 +296,15 @@ def scene_leather_linen():
     solid.thickness = .0006
     leather, les = surface('08_saddle_leather', True)
     swatch = patch('Saddle leather / cut hide sample', leather, les, (.148,.139),
-                   (.043,-.018,.018), center=(.46,.46), n=641)
+                   (.043,-.018,.0038), center=(.46,.46), n=641)
+    def hide_bend(x,y,z):
+        if x<=.040:return x,y,z
+        angle=(x-.040)/.027
+        return .040+.027*math.sin(angle),y,z+.027*(1-math.cos(angle))
+    for v in swatch.data.vertices:v.co=hide_bend(*v.co)
     swatch.rotation_euler.z = -.18
     thick = swatch.modifiers.new('Hide thickness', 'SOLIDIFY')
     thick.thickness = .0018
-    # A raised leather fold gives curvature, contact shadow, and edge profile.
-    verts=[]; faces=[]; nx=321; ny=97
-    for j in range(ny):
-        y=(j/(ny-1)-.5)*.116
-        for i in range(nx):
-            a=(i/(nx-1))*math.pi*1.10
-            r=.021 + .0015*math.cos(y/.032)
-            verts.append((r*math.cos(a), y, r*math.sin(a)))
-    for j in range(ny-1):
-        for i in range(nx-1):faces.append((j*nx+i,(j+1)*nx+i,(j+1)*nx+i+1,j*nx+i+1))
-    roll=assign_mesh('Saddle leather / curled cut edge',verts,faces,leather,
-                     lambda k,p,l:(.46+(k%nx)/(nx-1)*.021*math.pi*1.1/les['tile_m'],
-                                   .46+verts[k][1]/les['tile_m']))
-    roll.location=(.106,.056,.020);roll.rotation_euler.z=.12
-    relief(roll,les)
-    mod=roll.modifiers.new('Hide edge thickness','SOLIDIFY');mod.thickness=.0018
     thread = atelier.plain('Natural waxed flax / seam', (.43,.34,.23), .80)
     # Actual stitch geometry at 3.5mm spacing, each with a curved thread arc.
     for i in range(32):
@@ -308,13 +313,14 @@ def scene_leather_linen():
         local=[(x,y,.0009),(x+.0004,y+.0007,.0015),(x,y+.0025,.0009)]
         points=[]
         for px,py,pz in local:
+            px,py,pz=hide_bend(px,py,pz)
             ca=math.cos(-.18);sa=math.sin(-.18)
-            points.append((.043+ca*px-sa*py,-.018+sa*px+ca*py,.018+pz))
+            points.append((.043+ca*px-sa*py,-.018+sa*px+ca*py,.0038+pz))
         curve_line('Hand stitched leather / %02d'%i,points,thread,.00023)
     brass, bs = surface('05_champagne_brass')
-    for x,y in [(.087,-.062),(.104,.043)]:
+    for x,y in [(.069,-.062),(.072,.023)]:
         profile=[(.001,0),(.0045,0),(.005,.001),(.0048,.002),(.0035,.0028),(.001,.0029)]
-        lathe('Aged brass / fastening stud',profile,brass,bs,(x,y,.020),False,64)
+        lathe('Aged brass / fastening stud',profile,brass,bs,(x,y,.0040),False,64)
     scene.view_settings.exposure=-.30
     atelier.area(scene,'Raking daylight / fiber definition',(-.26,-.13,.12),(0,0,.017),2.5,.14,.25,color=(1,.965,.91))
     atelier.area(scene,'High soft fill',(.20,.15,.38),(0,0,.02),2.0,.35,.35,color=(.85,.92,1))
@@ -367,7 +373,7 @@ def release_pixels():
 
 
 def render(scene, key, spec=None):
-    folder = OUT / ('drafts' if args.draft else 'renders')
+    folder = OUT / ('controlled_surfaces' if args.surface_proof else 'drafts' if args.draft else 'renders')
     folder.mkdir(parents=True, exist_ok=True)
     dest = folder / (key + '.png')
     scene.render.filepath = str(dest)
@@ -377,9 +383,9 @@ def render(scene, key, spec=None):
         bpy.ops.render.render(write_still=True, scene=scene.name)
         data = records()
         data[key] = dict(
-            scene=scene.name, file=str(dest.relative_to(OUT)),
+            scene=scene.name, file=dest.relative_to(OUT).as_posix(),
             engine=scene.render.engine, blender=bpy.app.version_string,
-            device='CPU', resolution=[scene.render.resolution_x, scene.render.resolution_y],
+            device=args.device, resolution=[scene.render.resolution_x, scene.render.resolution_y],
             maximum_samples=scene.cycles.samples, minimum_samples=scene.cycles.adaptive_min_samples,
             adaptive_threshold=scene.cycles.adaptive_threshold, denoising=scene.cycles.use_denoising,
             denoiser=scene.cycles.denoiser if scene.cycles.use_denoising else None,
@@ -390,13 +396,15 @@ def render(scene, key, spec=None):
             look=scene.view_settings.look, exposure=scene.view_settings.exposure,
             material_ids=scene.get('material_ids', ''),
             elapsed_seconds=round(time.monotonic() - start, 2),
+            camera=dict(position_m=list(scene.camera.location),rotation_rad=list(scene.camera.rotation_euler),lens_mm=scene.camera.data.lens),
             provenance='Original deterministic procedural PBR; actual 3D path-traced rendering',
         )
         if spec:
-            data[key].update(material_id=spec['id'], inspection_width_m=spec['preview_diameter_m'],
+            data[key].update(material_id=spec['id'], inspection_width_m=scene.get('inspection_width_m',spec['preview_diameter_m']),
                              geometry_height='Height_Macro.png', residual_normal='Normal_Micro_OpenGL.png')
         for prop in ('room_dimensions_m','floor_material','floor_pattern','floor_board_length_m',
-                     'floor_board_width_m','floor_board_count','architecture_object_count','source_image_inputs'):
+                     'floor_board_width_m','floor_board_count','architecture_object_count','source_image_inputs',
+                     'room_use','wall_finish','appliance_integration','sink_fabrication','comparison_camera_name'):
             if prop in scene:
                 value=scene[prop]
                 data[key][prop]=list(value) if hasattr(value,'to_list') else value

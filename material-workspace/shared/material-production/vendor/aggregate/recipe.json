@@ -1,0 +1,178 @@
+{
+  "id": "32_concrete_polished",
+  "name": "Concrete / Polished",
+  "family": "Concrete",
+  "variant": "Polished",
+  "tile_m": 0.32,
+  "height_scale_m": 0.002,
+  "roughness": 0.28,
+  "color": [
+    0.49,
+    0.48,
+    0.44
+  ],
+  "seed": 2092,
+  "ior": 1.5,
+  "metallic": 0,
+  "representation": "solid displaced specimen",
+  "finish": "polished",
+  "physical_values": "authored approximations, not measured material data",
+  "tiling": "periodic field",
+  "construction_r3": {
+    "process": "Ground flat cross-sections through graded mineral, common honed plane",
+    "grading": [
+      {
+        "diameter_m": [
+          0.004,
+          0.014
+        ],
+        "count": 1741,
+        "area_fraction": 0.41536034478081596
+      },
+      {
+        "diameter_m": [
+          0.0014,
+          0.004
+        ],
+        "count": 3626,
+        "area_fraction": 0.092620849609375
+      },
+      {
+        "diameter_m": [
+          0.00045,
+          0.0014
+        ],
+        "count": 15191,
+        "area_fraction": 0.04624642266167535
+      }
+    ],
+    "relief_m": [
+      -3.2342250051442534e-05,
+      9.637337825552095e-06
+    ],
+    "clipped_height_pixels": 0,
+    "seed": 2092,
+    "normal_convention": "OpenGL +Y; paired macro geometry and residual micro field, see map metadata"
+  },
+  "geometry_grid": 512,
+  "macro_micro_pairing": "GeometryHeight.npy mesh samples; Height_Macro is its bilinear raster; Normal_Micro is residual against that raster",
+  "resolution": 1536,
+  "maps": {
+    "BaseColor.png": {
+      "color_space": "sRGB",
+      "bit_depth": 8
+    },
+    "Height.png": {
+      "color_space": "linear / Non-Color",
+      "bit_depth": 16
+    },
+    "Roughness.png": {
+      "color_space": "linear / Non-Color",
+      "bit_depth": 8
+    },
+    "Metallic.png": {
+      "color_space": "linear / Non-Color",
+      "bit_depth": 8
+    },
+    "AO.png": {
+      "color_space": "linear / Non-Color",
+      "bit_depth": 8
+    },
+    "Opacity.png": {
+      "color_space": "linear / Non-Color",
+      "bit_depth": 8
+    },
+    "AggregateMask.png": {
+      "color_space": "linear / Non-Color",
+      "bit_depth": 8
+    },
+    "Height_Macro.png": {
+      "color_space": "linear / Non-Color",
+      "bit_depth": 16
+    },
+    "Normal_OpenGL.png": {
+      "color_space": "linear / Non-Color",
+      "bit_depth": 8
+    },
+    "Normal_Micro_OpenGL.png": {
+      "color_space": "linear / Non-Color",
+      "bit_depth": 8
+    },
+    "Normal_DirectX.png": {
+      "color_space": "linear / Non-Color",
+      "bit_depth": 8
+    },
+    "ORM.png": {
+      "color_space": "linear / Non-Color",
+      "bit_depth": 8
+    }
+  },
+  "height_midlevel": 0.5,
+  "displacement": "(height - 0.5) * height_scale_m",
+  "normal_pairing": "Height_Macro + Normal_Micro_OpenGL, or full Normal_OpenGL without displacement",
+  "emission_encoding": "linear RGB8 intensity pattern; strength in scene is separate",
+  "thickness_scale_m": 0,
+  "map_limits": "Surface maps do not replace fibers, blades, links, lattice voids, panel seams or tile grout geometry.",
+  "checks": {
+    "BaseColor": {
+      "min": 0.11473894119262695,
+      "max": 0.7400000095367432,
+      "sha256": "7aa6eeb1d971a2d6024d6a80c4f96d3ff515f6c7b476df41d55b63287c2e0fc7"
+    },
+    "Height": {
+      "min": 0.4838288724422455,
+      "max": 0.5048186779022217,
+      "sha256": "8b1f492acdf4be615a5b37338d4d5b3aa7596abeb3423027b7f8e12258de8edc"
+    },
+    "Roughness": {
+      "min": 0.12974995374679565,
+      "max": 0.27125948667526245,
+      "sha256": "953c58c0855a7ec4f299bf2ec00e8653b4ad3828f0057e3772098007d50283fa"
+    },
+    "Metallic": {
+      "min": 0.0,
+      "max": 0.0,
+      "sha256": "abe61fd2d88c26cba2c99bc9d763bcf9a95051a9c59161adaa2a076614ceac7b"
+    },
+    "AO": {
+      "min": 1.0,
+      "max": 1.0,
+      "sha256": "131f682b4236d934c2180bcdd20ae35041e8e1c248dcdfd890ed67358e4de53a"
+    },
+    "Opacity": {
+      "min": 1.0,
+      "max": 1.0,
+      "sha256": "131f682b4236d934c2180bcdd20ae35041e8e1c248dcdfd890ed67358e4de53a"
+    },
+    "AggregateMask": {
+      "min": 0.0,
+      "max": 1.0,
+      "sha256": "15c1d0d9f38911a930f17dbac46372500f999ee210ef30f357b4d2d0cee1d0f7"
+    },
+    "Height_Macro": {
+      "min": 0.48874834179878235,
+      "max": 0.5019094944000244,
+      "sha256": "2f6774a0ae225e37a3474fad8da530ed7afdff8db64e97dc434212dc9a9e0311"
+    },
+    "Normal_OpenGL": {
+      "min": 0.4610833525657654,
+      "max": 1.0,
+      "sha256": "6194fa9b4d79b70cf2b9f35b71c8ade389edfcde4c6274db2b3a7475642d8b09"
+    },
+    "Normal_Micro_OpenGL": {
+      "min": 0.4605048894882202,
+      "max": 1.0,
+      "sha256": "cc989a22ddada9c3a800911388e1df1bcb88027c0159cfc929b6e654f2269164"
+    },
+    "Normal_DirectX": {
+      "min": 0.4610833525657654,
+      "max": 1.0,
+      "sha256": "9648390813d07250bead19ba3b06002e441c2664fe7566a1473f78caf5be2577"
+    },
+    "ORM": {
+      "min": 0.0,
+      "max": 1.0,
+      "sha256": "58b7a70d134b6715752e26248a4f519bbb9007903584527fc12a7b1512b284ac"
+    }
+  }
+}

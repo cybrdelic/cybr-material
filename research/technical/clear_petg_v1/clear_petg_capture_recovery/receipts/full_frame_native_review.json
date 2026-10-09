@@ -1,0 +1,58 @@
+{
+  "reviewed_utc": "2026-10-06T13:06:14Z",
+  "baseline_library_file_id": "libfile_b3741ee3e1688191af4de2cc59b712f2",
+  "baseline_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/23_clear_printed_petg_labeled.png",
+  "baseline_sha256": "04297c3d0b8fb1190830f0145f6915bc34d56794f0f6f7b8c29c7cd05c99ea96",
+  "candidate_path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/clear_petg_full_two_component_20261006_1302/TWO_COMPONENT_FILTERED_PANEL.png",
+  "candidate_sha256": "8e497850c65f5f1bbdd257885f6d41dd92cc6095752742c8bf91e414ba179d66",
+  "candidate_library_file_id": "libfile_e63422770c708191867e0e9be25113ff",
+  "native_pixels_reviewed": true,
+  "complete_view_compared": true,
+  "result": "clear_visual_improvement",
+  "visible_findings": [
+    "Fine print ridges remain continuous across the face.",
+    "Front contact, cut edge, upper corner and start-stop seam retain coherent shape and highlights.",
+    "No conspicuous random sampling grain in the complete view and four native-size edge/seam crops.",
+    "Old complete panel has conspicuous mottled/grainy optical appearance; new rendering resolves the same retained construction more cleanly."
+  ],
+  "limitations": [
+    "Frosted/translucent response remains; optical clarity and manufacturing calibration are not validated.",
+    "Geometry source was reconstructed from the retained script, source maps and bounds; original historical slab binary is unavailable.",
+    "This is a rendering-fidelity improvement, not a new physical material model."
+  ],
+  "layer_gate": {
+    "minimum_ratio": 0.9,
+    "metrics": [
+      {
+        "center_x_m": -0.01,
+        "raw_to_filtered_layer_fundamental_ratio": 0.9819380049485145,
+        "mean_relative_change": 0.0016909575049870451
+      },
+      {
+        "center_x_m": -0.003,
+        "raw_to_filtered_layer_fundamental_ratio": 0.9782026778986693,
+        "mean_relative_change": 0.00042314696625367354
+      },
+      {
+        "center_x_m": 0.004,
+        "raw_to_filtered_layer_fundamental_ratio": 0.9693873196098306,
+        "mean_relative_change": 0.00034775060471869956
+      },
+      {
+        "center_x_m": 0.01,
+        "raw_to_filtered_layer_fundamental_ratio": 0.9629577295112609,
+        "mean_relative_change": 0.0018197666206443142
+      }
+    ],
+    "all_pass": true
+  },
+  "signed_and_delta_terms_preserved": true,
+  "selection_promoted": false,
+  "review_crop_paths": [
+    "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/clear_petg_full_two_component_20261006_1302/INTERNAL_QA_front_contact.png",
+    "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/clear_petg_full_two_component_20261006_1302/INTERNAL_QA_right_edge.png",
+    "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/clear_petg_full_two_component_20261006_1302/INTERNAL_QA_seam.png",
+    "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/runs/clear_petg_full_two_component_20261006_1302/INTERNAL_QA_top_corner.png"
+  ],
+  "library_version": 0
+}

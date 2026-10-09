@@ -9,9 +9,17 @@ import zipfile
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
+def display_font(name,size):
+    candidates=[Path('/usr/share/fonts/truetype/dejavu')/name,
+                Path('C:/Windows/Fonts')/('georgia.ttf' if 'Serif' in name else 'arial.ttf')]
+    for path in candidates:
+        if path.is_file():return ImageFont.truetype(str(path),size)
+    return ImageFont.load_default(size=size)
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'path_traced'
 SPECS = json.loads((ROOT / 'materials/manifest.json').read_text())['materials']
+VIEW_WIDTHS={k:r.get('inspection_width_m') for k,r in json.loads((OUT/'render_manifest.json').read_text()).items()}
 STUDIES = [('11_stone_and_timber', 'Stone and Timber'),
            ('12_leather_and_linen', 'Leather and Linen'),
            ('13_metal_and_ceramic', 'Metal and Ceramic')]
@@ -27,6 +35,7 @@ def inspect():
     expected = [s['id'] + '_detail' for s in SPECS] + [key for key, _ in STUDIES+ROOMS]
     for key in expected:
         record = manifest[key]
+        record['file']=record['file'].replace('\\','/')
         file = OUT / record['file']
         assert file.parent.name == 'renders', key
         assert file.name == key + '.png', key
@@ -76,7 +85,7 @@ def gallery():
     def card(key, name, meta, cls=''):
         return f'<button class="picture {cls}" data-image="renders/{key}.png" data-name="{html.escape(name, quote=True)}"><img src="renders/{key}.png" alt="{html.escape(name, quote=True)} — Cycles path-traced render" loading="lazy"><div class="meta">{meta}</div><h3>{html.escape(name)}</h3></button>'
     cards = ''.join(card(s['id'] + '_detail', s['name'].split(' / ')[0],
-                         s['id'][:2] + ' / ' + s['family'] + ' / ' + str(round(s['preview_diameter_m'] * 1000)) + ' mm view') for s in SPECS)
+                         s['id'][:2] + ' / ' + s['family'] + ' / ' + str(round((VIEW_WIDTHS.get(s['id']+'_detail') or s['preview_diameter_m']) * 1000)) + ' mm view') for s in SPECS)
     content = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>CYBR / Cycles Studies</title><style>{STYLE}</style></head><body>
 <header><a class="logo" href="OPEN_RENDERS.html">CYBR</a><a href="README.txt">Render notes ↗</a></header><main>
 <div class="intro"><div><span class="meta">Cycles / Architecture and surface studies</span><h1>Materials in real rooms.</h1></div><p>Three full interiors, hardwood floor inspection, ten surface close-ups and three still-life studies. Open any render at its native resolution or save the 16-bit PNG.</p></div>
@@ -98,9 +107,9 @@ document.getElementById('close').addEventListener('click',()=>dialog.close());di
 
 
 def contacts():
-    serif=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf',54)
-    sans=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',18)
-    small=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',14)
+    serif=display_font('DejaVuSerif.ttf',54)
+    sans=display_font('DejaVuSans.ttf',18)
+    small=display_font('DejaVuSans.ttf',14)
     canvas=Image.new('RGB',(2000,1180),'#efece4');draw=ImageDraw.Draw(canvas)
     draw.text((40,35),'C Y B R  M A T E R I A L',font=serif,fill='#262824')
     draw.text((40,120),'CYCLES / PATH-TRACED SURFACE STUDIES',font=small,fill='#73766d')
@@ -109,7 +118,8 @@ def contacts():
         with Image.open(OUT/'renders'/(spec['id']+'_detail.png')) as source:
             canvas.paste(source.convert('RGB').resize((360,360),Image.Resampling.LANCZOS),(x,y))
         draw.text((x,y+374),spec['id'][:2]+' / '+spec['name'].split(' / ')[0],font=sans,fill='#262824')
-        draw.text((x,y+407),str(round(spec['preview_diameter_m']*1000))+' MM VIEW  /  '+spec['family'].upper(),font=small,fill='#73766d')
+        view=VIEW_WIDTHS.get(spec['id']+'_detail') or spec['preview_diameter_m']
+        draw.text((x,y+407),str(round(view*1000))+' MM VIEW  /  '+spec['family'].upper(),font=small,fill='#73766d')
     draw.text((40,1140),'Actual 3D path tracing · Native 4K procedural maps · Physical relief · No denoising or added grain',font=small,fill='#73766d')
     canvas.save(OUT/'CYBR_Cycles_Detail_Collection.jpg',quality=97,subsampling=0)
     canvas=Image.new('RGB',(1280,1715),'#efece4');draw=ImageDraw.Draw(canvas)
@@ -149,7 +159,7 @@ Materials are original procedural surfaces, not scans.
 '''
     (OUT/'README.txt').write_text(readme)
     files=[p for p in OUT.rglob('*') if p.is_file() and 'drafts' not in p.parts
-           and 'metadata' not in p.parts and p.name!='SHA256SUMS.txt']
+           and 'metadata' not in p.parts and 'draft' not in p.name.lower() and p.name!='SHA256SUMS.txt']
     files += [ROOT/'blender/CYBR_Cycles_Details.blend', ROOT/'blender/CYBR_Cycles_Still_Lifes.blend',ROOT/'blender/CYBR_Cycles_Architecture.blend']
     files += [ROOT/'source/render_path_traced.py',ROOT/'source/verify_path_traced.py',ROOT/'source/package_path_traced.py']
     checksum=OUT/'SHA256SUMS.txt'

@@ -1,0 +1,417 @@
+{
+  "ready_for_renderer_review": true,
+  "complete_material_reconstruction": true,
+  "not_historical_binary_identity": true,
+  "files": [
+    {
+      "case": "full",
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/scenes/plastic_complete_full.blend",
+      "sha256": "8e45cc56927ca910d2cb2aeb7d23b35e20a3a24beea500b22df446778711e4a5",
+      "bytes": 32430611,
+      "camera": "Slab / shared camera",
+      "capture": {
+        "camera": "Slab / shared camera",
+        "engine": "CYCLES",
+        "width": 960,
+        "height": 960,
+        "samples": 128,
+        "capture_mode": "unfiltered",
+        "save_guides": true,
+        "light_tree": false,
+        "color_depth": 16,
+        "dither_intensity": 0,
+        "use_adaptive_sampling": false,
+        "use_denoising": false
+      },
+      "dependencies": [
+        {
+          "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_native_relief_transfer/maps/production_retained_height_native4096.png",
+          "sha256": "78ad8b37255340889593dcf47180913d611ce0124e756f3dcbaac187d9eb2aee"
+        }
+      ]
+    },
+    {
+      "case": "macro",
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/scenes/plastic_complete_macro.blend",
+      "sha256": "cc90665eb508286c7ca9830b480085d60af6435c0e542fffc66826d8e8d371e9",
+      "bytes": 32430615,
+      "camera": "Plastic / authored molding detail camera",
+      "capture": {
+        "camera": "Plastic / authored molding detail camera",
+        "engine": "CYCLES",
+        "width": 960,
+        "height": 960,
+        "samples": 128,
+        "capture_mode": "unfiltered",
+        "save_guides": true,
+        "light_tree": false,
+        "color_depth": 16,
+        "dither_intensity": 0,
+        "use_adaptive_sampling": false,
+        "use_denoising": false
+      },
+      "dependencies": [
+        {
+          "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_native_relief_transfer/maps/production_retained_height_native4096.png",
+          "sha256": "78ad8b37255340889593dcf47180913d611ce0124e756f3dcbaac187d9eb2aee"
+        }
+      ]
+    },
+    {
+      "case": "second_light",
+      "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/scenes/plastic_complete_second_light.blend",
+      "sha256": "630973d97682fe04b7ba219a96e32b9730fcc8f4958d1c97819ff3b0af2aee69",
+      "bytes": 32430618,
+      "camera": "Slab / shared camera",
+      "rig": {
+        "objects": {
+          "Slab / shared camera": {
+            "type": "CAMERA",
+            "matrix": [
+              0.8017458915710449,
+              -0.3565812408924103,
+              0.4796387553215027,
+              0.06560000032186508,
+              0.5976650714874268,
+              0.478340744972229,
+              -0.6434178948402405,
+              -0.08799999952316284,
+              2.7379325473475546e-09,
+              0.8025209903717041,
+              0.5966238975524902,
+              0.08559999614953995,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data": {
+              "type": "ORTHO",
+              "ortho_scale": 0.12960000336170197,
+              "lens": 50.0
+            }
+          },
+          "Slab / neutral floor": {
+            "type": "MESH",
+            "matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              -9.999999974752427e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data": {}
+          },
+          "Slab / key": {
+            "type": "LIGHT",
+            "matrix": [
+              0.7592567801475525,
+              -0.5308455228805542,
+              0.37647339701652527,
+              0.047999996691942215,
+              0.6507911682128906,
+              0.6193200945854187,
+              -0.4392191171646118,
+              -0.0560000017285347,
+              -3.834724537910006e-08,
+              0.5784856677055359,
+              0.8156925439834595,
+              0.10799999535083771,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data": {
+              "energy": 0.17919999361038208,
+              "size": 0.07599999755620956,
+              "color": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "shape": "DISK"
+            }
+          },
+          "Slab / rim": {
+            "type": "LIGHT",
+            "matrix": [
+              -0.8804709315299988,
+              0.348418265581131,
+              -0.32152077555656433,
+              -0.0279999952763319,
+              -0.47410011291503906,
+              -0.647061824798584,
+              0.5971097350120544,
+              0.052000001072883606,
+              1.2869477927779371e-07,
+              0.6781708598136902,
+              0.7349041700363159,
+              0.06800000369548798,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data": {
+              "energy": 0.08959999680519104,
+              "size": 0.05199999734759331,
+              "color": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "shape": "DISK"
+            }
+          },
+          "Slab / fill": {
+            "type": "LIGHT",
+            "matrix": [
+              -0.6782800555229187,
+              -0.36157310009002686,
+              0.63968825340271,
+              0.052000001072883606,
+              0.7348034977912903,
+              -0.33375975489616394,
+              0.5904814004898071,
+              0.047999996691942215,
+              1.710324148973541e-08,
+              0.8705568909645081,
+              0.49206775426864624,
+              0.04399999976158142,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data": {
+              "energy": 0.03199999779462814,
+              "size": 0.09600000083446503,
+              "color": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "shape": "DISK"
+            }
+          },
+          "Plastic / authored molding detail camera": {
+            "type": "CAMERA",
+            "matrix": [
+              0.7418737411499023,
+              -0.3208793103694916,
+              0.5887782573699951,
+              0.07000000029802322,
+              0.6705396175384521,
+              0.35501548647880554,
+              -0.6514143347740173,
+              -0.08500000089406967,
+              -1.9055775624110538e-08,
+              0.8780663013458252,
+              0.47853896021842957,
+              0.0430000014603138,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data": {
+              "type": "ORTHO",
+              "ortho_scale": 0.024000000208616257,
+              "lens": 50.0
+            }
+          }
+        },
+        "world": [
+          [
+            0.18000000715255737,
+            0.18000000715255737,
+            0.18000000715255737,
+            1.0
+          ],
+          0.2199999988079071
+        ],
+        "view": {
+          "transform": "AgX",
+          "look": "AgX - Medium High Contrast",
+          "exposure": 0.0,
+          "gamma": 1.0
+        },
+        "active_camera": "Slab / shared camera"
+      },
+      "capture": {
+        "camera": "Slab / shared camera",
+        "engine": "CYCLES",
+        "width": 960,
+        "height": 960,
+        "samples": 128,
+        "capture_mode": "unfiltered",
+        "save_guides": true,
+        "light_tree": false,
+        "color_depth": 16,
+        "dither_intensity": 0,
+        "use_adaptive_sampling": false,
+        "use_denoising": false
+      },
+      "dependencies": [
+        {
+          "path": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_native_relief_transfer/maps/production_retained_height_native4096.png",
+          "sha256": "78ad8b37255340889593dcf47180913d611ce0124e756f3dcbaac187d9eb2aee"
+        }
+      ]
+    }
+  ],
+  "source_build_resources": {
+    "exit_code": 0,
+    "sampled_peak_MiB": 398.05078125,
+    "kernel_peak_MiB": 397.69140625,
+    "seconds": 7.132887193001807,
+    "stop_reason": null,
+    "cap_MiB": 1536,
+    "scope": "One admitted source build; no render"
+  },
+  "source_build_total_bytes": 97291844,
+  "geometry": {
+    "vertices": 571660,
+    "triangles": 1143316,
+    "arrays_sha256": "229f66840fc3be6d562314f68a14979ac937bf42b1939f86faa1f744725804a3",
+    "same_original_form": {
+      "macro_formula_sha256": "31280c3ec450d251fa5da8a77f4bf4485fdccfbe0fe805571f8052e67e29698f",
+      "nominal_mm": [
+        80,
+        80,
+        8
+      ],
+      "fillet_mm": 3,
+      "draft_degrees": 0.8,
+      "parting_witness_peak_um": 22,
+      "ejector_count": 4
+    },
+    "full_part_is_camera_lod": true,
+    "lod_budget_pixels_at_960": 0.25,
+    "not_global20nm_qualification": true,
+    "top_field_unchanged_after_detail_refinement": true,
+    "floor_clearance_m": 1e-06,
+    "numeric_receipts": {
+      "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/native_coverage.json": "20646f2529f074c9500c22507db4d30b4aab55086374b5aa098dfbfa7170b3d4",
+      "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/molding_details.json": "660eedb074ad1a41125f0fab4369056bfda4ba5aeae04b8d28096cf52a9245ad",
+      "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/detail_lod_verification.json": "68ddf4c8c72d000f52445f9e3cb5bdacc861182122cdbe9e34013357749f22e7",
+      "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/shutoff_contract.json": "d9068bbf1df6c3019cf897be61a6e95b9eacae5f409fec0243cd845a6449b739"
+    }
+  },
+  "shader": {
+    "source_sha256": "d9359823b7906841f2446b789b0013da249eca103cfbd8a4e3c65ef5251a79b5",
+    "actual_test": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/actual_analytic_shader.json",
+    "actual_test_sha256": "d1ad1fa2ded92924fd68344eb6592087de9d45e8ade6ebf23155d58239d9c2a8",
+    "main_normal_and_coat_normal_coupling": "Both receive the qualified analytic surface normal. This is an explicit coupling change; old graph identity is not claimed.",
+    "intrinsic_roughness": 0.475,
+    "retained_shutoff_material": {
+      "roughness": 0.44,
+      "original_r2_qz_band_m": [
+        -6.999999999999975e-05,
+        6.999999999999975e-05
+      ],
+      "source_contract": {
+        "source_builder": "material-publication/audit/checkpoints/2026-10-05/sources/material-native4k/plastic-detail/source/build_molded_panels_r2.py",
+        "source_builder_sha256": "1431ef5657feb8c6186c9f93b7bfa8ae772e9d283e6c84c74c7927c85cad6764",
+        "original_rows": [
+          20,
+          21,
+          22,
+          23
+        ],
+        "original_global_z_intervals_m": [
+          [
+            0.00393,
+            0.003965
+          ],
+          [
+            0.003965,
+            0.004
+          ],
+          [
+            0.004,
+            0.004035
+          ],
+          [
+            0.004035,
+            0.00407
+          ]
+        ],
+        "original_merged_global_z_bounds_m": [
+          0.00393,
+          0.00407
+        ],
+        "retained_qz_bounds_m": [
+          -6.999999999999975e-05,
+          6.999999999999975e-05
+        ],
+        "original_assignment": "abs((zs[k]+zs[k+1])*0.5-0.004)<0.000065",
+        "new_assignment": "Preserve the extracted original physical band boundaries; do not reevaluate the old midpoint rule on new rows.",
+        "candidate_triangles_crossing_boundary": 0,
+        "candidate_q_boundary_distance_m": [
+          2.574980159653073e-19,
+          2.439454888092385e-19
+        ],
+        "candidate_boundary_is_identical_in_float32": true,
+        "band_triangles": 33768,
+        "roughness": 0.44,
+        "original_r5_normal_graph_preserved": true,
+        "actual_connection_inspection": "Pending admitted source build"
+      },
+      "triangles": 150812,
+      "source_normal_links": [
+        {
+          "from_node": "Bump",
+          "from_socket": "Normal",
+          "to_socket": "Normal"
+        }
+      ],
+      "source_graph_preserved_except_original_r2_roughness_override": true
+    }
+  },
+  "rig": {
+    "full_and_macro_exact_historical_signature": true,
+    "signature_sha256": "316ed8cdf0adaa8a74180004e9bbb2ca7010c6510ee1bef3f23b34dc26bb03fc",
+    "second_light": "All area light object transforms rotated+90deg around world Z about(0,0,.004)m. Energy,size,shape,color,world,geometry and material stay identical."
+  },
+  "comparison_anchor": {
+    "actual_strong_full_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/21_molded_stipple_plastic_labeled.png",
+    "library_file_id": "libfile_ea9e705b38608191ace56d62e2cf6020",
+    "older_state_note": "Older r2 reference uses empirical90% tool replication; current candidate uses recovered solved retained state. Do not call the old appearance anchor a same-state control.",
+    "missing_historical_controls": "Historical full scene binary is absent. Any old macro/second-light control must be labeled prior-recipe reconstruction, not historical pixel identity."
+  },
+  "calibration_limits": [
+    "Assumed generic material constants, not measured, calibrated, or experimentally validated for a polymer.",
+    "Local independent columns: no lateral momentum, incompressible volume conservation, gas compression/venting, injection filling, or full 3D contact elasticity.",
+    "The Maxwell modulus and dashpot describe an effective surface layer; no molecular microstructure or physical phase transition is solved.",
+    "Cooling is solved through a 4mm half-thickness with an adiabatic back; skin_fraction is only a diagnostic of temperature below an assumed threshold.",
+    "Final retained displacement is the idealized unloaded dashpot state after a 0.5s surface imprint window; this is not a whole-part ejection or mold-cycle prediction.",
+    "Mold is an infinite isothermal thermal reservoir.",
+    "No thermal contraction, crystallization, shrinkage, residual stress field, macroscopic seams, ejector marks or draft is generated by this core.",
+    "Response-table interpolation maps already-solved independent local columns to the native tool; no spatial noise and no fixed replication factor.",
+    "Intrinsic roughness0.475 and source dielectric defaults are retained assumptions, not calibrated polymer optics.",
+    "Finite-precision native knot ownership has explicit conditioning uncertainty; see knot_conditioning.json.",
+    "Shared full-part mesh is a sampled camera LOD, not the20nm bounded seam representation."
+  ],
+  "source_dependencies": {
+    "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/source/build_complete_candidate.py": "9e36de3ee4e6f404629215df648528a3c51c8fc441458951648f63ba84e0ef80",
+    "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/source/analytic_shader.py": "d9359823b7906841f2446b789b0013da249eca103cfbd8a4e3c65ef5251a79b5",
+    "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/source/surface_contract.py": "f80d51f162e6e0ac3c79e7a7a1917f747fd0a0bc7825489182dbb82f7d057228",
+    "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/complete_build.json": "b38686354ad62ffd82670ecf271c48a5fd309c337eed3f89ec62d2f8ef9440d0"
+  },
+  "appearance_qualified": false,
+  "promotion_authorized": false,
+  "selected_scenes_or_registry_edited": false
+}

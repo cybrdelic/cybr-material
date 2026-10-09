@@ -1,0 +1,239 @@
+{
+  "studio_script_sha256": "31d56e0261c52ae8de15639e8e25e450933cab138211e5125ad35154707349da",
+  "ground_clearance_m": 1e-06,
+  "id": "05_champagne_brass",
+  "bounds_min_m": [
+    -0.10000000149011612,
+    -0.10000000149011612,
+    0.0
+  ],
+  "bounds_max_m": [
+    0.10000000149011612,
+    0.10000000149011612,
+    0.0030011734925210476
+  ],
+  "dimensions_m": [
+    0.20000000298023224,
+    0.20000000298023224,
+    0.0030011734925210476
+  ],
+  "frame_width_m": 0.3240000009536743,
+  "specimen_objects": [
+    "05_champagne_brass / full native tile slab"
+  ],
+  "native_map_source": "/workspace/shared/material-native4k/original-verified/materials/05_champagne_brass",
+  "repository_commit": "de4146ac759164e29323b152d37f64417c00c3fb",
+  "provenance": "Byte-verified original native-4096 maps; no upsampling or regeneration",
+  "physical_height_scale_m": 0.0002,
+  "height_midlevel": 0.5,
+  "physical_thickness_m": 0.003,
+  "physical_edge_bevel_m": 0.00015,
+  "bevel_segments": 3,
+  "bevel_limit_degrees": 30,
+  "bevel_overlap_clamp": true,
+  "shader_variant": "Exact recovered original native-4096 material",
+  "source_files": {
+    "BaseColor.png": {
+      "sha256": "2859e59886d034b9f3cd59f2a6ea12387e82ba75a02a3a3b2e9c6b7f6b2bba4c",
+      "git_blob_sha": "6a6433545b7b7ceeaf56d699619b8e9f8dde5c19",
+      "bytes": 310171,
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "source_url": "https://raw.githubusercontent.com/cybrdelic/cybr-material/de4146ac759164e29323b152d37f64417c00c3fb/materials/05_champagne_brass/BaseColor.png"
+    },
+    "Normal_OpenGL.png": {
+      "sha256": "23f1356276a8e7929bf6f2e714245383131d1e346efd483cac515290a4c3886e",
+      "git_blob_sha": "3c1a63d3e2b4292e3f036d516e347cad6ea09a3c",
+      "bytes": 381412,
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "source_url": "https://raw.githubusercontent.com/cybrdelic/cybr-material/de4146ac759164e29323b152d37f64417c00c3fb/materials/05_champagne_brass/Normal_OpenGL.png"
+    },
+    "Normal_DirectX.png": {
+      "sha256": "9ebf293058a8591acf358955512b59dcfdd166775289ec26e2f6c6c407930dd1",
+      "git_blob_sha": "fb55d611aa6427bf575666eebdc1a4e715013bf9",
+      "bytes": 381311,
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "source_url": "https://raw.githubusercontent.com/cybrdelic/cybr-material/de4146ac759164e29323b152d37f64417c00c3fb/materials/05_champagne_brass/Normal_DirectX.png"
+    },
+    "Normal_Micro_OpenGL.png": {
+      "sha256": "595e45885cf3c2de0bfee207ccc07bda5b5faca9b3af217aaee55275790c1706",
+      "git_blob_sha": "74909160bc493335dad7820fd406d2bd50192caa",
+      "bytes": 384699,
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "source_url": "https://raw.githubusercontent.com/cybrdelic/cybr-material/de4146ac759164e29323b152d37f64417c00c3fb/materials/05_champagne_brass/Normal_Micro_OpenGL.png"
+    },
+    "Height.png": {
+      "sha256": "8261cdaedfda99e751ea08bc0e115769483e1a79ef8ffb1d92348c470d8937d1",
+      "git_blob_sha": "80d6dddf8d18a45c5e84ca0f18ca21c0d000ffa2",
+      "bytes": 5836845,
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "source_url": "https://raw.githubusercontent.com/cybrdelic/cybr-material/de4146ac759164e29323b152d37f64417c00c3fb/materials/05_champagne_brass/Height.png"
+    },
+    "Height_Macro.png": {
+      "sha256": "edd2b60be06c758b0a3f242480c9df7b5f492b9d1bd65b3cf91446320dbc6f05",
+      "git_blob_sha": "1900bce5c4b16ab34e17e35c77e284a41b622271",
+      "bytes": 3510777,
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "source_url": "https://raw.githubusercontent.com/cybrdelic/cybr-material/de4146ac759164e29323b152d37f64417c00c3fb/materials/05_champagne_brass/Height_Macro.png"
+    },
+    "Roughness.png": {
+      "sha256": "fd3f199fc71d54a141fac36c18caead364e604b01906654b81950da69b09bcb4",
+      "git_blob_sha": "9fa1fe79fdd74886b1a741c7f5dc69c4e111b0fa",
+      "bytes": 213027,
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "source_url": "https://raw.githubusercontent.com/cybrdelic/cybr-material/de4146ac759164e29323b152d37f64417c00c3fb/materials/05_champagne_brass/Roughness.png"
+    },
+    "Metallic.png": {
+      "sha256": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+      "git_blob_sha": "1d5490fa7486edf9380ea73b27fdf2f920b3f32e",
+      "bytes": 25455,
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "source_url": "https://raw.githubusercontent.com/cybrdelic/cybr-material/de4146ac759164e29323b152d37f64417c00c3fb/materials/05_champagne_brass/Metallic.png"
+    },
+    "AO.png": {
+      "sha256": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+      "git_blob_sha": "1d5490fa7486edf9380ea73b27fdf2f920b3f32e",
+      "bytes": 25455,
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "source_url": "https://raw.githubusercontent.com/cybrdelic/cybr-material/de4146ac759164e29323b152d37f64417c00c3fb/materials/05_champagne_brass/AO.png"
+    },
+    "WearMask.png": {
+      "sha256": "26f63a22fe786a0466623f3c3710cb1784dba98e535bc18fb93e8cae9c17d221",
+      "git_blob_sha": "0746a6e82217b2f04b3bc10e17544991d2d6aa64",
+      "bytes": 25045,
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "source_url": "https://raw.githubusercontent.com/cybrdelic/cybr-material/de4146ac759164e29323b152d37f64417c00c3fb/materials/05_champagne_brass/WearMask.png"
+    },
+    "ORM.png": {
+      "sha256": "9fbeef7f3cc5001b83f3a0fe7ad4028f8a596f8d689e381ad6443674ea93f7e8",
+      "git_blob_sha": "47bd68ffbda96b7c3ccc26e939055c595dce0077",
+      "bytes": 273855,
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "source_url": "https://raw.githubusercontent.com/cybrdelic/cybr-material/de4146ac759164e29323b152d37f64417c00c3fb/materials/05_champagne_brass/ORM.png"
+    },
+    "Opacity.png": {
+      "sha256": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+      "git_blob_sha": "1d5490fa7486edf9380ea73b27fdf2f920b3f32e",
+      "bytes": 25455,
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "source_url": "https://raw.githubusercontent.com/cybrdelic/cybr-material/de4146ac759164e29323b152d37f64417c00c3fb/materials/05_champagne_brass/Opacity.png"
+    },
+    "material.json": {
+      "sha256": "f3105ef3feb8df007177e3a861cdc8a8e5fd78ee88c5baa34f67893763ca8937",
+      "git_blob_sha": "fdaf87ca836d6c0e19eca88f3ee489c49ff8274c",
+      "bytes": 1329,
+      "dimensions": null,
+      "source_url": "https://raw.githubusercontent.com/cybrdelic/cybr-material/de4146ac759164e29323b152d37f64417c00c3fb/materials/05_champagne_brass/material.json"
+    }
+  },
+  "source_hashes": {
+    "BaseColor.png": "2859e59886d034b9f3cd59f2a6ea12387e82ba75a02a3a3b2e9c6b7f6b2bba4c",
+    "Normal_OpenGL.png": "23f1356276a8e7929bf6f2e714245383131d1e346efd483cac515290a4c3886e",
+    "Normal_DirectX.png": "9ebf293058a8591acf358955512b59dcfdd166775289ec26e2f6c6c407930dd1",
+    "Normal_Micro_OpenGL.png": "595e45885cf3c2de0bfee207ccc07bda5b5faca9b3af217aaee55275790c1706",
+    "Height.png": "8261cdaedfda99e751ea08bc0e115769483e1a79ef8ffb1d92348c470d8937d1",
+    "Height_Macro.png": "edd2b60be06c758b0a3f242480c9df7b5f492b9d1bd65b3cf91446320dbc6f05",
+    "Roughness.png": "fd3f199fc71d54a141fac36c18caead364e604b01906654b81950da69b09bcb4",
+    "Metallic.png": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+    "AO.png": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+    "WearMask.png": "26f63a22fe786a0466623f3c3710cb1784dba98e535bc18fb93e8cae9c17d221",
+    "ORM.png": "9fbeef7f3cc5001b83f3a0fe7ad4028f8a596f8d689e381ad6443674ea93f7e8",
+    "Opacity.png": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+    "material.json": "f3105ef3feb8df007177e3a861cdc8a8e5fd78ee88c5baa34f67893763ca8937"
+  },
+  "builder_script_sha256": "403e42b213c6a24040609fa8afe1f0acd67bb0417e47eb703fdcd36992c3c62a",
+  "dependencies_external_not_packed": true,
+  "loaded_native_images": {
+    "BaseColor.png": [
+      4096,
+      4096
+    ],
+    "Metallic.png": [
+      4096,
+      4096
+    ],
+    "Normal_Micro_OpenGL.png": [
+      4096,
+      4096
+    ],
+    "Opacity.png": [
+      4096,
+      4096
+    ],
+    "Roughness.png": [
+      4096,
+      4096
+    ]
+  },
+  "manifold_two_faces_per_edge": true,
+  "normals_consistent_outward": true,
+  "signed_volume_m3": 0.00011999983921091218,
+  "beveled_signed_volume_m3": 0.00011999077655303572,
+  "evaluated_geometry_counts": {
+    "vertices": 73281,
+    "edges": 146052,
+    "faces": 72773
+  },
+  "actual_geometry_min_z_m": 0.0,
+  "floor_gap_m": 9.999999974752427e-07,
+  "top_uv_domain": [
+    0,
+    0,
+    1,
+    1
+  ],
+  "side_uvs": "Physical-scale continuation from border; nonzero area",
+  "min_base_face_uv_area": 1.52587890625e-05,
+  "map_pixel_pitch_m": [
+    4.8828125e-05,
+    4.8828125e-05
+  ],
+  "macro_geometry_grid": [
+    256,
+    256
+  ],
+  "macro_geometry_sample_pitch_m": [
+    0.00078125,
+    0.00078125
+  ],
+  "relief_note": "Macro geometry is sampled from the native 4096 map on a 256x256 grid; residual detail is shaded by native 4096 normal map.",
+  "estimated_build_memory_gib": 2.0,
+  "scene": "/workspace/shared/material-slabs/scenes/05_champagne_brass_original_native4k_slab.blend",
+  "scene_sha256": "dad104d1428c6a6970039ba2298598e024db01e06e5ec9245415cbf7fc3338f1",
+  "build_peak_rss_mib": 672.87109375
+}

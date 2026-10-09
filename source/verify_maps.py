@@ -37,7 +37,11 @@ for s in manifest['materials']:
     assert np.array_equal(orm[...,0],ao)
     assert np.array_equal(orm[...,1],np.asarray(Image.open(folder/'Roughness.png')))
     assert np.array_equal(orm[...,2],np.asarray(Image.open(folder/'Metallic.png')))
-    if s['family']=='Metal':assert metallic.std()>.04
+    if s['family']=='Metal':
+        # Intact finishes should not be forced to invent oxide blotches.
+        expected=1.0 if s['id'].startswith('05') else .68
+        assert abs(float(metallic.mean())-expected)<.005
+        assert float(metallic.std())<.005
     rgb=np.asarray(Image.open(folder/'BaseColor.png'),dtype=np.float32)/255
     gl=np.asarray(Image.open(folder/'Normal_OpenGL.png'))
     dx=np.asarray(Image.open(folder/'Normal_DirectX.png'))
@@ -57,4 +61,4 @@ for s in manifest['materials']:
     print('PASS',s['id'],flush=True)
 (ROOT/'materials/validation.json').write_text(json.dumps(checks,indent=2)+'\n')
 (ROOT/'docs/map_checks.json').write_text(json.dumps(reports,indent=2)+'\n')
-print('Verified 120 maps, ORM channels, metal/oxide variation, height depth, opacity and normal conventions.',flush=True)
+print('Verified 120 maps, ORM channels, specified intact metal finishes, height depth, opacity and normal conventions.',flush=True)

@@ -1,0 +1,38 @@
+{
+  "studio_script_sha256": "31d56e0261c52ae8de15639e8e25e450933cab138211e5125ad35154707349da",
+  "ground_clearance_m": 1e-06,
+  "id": "23_petg_transparent",
+  "bounds_min_m": [
+    -0.014000000432133675,
+    -0.013000000268220901,
+    -2.6179244741797447e-05
+  ],
+  "bounds_max_m": [
+    0.014000000432133675,
+    0.013000000268220901,
+    0.0012784149730578065
+  ],
+  "dimensions_m": [
+    0.02800000086426735,
+    0.026000000536441803,
+    0.001304594217799604
+  ],
+  "frame_width_m": 0.04536000266671181,
+  "specimen_objects": [
+    "23_petg_transparent / true1.2mm printed panel"
+  ],
+  "source_scene": "/workspace/shared/material-technical-rebuild/scenes/23_petg_transparent_r5_hero.blend",
+  "source_sha256": "ade61518e3b7e485d9b5c6d277ce3bd5dbd599b54fa49f7c57ab0706a3abab45",
+  "maps_native_resolution": 4096,
+  "layer_height_m": 0.0002,
+  "wall_thickness_m": 0.0012,
+  "layer_count": 130,
+  "vertices": 268578,
+  "faces": 268576,
+  "manifold": true,
+  "selected_appearance": "r5 PETG shader and exact source bead/seam formula; flattened wall topology only",
+  "optical_limit": "Continuous fused shell; internal voids omitted. Clear variant remains translucent/frosted and is not certified optically clear.",
+  "map_manifest": "/workspace/shared/material-native4k/sets/23_petg_transparent/material.json",
+  "scene": "/workspace/shared/material-slabs/scenes/23_petg_transparent_native4k_slab.blend",
+  "scene_sha256": "c0c7baf4d364d418191165dc5f520cccc41218c6736b1fad12bf3734fb62cac3"
+}

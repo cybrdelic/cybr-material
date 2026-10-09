@@ -1,0 +1,21 @@
+{
+  "tests": {
+    "identity_float32_exact": true,
+    "component_exchange_symmetric": true,
+    "negative_filter_rejected": true,
+    "nonfinite_filter_rejected": true,
+    "negative_final_rejected": true,
+    "clipping": false,
+    "signed_identity_exact": true,
+    "signed_term_preserved": true,
+    "excess_signed_term_rejected": true
+  },
+  "actual_identity_float32_exact": true,
+  "negative_channels": 1021,
+  "signed_min": -3.1670701616803854e-09,
+  "original_account_sha256": "7ce3b4483ffcb26aca0e0dd2fe27eac5a5783976383db2a556db12f4867d382a",
+  "new_helpers": {
+    "refilter_components_full_r5.py": "cb10494af801a8bbebdd8e8ceccab8f1f451bfd7e7ff5b47a9baade1d189783b",
+    "two_component_signed_math_r2.py": "4904b5a1941c16881d1894e34dc3d5bc8d467ba855d97d3a767ebf97e81ab9f0"
+  }
+}

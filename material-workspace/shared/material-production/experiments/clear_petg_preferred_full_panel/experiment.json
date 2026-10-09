@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "experiment_id": "clear_petg_preferred_full_panel",
+  "material_id": "23_petg_transparent",
+  "selected": false,
+  "quality_acceptance": false,
+  "source_scene": "shared/material-production/experiments/clear_petg_capture_recovery/scenes/23_petg_native4k_valid_tangent_guides_r2.blend",
+  "source_sha256": "2ed67cf095563169ba75bbffcf28a26ab6d13ffeb28072614d84822af9bac912",
+  "dependencies": [
+    {
+      "path": "shared/material-production/experiments/clear_petg_capture_recovery/maps/BaseColor.png",
+      "sha256": "d84213f357c7a5ff25930f8114dc2411fc7b054cdb67f532a55ba862944f5492"
+    },
+    {
+      "path": "shared/material-production/experiments/clear_petg_capture_recovery/maps/Roughness.png",
+      "sha256": "c2e662a20596d98dd98e6b893c8aa5f6cea5569ffec81a5990a57f318f20e7c7"
+    },
+    {
+      "path": "shared/material-production/experiments/clear_petg_capture_recovery/maps/Metallic.png",
+      "sha256": "98a02e037b6c601567212b2c1c2c8d50008f2c30446897060b4ad4704fb0e8cc"
+    }
+  ],
+  "contract": {
+    "map_resolution": [
+      4096,
+      4096
+    ]
+  },
+  "capture": {
+    "camera": "Slab / shared camera",
+    "engine": "CYCLES",
+    "width": 1920,
+    "height": 1920,
+    "samples": 256,
+    "save_guides": true,
+    "light_tree": false,
+    "studio_lights_downward": true,
+    "color_depth": 16,
+    "dither_intensity": 0,
+    "rss_cap_mib": 4096,
+    "time_limit_seconds": 1800,
+    "guide_albedo_pass": "OIDN_SurfaceReflectivity",
+    "guide_normal_pass": "OIDN_SurfaceNormal",
+    "use_adaptive_sampling": false,
+    "capture_mode": "component-recombined",
+    "component_filter_policy": "filter_both"
+  },
+  "purpose": "Explicit reproducible capture recipe for the reviewed complete1920 PETG rendering; does not promote material physics.",
+  "pass_gates": {
+    "native_bound_map_bytes_exact": true,
+    "archived_geometry_counts_and_bounds_match": true,
+    "geometry_unchanged_by_tangent_repair": true,
+    "original_texture_UVs_bit_exact": true,
+    "repaired_cut_face_tangents": 2336,
+    "fresh_saved_active_render_UV_verified": true,
+    "guide_AOV_names_verified": true,
+    "actual_feature_range_and_nonzero_pending": true,
+    "noise_and_layer_preservation_pending": true,
+    "physical_transparency_qualified": false,
+    "preregistered_layer_retention_per_interior_strip": 0.9
+  },
+  "physical_dimensions_m": [
+    0.02800000086426735,
+    0.026000000536441803,
+    0.001304594217799604
+  ],
+  "physical_camera_field_m": 0.04536000266671181,
+  "print_on_image": "Clear printed PETG \u00b7 1.2 mm wall \u00b7 frosted optical response",
+  "reconstruction": "Original r5 specimen and bound native map bytes exact; old slab binary unavailable. Exact published builder replay with new paths; no byte-identical old slab claim.",
+  "optical_limits": "Nominal1.2mm wall, IOR1.57, transmission0.96, original roughness map and absorption retained. Haze/clarity are not qualified. First-hit glass features may blur details behind the surface.",
+  "physical_pixel_pitch_m": 2.36250013889124e-05,
+  "reviewed_reference": {
+    "library_file_id": "libfile_e63422770c708191867e0e9be25113ff",
+    "receipt": "shared/material-production/experiments/clear_petg_capture_recovery/receipts/full_frame_native_review.json",
+    "receipt_sha256": "74d777127583485893aa0c48afb2448290456fbbc688a0130f75d3943195b6f8",
+    "runtime_install_receipt": "/workspace/scratch/b4387906eb93/two-component-capture-patch/receipts/operator_install.json",
+    "runtime_install_sha256": "965c81fe17df7e46147e0773340fe06f39b1884dff8279078a7512aaed1fa2b6"
+  },
+  "reproduction_limits": "Installed bridge reproduces the reviewed frame exactly from retained state/PFMs. A new optical capture remains subject to fresh output/source/noise/detail gates; no claim of future cross-machine bit identity."
+}

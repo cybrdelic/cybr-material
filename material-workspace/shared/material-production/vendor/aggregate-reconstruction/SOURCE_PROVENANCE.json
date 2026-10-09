@@ -1,0 +1,18 @@
+{
+  "geometry.py": {
+    "source": "material-publication/audit/checkpoints/2026-10-05/sources/material-aggregate-rebuild/source/expansion/geometry.py",
+    "sha256": "9a04a435dab8f8b1a2f0820445b9e2a4afeba257ed4c56e0d0f25522744f987c"
+  },
+  "fix_specimen_edges.py": {
+    "source": "material-publication/audit/checkpoints/2026-10-05/sources/material-aggregate-rebuild/source/fix_specimen_edges.py",
+    "sha256": "057ba30116150cd291016bd57151d2624da7e118432261f3178305a4d04eb189"
+  },
+  "rebind_slab.py": {
+    "source": "material-publication/audit/checkpoints/2026-10-05/sources/material-aggregate-rebuild/native4k/source/rebind_slab.py",
+    "sha256": "3214bcbd3db5a16d37498dcfec317838851c911086b0139a652d7baae1bcafc4"
+  },
+  "selected_recipe_1536.json": {
+    "source": "material-publication/audit/checkpoints/2026-10-05/sources/material-aggregate-rebuild/native4k/source/32_concrete_polished/selected_recipe_1536.json",
+    "sha256": "6c7e32a95089222e154149ceabdc89318937954830bf835c4b824afb938d3201"
+  }
+}

@@ -18,12 +18,12 @@ def sha(file):
     with file.open('rb') as stream:
         for chunk in iter(lambda:stream.read(1024*1024),b''):result.update(chunk)
     return result.hexdigest()
-checksum=ROOT/'SHA256SUMS.txt';checksum.write_text('\n'.join(sha(file)+'  '+file.relative_to(ROOT).as_posix() for file in files)+'\n')
+checksum=ROOT/'SHA256SUMS.txt';checksum.write_text('\n'.join(sha(file)+'  '+file.relative_to(ROOT).as_posix() for file in files)+'\n',newline='\n')
 files.append(checksum);dest=OUT/Path(args.output).name
 with zipfile.ZipFile(dest,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=3,allowZip64=True) as archive:
     for file in files:archive.write(file,arcname='cybr-material/'+file.relative_to(ROOT).as_posix())
 with zipfile.ZipFile(dest) as archive:assert archive.testzip() is None
 release=dict(file=dest.name,files=len(files),bytes=dest.stat().st_size,sha256=sha(dest))
 (OUT/'release.json').write_text(json.dumps(release,indent=2)+'\n')
-(OUT/'CYBR_Material_V3.zip.sha256').write_text(release['sha256']+'  '+dest.name+'\n')
+(OUT/(dest.name+'.sha256')).write_text(release['sha256']+'  '+dest.name+'\n')
 print(json.dumps(release),flush=True)

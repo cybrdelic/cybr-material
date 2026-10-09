@@ -1,0 +1,28 @@
+name: Validate procedural studies
+on:
+  pull_request:
+  push:
+    branches: [fix/material-anatomy-and-construction]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r source/requirements.txt
+      - name: Validate native maps, exports, renders and documentation
+        run: |
+          python -m compileall -q source
+          python source/verify_maps.py
+          python source/verify_deliverable.py
+      - uses: ./.github/actions/install-blender
+      - name: Validate portable editable scenes
+        run: |
+          for scene in Details Still_Lifes Architecture; do
+            blender --factory-startup -b "blender/CYBR_Cycles_${scene}.blend" --python-exit-code 1 --python source/verify_path_traced.py
+          done

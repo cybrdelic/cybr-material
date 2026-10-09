@@ -1,0 +1,94 @@
+{
+  "reconstruction": true,
+  "not_historical_binary_recovery": true,
+  "height_sha256": "78ad8b37255340889593dcf47180913d611ce0124e756f3dcbaac187d9eb2aee",
+  "macro_sha256": "31280c3ec450d251fa5da8a77f4bf4485fdccfbe0fe805571f8052e67e29698f",
+  "derivatives": {
+    "finite_difference_checks": [
+      {
+        "step_m": 1e-08,
+        "base_derivative_max": 2.6035859757110732e-08,
+        "direction_derivative_max_per_m": 9.158397582950474e-08
+      },
+      {
+        "step_m": 2e-09,
+        "base_derivative_max": 3.888880560281863e-09,
+        "direction_derivative_max_per_m": 4.431689116121128e-07
+      }
+    ],
+    "frozen_outer_corner_normal_crosscheck_max_degrees": 4.8392534041233596e-14,
+    "frozen_outer_corner_sample_count": 2000
+  },
+  "lods": [
+    {
+      "regular_axis_cells": 256,
+      "actual_axis_cells": 258,
+      "side_z_cells": 144,
+      "closed_mesh_vertices": 281738,
+      "closed_mesh_triangles": 563472,
+      "top_samples": 266256,
+      "sampled_top_position_max_m": 3.5763694569955475e-05,
+      "sampled_top_position_rms_m": 8.497261463241427e-06,
+      "sampled_top_position_p99_m": 2.300734539370839e-05,
+      "sampled_top_macro_max_m": 7.653818273639129e-06,
+      "sampled_projection_upper_bound_pixels": {
+        "full_960": 0.2649162492020662,
+        "macro_960": 1.4305477703634057
+      },
+      "packed_mesh_and_original_q_MiB": 12.896896362304688,
+      "estimated_blender_build_RSS_MiB": [
+        407,
+        671
+      ],
+      "limitation": "Two barycentric probes per top triangle; sides/underside and worst native boundary positions still require separate checks. Not a bound or20nm qualification."
+    },
+    {
+      "regular_axis_cells": 512,
+      "actual_axis_cells": 514,
+      "side_z_cells": 144,
+      "closed_mesh_vertices": 824458,
+      "closed_mesh_triangles": 1648912,
+      "top_samples": 1056784,
+      "sampled_top_position_max_m": 2.7444709709472255e-05,
+      "sampled_top_position_rms_m": 4.701725073742169e-06,
+      "sampled_top_position_p99_m": 1.4141714892097828e-05,
+      "sampled_top_macro_max_m": 2.007067900458898e-06,
+      "sampled_projection_upper_bound_pixels": {
+        "full_960": 0.2032941407228322,
+        "macro_960": 1.097788378836536
+      },
+      "packed_mesh_and_original_q_MiB": 37.74064636230469,
+      "estimated_blender_build_RSS_MiB": [
+        614,
+        1003
+      ],
+      "limitation": "Two barycentric probes per top triangle; sides/underside and worst native boundary positions still require separate checks. Not a bound or20nm qualification."
+    },
+    {
+      "regular_axis_cells": 1024,
+      "actual_axis_cells": 1026,
+      "side_z_cells": 144,
+      "closed_mesh_vertices": 2696330,
+      "closed_mesh_triangles": 5392656,
+      "top_samples": 4210704,
+      "sampled_top_position_max_m": 1.1620554110859968e-05,
+      "sampled_top_position_rms_m": 1.685293939813444e-06,
+      "sampled_top_position_p99_m": 5.1705669927243705e-06,
+      "sampled_top_macro_max_m": 5.011464173054017e-07,
+      "sampled_projection_upper_bound_pixels": {
+        "full_960": 0.08607817636617589,
+        "macro_960": 0.4648221603940046
+      },
+      "packed_mesh_and_original_q_MiB": 123.42814636230469,
+      "estimated_blender_build_RSS_MiB": [
+        1328,
+        2145
+      ],
+      "limitation": "Two barycentric probes per top triangle; sides/underside and worst native boundary positions still require separate checks. Not a bound or20nm qualification."
+    }
+  ],
+  "source_sha256": "6c942c8c3702f34c4ae6ff96923561dc0b9e03762cfabe1f819c1fa4d0839bcf",
+  "surface_contract_sha256": "f80d51f162e6e0ac3c79e7a7a1917f747fd0a0bc7825489182dbb82f7d057228",
+  "peak_RSS_MiB": 338.0390625,
+  "seconds": 8.052954180006054
+}

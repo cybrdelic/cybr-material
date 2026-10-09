@@ -1,0 +1,2412 @@
+{
+  "material_id": "05_champagne_brass",
+  "resolution": [
+    4096,
+    4096
+  ],
+  "complete": true,
+  "channels": {
+    "BaseColor": {
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bits_per_channel": 8,
+      "components": 3,
+      "source_colorspace": "sRGB",
+      "decoded_pixels_equal": true,
+      "unequal_components": 0,
+      "unequal_pixels": 0,
+      "total_components": 50331648,
+      "maximum_integer_error": 0,
+      "mean_integer_error": 0.0,
+      "generated_pixel_sha256": "93435cd26014b1905db74d73ad20595eefb6409bac5390a34df7c3d6c810864b",
+      "canonical_pixel_sha256": "93435cd26014b1905db74d73ad20595eefb6409bac5390a34df7c3d6c810864b",
+      "generated_png_sha256": "16c6eb73495a4729a12a033b14ec3edcd9311a3d48b347d6e46ce39d47b4e607",
+      "canonical_png_sha256": "2859e59886d034b9f3cd59f2a6ea12387e82ba75a02a3a3b2e9c6b7f6b2bba4c",
+      "png_bytes_equal": false,
+      "generated_png_bytes": 343986,
+      "canonical_png_bytes": 310171,
+      "compression_level": 6,
+      "encoding_classification": "deflate_bitstream_only",
+      "generated_encoding": {
+        "png_sha256": "16c6eb73495a4729a12a033b14ec3edcd9311a3d48b347d6e46ce39d47b4e607",
+        "bytes": 343986,
+        "filtered_stream_sha256": "344ac0f775fa8c2c883f307d049f18b3c4cf5b7f8948e577e67f8145435cef46",
+        "deflate_stream_sha256": "be774f356a30130ab033c38b55b735244386ee546b7504193cfc2101d80b46ad",
+        "non_idat_chunks_sha256": "62eb679305167b1d5dab066949fcbd8192f6944b21e53a92bfa2245c05f7bb69",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          2,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            16189
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      },
+      "canonical_encoding": {
+        "png_sha256": "2859e59886d034b9f3cd59f2a6ea12387e82ba75a02a3a3b2e9c6b7f6b2bba4c",
+        "bytes": 310171,
+        "filtered_stream_sha256": "344ac0f775fa8c2c883f307d049f18b3c4cf5b7f8948e577e67f8145435cef46",
+        "deflate_stream_sha256": "6438469edbe48446b92215e57c6bd6708b2777e24a52ebd0e025cccbd0e6e0b2",
+        "non_idat_chunks_sha256": "62eb679305167b1d5dab066949fcbd8192f6944b21e53a92bfa2245c05f7bb69",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          2,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            47922
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      }
+    },
+    "Height": {
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bits_per_channel": 16,
+      "components": 1,
+      "source_colorspace": "Non-Color",
+      "decoded_pixels_equal": true,
+      "unequal_components": 0,
+      "unequal_pixels": 0,
+      "total_components": 16777216,
+      "maximum_integer_error": 0,
+      "mean_integer_error": 0.0,
+      "generated_pixel_sha256": "60b4889e86626891139804135f868189dcde802895614da68dfca9694f95a53f",
+      "canonical_pixel_sha256": "60b4889e86626891139804135f868189dcde802895614da68dfca9694f95a53f",
+      "generated_png_sha256": "d9553800a552e5c617b1e601bcc7d8474a1e38b975bf177538efbf9662b410e4",
+      "canonical_png_sha256": "8261cdaedfda99e751ea08bc0e115769483e1a79ef8ffb1d92348c470d8937d1",
+      "png_bytes_equal": false,
+      "generated_png_bytes": 5925019,
+      "canonical_png_bytes": 5836845,
+      "compression_level": 6,
+      "encoding_classification": "deflate_bitstream_only",
+      "generated_encoding": {
+        "png_sha256": "d9553800a552e5c617b1e601bcc7d8474a1e38b975bf177538efbf9662b410e4",
+        "bytes": 5925019,
+        "filtered_stream_sha256": "20d0c82eb1480511f6a6697c12e3b593c5c19b4ea46701de3983cb1660149c42",
+        "deflate_stream_sha256": "17803352f046a3fe8184d5bdb11ba099c93055f02613680d5ec7bb7614cf1bb2",
+        "non_idat_chunks_sha256": "6c03140483b8daebd9ab7ae3b196adbf904460dbaf1b7017e46318d6455e992d",
+        "IHDR": [
+          4096,
+          4096,
+          16,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            25642
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      },
+      "canonical_encoding": {
+        "png_sha256": "8261cdaedfda99e751ea08bc0e115769483e1a79ef8ffb1d92348c470d8937d1",
+        "bytes": 5836845,
+        "filtered_stream_sha256": "20d0c82eb1480511f6a6697c12e3b593c5c19b4ea46701de3983cb1660149c42",
+        "deflate_stream_sha256": "94fc86dffbb6124223d88bb3a6c4607360f8c182bfe833b2c4b622864bbbaef7",
+        "non_idat_chunks_sha256": "6c03140483b8daebd9ab7ae3b196adbf904460dbaf1b7017e46318d6455e992d",
+        "IHDR": [
+          4096,
+          4096,
+          16,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            3016
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      }
+    },
+    "Height_Macro": {
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bits_per_channel": 16,
+      "components": 1,
+      "source_colorspace": "Non-Color",
+      "decoded_pixels_equal": true,
+      "unequal_components": 0,
+      "unequal_pixels": 0,
+      "total_components": 16777216,
+      "maximum_integer_error": 0,
+      "mean_integer_error": 0.0,
+      "generated_pixel_sha256": "8b249d0bdae5ab0070c51ff0aad28791c1666acd7e1b6049df9d33bfedac9dfb",
+      "canonical_pixel_sha256": "8b249d0bdae5ab0070c51ff0aad28791c1666acd7e1b6049df9d33bfedac9dfb",
+      "generated_png_sha256": "04244de23429372cbf744b365da214286fa923e98afb6bd66fb2f8326dc7fe0b",
+      "canonical_png_sha256": "edd2b60be06c758b0a3f242480c9df7b5f492b9d1bd65b3cf91446320dbc6f05",
+      "png_bytes_equal": false,
+      "generated_png_bytes": 3544210,
+      "canonical_png_bytes": 3510777,
+      "compression_level": 6,
+      "encoding_classification": "deflate_bitstream_only",
+      "generated_encoding": {
+        "png_sha256": "04244de23429372cbf744b365da214286fa923e98afb6bd66fb2f8326dc7fe0b",
+        "bytes": 3544210,
+        "filtered_stream_sha256": "520f3a1607301e44c309f208c61303c9c2fd10793def14f9f6af1e931fb5fb86",
+        "deflate_stream_sha256": "633c6996267f83542cccf8b1e7d1b2b9419a647c8e8d181efadcecb5b11e247c",
+        "non_idat_chunks_sha256": "6c03140483b8daebd9ab7ae3b196adbf904460dbaf1b7017e46318d6455e992d",
+        "IHDR": [
+          4096,
+          4096,
+          16,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            4561
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      },
+      "canonical_encoding": {
+        "png_sha256": "edd2b60be06c758b0a3f242480c9df7b5f492b9d1bd65b3cf91446320dbc6f05",
+        "bytes": 3510777,
+        "filtered_stream_sha256": "520f3a1607301e44c309f208c61303c9c2fd10793def14f9f6af1e931fb5fb86",
+        "deflate_stream_sha256": "5d20a515fb1b7897f78a3f360c9d1c07856b43aaa83b1bc8976be38eba122cda",
+        "non_idat_chunks_sha256": "6c03140483b8daebd9ab7ae3b196adbf904460dbaf1b7017e46318d6455e992d",
+        "IHDR": [
+          4096,
+          4096,
+          16,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            36676
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      }
+    },
+    "Normal_Micro_OpenGL": {
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bits_per_channel": 8,
+      "components": 3,
+      "source_colorspace": "Non-Color",
+      "decoded_pixels_equal": true,
+      "unequal_components": 0,
+      "unequal_pixels": 0,
+      "total_components": 50331648,
+      "maximum_integer_error": 0,
+      "mean_integer_error": 0.0,
+      "generated_pixel_sha256": "d26416b039be6430f047a10da859f5dc1bfef5ccb2ea4a9b790e75be32b88e16",
+      "canonical_pixel_sha256": "d26416b039be6430f047a10da859f5dc1bfef5ccb2ea4a9b790e75be32b88e16",
+      "generated_png_sha256": "b6fe7502aec573ecee608d28716bb33a0996ab6fe4953dd14f74ef80147aeca7",
+      "canonical_png_sha256": "595e45885cf3c2de0bfee207ccc07bda5b5faca9b3af217aaee55275790c1706",
+      "png_bytes_equal": false,
+      "generated_png_bytes": 431583,
+      "canonical_png_bytes": 384699,
+      "compression_level": 6,
+      "encoding_classification": "deflate_bitstream_only",
+      "generated_encoding": {
+        "png_sha256": "b6fe7502aec573ecee608d28716bb33a0996ab6fe4953dd14f74ef80147aeca7",
+        "bytes": 431583,
+        "filtered_stream_sha256": "8638d4575d10b9202ec3c40fd5036b4572c5c5be71fc34091707b29c5ffb3bb1",
+        "deflate_stream_sha256": "6c4e583daf2b141827e4ab5b749d69528e6b043f97cdaa155907626afb08959b",
+        "non_idat_chunks_sha256": "62eb679305167b1d5dab066949fcbd8192f6944b21e53a92bfa2245c05f7bb69",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          2,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            38238
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      },
+      "canonical_encoding": {
+        "png_sha256": "595e45885cf3c2de0bfee207ccc07bda5b5faca9b3af217aaee55275790c1706",
+        "bytes": 384699,
+        "filtered_stream_sha256": "8638d4575d10b9202ec3c40fd5036b4572c5c5be71fc34091707b29c5ffb3bb1",
+        "deflate_stream_sha256": "7fa9c9b5d144190ad6b27f8e82b76687a51a38ae5f22de0e805d8f924bf2fefe",
+        "non_idat_chunks_sha256": "62eb679305167b1d5dab066949fcbd8192f6944b21e53a92bfa2245c05f7bb69",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          2,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            56902
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      }
+    },
+    "ORM": {
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bits_per_channel": 8,
+      "components": 3,
+      "source_colorspace": "Non-Color",
+      "decoded_pixels_equal": true,
+      "unequal_components": 0,
+      "unequal_pixels": 0,
+      "total_components": 50331648,
+      "maximum_integer_error": 0,
+      "mean_integer_error": 0.0,
+      "generated_pixel_sha256": "fa379bd39004f6e162828b47bbe9e68658e7dea5a168e49d25ea0ce4a61e4ed8",
+      "canonical_pixel_sha256": "fa379bd39004f6e162828b47bbe9e68658e7dea5a168e49d25ea0ce4a61e4ed8",
+      "generated_png_sha256": "21be808f0af00f6736c12731086013be9a1615564bfc488c09d285ccd96c6bca",
+      "canonical_png_sha256": "9fbeef7f3cc5001b83f3a0fe7ad4028f8a596f8d689e381ad6443674ea93f7e8",
+      "png_bytes_equal": false,
+      "generated_png_bytes": 299886,
+      "canonical_png_bytes": 273855,
+      "compression_level": 6,
+      "encoding_classification": "deflate_bitstream_only",
+      "generated_encoding": {
+        "png_sha256": "21be808f0af00f6736c12731086013be9a1615564bfc488c09d285ccd96c6bca",
+        "bytes": 299886,
+        "filtered_stream_sha256": "a3341cea4f2700dcd4a20dc8584e83a98a3a947578c4b5406463329e5229f524",
+        "deflate_stream_sha256": "2b3887524b1d8b8ef8a4d1414f86d70a8154255657811cf4d5cc1b1c551105bf",
+        "non_idat_chunks_sha256": "62eb679305167b1d5dab066949fcbd8192f6944b21e53a92bfa2245c05f7bb69",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          2,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            37637
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      },
+      "canonical_encoding": {
+        "png_sha256": "9fbeef7f3cc5001b83f3a0fe7ad4028f8a596f8d689e381ad6443674ea93f7e8",
+        "bytes": 273855,
+        "filtered_stream_sha256": "a3341cea4f2700dcd4a20dc8584e83a98a3a947578c4b5406463329e5229f524",
+        "deflate_stream_sha256": "aae6ecff5c479ce7f6e1720c79a0e5d216c32d8a65c2b47c5d4c22bb2a23f38b",
+        "non_idat_chunks_sha256": "62eb679305167b1d5dab066949fcbd8192f6944b21e53a92bfa2245c05f7bb69",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          2,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            11606
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      }
+    },
+    "Roughness": {
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bits_per_channel": 8,
+      "components": 1,
+      "source_colorspace": "Non-Color",
+      "decoded_pixels_equal": true,
+      "unequal_components": 0,
+      "unequal_pixels": 0,
+      "total_components": 16777216,
+      "maximum_integer_error": 0,
+      "mean_integer_error": 0.0,
+      "generated_pixel_sha256": "32baa8d403a2e26cdeedf2fcf9f785299ea148f2085ab65efdc9b26ee9567467",
+      "canonical_pixel_sha256": "32baa8d403a2e26cdeedf2fcf9f785299ea148f2085ab65efdc9b26ee9567467",
+      "generated_png_sha256": "35064255d0282c47a0760f94c2cb43309c9210ddd2ca2ac1828240118a2c8e7b",
+      "canonical_png_sha256": "fd3f199fc71d54a141fac36c18caead364e604b01906654b81950da69b09bcb4",
+      "png_bytes_equal": false,
+      "generated_png_bytes": 247674,
+      "canonical_png_bytes": 213027,
+      "compression_level": 6,
+      "encoding_classification": "deflate_bitstream_only",
+      "generated_encoding": {
+        "png_sha256": "35064255d0282c47a0760f94c2cb43309c9210ddd2ca2ac1828240118a2c8e7b",
+        "bytes": 247674,
+        "filtered_stream_sha256": "1d6fa03b52cc089a79567c3ecbf97236fb8a40220143a0e8c2ba8ae4452a9937",
+        "deflate_stream_sha256": "6dc27cac67ed90f25889c6d7cae3bb93a2d1d8ffc13945a92685814f3fc3c6e4",
+        "non_idat_chunks_sha256": "5777ebb0438c0a155239cdc38f62f12589946c18fe61033d15b95f0c6101bf2b",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            50973
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      },
+      "canonical_encoding": {
+        "png_sha256": "fd3f199fc71d54a141fac36c18caead364e604b01906654b81950da69b09bcb4",
+        "bytes": 213027,
+        "filtered_stream_sha256": "1d6fa03b52cc089a79567c3ecbf97236fb8a40220143a0e8c2ba8ae4452a9937",
+        "deflate_stream_sha256": "d010f3922a52b745f5213898a3578c00a1ec9172751a01e62a07d21d78de2ec3",
+        "non_idat_chunks_sha256": "5777ebb0438c0a155239cdc38f62f12589946c18fe61033d15b95f0c6101bf2b",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            16326
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      }
+    },
+    "AO": {
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bits_per_channel": 8,
+      "components": 1,
+      "source_colorspace": "Non-Color",
+      "decoded_pixels_equal": true,
+      "unequal_components": 0,
+      "unequal_pixels": 0,
+      "total_components": 16777216,
+      "maximum_integer_error": 0,
+      "mean_integer_error": 0.0,
+      "generated_pixel_sha256": "dffab0dd410657cb30c7b2fd7f2586a4792e8472e58882b3532581f8111a646d",
+      "canonical_pixel_sha256": "dffab0dd410657cb30c7b2fd7f2586a4792e8472e58882b3532581f8111a646d",
+      "generated_png_sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+      "canonical_png_sha256": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+      "png_bytes_equal": false,
+      "generated_png_bytes": 25454,
+      "canonical_png_bytes": 25455,
+      "compression_level": 6,
+      "encoding_classification": "deflate_bitstream_only",
+      "generated_encoding": {
+        "png_sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+        "bytes": 25454,
+        "filtered_stream_sha256": "0c085e4b4f06cf25f570853bd25be97bfac16993e3e2b6aa4173e7647860b80e",
+        "deflate_stream_sha256": "14859eda0a2e52d53bb9c89698400cce1658ebcb2114328b3fe4a74c8c4fe2dc",
+        "non_idat_chunks_sha256": "5777ebb0438c0a155239cdc38f62f12589946c18fe61033d15b95f0c6101bf2b",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            25397
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      },
+      "canonical_encoding": {
+        "png_sha256": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+        "bytes": 25455,
+        "filtered_stream_sha256": "0c085e4b4f06cf25f570853bd25be97bfac16993e3e2b6aa4173e7647860b80e",
+        "deflate_stream_sha256": "94d0d71b9e524e628d2bfef14442bb03b777e1c0aca4d2e2a7e3220f2203ad2d",
+        "non_idat_chunks_sha256": "5777ebb0438c0a155239cdc38f62f12589946c18fe61033d15b95f0c6101bf2b",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            25398
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      }
+    },
+    "Metallic": {
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bits_per_channel": 8,
+      "components": 1,
+      "source_colorspace": "Non-Color",
+      "decoded_pixels_equal": true,
+      "unequal_components": 0,
+      "unequal_pixels": 0,
+      "total_components": 16777216,
+      "maximum_integer_error": 0,
+      "mean_integer_error": 0.0,
+      "generated_pixel_sha256": "dffab0dd410657cb30c7b2fd7f2586a4792e8472e58882b3532581f8111a646d",
+      "canonical_pixel_sha256": "dffab0dd410657cb30c7b2fd7f2586a4792e8472e58882b3532581f8111a646d",
+      "generated_png_sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+      "canonical_png_sha256": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+      "png_bytes_equal": false,
+      "generated_png_bytes": 25454,
+      "canonical_png_bytes": 25455,
+      "compression_level": 6,
+      "encoding_classification": "deflate_bitstream_only",
+      "generated_encoding": {
+        "png_sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+        "bytes": 25454,
+        "filtered_stream_sha256": "0c085e4b4f06cf25f570853bd25be97bfac16993e3e2b6aa4173e7647860b80e",
+        "deflate_stream_sha256": "14859eda0a2e52d53bb9c89698400cce1658ebcb2114328b3fe4a74c8c4fe2dc",
+        "non_idat_chunks_sha256": "5777ebb0438c0a155239cdc38f62f12589946c18fe61033d15b95f0c6101bf2b",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            25397
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      },
+      "canonical_encoding": {
+        "png_sha256": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+        "bytes": 25455,
+        "filtered_stream_sha256": "0c085e4b4f06cf25f570853bd25be97bfac16993e3e2b6aa4173e7647860b80e",
+        "deflate_stream_sha256": "94d0d71b9e524e628d2bfef14442bb03b777e1c0aca4d2e2a7e3220f2203ad2d",
+        "non_idat_chunks_sha256": "5777ebb0438c0a155239cdc38f62f12589946c18fe61033d15b95f0c6101bf2b",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            25398
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      }
+    },
+    "WearMask": {
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bits_per_channel": 8,
+      "components": 1,
+      "source_colorspace": "Non-Color",
+      "decoded_pixels_equal": true,
+      "unequal_components": 0,
+      "unequal_pixels": 0,
+      "total_components": 16777216,
+      "maximum_integer_error": 0,
+      "mean_integer_error": 0.0,
+      "generated_pixel_sha256": "3d2286caccff59be6ab32115d7cb61f7df1413e61a2a94c9547aecda9d5da4cd",
+      "canonical_pixel_sha256": "3d2286caccff59be6ab32115d7cb61f7df1413e61a2a94c9547aecda9d5da4cd",
+      "generated_png_sha256": "eb879f9108a0d28343f383f72b01adabec971401a62542dbd93a48d1133905b8",
+      "canonical_png_sha256": "26f63a22fe786a0466623f3c3710cb1784dba98e535bc18fb93e8cae9c17d221",
+      "png_bytes_equal": false,
+      "generated_png_bytes": 25202,
+      "canonical_png_bytes": 25045,
+      "compression_level": 6,
+      "encoding_classification": "deflate_bitstream_only",
+      "generated_encoding": {
+        "png_sha256": "eb879f9108a0d28343f383f72b01adabec971401a62542dbd93a48d1133905b8",
+        "bytes": 25202,
+        "filtered_stream_sha256": "213d7392e1a3ded068ae96f3cfc1c1f737c00ea9663810b97e154931fa54a827",
+        "deflate_stream_sha256": "6f64a40717597c34e1502be1d22b4a2ce3c840f1c92c9489f94f3980608f32c0",
+        "non_idat_chunks_sha256": "5777ebb0438c0a155239cdc38f62f12589946c18fe61033d15b95f0c6101bf2b",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            25145
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      },
+      "canonical_encoding": {
+        "png_sha256": "26f63a22fe786a0466623f3c3710cb1784dba98e535bc18fb93e8cae9c17d221",
+        "bytes": 25045,
+        "filtered_stream_sha256": "213d7392e1a3ded068ae96f3cfc1c1f737c00ea9663810b97e154931fa54a827",
+        "deflate_stream_sha256": "2a461fb95cfd23420b51f7db0df9360b18f4e4bfb639a34bddf10d213c607ef1",
+        "non_idat_chunks_sha256": "5777ebb0438c0a155239cdc38f62f12589946c18fe61033d15b95f0c6101bf2b",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            24988
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      }
+    },
+    "Opacity": {
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bits_per_channel": 8,
+      "components": 1,
+      "source_colorspace": "Non-Color",
+      "decoded_pixels_equal": true,
+      "unequal_components": 0,
+      "unequal_pixels": 0,
+      "total_components": 16777216,
+      "maximum_integer_error": 0,
+      "mean_integer_error": 0.0,
+      "generated_pixel_sha256": "dffab0dd410657cb30c7b2fd7f2586a4792e8472e58882b3532581f8111a646d",
+      "canonical_pixel_sha256": "dffab0dd410657cb30c7b2fd7f2586a4792e8472e58882b3532581f8111a646d",
+      "generated_png_sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+      "canonical_png_sha256": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+      "png_bytes_equal": false,
+      "generated_png_bytes": 25454,
+      "canonical_png_bytes": 25455,
+      "compression_level": 6,
+      "encoding_classification": "deflate_bitstream_only",
+      "generated_encoding": {
+        "png_sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+        "bytes": 25454,
+        "filtered_stream_sha256": "0c085e4b4f06cf25f570853bd25be97bfac16993e3e2b6aa4173e7647860b80e",
+        "deflate_stream_sha256": "14859eda0a2e52d53bb9c89698400cce1658ebcb2114328b3fe4a74c8c4fe2dc",
+        "non_idat_chunks_sha256": "5777ebb0438c0a155239cdc38f62f12589946c18fe61033d15b95f0c6101bf2b",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            25397
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      },
+      "canonical_encoding": {
+        "png_sha256": "fdbf78fae13b9c50df80cb574f7504438c3471fa498f3f2ae5b44b1492b9ff63",
+        "bytes": 25455,
+        "filtered_stream_sha256": "0c085e4b4f06cf25f570853bd25be97bfac16993e3e2b6aa4173e7647860b80e",
+        "deflate_stream_sha256": "94d0d71b9e524e628d2bfef14442bb03b777e1c0aca4d2e2a7e3220f2203ad2d",
+        "non_idat_chunks_sha256": "5777ebb0438c0a155239cdc38f62f12589946c18fe61033d15b95f0c6101bf2b",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            25398
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      }
+    },
+    "Normal_OpenGL": {
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bits_per_channel": 8,
+      "components": 3,
+      "source_colorspace": "Non-Color",
+      "decoded_pixels_equal": true,
+      "unequal_components": 0,
+      "unequal_pixels": 0,
+      "total_components": 50331648,
+      "maximum_integer_error": 0,
+      "mean_integer_error": 0.0,
+      "generated_pixel_sha256": "321151c5be63fe7300db618ebbdc5500e4c4804e719cd42ce22be1fb8b1a83fe",
+      "canonical_pixel_sha256": "321151c5be63fe7300db618ebbdc5500e4c4804e719cd42ce22be1fb8b1a83fe",
+      "generated_png_sha256": "1a61bc5580a48a38b9ac4736d91a3be052c911276e2fd2c9f70d6919f6d7fc5b",
+      "canonical_png_sha256": "23f1356276a8e7929bf6f2e714245383131d1e346efd483cac515290a4c3886e",
+      "png_bytes_equal": false,
+      "generated_png_bytes": 427418,
+      "canonical_png_bytes": 381412,
+      "compression_level": 6,
+      "encoding_classification": "deflate_bitstream_only",
+      "generated_encoding": {
+        "png_sha256": "1a61bc5580a48a38b9ac4736d91a3be052c911276e2fd2c9f70d6919f6d7fc5b",
+        "bytes": 427418,
+        "filtered_stream_sha256": "84c3ec59487e20289f843d5d3a97466fd2f47ba2e3dd71ae2a556bc956ff000f",
+        "deflate_stream_sha256": "edb166355ca93d805e6e21fa5b182a63cb76f565d700fb3a0b1dd6126e76d8d6",
+        "non_idat_chunks_sha256": "62eb679305167b1d5dab066949fcbd8192f6944b21e53a92bfa2245c05f7bb69",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          2,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            34073
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      },
+      "canonical_encoding": {
+        "png_sha256": "23f1356276a8e7929bf6f2e714245383131d1e346efd483cac515290a4c3886e",
+        "bytes": 381412,
+        "filtered_stream_sha256": "84c3ec59487e20289f843d5d3a97466fd2f47ba2e3dd71ae2a556bc956ff000f",
+        "deflate_stream_sha256": "12a3ac3e967435019111541e1b4cfaa86b1a5d6f6e799e4add89627e6b653fc3",
+        "non_idat_chunks_sha256": "62eb679305167b1d5dab066949fcbd8192f6944b21e53a92bfa2245c05f7bb69",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          2,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            53615
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      }
+    },
+    "Normal_DirectX": {
+      "resolution": [
+        4096,
+        4096
+      ],
+      "bits_per_channel": 8,
+      "components": 3,
+      "source_colorspace": "Non-Color",
+      "decoded_pixels_equal": true,
+      "unequal_components": 0,
+      "unequal_pixels": 0,
+      "total_components": 50331648,
+      "maximum_integer_error": 0,
+      "mean_integer_error": 0.0,
+      "generated_pixel_sha256": "bb0e975171fa1c4fcbbf23be4c2d1d6a91d559e03c72f45290d885fe3b2357bf",
+      "canonical_pixel_sha256": "bb0e975171fa1c4fcbbf23be4c2d1d6a91d559e03c72f45290d885fe3b2357bf",
+      "generated_png_sha256": "06bcf04937a6c3dd76b01bafb64d4e94f479c60ef703b880a5324c2bafc21701",
+      "canonical_png_sha256": "9ebf293058a8591acf358955512b59dcfdd166775289ec26e2f6c6c407930dd1",
+      "png_bytes_equal": false,
+      "generated_png_bytes": 427272,
+      "canonical_png_bytes": 381311,
+      "compression_level": 6,
+      "encoding_classification": "deflate_bitstream_only",
+      "generated_encoding": {
+        "png_sha256": "06bcf04937a6c3dd76b01bafb64d4e94f479c60ef703b880a5324c2bafc21701",
+        "bytes": 427272,
+        "filtered_stream_sha256": "99e4b44f75ab470ac73584939d1f9b32e9551dea91fbf04910fa43b2a76e9ac8",
+        "deflate_stream_sha256": "7e684a442d6a0234a65a15fc2833bad9652d80c031569756871a5c43703e0a0a",
+        "non_idat_chunks_sha256": "62eb679305167b1d5dab066949fcbd8192f6944b21e53a92bfa2245c05f7bb69",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          2,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            33927
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      },
+      "canonical_encoding": {
+        "png_sha256": "9ebf293058a8591acf358955512b59dcfdd166775289ec26e2f6c6c407930dd1",
+        "bytes": 381311,
+        "filtered_stream_sha256": "99e4b44f75ab470ac73584939d1f9b32e9551dea91fbf04910fa43b2a76e9ac8",
+        "deflate_stream_sha256": "0c09c0da05f77bec399774167e6de4164bc135c24484ea4f0b92fdb31b43ac2f",
+        "non_idat_chunks_sha256": "62eb679305167b1d5dab066949fcbd8192f6944b21e53a92bfa2245c05f7bb69",
+        "IHDR": [
+          4096,
+          4096,
+          8,
+          2,
+          0,
+          0,
+          0
+        ],
+        "chunks": [
+          [
+            "IHDR",
+            13
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            65536
+          ],
+          [
+            "IDAT",
+            53514
+          ],
+          [
+            "IEND",
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "all_decoded_pixels_equal": true,
+  "all_png_bytes_equal": false,
+  "runtime_seconds": 20.339032411575317,
+  "peak_rss_kib": 1261632,
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "Pillow": "12.3.0",
+    "zlib": "1.3.2",
+    "pillow_zlib": "1.3.1",
+    "pillow_zlib_ng": "2.3.3"
+  },
+  "canonical_files_unchanged": true,
+  "selected_scene_sha256": "4907f4900fbc659294c78befaa729946919d439400e9b09d4fc0d24a656920f4",
+  "units": "meters",
+  "source_resolution_contract": "Exact4096 native replay. Cross-resolution output is not claimed equal: rasterization/anti-alias/packing stopping rules depend on resolution.",
+  "visual_acceptance": false,
+  "full_scene_regeneration": false,
+  "generated_images_written_to_disk": false,
+  "source_lock_sha256": "f8fc482cb7185285cf1493caecb4f51e4a17a0d619ad39d168d5513e11f0a781",
+  "source_commit": "de4146ac759164e29323b152d37f64417c00c3fb",
+  "tile_m": 0.2,
+  "height_scale_m": 0.0002,
+  "coverage": "All12 canonical exchange maps; source geometry is retained, not regenerated",
+  "qualification": "exact_native_pixels_only_png_byte_gate_failed"
+}

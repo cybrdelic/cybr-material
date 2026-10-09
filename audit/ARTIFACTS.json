@@ -1,0 +1,114 @@
+{
+  "scope": "Owner recovery references; not public download links. Exact versions/hashes must match before reconstruction.",
+  "archives": [
+    {
+      "key": "runtime-v7",
+      "library_file_id": "libfile_d42989d3e3a08191ab7c5cbb8c28168a",
+      "version": 7,
+      "filename": "Cloud_Clean_Render_Pipeline_and_Review.zip",
+      "sha256": "8d22d0a86d22449852f965b629b7bf3e241bcbe33564f546392e237c7ed06506",
+      "status": "Current verified capture runtime/selection provenance"
+    },
+    {
+      "key": "plastic-v4",
+      "library_file_id": "libfile_83c81a94282881918206813bf3cc18b9",
+      "version": 4,
+      "filename": "Plastic_Native_Relief_Transfer_Control_20261006.zip",
+      "bytes": 468085025,
+      "sha256": "7c3e825df426cabbbd051153c42cb1348c9e2658450f88b1429364731cffeb57",
+      "status": "Reviewed complete molded-plastic improvement plus exact source/history; no measured-material claim"
+    },
+    {
+      "key": "petg-v1",
+      "library_file_id": "libfile_fa547384d804819195688d84a9207e49",
+      "version": 1,
+      "filename": "Clear_PETG_Source_and_Tangent_Recovery_20261006.zip",
+      "sha256": "06d90945004285a2e9841c4a64a988a1ba072571f3380cb840fab29a6e191d52",
+      "status": "Preferred complete clear PETG source/pass recipe"
+    },
+    {
+      "key": "carpet-v6",
+      "library_file_id": "libfile_094210e60894819181feddaf69eb92a4",
+      "version": 6,
+      "filename": "Carpet_selected_r5_core_rebuild_checkpoint_r6.zip",
+      "bytes": 43887608,
+      "sha256": "407c89648099f53f24cb3b249b328b9818564110c2accfb01af7f81ac4d9e199",
+      "status": "Current research; no new carpet appearance promotion"
+    },
+    {
+      "key": "bark-v7",
+      "library_file_id": "libfile_a3ea9c098e5c8191a9511fbce4eb1427",
+      "version": 7,
+      "filename": "Bark_internal_qualification_checkpoint_r08.zip",
+      "bytes": 10501330,
+      "sha256": "5f4a920f16c9e133351d50a020a8998353782cc8d31643e2ac2b2fb4f0eac354",
+      "status": "Conditional numerical research only; selected bark r8 retained"
+    },
+    {
+      "key": "textile-v10",
+      "library_file_id": "libfile_7a57b3dae78481919ff159f155e3cf83",
+      "version": 10,
+      "filename": "Textile_suspended_spinning_r11.zip",
+      "bytes": 39671173,
+      "sha256": "f7efaadd6944a85b717493fa04c2beb95d3ce6df4e18dd50069cf55780c74638",
+      "status": "Paused and unqualified for production appearance"
+    },
+    {
+      "key": "organic-pass1-v0",
+      "library_file_id": "libfile_ca3bcb3c03888191afaf412e54e7992d",
+      "version": 0,
+      "filename": "CYBR_organic_pass1_review.zip",
+      "sha256": "dd8beb426a4f47053ecee73439e048ab2fdc6ff6315418bb731751a580967f47",
+      "status": "Exact retained bark/carpet/fleece/grass source and scenes"
+    },
+    {
+      "key": "technical-v3",
+      "library_file_id": "libfile_57849b49f8488191b30224a5f90fcaf5",
+      "version": 3,
+      "filename": "Technical_UV_Normal_Precision_20261006.zip",
+      "bytes": 227733062,
+      "sha256": "ddf29963951d0de2cb25f7c51431530fcb460e3786357aad13ceb8a840d1129d",
+      "status": "Technical UV/normal construction and exact source/tests/review history"
+    },
+    {
+      "key": "porcelain-v2",
+      "library_file_id": "libfile_027abd5ba6448191b43346f0ad7c91cb",
+      "version": 2,
+      "bytes": 458222435,
+      "filename": "Porcelain_Arrival_and_UV_Controls_20261006.zip",
+      "sha256": "0e46389dac973bf5e89e90e9a1f2629d41202c54ab1715a54e1b8b5eef4d081f",
+      "status": "Reviewed narrow continuous-glaze-lip appearance improvement; uncalibrated assumed history"
+    },
+    {
+      "key": "workshop-r10",
+      "library_file_id": "libfile_9dfdf25c7d5c819186a6f34ea7891890",
+      "version": 0,
+      "bytes": 218973792,
+      "filename": "Workshop_r10_complete_selected_r5.blend",
+      "sha256": "53aba3d3515ffa707940f310e881adc5dad32d01e61771a0c4e071ed9d9c9327",
+      "status": "Exact integrated complete workshop; source archive is an earlier version"
+    },
+    {
+      "key": "leather-history-v8",
+      "library_file_id": "libfile_df86ef7359208191b8c68e1c49c6481b",
+      "version": 8,
+      "status": "Known earlier force-history core recovery dependency; not materialized in this checkout and not claimed fully staged"
+    }
+  ],
+  "reviewed_previews": [
+    {
+      "material": "21_plastic_texture",
+      "library_file_id": "libfile_0599c63eda388191b4ded4aa084cb34b",
+      "version": 0,
+      "git_path": "audit/previews/21_molded_stipple_plastic_full.png",
+      "sha256": "ec921941239f9954e6440cac0d7f48a5d305e1446f63ec054e131978ab32ab27"
+    },
+    {
+      "material": "23_petg_transparent",
+      "library_file_id": "libfile_e63422770c708191867e0e9be25113ff",
+      "version": 0,
+      "git_inclusion": "Retained exact Library image; 13 MB labeled source not duplicated in Git."
+    }
+  ],
+  "additional_references": "Exact per-material selected/preferred images and source dependencies are in the registry and RENDERER_HANDOFF.json."
+}

@@ -1,0 +1,309 @@
+{
+  "model": "Coupled local Maxwell surface imprint/contact + finite-volume through-depth cooling",
+  "revision": "causal-plastic-v1",
+  "solver": "exact fixed-temperature contact/creep substeps, first-order staggered coupling, backward-Euler conservative FV conduction",
+  "parameters_all_assumed": {
+    "density_kg_m3": 1050.0,
+    "heat_capacity_J_kgK": 1800.0,
+    "conductivity_W_mK": 0.2,
+    "air_conductivity_W_mK": 0.03,
+    "contact_h_W_m2K": 6000.0,
+    "maxwell_modulus_Pa": 300000000.0,
+    "viscosity_reference_Pas": 300000.0,
+    "viscosity_reference_K": 503.15,
+    "activation_energy_J_mol": 160000.0,
+    "gas_constant_J_molK": 8.314462618,
+    "max_viscosity_Pas": 1e+20,
+    "deformation_layer_m": 0.00018,
+    "thermal_depth_m": 0.004,
+    "melt_temperature_K": 503.15,
+    "mold_temperature_K": 333.15,
+    "skin_diagnostic_temperature_K": 383.15,
+    "pressure_Pa": 20000000.0,
+    "pressure_hold_s": 0.5,
+    "end_time_s": 0.5,
+    "dt_s": 6.25e-05,
+    "depth_cells": 96,
+    "mesh_stretch": 7.0,
+    "include_dissipation": true
+  },
+  "input_tool": "/workspace/shared/material-native4k/plastic-detail/maps/r2/tool_state_native4096.npy",
+  "input_tool_sha256": "ebe558dc96ccb14ad5203e8b49b1a3dac83f3dfcb6c42d4b1ad8b7e89b3b6acc",
+  "input_scene_preserved": "/workspace/shared/material-slabs/scenes/21_plastic_texture_molding_detail_r2_panel.blend",
+  "source_tool_metric_max_m": 4.288246499426249e-05,
+  "source_state_native_size": [
+    4096,
+    4096
+  ],
+  "source_tool_status": "Existing empirical finite-impression geometry is an input mold; it is not reclassified as a simulated blasting/etching process.",
+  "gates": {
+    "eight_unit_tests": true,
+    "time_refines": true,
+    "time_last_error_below_0_15um": true,
+    "depth_refines": true,
+    "depth_last_error_below_0_02um": true,
+    "pressure_increases_replication_in_tested_range": true,
+    "warmer_mold_increases_replication": true,
+    "early_unload_reduces_replication": true,
+    "coupled_energy_balances": true,
+    "contact_bounds": true,
+    "constitutive_table_interpolation_below_0_005um": true
+  },
+  "all_gates_passed": true,
+  "details": {
+    "time_dt_125us": {
+      "mean_retained_fraction": 0.8371643436236827,
+      "retained_range_m": [
+        0.0,
+        3.829421776371751e-05
+      ],
+      "mean_extracted_heat_J_m2": 73706.72273166211,
+      "mean_skin_fraction": 0.49756436529413506,
+      "diagnostics": {
+        "steps": 4000,
+        "max_step_thermal_residual_J_m2": 2.056058005038576e-10,
+        "max_step_mechanical_residual_J_m2": 5.417888360170764e-14,
+        "max_global_thermal_residual_J_m2": 8.968925158114871e-08,
+        "min_retained_fraction": 0.7990680973468879,
+        "max_retained_fraction": 1.0,
+        "min_temperature_K": 346.9611504631952,
+        "max_temperature_K": 503.1500000000863,
+        "global_thermal_relative_residual": 1.213584702824491e-12
+      }
+    },
+    "time_dt_62_5us": {
+      "mean_retained_fraction": 0.8313752644265716,
+      "retained_range_m": [
+        0.0,
+        3.820676052021443e-05
+      ],
+      "mean_extracted_heat_J_m2": 73706.3546078182,
+      "mean_skin_fraction": 0.49756436529413506,
+      "diagnostics": {
+        "steps": 8000,
+        "max_step_thermal_residual_J_m2": 2.8498271618072317e-10,
+        "max_step_mechanical_residual_J_m2": 5.595524044110789e-14,
+        "max_global_thermal_residual_J_m2": 2.514737502679054e-07,
+        "min_retained_fraction": 0.7888204023373714,
+        "max_retained_fraction": 1.0,
+        "min_temperature_K": 346.96052836599114,
+        "max_temperature_K": 503.1500000000316,
+        "global_thermal_relative_residual": 3.402758230365502e-12
+      }
+    },
+    "time_dt_31_25us": {
+      "mean_retained_fraction": 0.8284000968023535,
+      "retained_range_m": [
+        0.0,
+        3.816226069968481e-05
+      ],
+      "mean_extracted_heat_J_m2": 73706.15575961555,
+      "mean_skin_fraction": 0.49756436529413506,
+      "diagnostics": {
+        "steps": 16001,
+        "max_step_thermal_residual_J_m2": 1.986428800139277e-10,
+        "max_step_mechanical_residual_J_m2": 6.972200594645983e-14,
+        "max_global_thermal_residual_J_m2": 9.12708344458224e-08,
+        "min_retained_fraction": 0.7834733772627135,
+        "max_retained_fraction": 1.0,
+        "min_temperature_K": 346.9602173447896,
+        "max_temperature_K": 503.15000000000003,
+        "global_thermal_relative_residual": 1.2350225046996462e-12
+      }
+    },
+    "time_refinement_max_differences_m": [
+      1.2151148844669276e-07,
+      6.347695188268143e-08
+    ],
+    "depth_cells_24": {
+      "mean_retained_fraction": 0.8303094134067566,
+      "retained_range_m": [
+        0.0,
+        3.8159698275915766e-05
+      ],
+      "mean_extracted_heat_J_m2": 73375.80459002242,
+      "mean_skin_fraction": 0.4814633024692988,
+      "diagnostics": {
+        "steps": 8000,
+        "max_step_thermal_residual_J_m2": 5.319845733700975e-10,
+        "max_step_mechanical_residual_J_m2": 5.684341886080802e-14,
+        "max_global_thermal_residual_J_m2": 3.293777695034805e-07,
+        "min_retained_fraction": 0.7879250157929676,
+        "max_retained_fraction": 1.0,
+        "min_temperature_K": 347.09032512928104,
+        "max_temperature_K": 503.14999998048563,
+        "global_thermal_relative_residual": 4.476985137142495e-12
+      }
+    },
+    "depth_cells_48": {
+      "mean_retained_fraction": 0.8312205545454744,
+      "retained_range_m": [
+        0.0,
+        3.8202336327301605e-05
+      ],
+      "mean_extracted_heat_J_m2": 73640.15069020294,
+      "mean_skin_fraction": 0.4814633024692989,
+      "diagnostics": {
+        "steps": 8000,
+        "max_step_thermal_residual_J_m2": 3.6964410128568687e-10,
+        "max_step_mechanical_residual_J_m2": 6.750155989720952e-14,
+        "max_global_thermal_residual_J_m2": 5.252857384618892e-07,
+        "min_retained_fraction": 0.7886394281430495,
+        "max_retained_fraction": 1.0,
+        "min_temperature_K": 347.0082206908011,
+        "max_temperature_K": 503.15000000000003,
+        "global_thermal_relative_residual": 7.114146580128e-12
+      }
+    },
+    "depth_refinement_max_differences_m": [
+      4.263805138583906e-08,
+      4.454463598286694e-09
+    ],
+    "pressure_2MPa": {
+      "mean_retained_fraction": 0.5833000994671398,
+      "retained_range_m": [
+        0.0,
+        2.5812025533260655e-05
+      ],
+      "mean_extracted_heat_J_m2": 61416.67592251086,
+      "mean_skin_fraction": 0.23720696945614944,
+      "diagnostics": {
+        "steps": 8000,
+        "max_step_thermal_residual_J_m2": 3.042925626777675e-10,
+        "max_step_mechanical_residual_J_m2": 3.3883486294516985e-15,
+        "max_global_thermal_residual_J_m2": 2.499156641633249e-07,
+        "min_retained_fraction": 0.5443520987146893,
+        "max_retained_fraction": 1.0,
+        "min_temperature_K": 346.96052836599114,
+        "max_temperature_K": 503.1500000000316,
+        "global_thermal_relative_residual": 3.3989042292510944e-12
+      }
+    },
+    "mold_30C": {
+      "mean_retained_fraction": 0.7295313792482307,
+      "retained_range_m": [
+        0.0,
+        3.529391981186792e-05
+      ],
+      "mean_extracted_heat_J_m2": 86661.84785397716,
+      "mean_skin_fraction": 0.7568366224596406,
+      "diagnostics": {
+        "steps": 8000,
+        "max_step_thermal_residual_J_m2": 2.8019255311896146e-10,
+        "max_step_mechanical_residual_J_m2": 6.306066779870889e-14,
+        "max_global_thermal_residual_J_m2": 2.5086504251703445e-07,
+        "min_retained_fraction": 0.6658447921943579,
+        "max_retained_fraction": 1.0,
+        "min_temperature_K": 319.3976804305785,
+        "max_temperature_K": 503.1500000000316,
+        "global_thermal_relative_residual": 2.889150320128747e-12
+      }
+    },
+    "mold_90C": {
+      "mean_retained_fraction": 0.9349585174876696,
+      "retained_range_m": [
+        0.0,
+        4.1163069486109214e-05
+      ],
+      "mean_extracted_heat_J_m2": 60745.01707243133,
+      "mean_skin_fraction": 0.14276734325863671,
+      "diagnostics": {
+        "steps": 8000,
+        "max_step_thermal_residual_J_m2": 2.853619570544454e-10,
+        "max_step_mechanical_residual_J_m2": 6.039613253960852e-14,
+        "max_global_thermal_residual_J_m2": 2.4128115683197393e-07,
+        "min_retained_fraction": 0.9156104343941932,
+        "max_retained_fraction": 1.0,
+        "min_temperature_K": 374.52337630140346,
+        "max_temperature_K": 503.1500000000316,
+        "global_thermal_relative_residual": 3.957751359739237e-12
+      }
+    },
+    "pressure_removed_1ms": {
+      "mean_retained_fraction": 0.45989930406484264,
+      "retained_range_m": [
+        0.0,
+        1.2063559371174378e-05
+      ],
+      "mean_extracted_heat_J_m2": 57187.32666346842,
+      "mean_skin_fraction": 0.18168847956828882,
+      "diagnostics": {
+        "steps": 8000,
+        "max_step_thermal_residual_J_m2": 2.765467854715098e-10,
+        "max_step_mechanical_residual_J_m2": 3.730349362740526e-14,
+        "max_global_thermal_residual_J_m2": 2.917574022376357e-07,
+        "min_retained_fraction": 0.2813168359791919,
+        "max_retained_fraction": 1.0,
+        "min_temperature_K": 346.96052836599114,
+        "max_temperature_K": 503.1500000000316,
+        "global_thermal_relative_residual": 3.968011200602077e-12
+      }
+    },
+    "production_depth_table": {
+      "mean_retained_fraction": 0.8299669257420329,
+      "retained_range_m": [
+        0.0,
+        3.820676052021443e-05
+      ],
+      "mean_extracted_heat_J_m2": 73706.08671329377,
+      "mean_skin_fraction": 0.497707565408197,
+      "diagnostics": {
+        "steps": 8000,
+        "max_step_thermal_residual_J_m2": 3.0515254543336405e-10,
+        "max_step_mechanical_residual_J_m2": 7.105427357601002e-14,
+        "max_global_thermal_residual_J_m2": 2.514737502679054e-07,
+        "min_retained_fraction": 0.7887524632270615,
+        "max_retained_fraction": 1.0,
+        "min_temperature_K": 346.96052836599114,
+        "max_temperature_K": 503.1500000000316,
+        "global_thermal_relative_residual": 3.402758230365502e-12
+      }
+    },
+    "off_table_direct_probes": {
+      "mean_retained_fraction": 0.8291983494638893,
+      "retained_range_m": [
+        2.242497254832372e-07,
+        3.745802927920219e-05
+      ],
+      "mean_extracted_heat_J_m2": 73703.95658501869,
+      "mean_skin_fraction": 0.49812537793611544,
+      "diagnostics": {
+        "steps": 8000,
+        "max_step_thermal_residual_J_m2": 2.969653187708157e-10,
+        "max_step_mechanical_residual_J_m2": 5.5067062021407764e-14,
+        "max_global_thermal_residual_J_m2": 2.4796912612146116e-07,
+        "min_retained_fraction": 0.7887544913878355,
+        "max_retained_fraction": 0.8892987797319049,
+        "min_temperature_K": 346.9605312496156,
+        "max_temperature_K": 503.1500000000316,
+        "global_thermal_relative_residual": 3.3556337320602495e-12
+      }
+    },
+    "response_table_max_interpolation_error_m": 7.472356469512503e-10
+  },
+  "elapsed_s": 64.39925384521484,
+  "limitations": [
+    "Assumed generic material constants, not measured, calibrated, or experimentally validated for a polymer.",
+    "Local independent columns: no lateral momentum, incompressible volume conservation, gas compression/venting, injection filling, or full 3D contact elasticity.",
+    "The Maxwell modulus and dashpot describe an effective surface layer; no molecular microstructure or physical phase transition is solved.",
+    "Cooling is solved through a 4mm half-thickness with an adiabatic back; skin_fraction is only a diagnostic of temperature below an assumed threshold.",
+    "Final retained displacement is the idealized unloaded dashpot state after a 0.5s surface imprint window; this is not a whole-part ejection or mold-cycle prediction.",
+    "Mold is an infinite isothermal thermal reservoir.",
+    "No thermal contraction, crystallization, shrinkage, residual stress field, macroscopic seams, ejector marks or draft is generated by this core.",
+    "Response-table interpolation maps already-solved independent local columns to the native tool; no spatial noise and no fixed replication factor."
+  ],
+  "references": [
+    {
+      "url": "https://doc.comsol.com/6.3/doc/com.comsol.help.sme/sme_ug_theory.06.029.html",
+      "supports": "Maxwell constitutive model and viscosity/stiffness relaxation relation; not numerical material constants."
+    },
+    {
+      "url": "https://doc.comsol.com/6.3/doc/com.comsol.help.heat/heat_ug_ht_features.09.105.html",
+      "supports": "Gap thickness/conductivity thermal resistance representation; not the assumed coefficient."
+    },
+    {
+      "url": "https://doc.comsol.com/6.4/doc/com.comsol.help.polymer/polymer_ug_heattransfer.11.02.html",
+      "supports": "Nonisothermal material-property coupling and viscous heating; not validation of this reduced model."
+    }
+  ]
+}
