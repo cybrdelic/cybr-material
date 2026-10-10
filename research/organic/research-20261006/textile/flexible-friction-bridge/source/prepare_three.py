@@ -1,0 +1,25 @@
+"""Declared zero-turn normal equilibrium before stress-free tangential start.
+No friction history is inferred from the old nineteen-fibre spun geometry.
+"""
+from pathlib import Path
+import sys,json,time,resource,numpy as np
+P=Path(__file__).resolve().parents[1]
+from flexible_contact import FlexibleContact
+from rod_pullback import exp,log,right_jacobian,mv
+from carriage import Carriage,MovingRoots,solve
+from segment_contact_sine import evaluate as native_pair
+class ThreeCarriage(Carriage):
+ def __init__(self,segments=64,order=65):
+  self.c=MovingRoots(3,segments,plane_bounds=None);self.bridge=FlexibleContact(3,segments,order);self.L=.0024;self.theta=0.;self.d=.00238;self.c.controls(self.d,0);self.c.fixed_axis_height=float(self.c.origins[0,2]);sm=(np.arange(segments)+.5)/segments;w=np.zeros((3,segments,3));w[:,:,0]=.183*np.sin(4*np.pi*sm);w[:,:,1]=1e-4*np.cos(np.arange(3))[:,None]*np.sin(2*np.pi*sm);R=exp(np.array([0.,np.pi/2,0.]))@exp(w);self.c.w[:]=log(R);self.d=float(np.diff(self.c.rod.points(R[0]),axis=0)[:,0].sum());self.c.controls(self.d,0);self.n=self.c.w.size
+  reference=json.loads((P.parent/'short-yarn-scaling/receipts/yarn_19_qualified.json').read_text());T=float(np.array(reference['root_forces_world_N'])[:,1,0].sum());self.tension=T*2/18;self.x=np.r_[self.c.w.ravel(),self.d/self.L];self.fixed=np.repeat(self.c.endpoint_fixed,3);self.hd=np.zeros(3*self.c.N);self.hd[::3]=-self.c.endpoint_fixed.astype(float);self.unit=self.c.unit;self.native_evaluate=self.c.evaluate;self.c.evaluate=self.evaluate_rods
+ def evaluate_rods(self,a):
+  c=self.c;c.w[:]=np.asarray(a).reshape(c.w.shape);R=exp(c.w);q=self.bridge.pack(c.origins,R);b=self.bridge.geometry(q);p=b['p'];gc=b['normal_gp'];E=b['normal_energy_J'];g=np.zeros_like(c.w);torques=np.zeros((c.N,2,3));Eb=0.
+  for i in range(c.N):
+   e,gi=c.rods[i].energy_gradient(R[i],c.frames_for(i),c.boundary_k0[i]);E+=e;Eb+=e;gi+=c.rod.pullback_position_gradient(R[i],gc[i]);g[i]=mv(np.swapaxes(right_jacobian(c.w[i]),-1,-2),gi);_,_,eg=c.rods[i].boundary_terms(R[i],c.frames_for(i),c.boundary_k0[i]);torques[i]=[c.ends[j]@eg[j] for j in range(2)]
+  nativeE,_,cs=native_pair(p,c.radius,c.ref,c.kc,order=c.contact_order,self_contact=True);c.last=dict(energy_J=float(E),bending_energy_J=float(Eb),pair_contact_energy_J=b['normal_energy_J'],backing_contact_energy_J=0.,position_gradient_N=gc,backing_gradient_N=np.zeros_like(gc),contact=cs,planes=dict(top_force_N=0.,bottom_force_N=0.,top_penetration_m=0.,bottom_penetration_m=0.,boundary_mode='suspended'),clamp_torques_world_Nm=torques,points=p,normal_native_energy_J=nativeE);return E/self.unit,g.ravel()/self.unit
+if __name__=='__main__':
+ start=time.monotonic();system=ThreeCarriage();protocol=dict(scope='Three actual flexible stocks; declared zero-turn suspended normal preparation. No prior tangential history is inferred. Frictional spin and fixed-turn tension unload remain future controls.',fibres=3,clamped_both_ends=2,free_tip_fibres=1,segments=64,stock_per_fibre_m=system.L,radius_m=system.c.radius,tension_N=system.tension,tension_basis='Same benchmark tension per doubly clamped fibre as eighteen clamped fibres in the qualified nineteen-fibre diagnostic.',intrinsic=system.c.manufacturing_parameters,initial_guess='Common smooth crimp directors with 0.183 rad tangent amplitude and 1e-4 rad deterministic transverse imperfection, used only as solver initialization.',tangential_initialization='Only after accepted normal preparation: zero tangential spring strain is an explicitly assumed prepared contact state; no manufacturing history is claimed before that state.',normal_contact='Same Abel double integral; symmetric fixed primary order65 and partner order24. Native support-resolved kernel is a preconditioner/check only.',wall_budget_s=90,limits='Contact-Hessian preconditioner and stability estimate inherited from the native same-continuum normal law; final directional/stability and 64/128 preparation comparisons are required before process qualification.')
+ (P/'PREPARATION.json').write_text(json.dumps(protocol,indent=2));(P/'data').mkdir(exist_ok=True)
+ def checkpoint(x,theta,trace):
+  np.savez_compressed(P/'data/three_preparation_pending.npz',x=x,w=x[:-1].reshape(system.c.w.shape),carriage=x[-1]*system.L,theta=theta);(P/'receipts/preparation_pending.json').write_text(json.dumps(dict(status='running',trace=trace,elapsed_s=time.monotonic()-start),indent=2))
+ result=solve(system,0.,wall_s=90,checkpoint=checkpoint);result.update(scope=protocol['scope'],normal_force_law='Symmetric fixed-reference double-pair integral',stability_scope='Native same-continuum approximate Hessian; independent bridge operator check pending.',max_RSS_MiB=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024);np.savez_compressed(P/'data/three_preparation_terminal.npz',x=system.x,w=system.c.w,carriage=system.d,theta=system.theta);(P/'receipts/preparation_terminal.json').write_text(json.dumps(result,indent=2));print(json.dumps({k:v for k,v in result.items() if k!='trace'},indent=2),flush=True)

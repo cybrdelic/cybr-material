@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "id": "cybr_grazing_warm_v1",
+  "name": "CYBR warm grazing reference",
+  "provenance": {
+    "receipt_sha256": "e608d15ac069a837bcb3109713581969a04734e4c9b2df2e0f0b3dfdd8abc3c2",
+    "reference_source_sha256": "fe6a90e00c0da47bc5e42ff891ad471f23266e5c727c7dfc354e33fa35a01414",
+    "reference_blender_version": "4.3.2",
+    "world_values_source": "reference_inspection.json",
+    "pipeline_sha256": "e616341ee9c38afc26112c50232d716220c84e6c9c3e63d2fadcdda5d68c57fe",
+    "reference_description": "Corrected asphalt object-normal candidate, grazing_after, 2026-10-09"
+  },
+  "reference_specimen_width_m": 0.25,
+  "reference_specimen_pivot_m": [
+    0.0,
+    0.0,
+    0.008
+  ],
+  "key": {
+    "matrix_world": [
+      [
+        0.5881715416908264,
+        0.07987755537033081,
+        -0.8047818541526794,
+        -0.2199999988079071
+      ],
+      [
+        -0.8087362051010132,
+        0.058092840015888214,
+        -0.5852956175804138,
+        -0.1599999964237213
+      ],
+      [
+        8.365459791548346e-08,
+        0.9951104521751404,
+        0.09876842796802521,
+        0.03500000014901161
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "type": "AREA",
+    "energy": 3.240000009536743,
+    "color": [
+      1.0,
+      0.9200000166893005,
+      0.8199999928474426
+    ],
+    "shape": "DISK",
+    "size": 0.054999999701976776,
+    "size_y": 0.25,
+    "shadow_soft_size": 0.0,
+    "rotation_euler": [
+      1.4718666076660156,
+      -8.365459791548346e-08,
+      -0.9420002698898315
+    ],
+    "spread": 3.1415927410125732,
+    "use_shadow": true,
+    "use_nodes": false,
+    "target_m": [
+      0.0,
+      0.0,
+      0.008
+    ]
+  },
+  "world": {
+    "color_rgba": [
+      0.18000000715255737,
+      0.20999999344348907,
+      0.25,
+      1.0
+    ],
+    "strength": 0.03999999910593033,
+    "sampling_method": "AUTOMATIC"
+  },
+  "camera": {
+    "matrix_world": [
+      [
+        0.732793390750885,
+        -0.4819265305995941,
+        0.4803754985332489,
+        0.07800000160932541
+      ],
+      [
+        0.6804511547088623,
+        0.5189977288246155,
+        -0.5173273086547852,
+        -0.11999999731779099
+      ],
+      [
+        -1.0156336216482487e-08,
+        0.7059661149978638,
+        0.708245575428009,
+        0.11999999731779099
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "type": "ORTHO",
+    "ortho_scale": 0.13500000536441803,
+    "lens": 50.0,
+    "clip_start": 9.999999747378752e-05,
+    "clip_end": 100.0,
+    "sensor_width": 36.0,
+    "sensor_height": 24.0,
+    "shift_x": 0.0,
+    "shift_y": 0.0,
+    "location_m": [
+      0.07800000160932541,
+      -0.11999999731779099,
+      0.11999999731779099
+    ],
+    "rotation_euler": [
+      0.7837863564491272,
+      1.0156336216482487e-08,
+      0.7483781576156616
+    ],
+    "rotation_mode": "XYZ",
+    "use_dof": false
+  },
+  "cycles": {
+    "debug_use_compact_bvh": false,
+    "samples": 128,
+    "seed": 1810,
+    "use_animated_seed": false,
+    "max_bounces": 12,
+    "diffuse_bounces": 4,
+    "glossy_bounces": 4,
+    "transmission_bounces": 12,
+    "transparent_max_bounces": 12,
+    "volume_bounces": 0,
+    "sample_clamp_direct": 0.0,
+    "sample_clamp_indirect": 10.0,
+    "blur_glossy": 1.0,
+    "caustics_reflective": true,
+    "caustics_refractive": true,
+    "use_adaptive_sampling": false,
+    "adaptive_threshold": 0.019999999552965164,
+    "adaptive_min_samples": 64,
+    "device": "CPU",
+    "use_denoising": false,
+    "use_light_tree": false
+  },
+  "display": {
+    "view_transform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": 0.0,
+    "gamma": 1.0,
+    "display_device": "sRGB",
+    "use_curve_mapping": false
+  },
+  "render": {
+    "frame": 1,
+    "film_transparent": false,
+    "pixel_aspect_x": 1.0,
+    "pixel_aspect_y": 1.0,
+    "image_file_format": "PNG",
+    "image_color_mode": "RGB",
+    "image_color_depth": "16",
+    "dither_intensity": 0.0
+  },
+  "pipeline": {
+    "capture_mode": "guided",
+    "save_guides": true,
+    "denoiser": "Intel Open Image Denoise",
+    "oidn_version": "2.5.1",
+    "quality": "high",
+    "guides": [
+      "HDR beauty",
+      "albedo",
+      "normal"
+    ],
+    "output_precision": "native RGB16, no dither"
+  },
+  "job_defaults": {
+    "engine": "CYCLES",
+    "width": 640,
+    "height": 640,
+    "samples": 128,
+    "capture_mode": "guided",
+    "save_guides": true,
+    "light_tree": false,
+    "color_depth": 16,
+    "dither_intensity": 0,
+    "use_adaptive_sampling": false,
+    "adaptive_threshold": 0.019999999552965164,
+    "adaptive_min_samples": 64,
+    "rss_cap_mib": 3072,
+    "time_limit_seconds": 600,
+    "sync_limit_seconds": 90
+  }
+}

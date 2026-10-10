@@ -1,0 +1,15 @@
+{
+  "engine": "CYCLES",
+  "width": 960,
+  "height": 960,
+  "samples": 128,
+  "capture_mode": "guided",
+  "save_guides": true,
+  "light_tree": false,
+  "color_depth": 16,
+  "dither_intensity": 0,
+  "use_adaptive_sampling": false,
+  "rss_cap_mib": 3072,
+  "time_limit_seconds": 600,
+  "sync_limit_seconds": 90
+}

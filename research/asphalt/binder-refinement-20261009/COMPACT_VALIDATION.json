@@ -1,0 +1,39 @@
+{
+  "pass": true,
+  "scene_reconstructed_from_numeric_source": true,
+  "input_blend_required": false,
+  "exact_render_signature": {
+    "sha256": "4653bf62e12224cfb575a02e2c18243da9bc4116bef68b80d294de1ae09df56b",
+    "sections": {
+      "objects": "8144f1ba667aa239c583d6f68a4f76747647bf802961c6b09c96722a654899f3",
+      "materials": "7673475d53cc6f0d2064fa3451cbdfb913aa00ddc324e4ebf06f1df0a1c30d4c",
+      "world": "3f4942763f24b2b6edad5bf13efb01afea6d8b6e0318994e30f60849b42dbef5",
+      "camera": "0b11c67ad3e6c7281ce1bc90275cebb5759caef07fb9217fe1b43f9485e6434a",
+      "view": "2e66e5bbd63d64c41954e72ba142dbb687e47540d438e7487382a0bae5539ee6"
+    }
+  },
+  "capture_profile_checks": {
+    "engine": true,
+    "width": true,
+    "height": true,
+    "samples": true,
+    "capture_mode": true,
+    "save_guides": true,
+    "light_tree": true,
+    "color_depth": true,
+    "dither_intensity": true,
+    "use_adaptive_sampling": true,
+    "rss_cap_mib": true,
+    "time_limit_seconds": true,
+    "sync_limit_seconds": true
+  },
+  "generated_job_scene_hash_verified": true,
+  "native_maps_verified_by_expected_sha256": true,
+  "verification_used_existing_native_maps": true,
+  "resynthesized_native_maps": false,
+  "rerendered_compact_scene": false,
+  "original_candidate_shader_normal_proof_passed": true,
+  "selected": false,
+  "physical_qualification": false,
+  "compact_source_tests_pass": true
+}

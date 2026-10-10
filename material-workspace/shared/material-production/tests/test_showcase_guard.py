@@ -24,4 +24,18 @@ class ShowcaseGuard(unittest.TestCase):
   self.m['selected']={'appearance_anchor':{'library_file_id':'later-detail'}}
   self.assertEqual(preferred_reference(self.m)['library_file_id'],'known-baseline')
 
+ def test_public_content_hash_reference(self):
+  self.m['preferred_visual_reference'].pop('library_file_id')
+  self.m['preferred_visual_reference']['sha256']='a'*64
+  self.c={'kind':'complete_panel','sha256':'b'*64}
+  self.r.update(baseline_sha256='a'*64,candidate_sha256='b'*64)
+  self.assertTrue(validate_visual_promotion(self.m,self.c,self.r))
+  self.r['baseline_sha256']='c'*64
+  with self.assertRaises(ContractError):validate_visual_promotion(self.m,self.c,self.r)
+ def test_public_registry_showcase_references_retain_hash_identity(self):
+  from materials.core import registry
+  for material in registry()['materials']:
+   if material.get('preferred_visual_reference'):
+    self.assertIn('sha256',preferred_reference(material))
+
 if __name__=='__main__':unittest.main()

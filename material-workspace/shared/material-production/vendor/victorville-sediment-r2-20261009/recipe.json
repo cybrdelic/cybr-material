@@ -1,0 +1,29 @@
+{
+  "id": "36_victorville_desert_ground",
+  "name": "Victorville / Granitic desert ground",
+  "family": "Desert ground",
+  "variant": "Dust and sand mantle over compacted dirt and buried alluvial gravel",
+  "tile_m": 0.6,
+  "height_scale_m": 0.032,
+  "seed": 92394,
+  "roughness": 0.87,
+  "metallic": 0.0,
+  "ior": 1.5,
+  "gravel_density": 1.0,
+  "crust_strength": 0.32,
+  "dust_amount": 0.74,
+  "sediment_depth_m": 0.0016,
+  "sand_deposit_m": 0.0012,
+  "clod_density": 2200.0,
+  "compaction_smoothing_m": 0.00085,
+  "loose_sand_scale": 0.15,
+  "color": [
+    0.59,
+    0.535,
+    0.455
+  ],
+  "representation": "metric displaced ground and coupled PBR fields",
+  "physical_values": "Authored approximations; not laboratory-measured or site-calibrated",
+  "tiling": "periodic toroidal field",
+  "region": "Victorville, western Mojave, California"
+}

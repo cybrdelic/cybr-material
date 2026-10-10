@@ -252,9 +252,7 @@
       "preferred_visual_reference": {
         "kind": "complete_panel",
         "status": "restored_visual_baseline",
-        "library_file_id": "libfile_3aabaaef6b888191a211a505d71207ca",
         "library_version": 0,
-        "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/brass_contact_study_r3/05_champagne_brass_labeled.png",
         "labeled_image_sha256": "36ff2fccd8550b110ccdbedbfd9e4b36c9449f9cfe8873152fe2ce4ea070dcf0",
         "canonical_render_sha256": "62cf17a9c2f9bdc85ee50ab68e7abff8c2e8aa2e49e5fcfc6b92487ae7051beb",
         "view_scope": "Complete32.031mm contact-study coupon; preferred appearance reference, not calibrated wear",
@@ -263,18 +261,12 @@
         "historical_source_sha256": "94a87b33f8f7618ab8fc7af5800be7221a5229276baaf7d90935fe81d9a23dab",
         "source_binary_locally_available": true,
         "rerender_profile_status": "Exact historical32mm binary and all bound native channels recovered. Original1280 capture job/softbox override receipt remains unavailable; do not substitute the different200mm integration profile.",
-        "historical_source_library_file_id": "libfile_a3380eb4145081919cf32cd47a945981",
-        "historical_source_path": "/workspace/scratch/b4387906eb93/brass-selected-recovery-20261006/05_brass_contact_32mm_conservative_study_r3.blend",
         "portable_source": {
-          "path": "/workspace/scratch/b4387906eb93/brass-selected-recovery-20261006/05_brass_contact_r3_portable_paths.blend",
           "sha256": "eeefcac8e0c475ec6419d391a0472a4f7006898248dd36a67602d2127b17fbb7",
-          "library_file_id": "libfile_1b8ba29e14448191a06c9132bd30c467",
           "version": 0,
           "only_paths_and_packing_changed": true,
           "all_bound_maps_native4096": true,
           "original_five_channels_integer_pixels_exact": true,
-          "contact_normal_exact_library_file_id": "libfile_1fbf6006853481918d5ab0d81f17b1c2",
-          "verification_receipt": "/workspace/scratch/b4387906eb93/brass-selected-recovery-20261006/receipts/portable_source.json",
           "verification_receipt_sha256": "53cea6277721ce7313c5777b99b1d5290666dd03edb735f4d822b5152f2a1509"
         }
       }
@@ -329,9 +321,7 @@
       "preferred_visual_reference": {
         "kind": "complete_panel",
         "status": "restored_visual_baseline",
-        "library_file_id": "libfile_255cf2d71ffc8191a01096030993bd04",
         "library_version": 0,
-        "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/steel_native32mm_r1/06_blackened_steel_labeled.png",
         "labeled_image_sha256": "03a0527c96b3a8efde6f0ed7100bf5461e6c1035d63d284308fe9c7e5420e8c1",
         "canonical_render_sha256": "c31ada53601df8c26642ca9beef33487e22217e4d97bf1c41ee801764a73dff8",
         "view_scope": "Complete32mm original-finish coupon",
@@ -339,7 +329,6 @@
         "reason": "Restore the stronger reviewed complete view after the user reported regressions; diagnostic controls cannot replace it",
         "source_scene": "shared/material-native4k/steel-presentation/scenes/06_steel_native32mm_top_normal_r1.blend",
         "source_scene_sha256": "e0256ee3c0f09b95093300d875d7131a50d186072aedd06ea37afd81f3e82725",
-        "source_library_file_id": "libfile_e0c8b149c59c8191a41da4acc3bdb583",
         "source_binary_locally_available": true,
         "rerender_profile_status": "Original1280 capture job unavailable. Historical owner handoff records1280/128 and softbox32/1.1/.75; recovery smoke profile is not an exact replacement."
       }
@@ -390,9 +379,7 @@
       "preferred_visual_reference": {
         "kind": "complete_panel",
         "status": "verified_narrow_visual_improvement",
-        "library_file_id": "libfile_4a7329d006b08191ad4ef94822eb2141",
         "library_version": 0,
-        "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/porcelain_reference_firing/full/07_bone_porcelain_reference_full.png",
         "labeled_image_sha256": "464938b50aae1a1f712506f937337284c04085c10991d87e66ba380dc9a0d3aa",
         "canonical_render_sha256": "766a5c26cf21c2e5889b4dd40f0dba8059a2bc0196b4af84f358e3104dec3db8",
         "source_scene": "shared/material-production/experiments/porcelain_reference_history/scenes/07_porcelain_reference_history_intrinsic_HELD.blend",
@@ -400,7 +387,6 @@
         "capture_run": "shared/material-production/runs/porcelain_reference_intrinsic_full_capture_20261006_1929",
         "view_scope": "96 mm tile \u00b7 complete view",
         "scope": "Continuous glaze-lip improvement; assumed reference firing history and effective optics remain uncalibrated.",
-        "review_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/porcelain_reference_history/receipts/owner_final_visual_review.json",
         "review_receipt_sha256": "658bfd4f7038f5e99ed483a91d10415896dcdaf215d69e546a90b2fe71d16f3d",
         "physical_model_qualified": false,
         "protected": true,
@@ -442,9 +428,7 @@
         {
           "kind": "detail_view",
           "status": "verified_narrow_visual_improvement",
-          "library_file_id": "libfile_bd3d81c371d481919c4629d2f6bb9f68",
           "library_version": 0,
-          "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/porcelain_reference_firing/macro/07_bone_porcelain_reference_macro.png",
           "labeled_image_sha256": "f20576e4683b047b7c20073818fb026ee9ee9f67a349652121e4908608db2f5b",
           "canonical_render_sha256": "67c140afa0c83dda5ebe42a9a26176ed1c5920f4a0a4cd05bb2490c368dd0437",
           "source_scene": "shared/material-production/experiments/porcelain_reference_history/scenes/07_porcelain_reference_history_intrinsic_HELD.blend",
@@ -452,7 +436,6 @@
           "capture_run": "shared/material-production/runs/porcelain_intrinsic_macro_capture_20261006_1922",
           "view_scope": "28 mm field \u00b7 continuous glaze highlight",
           "scope": "Continuous glaze-lip improvement; assumed reference firing history and effective optics remain uncalibrated.",
-          "review_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/porcelain_reference_history/receipts/owner_final_visual_review.json",
           "review_receipt_sha256": "658bfd4f7038f5e99ed483a91d10415896dcdaf215d69e546a90b2fe71d16f3d",
           "physical_model_qualified": false,
           "protected": true,
@@ -493,9 +476,7 @@
         {
           "kind": "alternate_lighting_view",
           "status": "verified_narrow_visual_improvement",
-          "library_file_id": "libfile_28e4ec8074908191b2d7b9b0c19471be",
           "library_version": 0,
-          "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/porcelain_reference_firing/second_light/07_bone_porcelain_reference_second_light.png",
           "labeled_image_sha256": "8092c904a103bd9be0c0ff5aa6e8a0a9bd47d6cd2447afc7728ec5c864993fc9",
           "canonical_render_sha256": "0f9ecf642503d61096baa8b36e7f935d65fe6f63fdb6292946d0560182836936",
           "source_scene": "shared/material-production/experiments/porcelain_reference_history/second_light_sources/07_porcelain_reference_intrinsic_second_light.blend",
@@ -503,7 +484,6 @@
           "capture_run": "shared/material-production/runs/porcelain_reference_intrinsic_second_capture_20261006_1927",
           "view_scope": "96 mm tile \u00b7 second lighting",
           "scope": "Continuous glaze-lip improvement; assumed reference firing history and effective optics remain uncalibrated.",
-          "review_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/porcelain_reference_history/receipts/owner_final_visual_review.json",
           "review_receipt_sha256": "658bfd4f7038f5e99ed483a91d10415896dcdaf215d69e546a90b2fe71d16f3d",
           "physical_model_qualified": false,
           "protected": true,
@@ -546,9 +526,7 @@
         {
           "kind": "complete_panel",
           "status": "retained_visual_baseline",
-          "library_file_id": "libfile_edc83cc981548191906982cc4fa7763b",
           "library_version": 1,
-          "labeled_image": "/workspace/scratch/b4387906eb93/porcelain-recovery-20261006-1758/references/07_bone_porcelain_labeled.png",
           "labeled_image_sha256": "ca85e71f6a161fc8efb2b628ead91a8906829a93e2568a878df9c4725e0d2492",
           "canonical_render_sha256": "92a00ad0f957b39133ee04068928095cafc843fe200070e73ce36e4174f22b11",
           "actual_pixel_review": "Complete neutral bone-colored glazed coupon with preserved rounded silhouette, thin glaze rim and visible matte body. Broad face is clean but idealized; retain this complete reference while repairing the surface orientation."
@@ -585,7 +563,6 @@
           "image": "shared/material-production/runs/leather_coupon_capture_20261006_0535/CLEAN_OIDN_PANEL.png",
           "sha256": "5db40c180e2343565f964a4a9ae245acab9cb046dee621b59087d922e84875b0",
           "receipt": "shared/material-production/runs/leather_coupon_capture_20261006_0535/CLEAN_OIDN_PANEL.png.json",
-          "library_file_id": "libfile_67d0b07157a4819185082d78228f59a6",
           "view_scope": "32.344mm whole coupon"
         },
         "source_selection": "unqualified original procedural appearance reference; full180mm panel and reduced-model morphology failed",
@@ -644,7 +621,6 @@
       "preferred_visual_reference": {
         "kind": "complete_panel",
         "status": "restored_visual_baseline",
-        "library_file_id": "libfile_67d0b07157a4819185082d78228f59a6",
         "canonical_render": "shared/material-production/runs/leather_coupon_capture_20261006_0535/CLEAN_OIDN_PANEL.png",
         "canonical_render_sha256": "5db40c180e2343565f964a4a9ae245acab9cb046dee621b59087d922e84875b0",
         "source_scene": "shared/material-production/experiments/leather_coupon_transfer/scenes/08_leather_coupon_full_normal.blend",
@@ -784,13 +760,10 @@
       "preferred_visual_reference": {
         "kind": "complete_panel",
         "status": "restored_visual_baseline",
-        "library_file_id": "libfile_2b931f9474c08191a084bef236bbd69f",
         "version": 0,
-        "local_path": "/workspace/scratch/b4387906eb93/labeled-material-panels/11_bark_labeled.png",
         "sha256": "44914bad6021cfa1ee05c1b2ae871d3bed431125470da6e314a41a4dee2c1e85",
         "source_png_sha256": "a1154e74aeb2bd06f258166b2eb57b9c0c71b1cf9ebb730f68010ee4cf061fb8",
         "scope": "Retained stronger visual anchor, not full physical-realism acceptance",
-        "provenance_manifest": "/workspace/scratch/b4387906eb93/recovered-production/reports/curated_restore_20261006_1243/seven_anchor_manifest.json",
         "provenance_manifest_sha256": "1e5b53c3ed40a510f8290366583141cdc5f5f02a11ae0cacbdd8656edacb2f6c",
         "exact_source_capture_attribution": "Existing selected source/capture fields retained separately; no new binary or job equivalence is asserted by this image restoration."
       }
@@ -827,7 +800,6 @@
           "image": "shared/material-production/runs/wire_circle_resolution_capture_20261006_0550/CLEAN_OIDN_PANEL.png",
           "sha256": "b999b44c49d045c636c06d1a572a932ee11af0b8569a8e881dde9ea4d4681899",
           "receipt": "shared/material-production/runs/wire_circle_resolution_capture_20261006_0550/CLEAN_OIDN_PANEL.png.json",
-          "library_file_id": "libfile_bdb7329fcd008191b55b334c90248a7f",
           "view_scope": "18mm detail"
         },
         "source_selection": "audited correction; full material-model qualification remains open",
@@ -979,7 +951,6 @@
           "image": "shared/material-production/runs/chainmail_normal16_capture_20261006_0529/CLEAN_OIDN_PANEL.png",
           "sha256": "aef0ac888240b4ca226d7c980a201695e330990d32ccf35142a31d67ce502128",
           "receipt": "shared/material-production/runs/chainmail_normal16_capture_20261006_0529/CLEAN_OIDN_PANEL.png.json",
-          "library_file_id": "libfile_93b36f1a78608191830d15d614480b2f",
           "view_scope": "18mm detail"
         },
         "source_selection": "audited correction; full material-model qualification remains open",
@@ -1102,7 +1073,6 @@
           "image": "shared/material-production/runs/hex_rgb16_capture_20261006_0946/CLEAN_OIDN_PANEL.png",
           "sha256": "948c46dc4808f6ef30a191a46165883ea49204cff9ff324c20d654662be56b82",
           "receipt": "shared/material-production/runs/hex_rgb16_capture_20261006_0946/capture_result.json",
-          "library_file_id": "libfile_653f1b3ab368819191aad4c093a5ff33",
           "library_representation": "Labeled copy of reviewed native16 capture",
           "view_scope": "Matched37mm joint/mounting detail; full panel is not newly reviewed"
         },
@@ -1162,9 +1132,7 @@
       "preferred_visual_reference": {
         "kind": "complete_panel",
         "status": "restored_visual_baseline",
-        "library_file_id": "libfile_9c6939455b888191a9a04c2f76e67c4e",
         "library_version": 0,
-        "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/15_ceramic_hex_armor_labeled.png",
         "labeled_image_sha256": "18bf7c1d77958f42c9e7316c35c6cc21c0ff7a7d04b626285b27aae6c81d2be2",
         "canonical_render_sha256": "a4cc2e1e9fb713f99c53ac64264f046c9bc9637d921112d945a6dd493ce9323c",
         "view_scope": "Complete45-tile mounted assembly;37mm audit detail is supplementary",
@@ -1258,13 +1226,10 @@
       "preferred_visual_reference": {
         "kind": "complete_panel",
         "status": "restored_visual_baseline",
-        "library_file_id": "libfile_db8531eaf7648191a8cef43599920e44",
         "version": 0,
-        "local_path": "/workspace/scratch/b4387906eb93/labeled-material-panels/17_soft_brushed_fleece_labeled.png",
         "sha256": "d59607238cef2807a0920c694b3077ce3df837c025894f3290ee1a3fe8852ce2",
         "source_png_sha256": "05f508df3bf99cfe98766aaf35264e7c366f221ea886822aad90aa14c2a73b15",
         "scope": "Retained stronger visual anchor, not full physical-realism acceptance",
-        "provenance_manifest": "/workspace/scratch/b4387906eb93/recovered-production/reports/curated_restore_20261006_1243/seven_anchor_manifest.json",
         "provenance_manifest_sha256": "1e5b53c3ed40a510f8290366583141cdc5f5f02a11ae0cacbdd8656edacb2f6c",
         "exact_source_capture_attribution": "Existing selected source/capture fields retained separately; no new binary or job equivalence is asserted by this image restoration."
       }
@@ -1304,7 +1269,6 @@
           "image": "shared/material-production/runs/lcd_transport_native_20261006_0651/COMPONENT_RECOMBINED_PANEL.png",
           "sha256": "f01af7371f9cda5914fa63f2f1aae60762dbb55bbc72eb68793412c5e6cf388a",
           "receipt": "shared/material-production/runs/lcd_transport_native_20261006_0651/component_recombined_receipt.json",
-          "library_file_id": "libfile_9456dab6a68c81918f12ba45a0be78c6",
           "library_representation": "Labeled copy of the reviewed raw panel pixels",
           "view_scope": "Analytic pixel/phosphor structure study; complete panel in current framing"
         },
@@ -1364,7 +1328,6 @@
       "preferred_visual_reference": {
         "kind": "complete_panel",
         "status": "verified_visible_improvement",
-        "library_file_id": "libfile_9456dab6a68c81918f12ba45a0be78c6",
         "canonical_render": "shared/material-production/runs/lcd_transport_native_20261006_0651/COMPONENT_RECOMBINED_PANEL.png",
         "canonical_render_sha256": "f01af7371f9cda5914fa63f2f1aae60762dbb55bbc72eb68793412c5e6cf388a",
         "source_scene": "shared/material-production/experiments/lcd_first_hit_guides/scenes/lcd_first_hit_guide_candidate.blend",
@@ -1409,7 +1372,6 @@
           "image": "shared/material-production/runs/crt_transport_native_20261006_0710/COMPONENT_RECOMBINED_PANEL.png",
           "sha256": "5a15d1b91ddb1aa15c47a25e070e8031a7dcbe1af57b44e47b26d5cd3b76c4dc",
           "receipt": "shared/material-production/runs/crt_transport_native_20261006_0710/component_recombined_receipt.json",
-          "library_file_id": "libfile_459090b7f3fc819180bdf0140da86134",
           "library_representation": "Labeled copy of the reviewed raw panel pixels",
           "view_scope": "Analytic pixel/phosphor structure study; complete panel in current framing"
         },
@@ -1469,7 +1431,6 @@
       "preferred_visual_reference": {
         "kind": "complete_panel",
         "status": "verified_visible_improvement",
-        "library_file_id": "libfile_459090b7f3fc819180bdf0140da86134",
         "canonical_render": "shared/material-production/runs/crt_transport_native_20261006_0710/COMPONENT_RECOMBINED_PANEL.png",
         "canonical_render_sha256": "5a15d1b91ddb1aa15c47a25e070e8031a7dcbe1af57b44e47b26d5cd3b76c4dc",
         "source_scene": "shared/material-production/experiments/crt_transport_split/scenes/crt_first_hit_guides_for_remainder.blend",
@@ -1567,9 +1528,7 @@
       "preferred_visual_reference": {
         "kind": "complete_panel",
         "status": "verified_visible_improvement",
-        "library_file_id": "libfile_0599c63eda388191b4ded4aa084cb34b",
         "library_version": 0,
-        "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/plastic_complete_transfer/full/21_molded_stipple_plastic_full.png",
         "labeled_image_sha256": "ec921941239f9954e6440cac0d7f48a5d305e1446f63ec054e131978ab32ab27",
         "canonical_render_sha256": "262604c94de4501d4a4d5ea1f463bb3c42f4db49edaba6ea66f9f3050a65ac00",
         "source_scene": "shared/material-production/experiments/plastic_complete_transfer/scenes/plastic_complete_full.blend",
@@ -1578,7 +1537,6 @@
         "view_scope": "Complete original80mm rounded form with native4096 retained relief and a camera-specific geometric LOD; improved curved grain and edge highlight.",
         "scope": "Verified visible detail improvement after complete,macro and second-light comparisons. Current solved recipe differs from prior90%-replication recipe. Physical model calibration remains false.",
         "protected": true,
-        "review_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/owner_final_visual_review.json",
         "review_receipt_sha256": "4e58558bd77230eaa0030e28ce8871c1e27d8d535b9ab861a81ab3d3f6216d4a",
         "capture_recipe": {
           "experiment": "plastic_complete_candidate_full_r3",
@@ -1617,32 +1575,25 @@
       "verified_detail_references": [
         {
           "kind": "detail_study",
-          "library_file_id": "libfile_ce86ce13279c8191b8015239b04caa8e",
           "source_scene": "shared/material-production/experiments/plastic_native_relief_transfer/scenes/21_plastic_fixed_state_native.blend",
           "source_scene_sha256": "1c6d588798f6c8315fb38da21ee5fcc97910805fd9cc56ed40522a231ddb202b",
           "reason": "Visible restoration of native stipple; physical-state and sampling proof, not a complete curved-part replacement"
         },
         {
           "kind": "detail_view",
-          "library_file_id": "libfile_2df65e65114881918c7c3016ce93dd2e",
           "library_version": 0,
-          "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/plastic_complete_transfer/macro/21_molded_stipple_plastic_macro.png",
           "labeled_image_sha256": "1696a4033b6917304cad37eb8fe0a4002f4298d8c0296940654d8742cbcc6c28",
           "canonical_render_sha256": "116ac37b979c8bba9df7573f279ddba29b8625ed494fc82ce2112fccd7b84b37",
           "view_scope": "24mm rounded edge and molding seam",
-          "review_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/owner_final_visual_review.json",
           "review_receipt_sha256": "4e58558bd77230eaa0030e28ce8871c1e27d8d535b9ab861a81ab3d3f6216d4a",
           "physical_model_qualified": false
         },
         {
           "kind": "alternate_lighting_view",
-          "library_file_id": "libfile_43e7f8ab52a48191a95cc90e7039d0da",
           "library_version": 0,
-          "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/plastic_complete_transfer/second_light/21_molded_stipple_plastic_second_light.png",
           "labeled_image_sha256": "c422a4d595577d0df1be58e81f194bf0ea4d6a02e7868a140086b106c4965b17",
           "canonical_render_sha256": "74b9a6236555e2e3a7207b27a048f1f8afca24fc9a364ae094dfcb8a85bb5e23",
           "view_scope": "Complete80mm part under matched rotated lighting",
-          "review_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/plastic_complete_transfer/receipts/owner_final_visual_review.json",
           "review_receipt_sha256": "4e58558bd77230eaa0030e28ce8871c1e27d8d535b9ab861a81ab3d3f6216d4a",
           "physical_model_qualified": false
         }
@@ -1651,9 +1602,7 @@
         {
           "kind": "complete_panel",
           "status": "restored_visual_baseline",
-          "library_file_id": "libfile_ea9e705b38608191ace56d62e2cf6020",
           "library_version": 0,
-          "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/21_molded_stipple_plastic_labeled.png",
           "labeled_image_sha256": "cfcbbd5737631ada156f3927836db6a846df46616d1a07334d98e308c984a21d",
           "canonical_render_sha256": "8fa06b2d43f5d36e54f7c58a452d17256d86a33f9742b5b891a883d37141ab45",
           "view_scope": "Complete molded stipple panel; native flat-relief study remains a supplementary detail",
@@ -1749,9 +1698,7 @@
       "preferred_visual_reference": {
         "kind": "complete_panel",
         "status": "verified_visible_improvement",
-        "library_file_id": "libfile_e63422770c708191867e0e9be25113ff",
         "version": 0,
-        "local_path": "/workspace/scratch/b4387906eb93/labeled-material-panels/clear_petg_fidelity_corrected/23_clear_printed_petg_labeled.png",
         "sha256": "51acec9e44bc0b4e3e5f495bd54d2cdf16d13496327c229aa328565165a68f2d",
         "source_png_sha256": "8e497850c65f5f1bbdd257885f6d41dd92cc6095752742c8bf91e414ba179d66",
         "source_scene": "shared/material-production/experiments/clear_petg_capture_recovery/scenes/23_petg_native4k_valid_tangent_guides_r2.blend",
@@ -1759,7 +1706,6 @@
         "capture_run": "shared/material-production/runs/clear_petg_full_capture_20261006_1236",
         "postprocess_run": "shared/material-production/runs/clear_petg_full_two_component_20261006_1302",
         "scope": "Rendering-fidelity improvement over the retained complete panel; same reconstructed geometry/maps/optics, explicit independent T/R filtering and signed-pass arithmetic. Physical material qualification remains false.",
-        "review_receipt": "/workspace/scratch/b4387906eb93/recovered-production/workspace/shared/material-production/experiments/clear_petg_capture_recovery/receipts/full_frame_native_review.json",
         "review_receipt_sha256": "74d777127583485893aa0c48afb2448290456fbbc688a0130f75d3943195b6f8",
         "capture_recipe": {
           "experiment": "clear_petg_preferred_full_panel",
@@ -1801,9 +1747,7 @@
         {
           "kind": "complete_panel",
           "status": "restored_visual_baseline",
-          "library_file_id": "libfile_b3741ee3e1688191af4de2cc59b712f2",
           "library_version": 0,
-          "labeled_image": "/workspace/scratch/b4387906eb93/labeled-material-panels/23_clear_printed_petg_labeled.png",
           "labeled_image_sha256": "04297c3d0b8fb1190830f0145f6915bc34d56794f0f6f7b8c29c7cd05c99ea96",
           "canonical_render_sha256": "28d7d8dabb795f5d04c2a92ca3a82651d5b10e37619e709af7fe594696a246b2",
           "view_scope": "Complete28\u00d726mm printed wall, frosted optical response; current new capture remains unselected",
@@ -1856,13 +1800,10 @@
       "preferred_visual_reference": {
         "kind": "complete_panel",
         "status": "restored_visual_baseline",
-        "library_file_id": "libfile_c3f3b2e1eaac81919a6dab81d620304b",
         "version": 0,
-        "local_path": "/workspace/scratch/b4387906eb93/labeled-material-panels/24_loop_wool_carpet_labeled.png",
         "sha256": "02a1d963a955e70e4d55912c4e05c3f8c835990c418c88456b2f70576bb7681b",
         "source_png_sha256": "164d60bae92bb19899a39094b310797e5f0f9d5916e0eb1ffe2eed0a7214e3b7",
         "scope": "Retained stronger visual anchor, not full physical-realism acceptance",
-        "provenance_manifest": "/workspace/scratch/b4387906eb93/recovered-production/reports/curated_restore_20261006_1243/seven_anchor_manifest.json",
         "provenance_manifest_sha256": "1e5b53c3ed40a510f8290366583141cdc5f5f02a11ae0cacbdd8656edacb2f6c",
         "exact_source_capture_attribution": "Existing selected source/capture fields retained separately; no new binary or job equivalence is asserted by this image restoration."
       }
@@ -2312,13 +2253,10 @@
       "preferred_visual_reference": {
         "kind": "complete_panel",
         "status": "restored_visual_baseline",
-        "library_file_id": "libfile_bc5db538c5a081918141b15468603c85",
         "version": 0,
-        "local_path": "/workspace/scratch/b4387906eb93/labeled-material-panels/selected32_recovered/32_polished_concrete_labeled.png",
         "sha256": "2a8c466929b602f27a2d011e0b14695bf8f7b537cceb82889b134be555815007",
         "source_png_sha256": "7f461f140600fc45c8dee3b2b42fe74d2271910255007023032e4da7a8e0a140",
         "scope": "Retained stronger visual anchor, not full physical-realism acceptance",
-        "provenance_manifest": "/workspace/scratch/b4387906eb93/recovered-production/reports/curated_restore_20261006_1243/seven_anchor_manifest.json",
         "provenance_manifest_sha256": "1e5b53c3ed40a510f8290366583141cdc5f5f02a11ae0cacbdd8656edacb2f6c",
         "exact_source_capture_attribution": "Existing selected source/capture fields retained separately; no new binary or job equivalence is asserted by this image restoration."
       }
@@ -2489,6 +2427,59 @@
         "native4k_requirement": "Mapped production inputs must remain native4096; analytic fibers/wires/blades retain actual geometry",
         "qualification": "only brass and polished-concrete vertical slices executed in this cleanup"
       }
+    },
+    {
+      "id": "36_victorville_desert_ground",
+      "name": "Victorville / Granitic desert ground",
+      "owner": "technical",
+      "units": "meters",
+      "quality": "User-approved R5D ground appearance; not physically calibrated or site-measured",
+      "protected_appearance": true,
+      "geometry_contract": "Finite 0.18 m specimen: 73,733 separate bounded mineral particles and a compacted fines substrate; preserve the actual geometry and per-particle shader attributes",
+      "procedural_rebuild": "Byte-pinned R5D source and deterministic input reconstruction; newly saved Blender binary parity is not qualified",
+      "dependencies_status": "Source included; exact accepted scene must be restored separately for strict selected capture",
+      "selected": {
+        "scene": "shared/material-production/vendor/victorville-r5d-20261009/preview/diagnostic_d.blend",
+        "scene_sha256": "303c939345de032c939ad5b36b669355d9d954ac9dcf881c314d72e33a9faf2d",
+        "version": "approved_r5d_discrete_ground_20261009",
+        "capture": {
+          "camera": "Diagnostic10cm crop",
+          "engine": "CYCLES",
+          "width": 800,
+          "height": 640,
+          "samples": 48,
+          "capture_mode": "guided",
+          "save_guides": true,
+          "light_tree": false,
+          "color_depth": 16,
+          "dither_intensity": 0,
+          "use_adaptive_sampling": false,
+          "rss_cap_mib": 3072
+        },
+        "appearance_anchor": {
+          "sha256": "dfd5746a8cec3debfd16592488af42bd4ccbf285f3113944425e762f5bd4b65f",
+          "scope": "R5D diagnostic view within the approved ground review; not a distant-road selection"
+        },
+        "source_selection": "Explicit ground visual approval on 2026-10-09 and merge instruction on 2026-10-10"
+      },
+      "pbr_contract": {
+        "units": "meters",
+        "representation": "discrete_geometry_plus_microbed",
+        "extent_m": 0.18,
+        "workflow": "Per-particle mineral and roughness attributes plus analytic micro-relief, with separate compacted substrate",
+        "map_adapter_qualified": false,
+        "seamless_tiling_qualified": false,
+        "measured_material_qualified": false
+      },
+      "source_bundle": "shared/material-production/vendor/victorville-r5d-20261009",
+      "rejected_research": [
+        {
+          "version": "R2",
+          "source": "shared/material-production/vendor/victorville-sediment-r2-20261009",
+          "recipe": "shared/material-production/vendor/victorville-sediment-r2-20261009/recipe.json",
+          "status": "rejected_visual_r2"
+        }
+      ]
     }
   ],
   "quarantined_research_roots": [

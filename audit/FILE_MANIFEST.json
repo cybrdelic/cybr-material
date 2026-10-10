@@ -1,7 +1,6 @@
 {
   "schema": 2,
-  "base_commit": "de4146ac759164e29323b152d37f64417c00c3fb",
-  "source_checkpoint_sha256": "390671b443a686813d30f53cf701393558797a6f4fc9d6cc0e28c1ea24c6ca74",
+  "base_commit": "c404c33c70845dd76e86ccb01903f244dadf06ba",
   "managed_roots": [
     "audit",
     "material-workspace",
@@ -26,6 +25,11 @@
       "path": "audit/ARTIFACTS.json",
       "bytes": 4936,
       "sha256": "03db6c83638bb29c1183cec740b6e2e2f430ff98191239ebfb3df9696721b531"
+    },
+    {
+      "path": "audit/LATEST_SOURCE_ADDITIONS.md",
+      "bytes": 1581,
+      "sha256": "ad01d97e08c274161adb40dea9506088ee1eb809b2be6c08e443471e33c7cf3a"
     },
     {
       "path": "audit/PRINCIPAL_ENGINEER_PLAN.md",
@@ -63,14 +67,19 @@
       "sha256": "ec921941239f9954e6440cac0d7f48a5d305e1446f63ec054e131978ab32ab27"
     },
     {
+      "path": "audit/run_additive_source_tests.py",
+      "bytes": 1067,
+      "sha256": "09d972ef8d39c4a70f436053cf6cc9f77c5dde2e986fb15ad70bf14ec187469c"
+    },
+    {
       "path": "audit/run_portable_tests.py",
-      "bytes": 2001,
-      "sha256": "ff34033eda683e556341caa9a81b6d03f7499e7e61b3f7411edbafadb56fd45f"
+      "bytes": 2244,
+      "sha256": "031e54cc8ba23030b7f0969c50bc00d93509c399217cc155b3de8bdc0b10c740"
     },
     {
       "path": "audit/verify_checkpoint.py",
-      "bytes": 2109,
-      "sha256": "997dc5eaf45cd15b9c4f562fe9365cfd4cdeded164aa025e1f20bb78dbadcba2"
+      "bytes": 2449,
+      "sha256": "72e55c59a1ad363e370e7b04d7d85b38a70229e8fa16e62d3fb5763cbb14f96d"
     },
     {
       "path": "material-workspace/shared/cloud-eevee/audit-20261006/cache_guard/test_cache_validation.py",
@@ -189,8 +198,8 @@
     },
     {
       "path": "material-workspace/shared/material-production/README.md",
-      "bytes": 3424,
-      "sha256": "f94f09da21fbcfcf0df0e7f57a171d98d206ca01948311f1ba1bb55453030e6f"
+      "bytes": 4213,
+      "sha256": "5b1dbc9f65000516946dd2eb2c65d905b16852968c1baad003b2344a4e2171fd"
     },
     {
       "path": "material-workspace/shared/material-production/experiments/carpet_r5_control_macro_r3/experiment.json",
@@ -245,7 +254,7 @@
     {
       "path": "material-workspace/shared/material-production/materials/core.py",
       "bytes": 7017,
-      "sha256": "3e43e70850a652cbd262376e120c4523868e74631e26f39b60ea0f3df7aa1ff4"
+      "sha256": "b063d0cdcaddb7598f71b0de1d5e92776bfb87146bf7689e29d9d8c461fde703"
     },
     {
       "path": "material-workspace/shared/material-production/materials/experiments.py",
@@ -254,8 +263,8 @@
     },
     {
       "path": "material-workspace/shared/material-production/materials/generation.py",
-      "bytes": 4953,
-      "sha256": "02037c07e1dba8a3a9ff1f4b684e7041b3c0bc8496cff815fd8d8bcc5d6630f9"
+      "bytes": 5713,
+      "sha256": "ff05270536c483259e5184da301dcf6a6cb6e4dd8781d10cde95640208189e1d"
     },
     {
       "path": "material-workspace/shared/material-production/materials/inspect_scene.py",
@@ -294,13 +303,63 @@
     },
     {
       "path": "material-workspace/shared/material-production/materials/showcase.py",
-      "bytes": 2206,
-      "sha256": "ebced57394af7eb3fd55b10bb90bca8793599c619d5532c3e413bc5de20e4de7"
+      "bytes": 2748,
+      "sha256": "1c806c866a2ed9fb208971523aa33ff4db55e32c73f6aabacb634268fbf2c084"
+    },
+    {
+      "path": "material-workspace/shared/material-production/preview_presets/README.md",
+      "bytes": 9434,
+      "sha256": "797318d167ac6c174f8c843c601efe030eaae22dce615ce2ab7ab2f37d2a3aa3"
+    },
+    {
+      "path": "material-workspace/shared/material-production/preview_presets/__init__.py",
+      "bytes": 244,
+      "sha256": "cbbac98bee7ebf91b4461c3a22b3a0ae02c0d37fb3f0b953970fd7b52e92f670"
+    },
+    {
+      "path": "material-workspace/shared/material-production/preview_presets/cybr_grazing_warm_v1.json",
+      "bytes": 4721,
+      "sha256": "5f9b288a4d5bb8ffdba922459ec2f2597c831bb46d00612ab760425726a930cf"
+    },
+    {
+      "path": "material-workspace/shared/material-production/preview_presets/grazing_preview.py",
+      "bytes": 13204,
+      "sha256": "b6800d111ab21891aa99bc2f1502f99898bab5aad431c83f098922614ba65e71"
+    },
+    {
+      "path": "material-workspace/shared/material-production/preview_presets/prepare_preview.py",
+      "bytes": 8163,
+      "sha256": "af37fdf3c9c26d10588d0192f15856f336140a9b12a0876910e701538fe082a5"
+    },
+    {
+      "path": "material-workspace/shared/material-production/preview_presets/preview_defaults.json",
+      "bytes": 394,
+      "sha256": "6225ab3b772849b0a3c51b7fcd17c053bf8e348e660cbc534d3790b9b8c0e954"
+    },
+    {
+      "path": "material-workspace/shared/material-production/preview_presets/reference_inspection.json",
+      "bytes": 2225,
+      "sha256": "fa620a30c187e65a1f16bea484493789536a869b43681597bb0b811a175a2a72"
+    },
+    {
+      "path": "material-workspace/shared/material-production/preview_presets/test_grazing_preview.py",
+      "bytes": 5918,
+      "sha256": "ecb2cc3aca4d97bbc9dd16af9b146593e204c350a5efa7ad4e42d96da50c073b"
+    },
+    {
+      "path": "material-workspace/shared/material-production/preview_presets/verification.json",
+      "bytes": 182,
+      "sha256": "db865d31d0dd8126adc282c4dfc588385d9e0bf100dd499cd724127b15558679"
+    },
+    {
+      "path": "material-workspace/shared/material-production/preview_presets/verify_preparation.py",
+      "bytes": 2848,
+      "sha256": "97404f96c44b68a39d887a134ae710a009873d9cb5e00459a574c189f6bb2b05"
     },
     {
       "path": "material-workspace/shared/material-production/registry.json",
-      "bytes": 142413,
-      "sha256": "7b76829d9c6ce3b011262cfed52f4a71caa7080e6963dc8adda0b555f2661443"
+      "bytes": 138006,
+      "sha256": "3dc3b6713900f7eca428f573063ab16eb98091d8223eb2d12dc1342b2eceaf3c"
     },
     {
       "path": "material-workspace/shared/material-production/requirements.txt",
@@ -318,6 +377,11 @@
       "sha256": "6cf96ac40de21a4dcf99001be10256647550249e3ada2eb6ffb9cef5040c3695"
     },
     {
+      "path": "material-workspace/shared/material-production/tests/fixtures/asphalt_inspection.json",
+      "bytes": 3752,
+      "sha256": "35c1a0d96946cd6ca26b2efba8dc6bacfd39d1b9dd5bc00eeae2410325c7e134"
+    },
+    {
       "path": "material-workspace/shared/material-production/tests/fixtures/brass_inspection.json",
       "bytes": 6541,
       "sha256": "4def654af6985bcb127c850f2a3bd583b5c3b00f6878fec5197b2c31c3e813a1"
@@ -328,9 +392,14 @@
       "sha256": "bcfbac81b41f1cefcc343ea7487ca4024731f7fe8197bd1fa3ad4d9c384dbfd7"
     },
     {
+      "path": "material-workspace/shared/material-production/tests/test_asphalt_selection.py",
+      "bytes": 2431,
+      "sha256": "a26ec7e27eb50cefcf1a138b276159019ff9fb9d2e01119c9a9a76d0fc3359be"
+    },
+    {
       "path": "material-workspace/shared/material-production/tests/test_integration_contracts.py",
       "bytes": 4908,
-      "sha256": "e0a2374bf43e6e3a4750e1c53b8dbd1d5863616b2fd651b16ae4a9189fe5b67b"
+      "sha256": "bcb297d3ced10ba68733da5467c361d7d5b4e43d7b576a274305a8c2e63226ae"
     },
     {
       "path": "material-workspace/shared/material-production/tests/test_native_png_and_experiments.py",
@@ -344,8 +413,38 @@
     },
     {
       "path": "material-workspace/shared/material-production/tests/test_showcase_guard.py",
-      "bytes": 1770,
-      "sha256": "e09f4c5dd16a1804b6b4361ec8ec96f9cfc110421e8f2a287dac0a881f637a4d"
+      "bytes": 2504,
+      "sha256": "30434a7c12cbf5c531d67a3e4dee54b59ad42b717175054261a6df695ddfad34"
+    },
+    {
+      "path": "material-workspace/shared/material-production/tests/test_victorville_candidate.py",
+      "bytes": 3972,
+      "sha256": "535977472f4beb2bfb030f43a5a3cff901f26db55080524129e9ddea56e89e20"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate-reconstruction/SOURCE_PROVENANCE.json",
+      "bytes": 1010,
+      "sha256": "770b3865a77f066d0c327fbf65467976d0cd8a3f30787784c7786d24ad13f736"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate-reconstruction/fix_specimen_edges.py",
+      "bytes": 2821,
+      "sha256": "057ba30116150cd291016bd57151d2624da7e118432261f3178305a4d04eb189"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate-reconstruction/geometry.py",
+      "bytes": 29357,
+      "sha256": "9a04a435dab8f8b1a2f0820445b9e2a4afeba257ed4c56e0d0f25522744f987c"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate-reconstruction/rebind_slab.py",
+      "bytes": 3576,
+      "sha256": "3214bcbd3db5a16d37498dcfec317838851c911086b0139a652d7baae1bcafc4"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/aggregate-reconstruction/selected_recipe_1536.json",
+      "bytes": 4970,
+      "sha256": "6c7e32a95089222e154149ceabdc89318937954830bf835c4b824afb938d3201"
     },
     {
       "path": "material-workspace/shared/material-production/vendor/aggregate/SOURCE_LOCK.json",
@@ -388,29 +487,89 @@
       "sha256": "3c09a5ebc9b860abb9783045bed7674e3917087b0c0d21376fbfd8cda12cafc0"
     },
     {
-      "path": "material-workspace/shared/material-production/vendor/aggregate-reconstruction/SOURCE_PROVENANCE.json",
-      "bytes": 1010,
-      "sha256": "770b3865a77f066d0c327fbf65467976d0cd8a3f30787784c7786d24ad13f736"
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/README.md",
+      "bytes": 2970,
+      "sha256": "90657781ed079d790902886ea4c8ea07047938f2d7d4b69acaba5583f41525b0"
     },
     {
-      "path": "material-workspace/shared/material-production/vendor/aggregate-reconstruction/fix_specimen_edges.py",
-      "bytes": 2821,
-      "sha256": "057ba30116150cd291016bd57151d2624da7e118432261f3178305a4d04eb189"
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/SOURCE_LOCK.json",
+      "bytes": 793,
+      "sha256": "ceb715aaede24e51cc8eb4f38942f7e255b735660f3a41e5434729e01a808532"
     },
     {
-      "path": "material-workspace/shared/material-production/vendor/aggregate-reconstruction/geometry.py",
-      "bytes": 29357,
-      "sha256": "9a04a435dab8f8b1a2f0820445b9e2a4afeba257ed4c56e0d0f25522744f987c"
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/base_recipe/material.json",
+      "bytes": 157,
+      "sha256": "37b4a534574df6c77749ea1adcb113bf16d8b1897db0bf77f495ccadd4ffb31e"
     },
     {
-      "path": "material-workspace/shared/material-production/vendor/aggregate-reconstruction/rebind_slab.py",
-      "bytes": 3576,
-      "sha256": "3214bcbd3db5a16d37498dcfec317838851c911086b0139a652d7baae1bcafc4"
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/base_recipe/source/height_normals.py",
+      "bytes": 1434,
+      "sha256": "e50b1707ed664eb4342dad3eaeff4de965537ee833a14919a264b97f4cbe58ba"
     },
     {
-      "path": "material-workspace/shared/material-production/vendor/aggregate-reconstruction/selected_recipe_1536.json",
-      "bytes": 4970,
-      "sha256": "6c7e32a95089222e154149ceabdc89318937954830bf835c4b824afb938d3201"
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/base_recipe/vendor/surface_math.py",
+      "bytes": 3949,
+      "sha256": "3c09a5ebc9b860abb9783045bed7674e3917087b0c0d21376fbfd8cda12cafc0"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/expected_native.json",
+      "bytes": 615,
+      "sha256": "6dd080927838be4489d6500b146e1156156c47e3a86c9ea5cf16876d1f13f900"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/expected_scene.json",
+      "bytes": 514,
+      "sha256": "5d728293ab613ba05f501608f7f0a44e3994b4db652d221187e6287977e09678"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/scene_recipe.json",
+      "bytes": 15644,
+      "sha256": "9d9322a4f5f28720fcd97beb075ab75f09c9a08fc41edcca37fd700ffaf78a25"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/build_scene.py",
+      "bytes": 4553,
+      "sha256": "cef71c3f8a024a8c2bc0b7172e575b244e9bc3c013b159d709eba7bbd3f74080"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/fracture_field.py",
+      "bytes": 2847,
+      "sha256": "9bcc74646320f9dd6d4ad0717e20a1860729b0519c880ff5cf2627824fb3d033"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/fractured_construction.py",
+      "bytes": 11096,
+      "sha256": "460dd86c57fe22d629ceb5b27212e034f4f510dcfacccfdfa078506b774a8664"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/generate_candidate.py",
+      "bytes": 2117,
+      "sha256": "44006683d998ed42ea3d93105cb81932bf93b73f398e24f1c93042deb685b206"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/reference_construction.py",
+      "bytes": 9949,
+      "sha256": "c4de92f64814189f5b2617ca0220cdf631f16b09a8cbdaab411c14b8d43badcb"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/scene_contract.py",
+      "bytes": 2703,
+      "sha256": "3d1e6f60a76fded30c1e3ac14ef264a1e72622a4b9da550946098be800faa632"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/test_height_normals.py",
+      "bytes": 1619,
+      "sha256": "b854e451816c5895b87ca8f485f42d76887b05aa133600ce29938179ec373c61"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/verify_native.py",
+      "bytes": 542,
+      "sha256": "7229b6bbe5b94bcd6442d779a5ec4ca14b3557a3809fcb7fa9146ada1b8ef305"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/verify_preservation.py",
+      "bytes": 1247,
+      "sha256": "ea1b0807da24207927899138512726d52af399b71e36bf488b8021692a438151"
     },
     {
       "path": "material-workspace/shared/material-production/vendor/original/SOURCE_LOCK.json",
@@ -488,9 +647,2479 @@
       "sha256": "26d15f3e144c7840990276af52b2a26fc0527e0cad71e324e72fb5c290fe79bc"
     },
     {
+      "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/PROVENANCE.json",
+      "bytes": 1813,
+      "sha256": "c32156cd37785fb678503e568aa1633b936dae098fd52daecac171dca178714c"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/README.md",
+      "bytes": 2495,
+      "sha256": "267244d66078b75657120c311effd64410a911c319dd4ff142c8035a274b8db2"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/REVIEW.json",
+      "bytes": 765,
+      "sha256": "3ebea0a6b9f05d92827b6acfd7c0e31f3e59752ab887c40e9e41a2113239503d"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/SOURCE_LOCK.json",
+      "bytes": 1269,
+      "sha256": "c30c33e54532321b08e6ca8f0711f7442432cdfcbcb7e16bd0a5212ff85894c5"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/expected_inputs.json",
+      "bytes": 840,
+      "sha256": "ae67fbe0f253bb882ffddf1b2d9cd598de38b0fb0836a228442bb01c622101f8"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/receipts/geometry_d.json",
+      "bytes": 700,
+      "sha256": "ab459cb81aeba9e2cfe823b448bbcbf7c816b0027c79c6bc5e13fe8f80d13c68"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/reconstruct.py",
+      "bytes": 3489,
+      "sha256": "1948ae12a4c2df2bc7667b903cf2c25a01300abc294b04703c9965f5f9c4c78b"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/src/build_diagnostic.py",
+      "bytes": 10205,
+      "sha256": "320dd02e5ac661f4f9f3b470d614e0b3fb103614b0d2cd740aded5964ffa4246"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/src/compacted_microbed.py",
+      "bytes": 1249,
+      "sha256": "355576685bd6ef8492d0e4f2e5f7ab3963c58179a1335ec78ce924eecf378ec7"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/src/fracture_prototypes.py",
+      "bytes": 3071,
+      "sha256": "394bfc265be6e98cec9cd3f0bdbe8c2862a591bdfe0c0edd7262e3d92623c078"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/README.md",
+      "bytes": 5572,
+      "sha256": "8d5bf1a97f11f87eb83f13302b19517ef62f65c7e698a638be1f24657a57c015"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/SOURCE_LOCK.json",
+      "bytes": 4976,
+      "sha256": "678cde71e5d3218b4d033d6fb695e653ff52bd7a9ed9229477a30c275bc3ee58"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/bounded_clean_run.py",
+      "bytes": 2439,
+      "sha256": "4946bea06422b9a77aa9d9a6e25be989630026ff9821809dddd752088ffe74de"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/cache_validation.py",
+      "bytes": 9812,
+      "sha256": "1d476f28c104c90f3cb0774e75756d1b2f1d8fcfa8fa0a62e7ab56018b8721d4"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/capture_modes.py",
+      "bytes": 1527,
+      "sha256": "c3d1ff01c580a8f63f1fe3658697ec711525f2e8032a82e2fb008c8f8339bbf8"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/clean_receipt.py",
+      "bytes": 1791,
+      "sha256": "0746b04f053fdc7a9b0df1805961e5ae6ee5051d992784ed715e361d0d80d8de"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/clean_render.sh",
+      "bytes": 4317,
+      "sha256": "f02ed38052ecb82a1a90b6d16ea70776b03e0cb864f3d2952dc2970864a7c264"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/component_image_bridge.py",
+      "bytes": 9087,
+      "sha256": "74dca31a6739ef5b666ec4437d77297f138dc5bd8f63280c9d2cea8acfe74047"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/component_receipt.py",
+      "bytes": 2884,
+      "sha256": "5327a00bc7d9c2bc414fb6529ed7c4ccadd539ad96f69858c10f3bfd44796c35"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/oidn_contract.py",
+      "bytes": 1186,
+      "sha256": "c50d803b0d500905b03d8ccc24512e769d100b434dad96891d657986f8be5094"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/oidn_image_bridge.py",
+      "bytes": 4434,
+      "sha256": "7d88792da6c53a47e3aacafa2b7a222f844ce458afa7b535f081faf9c5732bf6"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/png_precision_check.py",
+      "bytes": 986,
+      "sha256": "fec3e732a7185e2ef5485af2f6db3963a151d6867e48c59c036509bfdad77f20"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/queue_paths.py",
+      "bytes": 596,
+      "sha256": "d15bde4bbc62b004491ee5186bfd07e2fcadd5545ea6cea7e2c27929830c4aa9"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/raw_receipt.py",
+      "bytes": 2388,
+      "sha256": "af411eed5c7eb1855e6abc81838bab0a1ed1defeb2446094bb837017c266ec5d"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/render.py",
+      "bytes": 20969,
+      "sha256": "92aa1336ee8093998c3df59c100c5c46eea72288ab8384506149cefa962e2c84"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/render.sh",
+      "bytes": 307,
+      "sha256": "9ce9dc545650392dce69c9709c8acff188db95eec13c34b647c5e13be6e2688a"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/resource_contract.py",
+      "bytes": 688,
+      "sha256": "a5d0a12482fcc48e06fa2680a879e0646e30fa580fe1abbdbff730f484324d8c"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/run_panel_queue.py",
+      "bytes": 2660,
+      "sha256": "0813eda63c3d604a3453741772db29849976568bf71b3ed99541c2f36861d0d4"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/test_component_exr_roundtrip.py",
+      "bytes": 1888,
+      "sha256": "2bfafee42548d5dbd2520ec7290fc70f12ed779248874742024c3dc0e04ad55a"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/transport_components.py",
+      "bytes": 4070,
+      "sha256": "9232c7679b68c763273ebc51aa78296ae67a0a6891b71ef713f461e9d86816d4"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/verify_pipeline_snapshot.py",
+      "bytes": 1192,
+      "sha256": "6ffcdffc991dc7b9cb345645bb919d82da6f221c1f0138e485b886f7099b9d1b"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/recipe.json",
+      "bytes": 849,
+      "sha256": "cdf206858e975dede97bf8efceac273681b3ffeee9b460cc47adcaaff907f68f"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/source/build_gravel_geometry.py",
+      "bytes": 4434,
+      "sha256": "bbc59484a5cbd003a33bc09c9a90be99862127f521544374b501109f82c3315d"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/source/build_scene.py",
+      "bytes": 8825,
+      "sha256": "af28fbd1376d8e1852f173a5c37850767b71cfb7bc7aedd54a38089f8feeac8f"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/source/generate_maps.py",
+      "bytes": 3511,
+      "sha256": "b4a9671feaf53884cff348747f7e8fbba83320f8556a5b904e026a414c27e274"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/source/render_guided.py",
+      "bytes": 2178,
+      "sha256": "1eeb6bc2838403b25207e94927739c61fec1edda28bbe4597b6f691608e1ed48"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/source/test_ground.py",
+      "bytes": 2216,
+      "sha256": "988b1b0c17d8c976863045d7467f71cdc377fe477f1d50ed0d41116f9725417c"
+    },
+    {
+      "path": "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/source/victorville_ground.py",
+      "bytes": 15509,
+      "sha256": "5b085983af57f5c5ca2387d208272f79c29e948fd5a539c7c8262d3c98636292"
+    },
+    {
       "path": "material-workspace/shared/material-slabs/source/studio.py",
       "bytes": 3355,
       "sha256": "31d56e0261c52ae8de15639e8e25e450933cab138211e5125ad35154707349da"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/COMPACT_VALIDATION.json",
+      "bytes": 1402,
+      "sha256": "9b33fc79f9969bcacf505b47d1a6af0f53c3a813f44d171668ef85d09c88baee"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/README.md",
+      "bytes": 3776,
+      "sha256": "1e67ba663daceeff490c0e6a369aed88c107c820939537a45b9fb636bbfa9b0b"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/SOURCE_LOCK.json",
+      "bytes": 5893,
+      "sha256": "e4838dd154496f9d4f11a15b927996619e3349b4768ac0d187e6fc4bc82d3c97"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/material.json",
+      "bytes": 381,
+      "sha256": "7f4fedea764a09b1357a2f604c8d61e4735841cf2184a5209d2c833f21d0312a"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/source/height_normals.py",
+      "bytes": 1434,
+      "sha256": "e50b1707ed664eb4342dad3eaeff4de965537ee833a14919a264b97f4cbe58ba"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/__init__.py",
+      "bytes": 85,
+      "sha256": "a1c0f694b498a62911434fb48ee4b16647fea6042229d7ad029e76c1de63aa00"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/bark_furrows.py",
+      "bytes": 3111,
+      "sha256": "876a3e21b97f2dabf20958f5e5944ad6bc3067c2481b6ad14f97a610c9b293e1"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/bark_model.py",
+      "bytes": 4188,
+      "sha256": "cbdb16811d0bd3c953cfc979cc61897d6405d675a74518a8ff6197e1e48bab40"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/capture_fragment.py",
+      "bytes": 2356,
+      "sha256": "cbd5f59440350b07f60cfebc75da4cba282a33fb6e3889d678a7af767392855a"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/catalog.py",
+      "bytes": 4821,
+      "sha256": "8aa63e6239ad2efbe5a2076b9628dc46e6aab8a5c53c7b2a3cb4954df62f2d63"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/check_geometry.py",
+      "bytes": 4901,
+      "sha256": "c08c873530108e3c5ca431e5053d8dc62d1f606ded032aaf675e3a9a94253c00"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/check_optics.py",
+      "bytes": 1625,
+      "sha256": "03f37468a8893937d0f0861b0418ef21c4d43d5f632dadff6bf6725553ec4384"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/geometry.py",
+      "bytes": 29357,
+      "sha256": "9a04a435dab8f8b1a2f0820445b9e2a4afeba257ed4c56e0d0f25522744f987c"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/grain_model.py",
+      "bytes": 1586,
+      "sha256": "fb096a0e6996eec7a41765a9c88292850d7da338e971b2f1b2c6cda89138d931"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/maps.py",
+      "bytes": 13663,
+      "sha256": "c328e418082868be8549fda2af57d87431345d7f0983d6dca6928c08d779aabb"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/mineral_construction.py",
+      "bytes": 9850,
+      "sha256": "470e18f9bec0fb933d788afd0c5587f7ad470a33fb0834a1586b9fff286bea5b"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/package_review.py",
+      "bytes": 2511,
+      "sha256": "0fec9317ed1504ef4d3e9cb303f163a59763c0faccfb34c15c89dd715abaf0a7"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/parameters.json",
+      "bytes": 537,
+      "sha256": "4d230f6c75311cd485a0566f6acc3421fbace9a1efdf3bbc364da06d18ed31ae"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/petg_optical_variants.json",
+      "bytes": 408,
+      "sha256": "dae93e0155e42662134758cd4f2270f0323522a24e9204a59b02aaad6bd0de0c"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/studies.py",
+      "bytes": 8065,
+      "sha256": "d4111a509908734b22feae01ec891d60aa7347c35a4c6d67f6566071957758b7"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/test_maps.py",
+      "bytes": 3334,
+      "sha256": "b591f88ea6d8d5fdb5cf14f5aec6e04663727c5622c202ca5b1393700e99ced8"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/base_recipe/vendor/surface_math.py",
+      "bytes": 3949,
+      "sha256": "3c09a5ebc9b860abb9783045bed7674e3917087b0c0d21376fbfd8cda12cafc0"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/capture_profile.json",
+      "bytes": 309,
+      "sha256": "79c552cc3f4e1bf265ff74d41c86fcc489e53fc262965a02bdb940a2dc4a79dc"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/expected_native.json",
+      "bytes": 635,
+      "sha256": "1f1840885c977b186f068ad16c2a2371eda89fa5be91112c08015761f1756525"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/expected_scene.json",
+      "bytes": 513,
+      "sha256": "f0db90a8199ea5f76dcea894b72a9bf301b8577ef6fe7b6239d74568545f72b9"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/bounded_clean_run.py",
+      "bytes": 2439,
+      "sha256": "4946bea06422b9a77aa9d9a6e25be989630026ff9821809dddd752088ffe74de"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/cache_validation.py",
+      "bytes": 9812,
+      "sha256": "1d476f28c104c90f3cb0774e75756d1b2f1d8fcfa8fa0a62e7ab56018b8721d4"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/capture_modes.py",
+      "bytes": 1527,
+      "sha256": "c3d1ff01c580a8f63f1fe3658697ec711525f2e8032a82e2fb008c8f8339bbf8"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/clean_receipt.py",
+      "bytes": 1791,
+      "sha256": "0746b04f053fdc7a9b0df1805961e5ae6ee5051d992784ed715e361d0d80d8de"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/clean_render.sh",
+      "bytes": 4312,
+      "sha256": "9683715fd9c6a4a80823cbc78ddab6f4c53f387a272be08c18c7c66bb848d3aa"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/component_image_bridge.py",
+      "bytes": 9087,
+      "sha256": "74dca31a6739ef5b666ec4437d77297f138dc5bd8f63280c9d2cea8acfe74047"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/component_receipt.py",
+      "bytes": 2884,
+      "sha256": "5327a00bc7d9c2bc414fb6529ed7c4ccadd539ad96f69858c10f3bfd44796c35"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/oidn_contract.py",
+      "bytes": 1186,
+      "sha256": "c50d803b0d500905b03d8ccc24512e769d100b434dad96891d657986f8be5094"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/oidn_image_bridge.py",
+      "bytes": 4434,
+      "sha256": "7d88792da6c53a47e3aacafa2b7a222f844ce458afa7b535f081faf9c5732bf6"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/png_precision_check.py",
+      "bytes": 986,
+      "sha256": "fec3e732a7185e2ef5485af2f6db3963a151d6867e48c59c036509bfdad77f20"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/queue_paths.py",
+      "bytes": 596,
+      "sha256": "d15bde4bbc62b004491ee5186bfd07e2fcadd5545ea6cea7e2c27929830c4aa9"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/raw_receipt.py",
+      "bytes": 2388,
+      "sha256": "af411eed5c7eb1855e6abc81838bab0a1ed1defeb2446094bb837017c266ec5d"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/render.py",
+      "bytes": 20969,
+      "sha256": "92aa1336ee8093998c3df59c100c5c46eea72288ab8384506149cefa962e2c84"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/render.sh",
+      "bytes": 307,
+      "sha256": "9ce9dc545650392dce69c9709c8acff188db95eec13c34b647c5e13be6e2688a"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/resource_contract.py",
+      "bytes": 688,
+      "sha256": "a5d0a12482fcc48e06fa2680a879e0646e30fa580fe1abbdbff730f484324d8c"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/run_panel_queue.py",
+      "bytes": 2660,
+      "sha256": "0813eda63c3d604a3453741772db29849976568bf71b3ed99541c2f36861d0d4"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/test_component_exr_roundtrip.py",
+      "bytes": 1888,
+      "sha256": "2bfafee42548d5dbd2520ec7290fc70f12ed779248874742024c3dc0e04ad55a"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/transport_components.py",
+      "bytes": 4070,
+      "sha256": "9232c7679b68c763273ebc51aa78296ae67a0a6891b71ef713f461e9d86816d4"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/pipeline/verify_pipeline_snapshot.py",
+      "bytes": 1192,
+      "sha256": "6ffcdffc991dc7b9cb345645bb919d82da6f221c1f0138e485b886f7099b9d1b"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/requirements.txt",
+      "bytes": 42,
+      "sha256": "f793676a40e71a12c2d9066d4f2e342bf5d920a971a725519c00ed500c4231ed"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/scene_recipe.json",
+      "bytes": 15644,
+      "sha256": "9d9322a4f5f28720fcd97beb075ab75f09c9a08fc41edcca37fd700ffaf78a25"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/source/build_scene.py",
+      "bytes": 5086,
+      "sha256": "6b02c46f00e6b391764ce2f1bb74c1adcf032c30b502afb7831dded94c0590f8"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/source/fracture_field.py",
+      "bytes": 2847,
+      "sha256": "9bcc74646320f9dd6d4ad0717e20a1860729b0519c880ff5cf2627824fb3d033"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/source/fractured_construction.py",
+      "bytes": 11537,
+      "sha256": "623421e61e7819080c8fadc962f869448392698d735d9d64191a86a2fd30bfa2"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/source/generate_candidate.py",
+      "bytes": 2117,
+      "sha256": "44006683d998ed42ea3d93105cb81932bf93b73f398e24f1c93042deb685b206"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/source/graded_fragment_field.py",
+      "bytes": 7232,
+      "sha256": "04a9c57c3bb740154eedf6d4ca1821c3e1d89345ccbbdb3809bd82a765d8fe93"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/source/reviewed_construction.py",
+      "bytes": 11096,
+      "sha256": "460dd86c57fe22d629ceb5b27212e034f4f510dcfacccfdfa078506b774a8664"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/source/scene_contract.py",
+      "bytes": 2703,
+      "sha256": "3d1e6f60a76fded30c1e3ac14ef264a1e72622a4b9da550946098be800faa632"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/source/test_refinement.py",
+      "bytes": 3577,
+      "sha256": "f7025e0730b022a0f8f816752e04e0ca6241f7fc776d825cf58fad5c8b25d256"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/source/verify_native.py",
+      "bytes": 550,
+      "sha256": "c5649a6079b2d275869ba1a71b9f002b71ae9de39ceb27d8f377cead0b8710e7"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/source/verify_normal_encoding.py",
+      "bytes": 3081,
+      "sha256": "bee7be24f032b7c94ff01ed1421319386e10adac42bd1d1347d2a64cfc2755f1"
+    },
+    {
+      "path": "research/asphalt/binder-refinement-20261009/source/verify_renderer_normals.py",
+      "bytes": 5246,
+      "sha256": "cd10c8901a6abc5733963f96921374915156154ba55776a5a33289e27f3ddc13"
+    },
+    {
+      "path": "research/organic/research-20261006/MISSING_INPUTS.json",
+      "bytes": 1542,
+      "sha256": "c30128f3050194ff69da458954e6925265f5ac8107abf3f8eb168c5820870db1"
+    },
+    {
+      "path": "research/organic/research-20261006/README.md",
+      "bytes": 2802,
+      "sha256": "34afef199c81180d6c0dac15ba3b64a924a5f940bad4ebc235ed06b7ef62a577"
+    },
+    {
+      "path": "research/organic/research-20261006/SOURCE_MANIFEST.json",
+      "bytes": 112291,
+      "sha256": "4a430169abe4117f886b006c3c1bd742d8e9929db3a745a763f0f3f674a1190c"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-cell-wall-mechanics/source/check_contact_volume.py",
+      "bytes": 2372,
+      "sha256": "8c9ba04169a0cecc07d2c6aecc57d0d92f96cec68f2bd679b85e9ac711d34c93"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-cell-wall-mechanics/source/check_loading_work.py",
+      "bytes": 1997,
+      "sha256": "157d59bdbd608688a2af8c477432d24a6df4294a241dafe3a6bc93922e06bb4d"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-cell-wall-mechanics/source/corrugated_wall.py",
+      "bytes": 7826,
+      "sha256": "edf2978d97ac4ae34240528e1fbf1dadfe0b738cbf1dcf6cddad99e349839c40"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-cell-wall-mechanics/source/corrugated_wall_r1.py",
+      "bytes": 6152,
+      "sha256": "5c805b0358f251f1852a0377f48b5f5d9e3c7c9099ba8fcb36903f985201d2bd"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-cell-wall-mechanics/source/qualify_wall_controls.py",
+      "bytes": 2734,
+      "sha256": "61c9770175b4159ae48876b1876af2d69b6e2bb35486fbf677146fd35d566a7a"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-cell-wall-mechanics/source/run_wall_controls.py",
+      "bytes": 1650,
+      "sha256": "23514d10d1e999bde1167869df0bcba00f0eefbcc39cfe792231de226dbe7aa2"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-cell-wall-mechanics/source/test_wall.py",
+      "bytes": 1228,
+      "sha256": "5ddffb6d5f1485247267b39bf23c3043e94bc944825a60b6d83107ece1ec0515"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/attempts/eager_factorization/source/opening_model.py",
+      "bytes": 7931,
+      "sha256": "ba814e231ac45de1632fca2cf50272c2f09f04ccd85ad5712a2cb58accdbac63"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/attempts/eager_factorization/source/periodic_sector.py",
+      "bytes": 3847,
+      "sha256": "f512ccdd07f4f9738c944554bdbc1d8c0ed839ac281153adbd74b0c2a7070023"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/attempts/eager_factorization/source/volume_coupon.py",
+      "bytes": 11686,
+      "sha256": "c3baebe0e315aa6a514536294aedd2d8cb600924a61dfcfc7f27ab745465a12a"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/attempts/steepest_descent/config/conditional_scenario.json",
+      "bytes": 1871,
+      "sha256": "948e6de202d199ad60ef3d8ba7b6474e3830800b9fe422273d5ab39225ede6ef"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/attempts/steepest_descent/source/opening_model.py",
+      "bytes": 7182,
+      "sha256": "58e20a619010e3e7468edca44b525bea990ef3356335a87092627bd1d2f1e3f9"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/config/conditional_scenario.json",
+      "bytes": 1993,
+      "sha256": "7767779e843cca9d56bf0120c33e3352cd979f25b2bb67385c3aac0279861833"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/config/experiment.json",
+      "bytes": 3066,
+      "sha256": "a6b308614a6d981f5d0cd84ca895040d0a6382e506d94efddd08cd9f7c0208fb"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/audit_incremental_potential.py",
+      "bytes": 5207,
+      "sha256": "c7679a18d4979fd93b7533ef4d2203e7a734406d3bebc7be21c63675714adbfd"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/audit_memory_revision.py",
+      "bytes": 1694,
+      "sha256": "65bc3ce985420417db696293779f4a42bed188bcbab2ebe0d5c5c52d3fb47cc7"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/check_stability.py",
+      "bytes": 3084,
+      "sha256": "4edcc14c779a3dee1df8de411b8b345bea1f66867325daed867d0450113fc6a2"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/checkpoint_io.py",
+      "bytes": 1196,
+      "sha256": "63f86d6cdb0f85d1e471a774fe2795490faa8543d83c8017cda637394be3dce0"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/compare_runs.py",
+      "bytes": 3457,
+      "sha256": "3e9de3e28373b5990929ee5f23c67fd12e5dedd552257f24aaf6f041ef2f7caa"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/freeze_qualification.py",
+      "bytes": 7185,
+      "sha256": "23b42fe684b212f05135de45a92917e951dde878eb1a3a6f9eb28cc811a829e2"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/history/run_pilot_driver.py",
+      "bytes": 6385,
+      "sha256": "b9d3c2c85c03f988dddab8c5b8884fb5e83780da140f8d52ca1eb0b9b4e859de"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/inspect_state.py",
+      "bytes": 4782,
+      "sha256": "e57992a9ed9d21ba252b8137b0e37d07ccfadefb422f9068dc314cea7d5c8bd0"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/migrate_solver_checkpoint.py",
+      "bytes": 3195,
+      "sha256": "2a275c7377cb3a9a2aac1461c4d3d012e457dbdc68c536db81b6e3c808f0b07f"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/opening_model.py",
+      "bytes": 8000,
+      "sha256": "5eb4b473a1d3a708c220f7ce4f36413da8f3f0fb855d0e190d61ed40cbabc2a4"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/periodic_sector.py",
+      "bytes": 3940,
+      "sha256": "c34b2168fee3c9a93b85acf6da7de4a8dcf21cdbf43f68839cc63173b161b8c1"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/run_opening.py",
+      "bytes": 6651,
+      "sha256": "f1a37b38053231316246267c3a32f3c1d0d60dafe54eeb0bd7953b0ce57957bd"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/single_seam.py",
+      "bytes": 9225,
+      "sha256": "ad3cdcd0c1658358da7939175e31ff40a0056e660e5a416a461e29aa492652ce"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/volume_coupon.py",
+      "bytes": 11715,
+      "sha256": "3e115a669fb4f61aff0178275866c694ce41fbe6c3ac5315b13a46c12f4d057b"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-constitutive-incremental/source/incremental_envelope.py",
+      "bytes": 2532,
+      "sha256": "a71f62b9b2bc4e76312a9178a185a467b601abdec41edf2b2b5935bf5e01ec1d"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-constitutive-incremental/source/run_full_audit.py",
+      "bytes": 608,
+      "sha256": "9c9f5dccd34545787cc31a102764883ec8f67a619bfa888419a0ac6b7d829a90"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-constitutive-incremental/source/test_incremental_envelope.py",
+      "bytes": 2901,
+      "sha256": "e89f6199ce5c5941218351ab4501e6e9c89e45278a64fe2a05fbc24a139d7e15"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-constitutive-upgrade/fracture-scale-evidence/calculate_scale.py",
+      "bytes": 8005,
+      "sha256": "864e1cab883ba99893f6dbd9396bb50ca933ec1fa0dc8f913c1644ebf7dbcd93"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-constitutive-upgrade/source/audit_candidate.py",
+      "bytes": 13848,
+      "sha256": "f081a28aec94e9d58c9749e0b90121e56c8e5398eaaff0b63bb2fb8a13045910"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-constitutive-upgrade/source/directional_candidate.py",
+      "bytes": 7168,
+      "sha256": "2ae22f60be142f85b9fccb412a9be0500554fa6f9e52f4ec7e73b5eb9f604575"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-constitutive-upgrade/source/quadratic_prism_frozen.py",
+      "bytes": 3479,
+      "sha256": "bd7d0f6cdbe39c8da9e7a21e2f0e70f2da116ca2a8145165c8391edcef97db45"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-directional-native-port/source/audit_native.py",
+      "bytes": 15249,
+      "sha256": "acd678f6e76680cb4def14ab96bd7775359412448849d5d60ac26cac48b53839"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-directional-native-port/source/benchmark_native.py",
+      "bytes": 3707,
+      "sha256": "ead266daf8306f7c310ab6201b331609925e8c12a95d8974e201d6c139cece96"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-directional-native-port/source/build_native.py",
+      "bytes": 1129,
+      "sha256": "59197d1993f15f95c7abaa91bc6bf41447fd900b2ede0910e1e036a0713e5dbb"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-directional-native-port/source/directional_native.cpp",
+      "bytes": 7800,
+      "sha256": "a1d15450e5dffc74c2ebe5ab9e161dc2e9f4a7cd2dfe25c7dc294d8c43770ec1"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-directional-native-port/source/native_directional.py",
+      "bytes": 7695,
+      "sha256": "40cb2b5b27201744f3f45d2f9fcdf98dc6190a7eeed6a45a3ad6bbdac27b24f0"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-directional-native-port/source/write_manifest.py",
+      "bytes": 2442,
+      "sha256": "64cd46ff5bfd618f29d3ff4efcbc197184f8d970b5f2722876beec395b9f3b93"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/config/experiment.json",
+      "bytes": 3066,
+      "sha256": "a6b308614a6d981f5d0cd84ca895040d0a6382e506d94efddd08cd9f7c0208fb"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/audit_pilot.py",
+      "bytes": 3927,
+      "sha256": "1575da4240d33d0571e267340eda7f232d50157e8b4b4d82a6652d41e31f982b"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/checkpoint_io.py",
+      "bytes": 1196,
+      "sha256": "63f86d6cdb0f85d1e471a774fe2795490faa8543d83c8017cda637394be3dce0"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/compare_and_diagnose.py",
+      "bytes": 7012,
+      "sha256": "c5fe9b888e017a2f43795fd61be700ae5e573f17e237d86637a348b39c771b48"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/history/model_pre_diagnostic_message.py",
+      "bytes": 10959,
+      "sha256": "9eea9ef5331d23f3910444b66198099af90db8b2b3c700cb67d07fa2e74060e0"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/history/run_loading_two_file_checkpoint.py",
+      "bytes": 4471,
+      "sha256": "4fe97b413ca8641d6b31c65472aec2b640e75af64f74efb66590bacf0553fdd8"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/model.py",
+      "bytes": 11156,
+      "sha256": "15401e489f0128b8ab17697c01883e7fca0c3f219d0c507f4fec992b31ca711c"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/run_loading.py",
+      "bytes": 4464,
+      "sha256": "47abd0e3912486d28d4b1239cdb6d7e649dfe8a7d8814f429ee219bff5e8dd05"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/test_checkpoint_io.py",
+      "bytes": 2317,
+      "sha256": "95eab74f98befe4ef05fc81f07cb263c750126d52f13547a35769ed506d34ec8"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-interface-quadrature-audit/check_gap_mode.py",
+      "bytes": 796,
+      "sha256": "5e4d9dda750d0bb91da1d9c6a6aebb2c13825f405baafaedd479219121ca2e02"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-native-release-audit/source/check_release.py",
+      "bytes": 4388,
+      "sha256": "f84e5673fc9a263b6b8d1543599181ac47de13d6ffc785758763d8959dffa351"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/batch_volume.py",
+      "bytes": 1460,
+      "sha256": "963a59839185e02bce754906ce7eb8a4d9745e655294b417a195080125bed48d"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/batch_volume_incremental.cpp",
+      "bytes": 2842,
+      "sha256": "354b00b44bbef6ddb4f8bd8b5180968f391f2a4b7355326103d905317efb8b21"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/cohesion_incremental.cpp",
+      "bytes": 1965,
+      "sha256": "0d878110ab4eba311be2353da0400b061fafeb9e9ed14870f61058373fea896b"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/native_cohesion.py",
+      "bytes": 2762,
+      "sha256": "0e72b01f19538da0c7459434c7d6318229e97c819c49fe73baa67ad4b930115c"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/native_cohesion_r2.py",
+      "bytes": 3912,
+      "sha256": "acefc9ed2c270dcbbd4f693ca83238cd675677f56395d4493b38cd64d71026d8"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/native_volume.py",
+      "bytes": 1478,
+      "sha256": "fcfd2e620abafbf42d6f897abb9e6f1db5e2c052139846e2c3bbddfa0584aaf8"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/quadratic_prism.py",
+      "bytes": 3479,
+      "sha256": "bd7d0f6cdbe39c8da9e7a21e2f0e70f2da116ca2a8145165c8391edcef97db45"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/surface_cohesion.py",
+      "bytes": 1611,
+      "sha256": "582aeb822984c492c48c3f8c80edbc0c348be4bcd8635174b23291dee26e4b2f"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/run_mesh.sh",
+      "bytes": 274,
+      "sha256": "779efe7f8cc0a587837c4d2a3d06d110c1b1677afa039963985b02311870c5a2"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/run_tied_64.sh",
+      "bytes": 323,
+      "sha256": "3490a56bfaa326d5c94024247af223e11705f47ad06872bdcc44de8d1fdfd5af"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/run_tied_refinement.sh",
+      "bytes": 282,
+      "sha256": "a242aa3fd3bc8115478c4a4428095a1023fa2628821d2226a193237da9536e67"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/source/bridge.py",
+      "bytes": 11513,
+      "sha256": "ccb096ac095cce8d24a7367dbe97ea39500bedcaae5ab459ad07363075f573b9"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/source/run_mesh.py",
+      "bytes": 6761,
+      "sha256": "0e1821bd4709911a902630b964a63ca238a7433f3588b744f33d5739a73885a9"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/source/run_tied_refinement.py",
+      "bytes": 4267,
+      "sha256": "021adc7cdb20aa765b28288bb276e7427214bf13e981c935ed8ed9c95d9e8a2e"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/source/summarize_bridge.py",
+      "bytes": 5390,
+      "sha256": "057413df77e47bbc0dff627d8746a307d8d8708e68df38c4c6a47a8c5d0dfe2c"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/run_checks.sh",
+      "bytes": 412,
+      "sha256": "bbfab6c5b1cfd1b2d423ac98c86cd29ff46d8382b040157cf6212766a10cf2f7"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/source/notch_reference.py",
+      "bytes": 5920,
+      "sha256": "dcb3bad27d1c23d1074d83dbfc798873a2ea701079acc2d9270c5b5a9c744baa"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/source/run_reference.py",
+      "bytes": 7106,
+      "sha256": "757f4f1063572c0352bf23d88140d889bba0691de94d3816966f434e3c57f8d0"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/source/verify_receipts.py",
+      "bytes": 1938,
+      "sha256": "efae245f1ad353637352f5742f9887a579ac180ec1540ee7719096f5c0620c5c"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/tests/test_reference.py",
+      "bytes": 6629,
+      "sha256": "ff291c4789c8a66119e109738debca0cd3a4d4b26a7ce4045158674d762a5663"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/attempts/two_point/source/audit_cohesive_work.py",
+      "bytes": 1943,
+      "sha256": "d11bc80443602f3a0c307072bba9d08236c75e67b4a87b2b71982bbfc404a130"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/attempts/two_point/source/audit_seam.py",
+      "bytes": 4453,
+      "sha256": "8543178283e9a15073767796bd67c7a1b8a316d14b6c53aff5decec064bb9b93"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/attempts/two_point/source/single_seam.py",
+      "bytes": 8922,
+      "sha256": "12ab9be5685a495a016e59d8c85123db822da18e404f2ef1bc23fd47caa7b689"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/config/experiment.json",
+      "bytes": 3066,
+      "sha256": "a6b308614a6d981f5d0cd84ca895040d0a6382e506d94efddd08cd9f7c0208fb"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/config/fracture_contract.json",
+      "bytes": 2166,
+      "sha256": "904c4d9e550cf4b997967f8c98104333552214a3985f46829616d2f3eb64705c"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/audit_cohesive_work.py",
+      "bytes": 1997,
+      "sha256": "5a26abf5c2279fe50d956a2083d54def7f9c6e231eda5f0b29a6ed14dd1267a8"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/audit_interface_quadrature.py",
+      "bytes": 3831,
+      "sha256": "d26205c5a8178b0f457f995a756973c9e646fb223e46b7a5bbab39b3d6b595fc"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/audit_periodic.py",
+      "bytes": 3488,
+      "sha256": "6e2fc55150355df1ba963798ccdf3ff235ac80611bdb1865548c9b3f1a1f28c3"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/audit_seam.py",
+      "bytes": 4491,
+      "sha256": "32449f7e510afad8c5b97ea9955fe6961d37c8232a17a8a7589eed82783e353c"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/checkpoint_io.py",
+      "bytes": 1196,
+      "sha256": "63f86d6cdb0f85d1e471a774fe2795490faa8543d83c8017cda637394be3dce0"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/compare_increments.py",
+      "bytes": 1116,
+      "sha256": "8c61532990f6453f94d33d6b9c8ef224b26a97f657015647cdeb61c223eddc74"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/compare_sector.py",
+      "bytes": 1917,
+      "sha256": "f59edb093f4a6fecd718bdb3bc7cc1f95bcbb68c54fb3c9652dce749d5e9065b"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/periodic_sector.py",
+      "bytes": 3647,
+      "sha256": "fc3f175bf4554222551693ccf1c61bf8ba052aa91645aa6bdeeb6e535398e501"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/run_periodic.py",
+      "bytes": 3227,
+      "sha256": "b751824217086b6fbe3389a57c67db6dc00d1102ff372f02ca0f4cb45d637dc9"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/single_seam.py",
+      "bytes": 9210,
+      "sha256": "4a433ee92ddbe820104bb09bab04c41eaa5de028401a041d4235d5c10600557d"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/volume_coupon.py",
+      "bytes": 11226,
+      "sha256": "2ae12cf162a50ed456606df98d92d429c088ebd9cf95827300ee9ea71a1cd8f3"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/atomic_io.py",
+      "bytes": 611,
+      "sha256": "5ba650289edb4a330af972f6e0303b3e006976a58302e92f6b92b44252daebc4"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/build_scene.py",
+      "bytes": 7153,
+      "sha256": "fc0a3327eb52e6ab5b00170699b8df75a2345bfbdd089b1cada5d1b5d0d85bf6"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/check_network.py",
+      "bytes": 3092,
+      "sha256": "e804b5d56f898e7fb885e61eb00214ad1554f8c92ebd5855b6185cd45fcb9525"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/check_zero_shear.py",
+      "bytes": 1969,
+      "sha256": "148345fbcca26042faf8f8253b9e5d79b81d9e2fb1f52627a88c0d149b096c3a"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/contact_gate.py",
+      "bytes": 4189,
+      "sha256": "7106c1b5e963d5495245abeb715aa24b3fd7d50ab2e408e6d5a1606371b419cd"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/continue_to_contact.py",
+      "bytes": 4347,
+      "sha256": "42a91c85965f42864a2bd4454e5faf3ac8156ab3ede834d491e53d3c2b161701"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/corrugated_wall_frozen.py",
+      "bytes": 7826,
+      "sha256": "edf2978d97ac4ae34240528e1fbf1dadfe0b738cbf1dcf6cddad99e349839c40"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/freeze_checkpoint.py",
+      "bytes": 5462,
+      "sha256": "c86240d91e89338ec200b243e8d6669264cd46b25a43a5989e9d3323c9c3af6b"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/qualify_network.py",
+      "bytes": 5187,
+      "sha256": "4603fc1fcd7aecd5ef49726c0c456d876036294524083455bf41d24cba319827"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/refine_endpoint.py",
+      "bytes": 2142,
+      "sha256": "08e0a8b25504d3e5faed70928ac99e018f85e307e661f7124c5517624e6efce5"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/run_network.py",
+      "bytes": 2158,
+      "sha256": "656f808cd05b1e33cd2ed85516d553a279bb9d99d2a048d70ad0cba724be9689"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/two_cell_network.py",
+      "bytes": 11777,
+      "sha256": "eb5178b81a8a9ca3220712c6e27b94de6db99e555a27d5c544829f5c64ff6918"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/zero_shear_network.py",
+      "bytes": 2667,
+      "sha256": "e97bd8fd3d924b17027bac4a5e7e10f2243984240d9e77dc1c4bd50c59048351"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/audit_interface_length.py",
+      "bytes": 1817,
+      "sha256": "174e71adcbfac1c2236fe206f184642ea724bd0572ffb8672179433a2efa1192"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/audit_ring_penalty_limit_r4.py",
+      "bytes": 966,
+      "sha256": "f2219a43963b533511fb535fd3e2d95dcfd2f7c22eed17d6f4f588e503fa2290"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/audit_ring_penalty_limit_r4_retry.py",
+      "bytes": 1117,
+      "sha256": "5bc285c94dc39e4723bcd755f75dd7799014329dccb4655546d6dab605379493"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/audit_ring_penalty_mesh_r4.py",
+      "bytes": 2769,
+      "sha256": "a5e1ff6249704a4599500d586765b6f93a545310731ea1a60ca0b005310ec914"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/batch_volume.cpp",
+      "bytes": 2419,
+      "sha256": "6f77d2253c934c1070bce66044cf862f860db1482b8cc50d0bdbaf38f379a9ec"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/batch_volume.py",
+      "bytes": 1460,
+      "sha256": "963a59839185e02bce754906ce7eb8a4d9745e655294b417a195080125bed48d"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/batch_volume_incremental.cpp",
+      "bytes": 2842,
+      "sha256": "354b00b44bbef6ddb4f8bd8b5180968f391f2a4b7355326103d905317efb8b21"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/birth_cell.py",
+      "bytes": 2222,
+      "sha256": "1cd871c6ebfad523c718b607636110d43e062ccdb25819be0ccd8f6aadef1464"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/birth_pair.py",
+      "bytes": 3372,
+      "sha256": "62a523420478329b7109dfdb087f82df00ad4220ca6553e16777e0ddd5c3bdef"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/cohesion_batch.cpp",
+      "bytes": 2316,
+      "sha256": "8f8f85b9648adb439bf8d3d940c798968ace0e238fb3b533e6738ac33192aad2"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/cohesion_incremental.cpp",
+      "bytes": 1965,
+      "sha256": "0d878110ab4eba311be2353da0400b061fafeb9e9ed14870f61058373fea896b"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/continue_birth_pair.py",
+      "bytes": 2225,
+      "sha256": "6ddd11dd283feceb2b9d996bd8f3616268695a2b48532d16b8ae551dac8629c2"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/continue_ring_r2.py",
+      "bytes": 3364,
+      "sha256": "cab7726e124c058229268cd493e93c91a715ed3b66c6d445799260e6db9ddfed"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/diagnose_ring_stress.py",
+      "bytes": 2215,
+      "sha256": "90938b62e213699f1d713eab6f2a63b738dce9a8fd6b6a70528e33d217331de6"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/incremental_ring_r3.py",
+      "bytes": 3240,
+      "sha256": "79ab154e4afae7b8aadaef21acd561225b7d62c88ee15b988a74593e02146e94"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/metric_ring_r4.py",
+      "bytes": 1081,
+      "sha256": "ce93545c87c57a073cb722de0b22ada6356098155752d5ad6403c0c07329a617"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/native_cohesion.py",
+      "bytes": 2762,
+      "sha256": "0e72b01f19538da0c7459434c7d6318229e97c819c49fe73baa67ad4b930115c"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/native_cohesion_r2.py",
+      "bytes": 3912,
+      "sha256": "acefc9ed2c270dcbbd4f693ca83238cd675677f56395d4493b38cd64d71026d8"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/native_volume.py",
+      "bytes": 1478,
+      "sha256": "fcfd2e620abafbf42d6f897abb9e6f1db5e2c052139846e2c3bbddfa0584aaf8"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/prepare_ring_growth_state_incremental_r3.py",
+      "bytes": 4402,
+      "sha256": "7dedb7af4d05f874819192a57888fcd1ebfe5af6ef111698a0330615798ec2f6"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/prepare_ring_growth_state_r3.py",
+      "bytes": 4268,
+      "sha256": "530eff7beef7d55072e46a53bde6ab08bbce70b19c62e7a2df3d9bd127061d92"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/quadratic_prism.py",
+      "bytes": 3479,
+      "sha256": "bd7d0f6cdbe39c8da9e7a21e2f0e70f2da116ca2a8145165c8391edcef97db45"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/relax_birth_pair.py",
+      "bytes": 3612,
+      "sha256": "aa4497ba90b3f133898c131a2c950b46d58ff07c2c650fe8d8f89c5374cef745"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/ring_geometry.py",
+      "bytes": 1455,
+      "sha256": "3846cecb19cdb32e226f7da09c8e4fb9f9492942cc29d06ced01c79b0579c75d"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/ring_interfaces.py",
+      "bytes": 3358,
+      "sha256": "834a9bc8123d34ce6edd55353d9a3fca71327b4ae2a567ce18162fb85c6f2c24"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/ring_interfaces_r2.py",
+      "bytes": 3116,
+      "sha256": "d3b43d2c570dab1d3fe5732db095f07afa88a89c8ad71372e439bd79890cb5c6"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/ring_system.py",
+      "bytes": 3211,
+      "sha256": "30b65a6984fe328e030f967f17d78063cab50fa77de8427fb124c5225f5e67be"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/ring_system_r2.py",
+      "bytes": 3219,
+      "sha256": "7280a09f7fc40a334a8c875475a1fef2a6b18396b669b5f8982a59c2fd740685"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/ring_system_r3.py",
+      "bytes": 2013,
+      "sha256": "989270d88fd0838f7f793dad8464c7bde882f2afb81f8d446e8575326d88750b"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/run_radial_growth_r3.py",
+      "bytes": 6220,
+      "sha256": "8ff58017a7abe420bf154c686c757428705b1502b2af5f42fa01fd7360b3e7da"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/run_ring_r2.py",
+      "bytes": 4224,
+      "sha256": "ed1f3e87e9d5502fd3f66825c6aa99b096101e36ae44e45cfefad1407197dff6"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/source_receipt_r3.py",
+      "bytes": 559,
+      "sha256": "21175674867ff67082e814a1bec7667c809cc771fd76cf5dda5e6e7b7d3fdabc"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/surface_cohesion.py",
+      "bytes": 1611,
+      "sha256": "582aeb822984c492c48c3f8c80edbc0c348be4bcd8635174b23291dee26e4b2f"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_batch_volume.py",
+      "bytes": 2005,
+      "sha256": "dfe13ae1cec4e44ecb013ac4b303b360899600ce341c89f87d72a36d665b4dae"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_birth_cell.py",
+      "bytes": 2120,
+      "sha256": "489ae1fdbbc4c8ec43e3ec77150e5a9a65e2eb60ba4fc82fcd50e4b6552cbcd4"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_birth_pair.py",
+      "bytes": 1952,
+      "sha256": "b4d1f6f6aefd9cef578e221b20a52af57d79ff13204755737ff6254582bbee43"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_cohesion_contract.py",
+      "bytes": 917,
+      "sha256": "82458d8b730eef3e3e10d8a5294ab843fd72cd411fcad495ae3afcdbd58e6267"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_incremental_ring_r3.py",
+      "bytes": 2904,
+      "sha256": "7f94f1da4d411d48ed6b544f7ad6fd1a2a3234c696421039d854fe75667e294c"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_interface_normal_metric_r2.py",
+      "bytes": 1869,
+      "sha256": "f84954f704b57597ef91e5ecde98ff56c8ea5223fcc6fc6572ec09dde088e296"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_moving_ring_r3.py",
+      "bytes": 2444,
+      "sha256": "95b2608c6713adca6f07312fc590173fe38fea33516d38b6ef89f83969b5033a"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_native_cohesion_r2.py",
+      "bytes": 3298,
+      "sha256": "806dcc224be24cc1945dc4253132076ae228df3d2de1c08d07b7244556810f29"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_native_volume.py",
+      "bytes": 1724,
+      "sha256": "2177b4a0d68086e2a1c873c6ed0c347f6761fb3299455acd977408fa0d55630f"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_quadratic_prism.py",
+      "bytes": 3696,
+      "sha256": "fa562789d8d0d2fbf04a16b4bfeccd7cff0b2b47d602d848cb5cd530144bf88c"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_ring_interfaces.py",
+      "bytes": 2340,
+      "sha256": "2f27702dd1e66ce28a402b262f3fcb55429341bec7e07ee6074c0bb0ca4cf33c"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_ring_system.py",
+      "bytes": 2052,
+      "sha256": "06dd9eae84fb7e8798f1a20367607ae394cbf85cdbab807a21ae00c8ce0285f8"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_ring_system_r2.py",
+      "bytes": 2058,
+      "sha256": "50b5f52fc2f0f48f0cd1b03e645c421d02f2fab5b3103c71256d06597f8d9e14"
+    },
+    {
+      "path": "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_surface_cohesion.py",
+      "bytes": 2115,
+      "sha256": "67a5033c8a4e1235afce5b543d07b9e997834ef3c3146d76539eac748b34da2f"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/prior-delta/work/carpet-rounded-yarn-unit/native-qualification/native_curve_gate.py",
+      "bytes": 31219,
+      "sha256": "72fc1a13ad6d0a52217f45d8f3c8c43b6f24e6f171af7e27d48047f34e1aeb81"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/prior-delta/work/carpet-rounded-yarn-unit/native-qualification/run_analytic_tests.py",
+      "bytes": 11654,
+      "sha256": "2292082556285e4e219c800c0a712a7059cec3eb5af83f03f73f12a2ace3f2f3"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/bounded_run.py",
+      "bytes": 3280,
+      "sha256": "7485ebfa5b6cac88e954827cc548b1cbc6d415a0f2d88015f7dc366a87952d0a"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-contact-audit/measure_guide_join.py",
+      "bytes": 1464,
+      "sha256": "02024e82278560cc5640131ddcb4ccd0b5f8eeb49e0af24fe467a6b7e2398dd1"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-contact-audit/reproduce_segment_scale_bug.py",
+      "bytes": 1793,
+      "sha256": "467e60f6014366aace76119801529cb7189f167b0c61b940ed674f69fd87b72b"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-crown-feasibility/source/measure_guides.py",
+      "bytes": 3043,
+      "sha256": "302c388b8acf0929c92d5d4389f8531c6ea5c6cfc33a4907366ceebffd098280"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-crown-feasibility/source/measure_guides_v2.py",
+      "bytes": 2910,
+      "sha256": "b73da31c9a3e917af650ae64b45c84244ae242f3b3101be9a61f37d8ee98cd85"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-core-local-review/source/build_local_material.py",
+      "bytes": 9836,
+      "sha256": "ba8f968a14020e8079c5ce9d2cd6bec6ffa10af5f514284165e2ee0a8bb9ac91"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-migrating-core/source/correct_3d.py",
+      "bytes": 10308,
+      "sha256": "82760bf5ba0c82c1736690535d2abd86e735e5fe6db2be9edf01c23f27cf7c0b"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-migrating-core/source/migrating_construction.py",
+      "bytes": 8663,
+      "sha256": "29bbd67bf52ac22abe5e17ebce1b2a65db6a1e91dbe4f173f1cff4c9eacefc17"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-migrating-core/source/migrating_exact_phase_snapshot.py",
+      "bytes": 7169,
+      "sha256": "74fd9bb15caf5dfb367ce5df51176298bf6c759fdc13f5cf8ffc49aa5435e396"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-migrating-core/source/probe_3d_correction.py",
+      "bytes": 4750,
+      "sha256": "bc61cb81b1b0007fe45b49d0176bbe08a06bae77d6416829ccc4f40af4601ced"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-migrating-core/source/probe_controls.py",
+      "bytes": 2581,
+      "sha256": "815eccb8fbb8817cd8a290eec780bf7cc47d050eec7fd3eb3d8b3872dfc58281"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-migrating-core/source/probe_migration.py",
+      "bytes": 2759,
+      "sha256": "f0dcfc06b318721b43e21f75bd5d4de296ff279621bf93ed931deaf49c26285f"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-migrating-core/source/run_guarded_probe.py",
+      "bytes": 1835,
+      "sha256": "1c66ee2443b3dc8690a438f83e79c9613ebfc344e8ec762bdefac80f4515a202"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_adaptive_keys/adaptive_keys.py",
+      "bytes": 9145,
+      "sha256": "169c68e57f7d96539e8384c3f4e771c0038c477628407dfe493882bf8c95d78c"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_adaptive_keys/probe_adaptive_keys.py",
+      "bytes": 2469,
+      "sha256": "6cff8e5f291dbc05cae91ff087da59be363fa97ef3c1de99a6013a2c3aa68223"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_adaptive_keys/probe_fitted_plan.py",
+      "bytes": 1670,
+      "sha256": "31c884da742039cbf1402c1374d515e52976227062bfa125d0d54252289f54b6"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_adaptive_keys/probe_shared_plan.py",
+      "bytes": 3369,
+      "sha256": "0144d0e3a3a72de1eed607250a753db57362b2bb17ad159667f4147340350b09"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_cache_probe_frozen/inspect_material_dependencies.py",
+      "bytes": 1990,
+      "sha256": "36e25804b7ef7baa6eaeda79d4fa69bcf7e17ce10244581f8c5bb0013760bf72"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_cache_probe_frozen/probe_inplace_resolution.py",
+      "bytes": 2514,
+      "sha256": "0eb7cb8c517bbbddd84649331c34eb47c42ea2f077a9c589c4397bee9da1dbe3"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_cache_probe_frozen/probe_resolution_cache.py",
+      "bytes": 4403,
+      "sha256": "70fc3529b2304391853a35431e9c22e98420b75c7a0c350eccbb29aaa1a04495"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_frozen/source/build_packed_panel.py",
+      "bytes": 10036,
+      "sha256": "f6a8a8de572ffacf30707547fa8fa3cf83db29a17ded2324c524f8aa8128acfe"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_frozen/source/freeze_baseline_rig.py",
+      "bytes": 3302,
+      "sha256": "440a784b627092a9c23115d7eafed08f4766534f97c5601fe244e392a7ea84b2"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_frozen/source/inspect_baseline.py",
+      "bytes": 4573,
+      "sha256": "8f302f32800cf6198a446608c2af383c783953ac82080f29b62a4b83337063c5"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_frozen/source/packed_construction.py",
+      "bytes": 8873,
+      "sha256": "c95e51e87f45d32604029aa5566589127af1772737a9fdfcf230be32d11974b0"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_frozen/source/prepare_packed_arrays.py",
+      "bytes": 2392,
+      "sha256": "7eef032c18ebc81e07d31d9b4caa983bc59d1ca1d471c386fe2b56ee4d503124"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_frozen/source/probe_native_curves.py",
+      "bytes": 2376,
+      "sha256": "dd131c3ef71578f87e446013298dccdd58242c3987bfeb09d502c02bcfc68909"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_frozen/source/verify_buried_ends.py",
+      "bytes": 1341,
+      "sha256": "f9b2aea2bb179a4e99676424afbdc0fff87d925b9e5a84e929e748f56decfbf7"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r2_guard_probe/inspect_material_dependencies.py",
+      "bytes": 1990,
+      "sha256": "36e25804b7ef7baa6eaeda79d4fa69bcf7e17ce10244581f8c5bb0013760bf72"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r2_guard_probe/probe_inplace_resolution.py",
+      "bytes": 2514,
+      "sha256": "0eb7cb8c517bbbddd84649331c34eb47c42ea2f077a9c589c4397bee9da1dbe3"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r2_guard_probe/probe_local_branch.py",
+      "bytes": 4239,
+      "sha256": "40c874b077083c3382e7404718ad91999904784853b40e09c9366a82f7466cc5"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r2_guard_probe/probe_resolution_cache.py",
+      "bytes": 4403,
+      "sha256": "70fc3529b2304391853a35431e9c22e98420b75c7a0c350eccbb29aaa1a04495"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/source/build_packed_panel.py",
+      "bytes": 10036,
+      "sha256": "f6a8a8de572ffacf30707547fa8fa3cf83db29a17ded2324c524f8aa8128acfe"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/source/freeze_baseline_rig.py",
+      "bytes": 3302,
+      "sha256": "440a784b627092a9c23115d7eafed08f4766534f97c5601fe244e392a7ea84b2"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/source/inspect_baseline.py",
+      "bytes": 4573,
+      "sha256": "8f302f32800cf6198a446608c2af383c783953ac82080f29b62a4b83337063c5"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/source/packed_construction.py",
+      "bytes": 8873,
+      "sha256": "c95e51e87f45d32604029aa5566589127af1772737a9fdfcf230be32d11974b0"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/source/prepare_packed_arrays.py",
+      "bytes": 2392,
+      "sha256": "7eef032c18ebc81e07d31d9b4caa983bc59d1ca1d471c386fe2b56ee4d503124"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/source/probe_native_curves.py",
+      "bytes": 2376,
+      "sha256": "dd131c3ef71578f87e446013298dccdd58242c3987bfeb09d502c02bcfc68909"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/source/verify_buried_ends.py",
+      "bytes": 1341,
+      "sha256": "f9b2aea2bb179a4e99676424afbdc0fff87d925b9e5a84e929e748f56decfbf7"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-r5-three-loop-material/source/assemble_scene.py",
+      "bytes": 10692,
+      "sha256": "e50f0953dee87b577de03f8a7ca72ec48b8f26a6edc5b3aa3c5564d30b98fe7c"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/native-qualification/certified_segments.py",
+      "bytes": 2666,
+      "sha256": "36b31c4db0002ae2f665c2afca64e52efec637c6afeb264536acf24d485760b4"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/native-qualification/native_curve_gate.py",
+      "bytes": 32222,
+      "sha256": "176fcb101895ac5eeab715eb03347933883c4c4dbd061faad5fdb60474086f79"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/native-qualification/run_analytic_tests.py",
+      "bytes": 12033,
+      "sha256": "884f13d1f30e831150aee4cbf207adf34a2c31c63ca8aa1bc167f1afbdb9ad40"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r10_physical_length/source/diagnose_retained_span.py",
+      "bytes": 15473,
+      "sha256": "d62a3bba5df161b52dd2e6177aa2793ad6d2412d507d058b459dcd90c4fc2cec"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r10_physical_length/source/physical_length_window.py",
+      "bytes": 14665,
+      "sha256": "4c0d5645b4c59c0370808c700cc43ae3211a1890d92438c223e35dab3adeaa35"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r10_physical_length/source/probe_repair.py",
+      "bytes": 9479,
+      "sha256": "815edd3c5b8d1b2b33c21c3be1da3b9f2027e40aff9060ea414b3ee58bab53ac"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r10_physical_length/source/qualify_prefix.py",
+      "bytes": 1171,
+      "sha256": "224212c2934a7bf9ed765d55bbb3dd8ade7bea2e8fa5e799d7523a9caeeb3ebe"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r10_physical_length/source/test_repair.py",
+      "bytes": 6696,
+      "sha256": "00660d9c49c8d18968d3ca8415dfe9780348e048a96db7b6c84e50a97563ae6f"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r11_native_keys/source/acceptance.py",
+      "bytes": 1137,
+      "sha256": "f15d5549c2a632a684b66559162ba0130226331dda23b1dee086857fa6cdce40"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r11_native_keys/source/parameterization_probe.py",
+      "bytes": 7412,
+      "sha256": "d775738ae8fc00b1045d49778d7a66dba4468b96c753e752d9e7bfcf0009cc56"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r11_native_keys/source/refit_keys.py",
+      "bytes": 4539,
+      "sha256": "1dc8ac60a26969273a03030b5b106407535e51ca7bacea4a3325b9adce7fa44b"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r11_native_keys/source/refit_owner0.py",
+      "bytes": 4868,
+      "sha256": "e22ed0ca321bf37fcdceb6471d083b39b4eb6e74a01ac1e5ae32aad6267d1bc2"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r11_native_keys/source/stage_keys.py",
+      "bytes": 7086,
+      "sha256": "254f5276e9370f531a94da48ba066971e413918c7e2eca05070e66a9f2a15efd"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r11_native_keys/source/test_native_keys.py",
+      "bytes": 4766,
+      "sha256": "ec1fb88f3aa7b465e2b696375fc34dc08d85fbdebd4b4f1cde12a4c174df6a5a"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r11_native_keys/source/validate_candidate.py",
+      "bytes": 13078,
+      "sha256": "2708dc2e3a25d2162b64e386c09d5dc28bc5347e3103d0dd871a197d46f744a5"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility/checkpoints/advancement_receipt_failure/advance_probe.py",
+      "bytes": 9404,
+      "sha256": "6c3bde06ba9b80210179ed517f21fe6c91c7363897b0daef270f15bdfc9e6dc7"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility/source/advance_probe.py",
+      "bytes": 9624,
+      "sha256": "7ac8a21b81528a5498c23668d775fd0fcd4ad61aaac2c794ce3e5653571e1409"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility/source/native_curve_gate.py",
+      "bytes": 3732,
+      "sha256": "19830d334dc1945941d857f6d6c8f9215ce5b78990160cca1ebb26fd11caa302"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility/source/probe_sections.py",
+      "bytes": 2063,
+      "sha256": "c1d3c961d831a3354127c0a344626e021b2b913f92d6acdb05c2dc7443b579fb"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility/source/section_feasibility.py",
+      "bytes": 6956,
+      "sha256": "09bf989d0a6d61d8988b89ae414668a3fd9afe306781f1f681f7489a83c92f2b"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility_frozen/checkpoints/advancement_receipt_failure/advance_probe.py",
+      "bytes": 9404,
+      "sha256": "6c3bde06ba9b80210179ed517f21fe6c91c7363897b0daef270f15bdfc9e6dc7"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility_frozen/source/advance_probe.py",
+      "bytes": 9646,
+      "sha256": "ea1a21e3a9e7dd93f132490ff26f1e6b32c4dd9a513eb56e5c0477d33254661e"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility_frozen/source/native_curve_gate.py",
+      "bytes": 3732,
+      "sha256": "19830d334dc1945941d857f6d6c8f9215ce5b78990160cca1ebb26fd11caa302"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility_frozen/source/probe_sections.py",
+      "bytes": 2063,
+      "sha256": "c1d3c961d831a3354127c0a344626e021b2b913f92d6acdb05c2dc7443b579fb"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility_frozen/source/section_feasibility.py",
+      "bytes": 6956,
+      "sha256": "09bf989d0a6d61d8988b89ae414668a3fd9afe306781f1f681f7489a83c92f2b"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r3_swept_feasibility/checkpoints/qualified_span/source/joint_span.py",
+      "bytes": 9155,
+      "sha256": "6da4783124ffea814990e39e55c55defbe77bddf21a152d5563be166d69caeac"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r3_swept_feasibility/source/joint_span.py",
+      "bytes": 9185,
+      "sha256": "277db37134f3ad5409dc04b2750d3a7c73c9a2aa8edb08559e6ff1d5d23c90c2"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r3_swept_feasibility/source/probe_span.py",
+      "bytes": 3801,
+      "sha256": "af433a0331ad72a2817a99447a77b4377ba5ffe75aeebe776fdc64629c49f834"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r3_swept_feasibility/source/swept_feasibility.py",
+      "bytes": 7682,
+      "sha256": "ed63afafe9668b67b9364b8386ec763c3240526cd221d435c0d66faa37605925"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r4_bounded_loop/checkpoints/bounded_120s/source/advance_loop.py",
+      "bytes": 12108,
+      "sha256": "650849f51fd327bb07eaf67742137376ad1548e07e4c8184cb88086d4f345cee"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r4_bounded_loop/source/advance_loop.py",
+      "bytes": 12138,
+      "sha256": "b35261b0867b5cec1ddc29ee5819ce15dd60b7d9287d5ef72e3a22b89b0a9eae"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r4_bounded_loop/source/certified_segments.py",
+      "bytes": 1025,
+      "sha256": "a00dc092ce2ef71398d125f89d83147de78fefd84d83bfeb8b87b4060db05e04"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r4_bounded_loop/source/measure_pair_pruning.py",
+      "bytes": 4629,
+      "sha256": "b060d6c27dd3856707e9ded110bacc20e3008b435011c76f0b7771867bba9525"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r5_pruned_resume/source/resume_pruned_loop.py",
+      "bytes": 13397,
+      "sha256": "49b87c0296d5c4b5018bdfcad91cf77a91674409841d5e5e1a57c7d466c3bad6"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r6_c2_bridge/source/bridge_field.py",
+      "bytes": 2443,
+      "sha256": "f0436ca7ff2862ee3e637fc778e1b6115c93589088a4bf7be60a416de783080b"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r6_c2_bridge/source/continue_bridge_loop.py",
+      "bytes": 13456,
+      "sha256": "87937d1df4ce5ef28b9e551dd8c5dc7cce82b450f132530a0a0aa89215d3c89a"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r6_c2_bridge/source/preflight_bridge.py",
+      "bytes": 5649,
+      "sha256": "a3019c45335441262d8aab882cb80976f90920fcd9dbc7d45563781607615044"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r6_c2_bridge/source/reproduce_last_failure.py",
+      "bytes": 7311,
+      "sha256": "8df00820e6889711b058b884a06359e6aa256ac43a662074f8575553e442cad2"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r7_buffer_audit/source/reproduce_last_failure.py",
+      "bytes": 7311,
+      "sha256": "8df00820e6889711b058b884a06359e6aa256ac43a662074f8575553e442cad2"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r7_buffer_audit/source/runner_with_failure_capture.py",
+      "bytes": 14578,
+      "sha256": "0bbda94e5ba589cf77753e339fca2c913893a22758eb7e074d1eabb1bcc78d99"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r8_physical_constraints/source/physical_window.py",
+      "bytes": 2968,
+      "sha256": "d518ff8a87397b6ad85992829bca299388066729af8f906285d41a6cc960f39f"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r8_physical_constraints/source/probe_physical_span.py",
+      "bytes": 6427,
+      "sha256": "9b69df7a99be6730182bee7d17f552566c32c3690fb8526361553090560dd213"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r9_physical_resume/source/continue_physical_loop.py",
+      "bytes": 15147,
+      "sha256": "fab01d9ebe53f71ec0d20bf9fc1911b3e6e373cbdeda8883fe41bf28da4e11f2"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/source/audit_bounds_neighbors.py",
+      "bytes": 4600,
+      "sha256": "2da6dca0bcf728ef8af12515219fc2896593a51f809e11fd5e9656ceb602b82b"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/source/construct_unit.py",
+      "bytes": 7638,
+      "sha256": "a1752782763f01798ecf707d59c28ff42a184175cbd10291ea563104fa0deae7"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/source/probe_unit.py",
+      "bytes": 7929,
+      "sha256": "f8c49618358fe0b513eae690f67f82985a142de639e57408195f43ab39b6d2fc"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/source/run_guarded_probe.py",
+      "bytes": 1845,
+      "sha256": "5fa920939a0febb07c24e281f5d1860bc5fa9fdcbf24dfec8e676e01d6607df8"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/source/trace_constructor_sections.py",
+      "bytes": 7895,
+      "sha256": "86366c742944c2d538efd5f00aa604b490519e31e1446eed82e28062b9fc1207"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/source/trace_frozen_sections.py",
+      "bytes": 5396,
+      "sha256": "84df1f273df752056e7133359cb8aefd6e2d5dc1406c2f51c67de0628c3317ac"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-self-clearance-audit/run_analytic_tests.py",
+      "bytes": 4991,
+      "sha256": "4aed056eddf17c583452077dd38c8f88aa15a0300a0ef16b3ee3ae6e25ffa920"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-self-clearance-audit/self_clearance_reference.py",
+      "bytes": 5927,
+      "sha256": "6200d8252e0a053d435cfe5f5c3a69f612242649ede3090772429c1a96ca0835"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/carpet-self-clearance-audit/verify_cycles_basis.py",
+      "bytes": 1698,
+      "sha256": "651c55493850c6acd3813f3a6d16fb7d927cac3cd5d18c79021a8c87e7616efb"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/native_cli_watchdog.py",
+      "bytes": 1328,
+      "sha256": "2ade1c2972194825f2d1976179e11a2ac16d56d8b78dd244ed973863a10b50b2"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/portable_resources.py",
+      "bytes": 1070,
+      "sha256": "f2d79f1e9a944f9aa1c665f7c04a1c5cbae80c131f1ddcfd6fdc8af6672d2774"
+    },
+    {
+      "path": "research/organic/research-20261006/carpet/work/regenerate_guide.py",
+      "bytes": 4295,
+      "sha256": "b76e0755b1df1f9363833a1707661fd541127b24b69726226da0418772c76ac7"
+    },
+    {
+      "path": "research/organic/research-20261006/research_inputs.py",
+      "bytes": 789,
+      "sha256": "3adc749673ea43ea7af3d93fdb96897523fbe72543de76f862606c096234aea5"
+    },
+    {
+      "path": "research/organic/research-20261006/test_research_inputs.py",
+      "bytes": 2702,
+      "sha256": "aa28e714e41be97692c695a193c5bca91f8d262114f4d57f270bd25e9eeef8f6"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/compact-friction/source/friction_compact.py",
+      "bytes": 5207,
+      "sha256": "553987da77f7fad6ef4bcc45a5276d3defb2dceafb0d9f2ab6b7eeb26a614e13"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/contact-migration-gate/source/check_component_guard.py",
+      "bytes": 1526,
+      "sha256": "fb2e133a1dbe2e40e1910e2bcd3f72864db03591b87bcff01a029d45d10fcfb9"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/contact-migration-gate/source/check_material_contract.py",
+      "bytes": 1196,
+      "sha256": "5a00964497621a1d4f01ef23e8420c443fa17c256b0ef19fba89e2c8f1c4e3dd"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/contact-migration-gate/source/check_normal_sweep.py",
+      "bytes": 1898,
+      "sha256": "967c7f5fca6bb656b343846e474cc6a550c9408b007194039669cc345ff15b52"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/contact-migration-gate/source/moving_contact.py",
+      "bytes": 7779,
+      "sha256": "ac16c279461b34ba7dec202230b42689d75094100a95ca6ce23e3977edf9f88e"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/contact-migration-gate/source/test_migration.py",
+      "bytes": 4013,
+      "sha256": "08ff310e8cfe6d44cecaec3cfa61c17c09d1df565d42a60d306404f7c29e7f61"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/finite-friction-prototype/source/fixed_stiffness_pair.py",
+      "bytes": 3270,
+      "sha256": "c047ddb8adb1e646589f85a875ed11fb330274e3d34751676b6106082f4b3f46"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/finite-friction-prototype/source/objective_pair.py",
+      "bytes": 3810,
+      "sha256": "d14110905837970485d13c2e98b30cbda2fd689010759ebe6cfce939634161e0"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/finite-friction-prototype/source/test_fixed_stiffness.py",
+      "bytes": 4998,
+      "sha256": "6f4c26b77a868398985e4d7a07ee240bc78aa48e25bc03d84f94435d5d85c89d"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/finite-friction-prototype/source/test_objective_pair.py",
+      "bytes": 3593,
+      "sha256": "3e2925ad754bb1c743772b75cd64093d2732767203967ee1b7a354aef28c8f04"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/compare_preparations.py",
+      "bytes": 1832,
+      "sha256": "3f84a174733eb1d44addb2cae5bf7dce2e842186ceedbb8149010032644def48"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/diagnose_preparation.py",
+      "bytes": 1404,
+      "sha256": "2cb569d9a042ecbde6cacf657662305dbd03838b3762788efbbed908895f0ca2"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/flexible_contact.py",
+      "bytes": 6860,
+      "sha256": "2e7a773c05c79dfa72e5b2684cbd20ec0ef82c3df7ad61e14cea8f9ca1429296"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/prepare_three.py",
+      "bytes": 5027,
+      "sha256": "08054b8d02fc70e7967ffe1f34a8b1d03e16593c5166e54126171a668181ac94"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/prepare_three_spectral.py",
+      "bytes": 4294,
+      "sha256": "d7af851b800b9594bd9a5ef904ddded777b240e03c3b49887af33f3062b46254"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/qualify_contact_field.py",
+      "bytes": 3203,
+      "sha256": "a27787f67c66f149abb250f48ebc21943b0ca4aa4a4c6a419684cbd8cb08b2f6"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/refine_preparation.py",
+      "bytes": 703,
+      "sha256": "d46570ea05105622a6cc2b8791150f566acab22e9173bb67c3a12494b598ad3e"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/rod_pullback.py",
+      "bytes": 3633,
+      "sha256": "9b7b3bda0484231410c6d605c3852143aa83634806ca4b46e3c95708731f3254"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/rod_pullback_geodesic_constant_control.py",
+      "bytes": 2949,
+      "sha256": "8be52bfbb7c9131c6abc8653bb16f4c982d0b2609c040f149f73d9f579d7eae3"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/rod_pullback_geodesic_linear_control.py",
+      "bytes": 2943,
+      "sha256": "355a6a76e070218f59c0dca07a1b963b683a0c73e51b3febe3021d55965150c1"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/rod_pullback_piecewise_control.py",
+      "bytes": 1871,
+      "sha256": "1e161e1c57f062a5962157b16a279fed07c69b351131160571feb7ebe5d1110d"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/test_contact_field_refinement.py",
+      "bytes": 2932,
+      "sha256": "8b7d0c5c8ea17a30f4c9c7f274e2241d32110b533aab0b044b4e6e384217a57d"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/test_material_spin_migration.py",
+      "bytes": 1849,
+      "sha256": "04fb648a6b59aabc93ee6ffe2a958b42f9498610c3aea5e7ddab353634d946c8"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/test_pullback_derivative.py",
+      "bytes": 2312,
+      "sha256": "b23e74920428f2ab5e6b872672d0b0992035cc6f14e615a419a7c2dd205f3c18"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/test_rod_coupling.py",
+      "bytes": 4709,
+      "sha256": "c726abdc5cd91da341b950b90e0bd6c27de902e9188e842d335a619a4b49c64a"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/test_surface_junction.py",
+      "bytes": 1252,
+      "sha256": "588aaf2d69b4a5ec851dbcdcbe4a738e9eb332f66b190ea6c7e650ec2f1f901d"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-bridge/source/test_surface_spin.py",
+      "bytes": 1060,
+      "sha256": "f3af34c0ddcddd0b1c88ac3b4ddf9409da9257be19cd348b4ed22175a7d3fb14"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-process/source/mixed_friction.py",
+      "bytes": 2134,
+      "sha256": "d60cfd611004a37dd6d74676f9da34d6eeef144cee298a1d14b8ca779a4ecb77"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-process/source/spin_three.py",
+      "bytes": 10142,
+      "sha256": "630ecf42d03e7ab1e5993c0c4e89b44243e83212fae13edf938be12c268eb76a"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-process/source/spin_three_bearing_work_failure.py",
+      "bytes": 7707,
+      "sha256": "e2dba3353b37ee9d6929b6a332541caaf4e9961bcdf2970a6e7f87bc5a7ddcfb"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-process/source/spin_three_centroid_revision.py",
+      "bytes": 8333,
+      "sha256": "656a91f29a720da61f58aaad1cd1af002ccba40fa8309e948bdfc1e66a6bdfb9"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-process/source/spin_three_constraint_index_failure.py",
+      "bytes": 7802,
+      "sha256": "1154609975bdc70fa82204c2e2df4fff32afee3c6c049ffb4d71ae7e2d4577cc"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-process/source/spin_three_first_qualified.py",
+      "bytes": 9204,
+      "sha256": "1cd78003d3776485504fc6e8b450f37c1393b2570d85e8b7e26798991eaf4444"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-process/source/test_bearing_work.py",
+      "bytes": 1430,
+      "sha256": "9f9631fe3732ac1b5e5374062b57ae964355b40fe95df20f1b811433e0a5331b"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-process/source/test_explicit_bearing.py",
+      "bytes": 2748,
+      "sha256": "c79026cd1bbe2f7b40afc6020cc1bcf0e5d7bb5fe5b3c7cf9ee8d872c2d1a18c"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/flexible-friction-process/source/test_mixed_metric.py",
+      "bytes": 1772,
+      "sha256": "d712e4ed99ea62eb0e8c8969e64573f8f061c0122b4ddda52254817cf6fbb6fd"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/generalized-friction-gate/source/coupled_spans.py",
+      "bytes": 6862,
+      "sha256": "37725dc0f43c119fcb83ff2bab408a63c3fbb3eeceb6170d34a705f7f4e4203d"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/generalized-friction-gate/source/coupled_spans_one_sided_pre_endpoint.py",
+      "bytes": 6765,
+      "sha256": "202137cff4c2c39cf2fb6d54f16f05b7bf0e3c53673a8bcf12ad6d8f43fbfd94"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/generalized-friction-gate/source/driven_cycle.py",
+      "bytes": 5913,
+      "sha256": "3c5ab56abcdce10cc6bd7df26ec8cbc9c0782d19b1cd6541934483f967186409"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/generalized-friction-gate/source/driven_cycle_coarse_controls.py",
+      "bytes": 4993,
+      "sha256": "78608db4d0d1a450603662366006e4d0ef4e46843d0e9aee928a1906ed0578e8"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/generalized-friction-gate/source/driven_cycle_preparation_force_control.py",
+      "bytes": 5665,
+      "sha256": "4ac2e41095ec6d32399288d95ec29a68ef4b7b06f536b622f21bf2ec0dc9a73f"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/generalized-friction-gate/source/qualify_checkpoint.py",
+      "bytes": 3001,
+      "sha256": "5166693b91fb70d68375dec9a51998413e353f65dc6c10f32f68a4650a3f5702"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/generalized-friction-gate/source/symmetric_spans.py",
+      "bytes": 2301,
+      "sha256": "31acadd43ba5a013e4ada52668ea411aade074cebb785416004dbe9a90938bcd"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/generalized-friction-gate/source/test_cap_switch.py",
+      "bytes": 1631,
+      "sha256": "b3731e479cfe6276e620fb536f29dd740a0c19195fe1255d94e6c9c61e7bdefe"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/generalized-friction-gate/source/test_coupling.py",
+      "bytes": 5946,
+      "sha256": "088f677e44e8938e75336c3d9db3220cdb51c656004e7d1c346e5b3d7d19b756"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/generalized-friction-gate/source/test_driven_exchange.py",
+      "bytes": 1671,
+      "sha256": "dd315db1d528a4d0d4ed05f73d6e672a259d0ea3492863bef41fc286a3375a66"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/generalized-friction-gate/source/test_exchange.py",
+      "bytes": 2258,
+      "sha256": "c740beabb80d5fcb5ad1ee36111a78d3c7d6e9ad00d1ac462989bb0da6591836"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/generalized-friction-gate/source/test_symmetric.py",
+      "bytes": 6142,
+      "sha256": "40cdfa97f88bdada66e82a221dbf0ba28f2170c5eff416bb20509b6239e04280"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/build_nineteen.py",
+      "bytes": 7792,
+      "sha256": "67a8a1443bf39bd3878210885ce53ed8672c7ee57a0148a434b19e3b4c80a51f"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/build_short_yarn.py",
+      "bytes": 7795,
+      "sha256": "b5ce1f2dea31d1ea455d9949e8154c4d833c06f60ca87c7920ba7909bcfc9c94"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/contact_blocks.cpp",
+      "bytes": 7611,
+      "sha256": "8370fc68aac5862291f4d13c22fa0661950bcc438736f26b70c5197082a120a5"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/contact_blocks.py",
+      "bytes": 3446,
+      "sha256": "daab93580033c6c5e7dc179892d11a9f0c2044dc789d0aef04a9d3b893f432f5"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/contact_path.py",
+      "bytes": 2782,
+      "sha256": "bb5e7599bd0e11ae7b21cf1065b7ca8129892d81028e5e5f14e46e8ba03627f3"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/continue_yarn_competing.py",
+      "bytes": 1208,
+      "sha256": "a548208996339b2c1931410c6eb9706544c21d8692ef4329a08fd2e0e210fada"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/continue_yarn_direct_r2.py",
+      "bytes": 1202,
+      "sha256": "33a0dd315d74958b48c187e28b7864bdaf2142102cb64c4049a2579c6a5b46a1"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/continue_yarn_force.py",
+      "bytes": 1192,
+      "sha256": "8f24258d305735a788bd8dcfa5202431f361e69ca9aa43123f9cc0f0408b6a90"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/continue_yarn_regularized.py",
+      "bytes": 1212,
+      "sha256": "fe73d53315bdefa7e11d7f58c81b5ce840d765c8f1b7e878b8b3541cc34386da"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/coupled_preconditioner.py",
+      "bytes": 2420,
+      "sha256": "cad75ee3304fff01b17820b33ab445d806f562742044824864afb34f99ab8579"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/diagnose_curvature.py",
+      "bytes": 2710,
+      "sha256": "83ed118816d76d5141d8fb595ffe1bd7cce139ab220734a61c0b719fa1824d79"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/direct_step.py",
+      "bytes": 2594,
+      "sha256": "ba6993a7c6002063c56c1f1cbeea80df6a2175c4e8e2601fa3f0304d4f3dd161"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/direct_step_regularized.py",
+      "bytes": 2714,
+      "sha256": "49c96396c2a20046f6ae8397dc4bd6c4d23f83fda224f1a8696a98eff1f89482"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/export_nineteen.py",
+      "bytes": 2260,
+      "sha256": "af7843feb6f1e64fa18afe2a415d2a4cfdea71a4b7b2cc5ebddccc9ec11e0544"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/export_qualified_seven.py",
+      "bytes": 1852,
+      "sha256": "2a83963257fc5d0d35d7854195a6b457e8ac1f575a7e44cc0a0d038c03c119a5"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/geometry_hessian.py",
+      "bytes": 494,
+      "sha256": "725eb7cefc3e0ae74942a6f6653bc12fd34451c21ee08753f85761f319d1eb24"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/kirchhoff3d.py",
+      "bytes": 7372,
+      "sha256": "5d01146636d47d1b33da167c992b391af642ef45fc9fa3d24b2ea3bdd113bae7"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/line_contact.cpp",
+      "bytes": 10714,
+      "sha256": "d923074b6e2908b7341d4a079234974fbe0bbb4a0f52d509d98e8e1237620b8f"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/line_contact.py",
+      "bytes": 5863,
+      "sha256": "3ba917ed87bdb3b685ea3affdefd38cdb4e1d1139d367c3ca1fa6e9bcb57710d"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/loop_bundle.py",
+      "bytes": 8935,
+      "sha256": "11ca9a9ff7867d2a243af847ffb3407acc0a6ad6f649eaf0aa69ba7ef288935e"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/newton_competing.py",
+      "bytes": 7666,
+      "sha256": "7a3f055400ccbcca85ed1b990161aa3b3cacd62132f2aa0636daf381413df34b"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/newton_direct.py",
+      "bytes": 7441,
+      "sha256": "8a00ddd1ec30fa8ee3ec2f6951c034719ef2b25239d4c2a1c04c63222daced74"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/newton_force.py",
+      "bytes": 7675,
+      "sha256": "d339e2dd8524727f8d7208244c750072e37f60db253a3b5d798f3b0007c7e2c5"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/newton_globalized.py",
+      "bytes": 7363,
+      "sha256": "4b88e7a4e2d6d8dd16da3f2fcd951f07bbd4f3e8603df61355315c439d1b2947"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/newton_regularized.py",
+      "bytes": 7681,
+      "sha256": "5d314a2632126b3799f2a8119eeddd7f29dd6ebda31e9b907a59b40d8cc951f0"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/newton_regularized_stable.py",
+      "bytes": 7830,
+      "sha256": "aa5cf9ae9bb27b87ba4d232331a1990c27e4e464c5ed9be1d15b2e993e66acb9"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/operators.py",
+      "bytes": 5779,
+      "sha256": "8649d25d412d4154bba23ea4df1b887d409d5a1426a11cffd197640b053bf318"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/qualify_nineteen.py",
+      "bytes": 1646,
+      "sha256": "e452b29ee998b610a902f11642cf3c848a97ed1b5f6c0708c410ccfffd06f243"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/resume_yarn_direct.py",
+      "bytes": 1191,
+      "sha256": "3e228e5d8eb747b1ad706777d2b28e51623ebd04295c51524c7d841de5bdefc6"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/rod_bands.py",
+      "bytes": 1909,
+      "sha256": "48e8d05bbf3c5796b009bc2293e0d805208115bab2fa1f09ff6cd087b6257fa0"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/run_yarn.py",
+      "bytes": 2498,
+      "sha256": "04ce93303d60487446312322fecb28dd85caf246fe1a4a109cafb5418dd29ae3"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/segment_contact_sine.cpp",
+      "bytes": 5930,
+      "sha256": "8793549957a2dd5518263b5c5bcbb38891fe48124238c9dae72f21b337beacc3"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/segment_contact_sine.py",
+      "bytes": 2156,
+      "sha256": "fbcbf2130e15551da92df560658013fc3a620dd8905604f3c15bf5175d2fc06d"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/stability_metric.py",
+      "bytes": 1929,
+      "sha256": "6b1204dc067c80b553a31f006c54e682a39fcb9a30ae85d699a9a0436a5879a1"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/test_direct_step.py",
+      "bytes": 1149,
+      "sha256": "0a44420466e8d9c9f3130964958b2f8cc991ab7835c0e2fc4f833d22a92cd382"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/short-yarn-scaling/source/test_qualified_restart.py",
+      "bytes": 820,
+      "sha256": "8a95d383afcfa715f9462f23c751480d0bf576ca93e59991e90d342f4b45865b"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/spinning-carriage/source/build_first_checkpoint.py",
+      "bytes": 7807,
+      "sha256": "1782bea12ec97fb9f51d4ee6b649b279bb4b85e15ec16265bb4f3f3ef3efa818"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/spinning-carriage/source/carriage.py",
+      "bytes": 11983,
+      "sha256": "3339e65d62c40314111ee66205213676df9b602d859f76db916ead0bf71bb1e1"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/spinning-carriage/source/check_hessian_convergence.py",
+      "bytes": 967,
+      "sha256": "b69cfd35bb91c0e7e8f950ada86057ca4afaf93531d26b7afcef76d4bb1fb320"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/spinning-carriage/source/check_twist_work.py",
+      "bytes": 926,
+      "sha256": "512a79b8207cf9140ac537d18941461335d25eef5e47b6a5ab974a6c5f62f5ca"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/spinning-carriage/source/preflight.py",
+      "bytes": 2304,
+      "sha256": "2b4cd84e27efe477703bcb05be58e9de78c8be8a7ae34e7a133388c151ec764d"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/spinning-carriage/source/run_first_step.py",
+      "bytes": 1244,
+      "sha256": "7c3f8a29ad2af68648dc90dd4c5af582eeda98e4d3ed7b4078dddbd6c3a02ae5"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/spinning-carriage/source/test_carriage.py",
+      "bytes": 1455,
+      "sha256": "5e12d6eb3b487c3b7047a9b1c9aeee8c3cb6471d94425091017d1b5449991364"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/resolution64/source/refine_matching_branch.py",
+      "bytes": 3450,
+      "sha256": "6fd5b54ada9bd2bb4f5f548e23abfcfb1afb332ee5cded6bc0146c5340c95f1b"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/resolution64/source/run_endpoint.py",
+      "bytes": 4343,
+      "sha256": "34c492e7990062bd2b5d82010e7d5b2839b56fc9353868bd8408fe39d7c1d3ca"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/snapshots/before_step_certificate/carriage.py",
+      "bytes": 12270,
+      "sha256": "49459453c1ddd3b859cb258ee4d9e2d3a8f7c0ffa54e5f69479b5226913a077c"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/audit_terminal_preparations.py",
+      "bytes": 999,
+      "sha256": "5915f2e70e38b62157fd976b928093273677d25cdee80b26b801a7dccadfec0b"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/build_nineteen.py",
+      "bytes": 7792,
+      "sha256": "67a8a1443bf39bd3878210885ce53ed8672c7ee57a0148a434b19e3b4c80a51f"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/build_short_yarn.py",
+      "bytes": 7795,
+      "sha256": "b5ce1f2dea31d1ea455d9949e8154c4d833c06f60ca87c7920ba7909bcfc9c94"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/carriage.py",
+      "bytes": 12308,
+      "sha256": "84eba59a8b65bf8554b43c016c4e4341fcede4ea197177b70b011d193cf1c7ce"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/check_timeout_curvature.py",
+      "bytes": 921,
+      "sha256": "c3140e46d16a71ac05052a584a3d39c353ac38c9ca11988133d2796922caef9c"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/compare_backed_angle.py",
+      "bytes": 2288,
+      "sha256": "f3845f57918c1a7ed92c855dc99bc6265da61c6df5eb4ed676cc6fedce42702a"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/contact_blocks.cpp",
+      "bytes": 7611,
+      "sha256": "8370fc68aac5862291f4d13c22fa0661950bcc438736f26b70c5197082a120a5"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/contact_blocks.py",
+      "bytes": 3446,
+      "sha256": "daab93580033c6c5e7dc179892d11a9f0c2044dc789d0aef04a9d3b893f432f5"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/contact_path.py",
+      "bytes": 3004,
+      "sha256": "163da47e1e2c69320b1e1fbfe1083dd908bbdcc06665dd17c1e3a4fcb02d9d57"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/continue_positive_basin.py",
+      "bytes": 1928,
+      "sha256": "500f5717640574f14a848adac58dfe68ba853b203ebf3b04450d443bfa09d570"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/continue_yarn_competing.py",
+      "bytes": 1208,
+      "sha256": "a548208996339b2c1931410c6eb9706544c21d8692ef4329a08fd2e0e210fada"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/continue_yarn_direct_r2.py",
+      "bytes": 1202,
+      "sha256": "33a0dd315d74958b48c187e28b7864bdaf2142102cb64c4049a2579c6a5b46a1"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/continue_yarn_force.py",
+      "bytes": 1192,
+      "sha256": "8f24258d305735a788bd8dcfa5202431f361e69ca9aa43123f9cc0f0408b6a90"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/continue_yarn_regularized.py",
+      "bytes": 1212,
+      "sha256": "fe73d53315bdefa7e11d7f58c81b5ce840d765c8f1b7e878b8b3541cc34386da"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/coupled_preconditioner.py",
+      "bytes": 2420,
+      "sha256": "cad75ee3304fff01b17820b33ab445d806f562742044824864afb34f99ab8579"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/diagnose_curvature.py",
+      "bytes": 2710,
+      "sha256": "83ed118816d76d5141d8fb595ffe1bd7cce139ab220734a61c0b719fa1824d79"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/diagnose_suspended.py",
+      "bytes": 1041,
+      "sha256": "18bfeba197800948ef6773895a6bb2cb57cea43a1e8a81a3d33533d7322a3679"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/diagnose_work_branch.py",
+      "bytes": 1856,
+      "sha256": "3f243cbcd17feff410c71f12b12fbc3c043ffc7c9248b1c9b1b5bd2595ce4af4"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/direct_step.py",
+      "bytes": 2594,
+      "sha256": "ba6993a7c6002063c56c1f1cbeea80df6a2175c4e8e2601fa3f0304d4f3dd161"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/direct_step_regularized.py",
+      "bytes": 2714,
+      "sha256": "49c96396c2a20046f6ae8397dc4bd6c4d23f83fda224f1a8696a98eff1f89482"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/export_nineteen.py",
+      "bytes": 2260,
+      "sha256": "af7843feb6f1e64fa18afe2a415d2a4cfdea71a4b7b2cc5ebddccc9ec11e0544"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/export_qualified_seven.py",
+      "bytes": 1852,
+      "sha256": "2a83963257fc5d0d35d7854195a6b457e8ac1f575a7e44cc0a0d038c03c119a5"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/force_preparation.py",
+      "bytes": 3369,
+      "sha256": "23c7f80eaebeb5275e8462ab32a3d6dfa9bb8c11b99d341d75e8be17bc73c0ad"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/freeze_checkpoint.py",
+      "bytes": 4584,
+      "sha256": "905bb1b1f6af7b3fddcea68624d47afd2fdd632e5055bacb986fae5433842b60"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/geometry_hessian.py",
+      "bytes": 494,
+      "sha256": "725eb7cefc3e0ae74942a6f6653bc12fd34451c21ee08753f85761f319d1eb24"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/kirchhoff3d.py",
+      "bytes": 7372,
+      "sha256": "5d01146636d47d1b33da167c992b391af642ef45fc9fa3d24b2ea3bdd113bae7"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/line_contact.cpp",
+      "bytes": 10714,
+      "sha256": "d923074b6e2908b7341d4a079234974fbe0bbb4a0f52d509d98e8e1237620b8f"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/line_contact.py",
+      "bytes": 5863,
+      "sha256": "3ba917ed87bdb3b685ea3affdefd38cdb4e1d1139d367c3ca1fa6e9bcb57710d"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/loop_bundle.py",
+      "bytes": 9462,
+      "sha256": "fa9ffe128fd0feff420325829a05c06a6c0ca7ffe52c5e55dd40419dd17bb77e"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/newton_competing.py",
+      "bytes": 7666,
+      "sha256": "7a3f055400ccbcca85ed1b990161aa3b3cacd62132f2aa0636daf381413df34b"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/newton_direct.py",
+      "bytes": 7441,
+      "sha256": "8a00ddd1ec30fa8ee3ec2f6951c034719ef2b25239d4c2a1c04c63222daced74"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/newton_force.py",
+      "bytes": 7675,
+      "sha256": "d339e2dd8524727f8d7208244c750072e37f60db253a3b5d798f3b0007c7e2c5"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/newton_globalized.py",
+      "bytes": 7363,
+      "sha256": "4b88e7a4e2d6d8dd16da3f2fcd951f07bbd4f3e8603df61355315c439d1b2947"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/newton_regularized.py",
+      "bytes": 7681,
+      "sha256": "5d314a2632126b3799f2a8119eeddd7f29dd6ebda31e9b907a59b40d8cc951f0"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/newton_regularized_stable.py",
+      "bytes": 7830,
+      "sha256": "aa5cf9ae9bb27b87ba4d232331a1990c27e4e464c5ed9be1d15b2e993e66acb9"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/operators.py",
+      "bytes": 5825,
+      "sha256": "ae16c82f619d6e99673bd0b0e94c6e7e1a4155ec31d7dbb750c5b08569fd6829"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/qualify_nineteen.py",
+      "bytes": 1646,
+      "sha256": "e452b29ee998b610a902f11642cf3c848a97ed1b5f6c0708c410ccfffd06f243"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/qualify_spun_candidate.py",
+      "bytes": 3677,
+      "sha256": "dcfa9a4fd715118b27451f181f9ff5230743163614979a478b43bef3de0ac95c"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/qualify_suspended_restart.py",
+      "bytes": 2509,
+      "sha256": "cd71ba090bdc59371e5ae28c3d955e42416b72160ecba1c7753c9217b1180506"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/resume_timeout_corrector.py",
+      "bytes": 3130,
+      "sha256": "7c5e5df2c5bb4deef476aad9ed196018d888a28b21f868772d0a87a0822ff268"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/resume_yarn_direct.py",
+      "bytes": 1191,
+      "sha256": "3e228e5d8eb747b1ad706777d2b28e51623ebd04295c51524c7d841de5bdefc6"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/rod_bands.py",
+      "bytes": 1909,
+      "sha256": "48e8d05bbf3c5796b009bc2293e0d805208115bab2fa1f09ff6cd087b6257fa0"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/run_suspended_ramp.py",
+      "bytes": 5616,
+      "sha256": "e929e3f17d2aed30ee863def59b5c0e342b437df1c1fa26187bfe1c2ef5809f0"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/run_yarn.py",
+      "bytes": 2498,
+      "sha256": "04ce93303d60487446312322fecb28dd85caf246fe1a4a109cafb5418dd29ae3"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/run_zero_equilibrium.py",
+      "bytes": 1637,
+      "sha256": "ffc06b4b958b3e41bbae3b0fb15f7e18998731a0243696678c5b28b938dc1c8f"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/segment_contact_sine.cpp",
+      "bytes": 5930,
+      "sha256": "8793549957a2dd5518263b5c5bcbb38891fe48124238c9dae72f21b337beacc3"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/segment_contact_sine.py",
+      "bytes": 2156,
+      "sha256": "fbcbf2130e15551da92df560658013fc3a620dd8905604f3c15bf5175d2fc06d"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/spectral_preparation.py",
+      "bytes": 4246,
+      "sha256": "b260e00ceab219c02cdfebcfa15520ecb28a44816309e6d3b11ad1a67e97faf4"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/stability_metric.py",
+      "bytes": 1929,
+      "sha256": "6b1204dc067c80b553a31f006c54e682a39fcb9a30ae85d699a9a0436a5879a1"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/tangent_suspended.py",
+      "bytes": 1117,
+      "sha256": "8396c87d5cc5583b972ab8f66e1b9eaa6bfd3db7d27f122abed2fc388cd1a612"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/test_backed_parity.py",
+      "bytes": 1508,
+      "sha256": "7d24677d1e76d71c2e931591b4e96b00aadbdcd8d72ef38d085b5d213177da29"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/test_direct_step.py",
+      "bytes": 1149,
+      "sha256": "0a44420466e8d9c9f3130964958b2f8cc991ab7835c0e2fc4f833d22a92cd382"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/test_qualified_restart.py",
+      "bytes": 820,
+      "sha256": "8a95d383afcfa715f9462f23c751480d0bf576ca93e59991e90d342f4b45865b"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/test_stage_boundary.py",
+      "bytes": 3087,
+      "sha256": "1533c5e60c5d2773abb57c4e0a36d0da3430dfdd24b7ebd3b983d7cdbb30a91a"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/source/test_suspended_tangent.py",
+      "bytes": 1772,
+      "sha256": "9bfd852633901e227f6a522903e362cd797dc7148e62999235501a382b518a01"
+    },
+    {
+      "path": "research/organic/research-20261006/textile/suspended-spinning/visible-candidate/source/build_visible.py",
+      "bytes": 8095,
+      "sha256": "fc29bda4f4cf8b0558ef4defeb750724bf6d222b1b0fdef38e6992f7d3459eea"
     },
     {
       "path": "research/organic/selected-baseline-source/bark_field.py",
@@ -1451,101 +4080,526 @@
       "path": "research/technical/technical_v3/experiments/wire_loop_uv_fix/tests/test_loop_chart.py",
       "bytes": 1249,
       "sha256": "193ab5d87c531dc48674ca0bf23fadf0640443876658845a37f7932e81eedd70"
-    },
-    {
-      "path": "material-workspace/shared/material-production/tests/test_asphalt_selection.py",
-      "bytes": 2431,
-      "sha256": "a26ec7e27eb50cefcf1a138b276159019ff9fb9d2e01119c9a9a76d0fc3359be"
-    },
-    {
-      "path": "material-workspace/shared/material-production/tests/fixtures/asphalt_inspection.json",
-      "bytes": 3752,
-      "sha256": "35c1a0d96946cd6ca26b2efba8dc6bacfd39d1b9dd5bc00eeae2410325c7e134"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/fractured_construction.py",
-      "bytes": 11096,
-      "sha256": "460dd86c57fe22d629ceb5b27212e034f4f510dcfacccfdfa078506b774a8664"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/fracture_field.py",
-      "bytes": 2847,
-      "sha256": "9bcc74646320f9dd6d4ad0717e20a1860729b0519c880ff5cf2627824fb3d033"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/reference_construction.py",
-      "bytes": 9949,
-      "sha256": "c4de92f64814189f5b2617ca0220cdf631f16b09a8cbdaab411c14b8d43badcb"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/generate_candidate.py",
-      "bytes": 2117,
-      "sha256": "44006683d998ed42ea3d93105cb81932bf93b73f398e24f1c93042deb685b206"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/verify_preservation.py",
-      "bytes": 1247,
-      "sha256": "ea1b0807da24207927899138512726d52af399b71e36bf488b8021692a438151"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/test_height_normals.py",
-      "bytes": 1619,
-      "sha256": "b854e451816c5895b87ca8f485f42d76887b05aa133600ce29938179ec373c61"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/base_recipe/source/height_normals.py",
-      "bytes": 1434,
-      "sha256": "e50b1707ed664eb4342dad3eaeff4de965537ee833a14919a264b97f4cbe58ba"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/base_recipe/vendor/surface_math.py",
-      "bytes": 3949,
-      "sha256": "3c09a5ebc9b860abb9783045bed7674e3917087b0c0d21376fbfd8cda12cafc0"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/base_recipe/material.json",
-      "bytes": 157,
-      "sha256": "37b4a534574df6c77749ea1adcb113bf16d8b1897db0bf77f495ccadd4ffb31e"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/expected_native.json",
-      "bytes": 615,
-      "sha256": "6dd080927838be4489d6500b146e1156156c47e3a86c9ea5cf16876d1f13f900"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/verify_native.py",
-      "bytes": 542,
-      "sha256": "7229b6bbe5b94bcd6442d779a5ec4ca14b3557a3809fcb7fa9146ada1b8ef305"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/README.md",
-      "bytes": 2970,
-      "sha256": "90657781ed079d790902886ea4c8ea07047938f2d7d4b69acaba5583f41525b0"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/SOURCE_LOCK.json",
-      "bytes": 793,
-      "sha256": "ceb715aaede24e51cc8eb4f38942f7e255b735660f3a41e5434729e01a808532"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/build_scene.py",
-      "bytes": 4553,
-      "sha256": "cef71c3f8a024a8c2bc0b7172e575b244e9bc3c013b159d709eba7bbd3f74080"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/source/scene_contract.py",
-      "bytes": 2703,
-      "sha256": "3d1e6f60a76fded30c1e3ac14ef264a1e72622a4b9da550946098be800faa632"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/scene_recipe.json",
-      "bytes": 15644,
-      "sha256": "9d9322a4f5f28720fcd97beb075ab75f09c9a08fc41edcca37fd700ffaf78a25"
-    },
-    {
-      "path": "material-workspace/shared/material-production/vendor/asphalt-reviewed-20261009/expected_scene.json",
-      "bytes": 514,
-      "sha256": "5d728293ab613ba05f501608f7f0a44e3994b4db652d221187e6287977e09678"
     }
-  ]
+  ],
+  "privacy_checked_paths": [
+    "audit/LATEST_SOURCE_ADDITIONS.md",
+    "audit/run_additive_source_tests.py",
+    "audit/run_portable_tests.py",
+    "audit/verify_checkpoint.py",
+    "material-workspace/shared/material-production/README.md",
+    "material-workspace/shared/material-production/materials/core.py",
+    "material-workspace/shared/material-production/materials/generation.py",
+    "material-workspace/shared/material-production/materials/showcase.py",
+    "material-workspace/shared/material-production/preview_presets/README.md",
+    "material-workspace/shared/material-production/preview_presets/__init__.py",
+    "material-workspace/shared/material-production/preview_presets/cybr_grazing_warm_v1.json",
+    "material-workspace/shared/material-production/preview_presets/grazing_preview.py",
+    "material-workspace/shared/material-production/preview_presets/prepare_preview.py",
+    "material-workspace/shared/material-production/preview_presets/preview_defaults.json",
+    "material-workspace/shared/material-production/preview_presets/reference_inspection.json",
+    "material-workspace/shared/material-production/preview_presets/test_grazing_preview.py",
+    "material-workspace/shared/material-production/preview_presets/verification.json",
+    "material-workspace/shared/material-production/preview_presets/verify_preparation.py",
+    "material-workspace/shared/material-production/registry.json",
+    "material-workspace/shared/material-production/tests/test_integration_contracts.py",
+    "material-workspace/shared/material-production/tests/test_showcase_guard.py",
+    "material-workspace/shared/material-production/tests/test_victorville_candidate.py",
+    "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/PROVENANCE.json",
+    "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/README.md",
+    "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/REVIEW.json",
+    "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/SOURCE_LOCK.json",
+    "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/expected_inputs.json",
+    "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/receipts/geometry_d.json",
+    "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/reconstruct.py",
+    "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/src/build_diagnostic.py",
+    "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/src/compacted_microbed.py",
+    "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/src/fracture_prototypes.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/README.md",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/SOURCE_LOCK.json",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/bounded_clean_run.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/cache_validation.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/capture_modes.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/clean_receipt.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/clean_render.sh",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/component_image_bridge.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/component_receipt.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/oidn_contract.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/oidn_image_bridge.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/png_precision_check.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/queue_paths.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/raw_receipt.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/render.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/render.sh",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/resource_contract.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/run_panel_queue.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/test_component_exr_roundtrip.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/transport_components.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/pipeline/verify_pipeline_snapshot.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/recipe.json",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/source/build_gravel_geometry.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/source/build_scene.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/source/generate_maps.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/source/render_guided.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/source/test_ground.py",
+    "material-workspace/shared/material-production/vendor/victorville-sediment-r2-20261009/source/victorville_ground.py",
+    "research/asphalt/binder-refinement-20261009/COMPACT_VALIDATION.json",
+    "research/asphalt/binder-refinement-20261009/README.md",
+    "research/asphalt/binder-refinement-20261009/SOURCE_LOCK.json",
+    "research/asphalt/binder-refinement-20261009/base_recipe/material.json",
+    "research/asphalt/binder-refinement-20261009/base_recipe/source/height_normals.py",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/__init__.py",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/bark_furrows.py",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/bark_model.py",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/capture_fragment.py",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/catalog.py",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/check_geometry.py",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/check_optics.py",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/geometry.py",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/grain_model.py",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/maps.py",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/mineral_construction.py",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/package_review.py",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/parameters.json",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/petg_optical_variants.json",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/studies.py",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/expansion/test_maps.py",
+    "research/asphalt/binder-refinement-20261009/base_recipe/vendor/surface_math.py",
+    "research/asphalt/binder-refinement-20261009/capture_profile.json",
+    "research/asphalt/binder-refinement-20261009/expected_native.json",
+    "research/asphalt/binder-refinement-20261009/expected_scene.json",
+    "research/asphalt/binder-refinement-20261009/pipeline/bounded_clean_run.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/cache_validation.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/capture_modes.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/clean_receipt.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/clean_render.sh",
+    "research/asphalt/binder-refinement-20261009/pipeline/component_image_bridge.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/component_receipt.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/oidn_contract.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/oidn_image_bridge.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/png_precision_check.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/queue_paths.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/raw_receipt.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/render.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/render.sh",
+    "research/asphalt/binder-refinement-20261009/pipeline/resource_contract.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/run_panel_queue.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/test_component_exr_roundtrip.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/transport_components.py",
+    "research/asphalt/binder-refinement-20261009/pipeline/verify_pipeline_snapshot.py",
+    "research/asphalt/binder-refinement-20261009/requirements.txt",
+    "research/asphalt/binder-refinement-20261009/scene_recipe.json",
+    "research/asphalt/binder-refinement-20261009/source/build_scene.py",
+    "research/asphalt/binder-refinement-20261009/source/fracture_field.py",
+    "research/asphalt/binder-refinement-20261009/source/fractured_construction.py",
+    "research/asphalt/binder-refinement-20261009/source/generate_candidate.py",
+    "research/asphalt/binder-refinement-20261009/source/graded_fragment_field.py",
+    "research/asphalt/binder-refinement-20261009/source/reviewed_construction.py",
+    "research/asphalt/binder-refinement-20261009/source/scene_contract.py",
+    "research/asphalt/binder-refinement-20261009/source/test_refinement.py",
+    "research/asphalt/binder-refinement-20261009/source/verify_native.py",
+    "research/asphalt/binder-refinement-20261009/source/verify_normal_encoding.py",
+    "research/asphalt/binder-refinement-20261009/source/verify_renderer_normals.py",
+    "research/organic/research-20261006/MISSING_INPUTS.json",
+    "research/organic/research-20261006/README.md",
+    "research/organic/research-20261006/SOURCE_MANIFEST.json",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-cell-wall-mechanics/source/check_contact_volume.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-cell-wall-mechanics/source/check_loading_work.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-cell-wall-mechanics/source/corrugated_wall.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-cell-wall-mechanics/source/corrugated_wall_r1.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-cell-wall-mechanics/source/qualify_wall_controls.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-cell-wall-mechanics/source/run_wall_controls.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-cell-wall-mechanics/source/test_wall.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/attempts/eager_factorization/source/opening_model.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/attempts/eager_factorization/source/periodic_sector.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/attempts/eager_factorization/source/volume_coupon.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/attempts/steepest_descent/config/conditional_scenario.json",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/attempts/steepest_descent/source/opening_model.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/config/conditional_scenario.json",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/config/experiment.json",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/audit_incremental_potential.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/audit_memory_revision.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/check_stability.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/checkpoint_io.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/compare_runs.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/freeze_qualification.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/history/run_pilot_driver.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/inspect_state.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/migrate_solver_checkpoint.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/opening_model.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/periodic_sector.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/run_opening.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/single_seam.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-conditional-opening/source/volume_coupon.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-constitutive-incremental/source/incremental_envelope.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-constitutive-incremental/source/run_full_audit.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-constitutive-incremental/source/test_incremental_envelope.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-constitutive-upgrade/fracture-scale-evidence/calculate_scale.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-constitutive-upgrade/source/audit_candidate.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-constitutive-upgrade/source/directional_candidate.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-constitutive-upgrade/source/quadratic_prism_frozen.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-directional-native-port/source/audit_native.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-directional-native-port/source/benchmark_native.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-directional-native-port/source/build_native.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-directional-native-port/source/directional_native.cpp",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-directional-native-port/source/native_directional.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-directional-native-port/source/write_manifest.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/config/experiment.json",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/audit_pilot.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/checkpoint_io.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/compare_and_diagnose.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/history/model_pre_diagnostic_message.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/history/run_loading_two_file_checkpoint.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/model.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/run_loading.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-growth-surrogate/source/test_checkpoint_io.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-interface-quadrature-audit/check_gap_mode.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-native-release-audit/source/check_release.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/batch_volume.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/batch_volume_incremental.cpp",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/cohesion_incremental.cpp",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/native_cohesion.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/native_cohesion_r2.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/native_volume.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/quadratic_prism.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/frozen-production/surface_cohesion.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/run_mesh.sh",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/run_tied_64.sh",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/run_tied_refinement.sh",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/source/bridge.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/source/run_mesh.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/source/run_tied_refinement.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/production-bridge/source/summarize_bridge.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/run_checks.sh",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/source/notch_reference.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/source/run_reference.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/source/verify_receipts.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-notch-reference/tests/test_reference.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/attempts/two_point/source/audit_cohesive_work.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/attempts/two_point/source/audit_seam.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/attempts/two_point/source/single_seam.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/config/experiment.json",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/config/fracture_contract.json",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/audit_cohesive_work.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/audit_interface_quadrature.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/audit_periodic.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/audit_seam.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/checkpoint_io.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/compare_increments.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/compare_sector.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/periodic_sector.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/run_periodic.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/single_seam.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-periodic-seam-control/source/volume_coupon.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/atomic_io.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/build_scene.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/check_network.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/check_zero_shear.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/contact_gate.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/continue_to_contact.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/corrugated_wall_frozen.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/freeze_checkpoint.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/qualify_network.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/refine_endpoint.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/run_network.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/two_cell_network.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/bark-two-cell-mechanics/source/zero_shear_network.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/audit_interface_length.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/audit_ring_penalty_limit_r4.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/audit_ring_penalty_limit_r4_retry.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/audit_ring_penalty_mesh_r4.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/batch_volume.cpp",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/batch_volume.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/batch_volume_incremental.cpp",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/birth_cell.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/birth_pair.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/cohesion_batch.cpp",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/cohesion_incremental.cpp",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/continue_birth_pair.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/continue_ring_r2.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/diagnose_ring_stress.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/incremental_ring_r3.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/metric_ring_r4.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/native_cohesion.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/native_cohesion_r2.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/native_volume.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/prepare_ring_growth_state_incremental_r3.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/prepare_ring_growth_state_r3.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/quadratic_prism.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/relax_birth_pair.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/ring_geometry.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/ring_interfaces.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/ring_interfaces_r2.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/ring_system.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/ring_system_r2.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/ring_system_r3.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/run_radial_growth_r3.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/run_ring_r2.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/source_receipt_r3.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/surface_cohesion.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_batch_volume.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_birth_cell.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_birth_pair.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_cohesion_contract.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_incremental_ring_r3.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_interface_normal_metric_r2.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_moving_ring_r3.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_native_cohesion_r2.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_native_volume.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_quadratic_prism.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_ring_interfaces.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_ring_system.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_ring_system_r2.py",
+    "research/organic/research-20261006/bark/material-organic-rebuild/causal-bark/volume-core/source/test_surface_cohesion.py",
+    "research/organic/research-20261006/carpet/prior-delta/work/carpet-rounded-yarn-unit/native-qualification/native_curve_gate.py",
+    "research/organic/research-20261006/carpet/prior-delta/work/carpet-rounded-yarn-unit/native-qualification/run_analytic_tests.py",
+    "research/organic/research-20261006/carpet/work/bounded_run.py",
+    "research/organic/research-20261006/carpet/work/carpet-contact-audit/measure_guide_join.py",
+    "research/organic/research-20261006/carpet/work/carpet-contact-audit/reproduce_segment_scale_bug.py",
+    "research/organic/research-20261006/carpet/work/carpet-crown-feasibility/source/measure_guides.py",
+    "research/organic/research-20261006/carpet/work/carpet-crown-feasibility/source/measure_guides_v2.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-core-local-review/source/build_local_material.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-migrating-core/source/correct_3d.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-migrating-core/source/migrating_construction.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-migrating-core/source/migrating_exact_phase_snapshot.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-migrating-core/source/probe_3d_correction.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-migrating-core/source/probe_controls.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-migrating-core/source/probe_migration.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-migrating-core/source/run_guarded_probe.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_adaptive_keys/adaptive_keys.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_adaptive_keys/probe_adaptive_keys.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_adaptive_keys/probe_fitted_plan.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_adaptive_keys/probe_shared_plan.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_cache_probe_frozen/inspect_material_dependencies.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_cache_probe_frozen/probe_inplace_resolution.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_cache_probe_frozen/probe_resolution_cache.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_frozen/source/build_packed_panel.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_frozen/source/freeze_baseline_rig.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_frozen/source/inspect_baseline.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_frozen/source/packed_construction.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_frozen/source/prepare_packed_arrays.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_frozen/source/probe_native_curves.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r1_frozen/source/verify_buried_ends.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r2_guard_probe/inspect_material_dependencies.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r2_guard_probe/probe_inplace_resolution.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r2_guard_probe/probe_local_branch.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/revisions/r2_guard_probe/probe_resolution_cache.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/source/build_packed_panel.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/source/freeze_baseline_rig.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/source/inspect_baseline.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/source/packed_construction.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/source/prepare_packed_arrays.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/source/probe_native_curves.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-packed-core/source/verify_buried_ends.py",
+    "research/organic/research-20261006/carpet/work/carpet-r5-three-loop-material/source/assemble_scene.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/native-qualification/certified_segments.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/native-qualification/native_curve_gate.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/native-qualification/run_analytic_tests.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r10_physical_length/source/diagnose_retained_span.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r10_physical_length/source/physical_length_window.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r10_physical_length/source/probe_repair.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r10_physical_length/source/qualify_prefix.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r10_physical_length/source/test_repair.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r11_native_keys/source/acceptance.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r11_native_keys/source/parameterization_probe.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r11_native_keys/source/refit_keys.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r11_native_keys/source/refit_owner0.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r11_native_keys/source/stage_keys.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r11_native_keys/source/test_native_keys.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r11_native_keys/source/validate_candidate.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility/checkpoints/advancement_receipt_failure/advance_probe.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility/source/advance_probe.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility/source/native_curve_gate.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility/source/probe_sections.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility/source/section_feasibility.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility_frozen/checkpoints/advancement_receipt_failure/advance_probe.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility_frozen/source/advance_probe.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility_frozen/source/native_curve_gate.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility_frozen/source/probe_sections.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r2_section_feasibility_frozen/source/section_feasibility.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r3_swept_feasibility/checkpoints/qualified_span/source/joint_span.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r3_swept_feasibility/source/joint_span.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r3_swept_feasibility/source/probe_span.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r3_swept_feasibility/source/swept_feasibility.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r4_bounded_loop/checkpoints/bounded_120s/source/advance_loop.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r4_bounded_loop/source/advance_loop.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r4_bounded_loop/source/certified_segments.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r4_bounded_loop/source/measure_pair_pruning.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r5_pruned_resume/source/resume_pruned_loop.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r6_c2_bridge/source/bridge_field.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r6_c2_bridge/source/continue_bridge_loop.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r6_c2_bridge/source/preflight_bridge.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r6_c2_bridge/source/reproduce_last_failure.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r7_buffer_audit/source/reproduce_last_failure.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r7_buffer_audit/source/runner_with_failure_capture.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r8_physical_constraints/source/physical_window.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r8_physical_constraints/source/probe_physical_span.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/revisions/r9_physical_resume/source/continue_physical_loop.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/source/audit_bounds_neighbors.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/source/construct_unit.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/source/probe_unit.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/source/run_guarded_probe.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/source/trace_constructor_sections.py",
+    "research/organic/research-20261006/carpet/work/carpet-rounded-yarn-unit/source/trace_frozen_sections.py",
+    "research/organic/research-20261006/carpet/work/carpet-self-clearance-audit/run_analytic_tests.py",
+    "research/organic/research-20261006/carpet/work/carpet-self-clearance-audit/self_clearance_reference.py",
+    "research/organic/research-20261006/carpet/work/carpet-self-clearance-audit/verify_cycles_basis.py",
+    "research/organic/research-20261006/carpet/work/native_cli_watchdog.py",
+    "research/organic/research-20261006/carpet/work/portable_resources.py",
+    "research/organic/research-20261006/carpet/work/regenerate_guide.py",
+    "research/organic/research-20261006/research_inputs.py",
+    "research/organic/research-20261006/test_research_inputs.py",
+    "research/organic/research-20261006/textile/compact-friction/source/friction_compact.py",
+    "research/organic/research-20261006/textile/contact-migration-gate/source/check_component_guard.py",
+    "research/organic/research-20261006/textile/contact-migration-gate/source/check_material_contract.py",
+    "research/organic/research-20261006/textile/contact-migration-gate/source/check_normal_sweep.py",
+    "research/organic/research-20261006/textile/contact-migration-gate/source/moving_contact.py",
+    "research/organic/research-20261006/textile/contact-migration-gate/source/test_migration.py",
+    "research/organic/research-20261006/textile/finite-friction-prototype/source/fixed_stiffness_pair.py",
+    "research/organic/research-20261006/textile/finite-friction-prototype/source/objective_pair.py",
+    "research/organic/research-20261006/textile/finite-friction-prototype/source/test_fixed_stiffness.py",
+    "research/organic/research-20261006/textile/finite-friction-prototype/source/test_objective_pair.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/compare_preparations.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/diagnose_preparation.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/flexible_contact.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/prepare_three.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/prepare_three_spectral.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/qualify_contact_field.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/refine_preparation.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/rod_pullback.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/rod_pullback_geodesic_constant_control.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/rod_pullback_geodesic_linear_control.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/rod_pullback_piecewise_control.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/test_contact_field_refinement.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/test_material_spin_migration.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/test_pullback_derivative.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/test_rod_coupling.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/test_surface_junction.py",
+    "research/organic/research-20261006/textile/flexible-friction-bridge/source/test_surface_spin.py",
+    "research/organic/research-20261006/textile/flexible-friction-process/source/mixed_friction.py",
+    "research/organic/research-20261006/textile/flexible-friction-process/source/spin_three.py",
+    "research/organic/research-20261006/textile/flexible-friction-process/source/spin_three_bearing_work_failure.py",
+    "research/organic/research-20261006/textile/flexible-friction-process/source/spin_three_centroid_revision.py",
+    "research/organic/research-20261006/textile/flexible-friction-process/source/spin_three_constraint_index_failure.py",
+    "research/organic/research-20261006/textile/flexible-friction-process/source/spin_three_first_qualified.py",
+    "research/organic/research-20261006/textile/flexible-friction-process/source/test_bearing_work.py",
+    "research/organic/research-20261006/textile/flexible-friction-process/source/test_explicit_bearing.py",
+    "research/organic/research-20261006/textile/flexible-friction-process/source/test_mixed_metric.py",
+    "research/organic/research-20261006/textile/generalized-friction-gate/source/coupled_spans.py",
+    "research/organic/research-20261006/textile/generalized-friction-gate/source/coupled_spans_one_sided_pre_endpoint.py",
+    "research/organic/research-20261006/textile/generalized-friction-gate/source/driven_cycle.py",
+    "research/organic/research-20261006/textile/generalized-friction-gate/source/driven_cycle_coarse_controls.py",
+    "research/organic/research-20261006/textile/generalized-friction-gate/source/driven_cycle_preparation_force_control.py",
+    "research/organic/research-20261006/textile/generalized-friction-gate/source/qualify_checkpoint.py",
+    "research/organic/research-20261006/textile/generalized-friction-gate/source/symmetric_spans.py",
+    "research/organic/research-20261006/textile/generalized-friction-gate/source/test_cap_switch.py",
+    "research/organic/research-20261006/textile/generalized-friction-gate/source/test_coupling.py",
+    "research/organic/research-20261006/textile/generalized-friction-gate/source/test_driven_exchange.py",
+    "research/organic/research-20261006/textile/generalized-friction-gate/source/test_exchange.py",
+    "research/organic/research-20261006/textile/generalized-friction-gate/source/test_symmetric.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/build_nineteen.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/build_short_yarn.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/contact_blocks.cpp",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/contact_blocks.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/contact_path.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/continue_yarn_competing.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/continue_yarn_direct_r2.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/continue_yarn_force.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/continue_yarn_regularized.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/coupled_preconditioner.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/diagnose_curvature.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/direct_step.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/direct_step_regularized.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/export_nineteen.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/export_qualified_seven.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/geometry_hessian.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/kirchhoff3d.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/line_contact.cpp",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/line_contact.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/loop_bundle.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/newton_competing.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/newton_direct.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/newton_force.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/newton_globalized.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/newton_regularized.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/newton_regularized_stable.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/operators.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/qualify_nineteen.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/resume_yarn_direct.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/rod_bands.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/run_yarn.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/segment_contact_sine.cpp",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/segment_contact_sine.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/stability_metric.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/test_direct_step.py",
+    "research/organic/research-20261006/textile/short-yarn-scaling/source/test_qualified_restart.py",
+    "research/organic/research-20261006/textile/spinning-carriage/source/build_first_checkpoint.py",
+    "research/organic/research-20261006/textile/spinning-carriage/source/carriage.py",
+    "research/organic/research-20261006/textile/spinning-carriage/source/check_hessian_convergence.py",
+    "research/organic/research-20261006/textile/spinning-carriage/source/check_twist_work.py",
+    "research/organic/research-20261006/textile/spinning-carriage/source/preflight.py",
+    "research/organic/research-20261006/textile/spinning-carriage/source/run_first_step.py",
+    "research/organic/research-20261006/textile/spinning-carriage/source/test_carriage.py",
+    "research/organic/research-20261006/textile/suspended-spinning/resolution64/source/refine_matching_branch.py",
+    "research/organic/research-20261006/textile/suspended-spinning/resolution64/source/run_endpoint.py",
+    "research/organic/research-20261006/textile/suspended-spinning/snapshots/before_step_certificate/carriage.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/audit_terminal_preparations.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/build_nineteen.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/build_short_yarn.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/carriage.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/check_timeout_curvature.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/compare_backed_angle.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/contact_blocks.cpp",
+    "research/organic/research-20261006/textile/suspended-spinning/source/contact_blocks.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/contact_path.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/continue_positive_basin.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/continue_yarn_competing.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/continue_yarn_direct_r2.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/continue_yarn_force.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/continue_yarn_regularized.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/coupled_preconditioner.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/diagnose_curvature.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/diagnose_suspended.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/diagnose_work_branch.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/direct_step.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/direct_step_regularized.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/export_nineteen.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/export_qualified_seven.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/force_preparation.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/freeze_checkpoint.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/geometry_hessian.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/kirchhoff3d.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/line_contact.cpp",
+    "research/organic/research-20261006/textile/suspended-spinning/source/line_contact.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/loop_bundle.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/newton_competing.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/newton_direct.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/newton_force.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/newton_globalized.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/newton_regularized.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/newton_regularized_stable.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/operators.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/qualify_nineteen.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/qualify_spun_candidate.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/qualify_suspended_restart.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/resume_timeout_corrector.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/resume_yarn_direct.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/rod_bands.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/run_suspended_ramp.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/run_yarn.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/run_zero_equilibrium.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/segment_contact_sine.cpp",
+    "research/organic/research-20261006/textile/suspended-spinning/source/segment_contact_sine.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/spectral_preparation.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/stability_metric.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/tangent_suspended.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/test_backed_parity.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/test_direct_step.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/test_qualified_restart.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/test_stage_boundary.py",
+    "research/organic/research-20261006/textile/suspended-spinning/source/test_suspended_tangent.py",
+    "research/organic/research-20261006/textile/suspended-spinning/visible-candidate/source/build_visible.py"
+  ],
+  "privacy_scope": "Changed and added follow-on text files only; historical baseline research is retained unchanged.",
+  "inventory_scope": "Repository-relative public source files present in this commit only; no private artifact inventory or unpublished data hashes."
 }

@@ -5,8 +5,8 @@ from materials.core import *
 from materials.generation import evaluate,validate_fields
 
 class Contracts(unittest.TestCase):
- def test_registry_35_unique_and_leather_explicitly_unqualified(self):
-  self.assertEqual(len(registry()['materials']),35)
+ def test_registry_36_unique_and_leather_explicitly_unqualified(self):
+  self.assertEqual(len(registry()['materials']),36)
   leather=material('08');validate_selection(leather)
   self.assertIn('original procedural appearance reference',leather['quality'])
   self.assertIn('leather_coupon_transfer',leather['selected']['scene'])

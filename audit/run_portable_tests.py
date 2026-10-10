@@ -11,7 +11,7 @@ from test_integration_contracts import Contracts
 from test_path_config import Paths
 # This named historical case intentionally validates a real selected .blend.
 # It remains in the source suite and is NOT reported as passing without that asset.
-asset_case = 'test_registry_35_unique_and_leather_explicitly_unqualified'
+asset_case = 'test_registry_36_unique_and_leather_explicitly_unqualified'
 names = [n for n in unittest.defaultTestLoader.getTestCaseNames(Contracts) if n != asset_case]
 suite = unittest.TestSuite([Contracts(n) for n in names])
 suite.addTests(unittest.defaultTestLoader.loadTestsFromTestCase(Paths))
@@ -20,8 +20,10 @@ from test_showcase_guard import ShowcaseGuard
 from test_asphalt_selection import AsphaltSelection
 for case in (PNGContracts, ExperimentContracts, ShowcaseGuard, AsphaltSelection):
     suite.addTests(unittest.defaultTestLoader.loadTestsFromTestCase(case))
+from test_victorville_candidate import VictorvilleCandidate
+suite.addTests(unittest.defaultTestLoader.loadTestsFromTestCase(VictorvilleCandidate))
 from materials.core import registry
-assert len(registry()['materials']) == 35
+assert len(registry()['materials']) == 36
 result = unittest.TextTestRunner(verbosity=2).run(suite)
 print('Separate native-scene gate requires restored selected scene/map artifacts:', asset_case)
 if not result.wasSuccessful():
@@ -36,3 +38,5 @@ print('All portable source and renderer contracts passed.')
 
 
 subprocess.run([sys.executable, str(P / "vendor/asphalt-reviewed-20261009/source/test_height_normals.py")], check=True)
+
+subprocess.run([sys.executable, str(ROOT / "audit/run_additive_source_tests.py")], check=True)

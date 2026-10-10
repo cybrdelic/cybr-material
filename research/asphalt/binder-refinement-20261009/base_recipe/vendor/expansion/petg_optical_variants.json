@@ -1,0 +1,5 @@
+{
+  "frosted_printed": {"23_petg_transparent": {"roughness": 0.17, "color": [0.91, 0.97, 0.98], "transmission": 0.96}},
+  "clarity_tuned_printed": {"23_petg_transparent": {"roughness": 0.075, "color": [0.97, 0.985, 0.99], "transmission": 0.96}},
+  "limits": "Named authored approximations, not measured calibration. Keep wall thickness, IOR and print-boundary roughness. Internal bead voids are excluded."
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "Public input-interface contracts only. Historical filenames, artifact hashes, byte sizes, array dimensions and archive inventories are intentionally excluded. No omitted research data is bundled.",
+  "external_file_inputs": [
+    {
+      "flag": "--baseline-scene",
+      "format": "Blender scene",
+      "requirement": "Caller supplies a real file compatible with the chosen study; no fallback or automatic selection."
+    },
+    {
+      "flag": "--capture-profile",
+      "format": "JSON capture profile",
+      "requirement": "Caller supplies the matching capture settings; no default private recovery location."
+    },
+    {
+      "flag": "--studio-source",
+      "format": "Python studio source",
+      "requirement": "Caller supplies the explicit supported source dependency."
+    }
+  ],
+  "numerical_inputs": [
+    {
+      "format": "NumPy NPZ",
+      "contract": "The chosen source script declares the required array names, shape relationships, dtypes and units. Use a matching externally supplied state; source preservation does not provide or qualify that state."
+    },
+    {
+      "format": "JSON",
+      "contract": "Study-specific configuration or state; keys and validation are defined by the consuming source."
+    },
+    {
+      "format": "CSV",
+      "contract": "Study-specific numerical columns and units; see the consuming source."
+    }
+  ],
+  "validation_scope": "The argument helper checks explicit path presence and file existence. It does not certify numerical compatibility or replay completeness."
+}

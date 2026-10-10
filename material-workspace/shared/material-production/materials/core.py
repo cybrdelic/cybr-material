@@ -29,8 +29,8 @@ def resolve(reference):
 
 def registry():
  r=read(ROOT/'registry.json');ids=[m['id'] for m in r['materials']]
- if len(ids)!=35 or len(set(ids))!=35 or sorted(int(i[:2]) for i in ids)!=list(range(1,36)):
-  raise ContractError('Registry must contain each of 35 identities exactly once')
+ if len(ids)!=36 or len(set(ids))!=36 or sorted(int(i[:2]) for i in ids)!=list(range(1,37)):
+  raise ContractError('Registry must contain each of 36 identities exactly once')
  return r
 
 def material(identifier):

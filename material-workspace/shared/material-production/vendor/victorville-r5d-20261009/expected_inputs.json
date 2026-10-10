@@ -1,0 +1,32 @@
+{
+  "fracture_solids.json": {
+    "sha256": "1e87f9414bf2e4460e344e1fe8d630a8f50dff965c3e2a4680af02db34bc814b"
+  },
+  "microbed.npz": {
+    "container_sha256_at_review": "7a09007d50e444c28231fd30cddda185d2f01146f3b1a47b014ebd25c0b415c4",
+    "arrays": {
+      "height": {
+        "shape": [
+          1101,
+          1101
+        ],
+        "dtype": "float32",
+        "sha256": "495ea8427cad7f1d8621a3c1c5dc017474331f30a283bac3b0b874dd494ef850"
+      },
+      "color": {
+        "shape": [
+          1101,
+          1101,
+          3
+        ],
+        "dtype": "float32",
+        "sha256": "4a67b9c8115addbb76966e2d3ca89296ccec96315028b80f439930913d11e93a"
+      },
+      "side_m": {
+        "shape": [],
+        "dtype": "float64",
+        "sha256": "5f77e75cd3a3c9492ee73945560b226e76ef1a8d18174a105ed8379e3bf31ada"
+      }
+    }
+  }
+}
