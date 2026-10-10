@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "default_preview_preset": "cybr_grazing_warm_v1",
+  "preset_file": "cybr_grazing_warm_v1.json",
+  "default_composition": "reference",
+  "width": 640,
+  "height": 640,
+  "full_specimen_padding": 1.1,
+  "scope": "Future material preview jobs prepared with this local helper; no global preferences or existing scenes are changed.",
+  "automatic_batch_rerender": false
+}

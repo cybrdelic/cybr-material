@@ -1,0 +1,16 @@
+{
+  "version": "R5D",
+  "approved_scene_sha256": "303c939345de032c939ad5b36b669355d9d954ac9dcf881c314d72e33a9faf2d",
+  "approved_scene_bytes": 309768424,
+  "source_sha256": "320dd02e5ac661f4f9f3b470d614e0b3fb103614b0d2cd740aded5964ffa4246",
+  "geometry_receipt_sha256": "ab459cb81aeba9e2cfe823b448bbcbf7c816b0027c79c6bc5e13fe8f80d13c68",
+  "ground_appearance_approved": true,
+  "road_scene_approved": false,
+  "scene_rebuild_byte_parity_qualified": false,
+  "evidence_scope": "Original executed scene and geometry receipt, with source identity checked at integration. No new geometry/render execution is asserted.",
+  "diagnostic_image_sha256": "dfd5746a8cec3debfd16592488af42bd4ccbf285f3113944425e762f5bd4b65f",
+  "diagnostic_resolution": [
+    800,
+    640
+  ]
+}

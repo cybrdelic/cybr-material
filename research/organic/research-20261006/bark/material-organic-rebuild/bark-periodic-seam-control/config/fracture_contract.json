@@ -1,0 +1,16 @@
+{
+  "status": "UNBOUND: no physical damaged solve permitted by this file",
+  "peak_traction_Pa": null,
+  "fracture_energy_J_m2": null,
+  "penalty_Pa_per_m": null,
+  "initial_flaw": null,
+  "path": "Single x=0 longitudinal radial surface; normal tangential, advance radial, front axial. It repeats once per representative sector.",
+  "bulk_interface_choice": "All remaining numerical faces and all stock boundaries are conforming and perfectly bonded.",
+  "available_evidence": "Processed reproduction cork nominal tangential subgroup peaks 0.50–0.75 MPa are anchors, not measured cohesive strengths. Published mode-I K values do not identify Gc without compatible directional compliance and crack-system reduction.",
+  "required_scenario_rationale": "Name peak, Gc, penalty, initial flaw, intended finite-size constraint, and the unmeasured assumptions. Never describe scenario parameters as measured virgin-cork properties.",
+  "operator_contract": "delta0=T0/Kpen; deltaf=2Gc/T0; require deltaf>delta0. Independently integrate traction work to Gc. The tested scalar mixed opening rule and frictionless closure are numerical assumptions.",
+  "resolution": "The present 3/4/6 mm radial stocks are not an accepted fracture resolution. Subdivide within stocks without changing birth/material identities; hold parameters fixed and resolve the measured active traction zone. Do not tune strength or Gc to a cheap mesh.",
+  "history": "Constitutive evaluations and line-search trials must not mutate accepted history. A proposed maximum-opening/damage history is private until an accepted, energy-accounted evolution event. Loss of equilibrium or snapping remains unresolved, not numerical descent relabeled as physical dissipation.",
+  "growth_claim": "Path-conditioned mechanism test only, not predicted bark pattern, annual cohorts, multiple periderms, or a complete growth history. Q. suber has one persistent periderm; the three stocks are numerical subdivisions.",
+  "whole_trunk_limit": "The current local sector angle is 0.048/0.105 rad. A closed full-trunk model requires an integer number of repeated sectors; no closed full-trunk construction is claimed."
+}

@@ -1,0 +1,8 @@
+{
+  "11_bark": {"seed": 601, "tile_m": 0.18, "height_scale_m": 0.008},
+  "12_lattice_wire": {"pitch_m": 0.006, "wire_radius_m": 0.00042},
+  "14_chainmail": {"pitch_m": 0.01, "ring_radius_m": 0.004, "wire_radius_m": 0.00045},
+  "17_blanket": {"fiber_count": 42000, "fiber_length_m": 0.0024, "fiber_radius_m": 0.000018},
+  "22_petg": {"layer_height_m": 0.0002, "wall_thickness_m": 0.0012, "bead_width_m": 0.00045},
+  "23_petg_transparent": {"layer_height_m": 0.0002, "wall_thickness_m": 0.0012, "transmission": 0.96, "roughness": 0.075}
+}

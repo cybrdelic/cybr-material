@@ -1,0 +1,16 @@
+{
+  "resolution": [
+    4096,
+    4096
+  ],
+  "png_sha256": {
+    "BaseColor": "88c669be7ce1401c49b6bbabd7610095166ba52fa77dd9232ed90f58472a2db6",
+    "Roughness": "b1733c00a22f444e0acbebc9fd509658ea46e406c792fb6ce5a3b2c54d880e3b",
+    "Metallic": "98a02e037b6c601567212b2c1c2c8d50008f2c30446897060b4ad4704fb0e8cc",
+    "Normal_Object": "1fd4a04459976da99904b350fc8bf33f13bbbfed3ffc5d57acc7c0822a794412"
+  },
+  "GeometryHeight.npy_sha256": "ba4a8e9b74325ed7932cc205880b380bbfe45d1af1268468d3df0ad8111df049",
+  "normal_contract": "Full metric OBJECT RGB16, not residual tangent",
+  "physical_qualification": false,
+  "selected": false
+}

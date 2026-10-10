@@ -1,0 +1,41 @@
+{
+  "selection": "approved_r5d_discrete_ground_20261009",
+  "files": [
+    {
+      "path": "PROVENANCE.json",
+      "sha256": "c32156cd37785fb678503e568aa1633b936dae098fd52daecac171dca178714c"
+    },
+    {
+      "path": "README.md",
+      "sha256": "9e972ac301d6c7bf5346d1a1353fb05b381c7509e854461b7d0a30cde68aed01"
+    },
+    {
+      "path": "REVIEW.json",
+      "sha256": "3ebea0a6b9f05d92827b6acfd7c0e31f3e59752ab887c40e9e41a2113239503d"
+    },
+    {
+      "path": "expected_inputs.json",
+      "sha256": "91de7796ace46a5c5ea6b1a086b9906c9eb551914804cadcec6a5a92bbee1194"
+    },
+    {
+      "path": "receipts/geometry_d.json",
+      "sha256": "ab459cb81aeba9e2cfe823b448bbcbf7c816b0027c79c6bc5e13fe8f80d13c68"
+    },
+    {
+      "path": "reconstruct.py",
+      "sha256": "1d585564e464f1036be54158881ab90a49d81ab223fa80c0cdb4cfbc61fcb81d"
+    },
+    {
+      "path": "src/build_diagnostic.py",
+      "sha256": "320dd02e5ac661f4f9f3b470d614e0b3fb103614b0d2cd740aded5964ffa4246"
+    },
+    {
+      "path": "src/compacted_microbed.py",
+      "sha256": "355576685bd6ef8492d0e4f2e5f7ab3963c58179a1335ec78ce924eecf378ec7"
+    },
+    {
+      "path": "src/fracture_prototypes.py",
+      "sha256": "394bfc265be6e98cec9cd3f0bdbe8c2862a591bdfe0c0edd7262e3d92623c078"
+    }
+  ]
+}

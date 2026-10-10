@@ -66,6 +66,18 @@ def asphalt_fields(n):
   'normal_space':'OBJECT: full metric height, not tangent residual',
   'physical_qualification':False}
 
+
+def rejected_victorville_r2_fields(n):
+ root=ROOT/'vendor/victorville-sediment-r2-20261009'
+ lock=read(root/'SOURCE_LOCK.json')
+ for entry in lock['files']:check_hash(ROOT/entry['path'],entry['sha256'])
+ module=load(root/'source/victorville_ground.py','candidate_victorville_ground')
+ fields,meta=module.evaluate(read(root/'recipe.json'),n)
+ fields.pop('GrainID') # Discrete ownership IDs are not a normalized PBR channel.
+ meta['packing'].pop('geometry_primitives',None)
+ meta['mode']='rejected visual R2 research; not the selected R5D geometry'
+ return fields,meta
+
 def validate_fields(fields,n):
  required={'BaseColor','Height','Roughness','Metallic','Opacity'}
  if not required<=fields.keys():raise ContractError('Missing generated channel')
@@ -79,6 +91,7 @@ def evaluate(identifier,n):
  if not 16<=n<=256:raise ContractError('Smoke evaluations require16..256; never production resolution')
  if identifier=='05_champagne_brass':fields,meta=brass_fields(n)
  elif identifier=='32_concrete_polished':fields,meta=concrete_fields(n)
+ elif identifier=='36_victorville_desert_ground':raise ContractError('Selected R5D is discrete geometry; use vendor/victorville-r5d-20261009/reconstruct.py, not the rejected R2 map adapter')
  elif identifier=='28_asphalt':fields,meta=asphalt_fields(n)
  else:raise ContractError('No source-generation adapter qualified for '+identifier)
  meta.update(resolution=[n,n],tier='integration smoke only; cannot promote or replace selected4K assets',channels=validate_fields(fields,n))

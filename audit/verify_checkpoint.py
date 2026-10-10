@@ -19,6 +19,7 @@ assert set(expected) == set(actual), {
 patterns = [r'(?:sk-proj-|ghp_|github_pat_)[A-Za-z0-9_-]{15,}',
             r'-----BEGIN ' + r'.*PRIVATE ' + r'KEY-----',
             r'https?://[^\s\"\)<>]*(?:[?&](?:sig|token|X-Amz-Signature|api_key)=)[^\s\"\)<>]*']
+public_patterns = [r'lib' + r'file_[A-Za-z0-9]+', r'/workspace/' + r'scratch/[^\s\"<>]+', r'/' + r'Users/[^\s\"<>]+', r'sediment' + r'://']
 python_files = 0
 for rel, p in actual.items():
     b = p.read_bytes()
@@ -31,12 +32,15 @@ for rel, p in actual.items():
     text = b.decode('utf-8')
     for pattern in patterns:
         assert not re.search(pattern, text), ('private-content pattern', rel)
+    if rel in manifest.get('privacy_checked_paths', []):
+        for pattern in public_patterns:
+            assert not re.search(pattern, text), ('private recovery metadata in new publication', rel)
     if p.suffix == '.py':
         ast.parse(text, filename=rel)
         python_files += 1
 registry = json.loads((ROOT / 'material-workspace/shared/material-production/registry.json').read_text())
 ids = [m['id'] for m in registry['materials']]
-assert len(ids) == len(set(ids)) == 35
-assert sorted(int(x[:2]) for x in ids) == list(range(1, 36))
+assert len(ids) == len(set(ids)) == 36
+assert sorted(int(x[:2]) for x in ids) == list(range(1, 37))
 print(json.dumps({'pass': True, 'files': len(actual), 'python_syntax_files': python_files,
-                  'material_ids': 35, 'scope': 'Curated source integrity and selection; native asset replay remains separate.'}))
+                  'material_ids': 36, 'scope': 'Curated source integrity and selection; native asset replay remains separate.'}))

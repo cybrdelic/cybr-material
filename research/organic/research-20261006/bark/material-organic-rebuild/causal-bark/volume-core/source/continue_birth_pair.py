@@ -1,0 +1,11 @@
+from pathlib import Path
+import numpy as np,json,time,hashlib
+from birth_pair import BirthPair
+R=Path(__file__).resolve().parents[1];src=R/'data/pair_dt02_relax';dest=R/'data/pair_dt02_equilibrated'
+if dest.exists():raise FileExistsError('Frozen state exists')
+meta=json.loads((src/'receipt.json').read_text());raw=(src/'state.npz').read_bytes();assert hashlib.sha256(raw).hexdigest()==meta['state_sha256'];z=np.load(src/'state.npz');m=BirthPair();q=z['q'].copy();v=z['velocity_free'].copy();m.damage=z['damage'].copy();m.maximum_opening=z['maximum_opening'].copy();dt=meta['dt_s'];rate=meta['damping_rate_per_s'];tau=np.exp(-rate*dt/2);heat=meta['final']['heat_J'];E0=m.evaluate(z['q_initial'])[0];E,g,_,_=m.evaluate(q);start=time.time();maxerr=meta['maximum_relative_energy_error']*E0
+kin=lambda v:float(.5*v@m.Mf@v)
+for i in range(int(np.ceil(.0004/dt))):
+ K=kin(v);v*=tau;heat+=K-kin(v);vh=v-.5*dt*(m.Minv@g[m.free]);q[m.free]+=dt*vh;_,_,opening,_=m.evaluate(q);m.evolve_damage(opening);E,g,_,vol=m.evaluate(q);v=vh-.5*dt*(m.Minv@g[m.free]);K=kin(v);v*=tau;heat+=K-kin(v);K=kin(v);D=m.dissipation();error=E+K+D+heat-E0;maxerr=max(maxerr,abs(error));res=np.linalg.norm(g[m.free])/max(np.linalg.norm(g[m.fixed]),1e-15)
+ if res<1e-7 and K/E0<1e-12:break
+out={'continued_from_state_sha256':meta['state_sha256'],'physical_coefficients_unchanged':True,'time_s':meta['duration_s']+(i+1)*dt,'additional_seconds':(i+1)*dt,'actual_free_to_support_force_ratio':float(res),'kinetic_to_initial_energy_ratio':K/E0,'maximum_relative_energy_error':maxerr/E0,'energy_error_J':error,'energy_components_J':{'stored':E,'kinetic':K,'cohesive_dissipation':D,'heat':heat,'initial':E0},'converged':bool(res<1e-7 and K/E0<1e-12),'elapsed_s':time.time()-start,'scope':'Energy-accounted terminal relaxation; not a complete bark formation/material qualification.'};dest.mkdir(parents=True);np.savez_compressed(dest/'state.npz',q=q,velocity_free=v,damage=m.damage,maximum_opening=m.maximum_opening);out['state_sha256']=hashlib.sha256((dest/'state.npz').read_bytes()).hexdigest();(dest/'receipt.json').write_text(json.dumps(out,indent=2));(R/'receipts/pair_dt02_equilibrated.json').write_text(json.dumps(out,indent=2));print(json.dumps(out,indent=2))

@@ -1,6 +1,6 @@
 # Selected material pipeline
 
-The registry contains 35 identities with exact source/capture hashes. It preserves
+The registry contains 36 identities with exact source/capture hashes. It preserves
 stronger visual anchors and never selects the newest experiment automatically.
 The runtime and pinned original/aggregate generators are included; native scenes,
 map sets and some per-material reconstruction inputs require exact restoration.
@@ -56,9 +56,15 @@ overwrite a selected scene or promote a candidate. See [capture modes](CAPTURE_M
 - Wood anchors and r5 fleece/carpet remain protected. New numerical or structural
   studies do not replace a stronger reviewed complete panel.
 - Full formation physics, measured calibration and clean-clone reconstruction of
-  all 35 materials remain incomplete. Historical iterations are preserved separately.
+  all 36 materials remain incomplete. Historical iterations are preserved separately.
 
 
 ## Selected asphalt update · 2026-10-09
 
 Material28 now selects the explicitly reviewed fracture candidate. [Exact source, native generation and restoration](vendor/asphalt-reviewed-20261009/README.md) retain the previous selection separately. This asphalt-only update does not select the subsequent binder refinement or change other material identities.
+
+## Approved ground and preserved research · 2026-10-10
+
+Material 36 now selects the approved [Victorville R5D discrete ground](vendor/victorville-r5d-20261009/README.md). Its exact source and original-scene hashes are pinned. The rejected R2 map candidate remains research only and cannot be generated as the selected identity. R5D is finite geometry, not a native4096 map or seamless-tile claim.
+
+[Additional source inventory](../../../audit/LATEST_SOURCE_ADDITIONS.md) covers held organic/textile/carpet research, the unselected asphalt binder experiment and the additive grazing-preview preset. Earlier r5 fleece/carpet, bark and asphalt selections are preserved. Public showcase references use content hashes; private recovery locations and attachment identifiers are not published.

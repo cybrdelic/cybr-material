@@ -1,0 +1,4 @@
+from pathlib import Path
+import json,numpy as np
+from newton_regularized_stable import MatrixFreeBundle
+P=Path(__file__).resolve().parents[1];c=MatrixFreeBundle(19,128);c.controls(.00238,0);z=np.load(P/'data/yarn_19_qualified.npz');c.w[:]=z['w'];r=c.solve(.00238,0,wall_s=30,maxiter=2);out=dict(passed=r['passed'],force_residual=r['maximum_scaled_KKT_residual'],stability=r['stability'],accepted_steps=r['accepted_steps'],state_unchanged=bool(np.array_equal(c.w,z['w'])),source_state='yarn_19_qualified.npz',scope='Bounded generalized stability integration; the previously accepted physical state must pass without a new search step.');(P/'receipts/qualified_restart.json').write_text(json.dumps(out,indent=2));print(json.dumps(out,indent=2));assert out['passed'] and out['state_unchanged'] and out['accepted_steps']==0
