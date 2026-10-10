@@ -51,10 +51,17 @@ def reconstruct(out, blender='blender', prepare_only=False):
     for name in ['fracture_prototypes.py', 'compacted_microbed.py', 'build_diagnostic.py']:
         shutil.copyfile(ROOT / 'src' / name, out / 'src' / name)
     env = dict(os.environ, OPENBLAS_NUM_THREADS='1', OMP_NUM_THREADS='1')
-    for name in ['fracture_prototypes.py', 'compacted_microbed.py']:
-        subprocess.run([sys.executable, str(out / 'src' / name)], check=True, env=env)
+    # Convex-hull face/vertex ordering can differ across hosts. The accepted
+    # normalized fracture geometry is an explicit text source recipe.
+    expected = json.loads((ROOT / 'expected_inputs.json').read_text())
+    prototype = expected['fracture_solids.json']['canonical_json'].encode('utf-8')
+    if hashlib.sha256(prototype).hexdigest() != expected['fracture_solids.json']['sha256']:
+        raise ValueError('Pinned fracture geometry source is corrupt')
+    (out / 'prototypes/fracture_solids.json').write_bytes(prototype)
+    subprocess.run([sys.executable, str(out / 'src/compacted_microbed.py')], check=True, env=env)
     result = verify_inputs(out)
-    result.update(version='R5D', geometry_rebuilt=False, render_performed=False,
+    result.update(version='R5D', fracture_prototypes_mode='pinned normalized geometry source',
+                  geometry_rebuilt=False, render_performed=False,
                   selected_scene_binary_replacement=False)
     if not prepare_only:
         subprocess.run([blender, '-b', '-t', '2', '--python-exit-code', '1',

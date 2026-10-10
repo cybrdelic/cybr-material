@@ -653,8 +653,8 @@
     },
     {
       "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/README.md",
-      "bytes": 2495,
-      "sha256": "267244d66078b75657120c311effd64410a911c319dd4ff142c8035a274b8db2"
+      "bytes": 2929,
+      "sha256": "9e972ac301d6c7bf5346d1a1353fb05b381c7509e854461b7d0a30cde68aed01"
     },
     {
       "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/REVIEW.json",
@@ -664,12 +664,12 @@
     {
       "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/SOURCE_LOCK.json",
       "bytes": 1269,
-      "sha256": "c30c33e54532321b08e6ca8f0711f7442432cdfcbcb7e16bd0a5212ff85894c5"
+      "sha256": "d0fdbeae46c2ee90fe00202cbf8e6383fe80eaaddf912cc664d5f36df2c8a192"
     },
     {
       "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/expected_inputs.json",
-      "bytes": 840,
-      "sha256": "ae67fbe0f253bb882ffddf1b2d9cd598de38b0fb0836a228442bb01c622101f8"
+      "bytes": 547658,
+      "sha256": "91de7796ace46a5c5ea6b1a086b9906c9eb551914804cadcec6a5a92bbee1194"
     },
     {
       "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/receipts/geometry_d.json",
@@ -678,8 +678,8 @@
     },
     {
       "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/reconstruct.py",
-      "bytes": 3489,
-      "sha256": "1948ae12a4c2df2bc7667b903cf2c25a01300abc294b04703c9965f5f9c4c78b"
+      "bytes": 4044,
+      "sha256": "1d585564e464f1036be54158881ab90a49d81ab223fa80c0cdb4cfbc61fcb81d"
     },
     {
       "path": "material-workspace/shared/material-production/vendor/victorville-r5d-20261009/src/build_diagnostic.py",
