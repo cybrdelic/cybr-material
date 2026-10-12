@@ -1,0 +1,26 @@
+name: Validate opt-in granular matrix
+on:
+  pull_request:
+    paths: ['source/granular_matrix*', 'tests/*granular_matrix*', 'docs/GRANULAR_MATRIX_DU5.md', '.github/workflows/validate-granular-matrix.yml']
+  push:
+    branches: [master]
+    paths: ['source/granular_matrix*', 'tests/*granular_matrix*', '.github/workflows/validate-granular-matrix.yml']
+permissions:
+  contents: read
+jobs:
+  profile-contracts:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            source/granular_matrix.py
+            source/granular_matrix_profiles.json
+            tests/test_granular_matrix.py
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -p test_granular_matrix.py
