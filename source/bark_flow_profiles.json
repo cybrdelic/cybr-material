@@ -1,0 +1,32 @@
+{
+  "profiles": {
+    "victorville_dv3_dry_bark": {
+      "schema_version": 1,
+      "profile": "victorville_dv3_dry_bark",
+      "coordinate_units": "prototype-local metres; authored instance scaling applies to spacing",
+      "height_units": "world metres",
+      "bands": [
+        {
+          "cross_m": 0.0018,
+          "along_m": 0.039,
+          "height_m": 0.0007
+        },
+        {
+          "cross_m": 0.0007,
+          "along_m": 0.006,
+          "height_m": 0.00019
+        }
+      ],
+      "noise": {
+        "dimensions": "4D",
+        "scale": 1.0,
+        "detail": 1.0,
+        "roughness": 0.63,
+        "phase_origin": 14.8,
+        "phase_step": 17.3
+      },
+      "pigment_scalar_contrast": 0.48,
+      "physical_scope": "Original visual bark recipe, not measured optics or botanical growth."
+    }
+  }
+}
