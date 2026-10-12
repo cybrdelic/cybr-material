@@ -1,0 +1,21 @@
+name: Validate opt-in bark flow
+on:
+  pull_request:
+    paths: ['source/bark_flow.py', 'source/bark_flow_profiles.json', 'tests/test_bark_flow.py', '.github/workflows/validate-bark-flow.yml']
+  push:
+    branches: [master]
+    paths: ['source/bark_flow.py', 'source/bark_flow_profiles.json', 'tests/test_bark_flow.py', '.github/workflows/validate-bark-flow.yml']
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            source/bark_flow.py
+            source/bark_flow_profiles.json
+            tests/test_bark_flow.py
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m unittest discover -s tests -p test_bark_flow.py -v

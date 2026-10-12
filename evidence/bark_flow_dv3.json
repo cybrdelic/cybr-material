@@ -1,0 +1,42 @@
+{
+  "qualification": "Opt-in visual bark improvement coupled to SCENES DV3 morphology.",
+  "owner_fixture": {
+    "comparisons": [
+      {
+        "file": "whole_baseline.png",
+        "RGB_equal": true,
+        "changed_RGB_samples": 0,
+        "sha256": "f2f5df1f804893357143d5c724ae098dc46ffff71254e353d77f42ad30c6cecd"
+      },
+      {
+        "file": "whole_candidate.png",
+        "RGB_equal": true,
+        "changed_RGB_samples": 0,
+        "sha256": "eed5ea94eb5f426397cabab9d6df5b7ed8652ec4c5f3a5586a33850126097db6"
+      },
+      {
+        "file": "basal_baseline.png",
+        "RGB_equal": true,
+        "changed_RGB_samples": 0,
+        "sha256": "2f003c85e2f8dc03234d14f3e05b85fb0cec86515fa6f81affec0472fb8dc984"
+      },
+      {
+        "file": "basal_candidate.png",
+        "RGB_equal": true,
+        "changed_RGB_samples": 0,
+        "sha256": "6047ed561929220cab218c29cc85f717b0a929831e31141af0021428bc1c54b9"
+      }
+    ],
+    "all_RGB_exact": true
+  },
+  "actual_Cycles_samples": 32,
+  "world_height_coefficients_m": [
+    0.0007,
+    0.00019
+  ],
+  "prototype_spacing_scales_with_instances": true,
+  "matched_road_crop_raw_sha256": "a348c1936dd9a8f639b4f7ff7992454ff915eaa5e6d7c31d46d4d3e3a7b1d15b",
+  "source_tests_passed": 3,
+  "full_scattering_or_calibrated_filtering_claimed": false,
+  "existing_selected_material_recipes_changed": false
+}
