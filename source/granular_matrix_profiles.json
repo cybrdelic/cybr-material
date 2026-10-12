@@ -1,0 +1,69 @@
+{
+  "profiles": {
+    "victorville_du5_optical_matrix": {
+      "schema_version": 1,
+      "id": "victorville_du5_optical_matrix",
+      "quality": "Useful scene material improvement; unselected catalogue default; not photoreal completion or a measured BRDF.",
+      "units": "metres",
+      "bands": [
+        {
+          "wavelength_m": 0.016,
+          "height_coefficient_m": 0.002,
+          "scalar_pigment_contrast": 0.15,
+          "unresolved_roughness_proxy": 0.025
+        },
+        {
+          "wavelength_m": 0.008,
+          "height_coefficient_m": 0.00135,
+          "scalar_pigment_contrast": 0.12,
+          "unresolved_roughness_proxy": 0.024
+        },
+        {
+          "wavelength_m": 0.004,
+          "height_coefficient_m": 0.00065,
+          "scalar_pigment_contrast": 0.08,
+          "unresolved_roughness_proxy": 0.017
+        },
+        {
+          "wavelength_m": 0.002,
+          "height_coefficient_m": 0.00028,
+          "scalar_pigment_contrast": 0.045,
+          "unresolved_roughness_proxy": 0.01
+        },
+        {
+          "wavelength_m": 0.0008,
+          "height_coefficient_m": 0.0001,
+          "scalar_pigment_contrast": 0.025,
+          "unresolved_roughness_proxy": 0.007
+        }
+      ],
+      "noise": {
+        "dimensions": "4D",
+        "detail": 0.0,
+        "roughness": 0.55,
+        "phase_origin": 13.1,
+        "phase_step": 19.37
+      },
+      "warp": {
+        "wavelength_m": 0.0136986301369863,
+        "amplitude_m": 0.0008,
+        "detail": 1.0,
+        "roughness": 0.56
+      },
+      "filter": {
+        "full_response_cell_pixels": 5.0,
+        "zero_response_cell_pixels": 1.5
+      },
+      "pigment": {
+        "mineral_weight": 0.55,
+        "height_weight": 0.45
+      },
+      "roughness_limit": 0.985,
+      "limits": [
+        "Optical micro-surface, not added physical mineral stock.",
+        "Analytic footprint fade and roughness compensation are approximations, not an exact EWA filter or calibrated normal-variance integral.",
+        "Wavelengths are characteristic noise-cell scales, not separate mineral diameters."
+      ]
+    }
+  }
+}
