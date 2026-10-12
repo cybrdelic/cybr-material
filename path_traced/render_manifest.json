@@ -21,7 +21,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.11999999731779099,
     "material_ids": "01_calacatta_oro",
-    "elapsed_seconds": 870.74,
+    "elapsed_seconds": 868.55,
     "camera": {
       "position_m": [
         0.262800008058548,
@@ -40,8 +40,8 @@
     "inspection_width_m": 0.36,
     "geometry_height": "Height_Macro.png",
     "residual_normal": "Normal_Micro_OpenGL.png",
-    "sha256": "c2f7e727747004aed69bc7d791277de72f8e08894d5cc6bf58281d9b5927b425",
-    "bytes": 4396606
+    "sha256": "e671ce4120e3c84d7f71152a393c2af8a8ccaac5ea2c661b0116e80e3c5e88c6",
+    "bytes": 4396716
   },
   "02_roman_travertine_detail": {
     "scene": "CYCLES / Detail / Roman Travertine / Honed Vein Cut",
@@ -65,7 +65,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.11999999731779099,
     "material_ids": "02_roman_travertine",
-    "elapsed_seconds": 841.04,
+    "elapsed_seconds": 758.54,
     "camera": {
       "position_m": [
         0.262800008058548,
@@ -84,8 +84,8 @@
     "inspection_width_m": 0.36,
     "geometry_height": "Height_Macro.png",
     "residual_normal": "Normal_Micro_OpenGL.png",
-    "sha256": "9e00005d4ee14b7c4f1dba5f2c0f6e466ecd03fa999739abe4801b3bc02d1ce7",
-    "bytes": 4505525
+    "sha256": "ea5c065d7e513ca85126e9ecf189e47ffd1b671f7255b72287adc60e56da98bd",
+    "bytes": 4505458
   },
   "03_american_walnut_detail": {
     "scene": "CYCLES / Detail / American Walnut / Timeworn",
@@ -109,7 +109,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.11999999731779099,
     "material_ids": "03_american_walnut",
-    "elapsed_seconds": 911.92,
+    "elapsed_seconds": 1371.44,
     "camera": {
       "position_m": [
         0.21899999678134918,
@@ -128,8 +128,8 @@
     "inspection_width_m": 0.3,
     "geometry_height": "Height_Macro.png",
     "residual_normal": "Normal_Micro_OpenGL.png",
-    "sha256": "3a2a13a3eb1316e10fdbacbbd18af1e40569a57ab20dc1f0701710a81b8ea8f7",
-    "bytes": 4776973
+    "sha256": "5da079a9528e5c62217d5985920123013c55f2b33719882a5c85d0d38a281262",
+    "bytes": 4776847
   },
   "04_fumed_oak_detail": {
     "scene": "CYCLES / Detail / Fumed Oak / Open Grain",
@@ -153,7 +153,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.11999999731779099,
     "material_ids": "04_fumed_oak",
-    "elapsed_seconds": 1235.31,
+    "elapsed_seconds": 1428.56,
     "camera": {
       "position_m": [
         0.21899999678134918,
@@ -172,8 +172,8 @@
     "inspection_width_m": 0.3,
     "geometry_height": "Height_Macro.png",
     "residual_normal": "Normal_Micro_OpenGL.png",
-    "sha256": "c6d109be1421dfe12a90dcc6f4e051a61b55c38bf6cab0be0417bccf83eb1154",
-    "bytes": 4758508
+    "sha256": "6596ac70f0e94c508a02afcb7767b19bd92dc74223cc1906f401992f8d0e119a",
+    "bytes": 4758484
   },
   "05_champagne_brass_detail": {
     "scene": "CYCLES / Detail / Champagne Brass / Satin Brushed",
@@ -197,7 +197,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.11999999731779099,
     "material_ids": "05_champagne_brass",
-    "elapsed_seconds": 469.57,
+    "elapsed_seconds": 524.53,
     "camera": {
       "position_m": [
         0.131400004029274,
@@ -216,8 +216,8 @@
     "inspection_width_m": 0.18,
     "geometry_height": "Height_Macro.png",
     "residual_normal": "Normal_Micro_OpenGL.png",
-    "sha256": "789187e25c863439f0c03f31c18214936d765bb00903876656429670723ac83c",
-    "bytes": 4720036
+    "sha256": "8a56e564162414c0028c609bc00ad9393dece38470baccddaab5071b5da15a8e",
+    "bytes": 4720017
   },
   "06_blackened_steel_detail": {
     "scene": "CYCLES / Detail / Blackened Steel / Satin Oxide",
@@ -241,7 +241,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.11999999731779099,
     "material_ids": "06_blackened_steel",
-    "elapsed_seconds": 811.62,
+    "elapsed_seconds": 571.96,
     "camera": {
       "position_m": [
         0.131400004029274,
@@ -260,8 +260,8 @@
     "inspection_width_m": 0.18,
     "geometry_height": "Height_Macro.png",
     "residual_normal": "Normal_Micro_OpenGL.png",
-    "sha256": "9fb400b8fc6768bf044ca68492b40a369da506dd84d8d5ce0c1a85c5b0e0ed00",
-    "bytes": 4552799
+    "sha256": "7105b5002cbaa94a1ce5857edbd7512a2d4e236068e9ca1765ee6b2dc570b82e",
+    "bytes": 4552687
   },
   "07_bone_porcelain_detail": {
     "scene": "CYCLES / Detail / Bone Porcelain / Clear Glaze",
@@ -285,7 +285,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.11999999731779099,
     "material_ids": "07_bone_porcelain",
-    "elapsed_seconds": 714.16,
+    "elapsed_seconds": 1181.4,
     "camera": {
       "position_m": [
         0.131400004029274,
@@ -304,8 +304,8 @@
     "inspection_width_m": 0.18,
     "geometry_height": "Height_Macro.png",
     "residual_normal": "Normal_Micro_OpenGL.png",
-    "sha256": "943a2dfef2e07088c3d3387e986db27a83adae0fb2143ce6fcb44c40226de487",
-    "bytes": 4786529
+    "sha256": "9dc0460e54a0e7b33aaf233eb7446eb43ba244c7d8f22211b8942e4f918fd8cc",
+    "bytes": 4786417
   },
   "08_saddle_leather_detail": {
     "scene": "CYCLES / Detail / Saddle Leather / Full Grain",
@@ -329,7 +329,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.11999999731779099,
     "material_ids": "08_saddle_leather",
-    "elapsed_seconds": 573.37,
+    "elapsed_seconds": 795.52,
     "camera": {
       "position_m": [
         0.1459999978542328,
@@ -348,8 +348,8 @@
     "inspection_width_m": 0.2,
     "geometry_height": "Height_Macro.png",
     "residual_normal": "Normal_Micro_OpenGL.png",
-    "sha256": "c4c5f549fc093beed00a545c86dbb8f665e578a00bc186471fe46777fe6b480c",
-    "bytes": 4764114
+    "sha256": "77ed76fd447b93adbae413d960e6665801d09643c8571fad9a1b03d307ba90b1",
+    "bytes": 4764151
   },
   "09_lime_plaster_detail": {
     "scene": "CYCLES / Detail / Lime Plaster / Troweled Skim",
@@ -373,7 +373,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.11999999731779099,
     "material_ids": "09_lime_plaster",
-    "elapsed_seconds": 565.96,
+    "elapsed_seconds": 406.25,
     "camera": {
       "position_m": [
         0.23360000550746918,
@@ -392,8 +392,8 @@
     "inspection_width_m": 0.32,
     "geometry_height": "Height_Macro.png",
     "residual_normal": "Normal_Micro_OpenGL.png",
-    "sha256": "28e8b85f3e76849fe68841a7f767acb53111f8ed18b70d7ebf357589b32f9fc4",
-    "bytes": 4268549
+    "sha256": "c995e724e28390fda12132d5b709e670755302d4c9f0768e5d041332a81f09a1",
+    "bytes": 4268578
   },
   "10_natural_linen_detail": {
     "scene": "CYCLES / Detail / Natural Linen / Frayed",
@@ -417,7 +417,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.11999999731779099,
     "material_ids": "10_natural_linen",
-    "elapsed_seconds": 771.62,
+    "elapsed_seconds": 840.61,
     "camera": {
       "position_m": [
         0.16060000658035278,
@@ -436,7 +436,7 @@
     "inspection_width_m": 0.22,
     "geometry_height": "Height_Macro.png",
     "residual_normal": "Normal_Micro_OpenGL.png",
-    "sha256": "f1a0ef8337ff2da6acff586d1d1de1fda1dfba665c6dd7189ac659059f1fbba6",
+    "sha256": "4680a884312b24b3c2387801c3a56847518af345f980d9f2711b2f94aee96152",
     "bytes": 4770917
   },
   "11_stone_and_timber": {
@@ -461,7 +461,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": 0.10000000149011612,
     "material_ids": "09_lime_plaster,03_american_walnut,01_calacatta_oro,02_roman_travertine,04_fumed_oak",
-    "elapsed_seconds": 1567.06,
+    "elapsed_seconds": 1831.61,
     "camera": {
       "position_m": [
         0.5400000214576721,
@@ -476,8 +476,8 @@
       "lens_mm": 56.0
     },
     "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
-    "sha256": "b57dbfe2d3deb49cc33f88ea65c3be2cf3ed3e295b35cc7d7230d02e8ddfbe0d",
-    "bytes": 5802130
+    "sha256": "ffe9a3af954b660b2d3466f3877336c24e9f3c818792c3d53de04b4e56d58d84",
+    "bytes": 5802258
   },
   "12_leather_and_linen": {
     "scene": "CYCLES / Still life / Leather and Linen",
@@ -501,7 +501,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.30000001192092896,
     "material_ids": "04_fumed_oak,10_natural_linen,08_saddle_leather,05_champagne_brass",
-    "elapsed_seconds": 1145.3,
+    "elapsed_seconds": 936.82,
     "camera": {
       "position_m": [
         0.27000001072883606,
@@ -516,8 +516,8 @@
       "lens_mm": 63.0
     },
     "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
-    "sha256": "6e59d52ef0cc70f85a5b402acd22a7da6fdc414574350f05d00c7c7080b4ab7c",
-    "bytes": 6123137
+    "sha256": "1a85211ed021728a226f6f5628db42bf421f5a2a2a6b2bf504c5bac1fda21cc4",
+    "bytes": 6123481
   },
   "13_metal_and_ceramic": {
     "scene": "CYCLES / Still life / Metal and Ceramic",
@@ -541,7 +541,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.25,
     "material_ids": "09_lime_plaster,07_bone_porcelain,06_blackened_steel,05_champagne_brass",
-    "elapsed_seconds": 1009.95,
+    "elapsed_seconds": 686.82,
     "camera": {
       "position_m": [
         0.3499999940395355,
@@ -556,8 +556,8 @@
       "lens_mm": 60.0
     },
     "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
-    "sha256": "eadc336ee167fc90b087280ec368f165e565a60155f0daeebbb94028ffd956b6",
-    "bytes": 5522319
+    "sha256": "ebae67a5de4d0176b2653e13a5bd5af6aa955d9e6ed288de53f8e21bb173040a",
+    "bytes": 5522349
   },
   "14_walnut_salon": {
     "scene": "CYCLES / Architecture / Walnut Parquet Salon",
@@ -581,7 +581,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.44999998807907104,
     "material_ids": "01_calacatta_oro,02_roman_travertine,03_american_walnut,04_fumed_oak,05_champagne_brass,06_blackened_steel,07_bone_porcelain,08_saddle_leather,09_lime_plaster,10_natural_linen",
-    "elapsed_seconds": 3262.63,
+    "elapsed_seconds": 5495.27,
     "camera": {
       "position_m": [
         2.950000047683716,
@@ -610,8 +610,8 @@
     "source_image_inputs": 0,
     "room_use": "Furnished sitting room with storage, lighting, framed artwork and sewn upholstery",
     "wall_finish": "Intact mineral paint with plaster reveals and skirting",
-    "sha256": "49d9f7733410875e50c8aaef9e33580fa77ea37d5c28f3eaa6cef43295c7ae70",
-    "bytes": 13386696
+    "sha256": "87460b1b4d79d4f1be89fc276ff6be6905357451339c9eb45e188c40a8199dd3",
+    "bytes": 13389307
   },
   "15_oak_library": {
     "scene": "CYCLES / Architecture / Oak Reading Room",
@@ -635,7 +635,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.44999998807907104,
     "material_ids": "01_calacatta_oro,02_roman_travertine,04_fumed_oak,05_champagne_brass,06_blackened_steel,07_bone_porcelain,08_saddle_leather,09_lime_plaster,10_natural_linen",
-    "elapsed_seconds": 5433.95,
+    "elapsed_seconds": 5458.02,
     "camera": {
       "position_m": [
         2.549999952316284,
@@ -664,8 +664,8 @@
     "source_image_inputs": 0,
     "room_use": "Reading and writing room with bound books, writing console, task lighting and fitted hardware",
     "wall_finish": "Intact mineral paint with plaster reveals and skirting",
-    "sha256": "95dae0c51161146bf70b90fb27cd358a68ee34b06ab6161facca3b5a520157e7",
-    "bytes": 14054829
+    "sha256": "8ec409360b2ae9f516f49b0362edf46e60222fb95e05ff9446cb5308dcb43da8",
+    "bytes": 14055261
   },
   "16_stone_kitchen": {
     "scene": "CYCLES / Architecture / Stone Kitchen Atelier",
@@ -689,7 +689,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.44999998807907104,
     "material_ids": "01_calacatta_oro,02_roman_travertine,03_american_walnut,04_fumed_oak,05_champagne_brass,06_blackened_steel,07_bone_porcelain,08_saddle_leather,09_lime_plaster,10_natural_linen",
-    "elapsed_seconds": 4932.16,
+    "elapsed_seconds": 5153.66,
     "camera": {
       "position_m": [
         2.880000114440918,
@@ -717,8 +717,8 @@
     "appliance_integration": "850 mm refrigerator, mounted nickel pulls, door seals, vent grille and fitted overhead cabinet",
     "sink_fabrication": "570 mm countertop aperture, formed 1 mm stainless bowl, drain and mounted gooseneck mixer",
     "comparison_camera_name": "Camera / v3.1.1 comparison",
-    "sha256": "899babf360bccc87962ee219850feb95669145fdea03e5b3ad4fa9e7cf489347",
-    "bytes": 13130979
+    "sha256": "4f9a3a12f9783ed9507142c287c6cd6df4faaab686dc3519e71f44cef8581bdf",
+    "bytes": 13130554
   },
   "17_parquet_detail": {
     "scene": "CYCLES / Architecture / Parquet / Joints and Surface Wear",
@@ -742,7 +742,7 @@
     "look": "AgX - Medium High Contrast",
     "exposure": -0.44999998807907104,
     "material_ids": "03_american_walnut,05_champagne_brass,09_lime_plaster",
-    "elapsed_seconds": 4794.65,
+    "elapsed_seconds": 5530.08,
     "camera": {
       "position_m": [
         0.7200000286102295,
@@ -764,7 +764,7 @@
     "floor_board_count": 262,
     "architecture_object_count": 270,
     "source_image_inputs": 0,
-    "sha256": "4069b106aacfc16ca7e0c24d907ae4f8577f5dc0d4d32c9ee2a7de0593905f4a",
-    "bytes": 15238701
+    "sha256": "de030a381649a6930230ed04717d47997bdbd2fd2f57a96d5da047b0950ed496",
+    "bytes": 15239915
   }
 }
