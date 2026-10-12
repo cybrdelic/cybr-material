@@ -1,0 +1,44 @@
+{
+  "schema": "cybr.material.download-receipt.v1",
+  "verified_at": "2026-10-12T14:55:32Z",
+  "repository": "cybrdelic/cybr-material",
+  "release": {
+    "tag": "v3.1.1",
+    "id": 403310088,
+    "tag_commit": "d8b35a52c80667f88c336c9150f64f82cefcf54f",
+    "tag_source_url": "https://github.com/cybrdelic/cybr-material/tree/d8b35a52c80667f88c336c9150f64f82cefcf54f"
+  },
+  "build": {
+    "source_commit": "85af551411994757395d6a490d8ae649cb25412e",
+    "source_url": "https://github.com/cybrdelic/cybr-material/tree/85af551411994757395d6a490d8ae649cb25412e",
+    "generated_assets_commit": "8ad340e110d3280a0ca8eff79cb0f2097a9a4518",
+    "generated_assets_url": "https://github.com/cybrdelic/cybr-material/commit/8ad340e110d3280a0ca8eff79cb0f2097a9a4518",
+    "workflow_path": ".github/workflows/build-suite.yml",
+    "run_id": 38216623875,
+    "run_attempt": 1,
+    "run_url": "https://github.com/cybrdelic/cybr-material/actions/runs/38216623875",
+    "conclusion": "success"
+  },
+  "download": {
+    "file": "CYBR_Material_V3.zip",
+    "files": 1167,
+    "bytes": 926386677,
+    "sha256": "5517a3f6f19f1ef0b8cf8b0e12b8b8176d3197d0caac64eb7cdc5f750389ac03",
+    "release_asset_id": 633230676,
+    "url": "https://github.com/cybrdelic/cybr-material/releases/download/v3.1.1/CYBR_Material_V3.zip",
+    "created_at": "2026-10-12T08:58:43Z",
+    "updated_at": "2026-10-12T08:59:03Z",
+    "mutable": true
+  },
+  "verification": {
+    "release_manifest_url": "https://github.com/cybrdelic/cybr-material/releases/download/v3.1.1/release.json",
+    "manifest_sha256": "a4093f87f6a33c74367bc8642eeb0c6bcb15a95e0aedd2403c9512b54d3d0e93",
+    "manifest_and_github_asset_digest_agree": true,
+    "archive_locally_downloaded_and_rehashed": false
+  },
+  "notes": [
+    "The archive was packaged before the generated-assets commit. The workflow run head is the packaged build source.",
+    "Existing v3.1.1 assets are overwritten by the publisher; the tag stays at older source. Automatic tag source archives are not this ZIP.",
+    "This receipt describes the observed download, not a visual-quality approval or an immutable release guarantee."
+  ]
+}

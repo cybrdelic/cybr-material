@@ -2,12 +2,13 @@
 
 # CYBR MATERIAL
 
-**Unreleased fabrication and study repair:** all seventeen outputs have been
+**Fabrication and study repair checkpoint:** all seventeen outputs have been
 rebuilt for review. The ten material views now show shaped physical specimens;
 matched original surface cameras are retained separately. See the
 [repair review and remaining limits](docs/STUDY_REPAIR_REVIEW.md) and
 [all before/after comparisons](docs/images/comparisons/). Originals from
-v3.1.1 remain as native PNG evidence. This branch does not publish a release.
+v3.1.1 remain as native PNG evidence. The refreshed download and the older
+v3.1.1 source tag are distinguished below.
 
 A reproducible procedural PBR pipeline for dense natural surfaces and worn
 finishes: ten materials, native 4K maps, editable Blender scenes and genuine
@@ -24,10 +25,18 @@ and the remaining limitations without calling procedural textures scans.
 
 ## Get the complete suite
 
-[Download the latest complete release](https://github.com/cybrdelic/cybr-material/releases/latest)
-for all textures, Unity exports, native 16-bit renders, portable `.blend` files,
-offline galleries, source and checksums. The same unpacked assets are published
-in this repository by the build workflow.
+[Download the complete suite ZIP](https://github.com/cybrdelic/cybr-material/releases/download/v3.1.1/CYBR_Material_V3.zip)
+for textures, Unity exports, native 16-bit renders, portable `.blend` files,
+offline galleries, source and checksums. The v3.1.1 download is replaceable;
+see the [2026-10-12 download receipt](docs/DOWNLOAD_RECEIPT_2026-10-12.json)
+for its exact SHA-256, byte count and successful build run.
+
+That ZIP was built from [source `85af551`](https://github.com/cybrdelic/cybr-material/tree/85af551411994757395d6a490d8ae649cb25412e);
+its generated assets were subsequently committed as
+[`8ad340e`](https://github.com/cybrdelic/cybr-material/commit/8ad340e110d3280a0ca8eff79cb0f2097a9a4518).
+The unchanged [v3.1.1 tag](https://github.com/cybrdelic/cybr-material/tree/d8b35a52c80667f88c336c9150f64f82cefcf54f)
+points to older source `d8b35a5`. GitHub's automatic tag source archives therefore
+do not represent the build source of this ZIP.
 
 Open `OPEN_ME.html` after extracting the archive. Open
 `path_traced/OPEN_RENDERS.html` to inspect the scene renders and close-ups.
