@@ -2,7 +2,7 @@ name: Build and publish the material suite
 on:
   push:
     branches: [master]
-    paths: ['source/**', '.github/**']
+    paths: ['source/**', '.github/**', '!.github/workflows/material-gallery.yml', '!.github/workflows/build-suite.yml']
   workflow_dispatch:
 permissions:
   contents: read
