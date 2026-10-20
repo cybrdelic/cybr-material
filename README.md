@@ -23,6 +23,22 @@ and the remaining limitations without calling procedural textures scans.
 
 ![Walnut herringbone salon](docs/images/after/walnut-salon.jpg)
 
+## Browse individual materials — no ZIP required
+
+[**Open the material gallery**](gallery/index.html) · [**Individual native image links**](docs/MATERIAL_GALLERY.md)
+
+Ten material panels expose all 120 original **4096 × 4096 PBR maps**, physical
+scale, matched surface proofs and actual Cycles specimen renders. Original
+specimen/proof images are **1024 × 1024**, not 4K beauty renders. Context scenes
+retain their recorded native dimensions. The reviewed molded-plastic panel is presented separately with exact provenance;
+LCD/CRT and clear PETG review references remain in the registry, while
+experimental and archive-dependent registry work remains explicitly identified.
+
+The static gallery works from a local checkout or a static HTTP host. GitHub's
+file viewer displays HTML source; use the [individual image index](docs/MATERIAL_GALLERY.md)
+to open native PNGs directly on GitHub. See [gallery maintenance](docs/GALLERY_MAINTENANCE.md)
+for preview, hosting and validation commands.
+
 ## Get the complete suite
 
 [Download the complete suite ZIP](https://github.com/cybrdelic/cybr-material/releases/download/v3.1.1/CYBR_Material_V3.zip)

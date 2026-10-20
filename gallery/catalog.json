@@ -1,0 +1,3506 @@
+{
+  "schema": "cybr.material.gallery.v1",
+  "preview_pipeline": "webp-v2-gray16-unorm",
+  "baseline_commit": "365bd17aed0e3bbe9d2e7896f2bfdce1b9b54a92",
+  "baseline_source": "https://github.com/cybrdelic/cybr-material/tree/365bd17aed0e3bbe9d2e7896f2bfdce1b9b54a92",
+  "native_map_resolution": [
+    4096,
+    4096
+  ],
+  "materials": [
+    {
+      "id": "01_calacatta_oro",
+      "name": "Calacatta Oro / Honed Quarry Slab",
+      "family": "Stone",
+      "tile_m": 2.8,
+      "height_scale_m": 0.00012,
+      "roughness": 0.255,
+      "ior": 1.52,
+      "metallic": 0,
+      "coat": 0.015,
+      "coat_roughness": 0.38,
+      "preview_diameter_m": 0.24,
+      "description": "One procedural 2.8 m slab with narrow shear seams, branching fractures and mineral intergrowth; honed intact finish.",
+      "maps": [
+        {
+          "path": "materials/01_calacatta_oro/BaseColor.png",
+          "sha256": "c372097f9761a3df0e8d9bfa5b2fe0156f9d32bc86cd3d712fbd1f9c86bd179f",
+          "bytes": 2508961,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "BaseColor",
+          "label": "Base color",
+          "interpretation": "sRGB \u00b7 RGB8",
+          "previews": [
+            "assets/b4a0976fd845ff27-360.webp",
+            "assets/b4a0976fd845ff27-800.webp"
+          ]
+        },
+        {
+          "path": "materials/01_calacatta_oro/Roughness.png",
+          "sha256": "ba02caa48df3f20bcc8a0d2304877007c6fd538231a398057e5e829eb6fadb23",
+          "bytes": 376270,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Roughness",
+          "label": "Roughness",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/48ec70756b6e1ae7-360.webp",
+            "assets/48ec70756b6e1ae7-800.webp"
+          ]
+        },
+        {
+          "path": "materials/01_calacatta_oro/Metallic.png",
+          "sha256": "334c4a79f661f8f9c215b7fd06284d5fb3fe7fd3822f10dc8842f85f664c9a7f",
+          "bytes": 16353,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Metallic",
+          "label": "Metallic",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/f4d866fad4fcfb2d-360.webp",
+            "assets/f4d866fad4fcfb2d-800.webp"
+          ]
+        },
+        {
+          "path": "materials/01_calacatta_oro/Normal_OpenGL.png",
+          "sha256": "886cc384a3868e4db022ce36250ae4bb122de03b711741bb22310ce3da752b85",
+          "bytes": 1957080,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_OpenGL",
+          "label": "Normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/b0214c553a2a4f74-360.webp",
+            "assets/b0214c553a2a4f74-800.webp"
+          ]
+        },
+        {
+          "path": "materials/01_calacatta_oro/Normal_DirectX.png",
+          "sha256": "fcdcbbfc2848f0f43024e6b3d3aef8c220588ee26e3a537447e4401c67641494",
+          "bytes": 1956129,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_DirectX",
+          "label": "Normal \u2212Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/3694cf16ec74fd33-360.webp",
+            "assets/3694cf16ec74fd33-800.webp"
+          ]
+        },
+        {
+          "path": "materials/01_calacatta_oro/Height.png",
+          "sha256": "7a174fe60890224c7102254a8e812e69da630affa568c169a9a39c34df211417",
+          "bytes": 8912066,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height",
+          "label": "Height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/a07ce20038337c2f-360.webp",
+            "assets/a07ce20038337c2f-800.webp"
+          ]
+        },
+        {
+          "path": "materials/01_calacatta_oro/Height_Macro.png",
+          "sha256": "7d18e496528a639b3f4bfca7fe2731150be45462c076c86dcaa7ddbe4710c5b5",
+          "bytes": 7858968,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height_Macro",
+          "label": "Macro height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/199af2354220d50f-360.webp",
+            "assets/199af2354220d50f-800.webp"
+          ]
+        },
+        {
+          "path": "materials/01_calacatta_oro/Normal_Micro_OpenGL.png",
+          "sha256": "7b3bb6b883df6bf648b4ea43739ac8d1419aeb56b281b8615262de4d8d709fda",
+          "bytes": 2255971,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_Micro_OpenGL",
+          "label": "Residual normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/22979ef776161d68-360.webp",
+            "assets/22979ef776161d68-800.webp"
+          ]
+        },
+        {
+          "path": "materials/01_calacatta_oro/AO.png",
+          "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+          "bytes": 25454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "AO",
+          "label": "Ambient occlusion",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/7a6a26d6905da01f-360.webp",
+            "assets/7a6a26d6905da01f-800.webp"
+          ]
+        },
+        {
+          "path": "materials/01_calacatta_oro/ORM.png",
+          "sha256": "277f550b76cc1b1b0d62be17806be3bd92e1f25db0bb5f34538099d07f930363",
+          "bytes": 484642,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "ORM",
+          "label": "Packed ORM",
+          "interpretation": "Linear \u00b7 R: AO / G: roughness / B: metallic",
+          "previews": [
+            "assets/3010051d28cb8d40-360.webp",
+            "assets/3010051d28cb8d40-800.webp"
+          ]
+        },
+        {
+          "path": "materials/01_calacatta_oro/WearMask.png",
+          "sha256": "900949fc93a6e4f605a6f90300812d576019079598bf70fa3790035cd9d15ac4",
+          "bytes": 61280,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "WearMask",
+          "label": "Wear mask",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/29d30feb7e76daea-360.webp",
+            "assets/29d30feb7e76daea-800.webp"
+          ]
+        },
+        {
+          "path": "materials/01_calacatta_oro/Opacity.png",
+          "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+          "bytes": 25454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Opacity",
+          "label": "Opacity",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/58bcdc644b8fa420-360.webp",
+            "assets/58bcdc644b8fa420-800.webp"
+          ]
+        }
+      ],
+      "beauty": {
+        "path": "path_traced/renders/01_calacatta_oro_detail.png",
+        "sha256": "e671ce4120e3c84d7f71152a393c2af8a8ccaac5ea2c661b0116e80e3c5e88c6",
+        "bytes": 4396716,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/6eb06e60eabbf44f-360.webp",
+          "assets/6eb06e60eabbf44f-800.webp"
+        ]
+      },
+      "proof": {
+        "path": "path_traced/controlled_surfaces/01_calacatta_oro_detail.png",
+        "sha256": "aa5da119e5a0f2b50383db86f85dcd2fb9d26eaa9fa1fbcb0488b67bb0586396",
+        "bytes": 4158906,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/86bed97cfb821cae-360.webp",
+          "assets/86bed97cfb821cae-800.webp"
+        ]
+      },
+      "render_settings": {
+        "scene": "CYCLES / Detail / Calacatta Oro / Honed Quarry Slab",
+        "file": "renders/01_calacatta_oro_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.11999999731779099,
+        "material_ids": "01_calacatta_oro",
+        "elapsed_seconds": 868.55,
+        "camera": {
+          "position_m": [
+            0.262800008058548,
+            -0.3887999951839447,
+            0.3492000102996826
+          ],
+          "rotation_rad": [
+            0.984946608543396,
+            -6.921755613120695e-09,
+            0.5943855047225952
+          ],
+          "lens_mm": 55.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "01_calacatta_oro",
+        "inspection_width_m": 0.36,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "sha256": "e671ce4120e3c84d7f71152a393c2af8a8ccaac5ea2c661b0116e80e3c5e88c6",
+        "bytes": 4396716
+      },
+      "proof_settings": {
+        "scene": "CYCLES / Controlled Surface / Calacatta Oro / Honed Quarry Slab",
+        "file": "path_traced/controlled_surfaces/01_calacatta_oro_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "OPTIX",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.10000000149011612,
+        "material_ids": "",
+        "elapsed_seconds": 20.91,
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "01_calacatta_oro",
+        "inspection_width_m": 0.24,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "bits": 16,
+        "sha256": "aa5da119e5a0f2b50383db86f85dcd2fb9d26eaa9fa1fbcb0488b67bb0586396",
+        "bytes": 4158906
+      },
+      "qualification": "Rebuilt suite appearance; procedural approximation, not measured calibration"
+    },
+    {
+      "id": "02_roman_travertine",
+      "name": "Roman Travertine / Honed Vein Cut",
+      "family": "Stone",
+      "tile_m": 0.65,
+      "height_scale_m": 0.0032,
+      "roughness": 0.62,
+      "ior": 1.5,
+      "metallic": 0,
+      "preview_diameter_m": 0.24,
+      "description": "Fine bed-correlated irregular open pores without painted cavity outlines; shallow honed sedimentary surface.",
+      "maps": [
+        {
+          "path": "materials/02_roman_travertine/BaseColor.png",
+          "sha256": "a6140eafef5a88c6cb1c8c29a4c10e306431f688d78e915f2fa845a4a63d3677",
+          "bytes": 1251602,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "BaseColor",
+          "label": "Base color",
+          "interpretation": "sRGB \u00b7 RGB8",
+          "previews": [
+            "assets/99798b0fb1e51c32-360.webp",
+            "assets/99798b0fb1e51c32-800.webp"
+          ]
+        },
+        {
+          "path": "materials/02_roman_travertine/Roughness.png",
+          "sha256": "198ddd1e793a5a1ca4e8d08a0da9540524b4c6774c4780b4adbf943fc80a04e2",
+          "bytes": 690569,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Roughness",
+          "label": "Roughness",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/7945bc64405aaf61-360.webp",
+            "assets/7945bc64405aaf61-800.webp"
+          ]
+        },
+        {
+          "path": "materials/02_roman_travertine/Metallic.png",
+          "sha256": "334c4a79f661f8f9c215b7fd06284d5fb3fe7fd3822f10dc8842f85f664c9a7f",
+          "bytes": 16353,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Metallic",
+          "label": "Metallic",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/cec6c6957a782537-360.webp",
+            "assets/cec6c6957a782537-800.webp"
+          ]
+        },
+        {
+          "path": "materials/02_roman_travertine/Normal_OpenGL.png",
+          "sha256": "f2cda91387261763bd1ebb8ecda9a2c5a8f569ede6aadf2fee2b590b2c28813d",
+          "bytes": 2416352,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_OpenGL",
+          "label": "Normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/26250673af1ecb49-360.webp",
+            "assets/26250673af1ecb49-800.webp"
+          ]
+        },
+        {
+          "path": "materials/02_roman_travertine/Normal_DirectX.png",
+          "sha256": "c568e57449a68e2fba2ca6b9a280e5a83c43045ec54ba885dc4fbfc0efb46ef0",
+          "bytes": 2414797,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_DirectX",
+          "label": "Normal \u2212Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/36d64393f30ee589-360.webp",
+            "assets/36d64393f30ee589-800.webp"
+          ]
+        },
+        {
+          "path": "materials/02_roman_travertine/Height.png",
+          "sha256": "991446583c45ac4f7bdd20d95fba3e5d766373ddeb0837b2fbfb84dbaece583f",
+          "bytes": 3756779,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height",
+          "label": "Height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/9ae8abe0a134314d-360.webp",
+            "assets/9ae8abe0a134314d-800.webp"
+          ]
+        },
+        {
+          "path": "materials/02_roman_travertine/Height_Macro.png",
+          "sha256": "4092a48f36dea6a528f9fad888595af5d063465a0f3d2dc5006d5cfc4ba670bd",
+          "bytes": 7256165,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height_Macro",
+          "label": "Macro height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/ac6a2aca77ca99fa-360.webp",
+            "assets/ac6a2aca77ca99fa-800.webp"
+          ]
+        },
+        {
+          "path": "materials/02_roman_travertine/Normal_Micro_OpenGL.png",
+          "sha256": "395e56ae1be8d5d22a9d9da4a0db9a1a462d2353f0b8cd79423a4d6d3fd5025b",
+          "bytes": 4984597,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_Micro_OpenGL",
+          "label": "Residual normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/6bd547724730e628-360.webp",
+            "assets/6bd547724730e628-800.webp"
+          ]
+        },
+        {
+          "path": "materials/02_roman_travertine/AO.png",
+          "sha256": "ca508c50543b12da274d73f2321c0d1290a93e3c99f5bb563e7350565913d3a9",
+          "bytes": 617065,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "AO",
+          "label": "Ambient occlusion",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/c0aea8bd894cc053-360.webp",
+            "assets/c0aea8bd894cc053-800.webp"
+          ]
+        },
+        {
+          "path": "materials/02_roman_travertine/ORM.png",
+          "sha256": "8549a0bea891b8bd1cec6367bb640198fb763e3ca58e392d76eda1d8a66d74e7",
+          "bytes": 1388533,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "ORM",
+          "label": "Packed ORM",
+          "interpretation": "Linear \u00b7 R: AO / G: roughness / B: metallic",
+          "previews": [
+            "assets/17123ad01325732e-360.webp",
+            "assets/17123ad01325732e-800.webp"
+          ]
+        },
+        {
+          "path": "materials/02_roman_travertine/WearMask.png",
+          "sha256": "037ef71ad985d434852f5b1f3232b2594cd821c42efa577a96e756de93e069ef",
+          "bytes": 324468,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "WearMask",
+          "label": "Wear mask",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/8495c5af50a33c90-360.webp",
+            "assets/8495c5af50a33c90-800.webp"
+          ]
+        },
+        {
+          "path": "materials/02_roman_travertine/Opacity.png",
+          "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+          "bytes": 25454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Opacity",
+          "label": "Opacity",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/e864b23b8021e963-360.webp",
+            "assets/e864b23b8021e963-800.webp"
+          ]
+        }
+      ],
+      "beauty": {
+        "path": "path_traced/renders/02_roman_travertine_detail.png",
+        "sha256": "ea5c065d7e513ca85126e9ecf189e47ffd1b671f7255b72287adc60e56da98bd",
+        "bytes": 4505458,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/1d7aa3c468709d57-360.webp",
+          "assets/1d7aa3c468709d57-800.webp"
+        ]
+      },
+      "proof": {
+        "path": "path_traced/controlled_surfaces/02_roman_travertine_detail.png",
+        "sha256": "bc5358298707816661d024bda1d5d24ce96b28f0c25343887f1e78504cf9d6f7",
+        "bytes": 4330195,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/2462843a12c1661e-360.webp",
+          "assets/2462843a12c1661e-800.webp"
+        ]
+      },
+      "render_settings": {
+        "scene": "CYCLES / Detail / Roman Travertine / Honed Vein Cut",
+        "file": "renders/02_roman_travertine_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.11999999731779099,
+        "material_ids": "02_roman_travertine",
+        "elapsed_seconds": 758.54,
+        "camera": {
+          "position_m": [
+            0.262800008058548,
+            -0.3887999951839447,
+            0.3492000102996826
+          ],
+          "rotation_rad": [
+            0.984946608543396,
+            -6.921755613120695e-09,
+            0.5943855047225952
+          ],
+          "lens_mm": 55.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "02_roman_travertine",
+        "inspection_width_m": 0.36,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "sha256": "ea5c065d7e513ca85126e9ecf189e47ffd1b671f7255b72287adc60e56da98bd",
+        "bytes": 4505458
+      },
+      "proof_settings": {
+        "scene": "CYCLES / Controlled Surface / Roman Travertine / Honed Vein Cut",
+        "file": "path_traced/controlled_surfaces/02_roman_travertine_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "OPTIX",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.10000000149011612,
+        "material_ids": "",
+        "elapsed_seconds": 14.97,
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "02_roman_travertine",
+        "inspection_width_m": 0.24,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "bits": 16,
+        "sha256": "bc5358298707816661d024bda1d5d24ce96b28f0c25343887f1e78504cf9d6f7",
+        "bytes": 4330195
+      },
+      "qualification": "Rebuilt suite appearance; procedural approximation, not measured calibration"
+    },
+    {
+      "id": "03_american_walnut",
+      "name": "American Walnut / Timeworn",
+      "family": "Wood",
+      "tile_m": 0.55,
+      "tile_y_m": 0.55,
+      "height_scale_m": 0.00042,
+      "roughness": 0.4,
+      "ior": 1.5,
+      "metallic": 0,
+      "coat": 0.025,
+      "coat_roughness": 0.52,
+      "anisotropy": 0.12,
+      "preview_diameter_m": 0.18,
+      "tiling": "finite-cut",
+      "description": "Procedural flat-sawn walnut sampled from a radial growth volume, with nonuniform annual rings, diffuse lumen windows, fine rays and shallow worn oil finish.",
+      "maps": [
+        {
+          "path": "materials/03_american_walnut/BaseColor.png",
+          "sha256": "4800716da3e81bd743f163736f730447927b36ade4254b582c3c2b9f23c4f9d2",
+          "bytes": 3929321,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "BaseColor",
+          "label": "Base color",
+          "interpretation": "sRGB \u00b7 RGB8",
+          "previews": [
+            "assets/b18f0d4a69a07fdd-360.webp",
+            "assets/b18f0d4a69a07fdd-800.webp"
+          ]
+        },
+        {
+          "path": "materials/03_american_walnut/Roughness.png",
+          "sha256": "9293a34d7b3d8cda3cebde332714de81c8e254a4dcef402a78c427cb802a2d9d",
+          "bytes": 1851060,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Roughness",
+          "label": "Roughness",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/61551d6d4e58de85-360.webp",
+            "assets/61551d6d4e58de85-800.webp"
+          ]
+        },
+        {
+          "path": "materials/03_american_walnut/Metallic.png",
+          "sha256": "334c4a79f661f8f9c215b7fd06284d5fb3fe7fd3822f10dc8842f85f664c9a7f",
+          "bytes": 16353,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Metallic",
+          "label": "Metallic",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/e896c485c75c1998-360.webp",
+            "assets/e896c485c75c1998-800.webp"
+          ]
+        },
+        {
+          "path": "materials/03_american_walnut/Normal_OpenGL.png",
+          "sha256": "55e78afce2dff2be9fde4fb7a8cdce33aeac6c3508ae88a758c01623d93dadeb",
+          "bytes": 2333376,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_OpenGL",
+          "label": "Normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/9a0994efac23bbf5-360.webp",
+            "assets/9a0994efac23bbf5-800.webp"
+          ]
+        },
+        {
+          "path": "materials/03_american_walnut/Normal_DirectX.png",
+          "sha256": "536392767aeeb93182307d2fedea6fa1bd1e5539fb0ccc39b0e1288fc3b66039",
+          "bytes": 2333392,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_DirectX",
+          "label": "Normal \u2212Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/bf5897456dc16034-360.webp",
+            "assets/bf5897456dc16034-800.webp"
+          ]
+        },
+        {
+          "path": "materials/03_american_walnut/Height.png",
+          "sha256": "09838dbff219064e31aa36a9778fcab28bc0a96327817d13f48190944b6b7bfb",
+          "bytes": 12907040,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height",
+          "label": "Height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/df0642994421dc19-360.webp",
+            "assets/df0642994421dc19-800.webp"
+          ]
+        },
+        {
+          "path": "materials/03_american_walnut/Height_Macro.png",
+          "sha256": "21c3b943fda4b452216de83cc072c8e4884e3b9d4ec2120432e2f979ae3a3f8a",
+          "bytes": 9256070,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height_Macro",
+          "label": "Macro height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/af3711e29e901491-360.webp",
+            "assets/af3711e29e901491-800.webp"
+          ]
+        },
+        {
+          "path": "materials/03_american_walnut/Normal_Micro_OpenGL.png",
+          "sha256": "e5fc62f375a68fa9b521f5855e443030a620fc44ad50d9a2baf9eebd115e46a4",
+          "bytes": 2542151,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_Micro_OpenGL",
+          "label": "Residual normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/796572aa77274be8-360.webp",
+            "assets/796572aa77274be8-800.webp"
+          ]
+        },
+        {
+          "path": "materials/03_american_walnut/AO.png",
+          "sha256": "5380e05eab96a3a1c3594e2b4a51e822fd9b4f19859105f48e61c7006739215d",
+          "bytes": 860617,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "AO",
+          "label": "Ambient occlusion",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/bff068ac6bc45bdd-360.webp",
+            "assets/bff068ac6bc45bdd-800.webp"
+          ]
+        },
+        {
+          "path": "materials/03_american_walnut/ORM.png",
+          "sha256": "9afa3da41dc3f076705ef5267ac02124045e64d32252dbd1bb59e3a40ab7d909",
+          "bytes": 2859958,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "ORM",
+          "label": "Packed ORM",
+          "interpretation": "Linear \u00b7 R: AO / G: roughness / B: metallic",
+          "previews": [
+            "assets/be2a372744f94402-360.webp",
+            "assets/be2a372744f94402-800.webp"
+          ]
+        },
+        {
+          "path": "materials/03_american_walnut/WearMask.png",
+          "sha256": "b5ea944fb9865b77854f0735a4f8303b6b29fd400e8a2c8b37d3379bdef0dfeb",
+          "bytes": 633749,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "WearMask",
+          "label": "Wear mask",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/af0310881d8f64b7-360.webp",
+            "assets/af0310881d8f64b7-800.webp"
+          ]
+        },
+        {
+          "path": "materials/03_american_walnut/Opacity.png",
+          "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+          "bytes": 25454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Opacity",
+          "label": "Opacity",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/f509a5a52fabba9c-360.webp",
+            "assets/f509a5a52fabba9c-800.webp"
+          ]
+        }
+      ],
+      "beauty": {
+        "path": "path_traced/renders/03_american_walnut_detail.png",
+        "sha256": "5da079a9528e5c62217d5985920123013c55f2b33719882a5c85d0d38a281262",
+        "bytes": 4776847,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/3ac9f689fc8c75a5-360.webp",
+          "assets/3ac9f689fc8c75a5-800.webp"
+        ]
+      },
+      "proof": {
+        "path": "path_traced/controlled_surfaces/03_american_walnut_detail.png",
+        "sha256": "ff11543832ed26d5b2bb370d9be2536286534c505f8748ac879dc3538144ff52",
+        "bytes": 4733591,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/e279fa698437cdeb-360.webp",
+          "assets/e279fa698437cdeb-800.webp"
+        ]
+      },
+      "render_settings": {
+        "scene": "CYCLES / Detail / American Walnut / Timeworn",
+        "file": "renders/03_american_walnut_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.11999999731779099,
+        "material_ids": "03_american_walnut",
+        "elapsed_seconds": 1371.44,
+        "camera": {
+          "position_m": [
+            0.21899999678134918,
+            -0.3240000009536743,
+            0.29100000858306885
+          ],
+          "rotation_rad": [
+            0.9849469065666199,
+            7.248534217296765e-08,
+            0.5943856239318848
+          ],
+          "lens_mm": 55.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "03_american_walnut",
+        "inspection_width_m": 0.3,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "sha256": "5da079a9528e5c62217d5985920123013c55f2b33719882a5c85d0d38a281262",
+        "bytes": 4776847
+      },
+      "proof_settings": {
+        "scene": "CYCLES / Controlled Surface / American Walnut / Timeworn",
+        "file": "path_traced/controlled_surfaces/03_american_walnut_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "OPTIX",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.10000000149011612,
+        "material_ids": "",
+        "elapsed_seconds": 45.41,
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "03_american_walnut",
+        "inspection_width_m": 0.18,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "bits": 16,
+        "sha256": "ff11543832ed26d5b2bb370d9be2536286534c505f8748ac879dc3538144ff52",
+        "bytes": 4733591
+      },
+      "qualification": "Rebuilt suite appearance; procedural approximation, not measured calibration"
+    },
+    {
+      "id": "04_fumed_oak",
+      "name": "Fumed Oak / Open Grain",
+      "family": "Wood",
+      "tile_m": 0.45,
+      "tile_y_m": 0.45,
+      "height_scale_m": 0.00045,
+      "roughness": 0.46,
+      "ior": 1.5,
+      "metallic": 0,
+      "coat": 0.015,
+      "coat_roughness": 0.58,
+      "anisotropy": 0.12,
+      "preview_diameter_m": 0.16,
+      "tiling": "finite-cut",
+      "description": "Procedural rift-cut fumed oak with growth-volume earlywood vessels, finite medullary ray plates, shallow lumen relief and worn low-gloss finish.",
+      "maps": [
+        {
+          "path": "materials/04_fumed_oak/BaseColor.png",
+          "sha256": "5ead9aef27a72377f15eb0730bf74c30257bf3ac632caffd9335562824e3328d",
+          "bytes": 5072106,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "BaseColor",
+          "label": "Base color",
+          "interpretation": "sRGB \u00b7 RGB8",
+          "previews": [
+            "assets/0f6c50278b9470d5-360.webp",
+            "assets/0f6c50278b9470d5-800.webp"
+          ]
+        },
+        {
+          "path": "materials/04_fumed_oak/Roughness.png",
+          "sha256": "8ac39a892be5263f13ece157b0456da2645e51fdc5f656f89ef6a6e4460b4223",
+          "bytes": 2041117,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Roughness",
+          "label": "Roughness",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/f19df0569edac97f-360.webp",
+            "assets/f19df0569edac97f-800.webp"
+          ]
+        },
+        {
+          "path": "materials/04_fumed_oak/Metallic.png",
+          "sha256": "334c4a79f661f8f9c215b7fd06284d5fb3fe7fd3822f10dc8842f85f664c9a7f",
+          "bytes": 16353,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Metallic",
+          "label": "Metallic",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/3b42064696ed9ad5-360.webp",
+            "assets/3b42064696ed9ad5-800.webp"
+          ]
+        },
+        {
+          "path": "materials/04_fumed_oak/Normal_OpenGL.png",
+          "sha256": "3c31e8f3a2e9b208014e4de8f8a5b355c58e67e87e46e075f5e67d0e74b82649",
+          "bytes": 3690729,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_OpenGL",
+          "label": "Normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/a8d4493e947bc9fd-360.webp",
+            "assets/a8d4493e947bc9fd-800.webp"
+          ]
+        },
+        {
+          "path": "materials/04_fumed_oak/Normal_DirectX.png",
+          "sha256": "d5e1db3591615890f16e2c5460fad2ac707df3712b6dd94124247e6cd39613e0",
+          "bytes": 3690684,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_DirectX",
+          "label": "Normal \u2212Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/7f2bfb167e825911-360.webp",
+            "assets/7f2bfb167e825911-800.webp"
+          ]
+        },
+        {
+          "path": "materials/04_fumed_oak/Height.png",
+          "sha256": "0e0be000831f20e4fc1a4d3db6d65049132d6e5b3ca9b17426167b9e7e362e52",
+          "bytes": 13060529,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height",
+          "label": "Height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/ddf7606043e5ee77-360.webp",
+            "assets/ddf7606043e5ee77-800.webp"
+          ]
+        },
+        {
+          "path": "materials/04_fumed_oak/Height_Macro.png",
+          "sha256": "6230eeac6ba6865fbb5e354d10de673e4a3c61c2830119da7f69a44903a8f1fe",
+          "bytes": 11714757,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height_Macro",
+          "label": "Macro height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/68220f9770f8dc9c-360.webp",
+            "assets/68220f9770f8dc9c-800.webp"
+          ]
+        },
+        {
+          "path": "materials/04_fumed_oak/Normal_Micro_OpenGL.png",
+          "sha256": "21cffcb02a2a5b5fede61cbc677607a210500832c6b6f6098f2c9acdb9e31c31",
+          "bytes": 3944793,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_Micro_OpenGL",
+          "label": "Residual normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/4ef4d804d7db7e27-360.webp",
+            "assets/4ef4d804d7db7e27-800.webp"
+          ]
+        },
+        {
+          "path": "materials/04_fumed_oak/AO.png",
+          "sha256": "22b45725093f873476b6eaeb76c5b80c3b464044c706f628484d538a074a1d0d",
+          "bytes": 1199918,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "AO",
+          "label": "Ambient occlusion",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/19a60be733b2ce9b-360.webp",
+            "assets/19a60be733b2ce9b-800.webp"
+          ]
+        },
+        {
+          "path": "materials/04_fumed_oak/ORM.png",
+          "sha256": "a2e3f8a465534e6f4e5de4e86db9b6221248a5e1756466f2241ce9823cc23b3e",
+          "bytes": 3351782,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "ORM",
+          "label": "Packed ORM",
+          "interpretation": "Linear \u00b7 R: AO / G: roughness / B: metallic",
+          "previews": [
+            "assets/f0d3c2df3f4da812-360.webp",
+            "assets/f0d3c2df3f4da812-800.webp"
+          ]
+        },
+        {
+          "path": "materials/04_fumed_oak/WearMask.png",
+          "sha256": "1554deb14af09c62f912b6269d9186f0a257c3815a8a325e390ce63ddc1d79bd",
+          "bytes": 541135,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "WearMask",
+          "label": "Wear mask",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/5b3cf3868870909f-360.webp",
+            "assets/5b3cf3868870909f-800.webp"
+          ]
+        },
+        {
+          "path": "materials/04_fumed_oak/Opacity.png",
+          "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+          "bytes": 25454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Opacity",
+          "label": "Opacity",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/6856888044158774-360.webp",
+            "assets/6856888044158774-800.webp"
+          ]
+        }
+      ],
+      "beauty": {
+        "path": "path_traced/renders/04_fumed_oak_detail.png",
+        "sha256": "6596ac70f0e94c508a02afcb7767b19bd92dc74223cc1906f401992f8d0e119a",
+        "bytes": 4758484,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/3517d2e4f9fe1e86-360.webp",
+          "assets/3517d2e4f9fe1e86-800.webp"
+        ]
+      },
+      "proof": {
+        "path": "path_traced/controlled_surfaces/04_fumed_oak_detail.png",
+        "sha256": "6445925eca543d9f88e9f7387e09b778177a13c9f7ca9acda6d7675cac9a29e2",
+        "bytes": 4764224,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/8742a931506b948e-360.webp",
+          "assets/8742a931506b948e-800.webp"
+        ]
+      },
+      "render_settings": {
+        "scene": "CYCLES / Detail / Fumed Oak / Open Grain",
+        "file": "renders/04_fumed_oak_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.11999999731779099,
+        "material_ids": "04_fumed_oak",
+        "elapsed_seconds": 1428.56,
+        "camera": {
+          "position_m": [
+            0.21899999678134918,
+            -0.3240000009536743,
+            0.29100000858306885
+          ],
+          "rotation_rad": [
+            0.9849469065666199,
+            7.248534217296765e-08,
+            0.5943856239318848
+          ],
+          "lens_mm": 55.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "04_fumed_oak",
+        "inspection_width_m": 0.3,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "sha256": "6596ac70f0e94c508a02afcb7767b19bd92dc74223cc1906f401992f8d0e119a",
+        "bytes": 4758484
+      },
+      "proof_settings": {
+        "scene": "CYCLES / Controlled Surface / Fumed Oak / Open Grain",
+        "file": "path_traced/controlled_surfaces/04_fumed_oak_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "OPTIX",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.10000000149011612,
+        "material_ids": "",
+        "elapsed_seconds": 41.19,
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "04_fumed_oak",
+        "inspection_width_m": 0.16,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "bits": 16,
+        "sha256": "6445925eca543d9f88e9f7387e09b778177a13c9f7ca9acda6d7675cac9a29e2",
+        "bytes": 4764224
+      },
+      "qualification": "Rebuilt suite appearance; procedural approximation, not measured calibration"
+    },
+    {
+      "id": "05_champagne_brass",
+      "name": "Champagne Brass / Satin Brushed",
+      "family": "Metal",
+      "tile_m": 0.2,
+      "height_scale_m": 0.0002,
+      "roughness": 0.37,
+      "ior": 1.5,
+      "metallic": 1,
+      "anisotropy": 0.35,
+      "preview_diameter_m": 0.1,
+      "description": "Intact satin-brushed brass; fine directional tooling and restrained isolated scores.",
+      "maps": [
+        {
+          "path": "materials/05_champagne_brass/BaseColor.png",
+          "sha256": "16c6eb73495a4729a12a033b14ec3edcd9311a3d48b347d6e46ce39d47b4e607",
+          "bytes": 343986,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "BaseColor",
+          "label": "Base color",
+          "interpretation": "sRGB \u00b7 RGB8",
+          "previews": [
+            "assets/8db71289fa53adb8-360.webp",
+            "assets/8db71289fa53adb8-800.webp"
+          ]
+        },
+        {
+          "path": "materials/05_champagne_brass/Roughness.png",
+          "sha256": "35064255d0282c47a0760f94c2cb43309c9210ddd2ca2ac1828240118a2c8e7b",
+          "bytes": 247674,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Roughness",
+          "label": "Roughness",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/805c14d22163fef9-360.webp",
+            "assets/805c14d22163fef9-800.webp"
+          ]
+        },
+        {
+          "path": "materials/05_champagne_brass/Metallic.png",
+          "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+          "bytes": 25454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Metallic",
+          "label": "Metallic",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/67550c21ab5b305d-360.webp",
+            "assets/67550c21ab5b305d-800.webp"
+          ]
+        },
+        {
+          "path": "materials/05_champagne_brass/Normal_OpenGL.png",
+          "sha256": "1a61bc5580a48a38b9ac4736d91a3be052c911276e2fd2c9f70d6919f6d7fc5b",
+          "bytes": 427418,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_OpenGL",
+          "label": "Normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/583aabcda3c53aa2-360.webp",
+            "assets/583aabcda3c53aa2-800.webp"
+          ]
+        },
+        {
+          "path": "materials/05_champagne_brass/Normal_DirectX.png",
+          "sha256": "06bcf04937a6c3dd76b01bafb64d4e94f479c60ef703b880a5324c2bafc21701",
+          "bytes": 427272,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_DirectX",
+          "label": "Normal \u2212Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/3f5ed98f00eeb5b3-360.webp",
+            "assets/3f5ed98f00eeb5b3-800.webp"
+          ]
+        },
+        {
+          "path": "materials/05_champagne_brass/Height.png",
+          "sha256": "d9553800a552e5c617b1e601bcc7d8474a1e38b975bf177538efbf9662b410e4",
+          "bytes": 5925019,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height",
+          "label": "Height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/9bcea2a9a8c0d34f-360.webp",
+            "assets/9bcea2a9a8c0d34f-800.webp"
+          ]
+        },
+        {
+          "path": "materials/05_champagne_brass/Height_Macro.png",
+          "sha256": "04244de23429372cbf744b365da214286fa923e98afb6bd66fb2f8326dc7fe0b",
+          "bytes": 3544210,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height_Macro",
+          "label": "Macro height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/c50599fc534be916-360.webp",
+            "assets/c50599fc534be916-800.webp"
+          ]
+        },
+        {
+          "path": "materials/05_champagne_brass/Normal_Micro_OpenGL.png",
+          "sha256": "b6fe7502aec573ecee608d28716bb33a0996ab6fe4953dd14f74ef80147aeca7",
+          "bytes": 431583,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_Micro_OpenGL",
+          "label": "Residual normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/96d57de6f34c751f-360.webp",
+            "assets/96d57de6f34c751f-800.webp"
+          ]
+        },
+        {
+          "path": "materials/05_champagne_brass/AO.png",
+          "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+          "bytes": 25454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "AO",
+          "label": "Ambient occlusion",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/3625f661227491e2-360.webp",
+            "assets/3625f661227491e2-800.webp"
+          ]
+        },
+        {
+          "path": "materials/05_champagne_brass/ORM.png",
+          "sha256": "21be808f0af00f6736c12731086013be9a1615564bfc488c09d285ccd96c6bca",
+          "bytes": 299886,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "ORM",
+          "label": "Packed ORM",
+          "interpretation": "Linear \u00b7 R: AO / G: roughness / B: metallic",
+          "previews": [
+            "assets/830dbb0415d2e361-360.webp",
+            "assets/830dbb0415d2e361-800.webp"
+          ]
+        },
+        {
+          "path": "materials/05_champagne_brass/WearMask.png",
+          "sha256": "eb879f9108a0d28343f383f72b01adabec971401a62542dbd93a48d1133905b8",
+          "bytes": 25202,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "WearMask",
+          "label": "Wear mask",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/8131301d331ce2d6-360.webp",
+            "assets/8131301d331ce2d6-800.webp"
+          ]
+        },
+        {
+          "path": "materials/05_champagne_brass/Opacity.png",
+          "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+          "bytes": 25454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Opacity",
+          "label": "Opacity",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/6de9f11feeebe89d-360.webp",
+            "assets/6de9f11feeebe89d-800.webp"
+          ]
+        }
+      ],
+      "beauty": {
+        "path": "path_traced/renders/05_champagne_brass_detail.png",
+        "sha256": "8a56e564162414c0028c609bc00ad9393dece38470baccddaab5071b5da15a8e",
+        "bytes": 4720017,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/d825cb8009573779-360.webp",
+          "assets/d825cb8009573779-800.webp"
+        ]
+      },
+      "proof": {
+        "path": "path_traced/controlled_surfaces/05_champagne_brass_detail.png",
+        "sha256": "aa0cd9be49ff7531c4d900630028e1142851c08c44a3136be1c7609c3971c56b",
+        "bytes": 4951560,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/240fcc94250538d7-360.webp",
+          "assets/240fcc94250538d7-800.webp"
+        ]
+      },
+      "render_settings": {
+        "scene": "CYCLES / Detail / Champagne Brass / Satin Brushed",
+        "file": "renders/05_champagne_brass_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.11999999731779099,
+        "material_ids": "05_champagne_brass",
+        "elapsed_seconds": 524.53,
+        "camera": {
+          "position_m": [
+            0.131400004029274,
+            -0.19439999759197235,
+            0.1746000051498413
+          ],
+          "rotation_rad": [
+            0.984946608543396,
+            -6.921755613120695e-09,
+            0.5943855047225952
+          ],
+          "lens_mm": 55.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "05_champagne_brass",
+        "inspection_width_m": 0.18,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "sha256": "8a56e564162414c0028c609bc00ad9393dece38470baccddaab5071b5da15a8e",
+        "bytes": 4720017
+      },
+      "proof_settings": {
+        "scene": "CYCLES / Controlled Surface / Champagne Brass / Satin Brushed",
+        "file": "path_traced/controlled_surfaces/05_champagne_brass_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "OPTIX",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.10000000149011612,
+        "material_ids": "",
+        "elapsed_seconds": 32.06,
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "05_champagne_brass",
+        "inspection_width_m": 0.1,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "bits": 16,
+        "sha256": "aa0cd9be49ff7531c4d900630028e1142851c08c44a3136be1c7609c3971c56b",
+        "bytes": 4951560
+      },
+      "qualification": "Rebuilt suite appearance; procedural approximation, not measured calibration"
+    },
+    {
+      "id": "06_blackened_steel",
+      "name": "Blackened Steel / Satin Oxide",
+      "family": "Metal",
+      "tile_m": 0.25,
+      "height_scale_m": 0.00055,
+      "roughness": 0.49,
+      "ior": 1.5,
+      "metallic": 0,
+      "anisotropy": 0.14,
+      "preview_diameter_m": 0.12,
+      "description": "Intact black oxide on satin machined steel; exposed edges are assigned on fabricated meshes.",
+      "maps": [
+        {
+          "path": "materials/06_blackened_steel/BaseColor.png",
+          "sha256": "86c0dee4128cc00f6cc4e644e11dcd497c3f3c876ac19ade42adf40cd6fdf75d",
+          "bytes": 352322,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "BaseColor",
+          "label": "Base color",
+          "interpretation": "sRGB \u00b7 RGB8",
+          "previews": [
+            "assets/5ff60381a0fe4921-360.webp",
+            "assets/5ff60381a0fe4921-800.webp"
+          ]
+        },
+        {
+          "path": "materials/06_blackened_steel/Roughness.png",
+          "sha256": "2406d572e54d4fbde4d6155cbe15b029ac93b01a67d535e3a1bd529e84d36b36",
+          "bytes": 249434,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Roughness",
+          "label": "Roughness",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/b41846f4739a8552-360.webp",
+            "assets/b41846f4739a8552-800.webp"
+          ]
+        },
+        {
+          "path": "materials/06_blackened_steel/Metallic.png",
+          "sha256": "e631aba9f0747dd060732f9c025b933c02decb5e756adb69be30037d7dd7dc24",
+          "bytes": 25456,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Metallic",
+          "label": "Metallic",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/eeb6ea723b535e14-360.webp",
+            "assets/eeb6ea723b535e14-800.webp"
+          ]
+        },
+        {
+          "path": "materials/06_blackened_steel/Normal_OpenGL.png",
+          "sha256": "6a1b079fba6b026e6939e0d70665ffa1794af6e25a18c9d817a11620ffb78a48",
+          "bytes": 632715,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_OpenGL",
+          "label": "Normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/9de93518a8be69b6-360.webp",
+            "assets/9de93518a8be69b6-800.webp"
+          ]
+        },
+        {
+          "path": "materials/06_blackened_steel/Normal_DirectX.png",
+          "sha256": "3a3342d5fed4d47dfed646d7256e214faa23a7f05f2701270a64696c43e410c7",
+          "bytes": 632643,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_DirectX",
+          "label": "Normal \u2212Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/aa86636180f2ba7a-360.webp",
+            "assets/aa86636180f2ba7a-800.webp"
+          ]
+        },
+        {
+          "path": "materials/06_blackened_steel/Height.png",
+          "sha256": "30500a33d3ebbde70e25fe9b0dfe72d11661a3bf3caaef23bca24bbbd71bc642",
+          "bytes": 5935262,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height",
+          "label": "Height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/b758865079f19674-360.webp",
+            "assets/b758865079f19674-800.webp"
+          ]
+        },
+        {
+          "path": "materials/06_blackened_steel/Height_Macro.png",
+          "sha256": "2d11dfd9ca1b1e250c19f8086c2e9a81f8cd82cac61366a0e105e3dacde56e10",
+          "bytes": 3559246,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height_Macro",
+          "label": "Macro height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/68ee6903ee207c3a-360.webp",
+            "assets/68ee6903ee207c3a-800.webp"
+          ]
+        },
+        {
+          "path": "materials/06_blackened_steel/Normal_Micro_OpenGL.png",
+          "sha256": "80fe412b271219fd11763810586f9141456b1e11ff7c48ed586bace87b457e4b",
+          "bytes": 629689,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_Micro_OpenGL",
+          "label": "Residual normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/1287f68f67f17c76-360.webp",
+            "assets/1287f68f67f17c76-800.webp"
+          ]
+        },
+        {
+          "path": "materials/06_blackened_steel/AO.png",
+          "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+          "bytes": 25454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "AO",
+          "label": "Ambient occlusion",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/4b99c6f9ab24ea80-360.webp",
+            "assets/4b99c6f9ab24ea80-800.webp"
+          ]
+        },
+        {
+          "path": "materials/06_blackened_steel/ORM.png",
+          "sha256": "b16d82e03096ae133fac4fffbdd00e5655395aea9f9ae03fef2fe9fd0bfd87ad",
+          "bytes": 302441,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "ORM",
+          "label": "Packed ORM",
+          "interpretation": "Linear \u00b7 R: AO / G: roughness / B: metallic",
+          "previews": [
+            "assets/94c31c1bfe07229a-360.webp",
+            "assets/94c31c1bfe07229a-800.webp"
+          ]
+        },
+        {
+          "path": "materials/06_blackened_steel/WearMask.png",
+          "sha256": "9b4d5d2b0901e1da68d2b52c7cb6887eb54eafa60bb05cd7d3aac969e051e17d",
+          "bytes": 24611,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "WearMask",
+          "label": "Wear mask",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/c1ef4e271d396fd3-360.webp",
+            "assets/c1ef4e271d396fd3-800.webp"
+          ]
+        },
+        {
+          "path": "materials/06_blackened_steel/Opacity.png",
+          "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+          "bytes": 25454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Opacity",
+          "label": "Opacity",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/c4e2f6f3c69fb3ea-360.webp",
+            "assets/c4e2f6f3c69fb3ea-800.webp"
+          ]
+        }
+      ],
+      "beauty": {
+        "path": "path_traced/renders/06_blackened_steel_detail.png",
+        "sha256": "7105b5002cbaa94a1ce5857edbd7512a2d4e236068e9ca1765ee6b2dc570b82e",
+        "bytes": 4552687,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/ac1119574740ae04-360.webp",
+          "assets/ac1119574740ae04-800.webp"
+        ]
+      },
+      "proof": {
+        "path": "path_traced/controlled_surfaces/06_blackened_steel_detail.png",
+        "sha256": "8707de83c6346b9fb7b0687a0ea198da2f4d639e00a922f11a3121e4c3d3116d",
+        "bytes": 4647293,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/2acd86cc50ad9e86-360.webp",
+          "assets/2acd86cc50ad9e86-800.webp"
+        ]
+      },
+      "render_settings": {
+        "scene": "CYCLES / Detail / Blackened Steel / Satin Oxide",
+        "file": "renders/06_blackened_steel_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.11999999731779099,
+        "material_ids": "06_blackened_steel",
+        "elapsed_seconds": 571.96,
+        "camera": {
+          "position_m": [
+            0.131400004029274,
+            -0.19439999759197235,
+            0.1746000051498413
+          ],
+          "rotation_rad": [
+            0.984946608543396,
+            -6.921755613120695e-09,
+            0.5943855047225952
+          ],
+          "lens_mm": 55.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "06_blackened_steel",
+        "inspection_width_m": 0.18,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "sha256": "7105b5002cbaa94a1ce5857edbd7512a2d4e236068e9ca1765ee6b2dc570b82e",
+        "bytes": 4552687
+      },
+      "proof_settings": {
+        "scene": "CYCLES / Controlled Surface / Blackened Steel / Satin Oxide",
+        "file": "path_traced/controlled_surfaces/06_blackened_steel_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "OPTIX",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.10000000149011612,
+        "material_ids": "",
+        "elapsed_seconds": 25.25,
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "06_blackened_steel",
+        "inspection_width_m": 0.12,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "bits": 16,
+        "sha256": "8707de83c6346b9fb7b0687a0ea198da2f4d639e00a922f11a3121e4c3d3116d",
+        "bytes": 4647293
+      },
+      "qualification": "Rebuilt suite appearance; procedural approximation, not measured calibration"
+    },
+    {
+      "id": "07_bone_porcelain",
+      "name": "Bone Porcelain / Clear Glaze",
+      "family": "Ceramic",
+      "tile_m": 0.24,
+      "height_scale_m": 0.00045,
+      "roughness": 0.24,
+      "ior": 1.49,
+      "metallic": 0,
+      "coat": 0.32,
+      "coat_roughness": 0.12,
+      "preview_diameter_m": 0.1,
+      "description": "Clear glaze over warm ivory ceramic; fine firing flow and shallow glaze peel, without random chips.",
+      "maps": [
+        {
+          "path": "materials/07_bone_porcelain/BaseColor.png",
+          "sha256": "f04c8e2b79ea0383ed719ea02322d332e9925f2ac03625846adfa873d5d05012",
+          "bytes": 131759,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "BaseColor",
+          "label": "Base color",
+          "interpretation": "sRGB \u00b7 RGB8",
+          "previews": [
+            "assets/64f314ddfb74c5ad-360.webp",
+            "assets/64f314ddfb74c5ad-800.webp"
+          ]
+        },
+        {
+          "path": "materials/07_bone_porcelain/Roughness.png",
+          "sha256": "02100ff6676facaba0747453d4a1b241f6acff0a2cee53145f82bbacdbb4babb",
+          "bytes": 1591672,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Roughness",
+          "label": "Roughness",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/655d1cb21de2a1df-360.webp",
+            "assets/655d1cb21de2a1df-800.webp"
+          ]
+        },
+        {
+          "path": "materials/07_bone_porcelain/Metallic.png",
+          "sha256": "334c4a79f661f8f9c215b7fd06284d5fb3fe7fd3822f10dc8842f85f664c9a7f",
+          "bytes": 16353,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Metallic",
+          "label": "Metallic",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/77fb120ab0abf1af-360.webp",
+            "assets/77fb120ab0abf1af-800.webp"
+          ]
+        },
+        {
+          "path": "materials/07_bone_porcelain/Normal_OpenGL.png",
+          "sha256": "080e1c46fd9913c2e81a98ec3373247571b34b548e45f31fc5fe0dbf8d2fcffc",
+          "bytes": 1896866,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_OpenGL",
+          "label": "Normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/085dfcbc32e634ee-360.webp",
+            "assets/085dfcbc32e634ee-800.webp"
+          ]
+        },
+        {
+          "path": "materials/07_bone_porcelain/Normal_DirectX.png",
+          "sha256": "e9d5b26ecf43b0224220e766b990b60eff9c39e2eaf9fffabd897bca5edfd2b4",
+          "bytes": 1895976,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_DirectX",
+          "label": "Normal \u2212Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/a02be14c3ee6b641-360.webp",
+            "assets/a02be14c3ee6b641-800.webp"
+          ]
+        },
+        {
+          "path": "materials/07_bone_porcelain/Height.png",
+          "sha256": "b7efeeadc92b7a0110746a7b573c5e3ab0271cb2d2bafea964d254cb318475b7",
+          "bytes": 9970656,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height",
+          "label": "Height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/048fa68a83f2c6bc-360.webp",
+            "assets/048fa68a83f2c6bc-800.webp"
+          ]
+        },
+        {
+          "path": "materials/07_bone_porcelain/Height_Macro.png",
+          "sha256": "5c951f8697d0794ac611019477b414b490a017e123402362c09637170fb4feb6",
+          "bytes": 8637443,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height_Macro",
+          "label": "Macro height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/5c23a42707135d2d-360.webp",
+            "assets/5c23a42707135d2d-800.webp"
+          ]
+        },
+        {
+          "path": "materials/07_bone_porcelain/Normal_Micro_OpenGL.png",
+          "sha256": "34ee0092c4bdd4305b6fc7dfaff6b24b70a5688a784fe2bd43d3edb5dff47510",
+          "bytes": 2190833,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_Micro_OpenGL",
+          "label": "Residual normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/d8e6df349ff38905-360.webp",
+            "assets/d8e6df349ff38905-800.webp"
+          ]
+        },
+        {
+          "path": "materials/07_bone_porcelain/AO.png",
+          "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+          "bytes": 25454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "AO",
+          "label": "Ambient occlusion",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/ee9ee1ca2d482956-360.webp",
+            "assets/ee9ee1ca2d482956-800.webp"
+          ]
+        },
+        {
+          "path": "materials/07_bone_porcelain/ORM.png",
+          "sha256": "f66defcc311d87c9014233156191f7a929d5c8d03ea0a93b1be3dee96f080563",
+          "bytes": 2017092,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "ORM",
+          "label": "Packed ORM",
+          "interpretation": "Linear \u00b7 R: AO / G: roughness / B: metallic",
+          "previews": [
+            "assets/0cfabf182f43731f-360.webp",
+            "assets/0cfabf182f43731f-800.webp"
+          ]
+        },
+        {
+          "path": "materials/07_bone_porcelain/WearMask.png",
+          "sha256": "334c4a79f661f8f9c215b7fd06284d5fb3fe7fd3822f10dc8842f85f664c9a7f",
+          "bytes": 16353,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "WearMask",
+          "label": "Wear mask",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/7f50f496938d177e-360.webp",
+            "assets/7f50f496938d177e-800.webp"
+          ]
+        },
+        {
+          "path": "materials/07_bone_porcelain/Opacity.png",
+          "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+          "bytes": 25454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Opacity",
+          "label": "Opacity",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/1152b252ddeade85-360.webp",
+            "assets/1152b252ddeade85-800.webp"
+          ]
+        }
+      ],
+      "beauty": {
+        "path": "path_traced/renders/07_bone_porcelain_detail.png",
+        "sha256": "9dc0460e54a0e7b33aaf233eb7446eb43ba244c7d8f22211b8942e4f918fd8cc",
+        "bytes": 4786417,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/4e7511f2152f7332-360.webp",
+          "assets/4e7511f2152f7332-800.webp"
+        ]
+      },
+      "proof": {
+        "path": "path_traced/controlled_surfaces/07_bone_porcelain_detail.png",
+        "sha256": "c64d896054ee4cec1b2ee426b7976507103819cc559d512e2fc9cbae20072978",
+        "bytes": 4307217,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/356f36b316384939-360.webp",
+          "assets/356f36b316384939-800.webp"
+        ]
+      },
+      "render_settings": {
+        "scene": "CYCLES / Detail / Bone Porcelain / Clear Glaze",
+        "file": "renders/07_bone_porcelain_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.11999999731779099,
+        "material_ids": "07_bone_porcelain",
+        "elapsed_seconds": 1181.4,
+        "camera": {
+          "position_m": [
+            0.131400004029274,
+            -0.19439999759197235,
+            0.1746000051498413
+          ],
+          "rotation_rad": [
+            0.984946608543396,
+            -6.921755613120695e-09,
+            0.5943855047225952
+          ],
+          "lens_mm": 55.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "07_bone_porcelain",
+        "inspection_width_m": 0.18,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "sha256": "9dc0460e54a0e7b33aaf233eb7446eb43ba244c7d8f22211b8942e4f918fd8cc",
+        "bytes": 4786417
+      },
+      "proof_settings": {
+        "scene": "CYCLES / Controlled Surface / Bone Porcelain / Clear Glaze",
+        "file": "path_traced/controlled_surfaces/07_bone_porcelain_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "OPTIX",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.10000000149011612,
+        "material_ids": "",
+        "elapsed_seconds": 28.53,
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "07_bone_porcelain",
+        "inspection_width_m": 0.1,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "bits": 16,
+        "sha256": "c64d896054ee4cec1b2ee426b7976507103819cc559d512e2fc9cbae20072978",
+        "bytes": 4307217
+      },
+      "qualification": "Rebuilt suite appearance; procedural approximation, not measured calibration"
+    },
+    {
+      "id": "08_saddle_leather",
+      "name": "Saddle Leather / Full Grain",
+      "family": "Leather",
+      "tile_m": 0.18,
+      "height_scale_m": 0.00075,
+      "roughness": 0.5,
+      "ior": 1.48,
+      "metallic": 0,
+      "coat": 0.015,
+      "coat_roughness": 0.48,
+      "preview_diameter_m": 0.065,
+      "description": "Fine irregular submillimeter hide grain and follicles; restrained dye variation. Mesh seams and bends describe construction.",
+      "maps": [
+        {
+          "path": "materials/08_saddle_leather/BaseColor.png",
+          "sha256": "690f01c36f19ec1e3269554fb655041cc25699f7c79f75e87e51ead83493cf8d",
+          "bytes": 1931139,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "BaseColor",
+          "label": "Base color",
+          "interpretation": "sRGB \u00b7 RGB8",
+          "previews": [
+            "assets/56f76526bff54867-360.webp",
+            "assets/56f76526bff54867-800.webp"
+          ]
+        },
+        {
+          "path": "materials/08_saddle_leather/Roughness.png",
+          "sha256": "88e02cfdb9c24ab7692286a88d337a64462e320749adf7af347dd31fb0885dcc",
+          "bytes": 3612859,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Roughness",
+          "label": "Roughness",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/61c33f7cecb6a109-360.webp",
+            "assets/61c33f7cecb6a109-800.webp"
+          ]
+        },
+        {
+          "path": "materials/08_saddle_leather/Metallic.png",
+          "sha256": "334c4a79f661f8f9c215b7fd06284d5fb3fe7fd3822f10dc8842f85f664c9a7f",
+          "bytes": 16353,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Metallic",
+          "label": "Metallic",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/325bef6c8725cdae-360.webp",
+            "assets/325bef6c8725cdae-800.webp"
+          ]
+        },
+        {
+          "path": "materials/08_saddle_leather/Normal_OpenGL.png",
+          "sha256": "73d16446904774eaae687d10a5d5004131e550546e36471267ca422d2c7112cf",
+          "bytes": 25418282,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_OpenGL",
+          "label": "Normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/efe41a5505572dcd-360.webp",
+            "assets/efe41a5505572dcd-800.webp"
+          ]
+        },
+        {
+          "path": "materials/08_saddle_leather/Normal_DirectX.png",
+          "sha256": "4adfac438107c90e75f1883e07e36ddbfe40aa33ded41ed7bf60f6f70b469bf0",
+          "bytes": 25392889,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_DirectX",
+          "label": "Normal \u2212Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/95d063acb5eb31a6-360.webp",
+            "assets/95d063acb5eb31a6-800.webp"
+          ]
+        },
+        {
+          "path": "materials/08_saddle_leather/Height.png",
+          "sha256": "e3c7f73cfaeae48e56559daee11c99d05776e366bf20c15bf82562126ada3618",
+          "bytes": 24580508,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height",
+          "label": "Height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/23035209d781c2cd-360.webp",
+            "assets/23035209d781c2cd-800.webp"
+          ]
+        },
+        {
+          "path": "materials/08_saddle_leather/Height_Macro.png",
+          "sha256": "75b59663013cbad22985dd2cd62e70749e512f5bee35e7ca152c1182d6861e7a",
+          "bytes": 17038116,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height_Macro",
+          "label": "Macro height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/ead4e7dde013b4e9-360.webp",
+            "assets/ead4e7dde013b4e9-800.webp"
+          ]
+        },
+        {
+          "path": "materials/08_saddle_leather/Normal_Micro_OpenGL.png",
+          "sha256": "d7161a2ed18597468ae6efa9367daa048f4dea94160640e82e2fc9fb3dcb43a2",
+          "bytes": 25401677,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_Micro_OpenGL",
+          "label": "Residual normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/21c9f4903e4c90bb-360.webp",
+            "assets/21c9f4903e4c90bb-800.webp"
+          ]
+        },
+        {
+          "path": "materials/08_saddle_leather/AO.png",
+          "sha256": "e8464ea0d790dcf359da3d6e83032db3edeada9777d4a66fbfbd2ff954d1e896",
+          "bytes": 135032,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "AO",
+          "label": "Ambient occlusion",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/30ae93fb3e21ab49-360.webp",
+            "assets/30ae93fb3e21ab49-800.webp"
+          ]
+        },
+        {
+          "path": "materials/08_saddle_leather/ORM.png",
+          "sha256": "19b030f7ba86aff6fd5726916cf4e23c971636af5ad175a952117d97d7a406d7",
+          "bytes": 4853460,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "ORM",
+          "label": "Packed ORM",
+          "interpretation": "Linear \u00b7 R: AO / G: roughness / B: metallic",
+          "previews": [
+            "assets/43981cdd38cefe4e-360.webp",
+            "assets/43981cdd38cefe4e-800.webp"
+          ]
+        },
+        {
+          "path": "materials/08_saddle_leather/WearMask.png",
+          "sha256": "334c4a79f661f8f9c215b7fd06284d5fb3fe7fd3822f10dc8842f85f664c9a7f",
+          "bytes": 16353,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "WearMask",
+          "label": "Wear mask",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/713af709908712c1-360.webp",
+            "assets/713af709908712c1-800.webp"
+          ]
+        },
+        {
+          "path": "materials/08_saddle_leather/Opacity.png",
+          "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+          "bytes": 25454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Opacity",
+          "label": "Opacity",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/8e7bdb1d71bddbff-360.webp",
+            "assets/8e7bdb1d71bddbff-800.webp"
+          ]
+        }
+      ],
+      "beauty": {
+        "path": "path_traced/renders/08_saddle_leather_detail.png",
+        "sha256": "77ed76fd447b93adbae413d960e6665801d09643c8571fad9a1b03d307ba90b1",
+        "bytes": 4764151,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/43b520303ad2ca04-360.webp",
+          "assets/43b520303ad2ca04-800.webp"
+        ]
+      },
+      "proof": {
+        "path": "path_traced/controlled_surfaces/08_saddle_leather_detail.png",
+        "sha256": "afd43e7044300eb34279dec1a79e58387bdf571e9a3de4dec5e73025ec6ee3c1",
+        "bytes": 5286868,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/794c66168197c2be-360.webp",
+          "assets/794c66168197c2be-800.webp"
+        ]
+      },
+      "render_settings": {
+        "scene": "CYCLES / Detail / Saddle Leather / Full Grain",
+        "file": "renders/08_saddle_leather_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.11999999731779099,
+        "material_ids": "08_saddle_leather",
+        "elapsed_seconds": 795.52,
+        "camera": {
+          "position_m": [
+            0.1459999978542328,
+            -0.2160000056028366,
+            0.1940000057220459
+          ],
+          "rotation_rad": [
+            0.9849467277526855,
+            4.644036266654439e-09,
+            0.5943854451179504
+          ],
+          "lens_mm": 55.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "08_saddle_leather",
+        "inspection_width_m": 0.2,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "sha256": "77ed76fd447b93adbae413d960e6665801d09643c8571fad9a1b03d307ba90b1",
+        "bytes": 4764151
+      },
+      "proof_settings": {
+        "scene": "CYCLES / Controlled Surface / Saddle Leather / Full Grain",
+        "file": "path_traced/controlled_surfaces/08_saddle_leather_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "OPTIX",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.003000000026077032,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.10000000149011612,
+        "material_ids": "",
+        "elapsed_seconds": 33.52,
+        "camera": {
+          "position_m": [
+            0.007799999788403511,
+            -0.07800000160932541,
+            0.12025000154972076
+          ],
+          "rotation_rad": [
+            0.5776984095573425,
+            -5.923245449679371e-09,
+            0.09966866672039032
+          ],
+          "lens_mm": 50.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "08_saddle_leather",
+        "inspection_width_m": 0.065,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "bits": 16,
+        "sha256": "afd43e7044300eb34279dec1a79e58387bdf571e9a3de4dec5e73025ec6ee3c1",
+        "bytes": 5286868
+      },
+      "qualification": "Rebuilt suite appearance; procedural approximation, not measured calibration"
+    },
+    {
+      "id": "09_lime_plaster",
+      "name": "Lime Plaster / Troweled Skim",
+      "family": "Plaster",
+      "tile_m": 0.65,
+      "height_scale_m": 0.002,
+      "roughness": 0.76,
+      "ior": 1.48,
+      "metallic": 0,
+      "preview_diameter_m": 0.22,
+      "description": "Overlapping broad trowel passes and polished leading lips with restrained fine aggregate.",
+      "maps": [
+        {
+          "path": "materials/09_lime_plaster/BaseColor.png",
+          "sha256": "5836bacb8d87fc4eb82d1dfd44f8f9565eff7b19e695859ab849afa0c4edc2a4",
+          "bytes": 1737957,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "BaseColor",
+          "label": "Base color",
+          "interpretation": "sRGB \u00b7 RGB8",
+          "previews": [
+            "assets/78c2157c9d698f8c-360.webp",
+            "assets/78c2157c9d698f8c-800.webp"
+          ]
+        },
+        {
+          "path": "materials/09_lime_plaster/Roughness.png",
+          "sha256": "4d3e880565cc533246c591631f811d240c138b3798cbbc482fcba096d5567db0",
+          "bytes": 360218,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Roughness",
+          "label": "Roughness",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/e19ee632d1415b50-360.webp",
+            "assets/e19ee632d1415b50-800.webp"
+          ]
+        },
+        {
+          "path": "materials/09_lime_plaster/Metallic.png",
+          "sha256": "334c4a79f661f8f9c215b7fd06284d5fb3fe7fd3822f10dc8842f85f664c9a7f",
+          "bytes": 16353,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Metallic",
+          "label": "Metallic",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/8b589fb9afaff530-360.webp",
+            "assets/8b589fb9afaff530-800.webp"
+          ]
+        },
+        {
+          "path": "materials/09_lime_plaster/Normal_OpenGL.png",
+          "sha256": "a14aa6deb5d715d59baae1cda8d78b1b7a278b2f6702ec643282846082f1edf1",
+          "bytes": 4586236,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_OpenGL",
+          "label": "Normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/4f1065e75bade3e6-360.webp",
+            "assets/4f1065e75bade3e6-800.webp"
+          ]
+        },
+        {
+          "path": "materials/09_lime_plaster/Normal_DirectX.png",
+          "sha256": "76a8c26aeeb29001ee93427d912d7f2ee0f56a7b624f898136d731832b218ea6",
+          "bytes": 4585320,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_DirectX",
+          "label": "Normal \u2212Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/fcb79466994378da-360.webp",
+            "assets/fcb79466994378da-800.webp"
+          ]
+        },
+        {
+          "path": "materials/09_lime_plaster/Height.png",
+          "sha256": "93217edcb61997f2760498bf807fd0cb74e406d831b900465b1a2ee743e0bcaa",
+          "bytes": 16526379,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height",
+          "label": "Height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/20f91f3efd5b6227-360.webp",
+            "assets/20f91f3efd5b6227-800.webp"
+          ]
+        },
+        {
+          "path": "materials/09_lime_plaster/Height_Macro.png",
+          "sha256": "a9f21d510a5ce3ba532cac3fac2a766bdf7037e24f5f21afad9b30a6bcdd9b46",
+          "bytes": 11630894,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height_Macro",
+          "label": "Macro height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/4ece09c407723551-360.webp",
+            "assets/4ece09c407723551-800.webp"
+          ]
+        },
+        {
+          "path": "materials/09_lime_plaster/Normal_Micro_OpenGL.png",
+          "sha256": "b729e8c67f6b0b0eea8222fefd9d5f44eada7cd8dc90b37c42265e4f15295b11",
+          "bytes": 4134602,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_Micro_OpenGL",
+          "label": "Residual normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/06f4f8ffa1d041f8-360.webp",
+            "assets/06f4f8ffa1d041f8-800.webp"
+          ]
+        },
+        {
+          "path": "materials/09_lime_plaster/AO.png",
+          "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+          "bytes": 25454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "AO",
+          "label": "Ambient occlusion",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/aab453b468143f65-360.webp",
+            "assets/aab453b468143f65-800.webp"
+          ]
+        },
+        {
+          "path": "materials/09_lime_plaster/ORM.png",
+          "sha256": "fed661fca03b19ebc9726621c0f7c0396a4967acb7676acf8a1b0bd774df8c77",
+          "bytes": 473340,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "ORM",
+          "label": "Packed ORM",
+          "interpretation": "Linear \u00b7 R: AO / G: roughness / B: metallic",
+          "previews": [
+            "assets/964687dc9c2ef3bf-360.webp",
+            "assets/964687dc9c2ef3bf-800.webp"
+          ]
+        },
+        {
+          "path": "materials/09_lime_plaster/WearMask.png",
+          "sha256": "e134ecade101385bcec253133a69cfa9d549b524a22c22ed206e2dc813ecb992",
+          "bytes": 102287,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "WearMask",
+          "label": "Wear mask",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/89a9cdfe223e2b15-360.webp",
+            "assets/89a9cdfe223e2b15-800.webp"
+          ]
+        },
+        {
+          "path": "materials/09_lime_plaster/Opacity.png",
+          "sha256": "eb472d6bf383e4da4fb64a8cedee8fb37709545cad9a1058396c5b77ba2c577e",
+          "bytes": 25454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Opacity",
+          "label": "Opacity",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/60d88f5d0836149c-360.webp",
+            "assets/60d88f5d0836149c-800.webp"
+          ]
+        }
+      ],
+      "beauty": {
+        "path": "path_traced/renders/09_lime_plaster_detail.png",
+        "sha256": "c995e724e28390fda12132d5b709e670755302d4c9f0768e5d041332a81f09a1",
+        "bytes": 4268578,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/7a58a0a0f9842192-360.webp",
+          "assets/7a58a0a0f9842192-800.webp"
+        ]
+      },
+      "proof": {
+        "path": "path_traced/controlled_surfaces/09_lime_plaster_detail.png",
+        "sha256": "ae6d16ce3f97584a04246fe24dfb6806e6a96144b2428bfaa0ff84f95a4e82d8",
+        "bytes": 4158533,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/27ac4af20ea5607e-360.webp",
+          "assets/27ac4af20ea5607e-800.webp"
+        ]
+      },
+      "render_settings": {
+        "scene": "CYCLES / Detail / Lime Plaster / Troweled Skim",
+        "file": "renders/09_lime_plaster_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.11999999731779099,
+        "material_ids": "09_lime_plaster",
+        "elapsed_seconds": 406.25,
+        "camera": {
+          "position_m": [
+            0.23360000550746918,
+            -0.3456000089645386,
+            0.31040000915527344
+          ],
+          "rotation_rad": [
+            0.9849467277526855,
+            4.644036266654439e-09,
+            0.5943854451179504
+          ],
+          "lens_mm": 55.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "09_lime_plaster",
+        "inspection_width_m": 0.32,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "sha256": "c995e724e28390fda12132d5b709e670755302d4c9f0768e5d041332a81f09a1",
+        "bytes": 4268578
+      },
+      "proof_settings": {
+        "scene": "CYCLES / Controlled Surface / Lime Plaster / Troweled Skim",
+        "file": "path_traced/controlled_surfaces/09_lime_plaster_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "OPTIX",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.10000000149011612,
+        "material_ids": "",
+        "elapsed_seconds": 11.69,
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "09_lime_plaster",
+        "inspection_width_m": 0.22,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "bits": 16,
+        "sha256": "ae6d16ce3f97584a04246fe24dfb6806e6a96144b2428bfaa0ff84f95a4e82d8",
+        "bytes": 4158533
+      },
+      "qualification": "Rebuilt suite appearance; procedural approximation, not measured calibration"
+    },
+    {
+      "id": "10_natural_linen",
+      "name": "Natural Linen / Frayed",
+      "family": "Textile",
+      "tile_m": 0.085,
+      "height_scale_m": 0.00065,
+      "roughness": 0.8,
+      "ior": 1.46,
+      "metallic": 0,
+      "sheen": 0.32,
+      "sheen_roughness": 0.66,
+      "preview_diameter_m": 0.028,
+      "description": "Fine plain flax weave with 120 variable yarns per tile, continuous over-under bending, fibrils, attached slubs and real transparent inter-yarn openings.",
+      "maps": [
+        {
+          "path": "materials/10_natural_linen/BaseColor.png",
+          "sha256": "af1df4ef1b82b7e013af113d76d364223d80f19c78988fd7607c8c692246dcff",
+          "bytes": 3048812,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "BaseColor",
+          "label": "Base color",
+          "interpretation": "sRGB \u00b7 RGB8",
+          "previews": [
+            "assets/8017cefae087c3e5-360.webp",
+            "assets/8017cefae087c3e5-800.webp"
+          ]
+        },
+        {
+          "path": "materials/10_natural_linen/Roughness.png",
+          "sha256": "02dc7069de842dc811871d89c62ded0bbd6b48a9fd627235a0158a363d1e8a0a",
+          "bytes": 1325523,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Roughness",
+          "label": "Roughness",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/bf37458282bc76a8-360.webp",
+            "assets/bf37458282bc76a8-800.webp"
+          ]
+        },
+        {
+          "path": "materials/10_natural_linen/Metallic.png",
+          "sha256": "334c4a79f661f8f9c215b7fd06284d5fb3fe7fd3822f10dc8842f85f664c9a7f",
+          "bytes": 16353,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Metallic",
+          "label": "Metallic",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/5f3958d7dd5d2bfc-360.webp",
+            "assets/5f3958d7dd5d2bfc-800.webp"
+          ]
+        },
+        {
+          "path": "materials/10_natural_linen/Normal_OpenGL.png",
+          "sha256": "bda68e61b6d6766190f75caf5035585ea156cd4ab25713b57f61a7a2ba5bb609",
+          "bytes": 20038180,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_OpenGL",
+          "label": "Normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/3c30eaf5246efc8b-360.webp",
+            "assets/3c30eaf5246efc8b-800.webp"
+          ]
+        },
+        {
+          "path": "materials/10_natural_linen/Normal_DirectX.png",
+          "sha256": "886cbcb629d532ac837ac42e8935b7f41068a1d99d0d0da5c11e5cea19ee9abe",
+          "bytes": 19990443,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_DirectX",
+          "label": "Normal \u2212Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/54aabc41ed8ebf59-360.webp",
+            "assets/54aabc41ed8ebf59-800.webp"
+          ]
+        },
+        {
+          "path": "materials/10_natural_linen/Height.png",
+          "sha256": "13ff1725058ca47fd380f09cae2b0649b5bc1d8299d2a8478119ca8b63c7692d",
+          "bytes": 24622305,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height",
+          "label": "Height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/bf13d38c573823ed-360.webp",
+            "assets/bf13d38c573823ed-800.webp"
+          ]
+        },
+        {
+          "path": "materials/10_natural_linen/Height_Macro.png",
+          "sha256": "d879759200995588b3f9d493711dc3fede0af0aee0642660512db60fddf10e17",
+          "bytes": 24979166,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 16,
+          "channel": "Height_Macro",
+          "label": "Macro height",
+          "interpretation": "Linear \u00b7 Gray16",
+          "previews": [
+            "assets/883779694f50a60d-360.webp",
+            "assets/883779694f50a60d-800.webp"
+          ]
+        },
+        {
+          "path": "materials/10_natural_linen/Normal_Micro_OpenGL.png",
+          "sha256": "5773655c44f13407146a2a3fdc81d8ba875e611abbd6ace32eec47bd9d418b07",
+          "bytes": 22902647,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Normal_Micro_OpenGL",
+          "label": "Residual normal +Y",
+          "interpretation": "Tangent space \u00b7 RGB8",
+          "previews": [
+            "assets/51d5fbada0db1a4b-360.webp",
+            "assets/51d5fbada0db1a4b-800.webp"
+          ]
+        },
+        {
+          "path": "materials/10_natural_linen/AO.png",
+          "sha256": "f4fe1b425aa1ae2c95def3909d1d12b521908b596fd52bef57aa27c84062f44f",
+          "bytes": 3470526,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "AO",
+          "label": "Ambient occlusion",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/3b394cdc631f0b77-360.webp",
+            "assets/3b394cdc631f0b77-800.webp"
+          ]
+        },
+        {
+          "path": "materials/10_natural_linen/ORM.png",
+          "sha256": "a3ec9003251468dbaf51a6e5eee7fca8e1261bbd21cac5d6607763a1d92d1b5d",
+          "bytes": 6199064,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "ORM",
+          "label": "Packed ORM",
+          "interpretation": "Linear \u00b7 R: AO / G: roughness / B: metallic",
+          "previews": [
+            "assets/418814b530be718c-360.webp",
+            "assets/418814b530be718c-800.webp"
+          ]
+        },
+        {
+          "path": "materials/10_natural_linen/WearMask.png",
+          "sha256": "d662006d12328d1c6389dc9c6ff1cb430875c9372c1975f1413034377239538b",
+          "bytes": 685454,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "WearMask",
+          "label": "Wear mask",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/7ce074f861c9aa46-360.webp",
+            "assets/7ce074f861c9aa46-800.webp"
+          ]
+        },
+        {
+          "path": "materials/10_natural_linen/Opacity.png",
+          "sha256": "e0ae4fc0ed9327813b59f1e9b5225eb7aa423c01b12c9b1d2dc40fef3da3e12d",
+          "bytes": 598076,
+          "width": 4096,
+          "height": 4096,
+          "bit_depth": 8,
+          "channel": "Opacity",
+          "label": "Opacity",
+          "interpretation": "Linear \u00b7 Gray8",
+          "previews": [
+            "assets/53319daf032776f0-360.webp",
+            "assets/53319daf032776f0-800.webp"
+          ]
+        }
+      ],
+      "beauty": {
+        "path": "path_traced/renders/10_natural_linen_detail.png",
+        "sha256": "4680a884312b24b3c2387801c3a56847518af345f980d9f2711b2f94aee96152",
+        "bytes": 4770917,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/ec2334ddc5804ec4-360.webp",
+          "assets/ec2334ddc5804ec4-800.webp"
+        ]
+      },
+      "proof": {
+        "path": "path_traced/controlled_surfaces/10_natural_linen_detail.png",
+        "sha256": "886bcd2920105009e2ec1ffe6ed6852e0c58d5ab96fc737598e08c2270b7cada",
+        "bytes": 5174425,
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 16,
+        "previews": [
+          "assets/e2ae1dc9050b957f-360.webp",
+          "assets/e2ae1dc9050b957f-800.webp"
+        ]
+      },
+      "render_settings": {
+        "scene": "CYCLES / Detail / Natural Linen / Frayed",
+        "file": "renders/10_natural_linen_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.11999999731779099,
+        "material_ids": "10_natural_linen",
+        "elapsed_seconds": 840.61,
+        "camera": {
+          "position_m": [
+            0.16060000658035278,
+            -0.23759999871253967,
+            0.2134000062942505
+          ],
+          "rotation_rad": [
+            0.984946608543396,
+            2.0024311098154612e-08,
+            0.5943854451179504
+          ],
+          "lens_mm": 55.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "10_natural_linen",
+        "inspection_width_m": 0.22,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "sha256": "4680a884312b24b3c2387801c3a56847518af345f980d9f2711b2f94aee96152",
+        "bytes": 4770917
+      },
+      "proof_settings": {
+        "scene": "CYCLES / Controlled Surface / Natural Linen / Frayed",
+        "file": "path_traced/controlled_surfaces/10_natural_linen_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "OPTIX",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.10000000149011612,
+        "material_ids": "",
+        "elapsed_seconds": 16.23,
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "material_id": "10_natural_linen",
+        "inspection_width_m": 0.028,
+        "geometry_height": "Height_Macro.png",
+        "residual_normal": "Normal_Micro_OpenGL.png",
+        "bits": 16,
+        "sha256": "886bcd2920105009e2ec1ffe6ed6852e0c58d5ab96fc737598e08c2270b7cada",
+        "bytes": 5174425
+      },
+      "qualification": "Rebuilt suite appearance; procedural approximation, not measured calibration"
+    }
+  ],
+  "selected": [
+    {
+      "id": "21_plastic_texture",
+      "name": "Molded stipple plastic",
+      "image": {
+        "path": "audit/previews/21_molded_stipple_plastic_full.png",
+        "sha256": "ec921941239f9954e6440cac0d7f48a5d305e1446f63ec054e131978ab32ab27",
+        "bytes": 3281749,
+        "width": 960,
+        "height": 1104,
+        "bit_depth": 16,
+        "previews": [
+          "assets/296b48dac79589e5-360.webp",
+          "assets/296b48dac79589e5-800.webp"
+        ]
+      },
+      "native_render_resolution": [
+        960,
+        960
+      ],
+      "labeled_presentation_resolution": [
+        960,
+        1104
+      ],
+      "review": {
+        "kind": "complete_panel",
+        "status": "verified_visible_improvement",
+        "library_version": 0,
+        "labeled_image_sha256": "ec921941239f9954e6440cac0d7f48a5d305e1446f63ec054e131978ab32ab27",
+        "canonical_render_sha256": "262604c94de4501d4a4d5ea1f463bb3c42f4db49edaba6ea66f9f3050a65ac00",
+        "source_scene": "shared/material-production/experiments/plastic_complete_transfer/scenes/plastic_complete_full.blend",
+        "source_scene_sha256": "8e45cc56927ca910d2cb2aeb7d23b35e20a3a24beea500b22df446778711e4a5",
+        "capture_run": "shared/material-production/runs/plastic_complete_full_r3_capture_20261006_1518",
+        "view_scope": "Complete original80mm rounded form with native4096 retained relief and a camera-specific geometric LOD; improved curved grain and edge highlight.",
+        "scope": "Verified visible detail improvement after complete,macro and second-light comparisons. Current solved recipe differs from prior90%-replication recipe. Physical model calibration remains false.",
+        "protected": true,
+        "review_receipt_sha256": "4e58558bd77230eaa0030e28ce8871c1e27d8d535b9ab861a81ab3d3f6216d4a",
+        "capture_recipe": {
+          "experiment": "plastic_complete_candidate_full_r3",
+          "manifest": "shared/material-production/experiments/plastic_complete_candidate_full_r3/experiment.json",
+          "manifest_sha256": "0eb718dabd975df7f2abee9786d035b6c9b0a4b40b8a80be1b7016103dfcfc1a",
+          "build_argv": [
+            "python3",
+            "-m",
+            "materials",
+            "experiment",
+            "plastic_complete_candidate_full_r3",
+            "--out",
+            "<fresh-build-directory>"
+          ],
+          "capture_argv": [
+            "python3",
+            "-m",
+            "materials",
+            "capture",
+            "<fresh-build-directory>/build.json",
+            "--out",
+            "<fresh-capture-directory>",
+            "--mode",
+            "guided",
+            "--samples",
+            "128",
+            "--fixed-samples"
+          ],
+          "dimensions_px": [
+            960,
+            960
+          ],
+          "studio_lights_downward": true
+        }
+      },
+      "description": "80 \u00d7 80 \u00d7 8 mm complete part. Reviewed curved grain and edge highlight; physical calibration remains false."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "11_stone_and_timber",
+      "image": {
+        "path": "path_traced/renders/11_stone_and_timber.png",
+        "sha256": "ffe9a3af954b660b2d3466f3877336c24e9f3c818792c3d53de04b4e56d58d84",
+        "bytes": 5802258,
+        "width": 1280,
+        "height": 960,
+        "bit_depth": 16,
+        "previews": [
+          "assets/bb63164ead4984b6-360.webp",
+          "assets/bb63164ead4984b6-800.webp"
+        ]
+      },
+      "settings": {
+        "scene": "CYCLES / Still life / Stone and Timber",
+        "file": "renders/11_stone_and_timber.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          1280,
+          960
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.00800000037997961,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": 0.10000000149011612,
+        "material_ids": "09_lime_plaster,03_american_walnut,01_calacatta_oro,02_roman_travertine,04_fumed_oak",
+        "elapsed_seconds": 1831.61,
+        "camera": {
+          "position_m": [
+            0.5400000214576721,
+            -0.9300000071525574,
+            0.6100000143051147
+          ],
+          "rotation_rad": [
+            1.189378261566162,
+            4.034351519521806e-09,
+            0.5146238207817078
+          ],
+          "lens_mm": 56.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "sha256": "ffe9a3af954b660b2d3466f3877336c24e9f3c818792c3d53de04b4e56d58d84",
+        "bytes": 5802258
+      }
+    },
+    {
+      "id": "12_leather_and_linen",
+      "image": {
+        "path": "path_traced/renders/12_leather_and_linen.png",
+        "sha256": "1a85211ed021728a226f6f5628db42bf421f5a2a2a6b2bf504c5bac1fda21cc4",
+        "bytes": 6123481,
+        "width": 1280,
+        "height": 960,
+        "bit_depth": 16,
+        "previews": [
+          "assets/df5dc8a7d315dc5f-360.webp",
+          "assets/df5dc8a7d315dc5f-800.webp"
+        ]
+      },
+      "settings": {
+        "scene": "CYCLES / Still life / Leather and Linen",
+        "file": "renders/12_leather_and_linen.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          1280,
+          960
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.00800000037997961,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.30000001192092896,
+        "material_ids": "04_fumed_oak,10_natural_linen,08_saddle_leather,05_champagne_brass",
+        "elapsed_seconds": 936.82,
+        "camera": {
+          "position_m": [
+            0.27000001072883606,
+            -0.3400000035762787,
+            0.38999998569488525
+          ],
+          "rotation_rad": [
+            0.8783939480781555,
+            -1.3863357573029589e-08,
+            0.6626419425010681
+          ],
+          "lens_mm": 63.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "sha256": "1a85211ed021728a226f6f5628db42bf421f5a2a2a6b2bf504c5bac1fda21cc4",
+        "bytes": 6123481
+      }
+    },
+    {
+      "id": "13_metal_and_ceramic",
+      "image": {
+        "path": "path_traced/renders/13_metal_and_ceramic.png",
+        "sha256": "ebae67a5de4d0176b2653e13a5bd5af6aa955d9e6ed288de53f8e21bb173040a",
+        "bytes": 5522349,
+        "width": 1280,
+        "height": 960,
+        "bit_depth": 16,
+        "previews": [
+          "assets/85e4569d91abc675-360.webp",
+          "assets/85e4569d91abc675-800.webp"
+        ]
+      },
+      "settings": {
+        "scene": "CYCLES / Still life / Metal and Ceramic",
+        "file": "renders/13_metal_and_ceramic.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          1280,
+          960
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.00800000037997961,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; no denoising or image filtering",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.25,
+        "material_ids": "09_lime_plaster,07_bone_porcelain,06_blackened_steel,05_champagne_brass",
+        "elapsed_seconds": 686.82,
+        "camera": {
+          "position_m": [
+            0.3499999940395355,
+            -0.5799999833106995,
+            0.3700000047683716
+          ],
+          "rotation_rad": [
+            1.1577640771865845,
+            -1.8300546855698485e-08,
+            0.5467888116836548
+          ],
+          "lens_mm": 60.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "sha256": "ebae67a5de4d0176b2653e13a5bd5af6aa955d9e6ed288de53f8e21bb173040a",
+        "bytes": 5522349
+      }
+    },
+    {
+      "id": "14_walnut_salon",
+      "image": {
+        "path": "path_traced/renders/14_walnut_salon.png",
+        "sha256": "87460b1b4d79d4f1be89fc276ff6be6905357451339c9eb45e188c40a8199dd3",
+        "bytes": 13389307,
+        "width": 2048,
+        "height": 1536,
+        "bit_depth": 16,
+        "previews": [
+          "assets/18e1af9bc8c6899f-360.webp",
+          "assets/18e1af9bc8c6899f-800.webp"
+        ]
+      },
+      "settings": {
+        "scene": "CYCLES / Architecture / Walnut Parquet Salon",
+        "file": "renders/14_walnut_salon.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          2048,
+          1536
+        ],
+        "maximum_samples": 512,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.009999999776482582,
+        "denoising": true,
+        "denoiser": "OPENIMAGEDENOISE",
+        "denoising_guides": "RGB_ALBEDO_NORMAL",
+        "postprocessing": "Cycles guided OpenImageDenoise and AgX; no added grain or image sharpening",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.44999998807907104,
+        "material_ids": "01_calacatta_oro,02_roman_travertine,03_american_walnut,04_fumed_oak,05_champagne_brass,06_blackened_steel,07_bone_porcelain,08_saddle_leather,09_lime_plaster,10_natural_linen",
+        "elapsed_seconds": 5495.27,
+        "camera": {
+          "position_m": [
+            2.950000047683716,
+            -2.549999952316284,
+            1.6200000047683716
+          ],
+          "rotation_rad": [
+            1.446773886680603,
+            4.3414445372036425e-09,
+            0.8294873237609863
+          ],
+          "lens_mm": 28.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "room_dimensions_m": [
+          7.0,
+          6.0,
+          3.1
+        ],
+        "floor_material": "03_american_walnut",
+        "floor_pattern": "herringbone",
+        "floor_board_length_m": 0.5417500000000001,
+        "floor_board_width_m": 0.10835000000000002,
+        "floor_board_count": 776,
+        "architecture_object_count": 4925,
+        "source_image_inputs": 0,
+        "room_use": "Furnished sitting room with storage, lighting, framed artwork and sewn upholstery",
+        "wall_finish": "Intact mineral paint with plaster reveals and skirting",
+        "sha256": "87460b1b4d79d4f1be89fc276ff6be6905357451339c9eb45e188c40a8199dd3",
+        "bytes": 13389307
+      }
+    },
+    {
+      "id": "15_oak_library",
+      "image": {
+        "path": "path_traced/renders/15_oak_library.png",
+        "sha256": "8ec409360b2ae9f516f49b0362edf46e60222fb95e05ff9446cb5308dcb43da8",
+        "bytes": 14055261,
+        "width": 2048,
+        "height": 1536,
+        "bit_depth": 16,
+        "previews": [
+          "assets/ae0ef5f84f7f9370-360.webp",
+          "assets/ae0ef5f84f7f9370-800.webp"
+        ]
+      },
+      "settings": {
+        "scene": "CYCLES / Architecture / Oak Reading Room",
+        "file": "renders/15_oak_library.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          2048,
+          1536
+        ],
+        "maximum_samples": 512,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.009999999776482582,
+        "denoising": true,
+        "denoiser": "OPENIMAGEDENOISE",
+        "denoising_guides": "RGB_ALBEDO_NORMAL",
+        "postprocessing": "Cycles guided OpenImageDenoise and AgX; no added grain or image sharpening",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.44999998807907104,
+        "material_ids": "01_calacatta_oro,02_roman_travertine,04_fumed_oak,05_champagne_brass,06_blackened_steel,07_bone_porcelain,08_saddle_leather,09_lime_plaster,10_natural_linen",
+        "elapsed_seconds": 5458.02,
+        "camera": {
+          "position_m": [
+            2.549999952316284,
+            -2.3299999237060547,
+            1.5199999809265137
+          ],
+          "rotation_rad": [
+            1.4374562501907349,
+            5.834756677813857e-08,
+            0.76518315076828
+          ],
+          "lens_mm": 29.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "room_dimensions_m": [
+          6.4,
+          5.5,
+          3.0
+        ],
+        "floor_material": "04_fumed_oak",
+        "floor_pattern": "basket",
+        "floor_board_length_m": 0.44325,
+        "floor_board_width_m": 0.08864999999999999,
+        "floor_board_count": 1028,
+        "architecture_object_count": 7667,
+        "source_image_inputs": 0,
+        "room_use": "Reading and writing room with bound books, writing console, task lighting and fitted hardware",
+        "wall_finish": "Intact mineral paint with plaster reveals and skirting",
+        "sha256": "8ec409360b2ae9f516f49b0362edf46e60222fb95e05ff9446cb5308dcb43da8",
+        "bytes": 14055261
+      }
+    },
+    {
+      "id": "16_stone_kitchen",
+      "image": {
+        "path": "path_traced/renders/16_stone_kitchen.png",
+        "sha256": "4f9a3a12f9783ed9507142c287c6cd6df4faaab686dc3519e71f44cef8581bdf",
+        "bytes": 13130554,
+        "width": 2048,
+        "height": 1536,
+        "bit_depth": 16,
+        "previews": [
+          "assets/901cafa46b359434-360.webp",
+          "assets/901cafa46b359434-800.webp"
+        ]
+      },
+      "settings": {
+        "scene": "CYCLES / Architecture / Stone Kitchen Atelier",
+        "file": "renders/16_stone_kitchen.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          2048,
+          1536
+        ],
+        "maximum_samples": 512,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.009999999776482582,
+        "denoising": true,
+        "denoiser": "OPENIMAGEDENOISE",
+        "denoising_guides": "RGB_ALBEDO_NORMAL",
+        "postprocessing": "Cycles guided OpenImageDenoise and AgX; no added grain or image sharpening",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.44999998807907104,
+        "material_ids": "01_calacatta_oro,02_roman_travertine,03_american_walnut,04_fumed_oak,05_champagne_brass,06_blackened_steel,07_bone_porcelain,08_saddle_leather,09_lime_plaster,10_natural_linen",
+        "elapsed_seconds": 5153.66,
+        "camera": {
+          "position_m": [
+            2.880000114440918,
+            -2.549999952316284,
+            1.6799999475479126
+          ],
+          "rotation_rad": [
+            1.428213357925415,
+            -3.337299858685583e-08,
+            0.6284613013267517
+          ],
+          "lens_mm": 24.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "room_dimensions_m": [
+          6.8,
+          5.8,
+          3.1
+        ],
+        "floor_board_count": 0,
+        "architecture_object_count": 4367,
+        "source_image_inputs": 0,
+        "room_use": "Complete kitchen with refrigerator, sink, faucet, cabinetry, cooking appliances, fitted hardware and seating",
+        "wall_finish": "Intact mineral paint with plaster reveals and skirting",
+        "appliance_integration": "850 mm refrigerator, mounted nickel pulls, door seals, vent grille and fitted overhead cabinet",
+        "sink_fabrication": "570 mm countertop aperture, formed 1 mm stainless bowl, drain and mounted gooseneck mixer",
+        "comparison_camera_name": "Camera / v3.1.1 comparison",
+        "sha256": "4f9a3a12f9783ed9507142c287c6cd6df4faaab686dc3519e71f44cef8581bdf",
+        "bytes": 13130554
+      }
+    },
+    {
+      "id": "17_parquet_detail",
+      "image": {
+        "path": "path_traced/renders/17_parquet_detail.png",
+        "sha256": "de030a381649a6930230ed04717d47997bdbd2fd2f57a96d5da047b0950ed496",
+        "bytes": 15239915,
+        "width": 2048,
+        "height": 1536,
+        "bit_depth": 16,
+        "previews": [
+          "assets/31aaa2246ee7127e-360.webp",
+          "assets/31aaa2246ee7127e-800.webp"
+        ]
+      },
+      "settings": {
+        "scene": "CYCLES / Architecture / Parquet / Joints and Surface Wear",
+        "file": "renders/17_parquet_detail.png",
+        "engine": "CYCLES",
+        "blender": "4.5.3 LTS",
+        "device": "CPU",
+        "resolution": [
+          2048,
+          1536
+        ],
+        "maximum_samples": 768,
+        "minimum_samples": 128,
+        "adaptive_threshold": 0.004999999888241291,
+        "denoising": false,
+        "denoiser": null,
+        "denoising_guides": null,
+        "postprocessing": "AgX display transform only; raw path-traced floor detail",
+        "color_depth": "16-bit RGB PNG",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.44999998807907104,
+        "material_ids": "03_american_walnut,05_champagne_brass,09_lime_plaster",
+        "elapsed_seconds": 5530.08,
+        "camera": {
+          "position_m": [
+            0.7200000286102295,
+            -1.0499999523162842,
+            0.6700000166893005
+          ],
+          "rotation_rad": [
+            1.1012426614761353,
+            5.554689863629392e-08,
+            0.6010738611221313
+          ],
+          "lens_mm": 60.0
+        },
+        "provenance": "Original deterministic procedural PBR; actual 3D path-traced rendering",
+        "floor_material": "03_american_walnut",
+        "floor_pattern": "herringbone",
+        "floor_board_length_m": 0.5417500000000001,
+        "floor_board_width_m": 0.10835000000000002,
+        "floor_board_count": 262,
+        "architecture_object_count": 270,
+        "source_image_inputs": 0,
+        "sha256": "de030a381649a6930230ed04717d47997bdbd2fd2f57a96d5da047b0950ed496",
+        "bytes": 15239915
+      }
+    }
+  ],
+  "registry_path": "material-workspace/shared/material-production/registry.json",
+  "registry_sha256": "3dc3b6713900f7eca428f573063ab16eb98091d8223eb2d12dc1342b2eceaf3c"
+}
