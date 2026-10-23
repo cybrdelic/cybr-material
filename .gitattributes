@@ -1,0 +1,13 @@
+/.gitattributes text eol=lf
+/cybr_material/** text eol=lf
+/source/_material_imports.py text eol=lf
+/source/surface_math.py text eol=lf
+/source/physical_features.py text eol=lf
+/source/finish_structures.py text eol=lf
+/source/wood_anatomy.py text eol=lf
+/source/timber_volume_shader.py text eol=lf
+/material-workspace/shared/material-production/vendor/original/** text eol=lf
+/material-workspace/shared/material-production/materials/shared_generation.py text eol=lf
+/pyproject.toml text eol=lf
+/tests/test_material_generation.py text eol=lf
+/docs/shared-generation/** text eol=lf

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cybr-material"
+version = "0.1.0"
+description = "Versioned procedural material fields and exchange-map encoding"
+requires-python = ">=3.10"
+dependencies = ["numpy", "Pillow", "scipy"]
+
+[project.scripts]
+cybr-material-generate = "cybr_material.generation:main"
+
+[tool.setuptools.packages.find]
+include = ["cybr_material*"]
+
+[tool.setuptools.package-data]
+cybr_material = ["wood_profiles.json"]

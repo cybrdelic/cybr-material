@@ -1,0 +1,38 @@
+{
+  "status": "bounded_extraction_tests_passed",
+  "baseline_commit": "365bd17aed0e3bbe9d2e7896f2bfdce1b9b54a92",
+  "recipe_revision": "material-3.2-de4146ac",
+  "command": "python -m unittest discover -s tests -p test_material_generation.py -v",
+  "observed_tests": 10,
+  "observed_seconds": 26.552,
+  "recipe_count": 10,
+  "native_test_resolution": [
+    32,
+    32
+  ],
+  "png_maps_per_recipe": 12,
+  "all_120_png_bytes_equal": true,
+  "all_120_decoded_integer_arrays_equal": true,
+  "material_metadata_equal": true,
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "full4096_executed": false,
+  "scene_render_executed": false,
+  "caller_migration_complete": false,
+  "physical_qualification": false,
+  "visual_acceptance": false,
+  "source_hashes": {
+    "cybr_material/__init__.py": "c9004f4ac5999d3846be287f39f61eccd7c8f7eeea2bc144f362ccfa40520632",
+    "cybr_material/_encoding_math.py": "cf9b22c0b16715c547edf7a1f0c2099a77af818ffb139995863870a0f804f703",
+    "cybr_material/finish_structures.py": "90b8b9da1b32439c6e3cac52a6ebca80766ae25949b69e5a0b7354595c163989",
+    "cybr_material/generation.py": "969179aec0ceb6444e2cd0dac1c875b0d72a44d4091a3e9eef8f825e5fe4fb7b",
+    "cybr_material/physical_features.py": "3b034df3ea0685a5fecabfec8c53a4e3f054337a2cb35458edbf1e6a4f047e56",
+    "cybr_material/recipes.py": "a6727246f3b190c40eba1c393d160a2ee5bb8f913fc7222cf14c9dd3bcf68bd4",
+    "cybr_material/surface_math.py": "8aa23b3ae7248dc80082e940ee087fa84227b8a8f7ea66e5223722999de5475f",
+    "cybr_material/timber_volume_shader.py": "758ec657c0329f3d21b420a49be0346f845742d7fcbceebcd34d1b8545b6678e",
+    "cybr_material/wood_anatomy.py": "e577fbd6a6b5d4fe07cb5776bea17affb8a96f4558865bca8da9583acf39a706",
+    "cybr_material/wood_profiles.json": "e3d3c941fdfdad0e5a30322fe38d6de3e245c8b3b1eb7630b2a2ad815faa95bd",
+    "tests/test_material_generation.py": "19b612ba50ee5ef3696add737b929cba5d1a0082332eaf0ca71aeb08d929fc2c"
+  },
+  "note": "Final package bytes rechecked after removing a trailing blank line; the earlier bounded source-hash receipt is retained."
+}
