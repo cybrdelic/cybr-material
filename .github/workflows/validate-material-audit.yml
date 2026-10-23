@@ -1,10 +1,10 @@
 name: Validate material source contracts
 on:
   pull_request:
-    paths: ['material-workspace/**', 'research/**', 'audit/**', '.github/workflows/validate-material-audit.yml']
+    paths: ['cybr_material/**', 'material-workspace/**', 'research/**', 'audit/**', '.github/workflows/validate-material-audit.yml']
   push:
     branches: [fix/material-anatomy-and-construction]
-    paths: ['material-workspace/**', 'research/**', 'audit/**', '.github/workflows/validate-material-audit.yml']
+    paths: ['cybr_material/**', 'material-workspace/**', 'research/**', 'audit/**', '.github/workflows/validate-material-audit.yml']
 permissions:
   contents: read
 jobs:
@@ -16,6 +16,7 @@ jobs:
         with:
           filter: blob:none
           sparse-checkout: |
+            cybr_material
             material-workspace
             research
             audit
