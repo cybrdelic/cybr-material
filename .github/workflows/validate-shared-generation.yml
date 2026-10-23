@@ -1,0 +1,45 @@
+name: Validate shared material generation
+on:
+  pull_request:
+    paths:
+      - 'cybr_material/**'
+      - 'source/**'
+      - 'tests/**'
+      - 'pyproject.toml'
+      - '.gitattributes'
+      - 'material-workspace/shared/material-production/materials/**'
+      - 'material-workspace/shared/material-production/vendor/original/**'
+      - '.github/workflows/validate-shared-generation.yml'
+  push:
+    branches: [codex/shared-material-generation-20261023]
+permissions:
+  contents: read
+jobs:
+  bounded-parity:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-24.04, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            cybr_material
+            source
+            tests
+            material-workspace/shared/material-production/materials
+            material-workspace/shared/material-production/vendor/original
+            material-workspace/shared/material-production/runs/native_brass_codec_verified_20261006_0230
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install the package and offline-build prerequisites
+        run: python -m pip install . setuptools wheel
+      - name: Compare historical maps and exercise actual callers
+        run: python -m unittest discover -s tests -p test_material_generation.py -v
