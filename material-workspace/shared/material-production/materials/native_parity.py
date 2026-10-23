@@ -1,14 +1,22 @@
 """Exact native4096 replay, bounded channel comparison, no selected-asset writes."""
-import ast,gc,hashlib,io,json,math,os,platform,resource,sys,time,zlib
+import ast,gc,hashlib,io,json,math,os,platform,sys,time,zlib
 from pathlib import Path
 import numpy as np
 import PIL,scipy
 from PIL import Image
 from scipy.ndimage import gaussian_filter,map_coordinates
 from .core import ROOT,material,validate_selection,read,resolve,sha,check_hash,png_header,write_new,ContractError
-from .generation import imports_from,load,concrete_fields
+from .generation import concrete_fields
+from .shared_generation import api
 from .png_fingerprint import PNGSink,fingerprint_file,classify
 from PIL import features
+
+def peak_rss_kib():
+ # POSIX exposes this metric; its absence must not prevent Windows comparison.
+ try:import resource
+ except ImportError:return None
+ value=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+ return value/1024 if sys.platform=='darwin' else value
 
 def native_function(path,name,namespace):
  tree=ast.parse(path.read_text());node=next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name==name)
@@ -44,7 +52,7 @@ class Comparison:
   if not encoded:del q
   gc.collect()
  def snapshot(self,complete,extra=None):
-  report={'material_id':self.cid,'resolution':[4096,4096],'complete':complete,'channels':self.results,'all_decoded_pixels_equal':all(x['decoded_pixels_equal'] for x in self.results.values()),'all_png_bytes_equal':all(x['png_bytes_equal'] for x in self.results.values()),'runtime_seconds':time.time()-self.start,'peak_rss_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'runtime':{'python':platform.python_version(),'numpy':np.__version__,'scipy':scipy.__version__,'Pillow':PIL.__version__,'zlib':zlib.ZLIB_VERSION,'pillow_zlib':features.version('zlib'),'pillow_zlib_ng':features.version_feature('zlib_ng')},'canonical_files_unchanged':all(sha(self.root/k)==v for k,v in self.source_hashes.items()),'selected_scene_sha256':self.material['selected']['scene_sha256'],'units':'meters','source_resolution_contract':'Exact4096 native replay. Cross-resolution output is not claimed equal: rasterization/anti-alias/packing stopping rules depend on resolution.','visual_acceptance':False,'full_scene_regeneration':False,'generated_images_written_to_disk':False}
+  report={'material_id':self.cid,'resolution':[4096,4096],'complete':complete,'channels':self.results,'all_decoded_pixels_equal':all(x['decoded_pixels_equal'] for x in self.results.values()),'all_png_bytes_equal':all(x['png_bytes_equal'] for x in self.results.values()),'runtime_seconds':time.time()-self.start,'peak_rss_kib':peak_rss_kib(),'runtime':{'python':platform.python_version(),'numpy':np.__version__,'scipy':scipy.__version__,'Pillow':PIL.__version__,'zlib':zlib.ZLIB_VERSION,'pillow_zlib':features.version('zlib'),'pillow_zlib_ng':features.version_feature('zlib_ng')},'canonical_files_unchanged':all(sha(self.root/k)==v for k,v in self.source_hashes.items()),'selected_scene_sha256':self.material['selected']['scene_sha256'],'units':'meters','source_resolution_contract':'Exact4096 native replay. Cross-resolution output is not claimed equal: rasterization/anti-alias/packing stopping rules depend on resolution.','visual_acceptance':False,'full_scene_regeneration':False,'generated_images_written_to_disk':False}
   if extra:report.update(extra)
   report['qualification']='pending' if not complete else 'exact_native_pixels_and_png_bytes' if report['all_png_bytes_equal'] else 'exact_native_pixels_only_png_byte_gate_failed' if report['all_decoded_pixels_equal'] else 'native_pixel_gate_failed'
   # Only the new run's progress receipt is mutable; selected inputs never are.
@@ -54,25 +62,15 @@ class Comparison:
 def brass(out):
  c=Comparison('05_champagne_brass',out,6);root=ROOT/'vendor/original';lock=read(root/'SOURCE_LOCK.json')
  for e in lock['files']:check_hash(ROOT/e['path'],e['sha256'])
- with imports_from(root/'source',['surface_math','physical_features','finish_structures','wood_anatomy']):
-  m=load(root/'source/generate_materials.py','native_original_materials');s=m.SPECS[4];n=4096
-  assert s['tile_m']==c.meta['tile_m'] and s['height_scale_m']==c.meta['height_scale_m']
-  x=((np.arange(n,dtype=np.float32)+.5)/n)[None,:];y=((np.arange(n,dtype=np.float32)+.5)/n)[:,None]
-  values=m.GENERATORS[4](x,y,n);rgb,h,rough,ao,metal,wear=[m.clamp(v).astype(np.float32) for v in values[:6]];del values
-  h=gaussian_filter(h,.35,mode='wrap');macro=gaussian_filter(h,max(.5,n/1024),mode='wrap')
-  c.compare('BaseColor',rgb,8);del rgb;gc.collect()
-  c.compare('Height',h,16);c.compare('Height_Macro',macro,16)
-  micro=m.normal_from_height(h-macro,s,n);c.compare('Normal_Micro_OpenGL',micro,8);del micro,macro;gc.collect()
-  orm=np.stack((ao,rough,metal),axis=-1);c.compare('ORM',orm,8);del orm;gc.collect()
-  for key,a in [('Roughness',rough),('AO',ao),('Metallic',metal),('WearMask',wear)]:c.compare(key,a,8)
-  del rough,ao,metal,wear,a;gc.collect()
-  opacity=np.ones((n,n),np.float32);c.compare('Opacity',opacity,8);del opacity
-  normal=m.normal_from_height(h,s,n);del h
-  encoded=np.rint(m.clamp(normal)*255).astype(np.uint8);del normal;gc.collect()
-  c.compare('Normal_OpenGL',encoded,8,True);encoded[...,1]=255-encoded[...,1];c.compare('Normal_DirectX',encoded,8,True);del encoded
+ shared=api();fields=shared.evaluate_fields('05_champagne_brass',4096)
+ s=fields.spec
+ if s['tile_m']!=c.meta['tile_m'] or s['height_scale_m']!=c.meta['height_scale_m']:raise ContractError('Shared recipe metric scale differs from selected material')
+ for name,pixels,bits in shared.encode_exchange_maps(fields):
+  c.compare(name,pixels,bits,encoded=True)
+ del pixels;gc.collect()
  expected=set(p.stem for p in c.root.glob('*.png'))
  if set(c.results)!=expected:raise ContractError('Brass channel coverage incomplete')
- return c.snapshot(True,{'source_lock_sha256':sha(root/'SOURCE_LOCK.json'),'source_commit':lock['commit'],'tile_m':s['tile_m'],'height_scale_m':s['height_scale_m'],'coverage':f'All{len(c.results)} canonical exchange maps; source geometry is retained, not regenerated'})
+ return c.snapshot(True,{'source_lock_sha256':sha(root/'SOURCE_LOCK.json'),'source_commit':lock['commit'],'recipe_revision':fields.revision,'implementation':dict(fields.implementation),'physical_qualification':False,'tile_m':s['tile_m'],'height_scale_m':s['height_scale_m'],'coverage':f'All{len(c.results)} canonical exchange maps; source geometry is retained, not regenerated'})
 
 def concrete(out):
  c=Comparison('32_concrete_polished',out,4);n=4096;root=ROOT/'vendor/aggregate';s=read(root/'recipe.json');fields,source=concrete_fields(n)

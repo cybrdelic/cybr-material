@@ -1,6 +1,7 @@
 /.gitattributes text eol=lf
 /cybr_material/** text eol=lf
 /source/_material_imports.py text eol=lf
+/source/generate_materials.py text eol=lf
 /source/surface_math.py text eol=lf
 /source/physical_features.py text eol=lf
 /source/finish_structures.py text eol=lf

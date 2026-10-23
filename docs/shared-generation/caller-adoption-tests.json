@@ -1,0 +1,124 @@
+{
+  "status": "bounded_shared_generation_and_actual_callers_passed",
+  "baseline_commit": "365bd17aed0e3bbe9d2e7896f2bfdce1b9b54a92",
+  "previous_local_commit": "44e7e38082cd9fdb16d2aa44bc055eb506354996",
+  "recipe_revision": "material-3.2-de4146ac",
+  "historical_commit": "de4146ac759164e29323b152d37f64417c00c3fb",
+  "historical_generator_blob": "12406a4d2359b826c3ee3fcf412caabb0441e489",
+  "source_lock_sha256": "31ab475e937004395ca696142be6fd9306d1fe635f93e425d2c72133f6c003e0",
+  "immutable_oracle_files_verified": 8,
+  "test_command": "python -m unittest discover -s tests -p test_material_generation.py -v",
+  "observed_tests": 18,
+  "observed_seconds": 43.139,
+  "existing_integration_tests": {
+    "count": 5,
+    "seconds": 1.937,
+    "names": [
+      "test_brass_actual_source_generation_channels_and_units",
+      "test_source_import_namespace_is_restored",
+      "test_channel_nan_range_and_shape_rejected",
+      "test_smoke_resolution_cannot_claim_4k",
+      "test_unqualified_generator_never_falls_back"
+    ]
+  },
+  "recipes_compared": 10,
+  "resolution": [
+    32,
+    32
+  ],
+  "png_maps_each": 12,
+  "all_120_png_bytes_equal": true,
+  "all_120_integer_arrays_equal": true,
+  "material_metadata_equal": true,
+  "actual_root_cli": {
+    "cwd": "unrelated temporary directory",
+    "maps_exact": 12,
+    "resolution": [
+      32,
+      32
+    ]
+  },
+  "actual_brass_adapter": {
+    "fields_exact": true,
+    "legacy_module_loader_disabled": true
+  },
+  "native_recovery": {
+    "source_preflight_and_dispatch_tested": true,
+    "allocation_intercepted": true,
+    "native4096_executed": false
+  },
+  "native_parity": {
+    "actual_caller_bounded_harness": true,
+    "historical_encoded_channels_exact": 12,
+    "resolution_substitution": [
+      32,
+      32
+    ],
+    "production_request_remains": [
+      4096,
+      4096
+    ],
+    "actual_selected4096_gate_executed": false,
+    "original_comparison_gates_preserved": true
+  },
+  "install": {
+    "fresh_clean_package_copy": true,
+    "isolated_target": true,
+    "network_or_dependency_install": false,
+    "import_from_unrelated_cwd": true,
+    "package_data_verified": true,
+    "wood_evaluation_resolution": [
+      16,
+      16
+    ]
+  },
+  "adopted_callers": [
+    "source/generate_materials.py",
+    "material-workspace/shared/material-production/materials/generation.py",
+    "material-workspace/shared/material-production/materials/recover_native.py",
+    "material-workspace/shared/material-production/materials/native_parity.py"
+  ],
+  "source_hashes": {
+    "source/generate_materials.py": "cc43e66263ccf1e34e0e5cf2e2f91ba4ecf7256c5a4b90833eb7257dac4fab02",
+    "material-workspace/shared/material-production/materials/generation.py": "1f9ea783a7230145d9a9ea9c4cf789e4938aa5596c7d677014cc152b77db3852",
+    "material-workspace/shared/material-production/materials/recover_native.py": "d7f56b22a01b84d638e6193013841ce7594f1d6b923ff9508cd7bbd4050228b3",
+    "material-workspace/shared/material-production/materials/native_parity.py": "f2784074794b092bd7d7d3b05ce38be1ffcf281b0e733e91c93f4653309e43e4",
+    "material-workspace/shared/material-production/materials/shared_generation.py": "3d3d4738d79ac6b36b5d30a98e69d34077e75dee4b4c1d1a2ec94ee64305b1fc",
+    "tests/test_material_generation.py": "afa071e10cb9cc70fcab71bd3b4efbfda95c22a452f6a58d9bf1ea8aec6ff44a",
+    "cybr_material/__init__.py": "c9004f4ac5999d3846be287f39f61eccd7c8f7eeea2bc144f362ccfa40520632",
+    "cybr_material/_encoding_math.py": "cf9b22c0b16715c547edf7a1f0c2099a77af818ffb139995863870a0f804f703",
+    "cybr_material/finish_structures.py": "90b8b9da1b32439c6e3cac52a6ebca80766ae25949b69e5a0b7354595c163989",
+    "cybr_material/generation.py": "0b8c381528a51a3c041cb7dfecf5592175e909fa507782fd6db531f28d08ba4f",
+    "cybr_material/physical_features.py": "3b034df3ea0685a5fecabfec8c53a4e3f054337a2cb35458edbf1e6a4f047e56",
+    "cybr_material/recipes.py": "a6727246f3b190c40eba1c393d160a2ee5bb8f913fc7222cf14c9dd3bcf68bd4",
+    "cybr_material/surface_math.py": "8aa23b3ae7248dc80082e940ee087fa84227b8a8f7ea66e5223722999de5475f",
+    "cybr_material/timber_volume_shader.py": "758ec657c0329f3d21b420a49be0346f845742d7fcbceebcd34d1b8545b6678e",
+    "cybr_material/wood_anatomy.py": "e577fbd6a6b5d4fe07cb5776bea17affb8a96f4558865bca8da9583acf39a706",
+    "cybr_material/wood_profiles.json": "e3d3c941fdfdad0e5a30322fe38d6de3e245c8b3b1eb7630b2a2ad815faa95bd",
+    "pyproject.toml": "406ed3ba5672cd44f823f1f2da4b05c2596913f8626288407d3f4571667da5c2"
+  },
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "full4096_executed": false,
+  "scene_render_executed": false,
+  "physical_qualification": false,
+  "visual_acceptance": false,
+  "remote_publication": false,
+  "limits": [
+    "Bounded numerical and wiring parity does not establish native4096 parity, final scene quality or measured material properties.",
+    "Linux/macOS execution and full-resolution memory/performance remain pending.",
+    "No source/output/selected-map expected hashes were relaxed."
+  ],
+  "prior_adoption_run": {
+    "tests": 17,
+    "seconds": 159.731,
+    "note": "Preceded the C-order row-chunk hashing change"
+  },
+  "row_chunk_hashing": {
+    "rows": 64,
+    "c_order_digest_equal": true,
+    "tested_contiguous_noncontiguous_fortran_and_uint16": true,
+    "max_rgb_float32_scratch_at4096_mib": 3,
+    "full4096_peak_rss_measured": false
+  }
+}

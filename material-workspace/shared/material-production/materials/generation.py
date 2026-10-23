@@ -3,8 +3,8 @@ import importlib.util,sys
 from contextlib import contextmanager
 from pathlib import Path
 import numpy as np
-from scipy.ndimage import gaussian_filter
 from .core import ROOT,resolve,read,sha,check_hash,ContractError
+from .shared_generation import api
 
 @contextmanager
 def imports_from(path,names):
@@ -36,15 +36,10 @@ def concrete_fields(n):
 def brass_fields(n):
  root=ROOT/'vendor/original';lock=read(root/'SOURCE_LOCK.json')
  for entry in lock['files']:check_hash(ROOT/entry['path'],entry['sha256'])
- with imports_from(root/'source',['surface_math','physical_features','finish_structures','wood_anatomy']):
-  module=load(root/'source/generate_materials.py','selected_original_materials')
-  meta=module.SPECS[4];x=((np.arange(n,dtype=np.float32)+.5)/n)[None,:];y=((np.arange(n,dtype=np.float32)+.5)/n)[:,None]
-  values=module.GENERATORS[4](x,y,n)
-  fields={k:module.clamp(a).astype(np.float32) for k,a in zip(['BaseColor','Height','Roughness','AO','Metallic','WearMask'],values)}
-  fields['Height']=gaussian_filter(fields['Height'],.35,mode='wrap')
-  fields['Opacity']=np.ones((n,n),np.float32)
-  fields['Normal_OpenGL']=module.normal_from_height(fields['Height'],meta,n)
- return fields,{'mode':'procedural evaluation of recovered exact selected brass source','original_commit':lock['commit'],'source_lock_sha256':sha(root/'SOURCE_LOCK.json'),'tile_m':meta['tile_m'],'height_scale_m':meta['height_scale_m'],'remaining_qualification':'Full4096 regeneration/byte comparison not run in constrained workspace'}
+ shared=api();evaluated=shared.evaluate_fields('05_champagne_brass',n,diagnostic=True)
+ fields=dict(evaluated.channels);meta=evaluated.spec
+ fields['Normal_OpenGL']=shared.normal_from_height(fields['Height'],meta,n)
+ return fields,{'mode':'procedural evaluation of recovered exact selected brass source through shared MATERIAL recipe API','original_commit':lock['commit'],'source_lock_sha256':sha(root/'SOURCE_LOCK.json'),'recipe_revision':evaluated.revision,'implementation':dict(evaluated.implementation),'tile_m':meta['tile_m'],'height_scale_m':meta['height_scale_m'],'physical_qualification':False,'visual_acceptance':False,'remaining_qualification':'Full4096 regeneration/byte comparison not run in constrained workspace'}
 
 def asphalt_fields(n):
  """The explicitly reviewed fracture model, separate from later experiments."""

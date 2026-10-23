@@ -13,10 +13,14 @@ import gc
 import hashlib
 import json
 from pathlib import Path
+import platform
 from types import MappingProxyType
+import zlib
 
 import numpy as np
+import PIL
 from PIL import Image
+import scipy
 from scipy.ndimage import gaussian_filter
 
 from . import recipes
@@ -53,7 +57,24 @@ def implementation_identity():
             for p in sorted([*root.glob("*.py"), root / "wood_profiles.json"])}
 
 
+_IMPORTED_IMPLEMENTATION = implementation_identity()
+
+
+def _checked_implementation():
+    identity = implementation_identity()
+    if identity != _IMPORTED_IMPLEMENTATION:
+        raise ContractError("Generator source changed since import; start a fresh process")
+    return identity
+
+
+def runtime_identity():
+    return {"python": platform.python_version(), "numpy": np.__version__,
+            "scipy": scipy.__version__, "Pillow": PIL.__version__, "zlib": zlib.ZLIB_VERSION}
+
+
 def _resolution(value, diagnostic):
+    if type(diagnostic) is not bool:
+        raise ContractError("Diagnostic intent must be an explicit boolean")
     if isinstance(value, bool) or not isinstance(value, (int, np.integer)):
         raise ContractError("Resolution must be an integer")
     n = int(value)
@@ -85,8 +106,17 @@ class MaterialFields:
     channel_hashes: object
 
 
+def _array_sha256(value):
+    # Preserve the original C-order byte digest without a full native4K copy.
+    # Sixty-four rows bound RGB float32 scratch to 3 MiB at resolution4096.
+    digest = hashlib.sha256()
+    for row in range(0, value.shape[0], 64):
+        digest.update(value[row:row + 64].tobytes(order="C"))
+    return digest.hexdigest()
+
+
 def _hashes(channels):
-    return {key: hashlib.sha256(value.tobytes()).hexdigest() for key, value in channels.items()}
+    return {key: _array_sha256(value) for key, value in channels.items()}
 
 
 def _validate_arrays(channels, n, *, normalized):
@@ -105,7 +135,7 @@ def _validate_arrays(channels, n, *, normalized):
 def evaluate_fields(identifier, resolution=4096, *, revision=RECIPE_REVISION, diagnostic=False):
     n = _resolution(resolution, diagnostic)
     spec = recipe(identifier, revision)
-    identity = implementation_identity()
+    identity = _checked_implementation()
     index = next(i for i, value in enumerate(recipes.SPECS) if value["id"] == identifier)
     x = ((np.arange(n, dtype=np.float32) + .5) / n)[None, :]
     y = ((np.arange(n, dtype=np.float32) + .5) / n)[:, None]
@@ -140,7 +170,7 @@ def validate_fields(fields):
     _validate_arrays(fields.channels, fields.resolution, normalized=True)
     if dict(fields.channel_hashes) != _hashes(fields.channels):
         raise ContractError("Generated channels changed after evaluation")
-    if dict(fields.implementation) != implementation_identity():
+    if dict(fields.implementation) != _checked_implementation():
         raise ContractError("Generator source changed before encoding")
 
 
@@ -181,7 +211,7 @@ def export_material(fields, destination):
     for name, pixels, bits in encode_exchange_maps(fields):
         path = out / (name + ".png")
         Image.fromarray(pixels).save(path, compress_level=6)
-        encoded[name] = {"bits": bits, "pixel_sha256": hashlib.sha256(pixels.tobytes()).hexdigest(),
+        encoded[name] = {"bits": bits, "pixel_sha256": _array_sha256(pixels),
                          "png_sha256": hashlib.sha256(path.read_bytes()).hexdigest()}
     if set(encoded) != {Path(name).stem for name in MAP_TYPES}:
         raise ContractError("Exchange-map coverage incomplete")
@@ -193,7 +223,7 @@ def export_material(fields, destination):
     report = {"status": "computed_exchange_maps_validated", "recipe_revision": fields.revision,
               "historical_commit": HISTORICAL_COMMIT, "diagnostic": fields.diagnostic,
               "resolution": [fields.resolution, fields.resolution], "units": "meters",
-              "implementation": dict(fields.implementation), "channels": encoded,
+              "implementation": dict(fields.implementation), "runtime": runtime_identity(), "channels": encoded,
               "physical_qualification": False, "visual_acceptance": False,
               "scope": "Deterministic authored procedural maps; no measured-material or rendered-scene qualification"}
     with (out / "generation.json").open("x", encoding="utf-8") as stream:
@@ -204,7 +234,9 @@ def export_material(fields, destination):
 
 def export_suite(output_root, identifiers=None, resolution=4096, *, diagnostic=False, revision=RECIPE_REVISION):
     n = _resolution(resolution, diagnostic)
-    ids = list(identifiers) if identifiers else [s["id"] for s in recipes.SPECS]
+    ids = [s["id"] for s in recipes.SPECS] if identifiers is None else list(identifiers)
+    if not ids:
+        raise ContractError("At least one material identity is required")
     if len(ids) != len(set(ids)):
         raise ContractError("Duplicate material identities")
     specs = [recipe(identifier, revision) for identifier in ids]
@@ -244,7 +276,7 @@ def main(argv=None):
     parser.add_argument("--draft", action="store_true", help="Explicit diagnostic maps; cannot promote to production")
     parser.add_argument("--output-root", type=Path, default=Path(__file__).resolve().parents[1], help="Fresh output root; existing map directories are protected")
     args = parser.parse_args(argv)
-    export_suite(args.output_root, args.only, args.resolution, diagnostic=args.draft)
+    export_suite(args.output_root, args.only or None, args.resolution, diagnostic=args.draft)
 
 
 if __name__ == "__main__":
